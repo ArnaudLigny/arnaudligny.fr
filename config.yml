@@ -1,0 +1,13 @@
+site:
+    title:       "Arnaud Ligny"
+    baseurl:     "http://arnaudligny.fr"
+    baseline:    "Chef de projet technique Web"
+    description: "Arnaud Ligny, Chef de projet technique Web"
+    language:    "fr"
+    author:
+        name:  "Arnaud Ligny"
+        email: "arnaud+contact@ligny.fr"
+        home:  "http://arnaudligny.fr"
+deploy:
+    repository: "https://github.com/Narno/arnaudligny.fr.git"
+    branch:     "gh-pages"
