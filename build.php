@@ -21,9 +21,14 @@ $options_prod = array_replace_recursive($options_dev, [
         'baseurl' => 'http://arnaudligny.fr/',
     ],
 ]);
-$options = (isset($getopt['e']) && $getopt['e'] == 'prod') ? $options_prod : $options_dev;
+
+$prod = (isset($getopt['e']) && $getopt['e'] == 'prod') ? true : false;
+
+$options = ($prod) ? $options_prod : $options_dev;
 
 $phpoole = new PHPoole('./', null, $options);
 $phpoole->build();
 
-exec('php -S localhost:8000 -t _site');
+if (!$prod) {
+    exec('php -S localhost:8000 -t _site');
+}
