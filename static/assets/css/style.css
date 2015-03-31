@@ -110,3 +110,7 @@ li {
 #articles > article > header > span, #main > article > header > span {
     float: right;
 }
+
+#footer {
+    float: right;
+}
