@@ -103,3 +103,10 @@ li {
         float: none;
     }
 }
+
+#articles > article > header > h3, #main > article > header > h3 {
+    display: inline;
+}
+#articles > article > header > span, #main > article > header > span {
+    float: right;
+}

@@ -1,18 +1,13 @@
 {% extends "index.html" %}
 
 {% block content %}
-<ul>
-    {% for entry in site.menus.main %}
-    <li><a href="{{ url(entry.url) }}">{{ entry.name }}</a></li>
-    {% endfor %}
-</ul>
 <section id="articles">
     {% for post in site.pages|bySection(page.pathname)|sortByDate %}
     <article class="post">
         <header>
-            <h1><a href="{{ url(post) }}">{{ post.title }}</a></h1>
+            <h3><a href="{{ url(post) }}">{{ post.title }}</a></h3>
             {% if post.date %}
-            <span>{{ post.date|date("j M Y") }}</span>
+            <span class="date">{{ post.date|date("j M Y") }}</span>
             {% endif %}
         </header>
         <section class="content">

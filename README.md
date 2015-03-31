@@ -1,1 +1,1 @@
-Source of arnaudligny.fr.
+Source of http://arnaudligny.fr.

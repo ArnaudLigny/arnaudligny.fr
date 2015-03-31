@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c61c640d2793e7dd943943cf109d63be",
+    "hash": "c5af59728abc583428e98f7ad24b541c",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -157,7 +157,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Narno/PHPoole-library",
-                "reference": "359f40fbfb982b7497b9d19613e0cac31b090a19"
+                "reference": "c84da572ad804ae41d16e658e1693501ff2f5bfe"
             },
             "require": {
                 "cocur/slugify": "1.*",
@@ -201,7 +201,7 @@
                 "static",
                 "website"
             ],
-            "time": "2015-03-30 12:55:38"
+            "time": "2015-03-31 09:13:22"
         },
         {
             "name": "symfony/filesystem",
