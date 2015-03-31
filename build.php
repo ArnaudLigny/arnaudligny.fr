@@ -1,10 +1,29 @@
 <?php
+if (php_sapi_name() !== 'cli') {
+    return;
+}
 require_once 'vendor/autoload.php';
-
 use PHPoole\PHPoole;
 
-$phpoole = new PHPoole('./', null, [
+$getopt = getopt('e::');
+
+$options_dev = [
+    'site' => [
+        'title'   => "Arnaud Ligny",
+        'baseurl' => 'http://localhost:8000/',
+    ],
     'frontmatter' => [
         'format' => 'ini'
-    ]]);
+    ],
+];
+$options_prod = array_replace_recursive($options_dev, [
+    'site' => [
+        'baseurl' => 'http://arnaudligny.fr/',
+    ],
+]);
+$options = ($getopt['e'] == 'prod') ? $options_prod : $options_dev;
+
+$phpoole = new PHPoole('./', null, $options);
 $phpoole->build();
+
+exec('php -S localhost:8000 -t _site');
