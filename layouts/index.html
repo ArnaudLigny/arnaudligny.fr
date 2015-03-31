@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="Shortcut Icon" type="image/x-icon" href="http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=16.gif" />
     <link href="http://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" media="all" />
+    <link rel="stylesheet" href="{{ url() ~ 'assets/css/style.css' }}" media="all" />
     <meta property="og:title" content="Arnaud Ligny" />
     <meta property="og:description" content="Chef de projet technique Web - Paris, France" />
     <meta property="og:type" content="website" />
@@ -23,6 +23,7 @@
 </head>
 <body>
 <div id="main">
+    {% block content %}
     <div itemscope itemtype="http://schema.org/Person">
         <div id="avatar"></div>
         <h1><span itemprop="name">Arnaud Ligny</span></h1>
@@ -34,16 +35,12 @@
             <li><a href="http://twitter.com/ArnaudLigny">Twitter</a></li>
             <li><a href="https://plus.google.com/113514091842394570177?rel=author">Google+</a></li>
         </ul>
-
         <p>Chef de projet technique expérimenté, j’accompagne les marques dans la phase de conception et de développement technique de leur activité e-commerce.</p>
-
         <p>Analyste programmeur de formation, je suis spécialisé dans les technologies du Web, la conception fonctionnelle et technique, la gestion et le pilotage de projets techniques e-commerce, et plus particulièrement via la solution <a href="http://magento.com">Magento</a>.</p>
-
         <p>En 10 ans, j’ai apporté mon expertise sur plus de 20 projets e-commerce (à la fois en agence et chez l'annonceur), pour des marques telles que <a href="http://www.etam.com">Etam</a>, <a href="http://eu.christianlouboutin.com">Christian Louboutin</a>, <a href="http://france.hermes.com">Hermès</a>, <a href="http://www.repetto.fr">Repetto</a>, <a href="http://www.dpam.com">Du Pareil au Même</a>, <a href="http://www.thekooples.com">The Kooples</a>, ou encore <a href="http://www.zadig-et-voltaire.com">Zadig &amp; Voltaire</a>.</p>
-
         <p>Localisation : <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Paris</span>, <span itemprop="addressCountry">France</span></span>.</p>
     </div>
-    <!--<div id="footer">Template inspiré par <a href="http://jordanscales.com">http://jordanscales.com</a></div>-->
+    {% endblock %}
 </div>
 <!-- google analytics -->
 <script>
@@ -54,5 +51,6 @@
     ga('create', 'UA-30599234-2', 'auto');
     ga('send', 'pageview');
 </script>
+<!-- Template inspiré par jordanscales.com -->
 </body>
 </html>

@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block content %}
+<ul>
+    {% for entry in site.menus.main %}
+    <li><a href="{{ url(entry.url) }}">{{ entry.name }}</a></li>
+    {% endfor %}
+</ul>
+<article class="post">
+    <header>
+        <h1>{{ page.title }}</h1>
+        {% if page.date %}
+        <span>{{ page.date|date("j M Y") }}</span>
+        {% endif %}
+    </header>
+    <section class="content">
+        {{ page.content }}
+    </section>
+    <div>
+        {% for tag in page.tags %}
+        <a href="{{ url('tags/' ~ tag) }}">#{{ tag }}</a>&nbsp;
+        {% endfor %}
+    </div>
+</article>
+{% endblock %}
