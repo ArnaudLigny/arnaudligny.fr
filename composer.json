@@ -6,6 +6,6 @@
     }
   ],
   "require": {
-    "Narno/PHPoole-library": "dev-master"
+    "Narno/PHPoole-library": "1.0.X-dev"
   }
 }
