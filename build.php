@@ -13,7 +13,7 @@ $options_dev = [
         'baseurl' => 'http://localhost:8000/',
     ],
     'frontmatter' => [
-        'format' => 'ini'
+        'format' => 'yml'
     ],
 ];
 $options_prod = array_replace_recursive($options_dev, [

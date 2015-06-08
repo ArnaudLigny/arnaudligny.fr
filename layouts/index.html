@@ -20,24 +20,28 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@arnaudligny" />
     <meta name="twitter:creator" content="@arnaudligny" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
 </head>
 <body>
 <div id="main">
-    <a href="/"><div id="avatar"></div></a>
-    <h1>Arnaud Ligny</h1>
-    <h2>Chef de projet technique Web</h2>
-    <ul>
-        <li><a href="{{ url('blog') }}">Blog</a></li>
-        <li><a href="http://twitter.com/ArnaudLigny">Twitter</a></li>
-        <li><a href="https://github.com/Narno">GitHub</a></li>
-        <li><a href="http://www.linkedin.com/in/arnaudligny">LinkedIn</a></li>
-        <li><a href="CV_ArnaudLigny-2015.pdf">CV</a></li>
-        <!--
-        {% for entry in site.menus.main %}
-        <li><a href="{{ url(entry.url) }}">{{ entry.name }}</a></li>
-        {% endfor %}
-        -->
-    </ul>
+    <div id="header">
+        <a href="/"><div id="avatar"></div></a>
+        <h1>Arnaud Ligny</h1>
+        <h2>Chef de projet technique Web</h2>
+        <ul>
+            <li><a href="{{ url('blog') }}">Blog</a></li>
+            <li><a href="http://twitter.com/ArnaudLigny">Twitter</a></li>
+            <li><a href="https://github.com/Narno">GitHub</a></li>
+            <li><a href="http://www.linkedin.com/in/arnaudligny">LinkedIn</a></li>
+            <li><a href="CV_ArnaudLigny-2015.pdf">CV</a></li>
+            <!--
+            {% for entry in site.menus.main %}
+            <li><a href="{{ url(entry.url) }}">{{ entry.name }}</a></li>
+            {% endfor %}
+            -->
+        </ul>
+    </div>
     {% block content %}
     <div itemscope itemtype="http://schema.org/Person">
         <p><span itemprop="name">Arnaud Ligny</span>, <span itemprop="jobTitle">Chef de projet technique</span> expérimenté, j’accompagne les marques dans la phase de conception et de développement technique de leur activité e-commerce.</p>
@@ -58,5 +62,6 @@
     ga('send', 'pageview');
 </script>
 <!-- Template inspiré par jordanscales.com -->
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
