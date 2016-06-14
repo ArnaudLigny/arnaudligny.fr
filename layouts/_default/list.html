@@ -2,7 +2,7 @@
 
 {% block content %}
 <section id="articles">
-    {% for post in site.pages|bySection(page.pathname)|sortByDate %}
+    {% for post in site.pages|filterBySection(page.pathname)|sortByDate %}
     <article class="post">
         <header>
             <h3><a href="{{ url(post) }}">{{ post.title }}</a></h3>
