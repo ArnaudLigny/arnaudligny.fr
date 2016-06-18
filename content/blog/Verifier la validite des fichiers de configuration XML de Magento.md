@@ -1,8 +1,8 @@
-<!--
+---
 title: "Vérifier la validité des fichiers de configuration XML de Magento"
 date: 2010-11-10
 tags: "Magento"
--->
+---
 
 Pour rappel, Magento s'appuie sur des fichiers [XML pour configurer ses modules](http://www.magentocommerce.com/wiki/5_-_modules_and_development/reference/module_config.xml) (entre autre). Le soucis avec l’utilisation qu'en fait Magento, c'est qu'il ne vérifie pas l'intégrité des fichiers XML.
 

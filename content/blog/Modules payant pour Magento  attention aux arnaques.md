@@ -1,8 +1,8 @@
-<!--
+---
 title: "Modules payant pour Magento  attention aux arnaques !"
 date: 2009-06-23
 tags: "Magento"
--->
+---
 
 J'y vais peut être un peu fort avec le titre mais bon, mieux vaut prévenir que guérir !
 

@@ -1,8 +1,8 @@
-<!--
+---
 title: "Magento : Ajouter une colonne dans une grille"
 date: 2012-09-11
 tags: "Magento"
--->
+---
 
 Il existe un certain nombre de méthodes pour ajouter une ou plusieurs colonnes dans une grille du back-office Magento, mais il y en a une qui est moins intrusive que les autres : C'est celle-ci que je souhaites partager.
 
