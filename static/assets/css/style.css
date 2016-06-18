@@ -84,15 +84,15 @@ a:hover {
         text-align: center;
     }
 
-    li {
+    #header li {
         padding-right: 0px;
     }
 
-    li:before {
+    #header li:before {
         content: ", ";
     }
 
-    li:first-child:before {
+    #header li:first-child:before {
         content: none;
     }
 
