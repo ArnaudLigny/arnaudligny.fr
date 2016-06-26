@@ -1,11 +1,11 @@
 {
+  "require": {
+    "narno/phpoole-library": "1.1.x-dev"
+  },
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/Narno/PHPoole-library"
+      "url": "https://github.com/PHPoole/PHPoole-library"
     }
-  ],
-  "require": {
-    "Narno/PHPoole-library": "1.1.x-dev"
-  }
+  ]
 }
