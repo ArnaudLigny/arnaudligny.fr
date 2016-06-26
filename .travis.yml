@@ -10,12 +10,12 @@ before_script:
 script:
   - php build.php -e=prod
 
-after_success:
-  - bash deploy.sh
+#after_success:
+#  - bash deploy.sh
 
-#deploy:
-#  skip_cleanup: true
-#  provider: script
-#  script: deploy.sh
-#  on:
-#    branch: master
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: deploy.sh
+  on:
+    branch: master
