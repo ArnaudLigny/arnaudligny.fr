@@ -3,6 +3,13 @@ language: php
 php:
   - 7
 
+sudo: false
+
+cache:
+  directories:
+    - vendor
+    - $COMPOSER_CACHE_DIR
+
 before_script:
   - phpenv config-rm xdebug.ini
   - composer install --no-interaction
@@ -10,12 +17,12 @@ before_script:
 script:
   - php build.php -e=prod
 
-#after_success:
-#  - bash deploy.sh
+after_success:
+  - bash deploy.sh
 
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: deploy.sh
-  on:
-    branch: master
+#deploy:
+#  skip_cleanup: true
+#  provider: script
+#  script: deploy.sh
+#  on:
+#    branch: master
