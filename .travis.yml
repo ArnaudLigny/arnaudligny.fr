@@ -13,6 +13,7 @@ script:
   - php build.php -e=prod
 
 deploy:
+  skip_cleanup: true
   provider: script
   script: deploy.sh
   on:
