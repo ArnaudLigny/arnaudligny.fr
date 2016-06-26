@@ -1,4 +1,0 @@
-[submodule "_site"]
-	path = _site
-	url = https://github.com/Narno/arnaudligny.fr.git
-	branch = gh-pages
