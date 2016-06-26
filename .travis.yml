@@ -3,19 +3,17 @@ language: php
 php:
   - 7
 
-install:
-  - composer self-update
-
 before_script:
   - phpenv config-rm xdebug.ini
   - composer install --no-interaction
 
 script:
   - php build.php -e=prod
+  - deploy.sh
 
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: deploy.sh
-  on:
-    branch: master
+#deploy:
+#  skip_cleanup: true
+#  provider: script
+#  script: deploy.sh
+#  on:
+#    branch: master
