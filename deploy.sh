@@ -22,3 +22,4 @@ cp -Rf $HOME/$SITE_DIR/* .
 git add -f .
 git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
 git push -fq origin $TARGET_BRANCH > /dev/null
+exit 0

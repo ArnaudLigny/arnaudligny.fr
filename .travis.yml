@@ -9,7 +9,9 @@ before_script:
 
 script:
   - php build.php -e=prod
-  - deploy.sh
+
+after_success:
+  - bash deploy.sh
 
 #deploy:
 #  skip_cleanup: true
