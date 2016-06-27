@@ -1,7 +1,9 @@
+#!/usr/local/bin/php
 <?php
 if (php_sapi_name() !== 'cli') {
     return;
 }
+date_default_timezone_set('Europe/Paris');
 require_once 'vendor/autoload.php';
 use PHPoole\PHPoole;
 
