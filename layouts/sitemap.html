@@ -3,7 +3,7 @@
 {% for page in site.pages %}
     <url>
         <loc>{{ url(page) }}</loc>
-        <lastmod>{{ page.date|date('Y-m-dTH:i:sP') }}</lastmod>
+        <lastmod>{{ page.date|date('c') }}</lastmod>
 {% if page.sitemap is defined %}
 {% if page.sitemap.changefreq %}
         <changefreq>{{ page.sitemap.changefreq }}</changefreq>
