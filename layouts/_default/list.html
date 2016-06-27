@@ -2,6 +2,34 @@
 
 {% block content %}
 <section id="articles">
+{% if page.pagination is defined %}
+    {% for post in page.pagination.pages %}
+    <article class="post">
+        <header>
+            <h3><a href="{{ url(post) }}">{{ post.title }}</a></h3>
+            {% if post.date %}
+            <span class="date">{{ post.date|date("j M Y") }}</span>
+            {% endif %}
+        </header>
+        <section class="content">
+            {{ post.content|excerpt }}
+        </section>
+        <div class="more">
+            <a href="{{ url(post) }}">lire la suite&rarr;</a>
+        </div>
+    </article>
+    <hr />
+    {% endfor %}
+    <p>
+        {% if page.pagination.prev is defined %}
+        <a href="{{ url(page.pagination.prev) }}">Prev</a>
+        {% endif %}
+        {% if page.pagination.prev is defined and page.pagination.next is defined %}|{% endif %}
+        {% if page.pagination.next is defined %}
+        <a href="{{ url(page.pagination.next) }}">Next</a>
+        {% endif %}
+    </p>
+{% else %}
     {% for post in site.pages|filterBySection(page.pathname)|sortByDate %}
     <article class="post">
         <header>
@@ -19,5 +47,6 @@
     </article>
     <hr />
     {% endfor %}
+{% endif %}
 </section>
 {% endblock %}
