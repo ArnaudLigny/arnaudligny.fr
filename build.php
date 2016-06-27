@@ -11,6 +11,18 @@ $options_dev = [
     'site' => [
         'title'   => "Arnaud Ligny",
         'baseurl' => 'http://localhost:8000/',
+        'menu' => [
+            'main' => [
+                'index' => [
+                    'id'   => 'index',
+                    'name' => 'AL',
+                ],
+                'about' => [
+                    'id'      => 'about',
+                    'disabled' => true,
+                ],
+            ],
+        ],
     ],
     'frontmatter' => [
         'format' => 'yml'

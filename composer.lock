@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1fc5c805a60d02f28cbef31a1e43eb5c",
+    "hash": "f792fbf055f9512a15e9c2c1d6a3370c",
     "content-hash": "5e726ce8e76c07e001865c8d5dbb58df",
     "packages": [
         {
@@ -369,7 +369,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPoole/PHPoole-library",
-                "reference": "a5492300c3a3d79d7d860b2c58c804e1d6379141"
+                "reference": "86f86e57c59a8b5141fee5710d4684c01363e20a"
             },
             "require": {
                 "cocur/slugify": "^2.0",
@@ -424,7 +424,7 @@
                 "twig",
                 "website"
             ],
-            "time": "2016-06-24 13:06:48"
+            "time": "2016-06-27 15:36:21"
         },
         {
             "name": "symfony/filesystem",
