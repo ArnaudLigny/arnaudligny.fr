@@ -1,7 +1,7 @@
 ---
 title: "Application mobile : Native ou hybride ?"
 date: 2015-10-23
-tag: [Android, Apache Cordova, iOS, Phonegap, React Native, Windows Phone]
+tags: [Android, Apache Cordova, iOS, Phonegap, React Native, Windows Phone]
 ---
 
 Aujourd'hui, il n'est plus question de faire l'impasse quant à sa présence sur mobile lorsque l'on propose un service en ligne, que ce soit à destination du grand public ou de ses collaborateurs.
