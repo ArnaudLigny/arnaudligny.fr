@@ -5,10 +5,10 @@ php:
 
 sudo: false
 
-cache:
-  directories:
-    - vendor
-    - $COMPOSER_CACHE_DIR
+#cache:
+#  directories:
+#    - vendor
+#    - $COMPOSER_CACHE_DIR
 
 before_script:
   - phpenv config-rm xdebug.ini
@@ -19,10 +19,3 @@ script:
 
 after_success:
   - bash deploy.sh
-
-#deploy:
-#  skip_cleanup: true
-#  provider: script
-#  script: deploy.sh
-#  on:
-#    branch: master
