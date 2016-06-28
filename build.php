@@ -29,6 +29,12 @@ $options_dev = [
     'frontmatter' => [
         'format' => 'yml'
     ],
+    'static' => [
+        'exclude' => [
+            'CV_ArnaudLigny-2014.pdf',
+            'CV_ArnaudLigny-2015.pdf',
+        ],
+    ],
 ];
 $options_prod = array_replace_recursive($options_dev, [
     'site' => [

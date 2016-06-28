@@ -369,7 +369,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPoole/PHPoole-library",
-                "reference": "86f86e57c59a8b5141fee5710d4684c01363e20a"
+                "reference": "e7fe2d11d83bc7227aaff242f99d480c163033cf"
             },
             "require": {
                 "cocur/slugify": "^2.0",
@@ -424,7 +424,7 @@
                 "twig",
                 "website"
             ],
-            "time": "2016-06-27 15:36:21"
+            "time": "2016-06-28 00:38:49"
         },
         {
             "name": "symfony/filesystem",
