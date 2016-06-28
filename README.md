@@ -8,10 +8,11 @@ The website is automatically built and deployed through [Travis CI](https://trav
 ```
 $ composer install
 $ php build.php -e=prod
+$ export GH_TOKEN=your_github_token
 $ sh deploy.sh
 ```
 
 ## Test locally
 ```
-$ php build.php
+$ php build.php -e=dev
 ```
