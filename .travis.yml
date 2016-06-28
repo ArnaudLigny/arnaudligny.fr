@@ -5,6 +5,10 @@ php:
 
 sudo: false
 
+branches:
+  only:
+    - master
+
 #cache:
 #  directories:
 #    - vendor
