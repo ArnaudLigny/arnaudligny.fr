@@ -81,4 +81,4 @@ L'élément différenciant restant l'expérience utilisateur "plus immersive" et
 1. Vous avez besoin d'une application très réactive et immersive (au sens environnement applicatif) et vous avez les moyens de vos ambitions : Faites du natif.
 2. Pour tout les autres cas, la solution hybride est plus que recommandée !
 
-_Billet initialement posté sur [Adfab Connect](https://connect.adfab.fr/mobile/application-mobile-native-ou-hybride)._
+_Initialement publié sur [Adfab Connect](https://connect.adfab.fr/mobile/application-mobile-native-ou-hybride)._
