@@ -6,49 +6,25 @@ if (php_sapi_name() !== 'cli') {
 date_default_timezone_set('Europe/Paris');
 require_once 'vendor/autoload.php';
 use PHPoole\PHPoole;
+use Symfony\Component\Yaml\Yaml;
 
 $getopt = getopt('e::');
 
+$options = Yaml::parse(file_get_contents('phpoole.yml'));
 $options_dev = [
     'site' => [
-        'title'   => "Arnaud Ligny",
-        'baseurl' => 'http://localhost:8000/',
-        'menu' => [
-            'main' => [
-                'index' => [
-                    'id'   => 'index',
-                    'name' => 'AL',
-                ],
-                'about' => [
-                    'id'      => 'about',
-                    'disabled' => true,
-                ],
-            ],
-        ],
-    ],
-    'frontmatter' => [
-        'format' => 'yml'
-    ],
-    'static' => [
-        'exclude' => [
-            'CV_ArnaudLigny-2014.pdf',
-            'CV_ArnaudLigny-2015.pdf',
-        ],
+        'baseurl' => 'http://localhost:8000',
     ],
 ];
-$options_prod = array_replace_recursive($options_dev, [
-    'site' => [
-        'baseurl' => 'http://arnaudligny.fr/',
-    ],
-]);
 
 $prod = (isset($getopt['e']) && $getopt['e'] == 'prod') ? true : false;
+$options = (!$prod) ? array_replace_recursive($options, $options_dev) : $options;
 
-$options = ($prod) ? $options_prod : $options_dev;
-
-$phpoole = new PHPoole('./', null, $options);
+$phpoole = new PHPoole($options);
 $phpoole->build();
 
 if (!$prod) {
+    echo "Start server http://localhost:8000\n";
+    echo "Ctrl-C to stop it\n";
     exec('php -S localhost:8000 -t _site');
 }

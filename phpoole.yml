@@ -1,3 +1,17 @@
 site:
   title: "Arnaud Ligny"
   baseurl: http://arnaudligny.fr/
+  menu:
+    main:
+      index:
+        id: index
+        name: AL
+      about:
+        id: about
+        disabled: true
+frontmatter:
+  format: yml
+static:
+  exclude:
+    - CV_ArnaudLigny-2014.pdf
+    - CV_ArnaudLigny-2015.pdf
