@@ -1,6 +1,7 @@
 #!/bin/bash
-#set -e
+set -ev
 
+REPO="Narno/arnaudligny.fr"
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 SITE_DIR="_site"
@@ -10,13 +11,13 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]
     exit 0
 fi
 
-echo "Starting to update gh-pages"
+echo "Starting to update gh-pages..."
 
 cp -R $SITE_DIR $HOME/$SITE_DIR
 cd $HOME
 git config --global user.name "Travis"
-git config --global user.email "travis@travis-ci.org"
-git clone --quiet --branch=$TARGET_BRANCH https://${GH_TOKEN}@github.com/Narno/arnaudligny.fr.git  gh-pages > /dev/null
+git config --global user.email "contact@travis-ci.org"
+git clone --quiet --branch=$TARGET_BRANCH https://${GH_TOKEN}@github.com/${REPO}.git gh-pages > /dev/null
 cd gh-pages
 cp -Rf $HOME/$SITE_DIR/* .
 git add -f .
