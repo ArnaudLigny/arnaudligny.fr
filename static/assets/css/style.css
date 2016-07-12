@@ -33,12 +33,8 @@ h2 {
     width: 128px;
     height: 128px;
     border-radius:         50%;
-    -moz-border-radius:    50%;
-    -webkit-border-radius: 50%;
     background: #eeeeee url('http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=256') no-repeat;
     background-size: 128px 128px;
-    -moz-box-shadow:    inset 0 0 10px #666;
-    -webkit-box-shadow: inset 0 0 10px #666;
     box-shadow:         inset 0 0 10px #666;
     margin-right: 30px;
     float:left;
@@ -51,8 +47,6 @@ h2 {
 a, a:visited {
     color: #d23;
     text-decoration: none;
-    -webkit-transition: color 0.15s linear;
-    -moz-transition: color 0.15s linear;
     border-bottom: 1px dotted #fcc;
 }
 
@@ -98,8 +92,6 @@ a:hover {
 
     #avatar {
         margin: 30px auto;
-        -webkit-transition: -webkit-transform 0.5s ease-in-out;
-        -moz-transition: -moz-transform 0.5s ease-in-out;
         float: none;
     }
 }
