@@ -1,7 +1,8 @@
 {
   "require": {
     "narno/phpoole-library": "1.1.x-dev",
-    "symfony/yaml": "2.8.*"
+    "glicer/w3c-validator": "dev-master",
+    "symfony/finder": "^2.8"
   },
   "repositories": [
     {

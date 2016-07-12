@@ -23,3 +23,4 @@ script:
 
 after_success:
   - bash deploy.sh
+  - php validator.php
