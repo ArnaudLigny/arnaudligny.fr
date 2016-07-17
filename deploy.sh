@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ev
+set -e
 
 REPO="Narno/arnaudligny.fr"
 SOURCE_BRANCH="master"
