@@ -2,64 +2,65 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <title>Arnaud Ligny</title>
-    <meta name="description" content="Consultant technique Web - Paris, France" />
-    <meta property="og:site_name" content="Arnaud Ligny" />
-    <meta name="keywords" content="Arnaud Ligny, Consultant technique, PHP, eCommerce, Magento" />
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta name="keywords" content="{{ site.keywords|join(', ') }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="Shortcut Icon" type="image/x-icon" href="http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=16.gif" />
+    <link rel="Shortcut Icon" type="image/x-icon" href="{{ site.gravatar }}?s=16.gif" />
     <link href="http://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{ url() ~ 'assets/css/style.css' }}" media="all" />
-    <link rel="alternate" type="application/rss+xml" title="Arnaud Ligny : blog" href="/rss.xml" />
-    <meta property="og:title" content="Arnaud Ligny" />
-    <meta property="og:description" content="Consultant technique Web - Paris, France" />
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/style.css" media="all" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} : blog" href="/rss.xml" />
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.description }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:profile:first_name" content="Arnaud" />
-    <meta property="og:profile:last_name" content="Ligny" />
-    <meta property="og:url" content="http://arnaudligny.fr/" />
-    <meta property="og:image" content="http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=300" />
+{% set firstname = site.title|split(' ', -1) %}
+    <meta property="og:profile:first_name" content="{{ firstname[0] }}" />
+{% set lastname = site.title|split(' ', 2) %}
+    <meta property="og:profile:last_name" content="{{ lastname[1] }}" />
+    <meta property="og:url" content="{{ site.baseurl }}" />
+    <meta property="og:image" content="{{ site.gravatar }}?s=300" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@arnaudligny" />
-    <meta name="twitter:creator" content="@arnaudligny" />
+    <meta name="twitter:site" content="@{{ site.social.twitter }}" />
+    <meta name="twitter:creator" content="@{{ site.social.twitter }}" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css">
 </head>
 <body>
 <div id="main">
-    {% block header %}
+{% block header %}
     <div id="header">
-        {% block subheader %}
+{% block subheader %}
         <a href="/"><div id="avatar"></div></a>
-        <h1>Arnaud Ligny</h1>
+        <h1>{{ site.title }}</h1>
         <h2>Consultant technique Web</h2>
-        {% endblock subheader %}
-        {% block menu %}
+{% endblock subheader %}
+{% block menu %}
         <ul>
-            {% for entry in site.menus.main|sortByWeight %}
-            {% if page.id != entry.id %}
-            {% if entry.id == 'index' %}
+{% for entry in site.menus.main|sortByWeight %}
+{% if page.id != entry.id %}
+{% if entry.id == 'index' %}
             <li><a href="{{ url(entry.url) }}"><img src="http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=20.gif" />&nbsp;{{ entry.name }}</a></li>
-            {% else %}
+{% else %}
             <li><a href="{{ url(entry.url) }}">{{ entry.name }}</a></li>
-            {% endif %}
-            {% endif %}
-            {% endfor %}
-            <!--<li><a href="{{ url('blog') }}">Blog</a></li>-->
-            <li><a href="http://twitter.com/ArnaudLigny">Twitter</a></li>
-            <li><a href="https://github.com/Narno">GitHub</a></li>
-            <li><a href="http://www.linkedin.com/in/arnaudligny">LinkedIn</a></li>
-            <li><a href="{{ url() }}CV_ArnaudLigny-2016.pdf">CV</a></li>
+{% endif %}
+{% endif %}
+{% endfor %}
+            <li><a href="http://twitter.com/{{ site.social.twitter }}">Twitter</a></li>
+            <li><a href="https://github.com/{{ site.social.github }}">GitHub</a></li>
+            <li><a href="http://www.linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a></li>
+            <li><a href="{{ site.baseurl }}{{ site.social.cv }}">CV</a></li>
         </ul>
-        {% endblock menu %}
+{% endblock menu %}
     </div>
-    {% endblock header %}
-    {% block content %}
+{% endblock header %}
+{% block content %}
     <div itemscope itemtype="http://schema.org/Person">
         <p><span itemprop="name">Arnaud Ligny</span>, <span itemprop="jobTitle">Consultant technique</span> expérimenté, j’accompagne les marques dans la phase de conception et de développement technique de leur activité e-commerce.</p>
         <p>Analyste programmeur de formation, je suis spécialisé dans les technologies du Web, la conception fonctionnelle et technique, la gestion et le pilotage de projets techniques e-commerce, et plus particulièrement via la solution <a href="http://magento.com">Magento</a>.</p>
         <p>En 10 ans, j’ai apporté mon expertise sur plus de 20 projets e-commerce (à la fois en agence et chez l'annonceur), pour <a href="http://www.etam.com">Etam</a>, <a href="http://eu.christianlouboutin.com">Christian Louboutin</a>, <a href="http://france.hermes.com">Hermès</a>, <a href="http://www.repetto.fr">Repetto</a>, <a href="http://www.dpam.com">Du Pareil au Même</a>, <a href="http://www.thekooples.com">The Kooples</a>, ou encore <a href="http://www.zadig-et-voltaire.com">Zadig &amp; Voltaire</a>.</p>
         <p>Localisation : <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Paris</span> XIIième, <span itemprop="addressCountry">France</span></span>.</p>
     </div>
-    {% endblock content %}
+{% endblock content %}
 </div>
 <div id="footer">Powered by <a href="{{ phpoole.url }}">{{phpoole.poweredby}}</a></div>
 <!-- google analytics -->
@@ -68,7 +69,7 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-30599234-2', 'auto');
+    ga('create', 'UA-{{ site.ga }}', 'auto');
     ga('send', 'pageview');
 </script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>

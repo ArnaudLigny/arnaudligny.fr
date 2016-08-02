@@ -7,17 +7,17 @@
 <article class="post">
     <header>
         <h3>{{ page.title }}</h3>
-        {% if page.date %}
+{% if page.date %}
         <span class="date">{{ page.date|date("j M Y") }}</span>
-        {% endif %}
+{% endif %}
     </header>
     <section class="content">
         {{ page.content }}
     </section>
     <div class="tags">
-        {% for tag in page.tags %}
+{% for tag in page.tags %}
         <a href="{{ url('tags/' ~ tag) }}">#{{ tag }}</a>&nbsp;
-        {% endfor %}
+{% endfor %}
     </div>
 </article>
 {% endblock %}

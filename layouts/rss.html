@@ -5,7 +5,7 @@
         <description>{{ site.description }}</description>
         <lastBuildDate>{{ page.date|date('Y-m-dTH:i:sP') }}</lastBuildDate>
         <link>{{ site.baseurl }}</link>
-{% for page in site.pages|filterBySection('blog') %}
+{% for page in site.pages|filterBy('section', 'blog') %}
         <item>
             <title>{{ page.title }}</title>
             <description>{{ page.content|excerpt|striptags }}</description>
