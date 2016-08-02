@@ -10,6 +10,7 @@ site:
         id: index
         name: AL
         url: /
+        weight: 0
   social:
     twitter: ArnaudLigny
     github: Narno
