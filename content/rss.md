@@ -1,4 +1,4 @@
 ---
-layout: rss
+layout: rss.xml
 permalink: rss.xml
 ---
