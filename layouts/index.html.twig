@@ -16,7 +16,7 @@
     <meta name="keywords" content="{{ site.keywords|join(', ') }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="Shortcut Icon" type="image/x-icon" href="{{ site.gravatar }}?s=16.gif" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} : blog" href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} : blog" href="{{ url('rss.xml') }}" />
     <meta property="og:title" content="{{ site.title }}" />
     <meta property="og:description" content="{{ site.description }}" />
     <meta property="og:type" content="website" />
@@ -29,6 +29,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@{{ site.social.twitter }}" />
     <meta name="twitter:creator" content="@{{ site.social.twitter }}" />
+{% filter minifyCSS %}
     <style>
         html, body {
             font: 200 27px/45px 'Raleway', sans-serif;
@@ -40,8 +41,61 @@
             margin: 50px auto;
         }
     </style>
-    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/style.css" media="all" />
-    <!-- google analytics -->
+{% endfilter %}
+    <link rel="stylesheet" href="{{ url(minify('assets/css/style.css')) }}" media="all" />
+</head>
+<body>
+    <div id="main">
+{% block header %}
+        <div id="header">
+{% block subheader %}
+            <a href="/"><div id="avatar"></div></a>
+            <h1>{{ site.title }}</h1>
+            <h2>Consultant technique Web</h2>
+{% endblock subheader %}
+{% block menu %}
+            <ul>
+{% for entry in site.menus.main|sortByWeight %}
+{% if page.id != entry.id %}
+{% if entry.id == 'index' %}
+                <li><a href="{{ url(entry.url) }}"><img src="http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=20.gif" />&nbsp;{{ entry.name }}</a></li>
+{% else %}
+                <li><a href="{{ url(entry.url) }}">{{ entry.name }}</a></li>
+{% endif %}
+{% endif %}
+{% endfor %}
+                <li><a href="http://twitter.com/{{ site.social.twitter }}">Twitter</a></li>
+                <li><a href="https://github.com/{{ site.social.github }}">GitHub</a></li>
+                <li><a href="http://www.linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a></li>
+                <li><a href="{{ url(site.social.cv) }}">CV</a></li>
+            </ul>
+{% endblock menu %}
+        </div>
+{% endblock header %}
+{% block content %}
+        <!-- Content -->
+{% include 'presentation.html.twig' %}
+{% endblock content %}
+    </div>
+    <div id="footer">Powered by <a href="{{ phpoole.url }}">PHPoole</a></div>
+    <!-- Web font -->
+{% filter minifyJS %}
+    <script>
+       WebFontConfig = {
+          google: { id: 'Raleway' }
+       };
+       (function(d) {
+          var wf = d.createElement('script'), s = d.scripts[0];
+          wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+          s.parentNode.insertBefore(wf, s);
+       })(document);
+    </script>
+{% endfilter %}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <!-- Google Analytics -->
+{% filter minifyJS %}
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -50,57 +104,7 @@
         ga('create', 'UA-{{ site.ga }}', 'auto');
         ga('send', 'pageview');
     </script>
-</head>
-<body>
-<div id="main">
-{% block header %}
-    <div id="header">
-{% block subheader %}
-        <a href="/"><div id="avatar"></div></a>
-        <h1>{{ site.title }}</h1>
-        <h2>Consultant technique Web</h2>
-{% endblock subheader %}
-{% block menu %}
-        <ul>
-{% for entry in site.menus.main|sortByWeight %}
-{% if page.id != entry.id %}
-{% if entry.id == 'index' %}
-            <li><a href="{{ url(entry.url) }}"><img src="http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=20.gif" />&nbsp;{{ entry.name }}</a></li>
-{% else %}
-            <li><a href="{{ url(entry.url) }}">{{ entry.name }}</a></li>
-{% endif %}
-{% endif %}
-{% endfor %}
-            <li><a href="http://twitter.com/{{ site.social.twitter }}">Twitter</a></li>
-            <li><a href="https://github.com/{{ site.social.github }}">GitHub</a></li>
-            <li><a href="http://www.linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a></li>
-            <li><a href="{{ site.baseurl }}{{ site.social.cv }}">CV</a></li>
-        </ul>
-{% endblock menu %}
-    </div>
-{% endblock header %}
-{% block content %}
-    <div itemscope itemtype="http://schema.org/Person">
-        <p><span itemprop="name">Arnaud Ligny</span>, <span itemprop="jobTitle">Consultant technique</span> expérimenté, j’accompagne les marques dans la phase de conception et de développement technique de leur activité e-commerce.</p>
-        <p>Analyste programmeur de formation, je suis spécialisé dans les technologies du Web, la conception fonctionnelle et technique, la gestion et le pilotage de projets techniques e-commerce, et plus particulièrement via la solution <a href="http://magento.com">Magento</a>.</p>
-        <p>En 10 ans, j’ai apporté mon expertise sur plus de 20 projets e-commerce (à la fois en agence et chez l'annonceur), pour <a href="http://www.etam.com">Etam</a>, <a href="http://eu.christianlouboutin.com">Christian Louboutin</a>, <a href="http://france.hermes.com">Hermès</a>, <a href="http://www.repetto.fr">Repetto</a>, <a href="http://www.dpam.com">Du Pareil au Même</a>, <a href="http://www.thekooples.com">The Kooples</a>, ou encore <a href="http://www.zadig-et-voltaire.com">Zadig &amp; Voltaire</a>.</p>
-        <p>Localisation : <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Paris</span> XIIième, <span itemprop="addressCountry">France</span></span>.</p>
-    </div>
-{% endblock content %}
-</div>
-<div id="footer">Powered by <a href="{{ phpoole.url }}">PHPoole</a></div>
-<script>
-   WebFontConfig = {
-      google: { id: 'Raleway' }
-   };
-   (function(d) {
-      var wf = d.createElement('script'), s = d.scripts[0];
-      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
-      s.parentNode.insertBefore(wf, s);
-   })(document);
-</script>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+{% endfilter %}
+}
 </body>
 </html>
