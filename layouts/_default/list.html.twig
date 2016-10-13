@@ -9,7 +9,7 @@
 {% for post in page.pagination.pages %}
     <article class="post">
         <header>
-            <h3><a href="{{ url(post) }}">{{ post.title }}</a></h3>
+            <h2><a href="{{ url(post) }}">{{ post.title }}</a></h2>
 {% if post.date %}
             <span class="date">{{ post.date|date("j M Y") }}</span>
 {% endif %}
@@ -25,11 +25,11 @@
 {% endfor %}
     <p>
 {% if page.pagination.prev is defined %}
-        <a href="{{ url(page.pagination.prev) }}">Prev</a>
+        <a href="{{ url(page.pagination.prev) }}">&lArr; Précédent</a>
 {% endif %}
 {% if page.pagination.prev is defined and page.pagination.next is defined %}|{% endif %}
 {% if page.pagination.next is defined %}
-        <a href="{{ url(page.pagination.next) }}">Next</a>
+        <a href="{{ url(page.pagination.next) }}">Suivant &rArr;</a>
 {% endif %}
     </p>
 {% else %}
