@@ -18,25 +18,25 @@
             {{ post.content|excerpt }}
         </section>
         <div class="more">
-            <a href="{{ url(post) }}">Lire la suite &rarr;</a>
+            <a href="{{ url(post) }}">Lire la suite &raquo;</a>
         </div>
     </article>
     <hr />
 {% endfor %}
     <p>
 {% if page.pagination.prev is defined %}
-        <a href="{{ url(page.pagination.prev) }}">&lArr; Précédent</a>
+        <a href="{{ url(page.pagination.prev) }}">&lsaquo; Précédent</a>
 {% endif %}
 {% if page.pagination.prev is defined and page.pagination.next is defined %}|{% endif %}
 {% if page.pagination.next is defined %}
-        <a href="{{ url(page.pagination.next) }}">Suivant &rArr;</a>
+        <a href="{{ url(page.pagination.next) }}">Suivant &rsaquo;</a>
 {% endif %}
     </p>
 {% else %}
 {% for post in site.pages|filterBySection(page.pathname)|sortByDate %}
     <article class="post">
         <header>
-            <h3><a href="{{ url(post) }}">{{ post.title }}</a></h3>
+            <h2><a href="{{ url(post) }}">{{ post.title }}</a></h2>
 {% if post.date %}
             <span class="date">{{ post.date|date("j M Y") }}</span>
 {% endif %}
@@ -45,7 +45,7 @@
             {{ post.content|excerpt }}
         </section>
         <div class="more">
-            <a href="{{ url(post) }}">lire la suite&rarr;</a>
+            <a href="{{ url(post) }}">Lire la suite &raquo;</a>
         </div>
     </article>
     <hr />
