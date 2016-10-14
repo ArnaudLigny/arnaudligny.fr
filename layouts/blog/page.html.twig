@@ -9,6 +9,7 @@
         <h1>{{ page.title }}</h1>
 {% if page.date %}
         <span class="date">{{ page.date|date("j M Y") }}</span>
+        <span>&#128336; {{ readtime(page.content) }} min</span>
 {% endif %}
     </header>
     <section class="content">

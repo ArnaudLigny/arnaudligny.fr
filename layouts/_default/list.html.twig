@@ -12,6 +12,7 @@
             <h2><a href="{{ url(post) }}">{{ post.title }}</a></h2>
 {% if post.date %}
             <span class="date">{{ post.date|date("j M Y") }}</span>
+            <span>&#128336; {{ readtime(post.content) }} min</span>
 {% endif %}
         </header>
         <section class="content">

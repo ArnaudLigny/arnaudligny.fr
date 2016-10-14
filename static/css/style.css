@@ -65,22 +65,27 @@ pre {
 
 #articles > article > header > h2 {
     border-bottom: none;
+    margin-bottom: 0.5rem;
 }
 
 #articles > article > header > h1,
 #main > article > header > h1 {
-    text-align: left;
+    margin-bottom: 0.5rem;
 }
 #articles > article > header > span,
 #main > article > header > span {
-    float: right;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    border-bottom: 1px solid #eee;
+    margin-right: 2rem;
+    color: #9a9a9a;
 }
 #main > ul > li > h2 {
     border-bottom: none;
+}
+
+.no-style {
+    list-style: none;
+}
+.no-style ul {
+    list-style-type: disc;
 }
 
 @media (max-width: 800px) {
@@ -93,16 +98,11 @@ pre {
     }
 
     p {
-        padding: 0 0 0 15px;
         min-width: 250px;
     }
 }
 
 @media (max-width: 480px) {
-    #main {
-        margin-top: 20px;
-    }
-
     h1, h2 {
         text-align: center;
     }
