@@ -17,7 +17,7 @@ L'idée est donc de pousser la qualité de compression (jpeg) à 90%, voici les 
 2. Créer un module permettant d'administrer la valeur de la qualité de compression via le back-office : intéressant, réutilisable mais trop long à réaliser. Je passe ! :-)
 3. Overrider (surcharger) le code : facile, rapide et "propre" : la solution que j'ai retenu
 
-#### Modifier la qualité de compression des photos Magento :
+## Modifier la qualité de compression des photos Magento :
 
 **Étape 1**
 
@@ -47,7 +47,7 @@ Pour terminer, il faut penser à vider le cache des images via System > Cache Ma
 
 Voilà, c'était simple, efficace et réutilisable sur n'importe quel projet, à partir du moment ou vous travaillez avec des images au format jpeg (qui le format le plus commun dans le domaine de la photo numérique) et que votre serveur supporte GD2.
 
-#### Mise à jour juin 2010 :
+## Mise à jour juin 2010 :
 
 Il est à noter que depuis Magento version CE 1.4 et EE 1.8, il n'est plus nécessaire de dupliquer l'adapter.
 En effet, une nouvelle méthode setQuality() à été implémentée et elle peut être utilisée directement dans les templates.

@@ -18,7 +18,7 @@ Pour rappel, il faut savoir que Magento utilise un serveur [PEAR](http://pear.ph
 
 Voici la procédure à suivre, en utilisant l'exemple du [Modern Theme](http://www.magentocommerce.com/magento-connect/Magento+Core/extension/146/modern-theme-for-magento-frontend-interface).
 
-#### 1. Déterminer l'extension à télécharger via sa page sur MagentoConnect
+## 1. Déterminer l'extension à télécharger via sa page sur MagentoConnect
 
 Modern Theme : [http://www.magentocommerce.com/magento-connect/Magento+Core/extension/146/modern-theme-for-magento-frontend-interface](http://www.magentocommerce.com/magento-connect/Magento+Core/extension/146/modern-theme-for-magento-frontend-interface)
 
@@ -26,7 +26,7 @@ Ici l'objectif est d'obtenir la clef PEAR de l'extension. Pour notre exemple la 
 
 **MagentoConnect 2.0 :** ```http://connect20.magentocommerce.com/community/Interface_Frontend_Default_Modern```
 
-#### 2. Connaitre le numéro de la release la plus récente
+## 2. Connaitre le numéro de la release la plus récente
 
 ```http://connect.magentocommerce.com/core/Chiara_PEAR_Server_REST/r/interface_frontend_default_modern/allreleases.xml```
 
@@ -42,7 +42,7 @@ A partir de cette URL on obtient un fichier XML listant l'ensemble des versions 
 
 **MagentoConnect 2.0 :** Structure XML identique.
 
-#### 3. Construire le lien du package pour le télécharger
+## 3. Construire le lien du package pour le télécharger
 
 Une fois le numéro de version choisi (le dernier en l'occurrence) il suffit de construire l'URL d'accès au fichier téléchargeable (le package).
 

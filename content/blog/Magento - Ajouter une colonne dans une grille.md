@@ -15,7 +15,7 @@ Le principe et la mise en œuvre sont très simple car Magento tire des évènem
 
 Pour illustrer mes propos, je vais prendre l’exemple de la grille des produits, dans laquelle je veux ajouter une colonne, après celle du SKU, affichant le contenu d’un attribut créer préalablement.
 
-#### 1ère étape : Associer un observer au déclenchement d’un évènement
+## 1ère étape : Associer un observer au déclenchement d’un évènement
 
 ```{namespace}_{module}/etc/config.xml``` :
 
@@ -50,7 +50,7 @@ Je pense que le nom des évènements est suffisamment explicite, mais dans le do
 
 Ainsi, je vais ajouter une colonne au moment de la construction des blocks de la grille et je vais enrichir la collection de manière à charger les données correspondant à cette nouvelle colonne.
 
-#### 2ème étape : Créer les méthodes de l’observer
+## 2ème étape : Créer les méthodes de l’observer
 
 ```{namespace}_{module}/Model/Observer.php``` :
 
