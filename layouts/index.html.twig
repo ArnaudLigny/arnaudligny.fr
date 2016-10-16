@@ -18,16 +18,18 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} : blog" href="{{ url('rss.xml') }}" />
     <!-- Facebook meta -->
     <meta property="og:locale" content="fr_FR" />
-    <meta property="og:url" content="{{ site.baseurl }}" />
 {% if page.nodeType == 'homepage' %}
+    <meta property="og:url" content="{{ site.baseurl }}" />
     <meta property="og:type" content="profile" />
     <meta property="fb:profile_id" content="{{ site.social.facebook_id }}" />
     <meta property="profile:first_name" content="{{ site.author.firstname }}" />
     <meta property="profile:last_name" content="{{ site.author.lastname }}" />
     <meta property="profile:username" content="{{ site.author.username }}" />
 {% elseif page.section == 'blog' %}
+    <meta property="og:url" content="{{ url(page) }}" />
     <meta property="og:type" content="article" />
 {% else %}
+    <meta property="og:url" content="{{ url(page) }}" />
     <meta property="og:type" content="website" />
 {% endif %}
     <meta property="og:title" content="{{ site.title }}" />
