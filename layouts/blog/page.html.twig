@@ -10,6 +10,7 @@
 {% if page.date %}
         <span class="date">{{ page.date|date("j M Y") }}</span>
         <span>&#128336; {{ readtime(page.content) }} min</span>
+        <span>&#9998; <a href="#disqus_thread"><script id="dsq-count-scr" src="//arnaudligny.disqus.com/count.js" async></script>Commentaires</a></span>
 {% endif %}
     </header>
     <section class="content">
@@ -20,5 +21,7 @@
         <a href="{{ url('tags/' ~ tag) }}">#{{ tag }}</a>&nbsp;
 {% endfor %}
     </div>
+<h2>Commentaires</h2>
+{% include 'blog/comments.html.twig' %}
 </article>
 {% endblock %}
