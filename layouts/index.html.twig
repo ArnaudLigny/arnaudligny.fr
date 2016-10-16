@@ -12,29 +12,38 @@
 {% endif %}
     {% endspaceless %}</title>
     <meta name="description" content="{{ site.description }}" />
-    <meta property="og:site_name" content="{{ site.title }}" />
     <meta name="keywords" content="{{ site.keywords|join(', ') }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="Shortcut Icon" type="image/x-icon" href="{{ site.gravatar }}?s=16.gif" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.gravatar }}?s=16.gif" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} : blog" href="{{ url('rss.xml') }}" />
-    <meta property="og:title" content="{{ site.title }}" />
-    <meta property="og:description" content="{{ site.description }}" />
-    <meta property="og:type" content="website" />
-{% set firstname = site.title|split(' ', -1) %}
-    <meta property="og:profile:first_name" content="{{ firstname[0] }}" />
-{% set lastname = site.title|split(' ', 2) %}
-    <meta property="og:profile:last_name" content="{{ lastname[1] }}" />
+    <!-- Facebook meta -->
+    <meta property="og:locale" content="fr_FR" />
     <meta property="og:url" content="{{ site.baseurl }}" />
+{% if page.nodeType == 'homepage' %}
+    <meta property="og:type" content="profile" />
+    <meta property="fb:profile_id" content="{{ site.social.facebook_id }}" />
+    <meta property="profile:first_name" content="{{ site.author.firstname }}" />
+    <meta property="profile:last_name" content="{{ site.author.lastname }}" />
+    <meta property="profile:username" content="{{ site.author.username }}" />
+{% elseif page.section == 'blog' %}
+    <meta property="og:type" content="article" />
+{% else %}
+    <meta property="og:type" content="website" />
+{% endif %}
+    <meta property="og:title" content="{{ site.title }}" />
     <meta property="og:image" content="{{ site.gravatar }}?s=300" />
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <!-- Twitter meta -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@{{ site.social.twitter }}" />
     <meta name="twitter:creator" content="@{{ site.social.twitter }}" />
+    <meta name="twitter:site" content="@{{ site.social.twitter }}" />
 {% filter minifyCSS %}
     <style>
         html {
-            font: 100%/3em 'Raleway', sans-serif;
             background-color: #fcfcfc;
             color: #444;
+            font: 100%/3em 'Raleway', sans-serif;
         }
         body {
             font-size: 1.8em;

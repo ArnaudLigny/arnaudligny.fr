@@ -16,7 +16,12 @@ site:
     github: Narno
     linkedin: arnaudligny
     cv: CV_ArnaudLigny-2016.pdf
+    facebook_id: 516589570
   ga: 30599234-2
+  author:
+    firstname: Arnaud
+    lastname: Ligny
+    username: Narno
 frontmatter:
   format: yml
 static:
