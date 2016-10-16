@@ -63,22 +63,23 @@ pre {
     float: right;
 }
 
+#articles > article > header > h1,
+#main > article > header > h1 {
+    margin-bottom: 0.5rem;
+}
+
 #articles > article > header > h2 {
     border-bottom: none;
     margin-bottom: 0.5rem;
 }
 
-#articles > article > header > h1,
-#main > article > header > h1 {
-    margin-bottom: 0.5rem;
-}
-#articles > article > header > span,
-#main > article > header > span {
-    margin-right: 2rem;
-    color: #9a9a9a;
-}
 #main > ul > li > h2 {
     border-bottom: none;
+}
+
+.post-meta span {
+    margin-right: 2rem;
+    color: #9a9a9a;
 }
 
 .no-style {
@@ -103,7 +104,8 @@ pre {
 }
 
 @media (max-width: 480px) {
-    h1, h2 {
+    #header h1, #header h2,
+    article.post h1, article.post h2 {
         text-align: center;
     }
 
@@ -127,6 +129,10 @@ pre {
 
     .logo {
       visibility: hidden;
+    }
+
+    .post-meta {
+        text-align: center;
     }
 }
 

@@ -10,11 +10,13 @@
     <article class="post">
         <header>
             <h2><a href="{{ url(post) }}">{{ post.title }}</a></h2>
+            <div class="post-meta">
 {% if post.date %}
-            <span class="date">{{ post.date|date("j M Y") }}</span>
+                <span class="date">{{ post.date|date("j M Y") }}</span>
 {% endif %}
-            <span>&#128336; {{ readtime(post.content) }} min</span>
-            <span>&#9998; <a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
+                <span>&#128336;&nbsp;{{ readtime(post.content) }} min</span>
+                <span>&#9998;&nbsp;<a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
+            </div>
         </header>
         <section class="content">
             {{ post.content|excerpt }}
