@@ -66,9 +66,13 @@
 {% block header %}
         <div id="header">
 {% block subheader %}
-            <a href="/"><div id="avatar"></div></a>
-            <h1>{{ site.title }}</h1>
-            <h2>Consultant technique Web</h2>
+            <div id="subheader">
+                <a href="/"><div id="avatar"></div></a>
+                <div id="title">
+                    <h1>{{ site.title }}</h1>
+                    <h2>Consultant technique Web</h2>
+                </div>
+            </div>
 {% endblock subheader %}
 {% block menu %}
             <ul>

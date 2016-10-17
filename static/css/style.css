@@ -78,6 +78,7 @@ pre {
 }
 
 .post-meta span {
+    font-size: 0.8em;
     margin-right: 2rem;
     color: #9a9a9a;
 }
@@ -96,6 +97,10 @@ pre {
 
     #avatar {
         margin-left: 15px;
+    }
+
+    #title {
+        margin-left: 180px;
     }
 
     p {
@@ -125,6 +130,10 @@ pre {
     #avatar {
         margin: 30px auto;
         float: none;
+    }
+
+    #title {
+        margin-left: 0;
     }
 
     .logo {
