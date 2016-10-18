@@ -107,7 +107,12 @@
         </div>
 {% endblock content %}
     </div>
-    <div id="footer">Powered by <a href="{{ phpoole.url }}">PHPoole</a></div>
+    <div id="footer">
+        <ul>
+            <li>&copy; {{ "now"|date("Y") }} <a href="mailto:arnaud[AROBASE]ligny[POINT]fr">Arnaud Ligny</a></li>
+            <li>Motorisé par <a href="{{ phpoole.url }}">PHPoole</a></li>
+        </ul>
+    </div>
     <!-- Web font -->
 {% filter minifyJS %}
     <script>
