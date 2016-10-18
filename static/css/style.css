@@ -128,16 +128,13 @@ pre {
     article.post h1, article.post h2 {
         text-align: center;
     }
-
     #header li {
         padding-right: 0px;
     }
-
     #header li:before {
         content: "\2022";
         padding-right: 5px;
     }
-
     #header li:first-child:before {
         content: none;
     }
@@ -161,23 +158,24 @@ pre {
 }
 
 .callout {
-  padding: 20px;
-  margin: 20px 0;
-  border: 1px solid rgba(221, 34, 51, 0.8);
-  border-left-width: 5px;
-  border-radius: 3px;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid rgba(221,34,51,.8);
+    border-left-width: 5px;
+    border-radius: 3px;
+    overflow: hidden;
 }
 .callout h4 {
-  margin-top: 0;
-  margin-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 .callout p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 .callout code {
-  border-radius: 3px;
+    border-radius: 3px;
 }
-
 .logo {
-  float: right;
+    float: right;
+    margin: 0.5em 0 0 0.5em;
 }
