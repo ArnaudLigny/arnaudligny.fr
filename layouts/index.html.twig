@@ -45,7 +45,7 @@
         html {
             background-color: #fcfcfc;
             color: #444;
-            font: 100%/3em 'Raleway', sans-serif;
+            font: 100%/3rem 'Raleway', sans-serif;
         }
         body {
             font-size: 1.8em;
@@ -62,9 +62,8 @@
     <link rel="stylesheet" href="{{ url(minify('css/style.css')) }}" media="all" />
 </head>
 <body>
-    <div id="main">
 {% block header %}
-        <div id="header">
+        <header>
 {% block subheader %}
             <div id="subheader">
                 <a href="/"><div id="avatar"></div></a>
@@ -75,6 +74,7 @@
             </div>
 {% endblock subheader %}
 {% block menu %}
+            <nav>
             <ul>
 {% for entry in site.menus.main|sortByWeight %}
 {% if page.id != entry.id %}
@@ -90,8 +90,9 @@
                 <li><a href="http://www.linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a></li>
                 <li><a href="{{ url(site.social.cv) }}">CV</a></li>
             </ul>
+            </nav>
 {% endblock menu %}
-        </div>
+        </header>
 {% endblock header %}
 {% block content %}
         <!-- Content -->
@@ -106,13 +107,12 @@
             </p>
         </div>
 {% endblock content %}
-    </div>
-    <div id="footer">
+    <footer>
         <ul>
             <li>&copy; {{ "now"|date("Y") }} <a href="mailto:arnaud[AROBASE]ligny[POINT]fr">Arnaud Ligny</a></li>
             <li>Motorisé par <a href="{{ phpoole.url }}">PHPoole</a></li>
         </ul>
-    </div>
+    </footer>
     <!-- Web font -->
 {% filter minifyJS %}
     <script>
