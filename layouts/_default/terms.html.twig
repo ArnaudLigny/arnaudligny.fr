@@ -5,7 +5,7 @@
 
 {% block content %}
 <h1 class="page-title">{{ page.plural|title }}</h1>
-<ul class="no-style">
+<ul class="list-no-style">
 {% for name, term in page.terms %}
     <li>
         <h2><a href="{{ url(page.plural ~ '/' ~ name) }}">{{ name }}</a> ({{ term|length }})</h2>

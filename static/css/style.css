@@ -33,20 +33,6 @@ pre {
     font: 65%/1 "Times New Roman", Serif !important;
 }
 
-#header h1,
-#header h2 {
-    line-height: normal;
-    border-bottom: none;
-}
-#header ul {
-    text-align: center;
-    padding-left: 0px;
-}
-#header li {
-    display: inline;
-    padding-right: 30px;
-}
-
 #avatar {
     width: 128px;
     height: 128px;
@@ -58,33 +44,64 @@ pre {
     float: left;
 }
 
-#footer {
+#subheader-title > h1,
+#subheader-title > h2 {
+    line-height: normal;
+    border-bottom: none;
+}
+
+body > header > nav > ul {
+    text-align: center;
+    padding-left: 0px;
+}
+body > header > nav > ul > li {
+    display: inline;
+    padding-right: 30px;
+}
+
+body > aside {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid rgba(221,34,51,.8);
+    border-left-width: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+body > aside > h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+body > aside > p:last-child {
+    margin-bottom: 0;
+}
+body > aside > code {
+    border-radius: 3px;
+}
+body > aside > p > .logo {
+    float: right;
+    margin: 0.5em 0 0 0.5em;
+}
+
+body > footer {
     font-size: 0.6em;
     float: right;
 }
-#footer li {
+body > footer > ul > li {
     display: inline;
     padding-right: 0;
 }
-#footer li:before {
+body > footer > ul > li:before {
     content: "\2022";
     padding-right: 5px;
 }
-#footer li:first-child:before {
+body > footer > ul > li:first-child:before {
     content: none;
 }
 
-#articles > article > header > h1,
-#main > article > header > h1 {
+article > header > h1,
+article > header > h2,
+body > ul > li > h2 {
     margin-bottom: 0.5rem;
-}
-
-#articles > article > header > h2 {
-    border-bottom: none;
-    margin-bottom: 0.5rem;
-}
-
-#main > ul > li > h2 {
     border-bottom: none;
 }
 
@@ -94,15 +111,15 @@ pre {
     color: #9a9a9a;
 }
 
-.no-style {
+.list-no-style {
     list-style: none;
 }
-.no-style ul {
+.list-no-style ul {
     list-style-type: disc;
 }
 
 @media (max-width: 800px) {
-    #main {
+    body {
         width: 100%;
     }
 
@@ -110,7 +127,7 @@ pre {
         margin-left: 15px;
     }
 
-    #title {
+    #subheader-title {
         margin-left: 180px;
     }
 
@@ -127,18 +144,19 @@ pre {
         font-size: 1.5em;
     }
 
-    #header h1, #header h2,
+    h1, h2,
     article.post h1, article.post h2 {
         text-align: center;
     }
-    #header li {
+
+    body > header > nav > ul > li {
         padding-right: 0px;
     }
-    #header li:before {
+    body > header > nav > ul > li:before {
         content: "\2022";
         padding-right: 5px;
     }
-    #header li:first-child:before {
+    body > header > nav > ul > li:first-child:before {
         content: none;
     }
 
@@ -147,38 +165,18 @@ pre {
         float: none;
     }
 
-    #title {
+    #subheader-title {
         margin-left: 0;
     }
 
-    .logo {
-      visibility: hidden;
+    body > aside {
+        overflow: visible;
+    }
+    body > aside > p > .logo {
+        visibility: hidden;
     }
 
-    .post-meta {
+    article > header > div.post-meta {
         text-align: center;
     }
-}
-
-.callout {
-    padding: 0.5em;
-    margin-top: 0.5em;
-    border: 1px solid rgba(221,34,51,.8);
-    border-left-width: 5px;
-    border-radius: 3px;
-    overflow: hidden;
-}
-.callout h4 {
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-.callout p:last-child {
-    margin-bottom: 0;
-}
-.callout code {
-    border-radius: 3px;
-}
-.logo {
-    float: right;
-    margin: 0.5em 0 0 0.5em;
 }

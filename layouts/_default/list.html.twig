@@ -4,30 +4,28 @@
 {% endblock subheader %}
 
 {% block content %}
-<section id="articles">
+<section id="posts">
 {% if page.pagination is defined %}
 {% for post in page.pagination.pages %}
     <article class="post">
         <header>
-            <h2><a href="{{ url(post) }}">{{ post.title }}</a></h2>
+            <h2 class="post-title"><a href="{{ url(post) }}">{{ post.title }}</a></h2>
             <div class="post-meta">
 {% if post.date %}
-                <span class="date">{{ post.date|date("j M Y") }}</span>
+                <span class="post-date">{{ post.date|date("j M Y") }}</span>
 {% endif %}
-                <span>&#128336;&nbsp;{{ readtime(post.content) }}&nbsp;min</span>
-                <span>&#9998;&nbsp;<a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
+                <span class="post-time">&#128336;&nbsp;{{ readtime(post.content) }}&nbsp;min</span>
+                <span class="post-com">&#9998;&nbsp;<a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
             </div>
         </header>
-        <section class="content">
-            {{ post.content|excerpt }}
-        </section>
-        <div class="more">
+        {{ post.content|excerpt }}
+        <footer class="more">
             <a href="{{ url(post) }}">Lire la suite &raquo;</a>
-        </div>
+        </footer>
     </article>
     <hr />
 {% endfor %}
-    <p>
+    <footer>
 {% if page.pagination.prev is defined %}
         <a href="{{ url(page.pagination.prev) }}">&lsaquo; Précédent</a>
 {% endif %}
@@ -35,24 +33,22 @@
 {% if page.pagination.next is defined %}
         <a href="{{ url(page.pagination.next) }}">Suivant &rsaquo;</a>
 {% endif %}
-    </p>
+    </footer>
 {% else %}
 {% for post in site.pages|filterBySection(page.pathname)|sortByDate %}
     <article class="post">
         <header>
-            <h2><a href="{{ url(post) }}">{{ post.title }}</a></h2>
+            <h2 class="post-title"><a href="{{ url(post) }}">{{ post.title }}</a></h2>
 {% if post.date %}
-            <span class="date">{{ post.date|date("j M Y") }}</span>
+            <span class="post-date">{{ post.date|date("j M Y") }}</span>
 {% endif %}
-            <span>&#128336; {{ readtime(post.content) }} min</span>
-            <span>&#9998; <a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
+            <span class="post-time">&#128336; {{ readtime(post.content) }} min</span>
+            <span class="post-com">&#9998; <a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
         </header>
-        <section class="content">
-            {{ post.content|excerpt }}
-        </section>
-        <div class="more">
+        {{ post.content|excerpt }}
+        <footer class="more">
             <a href="{{ url(post) }}">Lire la suite &raquo;</a>
-        </div>
+        </footer>
     </article>
     <hr />
 {% endfor %}
