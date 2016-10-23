@@ -121,6 +121,7 @@ body > ul > li > h2 {
 @media (max-width: 800px) {
     body {
         width: 100%;
+        margin: 0 .5rem 0 .5rem;
     }
 
     #avatar {
