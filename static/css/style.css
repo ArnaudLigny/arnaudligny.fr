@@ -59,7 +59,7 @@ body > header > nav > ul > li {
     padding-right: 30px;
 }
 
-body > aside {
+#page > aside {
     padding: 0.5em;
     margin-top: 0.5em;
     border: 1px solid rgba(221,34,51,.8);
@@ -67,34 +67,34 @@ body > aside {
     border-radius: 3px;
     overflow: hidden;
 }
-body > aside > h4 {
+#page > aside > h4 {
     margin-top: 0;
     margin-bottom: 5px;
 }
-body > aside > p:last-child {
+#page > aside > p:last-child {
     margin-bottom: 0;
 }
-body > aside > code {
+#page > aside > code {
     border-radius: 3px;
 }
-body > aside > p > .logo {
+#page > aside > p > .logo {
     float: right;
     margin: 0.5em 0 0 0.5em;
 }
 
-body > footer {
+#page > footer {
     font-size: 0.6em;
     float: right;
 }
-body > footer > ul > li {
+#page > footer > ul > li {
     display: inline;
     padding-right: 0;
 }
-body > footer > ul > li:before {
+#page > footer > ul > li:before {
     content: "\2022";
     padding-right: 5px;
 }
-body > footer > ul > li:first-child:before {
+#page > footer > ul > li:first-child:before {
     content: none;
 }
 
@@ -121,6 +121,10 @@ body > ul > li > h2 {
 @media (max-width: 800px) {
     body {
         width: 100%;
+        
+    }
+
+    #page {
         margin: 0 .5rem 0 .5rem;
     }
 
@@ -170,10 +174,10 @@ body > ul > li > h2 {
         margin-left: 0;
     }
 
-    body > aside {
+    #page > aside {
         overflow: visible;
     }
-    body > aside > p > .logo {
+    #page > aside > p > .logo {
         visibility: hidden;
     }
 
