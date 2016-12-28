@@ -1,7 +1,7 @@
 ---
 title: "Magento : ça prend forme !"
 date: 22-12-2007
-tag: [design, Magento, osCommerce]
+tags: [design, Magento, osCommerce]
 permalink: blog/magento-ca-prend-forme
 ---
 Oui [Magento](http://www.magentocommerce.com/) prend forme, pourquoi ? Parcequ'un (nouveau) guide complet orienté design à été publié par l'équipe de varien. Ce guide est nettement plus complet et précis que ce qui avait été rendu disponible jusqu'à maintenant.
