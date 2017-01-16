@@ -1,5 +1,5 @@
 {
-    "lang": "fr",
+    "lang": "fr-FR",
     "dir": "ltr",
     "short_name": "Arnaud Ligny",
     "name": "Arnaud Ligny",
@@ -41,5 +41,5 @@
     "display": "standalone",
     "orientation": "portrait",
     "background_color": "#fcfcfc",
-    "theme_color": "#d23"
+    "theme_color": "#d23d23"
 }
