@@ -1,0 +1,45 @@
+{
+    "lang": "fr",
+    "dir": "ltr",
+    "short_name": "Arnaud Ligny",
+    "name": "Arnaud Ligny",
+    "description": "Arnaud Ligny, Consultant technique Web",
+    "icons": [{
+        "src": "http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=48",
+        "sizes": "48x48",
+        "type": "image/jpeg"
+    }, {
+        "src": "http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=72",
+        "sizes": "72x72",
+        "type": "image/jpeg"
+    }, {
+        "src": "http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=96",
+        "sizes": "96x96",
+        "type": "image/jpeg"
+    }, {
+        "src": "http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=144",
+        "sizes": "144x144",
+        "type": "image/jpeg"
+    }, {
+        "src": "http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=168",
+        "sizes": "168x168",
+        "type": "image/jpeg"
+    }, {
+        "src": "http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=192",
+        "sizes": "192x192",
+        "type": "image/jpeg"
+    }, {
+        "src": "http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=250",
+        "sizes": "250x250",
+        "type": "image/jpeg"
+    }, {
+        "src": "http://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=300",
+        "sizes": "300x300",
+        "type": "image/jpeg"
+    }],
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#fcfcfc",
+    "theme_color": "#fcfcfc"
+}
