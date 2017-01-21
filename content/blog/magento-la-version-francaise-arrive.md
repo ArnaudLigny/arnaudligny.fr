@@ -1,7 +1,7 @@
 ---
 title: "Magento : la version française arrive !"
 date: 02-01-2008
-tags: [Magento, traduction]
+tags: [Magento]
 permalink: blog/magento-la-version-francaise-arrive
 ---
 **Update :** l'extension FR, ou plutôt le [language pack français pour Magento](http://www.magentocommerce.com/extension/414/magento-community-modules--french-france-language-pack) est disponible en version stable.
