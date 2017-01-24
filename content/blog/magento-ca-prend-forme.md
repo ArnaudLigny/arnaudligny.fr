@@ -17,4 +17,4 @@ Enfin, Varien à annoncé qu'une Release Candidate (une version élligible pour 
 Pour plus d'informations, rendez-vous sur :
 
 * [le site officiel de Magento](http://magentocommerce.com/)
-* [le site de la communauté francophone de Magento](le site de la communauté francophone de Magento)
+* [le site de la communauté francophone de Magento](http://www.fragento.org/)
