@@ -22,6 +22,7 @@ site:
     firstname: Arnaud
     lastname: Ligny
     username: Narno
+  source: https://github.com/Narno/arnaudligny.fr/edit/master/content/
 frontmatter:
   format: yml
 static:

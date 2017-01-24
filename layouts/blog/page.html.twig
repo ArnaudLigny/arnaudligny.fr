@@ -21,6 +21,11 @@
         <a href="{{ url('tags/' ~ tag) }}">#{{ tag }}</a>&nbsp;
 {% endfor %}
     </footer>
+{% if page.fileId is defined %}
+    <aside class="callout">
+        <small><a href="{{ site.source ~ page.fileId ~ '.md' }}">Suggérer une correction ?</a></small>
+    </aside>
+{% endif %}
     <aside class="comments">
 {% include 'blog/comments.html.twig' %}
     </aside>
