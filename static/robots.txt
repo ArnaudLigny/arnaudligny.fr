@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://arnaudligny.fr/sitemap.xml
+Sitemap: https://arnaudligny.fr/sitemap.xml

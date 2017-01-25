@@ -1,4 +1,4 @@
-Source code of http://arnaudligny.fr.
+Source code of https://arnaudligny.fr.
 
 The website is automatically built and deployed through [Travis CI](https://travis-ci.org/Narno/arnaudligny.fr/).
 
