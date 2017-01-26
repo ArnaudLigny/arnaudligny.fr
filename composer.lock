@@ -649,7 +649,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPoole/PHPoole-library",
-                "reference": "1244e11f25c5b4423754d2faedca70028a5080a7"
+                "reference": "e8cecae162d9d145256c8173080e905a22e01146"
             },
             "require": {
                 "cocur/slugify": "^2.0",
@@ -705,7 +705,7 @@
                 "twig",
                 "website"
             ],
-            "time": "2017-01-17 16:51:46"
+            "time": "2017-01-26 00:47:07"
         },
         {
             "name": "psr/http-message",
