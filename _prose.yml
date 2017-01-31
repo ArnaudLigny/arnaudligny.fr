@@ -1,0 +1,51 @@
+prose:
+  rooturl: 'content'
+  siteurl: 'https://arnaudligny.fr'
+  media: 'static'
+  metadata:
+    content:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: "page.md"
+          placeholder: "Title"
+      - name: "layout"
+        field:
+          element: "text"
+          label: "Layout"
+          placeholder: "Layout"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          placeholder: "Permalink"
+    content/blog:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: "post.md"
+          placeholder: "Title"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          value: "CURRENT_DATETIME"
+          placeholder: "YYYY-MM-DD HH:MM"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Tags"
+          options:
+            - name: "Magento"
+              value: "Magento"
+            - name: "e-commerce"
+              value: "e-commerce"
+          placeholder: "Add tags"
+          alterable: true
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          placeholder: "Permalink"
