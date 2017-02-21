@@ -79,7 +79,7 @@
 {% for entry in site.menus.main|sortByWeight %}
 {% if page.id != entry.id %}
 {% if entry.id == 'index' %}
-                <li><a href="{{ url(entry.url) }}"><img src="https://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=22.gif" />&nbsp;{{ entry.name }}</a></li>
+                <li><a href="{{ url(entry.url) }}"><img src="https://gravatar.com/avatar/{{ site.gravatar }}?s=22.gif" />&nbsp;{{ entry.name }}</a></li>
 {% else %}
                 <li><a href="{{ url(entry.url) }}">{{ entry.name }}</a></li>
 {% endif %}
