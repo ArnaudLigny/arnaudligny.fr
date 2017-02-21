@@ -4,6 +4,11 @@
     "short_name": "Arnaud Ligny",
     "name": "Arnaud Ligny",
     "description": "Arnaud Ligny, Consultant technique Web",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#fcfcfc",
+    "theme_color": "#d23d23",
     "icons": [{
         "src": "https://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=48",
         "sizes": "48x48",
@@ -36,10 +41,5 @@
         "src": "https://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce?s=300",
         "sizes": "300x300",
         "type": "image/jpeg"
-    }],
-    "start_url": "/",
-    "display": "standalone",
-    "orientation": "portrait",
-    "background_color": "#fcfcfc",
-    "theme_color": "#d23d23"
+    }]
 }
