@@ -118,6 +118,16 @@ body > ul > li > h2 {
     list-style-type: disc;
 }
 
+blockquote {
+    border-left: 0.25em solid #ddd;
+    padding: 0 1em;
+    margin: 0;
+    color: #777;
+}
+blockquote > p {
+    text-align: left;
+}
+
 @media (max-width: 800px) {
     body {
         width: 100%;
