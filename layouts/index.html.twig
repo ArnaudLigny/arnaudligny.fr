@@ -77,10 +77,12 @@
         <nav>
             <ul>
 {% for entry in site.menus.main|sortByWeight %}
-{% if entry.id == 'index' and page.id != 'index' %}
+{% page.id != 'index' %}
+{% if entry.id == 'index' %}
                 <li><a href="{{ url(entry.url) }}"><img src="{{ site.gravatar }}?s=22.gif" />&nbsp;{{ entry.name }}</a></li>
 {% else %}
                 <li><a href="{{ url(entry.url) }}">{{ entry.name }}</a></li>
+{% endif %}
 {% endif %}
 {% endfor %}
                 <li><a href="https://twitter.com/{{ site.social.twitter }}">Twitter</a></li>
