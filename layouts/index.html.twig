@@ -20,7 +20,7 @@
     <link rel="manifest" href="{{ url('manifest.json') }}">
     <!-- Facebook meta -->
     <meta property="og:locale" content="fr_FR" />
-{% if page.nodeType == 'homepage' %}
+{% if page.id == 'index' %}
     <meta property="og:url" content="{{ site.baseurl }}" />
     <meta property="og:type" content="profile" />
     <meta property="fb:profile_id" content="{{ site.social.facebook_id }}" />
