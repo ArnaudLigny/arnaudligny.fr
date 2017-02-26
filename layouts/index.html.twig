@@ -42,8 +42,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@{{ site.social.twitter }}" />
     <meta name="twitter:site" content="@{{ site.social.twitter }}" />
-{% filter minifyCSS %}
-    <style>
+    <style>{% filter minifyCSS %}
         html {
             background-color: #fcfcfc;
             color: #444;
@@ -57,8 +56,7 @@
         p {
             text-align: justify;
         }
-    </style>
-{% endfilter %}
+    {% endfilter %}</style>
     <link rel="stylesheet" href="{{ url(minify('css/style.css')) }}" media="all" />
 </head>
 <body>
@@ -103,8 +101,7 @@
         </footer>
     </div>
     <!-- Web font -->
-{% filter minifyJS %}
-    <script>
+    <script>{% filter minifyJS %}
        WebFontConfig = {
           google: { id: 'Raleway' }
        };
@@ -113,21 +110,18 @@
           wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
           s.parentNode.insertBefore(wf, s);
        })(document);
-    </script>
-{% endfilter %}
+    {% endfilter %}</script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <!-- Google Analytics -->
-{% filter minifyJS %}
-    <script>
+    <script>{% filter minifyJS %}
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
         ga('create', 'UA-{{ site.ga }}', 'auto');
         ga('send', 'pageview');
-    </script>
-{% endfilter %}
+    {% endfilter %}</script>
 </body>
 </html>
