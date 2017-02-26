@@ -1,0 +1,23 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.title }}",
+  "givenName": "{{ site.author.firstname }}",
+  "familyName": "{{ site.author.lastname }}",
+  "image": "{{ site.gravatar }}?s=140",
+  "jobTitle": "{{ site.author.job }}",
+  "affiliation": "Adfab",
+  "additionalName": "{{ site.author.username }}",
+  "url": "{{ site.baseurl }}",
+  "homeLocation": "Paris",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Paris",
+    "addressCountry": {
+      "@type": "Country",
+      "name": "France"
+    }
+  }
+}
+</script>
