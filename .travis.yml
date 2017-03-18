@@ -4,7 +4,7 @@ php:
   - 7
 
 node_js:
-  - "0.8"
+  - "0.10"
 
 sudo: false
 
@@ -24,6 +24,8 @@ before_script:
 
 script:
   - php build.php -e=prod
+
+after_script:
   - htmlhint _site -V
 
 after_success:
