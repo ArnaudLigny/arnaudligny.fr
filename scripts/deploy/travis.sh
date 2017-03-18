@@ -7,7 +7,7 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]
     exit 0
 fi
 
-echo "Starting to deploy to GitHub Pages (branch: '$TARGET_BRANCH')"
+echo "Deploy to GitHub Pages (branch: '$TARGET_BRANCH')"
 
 cp -R $SITE_DIR $HOME/$SITE_DIR
 cd $HOME

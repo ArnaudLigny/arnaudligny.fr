@@ -4,6 +4,9 @@ php:
   - 7
 
 env:
+  - SCRIPT_BUILD="scripts/build.php"
+  - SCRIPT_DEPLOY="scripts/deploy/travis.sh"
+  - SCRIPT_CACHE="scripts/deploy/cloudflare.sh"
   global:
     - REPO=$TRAVIS_REPO_SLUG
     - SOURCE_BRANCH=$TRAVIS_BRANCH
@@ -30,12 +33,12 @@ before_script:
   - npm install htmlhint -g
 
 script:
-  - php build.php -e=prod
+  - php $SCRIPT_BUILD -e=prod
   - htmlhint $SITE_DIR
 
 deploy:
   - provider: script
     skip_cleanup: true
-    script: "sh $TRAVIS_BUILD_DIR/deploy.sh && sh $TRAVIS_BUILD_DIR/cloudflare.sh"
+    script: "sh $TRAVIS_BUILD_DIR/$SCRIPT_DEPLOY && sh $TRAVIS_BUILD_DIR/$SCRIPT_CACHE"
     on:
       branch: $SOURCE_BRANCH

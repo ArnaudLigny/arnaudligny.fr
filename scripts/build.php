@@ -13,7 +13,7 @@ $getopt = getopt('e::');
 $options = Yaml::parse(file_get_contents('phpoole.yml'));
 $options_dev = [
     'site' => [
-        'baseurl' => 'http://localhost:8000',
+        'baseurl' => 'http://localhost:8000/',
     ],
 ];
 
