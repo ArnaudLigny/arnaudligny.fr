@@ -2,17 +2,17 @@
 
 set -e
 
-REPO="Narno/arnaudligny.fr"
-SOURCE_BRANCH="master"
+REPO="$TRAVIS_REPO_SLUG" # Narno/arnaudligny.fr
+SOURCE_BRANCH="$TRAVIS_BRANCH" # master
 TARGET_BRANCH="gh-pages"
 SITE_DIR="_site"
 
 if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
-    echo "Skipping deploy."
+    echo "Skipping deploy"
     exit 0
 fi
 
-echo "Starting to deploy to GitHub Pages (in '$TARGET_BRANCH' branch)"
+echo "Starting to deploy to GitHub Pages (branch: '$TARGET_BRANCH')"
 
 cp -R $SITE_DIR $HOME/$SITE_DIR
 cd $HOME
