@@ -1,14 +1,8 @@
 {
   "require": {
-    "narno/phpoole-library": "1.1.x-dev",
+    "narno/phpoole-library": "1.6",
     "glicer/w3c-validator": "dev-master",
     "symfony/finder": "^2.8",
     "symfony/yaml": "^2.8"
-  },
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/PHPoole/PHPoole-library"
-    }
-  ]
+  }
 }
