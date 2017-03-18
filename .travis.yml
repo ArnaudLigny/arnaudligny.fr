@@ -33,4 +33,3 @@ after_success:
     -H \"X-Auth-Key: ${Cloudflare_API}\" \
     -H \"Content-Type: application/json\" \
     --data '{\"purge_everything\":true}'"
-  #- php validator.php
