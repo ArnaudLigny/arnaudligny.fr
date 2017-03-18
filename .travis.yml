@@ -27,7 +27,7 @@ script:
   - php build.php -e=prod
 
 after_script:
-  - htmlhint _site -V
+  - htmlhint _site
 
 after_success:
   - bash deploy.sh
