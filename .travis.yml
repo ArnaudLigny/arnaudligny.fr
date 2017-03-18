@@ -1,9 +1,14 @@
+sudo: false
 language: php
-
 php:
   - 7
 
-sudo: false
+env:
+  global:
+    - REPO=$TRAVIS_REPO_SLUG
+    - SOURCE_BRANCH=$TRAVIS_BRANCH
+    - TARGET_BRANCH="gh-pages"
+    - SITE_DIR="_site"
 
 branches:
   only:
@@ -13,6 +18,7 @@ cache:
   directories:
     - vendor
     - $COMPOSER_CACHE_DIR
+    - "$HOME/.nvm"
 
 # We need nodejs version >= 4 to be compatible with htmlhint >= 0.9.13
 before_install:
@@ -25,19 +31,11 @@ before_script:
 
 script:
   - php build.php -e=prod
-  - htmlhint _site
-
-#after_success:
-#  - bash deploy.sh
-#  - "curl -X DELETE \"https://api.cloudflare.com/client/v4/zones/${Cloudflare_zone}/purge_cache\" \
-#    -H \"X-Auth-Email: arnaud@ligny.org\" \
-#    -H \"X-Auth-Key: ${Cloudflare_API}\" \
-#    -H \"Content-Type: application/json\" \
-#    --data '{\"purge_everything\":true}'"
+  - htmlhint $SITE_DIR
 
 deploy:
   - provider: script
     skip_cleanup: true
     script: "sh $TRAVIS_BUILD_DIR/deploy.sh && sh $TRAVIS_BUILD_DIR/cloudflare.sh"
     on:
-      branch: master
+      branch: $SOURCE_BRANCH
