@@ -27,10 +27,16 @@ script:
   - php build.php -e=prod
   - htmlhint _site
 
-after_success:
-  - bash deploy.sh
-  - "curl -X DELETE \"https://api.cloudflare.com/client/v4/zones/${Cloudflare_zone}/purge_cache\" \
-    -H \"X-Auth-Email: arnaud@ligny.org\" \
-    -H \"X-Auth-Key: ${Cloudflare_API}\" \
-    -H \"Content-Type: application/json\" \
-    --data '{\"purge_everything\":true}'"
+#after_success:
+#  - bash deploy.sh
+#  - "curl -X DELETE \"https://api.cloudflare.com/client/v4/zones/${Cloudflare_zone}/purge_cache\" \
+#    -H \"X-Auth-Email: arnaud@ligny.org\" \
+#    -H \"X-Auth-Key: ${Cloudflare_API}\" \
+#    -H \"Content-Type: application/json\" \
+#    --data '{\"purge_everything\":true}'"
+
+deploy:
+  - provider: script
+    script: deploy.sh
+    on:
+      branch: master
