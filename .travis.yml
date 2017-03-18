@@ -3,6 +3,9 @@ language: php
 php:
   - 7
 
+node_js:
+  - "node"
+
 sudo: false
 
 branches:
@@ -17,9 +20,11 @@ cache:
 before_script:
   - phpenv config-rm xdebug.ini
   - composer install --no-interaction
+  - npm install htmlhint -g
 
 script:
   - php build.php -e=prod
+  - htmlhint _site -V
 
 after_success:
   - bash deploy.sh
@@ -28,4 +33,4 @@ after_success:
     -H \"X-Auth-Key: ${Cloudflare_API}\" \
     -H \"Content-Type: application/json\" \
     --data '{\"purge_everything\":true}'"
-  - php validator.php
+  #- php validator.php
