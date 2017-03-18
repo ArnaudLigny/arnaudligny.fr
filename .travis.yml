@@ -3,9 +3,6 @@ language: php
 php:
   - 7
 
-node_js:
-  - "0.10"
-
 sudo: false
 
 branches:
@@ -16,6 +13,10 @@ cache:
   directories:
     - vendor
     - $COMPOSER_CACHE_DIR
+
+# We need nodejs version >= 4 to be compatible with htmlhint >= 0.9.13
+before_install:
+  - nvm install node
 
 before_script:
   - phpenv config-rm xdebug.ini
