@@ -1,5 +1,6 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+
+set -ev
 
 REPO="Narno/arnaudligny.fr"
 SOURCE_BRANCH="master"
@@ -26,4 +27,5 @@ cp -Rf $HOME/$SITE_DIR/* .
 git add -Af .
 git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to gh-pages"
 git push -fq origin $TARGET_BRANCH > /dev/null
-exit 0
+
+set +v
