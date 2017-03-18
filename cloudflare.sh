@@ -2,7 +2,7 @@
 
 set -e
 
-echo "Purge cloudflare cache (zone: ${Cloudflare_zone})"
+echo "Purge Cloudflare cache (zone: ${Cloudflare_zone})"
 
 curl -X DELETE "https://api.cloudflare.com/client/v4/zones/${Cloudflare_zone}/purge_cache" \
     -H "X-Auth-Email: arnaud@ligny.org" \
