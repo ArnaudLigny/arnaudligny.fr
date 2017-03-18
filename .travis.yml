@@ -38,6 +38,6 @@ script:
 deploy:
   - provider: script
     skip_cleanup: true
-    script: "sh $TRAVIS_BUILD_DIR/deploy.sh"
+    script: "sh $TRAVIS_BUILD_DIR/deploy.sh && $TRAVIS_BUILD_DIR/cloudflare.sh"
     on:
       branch: master
