@@ -2,11 +2,6 @@
 
 set -e
 
-REPO="$TRAVIS_REPO_SLUG" # Narno/arnaudligny.fr
-SOURCE_BRANCH="$TRAVIS_BRANCH" # master
-TARGET_BRANCH="gh-pages"
-SITE_DIR="_site"
-
 if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
     echo "Skipping deploy"
     exit 0
