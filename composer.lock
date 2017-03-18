@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "09559854d4a4ff8770754de81e61e80d",
+    "content-hash": "a0f6f8f0a10d05381e43d19bc363d4bc",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -367,16 +367,16 @@
         },
         {
             "name": "narno/phpoole-library",
-            "version": "1.6.0",
+            "version": "1.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPoole/PHPoole-library.git",
-                "reference": "1401f38d7ab9decbc48645f0a721d9b8ddb232fc"
+                "reference": "54dce605d0348d298e2c8928d764e1f628b222b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPoole/PHPoole-library/zipball/1401f38d7ab9decbc48645f0a721d9b8ddb232fc",
-                "reference": "1401f38d7ab9decbc48645f0a721d9b8ddb232fc",
+                "url": "https://api.github.com/repos/PHPoole/PHPoole-library/zipball/54dce605d0348d298e2c8928d764e1f628b222b5",
+                "reference": "54dce605d0348d298e2c8928d764e1f628b222b5",
                 "shasum": ""
             },
             "require": {
@@ -430,7 +430,7 @@
                 "twig",
                 "website"
             ],
-            "time": "2017-03-18T00:36:11+00:00"
+            "time": "2017-03-18T20:27:06+00:00"
         },
         {
             "name": "symfony/filesystem",
