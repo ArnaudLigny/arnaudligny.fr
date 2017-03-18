@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "content-hash": "a0f6f8f0a10d05381e43d19bc363d4bc",
+
     "packages": [
         {
             "name": "cocur/slugify",
