@@ -2,10 +2,10 @@
 
 set -e
 
-echo "Purge Cloudflare cache (zone: ${Cloudflare_zone})"
+echo "Purge Cloudflare cache (zone: ${CLOUDFLARE_ZONE})"
 
-curl -X DELETE "https://api.cloudflare.com/client/v4/zones/${Cloudflare_zone}/purge_cache" \
-    -H "X-Auth-Email: arnaud@ligny.org" \
-    -H "X-Auth-Key: ${Cloudflare_API}" \
+curl -X DELETE "https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE}/purge_cache" \
+    -H "X-Auth-Email: ${CLOUDFLARE_EMAIL}" \
+    -H "X-Auth-Key: ${CLOUDFLARE_API}" \
     -H "Content-Type: application/json" \
     --data '{"purge_everything":true}'
