@@ -14,12 +14,20 @@ cache:
     - vendor
     - $COMPOSER_CACHE_DIR
 
+# We need nodejs version >= 4 to be compatible with htmlhint >= 0.9.13
+before_install:
+  - nvm install node
+
 before_script:
   - phpenv config-rm xdebug.ini
   - composer install --no-interaction
+  - npm install htmlhint -g
 
 script:
   - php build.php -e=prod
+
+after_script:
+  - htmlhint _site
 
 after_success:
   - bash deploy.sh
@@ -28,4 +36,3 @@ after_success:
     -H \"X-Auth-Key: ${Cloudflare_API}\" \
     -H \"Content-Type: application/json\" \
     --data '{\"purge_everything\":true}'"
-  - php validator.php
