@@ -42,3 +42,12 @@ deploy:
     script: "sh $TRAVIS_BUILD_DIR/$SCRIPT_DEPLOY && sh $TRAVIS_BUILD_DIR/$SCRIPT_CACHE"
     on:
       branch: $SOURCE_BRANCH
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GH_TOKEN
+    local_dir: $SITE_DIR
+    target_branch: $TARGET_BRANCH
+    email: deploy@travis-ci.org
+    name: "Travis bot"
+    on:
+      branch: $SOURCE_BRANCH
