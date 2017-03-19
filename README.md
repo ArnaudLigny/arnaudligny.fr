@@ -2,11 +2,25 @@ Source of https://arnaudligny.fr, automatically built by [PHPoole](https://phpoo
 
 [![Build Status](https://travis-ci.org/Narno/arnaudligny.fr.svg?branch=master)](https://travis-ci.org/Narno/arnaudligny.fr)
 
-## Install & build
-```
+## Install & build locally
+```bash
 composer install
 php scripts/build.php -e=dev
 ```
+
+## HTML code analysis
+```bash
+npm install htmlhint -g
+htmlhint _site
+```
+
+## Build & deploy to GitHub Pages
+```bash
+php scripts/build.php -e=prod
+export GH_TOKEN=github_token
+sh scripts/deploy/ghpages.sh
+```
+(Generate a GitHub token: https://github.com/settings/tokens/new)
 
 ## License
 
