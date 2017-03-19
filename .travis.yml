@@ -37,11 +37,11 @@ script:
   - htmlhint $SITE_DIR
 
 deploy:
-  - provider: script
-    skip_cleanup: true
-    script: "sh $TRAVIS_BUILD_DIR/$SCRIPT_DEPLOY && sh $TRAVIS_BUILD_DIR/$SCRIPT_CACHE"
-    on:
-      branch: $SOURCE_BRANCH
+#  - provider: script
+#    skip_cleanup: true
+#    script: "sh $TRAVIS_BUILD_DIR/$SCRIPT_DEPLOY && sh $TRAVIS_BUILD_DIR/$SCRIPT_CACHE"
+#    on:
+#      branch: $SOURCE_BRANCH
   - provider: pages
     skip_cleanup: true
     github_token: $GH_TOKEN
@@ -51,3 +51,6 @@ deploy:
     name: "Travis bot"
     on:
       branch: $SOURCE_BRANCH
+
+after_deploy:
+  - sh $SCRIPT_CACHE
