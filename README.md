@@ -4,15 +4,12 @@ The website is automatically built and deployed through [Travis CI](https://trav
 
 [![Build Status](https://travis-ci.org/Narno/arnaudligny.fr.svg?branch=master)](https://travis-ci.org/Narno/arnaudligny.fr)
 
-## Install, build & deploy
+## Install & build
 ```
 $ composer install
-$ php build.php -e=prod
-$ export GH_TOKEN=your_github_token
-$ sh deploy.sh
+$ php scripts/build.php -e=dev
 ```
 
-## Test locally
-```
-$ php build.php -e=dev
-```
+## License
+
+Source code is provided under the [MIT License](LICENSE) and [content](content) under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
