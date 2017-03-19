@@ -12,7 +12,7 @@ echo "Deploy to GitHub Pages (branch: '$TARGET_BRANCH')"
 cp -R $SITE_DIR $HOME/$SITE_DIR
 cd $HOME
 git config --global user.name "Travis"
-git config --global user.email "deploy@travis-ci.org"
+git config --global user.email "contact@travis-ci.org"
 git clone --quiet --branch=$TARGET_BRANCH https://${GH_TOKEN}@github.com/${REPO}.git gh-pages > /dev/null
 cp -R gh-pages/.git $HOME/.git
 rm -rf gh-pages/*
