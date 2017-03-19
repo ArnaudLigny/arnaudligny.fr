@@ -3,7 +3,7 @@ site:
   title: "Arnaud Ligny"
   baseurl: https://arnaudligny.fr/
   description: Arnaud Ligny, Consultant technique Web - Paris, France
-  keywords: [Arnaud Ligny, Consultant technique, PHP, eCommerce, Magento]
+  keywords: [Consultant technique, Web, PHP, Application Mobile, e-commerce, Magento, IoT]
   gravatar: https://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce
   menu:
     main:
@@ -25,8 +25,6 @@ site:
     username: Narno
     job: Consultant technique
   source: https://github.com/Narno/arnaudligny.fr/edit/master/content/
-frontmatter:
-  format: yml
 static:
   exclude:
     - CV_ArnaudLigny-2014.pdf
