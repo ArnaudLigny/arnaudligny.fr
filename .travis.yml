@@ -46,7 +46,7 @@ deploy:
 #    script: "sh $TRAVIS_BUILD_DIR/$SCRIPT_DEPLOY"
 #    on:
 #      branch: $SOURCE_BRANCH
-    # deploy to GH Pages
+  # deploy to GH Pages
   - provider: pages
     skip_cleanup: true
     github_token: $GH_TOKEN
