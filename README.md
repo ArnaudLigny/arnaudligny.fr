@@ -1,13 +1,9 @@
-Source code of https://arnaudligny.fr.
-
-The website is automatically built and deployed through [Travis CI](https://travis-ci.org/Narno/arnaudligny.fr/).
-
-[![Build Status](https://travis-ci.org/Narno/arnaudligny.fr.svg?branch=master)](https://travis-ci.org/Narno/arnaudligny.fr)
+Source of https://arnaudligny.fr Website, automatically built and deployed through [Travis CI](https://travis-ci.org/Narno/arnaudligny.fr/). [![Build Status](https://travis-ci.org/Narno/arnaudligny.fr.svg?branch=master)](https://travis-ci.org/Narno/arnaudligny.fr)
 
 ## Install & build
 ```
-$ composer install
-$ php scripts/build.php -e=dev
+composer install
+php scripts/build.php -e=dev
 ```
 
 ## License
