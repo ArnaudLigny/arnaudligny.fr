@@ -39,7 +39,7 @@ script:
 deploy:
 #  - provider: script
 #    skip_cleanup: true
-#    script: "sh $TRAVIS_BUILD_DIR/$SCRIPT_DEPLOY && sh $TRAVIS_BUILD_DIR/$SCRIPT_CACHE"
+#    script: "sh $TRAVIS_BUILD_DIR/$SCRIPT_DEPLOY"
 #    on:
 #      branch: $SOURCE_BRANCH
   - provider: pages
@@ -47,7 +47,7 @@ deploy:
     github_token: $GH_TOKEN
     local_dir: $SITE_DIR
     target_branch: $TARGET_BRANCH
-    email: deploy@travis-ci.org
+    email: contact@travis-ci.org
     name: "Travis bot"
     on:
       branch: $SOURCE_BRANCH
