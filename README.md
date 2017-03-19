@@ -1,4 +1,4 @@
-Source of https://arnaudligny.fr Website, automatically built and deployed through [Travis CI](https://travis-ci.org/Narno/arnaudligny.fr/).
+Source of https://arnaudligny.fr, automatically built by [PHPoole](https://phpoole.org) and deployed to [GitHub Pages](https://pages.github.com) through [Travis CI](https://travis-ci.org).
 
 [![Build Status](https://travis-ci.org/Narno/arnaudligny.fr.svg?branch=master)](https://travis-ci.org/Narno/arnaudligny.fr)
 
