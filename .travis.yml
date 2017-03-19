@@ -6,7 +6,7 @@ php:
 env:
   global:
     - SCRIPT_BUILD="scripts/build.php"
-    - SCRIPT_DEPLOY="scripts/deploy/travis.sh"
+    - SCRIPT_DEPLOY="scripts/deploy/ghpages.sh"
     - SCRIPT_CACHE="scripts/deploy/cloudflare.sh"
     - REPO=$TRAVIS_REPO_SLUG
     - SOURCE_BRANCH=$TRAVIS_BRANCH
@@ -23,7 +23,8 @@ cache:
     - $COMPOSER_CACHE_DIR
     - "$HOME/.nvm"
 
-# We need nodejs version >= 4 to be compatible with htmlhint >= 0.9.13
+# we need NodeJS version >= 4
+# to be compatible with htmlhint >= 0.9.13
 before_install:
   - nvm install node
 
@@ -33,15 +34,19 @@ before_script:
   - npm install htmlhint -g
 
 script:
+  # build site
   - php $SCRIPT_BUILD -e=prod
+  # analyse HTML
   - htmlhint $SITE_DIR
 
 deploy:
+  # deploy to GH Pages with a script
 #  - provider: script
 #    skip_cleanup: true
 #    script: "sh $TRAVIS_BUILD_DIR/$SCRIPT_DEPLOY"
 #    on:
 #      branch: $SOURCE_BRANCH
+    # deploy to GH Pages
   - provider: pages
     skip_cleanup: true
     github_token: $GH_TOKEN
@@ -52,5 +57,6 @@ deploy:
     on:
       branch: $SOURCE_BRANCH
 
+# purge cache
 after_deploy:
   - sh $SCRIPT_CACHE
