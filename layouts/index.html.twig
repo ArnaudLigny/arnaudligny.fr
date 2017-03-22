@@ -80,7 +80,6 @@
 {% for entry in site.menus.main|sortByWeight %}
                 <li><a href="{{ url(entry.url) }}">{% if entry.id == 'index' and page.id != 'index' %}<img src="{{ site.gravatar }}?s=22.gif" />&nbsp;{% endif %}{{ entry.name }}</a></li>
 {% endfor %}
-                <li><a href="{{ url(site.social.cv) }}">CV</a></li>
             </ul>
             <ul class="social">
                 <li><a href="https://twitter.com/{{ site.social.twitter }}" rel="me" class="social"><svg class="icon twitter" width="1em" height="1em"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-twitter"></use></svg></a></li>
