@@ -16,11 +16,15 @@ site:
         name: Qui suis-je ?
         url: /
         weight: 15
+      cv:
+        index: cv
+        name: CV
+        url: /CV_ArnaudLigny-2016.pdf
+        weight: 25
   social:
     twitter: ArnaudLigny
     github: Narno
     linkedin: arnaudligny
-    cv: CV_ArnaudLigny-2016.pdf
     facebook_id: 516589570
   ga: 30599234-2
   author:
