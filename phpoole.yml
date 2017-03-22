@@ -15,7 +15,7 @@ site:
         id: index
         name: Qui suis-je ?
         url: /
-        weight: 125
+        weight: 50
       cv:
         id: cv
         name: CV
