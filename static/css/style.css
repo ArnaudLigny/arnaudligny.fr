@@ -50,9 +50,23 @@ pre {
     border-bottom: none;
 }
 
+a.icon {
+    font-size: 1em;
+    vertical-align: middle;
+    color: #444;
+    text-decoration: none;
+    border-bottom: none;
+}
+a.icon svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
 body > header > nav > ul {
     text-align: center;
     padding-left: 0px;
+    margin: auto;
 }
 body > header > nav > ul > li {
     display: inline;
@@ -131,7 +145,7 @@ blockquote > p {
 @media (max-width: 800px) {
     body {
         width: 100%;
-        
+
     }
 
     #page {
