@@ -13,7 +13,7 @@ site:
     main:
       index:
         id: index
-        name: AL
+        name: Profil
         url: /
         weight: 0
   social:
