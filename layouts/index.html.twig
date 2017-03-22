@@ -20,24 +20,27 @@
     <link rel="manifest" href="{{ url('manifest.json') }}">
     <!-- Facebook meta -->
     <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="{{ site.title }}" />
 {% if page.id == 'index' %}
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:image" content="{{ site.gravatar }}?s=300" />
+    <meta property="og:description" content="{{ site.description }}" />
     <meta property="og:url" content="{{ site.baseurl }}" />
     <meta property="og:type" content="profile" />
     <meta property="fb:profile_id" content="{{ site.social.facebook_id }}" />
     <meta property="profile:first_name" content="{{ site.author.firstname }}" />
     <meta property="profile:last_name" content="{{ site.author.lastname }}" />
     <meta property="profile:username" content="{{ site.author.username }}" />
-{% elseif page.section == 'blog' %}
-    <meta property="og:url" content="{{ url(page) }}" />
+{% else %}
+{% if page.section == 'blog' %}
     <meta property="og:type" content="article" />
 {% else %}
-    <meta property="og:url" content="{{ url(page) }}" />
     <meta property="og:type" content="website" />
 {% endif %}
-    <meta property="og:title" content="{{ site.title }}" />
-    <meta property="og:image" content="{{ site.gravatar }}?s=300" />
-    <meta property="og:description" content="{{ site.description }}" />
-    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.content|striptags|slice(0, 150) }}" />
+    <meta property="og:url" content="{{ url(page) }}" />
+{% endif %}
     <!-- Twitter meta -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@{{ site.social.twitter }}" />
