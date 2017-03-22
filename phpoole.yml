@@ -13,9 +13,9 @@ site:
     main:
       index:
         id: index
-        name: Profil
+        name: Qui suis-je ?
         url: /
-        weight: 0
+        weight: 15
   social:
     twitter: ArnaudLigny
     github: Narno
