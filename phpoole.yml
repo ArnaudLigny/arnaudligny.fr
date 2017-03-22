@@ -17,7 +17,7 @@ site:
         url: /
         weight: 125
       cv:
-        index: cv
+        id: cv
         name: CV
         url: /CV_ArnaudLigny-2016.pdf
         weight: 150
