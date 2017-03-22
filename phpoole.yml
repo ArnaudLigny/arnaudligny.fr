@@ -15,12 +15,12 @@ site:
         id: index
         name: Qui suis-je ?
         url: /
-        weight: 15
+        weight: 125
       cv:
         index: cv
         name: CV
         url: /CV_ArnaudLigny-2016.pdf
-        weight: 25
+        weight: 150
   social:
     twitter: ArnaudLigny
     github: Narno
