@@ -50,17 +50,18 @@ pre {
     border-bottom: none;
 }
 
-a.icon {
+.icon {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+a.social {
     font-size: 1em;
     vertical-align: middle;
     color: #444;
     text-decoration: none;
     border-bottom: none;
-}
-a.icon > svg {
-    width: 1em;
-    height: 1em;
-    fill: currentColor;
 }
 
 body > header > nav > ul {

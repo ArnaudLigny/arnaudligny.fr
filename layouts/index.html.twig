@@ -82,10 +82,10 @@
 {% endfor %}
                 <li><a href="{{ url(site.social.cv) }}">CV</a></li>
             </ul>
-            <ul>
-                <li><a href="https://twitter.com/{{ site.social.twitter }}" class="icon twitter" rel="me"><svg width="1em" height="1em"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-twitter"></use></svg></a></li>
-                <li><a href="https://github.com/{{ site.social.github }}" class="icon github" rel="me"><svg width="1em" height="1em"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-github"></use></svg></a></li>
-                <li><a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" class="icon linkedin" rel="me"><svg width="1em" height="1em"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-linkedin"></use></svg></a></li>
+            <ul class="social">
+                <li><a href="https://twitter.com/{{ site.social.twitter }}" rel="me" class="social"><svg class="icon twitter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-twitter"></use></svg></a></li>
+                <li><a href="https://github.com/{{ site.social.github }}" rel="me" class="social"><svg class="icon github"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-github"></use></svg></a></li>
+                <li><a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" rel="me" class="social"><svg class="icon linkedin"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-linkedin"></use></svg></a></li>
             </ul>
         </nav>
 {% endblock menu %}
