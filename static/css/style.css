@@ -74,6 +74,7 @@ body > header > nav > ul > li {
     padding-right: 30px;
 }
 
+/* Callout */
 #page > aside {
     padding: 0.5em;
     margin-top: 0.5em;
@@ -97,6 +98,7 @@ body > header > nav > ul > li {
     margin: 0.5em 0 0 0.5em;
 }
 
+/* footer */
 #page > footer {
     font-size: 0.6em;
     float: right;
@@ -111,6 +113,34 @@ body > header > nav > ul > li {
 }
 #page > footer > ul > li:first-child:before {
     content: none;
+}
+
+/* pagination */
+#posts > navigation {
+  margin: 3rem 0;
+  text-align: center;
+  color: #ccc;
+}
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #eee;
+  float: left;
+  width: 45%;
+}
+a.pagination-item {
+  border-bottom: 1px solid #eee;
+}
+a.pagination-item:hover {
+  background-color: #f5f5f5;
+}
+
+article {
+  margin-bottom: 1.5em;
+}
+
+#posts > article > footer {
+  text-align: right;
 }
 
 article > header > h1,
