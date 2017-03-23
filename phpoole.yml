@@ -1,8 +1,9 @@
 site:
   lang: fr-FR
   title: "Arnaud Ligny"
+  baseline: "Consultant technique Web"
   baseurl: https://arnaudligny.fr/
-  description: Arnaud Ligny, Consultant technique Web - Paris, France
+  description: Arnaud Ligny, Consultant technique Web & mobile, - Paris, France
   keywords: [Consultant technique, Web, PHP, Application Mobile, e-commerce, Magento, IoT]
   gravatar: https://gravatar.com/avatar/7aaf0ad68aea0b1ef57e6dddb1fb11ce
   fmpages:
