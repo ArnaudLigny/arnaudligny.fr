@@ -20,13 +20,13 @@
         </header>
         {{ post.content|excerpt }}
         <footer class="more">
-            <a href="{{ url(post) }}">Lire la suite &raquo;</a>
+            <a href="{{ url(post) }}">Lire la suite ›</a>
         </footer>
     </article>
 {% endfor %}
     <navigation>
 {% if page.pagination.prev is defined %}
-        <a class="pagination-item" href="{{ url(page.pagination.prev) }}">&lsaquo; Précédent</a>
+        <a class="pagination-item" href="{{ url(page.pagination.prev) }}">‹ Précédent</a>
 {% else %}
         <span class="pagination-item">‹ Précédent</span>
 {% endif %}
