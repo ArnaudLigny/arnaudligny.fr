@@ -234,6 +234,9 @@ blockquote > p {
     #page > aside > p > .logo {
         visibility: hidden;
     }
+    #page > footer > ul {
+        padding-left: inherit;
+    }
 
     article > header > div.post-meta {
         text-align: center;
