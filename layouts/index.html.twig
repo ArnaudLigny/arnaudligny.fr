@@ -78,7 +78,7 @@
         <nav>
             <ul>
 {% for entry in site.menus.main|sortByWeight %}
-                <li><a href="{{ url(entry.url) }}">{% if entry.id == 'index' and page.id != 'index' %}<img src="{{ site.gravatar }}?s=22.gif" />&nbsp;{% endif %}{{ entry.name }}</a></li>
+                {% if page.id == 'index' and entry.id == 'index' %}{% else %}<li><a href="{{ url(entry.url) }}">{% if entry.id == 'index' %}<img src="{{ site.gravatar }}?s=22.gif" />&nbsp;{% endif %}{{ entry.name }}</a></li>{% endif %}
 {% endfor %}
             </ul>
             <ul class="social">
