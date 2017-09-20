@@ -1,6 +1,9 @@
 ---
 layout: index.html
 ---
+
+CECI EST UN TEST
+
 Hello, je suis Arnaud Ligny (aka [Narno](https://narno.com)), consultant technique expérimenté, j’accompagne les marques dans la phase de conception et de développement de leur activité Web, mobile, e-commerce et IoT<sup id="a1">[1](#f1)</sup>.
 
 Analyste programmeur de formation, je suis spécialisé dans les technologies du Web, la conception fonctionnelle et technique, la gestion et le pilotage de projets techniques autours des technologies du Web et du e-commerce (particulièrement via la solution [Magento](http://magento.com)).
