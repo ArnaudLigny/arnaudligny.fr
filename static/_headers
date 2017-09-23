@@ -6,6 +6,9 @@
   # Disable plugins like Flash or Silverlight
   # Load images, scripts, stylesheets and fonts from self
   # Send reports to report-uri.io
-  Content-Security-Policy: default-src 'none'; object-src 'none';
+  Content-Security-Policy: default-src 'self'; object-src 'self'; img-src 'self' *.gravatar.com; script-src 'self' *.cloudflare.com *.battleforthenet.com; style-src 'self' *.cloudflare.com; font-src 'self';
+/screenshots/*
+  Cache-Control: public, max-age=360000
+
 /screenshots/*
   Cache-Control: public, max-age=360000
