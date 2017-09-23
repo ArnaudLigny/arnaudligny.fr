@@ -6,6 +6,6 @@
   # Disable plugins like Flash or Silverlight
   # Load images, scripts, stylesheets and fonts from self
   # Send reports to report-uri.io
-  Content-Security-Policy: default-src 'none'; object-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; report-uri https://<report-uri-subdomain>.report-uri.io/r/default/csp/enforce;
+  Content-Security-Policy: default-src 'none'; object-src 'none';
 /screenshots/*
   Cache-Control: public, max-age=360000
