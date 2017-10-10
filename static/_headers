@@ -2,7 +2,7 @@
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
-  Content-Security-Policy: default-src 'self'; object-src 'self'; img-src 'self' data: https://gravatar.com *.disqus.com *.disquscdn.com www.google-analytics.com; script-src 'unsafe-inline' *.cloudflare.com ajax.googleapis.com www.google-analytics.com https://disqus.com *.disqus.com *.disquscdn.com *.battleforthenet.com; style-src 'self' 'unsafe-inline' *.cloudflare.com *.disquscdn.com; font-src 'self'; frame-src 'self' https://disqus.com *.disqus.com; connect-src 'self' *.disqus.com;
+  Content-Security-Policy: default-src 'self'; object-src 'self'; img-src 'self' data: https://gravatar.com *.disqus.com *.disquscdn.com www.google-analytics.com; script-src 'unsafe-inline' *.netlify.com *.cloudflare.com ajax.googleapis.com www.google-analytics.com https://disqus.com *.disqus.com *.disquscdn.com *.battleforthenet.com; style-src 'self' 'unsafe-inline' *.netlify.com *.cloudflare.com *.disquscdn.com; font-src 'self'; frame-src 'self' https://disqus.com *.disqus.com; connect-src 'self' *.disqus.com;
 /screenshots/*
   Cache-Control: public, max-age=360000
 /css/*
