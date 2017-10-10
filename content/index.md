@@ -1,10 +1,12 @@
 ---
 layout: index.html
 ---
-Hello, je suis Arnaud Ligny (aka [Narno](https://narno.com)), consultant technique expérimenté, j’accompagne les marques dans la phase de conception et de développement de leur activité Web, mobile, e-commerce et IoT<sup id="a1">[1](#f1)</sup>.
+Hello, je suis Arnaud Ligny, consultant technique expérimenté.
 
-Analyste programmeur de formation, je suis spécialisé dans les technologies du Web, la conception fonctionnelle et technique, la gestion et le pilotage de projets techniques autours des technologies du Web et du e-commerce (particulièrement via la solution [Magento](http://magento.com)).
+J’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité Web, mobile, e-commerce et IoT<sup id="a1">[1](#f1)</sup>.
 
-En plus de 10 ans, j’ai apporté mon expertise sur des dizaines de projets Web et e-commerce (à la fois en agence et chez l'annonceur) pour [Etam](http://www.etam.com), [Christian Louboutin](http://eu.christianlouboutin.com), [Hermès](http://france.hermes.com), [Repetto](http://www.repetto.fr), [Du Pareil au Même](http://www.dpam.com), [The Kooples](http://www.thekooples.com), [Zadig & Voltaire](http://www.zadig-et-voltaire.com), [Saint Maclou](http://www.saint-maclou.com), DHL, M6 ou encore France TV.
+Analyste programmeur de formation, je suis spécialisé dans les technologies du Web, du e-commerce, et du mobile : conception fonctionnelle et technique, pilotage de projets, accompagnement des équipes de production, R&D.
+
+En plus de 10 ans j’ai apporté mon expertise sur des dizaines de projets Web, e-commerce et mobile; à la fois en agence et chez l'annonceur; pour [Etam](http://www.etam.com), [Saint Maclou](http://www.saint-maclou.com), [Hermès](http://france.hermes.com), [Tereos](https://itunes.apple.com/fr/app/tereos-coop%C3%A9rateurs/id1215356212), [Du Côté de Chez Vous](https://www.ducotedechezvous.com) (Leroy Merlin), [Christian Louboutin](http://eu.christianlouboutin.com), [Ducray](https://dermocontrol.ducray.com) (Pierre Fabre), [Zadig & Voltaire](http://www.zadig-et-voltaire.com), [Du Pareil au Même](http://www.dpam.com), [The Kooples](http://www.thekooples.com), [Repetto](http://www.repetto.fr), DHL, M6 ou encore France TV.
 
 <b id="f1">1</b> [Internet of Things](https://fr.wikipedia.org/wiki/Internet_des_objets). [↩](#a1)
