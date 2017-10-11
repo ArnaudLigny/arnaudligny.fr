@@ -16,8 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#d23d23">
     <link rel="shortcut icon" type="image/x-icon" href="/images/avatar-16.png" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} : blog" href="{{ url('rss.xml') }}" />
-    <link rel="manifest" href="{{ url('manifest.json') }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} : blog" href="/rss.xml" />
+    <link rel="manifest" href="/manifest.json">
     <!-- Facebook meta -->
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:site_name" content="{{ site.title }}" />
@@ -78,7 +78,7 @@
         <nav>
             <ul>
 {% for entry in site.menus.main|sortByWeight %}
-                {% if page.id == 'index' and entry.id == 'index' %}{% else %}<li><a href="{{ url(entry.url) }}">{% if entry.id == 'index' %}<img src="/images/avatar-22.png" />&nbsp;{% endif %}{{ entry.name }}</a></li>{% endif %}
+                {% if page.id == 'index' and entry.id == 'index' %}{% else %}<li><a href="/{{ entry.url }}">{% if entry.id == 'index' %}<img src="/images/avatar-22.png" />&nbsp;{% endif %}{{ entry.name }}</a></li>{% endif %}
 {% endfor %}
             </ul>
             <ul class="social">
@@ -113,8 +113,8 @@
       </defs>
     </svg>
     <link rel="stylesheet" media="(min-width: 800px)" href="/{{ minify('css/font.css') }}" defer>
-    <link rel="stylesheet" media="(min-width: 800px)" href="{{ url('css/github.min.css') }}">
-    <script src="{{ url('js/highlight.min.js') }}"></script>
+    <link rel="stylesheet" media="(min-width: 800px)" href="/css/github.min.css">
+    <script src="/js/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <!-- Google Analytics -->
     <script>{% filter minifyJS %}

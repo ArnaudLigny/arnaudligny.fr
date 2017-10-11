@@ -14,12 +14,12 @@ site:
       index:
         id: index
         name: Qui suis-je ?
-        url: /
+        url: 
         weight: 50
       cv:
         id: cv
         name: CV
-        url: /CV_ArnaudLigny-2016.pdf
+        url: CV_ArnaudLigny-2016.pdf
         weight: 150
   social:
     twitter: ArnaudLigny
