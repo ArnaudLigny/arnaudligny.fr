@@ -238,6 +238,7 @@ blockquote > p {
     }
     #page > footer > ul {
         padding-left: inherit;
+        line-height: 1.5em;
     }
 
     article > header > div.post-meta {
