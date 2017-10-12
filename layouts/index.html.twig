@@ -62,7 +62,7 @@
     {% endfilter %}</style>
     <link rel="stylesheet" href="/{{ minify('css/style.css') }}" media="all" defer />
 </head>
-<body>
+<body page-id="{{ page.id }}">
 {% block header %}
     <header>
 {% block subheader %}
