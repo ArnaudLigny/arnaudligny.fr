@@ -11,21 +11,21 @@
     {{ site.title }}
 {% endif %}
     {% endspaceless %}</title>
-    <meta name="description" content="{{ site.description }}" />
+    <meta name="description" content="{{ site.description|escape }}" />
     <meta name="keywords" content="{{ site.keywords|join(', ') }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#d23d23">
-    <link rel="shortcut icon" type="image/x-icon" href="/images/avatar-16.png" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} : blog" href="/rss.xml" />
-    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url('images/avatar-16.png') }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} : blog" href="{{ url('rss.xml') }}" />
+    <link rel="manifest" href="{{ url('manifest.json') }}">
     <!-- Facebook meta -->
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:site_name" content="{{ site.title }}" />
 {% if page.id == 'index' %}
     <meta property="og:title" content="{{ site.title }}" />
-    <meta property="og:image" content="/images/avatar-300.png" />
-    <meta property="og:description" content="{{ site.description }}" />
-    <meta property="og:url" content="{{ site.baseurl }}" />
+    <meta property="og:image" content="{{ url('images/avatar-300.png') }}" />
+    <meta property="og:description" content="{{ site.description|escape }}" />
+    <meta property="og:url" content="{{ url() }}" />
     <meta property="og:type" content="profile" />
     <meta property="fb:profile_id" content="{{ site.social.facebook_id }}" />
     <meta property="profile:first_name" content="{{ site.author.firstname }}" />
@@ -60,14 +60,14 @@
             text-align: justify;
         }
     {% endfilter %}</style>
-    <link rel="stylesheet" href="/{{ minify('css/style.css') }}" media="all" defer />
+    <link rel="stylesheet" href="{{ url(minify('css/style.css')) }}" media="all" defer />
 </head>
 <body page-id="{{ page.id }}">
 {% block header %}
     <header>
 {% block subheader %}
         <div id="subheader">
-            <a href="/"><div id="avatar"></div></a>
+            <a href="{{ url() }}"><div id="avatar"></div></a>
             <div id="subheader-title">
                 <h1>{{ site.title }}</h1>
                 <h2>{{ site.baseline }}</h2>
@@ -76,11 +76,11 @@
 {% endblock subheader %}
 {% block menu %}
         <nav>
-            <ul>
+            <ul>{% spaceless %}
 {% for entry in site.menus.main|sortByWeight %}
-                {% if page.id == 'index' and entry.id == 'index' %}{% else %}<li><a href="/{{ entry.url }}">{% if entry.id == 'index' %}<img src="/images/avatar-22.png" />&nbsp;{% endif %}{{ entry.name }}</a></li>{% endif %}
+                {% if page.id == 'index' and entry.id == 'index' %}{% else %}<li><a href="{{ url(entry.url) }}">{% if entry.id == 'index' %}<img src="{{ url('images/avatar-22.png') }}" />&nbsp;{% endif %}{{ entry.name }}</a></li>{% endif %}
 {% endfor %}
-            </ul>
+            {% endspaceless %}</ul>
             <ul class="social">
                 <li><a href="https://twitter.com/{{ site.social.twitter }}" rel="me" class="social"><svg class="icon twitter" width="1em" height="1em"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-twitter"></use></svg></a></li>
                 <li><a href="https://github.com/{{ site.social.github }}" rel="me" class="social"><svg class="icon github" width="1em" height="1em"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-github"></use></svg></a></li>
@@ -112,9 +112,9 @@
         <symbol viewbox="0 0 640.0180053710938 520.3389892578125" aria-labelledby="dnsi-zocial-twitter-title" id="si-zocial-twitter"><title id="dnsi-zocial-twitter-title">icon twitter</title><path d="M0 461.54c10.42 1.014 20.826 1.548 31.22 1.548 61.048 0 115.528-18.732 163.387-56.17-28.424-.352-53.933-9.041-76.477-26.043-22.57-16.99-37.984-38.675-46.323-65.056 6.933 1.418 15.102 2.095 24.456 2.095 12.15 0 23.766-1.575 34.862-4.684-30.517-5.866-55.766-20.891-75.709-44.996-19.955-24.13-29.919-51.969-29.919-83.527v-1.574c18.395 10.42 38.31 15.805 59.826 16.13-18.016-11.798-32.338-27.304-42.915-46.57-10.575-19.24-15.87-40.13-15.87-62.675 0-23.597 6.088-45.607 18.212-66.095 32.6 40.586 72.418 72.938 119.431 97.055 47 24.092 97.368 37.53 151.158 40.327-2.432-11.448-3.655-21.516-3.655-30.18 0-36.085 12.84-66.954 38.505-92.62C375.868 12.839 406.893 0 443.342 0c37.79 0 69.7 13.88 95.73 41.64 30.167-6.257 57.926-17.015 83.255-32.261-9.718 31.558-28.815 55.845-57.238 72.847 25.327-3.109 50.304-10.055 74.929-20.813-16.651 26.017-38.336 48.742-65.056 68.151v17.198c0 34.992-5.125 70.128-15.35 105.355-10.211 35.214-25.848 68.853-46.83 100.972-20.996 32.065-46.05 60.619-75.189 85.569-29.126 24.977-64.08 44.853-104.849 59.592-40.755 14.752-84.555 22.089-131.398 22.089-72.483-.014-139.606-19.605-201.345-58.8z"/></symbol>
       </defs>
     </svg>
-    <link rel="stylesheet" href="/{{ minify('css/font.css') }}" defer>
-    <link rel="stylesheet" href="/css/github.min.css">
-    <script src="/js/highlight.min.js"></script>
+    <link rel="stylesheet" href="{{ url(minify('css/font.css')) }}" defer>
+    <link rel="stylesheet" href="{{ url('css/github.min.css') }}">
+    <script src="{{ url('js/highlight.min.js') }}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <!-- Google Analytics -->
     <script>{% filter minifyJS %}
