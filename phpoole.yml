@@ -1,10 +1,10 @@
 site:
   lang: fr-FR
   title: "Arnaud Ligny"
-  baseline: "Consultant technique Web, mobile &amp; e-commerce"
+  baseline: "Consultant technique Web, mobile & e-commerce"
   baseurl: https://arnaudligny.fr/
   canonicalurl: false
-  description: Arnaud Ligny, Consultant technique Web, mobile &amp; e-commerce.
+  description: Arnaud Ligny, Consultant technique Web, mobile & e-commerce.
   keywords: [Consultant technique, Web, PHP, Application Mobile, e-commerce, Magento, IoT]
   fmpages:
     manifest:
