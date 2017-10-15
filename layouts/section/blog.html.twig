@@ -18,7 +18,7 @@
                 <span class="post-com">&#9998;&nbsp;<a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
             </div>
         </header>
-        {{ post.content|excerpt }}
+        {{ post.content|excerpt|escape }}
         <footer class="more">
             <a href="{{ url(post) }}">Lire la suite ›</a>
         </footer>
