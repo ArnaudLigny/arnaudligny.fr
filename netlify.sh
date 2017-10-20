@@ -5,7 +5,7 @@ phpbrew switch 5.6.31
 
 echo "Installing Composer"
 phpbrew app get composer
-php composer install
+composer install
 
 echo "Running build"
 php scripts/build.php -e=prod
