@@ -4,10 +4,13 @@ source ~/.phpbrew/bashrc
 phpbrew switch 5.6.31
 
 echo "Downloading PHPoole"
-curl -sSOL https://phpoole.org/phpoole.phar
+#curl -sSOL https://phpoole.org/phpoole.phar
+phpbrew app get composer
+composer install
 
 echo "Running PHPoole"
-php phpoole.phar --version
-php phpoole.phar build
+#php phpoole.phar --version
+#php phpoole.phar build
+php scripts/build.php -e=prod
 
 exit 0
