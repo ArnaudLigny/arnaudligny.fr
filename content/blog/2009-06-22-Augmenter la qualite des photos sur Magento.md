@@ -10,7 +10,7 @@ Dans un premier temps, j'ai vainement cherché une option pour régler cela via 
 J'ai ensuite étudié le code source afin de déterminer comment le framework gère et surtout génère les différentes tailles des photos (sur la page liste, les miniatures, etc.) des produits.
 
 J'ai ainsi découvert que Magento utilise [GD2](http://www.php.net/gd), avec un réglage de qualité à 80% par défaut (et non modifiable via la configuration, back-office ou XML). Une valeur de 80/100 de qualité est suffisante dans la plupart des cas. Néanmoins dans le domaine du e-commerce ont sait qu'une photo de très bonne qualité peut faire la différence.
-
+<!-- excerpt -->
 L'idée est donc de pousser la qualité de compression (jpeg) à 90%, voici les solutions envisagées :
 
 1. Modifier le code PHP trouvé plus haut : NON, il ne faut jamais modifier directement le code issu du core de Magento !

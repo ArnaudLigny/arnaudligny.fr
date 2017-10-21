@@ -13,7 +13,7 @@ A l'heure actuel, j'aurai tendance à dire que non. Voici ce que propose Magento
 * Génération automatique d'une page listant les termes populaires
 
 Malgré cette liste de fonctionnalités qui pourait semblée suffisante, ça ne l'ai plus en 2009. En effet, les options de paramètrages sont actuellement trop limitées : de ce fait en fonctionnement automatique, le SEO proposé par Magento peut avoir des conséquences néfastes sur votre référencement.
-
+<!-- excerpt -->
 Voici un exemple flagrant : si un des produits du catalogue appartient à plusieurs catégories et que l'on active la génération automatique d'URL, Magento va générer autant de chemins différents que de catégories pour ce produit.
 
 Cela peut semblé négligeable, car Google ne pénalise pas le contenu dupliqué à l'intérieur d'un même site. Néanmoins le problème du duplicate content à toujours des conséquences :

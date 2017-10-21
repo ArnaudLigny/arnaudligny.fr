@@ -10,7 +10,7 @@ En effet, je vois régulièrement passer des billets, sur des blogs spécialisé
 C'est certainement le meilleur moyen de provoquer un conflit avec des extensions agissant sur les grilles ou de brider les mises à jour de Magento. Bref, à éviter !
 
 La solution que je propose n'est pas révolutionnaire : Elle se contente d'exploiter le pattern "[event/observer](http://www.magentocommerce.com/wiki/5_-_modules_and_development/0_-_module_development_in_magento/customizing_magento_using_event-observer_method)" de Magento.
-
+<!-- excerpt -->
 Le principe et la mise en œuvre sont très simple car Magento tire des évènements avant la construction des blocks et avant le chargement des collections : Exploitons les, tout simplement !
 
 Pour illustrer mes propos, je vais prendre l’exemple de la grille des produits, dans laquelle je veux ajouter une colonne, après celle du SKU, affichant le contenu d’un attribut créer préalablement.
@@ -20,26 +20,26 @@ Pour illustrer mes propos, je vais prendre l’exemple de la grille des produits
 ```{namespace}_{module}/etc/config.xml``` :
 
 ```xml
-<adminhtml> 
-    <events> 
-        <core_block_abstract_to_html_before> 
-            <observers> 
-                <{nom_de_mon_observer}> 
-                    <type>singleton</type> 
-                    <class>{namespace}_{module}/observer</class> 
-                    <method>beforeBlockToHtml</method> 
-                </{nom_de_mon_observer}> 
-            </observers> 
-        </core_block_abstract_to_html_before> 
-        <eav_collection_abstract_load_before> 
-            <observers> 
-                <{nom_de_mon_observer}> 
-                    <class>{namespace}_{module}/observer</class> 
-                    <method>beforeCollectionLoad</method> 
-                </{nom_de_mon_observer}> 
+<adminhtml>
+    <events>
+        <core_block_abstract_to_html_before>
+            <observers>
+                <{nom_de_mon_observer}>
+                    <type>singleton</type>
+                    <class>{namespace}_{module}/observer</class>
+                    <method>beforeBlockToHtml</method>
+                </{nom_de_mon_observer}>
             </observers>
-        </eav_collection_abstract_load_before> 
-    </events> 
+        </core_block_abstract_to_html_before>
+        <eav_collection_abstract_load_before>
+            <observers>
+                <{nom_de_mon_observer}>
+                    <class>{namespace}_{module}/observer</class>
+                    <method>beforeCollectionLoad</method>
+                </{nom_de_mon_observer}>
+            </observers>
+        </eav_collection_abstract_load_before>
+    </events>
 </adminhtml>
 ```
 
@@ -57,42 +57,42 @@ Ainsi, je vais ajouter une colonne au moment de la construction des blocks de la
 ```php
 <?php
 
-class {Namespace}_{Module}_Model_Observer 
-{ 
-    public function beforeBlockToHtml(Varien_Event_Observer $observer) 
-    { 
-        $grid = $observer->getBlock(); 
+class {Namespace}_{Module}_Model_Observer
+{
+    public function beforeBlockToHtml(Varien_Event_Observer $observer)
+    {
+        $grid = $observer->getBlock();
 
-    /** 
-     * Mage_Adminhtml_Block_Catalog_Product_Grid 
-     */ 
-    if ($grid instanceof Mage_Adminhtml_Block_Catalog_Product_Grid) { 
-        $grid->addColumnAfter( 
-            '{code_de_la_colonne}', 
-            array( 
-                'header' => Mage::helper('{Module}_catalog')->__('{{nom_de_la_colonne}}'), 
-                'index'  => '{code_de_la_colonne}' 
-            ), 
-            'sku' 
-        ); 
-    } 
+    /**
+     * Mage_Adminhtml_Block_Catalog_Product_Grid
+     */
+    if ($grid instanceof Mage_Adminhtml_Block_Catalog_Product_Grid) {
+        $grid->addColumnAfter(
+            '{code_de_la_colonne}',
+            array(
+                'header' => Mage::helper('{Module}_catalog')->__('{{nom_de_la_colonne}}'),
+                'index'  => '{code_de_la_colonne}'
+            ),
+            'sku'
+        );
+    }
 }
 
-public function beforeCollectionLoad(Varien_Event_Observer $observer) 
-{ 
-    $collection = $observer->getCollection(); 
-    if (!isset($collection)) { 
-        return; 
-    } 
+public function beforeCollectionLoad(Varien_Event_Observer $observer)
+{
+    $collection = $observer->getCollection();
+    if (!isset($collection)) {
+        return;
+    }
 
-        /** 
-         * Mage_Catalog_Model_Resource_Product_Collection 
-         */ 
-        if ($collection instanceof Mage_Catalog_Model_Resource_Product_Collection) { 
-            /* @var $collection Mage_Catalog_Model_Resource_Product_Collection */ 
-            $collection->addAttributeToSelect('{code_de_l_attribut}'); 
-        } 
-    } 
+        /**
+         * Mage_Catalog_Model_Resource_Product_Collection
+         */
+        if ($collection instanceof Mage_Catalog_Model_Resource_Product_Collection) {
+            /* @var $collection Mage_Catalog_Model_Resource_Product_Collection */
+            $collection->addAttributeToSelect('{code_de_l_attribut}');
+        }
+    }
 }
 ```
 

@@ -18,9 +18,9 @@
                 <span class="post-com">&#9998;&nbsp;<a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
             </div>
         </header>
-        <p>{{ post.content|excerpt }}</p>
+        <p>{{ post.content|excerptHtml }}</p>
         <footer class="more">
-            <a href="{{ url(post) }}">Lire la suite ›</a>
+            <a href="{{ url(post) }}#more">Lire la suite ›</a>
         </footer>
     </article>
 {% endfor %}

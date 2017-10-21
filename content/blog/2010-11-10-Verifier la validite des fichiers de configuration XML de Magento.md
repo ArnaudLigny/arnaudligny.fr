@@ -11,7 +11,7 @@ En effet, si vous faite une faute de frappe, qu'une balise est mal fermé ou tou
 ```php
 Warning: simplexml_load_string() [function.simplexml-load-string]: Entity: line 19: parser error : expected '>' in magento\lib\Varien\Simplexml\Config.php on line 510
 ```
-
+<!-- excerpt -->
 Notes :
 * ce message est loggué dans system.log (si les logs sont activés)
 * dans le cas où le DeveloperMode n'est pas activée, l'erreur sera silencieuse

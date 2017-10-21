@@ -7,7 +7,7 @@ tags: [Application mobile, Apache Cordova, React Native]
 Aujourd'hui, il n'est plus question de faire l'impasse quant à sa présence sur mobile lorsque l'on propose un service en ligne, que ce soit à destination du grand public ou de ses collaborateurs.
 
 La "vraie" question qui se pose – encore – aujourd'hui est de savoir si cette application doit être développée dans le système natif de chacun des OS (Operating System = système d'exploitation) du marché à savoir iOS, Android ou encore Windows Mobile, ou si elle doit être hybride ?
-
+<!-- excerpt -->
 En effet, cette question n'est pas nouvelle et continuera à se poser tant que les technologies mises en oeuvre continueront à évoluer : D'avantage de puissance matérielle, navigateur Web embarqué dans l'application, enrichissement des API, etc.
 
 Pour répondre à la question de "quoi choisir", il faut bien entendu comprendre les différences entre les deux approches.

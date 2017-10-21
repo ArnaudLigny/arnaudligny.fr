@@ -11,7 +11,7 @@ Dans le cadre de mon travail de création de boutiques e-commerce Magento, j'ai 
 Dans la plupart des cas le paiement ne se fait pas via [Magento Connect](http://www.magentocommerce.com/magento-connect) : Varien n'est pas tiers de confiance. Très souvent le lien présent sur la fiche du module redirige vers le site du créateur et vous propose de régler votre achat via PayPal.
 
 Jusque là rien de grave, mis à part le délais peut être : la plupart des vendeurs de modules ne vous livrent pas l'application juste après le paiement : il faut attendre qu'il vous le livre par e-mail...
-
+<!-- excerpt -->
 Enfin, le pire arrive : le package (archive ZIP dans la majorité des cas), est accompagné d'un fichier texte d'installation ! Oui, comme à l'époque d'osCommerce : il est nécessaire de copier les fichiers à la main, de modifier quelques ligne de codes, ou encore de changer la configuration du module via des variables PHP...
 Dans ce cas il m'est arrivé d'abandonner et coder moi même le module en question.
 

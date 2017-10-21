@@ -5,7 +5,7 @@ tags: [Magento]
 permalink: blog/magento-installation-de-la-beta-0-6
 ---
 Après l'annonce de la [sortie de Magento béta 0.6](http://narno.com/blog/magento-une-premiere-beta-telechargeable), je me suis décidé à tenter l'installation de [Magento Commerce](http://www.magentocommerce.com/) : je ne vous cacherai pas que ma première tentative n'a pas été couronnée de succès.
-
+<!-- excerpt -->
 En effet, j'ai tout d'abord tenté une installation locale sur mon Windows XP SP2 via [Wamp Server](http://www.wampserver.com/). La première partie de l'installation s'est déroulée sans trop de difficultés :
 
 Wamp configuré en PHP 5 Création d'une base de données pour accueillir les tables de Magento Activation du mode rewrite pour la réécriture d'URL Activation des extensions PHP : PDO, PDO pour MySQL, mcrypt

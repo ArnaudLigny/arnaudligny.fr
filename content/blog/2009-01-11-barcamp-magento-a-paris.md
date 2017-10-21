@@ -9,7 +9,7 @@ permalink: blog/barcamp-magento-a-paris
 C'est l'occasion pour la communauté des professionnels du e-commerce en France de se rencontrer et d'échanger ses idées techniques, fonctionnelles et business à propos de Magento.
 
 De plus, il y a de très forte chance que ***Roy Rubin***, le big boss de [Varien](http://www.varien.com/) (créateur de Magento Commerce) soir présent l'après-midi de cette rencontre.
-
+<!-- excerpt -->
 Notez également que quelques pointures du e-commece français seront présent :
 
 * [François Ziserman](http://www.ziserman.com/blog) (Araok)

@@ -17,7 +17,7 @@ Pour rappel, il faut savoir que Magento utilise un serveur [PEAR](http://pear.ph
 > **MagentoConnect 2.0 :** Ce n'est plus PEAR, mais les fondamentaux reste identiques !
 
 Voici la procédure à suivre, en utilisant l'exemple du [Modern Theme](http://www.magentocommerce.com/magento-connect/Magento+Core/extension/146/modern-theme-for-magento-frontend-interface).
-
+<!-- excerpt -->
 ## 1. Déterminer l'extension à télécharger via sa page sur MagentoConnect
 
 Modern Theme : [http://www.magentocommerce.com/magento-connect/Magento+Core/extension/146/modern-theme-for-magento-frontend-interface](http://www.magentocommerce.com/magento-connect/Magento+Core/extension/146/modern-theme-for-magento-frontend-interface)

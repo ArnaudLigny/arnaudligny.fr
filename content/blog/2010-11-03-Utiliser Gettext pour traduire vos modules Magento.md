@@ -10,7 +10,7 @@ En pratique, chaque ligne d'un fichier de langue Magento (par exemple Mage_Core.
 Par exemple : "Add Product","Ajouter un produit"
 
 Comme vous le voyez, rien de plus simple pour traduire son module Magento en français : il suffit de recenser toutes les chaînes de caractère utilisées, de les copier dans un fichier et de les traduire !
-
+<!-- excerpt -->
 Oui c'est facile, car ce type de fichier peut être créé avec n'importe éditeur de texte et sa structure est très simple à comprendre. Néanmoins, lorsqu'un module commence à contenir des centaines de chaînes de caractères, la maintenance devient rapidement pénible :
 
 * quels textes ont déjà été traduit ?
