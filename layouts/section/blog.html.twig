@@ -23,6 +23,7 @@
             <a href="{{ url(post) }}#more">Lire la suite ›</a>
         </footer>
     </article>
+    <hr />
 {% endfor %}
     <navigation>
 {% if page.pagination.prev is defined %}
@@ -39,17 +40,19 @@
 {% else %}
 {% for post in site.pages|filterBySection(page.pathname)|sortByDate %}
     <article class="post">
-        <header>
-            <h2 class="post-title"><a href="{{ url(post) }}">{{ post.title }}</a></h2>
+      <header>
+          <h2 class="post-title"><a href="{{ url(post) }}">{{ post.title }}</a></h2>
+          <div class="post-meta">
 {% if post.date %}
-            <span class="post-date">{{ post.date|date("j M Y") }}</span>
+              <span class="post-date">{{ post.date|date("j M Y") }}</span>
 {% endif %}
-            <span class="post-time">&#128336; {{ readtime(post.content) }} min</span>
-            <span class="post-com">&#9998; <a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
-        </header>
+              <span class="post-time">&#128336;&nbsp;{{ readtime(post.content) }}&nbsp;min</span>
+              <span class="post-com">&#9998;&nbsp;<a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
+          </div>
+      </header>
         {{ post.content|excerpt }}
         <footer class="more">
-            <a href="{{ url(post) }}">Lire la suite &raquo;</a>
+            <a href="{{ url(post) }}#more">Lire la suite &raquo;</a>
         </footer>
     </article>
     <hr />
