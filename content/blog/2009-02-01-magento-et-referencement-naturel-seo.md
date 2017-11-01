@@ -30,7 +30,7 @@ Tel que je présente les choses, le tableau de la SEO pour Magento pourrait semb
 
 Il n'en reste pas moins qu'il sera rapidement nécessaire que Varien intègre certains fondamentaux, tel que la prise en compte de la langue du site, non pas via la session utilisateur (arg !) mais plutôt via l'URL (sous la forme de répertoires virtuels ou de sous-domaines). Par exemple :
 
-* http://fr.ma-boutique.com
-* http://www.ma-boutique.com/fr/
+* `http://fr.ma-boutique.com`
+* `http://www.ma-boutique.com/fr/`
 
 En bilan je dirai que Magento Commerce est un fantastique outil de création de boutique en ligne, que les fondations techniques et fonctionnels sont très bon, et qu'avec un peu de maturité, certaines lacunes de SEO peuvent être simplement comblées.
