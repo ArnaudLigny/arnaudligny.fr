@@ -6,7 +6,7 @@ tags: [Application mobile, Apache Cordova, React Native]
 
 Aujourd'hui, il n'est plus question de faire l'impasse quant à sa présence sur mobile lorsque l'on propose un service en ligne, que ce soit à destination du grand public ou de ses collaborateurs.
 
-La "vraie" question qui se pose – encore – aujourd'hui est de savoir si cette application doit être développée dans le système natif de chacun des OS (Operating System = système d'exploitation) du marché à savoir iOS, Android ou encore Windows Mobile, ou si elle doit être hybride ?
+La "vraie" question qui se pose – encore – aujourd'hui est de savoir si cette application doit être développée dans le système natif de chacun des OS du marché à savoir iOS, Android ou encore Windows Mobile, ou si elle doit être hybride ?
 <!-- excerpt -->
 En effet, cette question n'est pas nouvelle et continuera à se poser tant que les technologies mises en oeuvre continueront à évoluer : D'avantage de puissance matérielle, navigateur Web embarqué dans l'application, enrichissement des API, etc.
 
@@ -20,12 +20,12 @@ Ainsi, dans le cas d'une application iOS (iPhone, iPod, iPad, etc.), celle-ci se
 
 ### Les plus
 
-Excellente expérience utilisateur : L'UI (User Interface) est cohérente avec l'OS, l'utilisateur trouve rapidement ses marques.
+Excellente expérience utilisateur : L'UI est cohérente avec l'OS, l'utilisateur trouve rapidement ses marques.  
 Intégration simple avec le hardware du téléphone, et plus particulièrement avec les "capteurs" : GPS, appareil photo, bluetooth, etc.
 
 ### Les moins
 
-Il est nécessaire de connaître le framework de développement de chacun des écosystèmes.
+Il est nécessaire de connaître le framework de développement de chacun des écosystèmes.  
 Oblige à maintenir plusieurs socles applicatifs tout au long de la vie de l'application (autant de socles que de plateformes).
 
 ## Qu'est-ce qu'une application "hybride" ?
@@ -80,5 +80,10 @@ L'élément différenciant restant l'expérience utilisateur "plus immersive" et
 
 1. Vous avez besoin d'une application très réactive et immersive (au sens environnement applicatif) et vous avez les moyens de vos ambitions : Faites du natif.
 2. Pour tout les autres cas, la solution hybride est plus que recommandée !
+
+*[OS]: Operating System / système d'exploitation
+*[API]: Application Programming Interface
+*[UI]: User Interface
+*[GPS]: Global Positioning System
 
 _Initialement publié sur [Adfab Connect](https://connect.adfab.fr/mobile/application-mobile-native-ou-hybride)._
