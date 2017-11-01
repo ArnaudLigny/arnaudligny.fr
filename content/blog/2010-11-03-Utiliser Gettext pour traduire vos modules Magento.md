@@ -6,8 +6,8 @@ tags: "Magento"
 
 Nativement, Magento permet la gestion des traductions de l'application via des fichiers CSV (Comma Separated Values). Il s'agit d'une solution simple, robuste et facile à utiliser pour le néophyte.
 
-En pratique, chaque ligne d'un fichier de langue Magento (par exemple Mage_Core.csv) forme une paire : contenu d'origine puis contenu traduit, séparés par une virgule.
-Par exemple : "Add Product","Ajouter un produit"
+En pratique, chaque ligne d'un fichier de langue Magento (par exemple `Mage_Core.csv`) forme une paire : contenu d'origine puis contenu traduit, séparés par une virgule.  
+Par exemple : `"Add Product","Ajouter un produit"`
 
 Comme vous le voyez, rien de plus simple pour traduire son module Magento en français : il suffit de recenser toutes les chaînes de caractère utilisées, de les copier dans un fichier et de les traduire !
 <!-- excerpt -->
@@ -20,20 +20,20 @@ Oui c'est facile, car ce type de fichier peut être créé avec n'importe édite
 * comment assurer la bonne édition du fichier s'il est éditer par plusieurs contributeurs
 * etc
 
-Mon expérience Drupal m'a habitué à ne pas me casser la tête avec la traduction de mes modules. Pourquoi ? Parce-que Drupal utilise [Gettext pour PHP](http://www.php.net/manual/fr/intro.gettext.php) ! Gettext est un mécanisme de traduction libre, s'appuyant sur les locales d'un système d'application, le tout stocké dans des fichiers binaires (.mo). Je vous invite à suivre le lien suivant pour plus d'infos : [GNU gettext utilities](http://www.gnu.org/software/gettext/manual/gettext.html).
+Mon expérience Drupal m'a habitué à ne pas me casser la tête avec la traduction de mes modules. Pourquoi ? Parce-que Drupal utilise [Gettext pour PHP](http://www.php.net/manual/fr/intro.gettext.php) ! Gettext est un mécanisme de traduction libre, s'appuyant sur les locales d'un système d'application, le tout stocké dans des fichiers binaires (`.mo`). Je vous invite à suivre le lien suivant pour plus d'infos : [GNU gettext utilities](http://www.gnu.org/software/gettext/manual/gettext.html).
 
 Maintenant la question est : comment utiliser Gettext avec Magento ?
 
 Pour rappel, Magento est basé sur le Zend Framework, qui fourni l'outillage adéquate les application multilingues : [Zend_Translate](http://framework.zend.com/manual/fr/zend.translate.introduction.html).
-En étudiant un peu la documentation, on s’aperçoit (et c'était prévisible) que Zend_Translate supporte plusieurs formats de traduction, dont Gettext.
+En étudiant un peu la documentation, on s’aperçoit (et c'était prévisible) que `Zend_Translate` supporte plusieurs formats de traduction, dont Gettext.
 
 Dans le cas de Magento, la Core Team à opté pour un l'adaptateur CSV, mais le ZF propose également le support de [Gettext](http://framework.zend.com/manual/fr/zend.translate.adapter.html#zend.translate.adapter.gettext).
 
 Voyons maintenant comment l’utiliser, en créant un module simple, qui va overrider la classe de traduction de Magento.
 
-Note : Le code qui suit n'est fonctionnel tel quel, il s'agit de portion de code. Si j'ai le courage, je packagerai un module téléchargeable.
+> Note : Le code qui suit n'est fonctionnel tel quel, il s'agit de portion de code. Si j'ai le courage, je packagerai un module téléchargeable.
 
-```app/code/local/Narno/Gettext/Model/Translate.php```
+`app/code/local/Narno/Gettext/Model/Translate.php`
 
 ```php
 /**
@@ -114,7 +114,7 @@ class Narno_Gettext_Model_Translate extends Mage_Core_Model_Translate
 </config>
 ```
 
-Si vous comparez la classe ```Narno_Gettext_Model_Translate``` avec la classe originale ```Mage_Core_Model_Translate```, vous constaterez que j'ai introduis la possibilité de déterminer le type du fichier de traduction. De ce fait, le format CSV reste utilisable, via le noeud XML "default" (ou CSV). Pour charger un fichier binaire Gettest, il suffit d'utiliser le type "MO".
+Si vous comparez la classe `Narno_Gettext_Model_Translate` avec la classe originale `Mage_Core_Model_Translate`, vous constaterez que j'ai introduis la possibilité de déterminer le type du fichier de traduction. De ce fait, le format CSV reste utilisable, via le noeud XML "default" (ou CSV). Pour charger un fichier binaire Gettest, il suffit d'utiliser le type "MO".
 
 En ce qui concerne l’accès aux données binaires stockées dans le fichier .mo, rien de plus simple avec ZF en instanciant l'objet adéquate, en passant en paramètre le fichier de traduction et la locale correspondante. Magento utilisant déjà les locales, aucune bidouille n'est nécessaire :
 
