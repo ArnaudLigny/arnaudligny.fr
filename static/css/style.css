@@ -172,7 +172,7 @@ blockquote > p {
 }
 
 pre {
-    font: 1em/1 "Times New Roman", Serif !important;
+    font: 0.7em/1 "Times New Roman", Serif !important;
 }
 
 code {
@@ -180,7 +180,7 @@ code {
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     margin: 0;
-    font-size: 0.7em;
+    font-size: 1em;
     background-color: rgba(27,31,35,0.05);
     border-radius: 3px;
 }
