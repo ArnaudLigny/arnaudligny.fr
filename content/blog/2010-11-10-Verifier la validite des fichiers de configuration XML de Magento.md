@@ -13,17 +13,17 @@ Warning: simplexml_load_string() [function.simplexml-load-string]: Entity: line 
 ```
 <!-- excerpt -->
 Notes :
-* ce message est loggué dans system.log (si les logs sont activés)
-* dans le cas où le DeveloperMode n'est pas activée, l'erreur sera silencieuse
+* ce message est loggué dans `system.log` (si les logs sont activés)
+* dans le cas où le `DeveloperMode` n'est pas activée, l'erreur sera silencieuse
 
-Vous me direz, ça n'est pas bloquant : un coup d'oeil dans le fichier exception.log pour déterminer l'origine du problème et l'affaire est réglée ! Sauf que non, ce type d'erreur n'est pas "protégée" par un try/catch...
+Vous me direz, ça n'est pas bloquant : un coup d'oeil dans le fichier `exception.log` pour déterminer l'origine du problème et l'affaire est réglée ! Sauf que non, ce type d'erreur n'est pas "protégée" par un try/catch...
 De ce fait, mise à part le fait de savoir qu'un fichier XML de configuration est en cause, vous n'êtes pas très avancé.
 
-L'idée, pour se simplifier, est de connaitre le non (où plutôt le chemin) du fichier en cause et la ligne qui pose problème.
+L'idée, pour se simplifier, est de connaitre le nom (où plutôt le chemin) du fichier en cause et la ligne qui pose problème.
 
-Pour cela, je vous propose un overlap de classe Varien en charge des fichiers de configuration XML : [```Varien_Simplexml_Config```](http://docs.magentocommerce.com/Varien/Varien_Simplexml/Varien_Simplexml_Config.html). Le code est simple et mériterait d'être retravaillé, mais il fonctionne bien en l'état.
+Pour cela, je vous propose un overlap de classe `Varien` en charge des fichiers de configuration XML : [`Varien_Simplexml_Config`](http://docs.magentocommerce.com/Varien/Varien_Simplexml/Varien_Simplexml_Config.html). Le code est simple et mériterait d'être retravaillé, mais il fonctionne bien en l'état.
 
-```app/code/local/Varien/Simplexml/Config.php``` :
+`app/code/local/Varien/Simplexml/Config.php` :
 
 ```php
 class Varien_Simplexml_Config {
@@ -102,13 +102,13 @@ class Varien_Simplexml_Config {
 }
 ```
 
-Le principe est très simple : je me contente d'utiliser l'outillage founi par PHP et libxml via libxml_use_internal_errors() :
+Le principe est très simple : je me contente d'utiliser l'outillage founi par PHP et libxml via `libxml_use_internal_errors()` :
 
 * j'active le gestionnaire d'erreur de la librairie
-* je contrôle le fichier XML chargé dont je connais le chemin via $filePath
+* je contrôle le fichier XML chargé dont je connais le chemin via `$filePath`
 * en cas d'erreurs, je les compile dans un tableau
 * j'enregistre ces erreurs (message, code, fichier, ligne et colonne) dans un fichers de log dédié
-* si le DeveloperMode est activée, je lève une exception bien violente
+* si le `DeveloperMode` est activée, je lève une _exception_ bien violente
 
 Voilà, c'est tout simple et le résultat est tout de même plus explicite :
 
@@ -121,10 +121,13 @@ Line: 20
 Column: 1
 ```
 
-Il semblerait que j'ai mal fermé une balise à la ligne 20 du fichier de configuration de MonModule ! :-)
+Il semblerait que j'ai mal fermé une balise à la ligne 20 du fichier de configuration de `MonModule` ! :-)
 
-Encore une fois j'insiste sur le fait qu'il s'agit d'un overlap simple et perfectible (et surtout bourrin). Si vous avez des idées d'amélioration, n'hésitez pas ! :-)
+Encore une fois j'insiste sur le fait qu'il s'agit d'un _overlap_ simple et perfectible (et surtout bourrin). Si vous avez des idées d'amélioration, n'hésitez pas ! :-)
 
-Pour aller plus loin dans la validation des fichiers XML de Magento, il serait nécessaire de valider leur schéma via une DTD (via l'option _LIBXML_DTDVALID_ de l'objet SimpleXMLElement), mais le chantier s'annonce long et pénible...
+Pour aller plus loin dans la validation des fichiers XML de Magento, il serait nécessaire de valider leur schéma via une DTD (via l'option `LIBXML_DTDVALID` de l'objet `SimpleXMLElement`), mais le chantier s'annonce long et pénible...
+
+*[XML]: Extensible Markup Language  
+*[DTD]: Document type definition
 
 _Initialement publié sur [Narno.com](http://narno.com/blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento)._
