@@ -4,7 +4,7 @@ date: 2010-11-03
 tags: "Magento"
 ---
 
-Nativement, Magento permet la gestion des traductions de l'application via des fichiers CSV (Comma Separated Values). Il s'agit d'une solution simple, robuste et facile à utiliser pour le néophyte.
+Nativement, Magento permet la gestion des traductions de l'application via des fichiers CSV. Il s'agit d'une solution simple, robuste et facile à utiliser pour le néophyte.
 
 En pratique, chaque ligne d'un fichier de langue Magento (par exemple `Mage_Core.csv`) forme une paire : contenu d'origine puis contenu traduit, séparés par une virgule.  
 Par exemple : `"Add Product","Ajouter un produit"`
@@ -130,5 +130,7 @@ Néanmoins, je dois reconnaître que si ma solution est simple, elle n'est pas d
 A partir de là, vous allez pouvoir commencer à vous amuser grâce à des logiciels de gestion catalogues Gettext, tels que [Poedit](http://www.poedit.net) (disponible pour Windows, Mac et Linux).
 
 Vous verrez que c'est très agréable à utiliser et que c'est nettement plus adapté à un usage professionnel : vous n'aurez plus à recherche manuellement les chaînes à traduire au milieu de vos lignes de codes, le logiciel le fera pour vous en scannant les répertoires de votre module ! Ce sera certainement le sujet du prochain billet ;-)
+
+*[CSV]: Comma Separated Values
 
 _Initialement publié sur [Narno.com](http://narno.com/blog/utiliser-gettext-pour-traduire-vos-modules-magento)._
