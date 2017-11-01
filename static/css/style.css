@@ -30,10 +30,6 @@ hr {
     margin-bottom: 1em;
 }
 
-pre {
-    font: 65%/1 "Times New Roman", Serif !important;
-}
-
 #avatar {
     width: 128px;
     height: 128px;
@@ -175,12 +171,16 @@ blockquote > p {
     text-align: left;
 }
 
+pre {
+    font: 0.7em/1 "Times New Roman", Serif !important;
+}
+
 code {
     padding: 0;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     margin: 0;
-    font-size: 85%;
+    font-size: 0.7em;
     background-color: rgba(27,31,35,0.05);
     border-radius: 3px;
 }
