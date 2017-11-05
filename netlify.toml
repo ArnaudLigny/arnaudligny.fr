@@ -3,7 +3,7 @@
   publish = "_site"
 
 [context.deploy-preview]
-  command = "chmod +x netlify.sh && bash netlify.sh $DEPLOY_PRIME_URL && php phpoole.phar --version"
+  command = "chmod +x netlify.sh && bash netlify.sh $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
   command = "chmod +x netlify.sh && bash netlify.sh $DEPLOY_PRIME_URL"
