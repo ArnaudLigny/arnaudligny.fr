@@ -11,7 +11,7 @@ curl -sSOL https://phpoole.org/phpoole.phar
 
 echo "Running PHPoole"
 php phpoole.phar --version
-if [ -z "$1" ]; then php phpoole.phar build; else echo $1 && php phpoole.phar build --baseurl=$1 --drafts; fi
+if [ -z "$1" ]; then php phpoole.phar build; else echo "URL: $1" && php phpoole.phar build --baseurl=$1 --drafts; fi
 # use script
 #php scripts/build.php -e=prod
 
