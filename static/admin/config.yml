@@ -15,5 +15,5 @@ collections:
       - {label: Titre, name: title, widget: string}
       - {label: Date, name: date, widget: datetime}
       - {label: Tags, name: tags, widget: list, default: ['Mobile', 'Mobile'], required: false}
-      - {label: Publié, name: published, widget: boolean, default: false, required: false}
+      - {label: Publié, name: published, widget: boolean, required: false}
       - {label: Texte, name: body, widget: markdown}
