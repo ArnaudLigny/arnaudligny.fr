@@ -136,6 +136,9 @@ a.pagination-item:hover {
 article {
   margin-bottom: 1.5em;
 }
+article img {
+  width: 100%;
+}
 
 #posts > article > footer {
   text-align: right;
