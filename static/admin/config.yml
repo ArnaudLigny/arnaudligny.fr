@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: Narno/arnaudligny.fr
+  branch: netlify-cms
+publish_mode: editorial_workflow
+media_folder: "static/images"
+public_folder: "/images"
+collections:
+  - name: "Billets"
+    label: "Billets"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: Titre, name: title, widget: string}
+      - {label: Date, name: date, widget: datetime}
+      - {label: Tags, name: tags, widget: list, default: ['Mobile', 'Mobile'], required: false}
+      - {label: Publié, name: published, widget: boolean, required: false}
+      - {label: Texte, name: body, widget: markdown}
