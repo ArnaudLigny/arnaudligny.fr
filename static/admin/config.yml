@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: Narno/arnaudligny.fr
-  branch: netlify-cms
+  branch: master
 publish_mode: editorial_workflow
 media_folder: "static/images"
 public_folder: "/images"
