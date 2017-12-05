@@ -1,8 +1,8 @@
 echo "Switching to PHP 5.6"
 echo "[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc" >> ~/.bashrc
 source ~/.phpbrew/bashrc
-phpbrew list
-phpbrew switch 7.1.11
+#phpbrew list
+phpbrew switch 5.6.32
 
 echo "Downloading PHPoole"
 curl -sSOL https://phpoole.org/phpoole.phar
