@@ -1,7 +1,7 @@
 echo "Switching to PHP 5.6"
 echo "[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc" >> ~/.bashrc
 source ~/.phpbrew/bashrc
-#phpbrew known
+phpbrew list
 phpbrew switch 7.1.11
 
 echo "Downloading PHPoole"
