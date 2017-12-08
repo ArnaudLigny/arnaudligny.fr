@@ -17,4 +17,4 @@ collections:
       - {label: Image, name: image, widget: image, required: false}
       - {label: Texte, name: body, widget: markdown}
       - {label: Tags, name: tags, widget: list, required: false}      
-      - {label: Publié ?, name: published, widget: boolean, required: false}
+      - {label: Publié ?, name: published, widget: boolean, default: false, required: false}
