@@ -15,6 +15,9 @@
             <span class="post-com">&#9998;&nbsp;<a href="{{ url(page) }}#disqus_thread">Commentaires</a></span>
         </div>
     </header>
+{% if page.image is defined %}
+    <p><img src="{{ page.image }}" alt="Image d'illustration"/></p>
+{% endif %}
     {{ page.content }}
     <footer class="tags">
 {% if page.tags is defined %}
