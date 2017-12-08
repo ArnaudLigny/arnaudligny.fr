@@ -5,7 +5,6 @@ tags: [Application mobile, Apache Cordova, React Native]
 image: /images/native-VS-hybrid.gif
 published: true
 ---
-![Image d'illustration](/images/native-VS-hybrid.gif)
 
 Aujourd'hui, il n'est plus question de faire l'impasse quant à sa présence sur mobile lorsque l'on propose un service en ligne, que ce soit à destination du grand public ou de ses collaborateurs.
 
