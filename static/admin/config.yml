@@ -17,3 +17,4 @@ collections:
       - {label: Tags, name: tags, widget: list, default: ['Mobile', 'Mobile'], required: false}
       - {label: Publié, name: published, widget: boolean, required: false}
       - {label: Texte, name: body, widget: markdown}
+      - {label: Image, name: image, widget: image}
