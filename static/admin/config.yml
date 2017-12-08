@@ -16,5 +16,5 @@ collections:
       - {label: Date, name: date, widget: datetime}
       - {label: Image, name: image, widget: image}
       - {label: Texte, name: body, widget: markdown}
-      - {label: Tags, name: tags, widget: list, default: ['Mobile', 'Mobile'], required: false}      
+      - {label: Tags, name: tags, widget: list, default: ['Magento', 'Drupal'], required: false}      
       - {label: Publié, name: published, widget: boolean, required: false}
