@@ -24,15 +24,14 @@ collections:
         widget: "select"
         options:
           - { label: "Non", value: "false" }
-          - { label: "Oui", value: "true" }
-        default: false
-        required: true      
+          - { label: "Oui", value: "true" }     
   - name: "pages"
     label: "Pages"
     files:
       - name: "index"
         label: "Home page"
         file: "content/index.md"
+        delete: false
         fields:
           - {label: "Titre", name: "title", widget: string}
           - {label: "Texte", name: "body", widget: markdown}
@@ -40,6 +39,7 @@ collections:
       - name: "a-propos"
         label: "À propos"
         file: "content/a-propos.md"
+        delete: false
         fields:
           - {label: "Titre", name: "title", widget: string}
           - {label: "Texte", name: "body", widget: markdown}
