@@ -6,15 +6,41 @@ publish_mode: editorial_workflow
 media_folder: "static/images"
 public_folder: "/images"
 collections:
-  - name: "Billets"
+  - name: "billets"
     label: "Billets"
+    description: >
+      Billets (de blog), listés dans la section 'Blog' et dans le flux RSS.
     folder: "content/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: Titre, name: title, widget: string}
-      - {label: Date, name: date, widget: datetime}
-      - {label: Image, name: image, widget: image, required: false}
-      - {label: Texte, name: body, widget: markdown}
-      - {label: Tags, name: tags, widget: list, required: false}      
-      - {label: Publié ?, name: published, widget: boolean, default: false, required: false}
+      - {label: "Titre", name: "title", widget: string}
+      - {label: "Date", name: "date", widget: datetime}
+      - {label: "Image", name: "image", widget: image, required: false}
+      - {label: "Texte", name: "body", widget: markdown}
+      - {label: "Tags", name: "tags", widget: list, required: false}
+      - label: "Publié ?"
+        name: "published"
+        widget: "select"
+        options:
+          - { label: "Non", value: "false" }
+          - { label: "Oui", value: "true" }
+        default: false
+        required: true      
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "index"
+        label: "Home page"
+        file: "content/index.md"
+        fields:
+          - {label: "Titre", name: "title", widget: string}
+          - {label: "Texte", name: "body", widget: markdown}
+          - {label: "Publié ?", name: "published", widget: boolean, default: true, required: true}
+      - name: "a-propos"
+        label: "À propos"
+        file: "content/a-propos.md"
+        fields:
+          - {label: "Titre", name: "title", widget: string}
+          - {label: "Texte", name: "body", widget: markdown}
+          - {label: "Publié ?", name: "published", widget: boolean, default: false, required: true}
