@@ -31,7 +31,7 @@ collections:
     label: "Pages"
     description: >
       N'importe quelle page, telle que "À propos.
-    folder: "content/"
+    folder: "content"
     filter: {field: "type", value: "page"}
     create: true
     slug: "{{slug}}"
