@@ -26,17 +26,21 @@ collections:
           - { label: "Non", value: "false" }
           - { label: "Oui", value: "true" }
         default: false
-        required: false
+        required: true      
   - name: "pages"
     label: "Pages"
-    description: >
-      N'importe quelle page, telle que "À propos.
-    folder: "content"
-    filter: {field: "type", value: "page"}
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Titre", name: "title", widget: string}
-      - {label: "Texte", name: "body", widget: markdown}
-      - {label: "Publié ?", name: "published", widget: boolean, default: false, required: false}
-      - {label: "Type", name: "type", widget: "hidden", default: "page"}
+    files:
+      - name: "index"
+        label: "Home page"
+        file: "content/index.md"
+        fields:
+          - {label: "Titre", name: "title", widget: string}
+          - {label: "Texte", name: "body", widget: markdown}
+          - {label: "Publié ?", name: "published", widget: boolean, default: true, required: true}
+      - name: "a-propos"
+        label: "À propos"
+        file: "content/a-propos.md"
+        fields:
+          - {label: "Titre", name: "title", widget: string}
+          - {label: "Texte", name: "body", widget: markdown}
+          - {label: "Publié ?", name: "published", widget: boolean, default: false, required: true}
