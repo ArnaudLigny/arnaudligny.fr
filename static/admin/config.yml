@@ -6,15 +6,37 @@ publish_mode: editorial_workflow
 media_folder: "static/images"
 public_folder: "/images"
 collections:
-  - name: "Billets"
+  - name: "billets"
     label: "Billets"
+    description: >
+      Billets (de blog), listés dans la section 'Blog' et dans le flux RSS.
     folder: "content/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: Titre, name: title, widget: string}
-      - {label: Date, name: date, widget: datetime}
-      - {label: Image, name: image, widget: image, required: false}
-      - {label: Texte, name: body, widget: markdown}
-      - {label: Tags, name: tags, widget: list, required: false}      
-      - {label: Publié ?, name: published, widget: boolean, default: false, required: false}
+      - {label: "Titre", name: "title", widget: string}
+      - {label: "Date", name: "date", widget: datetime}
+      - {label: "Image", name: "image", widget: image, required: false}
+      - {label: "Texte", name: "body", widget: markdown}
+      - {label: "Tags", name: "tags", widget: list, required: false}
+      - label: "Publié ?"
+        name: "published"
+        widget: "select"
+        options:
+          - { label: "Non", value: "false" }
+          - { label: "Oui", value: "true" }
+        default: false
+        required: false
+  - name: "pages"
+    label: "Pages"
+    description: >
+      N'importe quelle page, telle que "À propos.
+    folder: "content/"
+    filter: {field: "type", value: "page"}
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titre", name: "title", widget: string}
+      - {label: "Texte", name: "body", widget: markdown}
+      - {label: "Publié ?", name: "published", widget: boolean, default: false, required: false}
+      - {label: "Type", name: "type", widget: "hidden", default: "page"}
