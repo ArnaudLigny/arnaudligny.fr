@@ -15,7 +15,7 @@
     <meta name="keywords" content="{{ site.keywords|join(', ') }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#d23d23">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ url('images/avatar-16.png') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url('images/avatars/avatar-16.png') }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} : blog" href="{{ url('rss.xml') }}" />
     <link rel="manifest" href="{{ url('manifest.json') }}">
     <!-- Facebook meta -->
@@ -25,7 +25,7 @@
     <meta property="og:image" content="{{ url(page.image) }}" />
     <meta name="twitter:image" content="{{ url(page.image) }}" />
 {% else %}
-    <meta property="og:image" content="{{ url('images/avatar-300.png', true) }}" />
+    <meta property="og:image" content="{{ url('images/avatars/avatar-300.png', true) }}" />
 {% endif %}
 {% if page.id == 'index' %}
     <meta property="og:title" content="{{ site.title }}" />
@@ -83,7 +83,7 @@
         <nav>
             <ul>{% spaceless %}
 {% for entry in site.menus.main|sortByWeight %}
-                {% if page.id == 'index' and entry.id == 'index' %}{% else %}<li><a href="{{ url(entry.url) }}">{% if entry.id == 'index' %}<img src="{{ url('images/avatar-22.png') }}" />&nbsp;{% endif %}{{ entry.name }}</a></li>{% endif %}
+                {% if page.id == 'index' and entry.id == 'index' %}{% else %}<li><a href="{{ url(entry.url) }}">{% if entry.id == 'index' %}<img src="{{ url('images/avatars/avatar-22.png') }}" />&nbsp;{% endif %}{{ entry.name }}</a></li>{% endif %}
 {% endfor %}
             {% endspaceless %}</ul>
             <ul class="social">

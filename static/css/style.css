@@ -34,7 +34,7 @@ hr {
     width: 128px;
     height: 128px;
     border-radius: 50%;
-    background: #eeeeee url('/images/avatar-128.png') no-repeat;
+    background: #eeeeee url('/images/avatars/avatar-128.png') no-repeat;
     background-size: 128px 128px;
     box-shadow: inset 0 0 10px #666;
     margin-top: 25px;
