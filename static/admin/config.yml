@@ -28,14 +28,13 @@ collections:
         file: "content/index.md"
         delete: false
         fields:
-          - {label: "Titre", name: "title", widget: string}
           - {label: "Texte", name: "body", widget: markdown}
-          - {label: "Publié ?", name: "published", widget: boolean, default: true, required: true}
+          - {label: "Publié ?", name: "published", widget: hidden, default: true}
       - name: "a-propos"
         label: "À propos"
         file: "content/a-propos.md"
         delete: false
         fields:
-          - {label: "Titre", name: "title", widget: string}
+          - {label: "Titre", name: "title", widget: "hidden", default: "À propos"}
           - {label: "Texte", name: "body", widget: markdown}
-          - {label: "Publié ?", name: "published", widget: boolean, default: true, required: true}
+          - {label: "Publié ?", name: "published", widget: hidden, default: true}
