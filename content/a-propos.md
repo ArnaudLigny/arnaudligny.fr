@@ -1,6 +1,6 @@
 ---
 title: À propos
-type: page
+published: true
 ---
 
 [arnaudligny.fr](https://arnaudligny.fr) et son contenu sont créés et édités par [Arnaud Ligny](https://arnaudligny.fr).
