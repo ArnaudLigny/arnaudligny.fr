@@ -1,6 +1,6 @@
 ---
 layout: index.html
-type: page
+published: true
 ---
 Hello, je suis Arnaud Ligny, consultant technique expérimenté.
 
