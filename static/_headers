@@ -13,5 +13,3 @@
   Cache-Control: public, max-age=360000
 /js/*
   Cache-Control: public, max-age=360000
-/screenshots/*
-  Cache-Control: public, max-age=360000

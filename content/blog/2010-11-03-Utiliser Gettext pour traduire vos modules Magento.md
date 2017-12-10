@@ -2,7 +2,7 @@
 title: "Utiliser Gettext pour traduire vos modules Magento"
 date: 2010-11-03
 tags: "Magento"
-image: /screenshots/poedit.png
+image: /images/poedit.png
 ---
 
 Nativement, Magento permet la gestion des traductions de l'application via des fichiers CSV. Il s'agit d'une solution simple, robuste et facile à utiliser pour le néophyte.
