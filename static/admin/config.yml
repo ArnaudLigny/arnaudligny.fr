@@ -22,6 +22,8 @@ collections:
       - {label: "Publié ?", name: "published", widget: boolean, default: false, required: true}
   - name: "pages"
     label: "Pages"
+    description: >
+      Pages "simple" du site : Accueil, À propos, etc.
     files:
       - name: "code"
         label: "Code"
@@ -43,5 +45,6 @@ collections:
         file: "content/index.md"
         delete: false
         fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "index.html"}
           - {label: "Texte", name: "body", widget: markdown}
           - {label: "Publié ?", name: "published", widget: hidden, default: true}
