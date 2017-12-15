@@ -38,3 +38,10 @@ collections:
           - {label: "Titre", name: "title", widget: "hidden", default: "À propos"}
           - {label: "Texte", name: "body", widget: markdown}
           - {label: "Publié ?", name: "published", widget: hidden, default: true}
+      - name: "code"
+        label: "Code"
+        file: "content/code.md"
+        delete: false
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "redirect.html"}
+          - {label: "Redirection", name: "destination", widget: string}
