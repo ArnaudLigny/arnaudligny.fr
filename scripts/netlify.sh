@@ -1,6 +1,6 @@
 echo "Downloading PHPoole"
 curl -sSOL https://phpoole.org/phpoole.phar
-echo "Using PHPoole" && php phpoole.phar --version
+php phpoole.phar --version
 if [ -z "$1" ]; then php phpoole.phar build; else echo "URL: $1" && php phpoole.phar build --baseurl=$1 --drafts; fi
 
 exit 0
