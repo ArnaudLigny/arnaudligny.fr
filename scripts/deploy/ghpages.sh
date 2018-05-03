@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-set -e
+#!/bin/bash -e
 
 if [ -z "$GH_TOKEN" ]; then
   echo "'GH_TOKEN' is not defined"
