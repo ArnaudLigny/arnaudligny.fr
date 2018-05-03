@@ -1,3 +1,5 @@
+#!/bin/bash -e
+
 echo "Downloading PHPoole"
 curl -sSOL https://phpoole.org/phpoole.phar
 php phpoole.phar --version
