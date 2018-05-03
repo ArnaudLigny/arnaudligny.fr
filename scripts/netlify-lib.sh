@@ -1,3 +1,5 @@
+#!/bin/bash -e
+
 echo "Switching to PHP 5.6"
 echo "[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc" >> ~/.bashrc
 source ~/.phpbrew/bashrc
