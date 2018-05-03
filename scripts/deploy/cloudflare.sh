@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -e
+#!/bin/bash -e
 
 echo "Purge Cloudflare cache (zone: ${CLOUDFLARE_ZONE})"
 
