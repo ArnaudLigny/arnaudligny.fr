@@ -5,7 +5,7 @@ site:
   baseurl: https://arnaudligny.fr/
   canonicalurl: false
   description: Arnaud Ligny, Consultant technique Web, mobile & e-commerce.
-  keywords: [Consultant technique, Web, PHP, Application Mobile, e-commerce, Magento, IoT]
+  keywords: [Consultant technique, Web, Application Mobile, e-commerce, Magento, IoT]
   fmpages:
     manifest:
       layout: manifest.json
