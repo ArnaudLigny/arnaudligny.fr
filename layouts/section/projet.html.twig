@@ -1,0 +1,27 @@
+{% extends 'index.html.twig' %}
+
+{% block subheader %}
+{% endblock subheader %}
+
+{% block content %}
+<section id="projects">
+{% for project in site.pages|filterBySection(page.pathname) %}
+    <article class="project">
+        <header>
+            <h2 class="project-title"><a href="{{ url(project) }}">{{ project.title }}</a></h2>
+        </header>
+        <p>
+{% if project.image is defined %}
+            <img src="{{ project.image }}" alt="Image d'illustration"/>
+{% endif %}
+            {{ project.content|excerptHtml }}
+        </p>
+        <footer class="more">
+            <a href="{{ url(project) }}#more">Lire la suite &raquo;</a>
+        </footer>
+    </article>
+    <hr />
+{% endfor %}
+</section>
+<script id="dsq-count-scr" src="//arnaudligny.disqus.com/count.js" async></script>
+{% endblock %}
