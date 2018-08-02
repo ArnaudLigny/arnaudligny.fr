@@ -1,9 +1,7 @@
 ---
 title: PHPoole
-published: false
+weight: 1
 ---
-# PHPoole
+PHPoole est un générateur de site statique (SSG in english).
 
-PHPoole est un générateur de site statique (ou SSG in english).
-
-_to do_
+[phpoole.org](https://phpoole.org)
