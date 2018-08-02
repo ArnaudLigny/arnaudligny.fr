@@ -17,10 +17,10 @@ site:
         name: Qui suis-je ?
         url: /
         weight: 50
-      projet:
-        id: projet/index
+      projets:
+        id: projets/index
         name: Projets
-        url: /projet
+        url: /projets
         weight: 70
       cv:
         id: cv
