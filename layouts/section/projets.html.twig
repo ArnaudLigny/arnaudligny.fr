@@ -5,6 +5,7 @@
 
 {% block content %}
 <section id="projects">
+    <h1>Projets</h1>
 {% for project in site.pages|filterBySection(page.pathname)|sortByWeight %}
     <article class="project">
         <header>
