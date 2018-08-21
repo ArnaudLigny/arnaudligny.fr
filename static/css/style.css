@@ -16,10 +16,6 @@ h3 {
     font-size: 1.2em;
 }
 
-#subheader-title > h1 {
-    text-align: left;
-}
-
 a, a:visited {
     color: #d23;
     text-decoration: none;
@@ -47,6 +43,9 @@ hr {
     float: left;
 }
 
+#subheader-title > h1 {
+    text-align: left;
+}
 #subheader-title > h1,
 #subheader-title > h2 {
     line-height: normal;
@@ -229,7 +228,8 @@ code:not(.hljs)::before, code:not(.hljs)::after {
     }
 
     h1, h2,
-    article.post h1, article.post h2 {
+    article.post h1, article.post h2,
+    #subheader-title > h1 {
         text-align: center;
     }
 
