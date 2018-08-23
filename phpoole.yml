@@ -27,12 +27,14 @@ site:
     github: Narno
     linkedin: arnaudligny
     facebook_id: 516589570
-  ga: 30599234-2
+  googleanalytics: 30599234-2
   author:
     firstname: Arnaud
     lastname: Ligny
+    email: arnaud[AROBASE]ligny[POINT]fr
     username: Narno
     job: Consultant technique
+  statut: En poste
   source: https://github.com/Narno/arnaudligny.fr/edit/master/content/
 static:
   exclude:

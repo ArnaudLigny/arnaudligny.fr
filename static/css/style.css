@@ -1,3 +1,23 @@
+html {
+    background-color: #fcfcfc;
+    color: #444;
+    font: 100%/3rem 'Raleway', sans-serif;
+}
+
+body {
+    font-size: 1.8em;
+    width: 760px;
+    margin: 0px auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-align: justify;
+}
+
 h1, h2, h3 {
     font-weight: bold;
     text-align: left;
@@ -16,10 +36,14 @@ h3 {
     font-size: 1.2em;
 }
 
-a, a:visited {
+a {
     color: #d23;
     text-decoration: none;
-    border-bottom: 1px dotted #fcc;
+    border-bottom: 1px dotted #d23;
+}
+p > a:visited {
+    color: #444;
+    border-bottom: 1px dotted #444;
 }
 a:hover {
     color: #f78;
@@ -29,6 +53,12 @@ hr {
     border: 1px solid #eee;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+aside {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border-style: groove;
 }
 
 #avatar {
@@ -43,11 +73,10 @@ hr {
     float: left;
 }
 
-#subheader-title > h1 {
+#subheader-title h1 {
     text-align: left;
 }
-#subheader-title > h1,
-#subheader-title > h2 {
+#subheader-title h1, h2 {
     line-height: normal;
     border-bottom: none;
 }
@@ -77,43 +106,41 @@ body > header > nav > ul > li {
 }
 
 /* Callout */
-#page > aside {
-    padding: 0.5em;
-    margin-top: 0.5em;
+aside.callout {
     border: 1px solid rgba(221,34,51,.8);
     border-left-width: 5px;
     border-radius: 3px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
-#page > aside > h4 {
+aside.callout > h4 {
     margin-top: 0;
     margin-bottom: 5px;
 }
-#page > aside > p:last-child {
+aside.callout > p:last-child {
     margin-bottom: 0;
 }
-#page > aside > code {
+aside.callout > code {
     border-radius: 3px;
 }
-#page > aside > p > .logo {
+aside.callout > p > .logo {
     float: right;
     margin: 0.5em 0 0 0.5em;
 }
 
 /* footer */
-#page > footer {
+body > footer {
     font-size: 0.6em;
     float: right;
 }
-#page > footer > ul > li {
+body > footer > ul > li {
     display: inline;
     padding-right: 0;
 }
-#page > footer > ul > li:before {
+body > footer > ul > li:before {
     content: "\2022";
     padding-right: 5px;
 }
-#page > footer > ul > li:first-child:before {
+body > footer > ul > li:first-child:before {
     content: none;
 }
 
@@ -140,11 +167,8 @@ a.pagination-item:hover {
 article {
   margin-bottom: 1.5em;
 }
-article img {
-  width: 100%;
-}
 
-#posts > article > footer {
+section#posts > article > footer {
   text-align: right;
 }
 
