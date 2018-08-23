@@ -260,9 +260,12 @@ code:not(.hljs)::before, code:not(.hljs)::after {
     body > header > nav > ul > li {
         padding-right: 0px;
     }
-    body > header > nav > ul > li:before {
+    body > header > nav > ul.social > li {
+        padding-right: 10px;
+    }
+    body > header > nav > ul:not(.social) > li:before {
         content: "\2022";
-        padding-right: 5px;
+        padding: 5px;
     }
     body > header > nav > ul > li:first-child:before {
         content: none;
