@@ -138,6 +138,33 @@
     <link rel="stylesheet" href="{{ url('css/github.min.css') }}">
     <script src="{{ url('js/highlight.min.js') }}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    {% include 'includes/googleanalytics.js.twig' %}
+    <link rel="stylesheet" href="{{ url('gdpr-cookie-notice/style.css') }}">
+    <script src="{{ url('gdpr-cookie-notice/script.js') }}"></script>
+    <script>
+        gdprCookieNotice({
+            locale: 'fr',
+            statement: 'a-propos',
+            performance: false,
+            analytics: ['ga_', 'gat_', 'gid_'],
+            marketing: ['driftt_aid', 'driftt_sid', 'driftt_wmd']
+        });
+    </script>
+    <script type="text/javascript">
+        document.addEventListener('gdprCookiesEnabled', function (e) {
+            if (e.detail.analytics) {
+{% if site.googleanalytics is defined %}
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-{{ site.googleanalytics }}', 'auto');
+                ga('send', 'pageview');
+{% endif %}
+            }
+            if (e.detail.marketing) {
+{% include 'includes/drift.js.twig' %}
+            }
+        });
+    </script>
 </body>
 </html>
