@@ -5,10 +5,12 @@
     <title>{% spaceless %}
 {% if page.pathname == 'blog' %}
     Blog de {{ site.title }}
-{% elseif page.path == 'blog' %}
-    {{ page.title }}
-{% else %}
+{% elseif page.pathname == 'projets' %}
+    Projets de {{ site.title }}
+{% elseif page.id == 'index' %}
     {{ site.title }}
+{% else %}
+    {{ page.title }} &middot; {{ site.title }}
 {% endif %}
     {% endspaceless %}</title>
     <meta name="description" content="{{ site.description|escape }}" />
