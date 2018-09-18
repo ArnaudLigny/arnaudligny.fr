@@ -148,7 +148,7 @@
             statement: 'a-propos',
             performance: false,
             analytics: ['ga_', 'gat_', 'gid_'],
-            marketing: ['driftt_aid', 'driftt_sid', 'driftt_wmd']
+            marketing: false
         });
     </script>
     <script type="text/javascript">
@@ -162,9 +162,6 @@
                 ga('create', 'UA-{{ site.googleanalytics }}', 'auto');
                 ga('send', 'pageview');
 {% endif %}
-            }
-            if (e.detail.marketing) {
-{% include 'includes/drift.js.twig' %}
             }
         });
     </script>
