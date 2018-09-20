@@ -9,7 +9,7 @@ site:
   fmpages:
     manifest:
       layout: manifest.json
-      permalink: manifest.json
+      permalink: manifest.webmanifest
   menu:
     main:
       index:
