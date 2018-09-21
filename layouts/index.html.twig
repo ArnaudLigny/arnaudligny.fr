@@ -19,7 +19,8 @@
     <meta name="theme-color" content="#d23d23">
     <link rel="shortcut icon" type="image/x-icon" href="{{ url('images/avatars/avatar-16.png') }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} : blog" href="{{ url('rss.xml') }}" />
-    <link rel="manifest" href="{{ url('manifest.json') }}">
+    <link rel="manifest" href="{{ url('manifest.webmanifest') }}">
+    <link rel="apple-touch-icon" href="{{ url('images/avatars/avatar-180.png', true) }}">
     <!-- Facebook meta -->
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:site_name" content="{{ site.title }}" />
@@ -91,7 +92,7 @@
     <header>
 {% block subheader %}
         <div id="subheader">
-            <a href="{{ url() }}"><div id="avatar" class="animated bounceInDown"></div></a>
+            <div id="avatar" class="animated bounceInDown"></div>
             <div id="subheader-title" class="animated pulse">
                 <h1>{{ site.title }}</h1>
                 <h2>{{ site.baseline }}</h2>
@@ -102,13 +103,13 @@
         <nav>
             <ul>{% spaceless %}
 {% for entry in site.menus.main|sortByWeight %}
-                {% if page.id == 'index' and entry.id == 'index' %}{% else %}<li><a id="{{ entry.id }}" href="{{ url(entry.url) }}">{% if entry.id == 'index' %}<img src="{{ url('images/avatars/avatar-22.png') }}" />&nbsp;{% endif %}{{ entry.name }}</a></li>{% endif %}
+                {% if page.id == 'index' and entry.id == 'index' %}{% else %}<li>{% if entry.id == 'index' %}<img src="{{ url('images/avatars/avatar-22.png') }}" />&nbsp;{% endif %}<a id="{{ entry.id }}" href="{{ url(entry.url) }}">{{ entry.name }}</a></li>{% endif %}
 {% endfor %}
             {% endspaceless %}</ul>
             <ul class="social">
-                <li><a href="https://twitter.com/{{ site.social.twitter }}" rel="me" class="social"><svg class="icon twitter" width="1em" height="1em"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-twitter"></use></svg></a></li>
-                <li><a href="https://github.com/{{ site.social.github }}" rel="me" class="social"><svg class="icon github" width="1em" height="1em"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-github"></use></svg></a></li>
-                <li><a href="https://fr.linkedin.com/in/{{ site.social.linkedin }}/fr/" rel="me" class="social"><svg class="icon linkedin" width="1em" height="1em"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-linkedin"></use></svg></a></li>
+                <li><a href="https://twitter.com/{{ site.social.twitter }}" rel="me" class="social"><span class="hide-text">Twitter</span><svg class="icon twitter" width="1em" height="1em"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-twitter"></use></svg></a></li>
+                <li><a href="https://github.com/{{ site.social.github }}" rel="me" class="social"><span class="hide-text">GitHub</span><svg class="icon github" width="1em" height="1em"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-github"></use></svg></a></li>
+                <li><a href="https://fr.linkedin.com/in/{{ site.social.linkedin }}/fr/" rel="me" class="social"><span class="hide-text">linkedIn</span><svg class="icon linkedin" width="1em" height="1em"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-linkedin"></use></svg></a></li>
             </ul>
         </nav>
 {% endblock menu %}
