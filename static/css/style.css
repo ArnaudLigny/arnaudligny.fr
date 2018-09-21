@@ -43,7 +43,7 @@ a {
   text-decoration: none;
   border-bottom: 1px dotted #d23;
 }
-p > a:visited {
+div#page a:visited {
   color: #444;
   border-bottom: 1px dotted #444;
 }
