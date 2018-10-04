@@ -19,6 +19,7 @@
         var date = entry.getIn(['data', 'date']);
         var image = entry.getIn(['data', 'image']);
         var bg = this.props.getAsset(image);
+        var tags = entry.getIn(['data', 'tags']);
         try {
           date = date.toLocaleDateString('fr-FR', {year:'numeric', month:'short', day:'numeric'});
         } catch (e) {
@@ -31,12 +32,12 @@
           ),
           bg ? h('img', {src: bg.toString()}) : null,
           this.props.widgetFor('body'),
-          entry.getIn(['data', 'tags']).map(function(value) {
+          tags ? tags.map(function(value) {
             return h('span', {},
               h('a', {}, '#'+value),
               ' '
             );
-          })
+          }) : null
         );
       }
     });
