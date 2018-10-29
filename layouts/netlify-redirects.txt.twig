@@ -1,3 +1,3 @@
 {% for page in site.pages|sortByDate if page.destination is defined %}
-{{ ('/' ~ page.pathname ~ '/')|replace({"/index/" : "/"}) }}    {{ url(page.destination) }}    301
+{{ url(page, false) }}    {{ url(page.destination, false) }}    301
 {% endfor %}
