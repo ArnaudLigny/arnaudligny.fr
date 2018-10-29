@@ -10,6 +10,15 @@ site:
     manifest:
       layout: manifest.json
       permalink: manifest.webmanifest
+    redirects:
+      layout: netlify-redirects.txt
+      permalink: _redirects
+    /blog/work-in-progress:
+      redirect: /
+    /blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento:
+      redirect: /blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/
+    /blog/t-l-charger-manuellement-une-extension-magento:
+      redirect: /blog/telecharger-manuellement-une-extension-magento/
   menu:
     main:
       index:
