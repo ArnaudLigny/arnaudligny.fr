@@ -3,7 +3,6 @@ site:
   title: "Arnaud Ligny"
   baseline: "Consultant technique Web, mobile & e-commerce"
   baseurl: https://arnaudligny.fr/
-  canonicalurl: false
   description: Arnaud Ligny, Consultant technique Web, mobile & e-commerce.
   keywords: [Consultant technique, Web, Application Mobile, e-commerce, Magento, IoT]
   fmpages:
@@ -11,7 +10,7 @@ site:
       layout: manifest.json
       permalink: manifest.webmanifest
     redirects:
-      layout: netlify-redirects.txt
+      layout: _redirects.txt
       permalink: _redirects
     /blog/work-in-progress:
       redirect: /
