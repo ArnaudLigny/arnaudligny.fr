@@ -9,6 +9,8 @@ site:
     manifest:
       layout: manifest.json
       permalink: manifest.webmanifest
+    /code:
+      redirect: https://github.com/Narno
     redirects:
       layout: _redirects.txt
       permalink: _redirects
