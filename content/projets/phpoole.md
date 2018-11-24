@@ -1,7 +1,8 @@
 ---
-title: PHPoole
+title: Cecil
 weight: 1
+alias: projets/phpoole
 ---
-PHPoole est un générateur de site statique (SSG in english).
+Cecil est un générateur de site statique (SSG in english).
 
-[phpoole.org](https://phpoole.org)
+[cecil.app](https://cecil.app)
