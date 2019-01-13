@@ -1,6 +1,7 @@
 ---
 title: leo-bot
 weight: 3
+redirect: https://github.com/Narno/leo-bot
 ---
 leo-bot est un bot Slack qui vous rappelle quand il est temps d'aller chercher votre enfant à l'école !
 
