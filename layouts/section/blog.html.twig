@@ -1,7 +1,13 @@
-{% extends 'index.html.twig' %}
+{% extends '_default/page.html.twig' %}
 
-{% block subheader %}
-{% endblock subheader %}
+{% block title %}
+    Blog de {{ site.title }}
+{% endblock %}
+
+{% block head_meta %}
+    {{ parent() }}
+    <meta property="og:type" content="article" />
+{% endblock %}
 
 {% block content %}
 <section id="posts">
@@ -71,4 +77,4 @@
 {% endif %}
 </section>
 <script id="dsq-count-scr" src="//arnaudligny.disqus.com/count.js" async></script>
-{% endblock %}
+{% endblock content %}
