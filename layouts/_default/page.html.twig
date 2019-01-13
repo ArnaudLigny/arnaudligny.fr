@@ -17,14 +17,15 @@
     <link rel="apple-touch-icon" href="{{ url('apple-touch-icon.png', true) }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url('favicon-32x32.png', true) }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url('favicon-16x16.png', true) }}">
-{% block head_meta %}
     <!-- Facebook meta -->
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:site_name" content="{{ site.title }}" />
+{% block head_fb_meta %}
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.content|striptags|slice(0, 150) }}" />
     <meta property="og:url" content="{{ url(page, {'canonical': true}) }}" />
+{% endblock head_fb_meta %}
 {% if page.image is defined %}
     <meta property="og:image" content="{{ url(page.image, {'canonical': true}) }}" />
 {% else %}
@@ -39,7 +40,6 @@
 {% else %}
     <meta name="twitter:image" content="{{ url('images/avatars/avatar-300.png', {'canonical': true}) }}" />
 {% endif %}
-{% endblock head_meta %}
     <style>{% filter minifyCSS %}{% block head_style %}
         html {
             background-color: #fcfcfc;

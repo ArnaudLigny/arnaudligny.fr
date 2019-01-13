@@ -2,19 +2,18 @@
 
 {% block title %}
     {{ site.title }}
-{% endblock %}
+{% endblock title %}
 
-{% block head_meta %}
-    {{ parent() }}
+{% block head_fb_meta %}
+    <meta property="og:type" content="profile" />
     <meta property="og:title" content="{{ site.title }}" />
     <meta property="og:description" content="{{ site.description|escape }}" />
     <meta property="og:url" content="{{ url('/', true) }}" />
-    <meta property="og:type" content="profile" />
     <meta property="fb:profile_id" content="{{ site.social.facebook_id }}" />
     <meta property="profile:first_name" content="{{ site.author.firstname }}" />
     <meta property="profile:last_name" content="{{ site.author.lastname }}" />
     <meta property="profile:username" content="{{ site.author.username }}" />
-{% endblock %}
+{% endblock head_fb_meta %}
 
 {% block subheader %}
         <div id="subheader">

@@ -1,4 +1,14 @@
-{% extends '_default/page.html.twig' %}
+{% extends 'section/blog.html.twig' %}
+
+{% block title %}
+    {% set title = page.title ~ ' &middot; ' ~ title %}
+    {{ parent() }}
+{% endblock %}
+
+{% block head_fb_meta %}
+    {% set title = page.title ~ ' &middot; ' ~ title %}
+    {{ parent() }}
+{% endblock head_fb_meta %}
 
 {% block content %}
 <article class="post">

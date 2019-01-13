@@ -1,13 +1,17 @@
 {% extends '_default/page.html.twig' %}
 
+{% set title = 'Blog de ' ~ site.title %}
+
 {% block title %}
-    Blog de {{ site.title }}
+    {{ title }}
 {% endblock %}
 
-{% block head_meta %}
-    {{ parent() }}
+{% block head_fb_meta %}
     <meta property="og:type" content="article" />
-{% endblock %}
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ page.content|striptags|slice(0, 150)|default(site.description) }}" />
+    <meta property="og:url" content="{{ url(page, {'canonical': true}) }}" />
+{% endblock head_fb_meta %}
 
 {% block content %}
 <section id="posts">
