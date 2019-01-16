@@ -82,7 +82,7 @@
         <nav>
             <ul>{% spaceless %}
 {% for entry in site.menus.main|sortByWeight %}
-                {% if page.id == 'index' and entry.id == 'index' %}{% else %}<li>{% if entry.id == 'index' %}<img src="{{ url('images/avatars/avatar-22.png') }}" />&nbsp;{% endif %}<a id="{{ entry.id }}" weight="{{ entry.weight }}" href="{{ url(entry.url) }}">{{ entry.name }}</a></li>{% endif %}
+                {% if page.id == 'index' and entry.id == 'index' %}{% else %}<li>{% if entry.id == 'index' %}<img src="{{ url('images/avatars/avatar-22.png') }}" alt="avatar" />&nbsp;{% endif %}<a id="{{ entry.id }}" weight="{{ entry.weight }}" href="{{ url(entry.url) }}">{{ entry.name }}</a></li>{% endif %}
 {% endfor %}
             {% endspaceless %}</ul>
             <ul class="social">
