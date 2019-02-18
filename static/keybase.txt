@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/narno
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://arnaudligny.fr
+  * I am narno (https://keybase.io/narno) on keybase.
+  * I have a public key with fingerprint 6660 788F 0747 B84D 2F1A  6129 2D5B 9305 0535 8ABE
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120870fa6ee10ab45781b8f61a34a7412fc8dca56b7b439b4ba60bbf6ddae2bfce20a",
+      "fingerprint": "6660788f0747b84d2f1a61292d5b930505358abe",
+      "host": "keybase.io",
+      "key_id": "2d5b930505358abe",
+      "kid": "0101ceb49ff4818e3d1e8882c02574914b89d16429384a98f343b591749111101c220a",
+      "uid": "eeb84d2fa4263bd053382b0e1ba88c19",
+      "username": "narno"
+    },
+    "service": {
+      "hostname": "arnaudligny.fr",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1550530215,
+  "expire_in": 157680000,
+  "prev": "297a6873289a516f6c4aaaa04dab795cef61b6b79163e52f8ab51da6c4117dac",
+  "seqno": 18,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMNnAnicbVJ7UFVFHL4g904giCPIEJXJyZAG1LPnuec2hY8BHbHLlGbQ1bntnrMH
+j/dyz+0+EAR6aDbQDGag6VTiAzW0oVEhMk0msEFRSKMZfNU4pONkVCSFSYa1B/W/
+fv/s7P6+79vv9+1+nTDBFhc1y11vt4vvtEed6dgasa3wSh9XMNjUyhlnBeMl4wvx
+aSQU9ngNjXEyLOBYKLM6kggBLMKCKEOAoS4BxAtIFgCnq1BTkShhGQu8ggWMJBZj
+XdI0RDisq4RjEZPN6Ia/mAQDQcMfprKSJLEyhDorCzKGgsbpAEmAUzhNxArPiqzI
+ixBhQomrzJDFoOYwCpHZhknP6MYzbu9/8A98s0AlWFB0XYAAEl4DBELIqSwnyoIC
+BAwVDUgCp/BQQArUeYHHogKsHi1K5u75jozLEXLPJRI4iccavY6HHGYJwAhCFSgW
+MESCflRCKNqPgn6Tqcpm6FGpoRIrVWuM+23aRRHNZxT7y2frQUoNBM2wqZo+2lsV
+DgdCTosbLg9Y4DUEe+7LeLDh12iMlFFKgiHD9DNOQJFq2LB0gWjFwHJAzGZIWcAI
+Eo9hIURZgiwt6x5SaoWmyEiCMs9BBYlA0iVVQLRYQUNYVkSV0NfF9D0VIPFE5HQa
+rAg0RGEAyBpSGWuwV+mETgCpT1RMNUN0GhSOBAlT1dmxIsYWFWdz2KOt/2WLi538
+4Nc9PJI4lpzDD/Y2OH8RSye1X/vX1ZTcTPZNfGJJdtJTU9aM/sGcbC9676vAuqO2
+trTjx+qvTb346H7tldjySytt2eu7JzzEM2KDY1tVc377D1fGlm24vikTBuaef1oc
+/CbZLucdfpxzF5198/kL6XsbKhY2PdLLOl8c3Xa27OaS9PWHoj2jrTdjdr91Kkdx
+T/9dWNo54u3aMr8jf8oi/bxb/aDw9hfdWS8XVsZObu4/c3B6hkMcHs6/MzNStjer
+K8u9dvrnX9b+nVjTlHH78p1Zqn/djOKWtzfWfbjct2u40n34t9r6T2B63liP/f0T
+/VFbe9IuLGeK91xcoEFXf5OczASSd767/Y2UlbE7hpJI27TmI0+m7d4bn0Ku1Nx6
+9vjqmvjEhAUjz1W/Fr66Xygyz97IupoQyTlTNdF+bGHrqdxUV2z+jJMt5tgkHUc3
+TPunOpVJHRo+oc0MmZuDS7u3P9M5WpA733n0Mc/mLkfJBtcl365PXfMPFjgP/HVe
+vDyvKl499FFdP7erXPzp2PUfG1+a0za3rv+FmkUFK/e9Dn42Owc3Ti2pPL0sVLik
+tiVSLe8Y2tPYes6btDXNMaBk3Nr97cSm030J3d8Xzly8diAmri9GS7zlmrN4LGWk
+5MCmlnm5Mf6Bnhqffsf4U1h9t6yvL8doueHN+7UvLXOL0Oo8d7exUXd81ptpNnx3
+JFNM2vkf/De0hw==
+=OE+q
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/narno
+
+==================================================================
