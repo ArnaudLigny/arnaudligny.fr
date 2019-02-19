@@ -5,15 +5,20 @@ site:
   baseurl: https://arnaudligny.fr/
   description: Arnaud Ligny, Consultant technique Web, mobile & e-commerce.
   keywords: [Consultant technique, Web, Application Mobile, e-commerce, Magento, IoT]
-  fmpages:
+  output:
+    formats:
+      _redirects:
+        mediatype: 'text/plain'
+        extension: ''
+  virtualpages:
     manifest:
-      layout: manifest.json
+      layout: manifest
+      output: json
       permalink: manifest.webmanifest
     /code:
       redirect: https://github.com/Narno
-    redirects:
-      layout: _redirects.txt
-      permalink: _redirects
+    _redirects:
+      output: _redirects
     /blog/work-in-progress:
       redirect: /
     /blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento:

@@ -1,5 +1,5 @@
 ---
-layout: index.html
+layout: index
 published: true
 ---
 Hello, je suis Arnaud Ligny, consultant technique Web et mobile.
