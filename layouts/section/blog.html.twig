@@ -26,7 +26,9 @@
                 <span class="post-date">{{ post.date|date("j M Y") }}</span>
 {% endif %}
                 <span class="post-time">&#128336;&nbsp;{{ readtime(post.content) }}&nbsp;min</span>
+{% if site.comments %}
                 <span class="post-com">&#9998;&nbsp;<a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
+{% endif %}
             </div>
         </header>
         <p>
@@ -63,7 +65,9 @@
                 <span class="post-date">{{ post.date|date("j M Y") }}</span>
 {% endif %}
                 <span class="post-time">&#128336;&nbsp;{{ readtime(post.content) }}&nbsp;min</span>
+{% if site.comments %}
                 <span class="post-com">&#9998;&nbsp;<a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
+{% endif %}
             </div>
         </header>
         <p>
@@ -80,5 +84,7 @@
 {% endfor %}
 {% endif %}
 </section>
+{% if site.comments %}
 <script id="dsq-count-scr" src="//arnaudligny.disqus.com/count.js" async></script>
+{% endif %}
 {% endblock content %}

@@ -47,6 +47,7 @@ site:
     job: Consultant technique
   statut: En poste
   source: https://github.com/Narno/arnaudligny.fr/edit/master/content/
+  comments: false
 static:
   exclude:
     - CV_ArnaudLigny-2014.pdf
