@@ -33,9 +33,9 @@
 {% endfor %}
 {% endif %}
     </footer>
-{% if page.fileId is defined %}
+{% if page.filepath is defined %}
     <aside class="callout">
-        <small><a href="{{ site.source ~ page.fileId ~ '.md' }}">Suggérer une correction ?</a></small>
+        <small><a href="{{ site.source ~ page.filepath }}">Suggérer une correction ?</a></small>
     </aside>
 {% endif %}
     <aside class="comments">
