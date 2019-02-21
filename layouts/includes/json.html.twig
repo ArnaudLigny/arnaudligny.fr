@@ -9,7 +9,7 @@
   "jobTitle": "{{ site.author.job }}",
   "affiliation": "Adfab",
   "additionalName": "{{ site.author.username }}",
-  "url": "{{ url('/', true) }}",
+  "url": "{{ url('/', {canonical: true}) }}",
   "homeLocation": "Paris",
   "address": {
     "@type": "PostalAddress",
