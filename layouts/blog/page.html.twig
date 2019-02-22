@@ -19,7 +19,9 @@
             <span class="post-date">{{ page.date|date("j M Y") }}</span>
 {% endif %}
             <span class="post-time">&#128336;&nbsp;{{ readtime(page.content) }}&nbsp;min</span>
+{% if site.comments %}
             <span class="post-com">&#9998;&nbsp;<a href="{{ url(page) }}#disqus_thread">Commentaires</a></span>
+{% endif %}
         </div>
     </header>
 {% if page.image is defined %}
