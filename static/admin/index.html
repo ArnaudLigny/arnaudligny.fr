@@ -23,7 +23,7 @@
         try {
           date = date.toLocaleDateString('fr-FR', {year:'numeric', month:'short', day:'numeric'});
         } catch (e) {
-          date = date.toString();
+          date ? date = date.toString() : null;
         }
         return h('div', {},
           h('h1', {}, entry.getIn(['data', 'title'])),
