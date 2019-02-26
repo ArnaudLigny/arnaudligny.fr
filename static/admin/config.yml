@@ -5,6 +5,13 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "static/images"
 public_folder: "/images"
+display_url: https://arnaudligny.fr
+logo_url: https://arnaudligny.fr/images/avatars/avatar-128.png
+show_preview_links: true
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
 collections:
   - name: "billets"
     label: "Billets"
