@@ -8,3 +8,6 @@
 
 [context.branch-deploy]
   command = "chmod +x scripts/netlify.sh && bash scripts/netlify.sh $DEPLOY_PRIME_URL"
+
+[context.wip]
+  command = "chmod +x scripts/netlify-beta.sh && bash scripts/netlify-beta.sh $DEPLOY_PRIME_URL"
