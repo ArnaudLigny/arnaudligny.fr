@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 echo "Downloading Cecil"
-curl -SOL https://www.dropbox.com/s/tn0240fh4axpdg7/cecil.phar?dl=1 -o cecil.phar
+curl -OLJ https://www.dropbox.com/s/tn0240fh4axpdg7/cecil.phar?dl=1 -o cecil.phar
 php cecil.phar --version
 
 echo "Started Cecil build"
