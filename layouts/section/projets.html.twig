@@ -7,7 +7,7 @@
 {% block content %}
 <section id="projects">
     <h1>Projets</h1>
-{% for project in site.pages|filterBySection(page.pathname)|sortByWeight %}
+{% for project in site.pages|filterBySection(page.path)|sortByWeight %}
     <article class="project">
         <header>
             <h2 class="project-title">{{ project.title }}</h2>
@@ -22,5 +22,4 @@
     <hr />
 {% endfor %}
 </section>
-<script id="dsq-count-scr" src="//arnaudligny.disqus.com/count.js" async></script>
 {% endblock content %}

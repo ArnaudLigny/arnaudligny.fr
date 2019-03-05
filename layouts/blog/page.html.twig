@@ -19,7 +19,9 @@
             <span class="post-date">{{ page.date|date("j M Y") }}</span>
 {% endif %}
             <span class="post-time">&#128336;&nbsp;{{ readtime(page.content) }}&nbsp;min</span>
+{% if site.comments %}
             <span class="post-com">&#9998;&nbsp;<a href="{{ url(page) }}#disqus_thread">Commentaires</a></span>
+{% endif %}
         </div>
     </header>
 {% if page.image is defined %}
@@ -33,14 +35,16 @@
 {% endfor %}
 {% endif %}
     </footer>
-{% if page.fileId is defined %}
+{% if page.filepath is defined %}
     <aside class="callout">
-        <small><a href="{{ site.source ~ page.fileId ~ '.md' }}">Suggérer une correction ?</a></small>
+        <small><a href="{{ site.source ~ page.filepath }}">Suggérer une correction ?</a></small>
     </aside>
 {% endif %}
+{% if site.comments %}
     <aside class="comments">
 {% include 'includes/comments.html.twig' %}
-    </aside>
-</article>
 <script id="dsq-count-scr" src="//arnaudligny.disqus.com/count.js" async></script>
+    </aside>
+{% endif %}
+</article>
 {% endblock content %}

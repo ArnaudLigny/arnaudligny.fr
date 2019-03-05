@@ -26,7 +26,9 @@
                 <span class="post-date">{{ post.date|date("j M Y") }}</span>
 {% endif %}
                 <span class="post-time">&#128336;&nbsp;{{ readtime(post.content) }}&nbsp;min</span>
+{% if site.comments %}
                 <span class="post-com">&#9998;&nbsp;<a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
+{% endif %}
             </div>
         </header>
         <p>
@@ -42,19 +44,19 @@
     <hr />
 {% endfor %}
     <navigation>
-{% if page.pagination.prev is defined %}
-        <a class="pagination-item" href="{{ url(page.pagination.prev) }}">‹ Précédent</a>
+{% if page.pagination.links.prev is defined %}
+        <a class="pagination-item" href="{{ url(page.pagination.links.prev) }}">‹ Nouveau</a>
 {% else %}
-        <span class="pagination-item">‹ Précédent</span>
+        <span class="pagination-item">‹ Nouveau</span>
 {% endif %}
-{% if page.pagination.next is defined %}
-        <a class="pagination-item" href="{{ url(page.pagination.next) }}">Suivant ›</a>
+{% if page.pagination.links.next is defined %}
+        <a class="pagination-item" href="{{ url(page.pagination.links.next) }}">Précédent ›</a>
 {% else %}
-        <span class="pagination-item">Suivant ›</span>
+        <span class="pagination-item">Précédent ›</span>
 {% endif %}
     </navigation>
 {% else %}
-{% for post in site.pages|filterBySection(page.pathname)|sortByDate %}
+{% for post in site.pages|filterBySection(page.path)|sortByDate %}
     <article class="post">
         <header>
             <h2 class="post-title"><a href="{{ url(post) }}">{{ post.title }}</a></h2>
@@ -63,7 +65,9 @@
                 <span class="post-date">{{ post.date|date("j M Y") }}</span>
 {% endif %}
                 <span class="post-time">&#128336;&nbsp;{{ readtime(post.content) }}&nbsp;min</span>
+{% if site.comments %}
                 <span class="post-com">&#9998;&nbsp;<a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
+{% endif %}
             </div>
         </header>
         <p>
@@ -80,5 +84,7 @@
 {% endfor %}
 {% endif %}
 </section>
+{% if site.comments %}
 <script id="dsq-count-scr" src="//arnaudligny.disqus.com/count.js" async></script>
+{% endif %}
 {% endblock content %}

@@ -1,5 +1,8 @@
 ---
-layout: index.html
+title: Qui suis-je ?
+layout: index
+paginate:
+    enabled: true
 published: true
 ---
 Hello, je suis Arnaud Ligny, consultant technique Web et mobile.
