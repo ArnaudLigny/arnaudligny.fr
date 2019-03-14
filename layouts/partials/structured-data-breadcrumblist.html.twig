@@ -1,0 +1,24 @@
+{% set position = 1 %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+{% if page.section is defined %}
+    {
+      "@type": "ListItem",
+      "position": {{ position }},
+      "name": "{{ page.section|capitalize }}",
+      "item": "{{ url(page.section, {canonical:true}) }}"
+    },
+{% set position = position + 1 %}
+{% endif %}
+    {
+      "@type": "ListItem",
+      "position": {{ position }},
+      "name": "{{ page.title }}",
+      "item": "{{ url(page, {canonical:true}) }}"
+    }
+  ]
+}
+</script>
