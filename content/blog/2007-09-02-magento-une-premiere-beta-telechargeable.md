@@ -1,8 +1,8 @@
 ---
 title: "Magento : une première béta téléchargeable"
 date: 02-09-2007
-tags: [Magento]
-permalink: blog/magento-une-premiere-beta-telechargeable
+tags: Magento
+path: blog/magento-une-premiere-beta-telechargeable
 ---
 Ça y est, après plusieurs semaines de patience (et de travail pour [Varien](http://www.varien.com/)), la première béta de [Magento Commerce](http://narno.com/tag/magento) est sorti !
 

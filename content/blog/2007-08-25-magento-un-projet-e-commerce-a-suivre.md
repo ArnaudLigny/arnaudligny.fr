@@ -2,7 +2,7 @@
 title: "Magento : un projet e-commerce à suivre !"
 date: 25-08-2007
 tags: [e-commerce, Magento]
-permalink: blog/magento-un-projet-e-commerce-a-suivre
+path: blog/magento-un-projet-e-commerce-a-suivre
 typora-root-url: ../../static
 ---
 J'ai récemment fais quelques recherches sur les solutions e-commerce actuellement en cours de développement, dans le domaine de l'open-source.
