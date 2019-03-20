@@ -1,7 +1,7 @@
 ---
 title: "Vérifier la validité des fichiers de configuration XML de Magento"
 date: 2010-11-10
-tags: "Magento"
+tags: Magento
 image: /images/xml.png
 ---
 
