@@ -1,5 +1,6 @@
 ---
-title: leo-bot
+title: "leo-bot"
+date: 2019-01-13
 weight: 3
 redirect: https://github.com/Narno/leo-bot
 ---

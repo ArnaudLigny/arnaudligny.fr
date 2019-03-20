@@ -1,5 +1,6 @@
 ---
-title: F-Notifier
+title: "F-Notifier"
+date: 2019-01-13
 weight: 2
 redirect: https://github.com/Narno/F-Notifier
 ---

@@ -1,5 +1,6 @@
 ---
 title: Qui suis-je ?
+date: 2017-12-21
 layout: index
 paginate:
     enabled: true
