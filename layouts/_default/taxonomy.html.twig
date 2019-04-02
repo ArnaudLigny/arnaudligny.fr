@@ -1,12 +1,14 @@
 {% extends '_default/page.html.twig' %}
 
 {% block content %}
-<h1 class="page-title">{{ page.singular|title }} "{{ page.title }}"</h1>
+{% set vocabulary = page.singular %}
+{% set term = page %}
+<h1 class="page-title">{{ vocabulary|title }} "{{ term.title }}"</h1>
 <ul>
-{% for term in page.pages|sortByDate %}
+    {% for page in term.pages|sortByDate %}
     <li>
-        <a href="{{ url(term) }}">{{ term.title }}</a>
+        <a href="{{ url(page) }}">{{ page.title }}</a>
     </li>
-{% endfor %}
+    {% endfor %}
 </ul>
 {% endblock %}
