@@ -2,8 +2,8 @@
 title: Qui suis-je ?
 date: 2017-12-21
 layout: index
-paginate:
-    enabled: true
+pagination:
+    enabled: false
 published: true
 ---
 Hello, je suis Arnaud Ligny, consultant technique Web et mobile.
