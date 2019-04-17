@@ -148,7 +148,8 @@ body > footer > ul > li:first-child:before {
 }
 
 /* pagination */
-#posts > navigation {
+/*#posts > navigation {*/
+navigation {
   margin: 3rem 0;
   text-align: center;
   color: #ccc;

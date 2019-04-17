@@ -1,0 +1,12 @@
+    <navigation>
+{% if page.pagination.links.prev is defined %}
+        <a class="pagination-item" href="{{ url(page.pagination.links.prev) }}">‹ Nouveau</a>
+{% else %}
+        <span class="pagination-item">‹ Nouveau</span>
+{% endif %}
+{% if page.pagination.links.next is defined %}
+        <a class="pagination-item" href="{{ url(page.pagination.links.next) }}">Précédent ›</a>
+{% else %}
+        <span class="pagination-item">Précédent ›</span>
+{% endif %}
+    </navigation>
