@@ -12,3 +12,4 @@ Les billets du [blog](https://arnaudligny.fr/blog/) sont couverts par la license
 * les contenus et les templates sont versionnés sur [GitHub](https://github.com/Narno/arnaudligny.fr/)
 * le site web est généré par [Cecil](https://cecil.app) (mon générateur de site statique)
 * le déploiement continu et l'hébergement sont assurés par [Netlify](https://netlify.com)
+
