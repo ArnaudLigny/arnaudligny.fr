@@ -6,7 +6,7 @@ path: blog/magento-la-version-francaise-arrive
 ---
 > **Update :** l'extension FR, ou plutôt le [language pack français pour Magento](http://www.magentocommerce.com/extension/414/magento-community-modules--french-france-language-pack) est disponible en version stable.
 
-En effet, l'équipe de [Fragento](http://fragento.org/) à réalisé un gros travail pour traduire la version béta de [Magento Commerce](http://narno.com/tag/magento).
+En effet, l'équipe de [Fragento](http://fragento.org/) à réalisé un gros travail pour traduire la version béta de [Magento Commerce](/tags/magento).
 <!-- excerpt -->
 Au moment où j'écris ce billet, les fichiers de langues sont en cours de relecture. Si vous souhaitez participer à la version courante, suivez la procédure :
 
