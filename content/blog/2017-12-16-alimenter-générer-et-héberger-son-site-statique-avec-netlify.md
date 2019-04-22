@@ -5,7 +5,7 @@ image: /images/netlify.jpg
 tags:
   - Netlify
   - CMS
-  - site statique
+  - SSG
 published: false
 ---
 
