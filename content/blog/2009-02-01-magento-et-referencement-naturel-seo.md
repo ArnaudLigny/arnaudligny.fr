@@ -1,10 +1,7 @@
 ---
 title: "Magento et référencement naturel (SEO)"
 date: 2009/02/01
-tags:
-  - e-commerce
-  - Magento
-  - SEO
+tags: [e-commerce, Magento, SEO]
 published: true
 ---
 [Magento Commerce](http://www.magentocommerce.com/), la solution e-commerce open-source du moment est-elle optimisée pour le référencement naturel ?
