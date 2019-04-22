@@ -3,7 +3,6 @@ title: "Application mobile : Native ou hybride ?"
 date: 2015-10-23
 tags:
   - Application mobile
-  - Apache Cordova
   - React Native
 image: /images/native-VS-hybrid.gif
 published: true
