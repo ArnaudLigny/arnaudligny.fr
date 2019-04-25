@@ -2,8 +2,8 @@
 title: "leo-bot"
 date: 2019-01-13
 weight: 3
-redirect: https://github.com/Narno/leo-bot
+redirect: https://narno.org/leo-bot/
 ---
-leo-bot est un bot Slack qui vous rappelle quand il est temps d'aller chercher votre enfant à l'école !
+Bot [Slack](https://slack.com) qui vous rappelle quand il est temps d'aller chercher votre enfant à l'école !
 
-[github.com/Narno/leo-bot](https://github.com/Narno/leo-bot)
+[narno.org/leo-bot](https://narno.org/leo-bot/)
