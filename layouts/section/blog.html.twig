@@ -23,8 +23,8 @@
             <h2 class="post-title"><a href="{{ url(post) }}">{{ post.title }}</a></h2>
             <div class="post-meta">
 {% if post.date %}
-                <!--<span class="post-date">{{ post.date|date("j M Y") }}</span>-->
-                <span class="post-date">{{ post.date|localizeddate('long', 'none') }}</span>
+                <span class="post-date">{{ post.date|date("j M Y") }}</span>
+                {#<span class="post-date">{{ post.date|localizeddate('long', 'none') }}</span>#}
 {% endif %}
                 <span class="post-time">&#128336;&nbsp;{{ readtime(post.content) }}&nbsp;min</span>
 {% if site.comments %}
