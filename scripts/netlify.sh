@@ -8,7 +8,7 @@ echo "Add PHP Intl extensions"
 php -d extension=intl
 
 echo "Started Cecil build"
-if [ -z "$1" ]; then php cecil.phar build --verbose; else echo "URL: $1" && php cecil.phar build -v --baseurl=$1 --drafts; fi
+if [ -z "$1" ]; then php cecil.phar build --quiet; else echo "URL: $1" && php cecil.phar build --verbose --baseurl=$1 --drafts; fi
 # build success? can deploy?
 if [ $? = 0 ]
 then
@@ -16,4 +16,5 @@ then
   exit 0
 fi
 
+echo "Interrupted Cecil build"
 exit 1
