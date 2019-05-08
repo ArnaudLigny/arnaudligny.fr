@@ -12,6 +12,13 @@ php -d extension=intl
 
 echo "Started Cecil build"
 if [ -z "$1" ]; then php cecil.phar build --verbose; else echo "URL: $1" && php cecil.phar build --baseurl=$1 --drafts; fi
-echo "Finished Cecil build"
+# build success? can deploy?
+if [ $? = 0 ]
+then
+  echo "Finished Cecil build"
+  bash scripts/deploy.sh
+else
+  return 1
+fi
 
 exit 0
