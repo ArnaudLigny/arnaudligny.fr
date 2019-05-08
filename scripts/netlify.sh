@@ -5,8 +5,7 @@ curl -sSOL https://cecil.app/cecil.phar
 php cecil.phar --version
 
 echo "Add PHP Intl extensions"
-php -i
-#apt-get install php7.2-intl
+php -v
 php -m
 php -d extension=intl
 #php -d extension=gettext
