@@ -5,8 +5,9 @@ curl -sSOL https://cecil.app/cecil.phar
 php cecil.phar --version
 
 echo "Add PHP Intl extensions"
+php -m
 php -d extension=intl
-php -d extension=gettext
+#php -d extension=gettext
 
 echo "Started Cecil build"
 if [ -z "$1" ]; then php cecil.phar build --verbose; else echo "URL: $1" && php cecil.phar build --baseurl=$1 --drafts; fi
