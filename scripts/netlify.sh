@@ -18,7 +18,7 @@ then
   echo "Finished Cecil build"
   bash scripts/deploy.sh
 else
-  return 1
+  exit 1
 fi
 
 exit 0
