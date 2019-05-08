@@ -1,5 +1,6 @@
 site:
   lang: fr-FR
+  locale: fr_FR
   title: "Arnaud Ligny"
   baseline: "Consultant technique Web, mobile & e-commerce"
   baseurl: https://arnaudligny.fr/
