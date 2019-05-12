@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="{{ site.language }}">
 <head>
     <meta charset="utf-8" />
     <title>{% spaceless %}
@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url('favicon-32x32.png', true) }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url('favicon-16x16.png', true) }}">
     <!-- Facebook meta -->
-    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale" content="{{ config.locale }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
 {% block head_fb_meta %}
     <meta property="og:type" content="website" />
