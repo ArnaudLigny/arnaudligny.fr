@@ -1,26 +1,4 @@
-html {
-  background-color: #fcfcfc;
-  color: #444;
-  font: 100%/3rem "Raleway", sans-serif;
-}
-
-body {
-  font-size: 1.8em;
-  width: 760px;
-  margin: 0px auto;
-}
-
-img {
-  max-width: 100%;
-}
-
-p {
-  text-align: justify;
-}
-
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-weight: bold;
   text-align: left;
   margin: 0.3em 0 0.3em 0;
@@ -57,12 +35,6 @@ hr {
   margin-bottom: 1em;
 }
 
-aside {
-  padding: 0.5em;
-  margin-top: 0.5em;
-  border-style: groove;
-}
-
 #avatar {
   width: 128px;
   height: 128px;
@@ -78,8 +50,7 @@ aside {
 #subheader-title h1 {
   text-align: left;
 }
-#subheader-title h1,
-h2 {
+#subheader-title h1, h2 {
   line-height: normal;
   border-bottom: none;
 }
@@ -103,17 +74,12 @@ body > header > nav > ul {
   padding-left: 0px;
   margin: auto;
 }
-body > header > nav > ul > li {
-  display: inline;
-  padding-right: 30px;
-}
 
 /* Callout */
 aside.callout {
   border: 1px solid rgba(221, 34, 51, 0.8);
   border-left-width: 5px;
   border-radius: 3px;
-  /*overflow: hidden;*/
 }
 aside.callout > h4 {
   margin-top: 0;
@@ -135,10 +101,6 @@ body > footer {
   font-size: 0.6em;
   float: right;
 }
-body > footer > ul > li {
-  display: inline;
-  padding-right: 0;
-}
 body > footer > ul > li:before {
   content: "\2022";
   padding-right: 5px;
@@ -148,7 +110,6 @@ body > footer > ul > li:first-child:before {
 }
 
 /* pagination */
-/*#posts > navigation {*/
 navigation {
   margin: 3rem 0;
   text-align: center;
@@ -176,9 +137,7 @@ section#posts > article > footer {
   text-align: right;
 }
 
-article > header > h1,
-article > header > h2,
-body > ul > li > h2 {
+article > header > h1, article > header > h2, body > ul > li > h2 {
   margin-bottom: 0.5rem;
   border-bottom: none;
 }
@@ -220,8 +179,7 @@ code {
   border-radius: 3px;
   overflow-wrap: break-word;
 }
-code:not(.hljs)::before,
-code:not(.hljs)::after {
+code:not(.hljs)::before, code:not(.hljs)::after {
   content: "\00a0";
   letter-spacing: -0.2em;
 }
@@ -256,11 +214,7 @@ code:not(.hljs)::after {
     font-size: 1.5em;
   }
 
-  h1,
-  h2,
-  article.post h1,
-  article.post h2,
-  #subheader-title > h1 {
+  h1, h2, article.post h1, article.post h2, #subheader-title > h1 {
     text-align: center;
   }
 
