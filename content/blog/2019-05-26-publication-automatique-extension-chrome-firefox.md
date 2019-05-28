@@ -7,16 +7,16 @@ published: false
 typora-root-url: ../../static
 ---
 
-Ces dernières années j’ai développé quelques extensions pour navigateur Web, d'abord pour [Chrome](https://chrome.google.com/webstore/search/ligny?_category=extensions), puis pour [Firefox](https://addons.mozilla.org/fr/firefox/user/77216/) (avec la standardisation de l'API [*WebExtensions*](https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions)).
+Ces dernières années j’ai développé quelques extensions pour navigateur web, d'abord pour [Chrome](https://chrome.google.com/webstore/search/ligny?_category=extensions), puis pour [Firefox](https://addons.mozilla.org/fr/firefox/user/77216/) (avec la standardisation de l'API [*WebExtensions*](https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions)).
 
-Initialement conçues et développées pour mon usage personnelle, j’ai ensuite décider de les partager, non seulement sur GitHub (en open-source) mais aussi, sur les *stores* officiels afin d’en simplifier l'installation.
+Initialement conçues et développées pour mon usage personnelle, j’ai ensuite décidé de les partager, non seulement sur [GitHub](https://github.com/Narno?utf8=%E2%9C%93&tab=repositories&q=topic%3Aweb-extension&type=source&language=) (sous licence open-source) mais aussi, sur les *stores* officiels afin d’en simplifier l'installation.
 
 Néanmoins, au fil des mises à jour il devenait pénible :
 
-1. de mettre à disposition l’extension / l'addon sous forme d’archive dans la section *Releases* du dépôt GitHub ;
+1. de mettre à disposition l’extension / l’add-on sous forme d’archive ZIP dans la section *Releases* du dépôt GitHub ;
 2. de créer une nouvelle version et de l’uploader depuis la page de gestion de chacun des *stores*.
 
-Aussi, j’ai cherché à automatiser ces étapes via l’[intégration continue](https://fr.m.wikipedia.org/wiki/Int%C3%A9gration_continue) et le déploiement continu (ou [livraison continue](https://fr.m.wikipedia.org/wiki/Livraison_continue)).
+Aussi, j’ai cherché à automatiser ces étapes via l’[**intégration continue**](https://fr.m.wikipedia.org/wiki/Int%C3%A9gration_continue) et le **déploiement continu** (ou [livraison continue](https://fr.m.wikipedia.org/wiki/Livraison_continue)).
 
 <!-- break-->
 
@@ -24,11 +24,11 @@ Aussi, j’ai cherché à automatiser ces étapes via l’[intégration continue
 
 [![Tableau de bord de Travis CI](/images/f-notifier-travis-ci.png)](https://travis-ci.com/)
 
-Le principe de l’intégration continue vise à automatiser les **tests** et le ***build*** du programme (ici l’extension) à chaque livraison de code afin de s’assurer de la qualité du code et de prévenir les risques de regression.
+Le principe de l’intégration continue vise à automatiser l‘exécution des [**tests**](#tests) et le [***build***](#build) du programme (ici l’extension programmée en JavaScript) à chaque livraison de code (sur le dépôt) afin de s’assurer de la qualité du code et de prévenir les risques de regression.
 
-Dans le cas d’une distribition open-source je recommanderais la solution [**Travis CI**](https://travis-ci.com/) qui est gratuit pour les petits projets, très simple à paramétrer, et qui propose également de l’outillage permettant le déploiement continue (voir plus bas).
+Dans le cas d’une distribition open-source je recommanderais la solution [**Travis CI**](https://travis-ci.com/) qui est gratuite pour les petits projets, très simple à paramétrer, et qui propose également de l’outillage permettant le [déploiement continue](#dc).
 
-### Test {#test}
+### Tests {#tests}
 
 Pour la plupart de mes extensions, qui sont sommes toute très simple, je me suis concentré sur la qualité du code JavaScript via [ESLint](https://eslint.org/) en utilisant la blitiothèque [**xo**](https://github.com/xojs/xo).
 
@@ -55,13 +55,23 @@ Pour la plupart de mes extensions, qui sont sommes toute très simple, je me sui
 
 ### *Build* {#build}
 
-Conernant la solution de *build* j’ai opté pour la bliothèque [**Gulp**](https://gulpjs.com/) qui permet d’automatiser simplement les tâches répétitives (copie des fichiers, création de l’archive ZIP, etc.) en écrivant quelques lignes de JavaScript.
+Dans le cas d’une extension web, la phase de *build* consiste à :
+
+1. combiner les différents scripts en un unique fichier (ex : *background.js*)
+2. copier les ressources requises (images, fichiers CSS, etc.)
+3. créer une archive ZIP : c’est elle qui sera chargée par le navigateur web
+
+Pour réaliser ces étapes répétitives j’ai opté pour la boîte à outils [**Gulp**](https://gulpjs.com/) qui se paramètre via quelques lignes de JavaScript.
 
 **Exemple :**
+
+Commande a exécuter :
 
 ```bash
 gulp dist
 ```
+
+Fichier `gulpfile.js` correspondant :
 
 ```javascript
 'use strict';
@@ -140,11 +150,13 @@ gulp.task('default', ['clean'], () => {
 
 [*Source*](https://github.com/Narno/F-Notifier/blob/master/gulpfile.js)
 
-## Déploiement continue {#cd}
+## Déploiement continue {#dc}
 
-Détaillons maintenant l’objet de cet article, à savoir : Comment automatiser la publication d’une extension Google Chrome sur le *Chrome Web Store* et une extension Mozilla Firefox sur *Firefox Add-ons*.
+Détaillons maintenant l’objet de cet article, à savoir :
 
-La publication est réalisée dans le cadre de l’intégation continue, à la condition que le *build* soit un succès et de manière automatique via l’exécution d’une ligne de commande.
+> ***Comment automatiser la publication d’une extension Google Chrome sur le Chrome Web Store et une extension Mozilla Firefox sur Firefox Add-ons ?***
+
+La publication est la dernière étape de l’intégation continue, éxaécuté si et seulement si le *build* soit un succès et de manière automatique via l’exécution d’une ligne de commande.
 
 ### *Release* GitHub
 
