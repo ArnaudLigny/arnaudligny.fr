@@ -117,6 +117,16 @@
     <link rel="stylesheet" href="{{ url(minify('css/font.css')) }}" media="all" />
     <link rel="stylesheet" href="{{ url(minify('css/animate.css')) }}" media="all" />
     <link rel="stylesheet" href="{{ url('css/github.min.css') }}">
+    <script src="{{ url('js/anchor.min.js') }}"></script>
+    <script>{% filter minifyJS %}
+        var selector = '#page > article > h2, #page > article > h3';
+        anchors.options = {
+            placement: 'left',
+            visible: 'touch',
+            icon: '#'
+        };
+        anchors.add(selector);
+    {% endfilter %}</script>
     <script src="{{ url('js/highlight.min.js') }}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <link rel="stylesheet" href="{{ url('gdpr-cookie-notice/style.css') }}">
