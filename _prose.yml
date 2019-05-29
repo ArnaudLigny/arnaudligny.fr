@@ -36,7 +36,7 @@ prose:
       - name: "updated"
         field:
           element: "text"
-          label: "Date"
+          label: "Updated"
           value: "CURRENT_DATETIME"
           placeholder: "YYYY-MM-DD HH:MM"
       - name: "image"
