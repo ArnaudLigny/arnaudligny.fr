@@ -52,7 +52,7 @@ Détaillons maintenant l’objet de cet article, à savoir :
 
 > ***Comment automatiser la publication d’une extension Google Chrome sur le Chrome Web Store et une extension Mozilla Firefox sur Firefox Add-ons ?***
 
-La publication est la dernière étape de l’intégation continue, éxaécuté si et seulement si le *build* soit un succès et de manière automatique via l’exécution d’une ligne de commande.
+La publication est la dernière étape de l’intégation continue, exécutée si et seulement si le *build* est un succès (de manière automatique via une ligne de commande).
 
 ### *Release* GitHub {#release-github}
 
@@ -60,7 +60,7 @@ La publication est la dernière étape de l’intégation continue, éxaécuté 
 
 Comme indiqué plus haut Travis CI offre une option simple, via la [configuration](https://docs.travis-ci.com/user/deployment/releases/), de déploiement du résultat du *build* en tant qu’*asset* attaché à une nouvelle release.
 
-Il suffit d’indiquer le provider `releases`, de fournir le token de l’API GitHub et de préciser le fichier.
+Il suffit d’indiquer le *provider* `releases`, de fournir le token de l’API GitHub et de préciser le fichier.
 
 **Exemple :**
 
