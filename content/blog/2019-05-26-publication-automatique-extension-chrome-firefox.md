@@ -3,7 +3,7 @@ title: "Publication automatique d’une extension Chrome ou Firefox"
 date: 2019-05-26
 tags: Développement
 image: /images/store_developer_dashboard.png
-published: false
+published: true
 typora-root-url: ../../static
 ---
 
