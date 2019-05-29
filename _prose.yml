@@ -1,7 +1,7 @@
 prose:
   rooturl: 'content'
   siteurl: 'https://arnaudligny.fr'
-  media: 'static'
+  media: 'static/images'
   metadata:
     content:
       - name: "title"
@@ -15,11 +15,11 @@ prose:
           element: "text"
           label: "Layout"
           placeholder: "Layout"
-      - name: "permalink"
+      - name: "path"
         field:
           element: "text"
-          label: "Permalink"
-          placeholder: "Permalink"
+          label: "Path (Permalink)"
+          placeholder: "path/slug"
     content/blog:
       - name: "title"
         field:
@@ -33,19 +33,28 @@ prose:
           label: "Date"
           value: "CURRENT_DATETIME"
           placeholder: "YYYY-MM-DD HH:MM"
+      - name: "updated"
+        field:
+          element: "text"
+          label: "Date"
+          value: "CURRENT_DATETIME"
+          placeholder: "YYYY-MM-DD HH:MM"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image"
+          placeholder: "image.jpg"
       - name: "tags"
         field:
           element: "multiselect"
           label: "Tags"
           options:
-            - name: "Magento"
-              value: "Magento"
-            - name: "e-commerce"
-              value: "e-commerce"
+            - name: "Développement"
+              value: "Développement"
           placeholder: "Add tags"
           alterable: true
-      - name: "permalink"
+      - name: "path"
         field:
           element: "text"
-          label: "Permalink"
-          placeholder: "Permalink"
+          label: "Path (Permalink)"
+          placeholder: "path/slug"
