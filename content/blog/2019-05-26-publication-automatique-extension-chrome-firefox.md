@@ -111,7 +111,7 @@ Son utilisatation est similaire à celle de *Web Store Uplaod CLI* :
 
 Comme vous avez pu le lire, en combinant les outils adaptés, il est relativement simple d’automatiser la publication d’une extension pour navigateur.
 
-Néanmoins ça prend toujours un peu de temps la première fois, aussi je vous invite à vous inspirer d’un de mes projets — [***F-Notifier*** (~ 400 utilisateurs)](https://github.com/Narno/F-Notifier) — et plus particulièrement aux fichiers suivant :
+Néanmoins ça prend toujours un peu de temps la première fois, aussi je vous invite à vous inspirer d’un de mes projets — [***F-Notifier*** (~ 400 utilisateurs)](https://github.com/Narno/F-Notifier) — et plus particulièrement des fichiers suivant :
 
 - [`package.json`](https://github.com/Narno/F-Notifier/blob/2.3.1/package.json) ;
 - [`.travis.yml`](https://github.com/Narno/F-Notifier/blob/2.3.1/.travis.yml).
