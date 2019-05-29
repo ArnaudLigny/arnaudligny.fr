@@ -18,8 +18,8 @@ prose:
       - name: "path"
         field:
           element: "text"
-          label: "Path (Permalink)"
-          placeholder: "path/slug"
+          label: "Path"
+          placeholder: "Permalink"
     content/blog:
       - name: "title"
         field:
@@ -56,5 +56,5 @@ prose:
       - name: "path"
         field:
           element: "text"
-          label: "Path (Permalink)"
-          placeholder: "path/slug"
+          label: "Path"
+          placeholder: "Permalink"
