@@ -1,0 +1,25 @@
+{% extends '_default/list.html.twig' %}
+
+{% block content %}
+<section id="posts">
+    <h1>{{ page.title }}</h1>
+{% for post in page.pagination.pages %}
+    <article class="post">
+        <header>
+            <h2 class="post-title"><a href="{{ url(post) }}">{{ post.title }}</a></h2>
+            <div class="post-meta">
+{% if post.date %}
+                <span class="post-date">{{ post.date|date("j M Y") }}</span>
+{% endif %}
+                <span class="post-time">&#128336;&nbsp;{{ readtime(post.content) }}&nbsp;min</span>
+{% if site.comments %}
+                <span class="post-com">&#9998;&nbsp;<a href="{{ url(post) }}#disqus_thread">Commentaires</a></span>
+{% endif %}
+            </div>
+        </header>
+    </article>
+    <hr />
+{% endfor %}
+{% include 'partials/pagination.html.twig' %}
+</section>
+{% endblock content %}
