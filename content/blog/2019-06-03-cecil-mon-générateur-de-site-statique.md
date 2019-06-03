@@ -47,9 +47,9 @@ La réponse tiens en 3 points :
 
 ## Comment Cecil fonctionne ?
 
-Le principe de Cecil est très simple : il s’agit d’une archive PHP ([Phar](https://www.php.net/manual/fr/intro.phar.php)), exéutable en ligne de commande, manipulant des fichiers selon une arborescence donnée.
+Le principe de Cecil est très simple : il s’agit d’une archive PHP ([Phar](https://www.php.net/manual/fr/intro.phar.php)), exécutable en ligne de commande, manipulant des fichiers selon une arborescence donnée.
 
-Ainsi, pour générer (*builder*) un site il suffit de lancer la commande `php cecil.phar build` dans un terminal, à l’inérieur d’un dossier structuré de la manière suivante :
+Ainsi, pour générer (*builder*) un site il suffit de lancer la commande `php cecil.phar build` dans un terminal, à l’intérieur d’un dossier structuré de la manière suivante :
 
 ```
 <mywebsite>
