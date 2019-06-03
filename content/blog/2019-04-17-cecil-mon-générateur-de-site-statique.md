@@ -1,6 +1,7 @@
 ---
 title: "Cecil : mon générateur de site statique"
 date: 2019-04-17
+updated: 2019-06-03
 tags:
   - Développement
   - SSG
