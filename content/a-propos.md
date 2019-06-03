@@ -1,5 +1,5 @@
 ---
-title: À propos
+title: "À propos"
 date: 2019-02-27
 published: true
 ---

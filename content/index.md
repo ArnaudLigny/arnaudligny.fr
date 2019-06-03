@@ -1,5 +1,5 @@
 ---
-title: Qui suis-je ?
+title: "Qui suis-je ?"
 date: 2017-12-21
 layout: index
 pagination:
@@ -18,3 +18,4 @@ En plus de 10 ans j’ai apporté mon expertise à des dizaines de projets; à l
 
 *[IoT]: Internet of Things
 *[R&D]: Recherche et développement
+
