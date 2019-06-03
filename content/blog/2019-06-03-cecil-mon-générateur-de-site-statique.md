@@ -12,7 +12,7 @@ published: false
 
 Le concept (et la première version) a émergé en 2013 et depuis je n’ai cessé de faire évoluer l’application, de l'enrichir, tout en essayant de respecter le principe suivant :
 
-> L’application doit être simple à appréhender et le contenu doit être au coeur de son usage.
+> L’application doit être simple à appréhender et le contenu doit être au cœur de son usage.
 
 <!-- break -->
 
@@ -25,13 +25,13 @@ Cecil n’est pas un CMS ([Système de gestion de contenu](https://fr.m.wikipedi
 
 Ainsi Cecil va injecter les contenus — souvent rédigés sous la forme d’articles, de billets de blog, ou encore de simples pages de texte — dans un template qui lui va garantir la mise en forme pour une mise à disposition sur le web.
 
-En pratique c’est ce que fait n’importe quel outil de publication dynamique de contenu (tel que [WordPress](https://fr.m.wikipedia.org/wiki/WordPress) par exemple), sauf que ce dernier (re)genère la page à chaque consultation par l'internaute et que très souvent les données textuels sont enregistrées dans une [base de données](https://fr.m.wikipedia.org/wiki/Base_de_donn%C3%A9es).
+En pratique c’est ce que fait n’importe quel outil de publication dynamique de contenu (tel que [WordPress](https://fr.m.wikipedia.org/wiki/WordPress) par exemple), sauf que ce dernier (re)génère la page à chaque consultation par l'internaute et que très souvent les données textuels sont enregistrées dans une [base de données](https://fr.m.wikipedia.org/wiki/Base_de_donn%C3%A9es).
 
-Dans le cas d’un générateur comem Cecil le site est créé (ou « généré ») en une seule fois, à chaque modification (texte ou mise en forme) sous la forme d’une arborescence de fichiers : pages HTML, feuilles de styles, images, etc.
+Dans le cas d’un générateur comme Cecil le site est créé (ou « généré ») en une seule fois, à chaque modification (texte ou mise en forme) sous la forme d’une arborescence de fichiers : pages HTML, feuilles de styles, images, etc.
 
 Une fois le site web (re)généré, il suffit de le publier sur n’importe quelle plateforme d’hébergement de site web pour le rendre disponible.
 
-**C’est pour cela que l’on utilise le terme de « site statique » : le site web généré s’ « auto-suffit », c’est à dire qu'il n’a pas besoin d’être interprété (transformé) par le serveur pour être consulté depuios un navigateur web.**
+**C’est pour cela que l’on utilise le terme de « site statique » : le site web généré s’« auto-suffit », c’est à dire qu'il n’a pas besoin d’être interprété (transformé) par le serveur pour être consulté depuis un navigateur web.**
 
 ## Pourquoi créer un nouvel outil ?
 
@@ -41,9 +41,9 @@ La réponse tiens en 3 points :
 
 1. J’avais besoin d’un outil très simple fonctionnellement et techniquement
 2. Je souhaitais utiliser un moteur de template complet et agréable à utiliser au quotidien
-3. Enfin, naissait l’envie — après la naissance de mon fils — de me lancer dans nième side project 😄
+3. Enfin, naissait l’envie — après la naissance de mon fils — de me lancer dans énième *side project* 😄
 
-> Concernant la programmation, je n’avais ni le temps ni l’envie d’investir dans un nouveau language en dehors de mon temps de travail. Aussi j’ai preféré enrichir et développer mes connaissance déjà solide en PHP. Plusieurs années après je regrette nullement ce choix !
+> Concernant la programmation, je n’avais ni le temps ni l’envie d’investir dans un nouveau langage en dehors de mon temps de travail. Aussi j’ai préféré enrichir et développer mes connaissance déjà solide en PHP. Plusieurs années après je regrette nullement ce choix !
 
 ## Comment Cecil fonctionne ?
 
