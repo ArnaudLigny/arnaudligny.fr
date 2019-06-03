@@ -10,9 +10,9 @@ published: false
 <blockquote class="twitter-tweet tw-align-center" data-lang="fr"><p lang="en" dir="ltr">Create and deploy a static blog in 1 minute with <a href="https://twitter.com/Cecil_Static?ref_src=twsrc%5Etfw">@Cecil_Static</a> (<a href="https://t.co/FzVEkJ7VaL">https://t.co/FzVEkJ7VaL</a>) and <a href="https://twitter.com/Netlify?ref_src=twsrc%5Etfw">@Netlify</a>, from a mobile phone! 😁 <a href="https://t.co/AMx3hPpaCd">pic.twitter.com/AMx3hPpaCd</a></p>&mdash; Arnaud Ligny 👨‍💻 💡 🚀 (@ArnaudLigny) <a href="https://twitter.com/ArnaudLigny/status/1123984989270544386?ref_src=twsrc%5Etfw">2 mai 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Le concept et la première version ont émergés en 2013 et depuis l’application n’a cessée dévoluer, d’être enrichi, tout en respectant le principe suivant :
+Le concept (et la première version) a émergé en 2013 et depuis je n’ai cessé de faire évoluer l’application, de l'enrichir, tout en essayant de respecter le principe suivant :
 
-> L’application doit être simple à appréhender et le contenu au coeur de son usage.
+> L’application doit être simple à appréhender et le contenu doit être au coeur de son usage.
 
 <!-- break -->
 
@@ -33,7 +33,21 @@ Une fois le site web (re)généré, il suffit de le publier sur n’importe quel
 
 **C’est pour cela que l’on utilise le terme de « site statique » : le site web généré s’ « auto-suffit », c’est à dire qu'il n’a pas besoin d’être interprété (transformé) par le serveur pour être consulté depuios un navigateur web.**
 
+## Pourquoi créer un nouvel outil ?
+
+En effet, quand j’ai commencé à imaginer cette application [la mouvance statique](https://frank.taillandier.me/2016/03/08/les-gestionnaires-de-contenu-statique/) était déjà engagée et il existait déjà de nombreux générateurs de site statique, tels que : [Jekyll](https://jekyllrb.com/), [Pelican](https://getpelican.com), [Sculpin](https://sculpin.io/), [Nikola](https://getnikola.com), [Hexo](https://hexo.io/), [Spress](https://spress.yosymfony.com/), ou encore [Hugo](https://gohugo.io/) qui était très prometteur !
+
+La réponse tiens en 3 points :
+
+1. J’avais besoin d’un outil très simple fonctionnellement et techniquement
+2. Je souhaitais utiliser un moteur de template complet et agréable à utiliser au quotidien
+3. Enfin, naissait l’envie — après la naissance de mon fils — de me lancer dans nième side project 😄
+
+> Concernant la programmation, je n’avais ni le temps ni l’envie d’investir dans un nouveau language en dehors de mon temps de travail. Aussi j’ai preféré enrichir et développer mes connaissance déjà solide en PHP. Plusieurs années après je regrette nullement ce choix !
+
 ## Comment Cecil fonctionne ?
+
+Cecil est donc une application en ligne de commande...
 
 to do
 
