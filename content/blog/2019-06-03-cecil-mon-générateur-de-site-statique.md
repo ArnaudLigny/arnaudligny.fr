@@ -31,7 +31,7 @@ Dans le cas d’un générateur comme Cecil le site est créé (ou « généré
 
 Une fois le site web (re)généré, il suffit de le publier sur n’importe quelle plateforme d’hébergement de site web pour le rendre disponible.
 
-**C’est pour cela que l’on utilise le terme de « site statique » : le site web généré s’« auto-suffit », c’est à dire qu'il n’a pas besoin d’être interprété (dynamiquement) par le serveur pour être consulté depuis un navigateur web.**
+**C’est pour cela que l’on utilise le terme de « site statique » : le site web généré « s’auto-suffit », c’est à dire qu'il n’a pas besoin d’être interprété (dynamiquement) par le serveur pour être consulté depuis un navigateur web.**
 
 ## Pourquoi créer un nouvel outil ?
 
@@ -47,7 +47,23 @@ La réponse tiens en 3 points :
 
 ## Comment Cecil fonctionne ?
 
-Cecil est donc une application en ligne de commande...
+Le principe de Cecil est très simple : il s’agit d’une archive PHP ([Phar](https://www.php.net/manual/fr/intro.phar.php)), exéutable en ligne de commande, manipulant des fichiers selon une arborescence donnée.
 
-to do
+Ainsi, pour générer (*builder*) un site il suffit de lancer la commande `php cecil.phar build` dans un terminal, à l’inérieur d’un dossier structuré de la manière suivante :
+
+```
+<mywebsite>
+├─ content
+|  ├─ blog
+|  |  ├─ post-1.md
+|  |  └─ post-2.md
+|  └─ about.md
+├─ layouts
+|  └─ _default
+|     ├─ list.html.twig
+|     └─ page.html.twig
+└─ static
+   └─ styles
+      └─ main.scss
+```
 
