@@ -31,7 +31,7 @@ Dans le cas d’un générateur comme Cecil le site est créé (ou « généré
 
 Une fois le site web (re)généré, il suffit de le publier sur n’importe quelle plateforme d’hébergement de site web pour le rendre disponible.
 
-**C’est pour cela que l’on utilise le terme de « site statique » : le site web généré s’« auto-suffit », c’est à dire qu'il n’a pas besoin d’être interprété (transformé) par le serveur pour être consulté depuis un navigateur web.**
+**C’est pour cela que l’on utilise le terme de « site statique » : le site web généré s’« auto-suffit », c’est à dire qu'il n’a pas besoin d’être interprété (dynamiquement) par le serveur pour être consulté depuis un navigateur web.**
 
 ## Pourquoi créer un nouvel outil ?
 
