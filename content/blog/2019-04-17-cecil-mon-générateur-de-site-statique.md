@@ -14,6 +14,8 @@ Le concept et la première version ont émergés en 2013 et depuis l’applicati
 
 > L’application doit être simple à appréhender et le contenu au coeur de son usage.
 
+<!-- break -->
+
 ## Un générateur de statique ?
 
 Cecil n’est pas un CMS ([Système de gestion de contenu](https://fr.m.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu)) mais « uniquement » un outil facilitant la création d’un site web à partir :
