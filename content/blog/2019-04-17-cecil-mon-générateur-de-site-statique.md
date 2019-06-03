@@ -16,7 +16,7 @@ Le concept (et la première version) a émergé en 2013 et depuis je n’ai cess
 
 <!-- break -->
 
-## Un générateur de statique ?
+## Un générateur de site statique ?
 
 Cecil n’est pas un CMS ([Système de gestion de contenu](https://fr.m.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu)) mais « uniquement » un outil facilitant la création d’un site web à partir :
 
