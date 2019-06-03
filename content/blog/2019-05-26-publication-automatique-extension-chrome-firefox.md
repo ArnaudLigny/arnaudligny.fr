@@ -65,7 +65,7 @@ Il suffit d’indiquer le *provider* `releases`, de fournir le token de l’API 
 
 **Exemple :**
 
-```txt
+```yaml
 deploy:
   - provider: releases
     skip_cleanup: true
