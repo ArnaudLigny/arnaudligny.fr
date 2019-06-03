@@ -31,3 +31,7 @@ Une fois le site web (re)généré, il suffit de le publier sur n’importe quel
 
 **C’est pour cela que l’on utilise le terme de « site statique » : le site web généré s’ « auto-suffit », c’est à dire qu'il n’a pas besoin d’être interprété (transformé) par le serveur pour être consulté depuios un navigateur web.**
 
+## Comment Cecil fonctionne ?
+
+to do
+
