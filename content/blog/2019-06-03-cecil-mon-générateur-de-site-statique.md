@@ -106,6 +106,6 @@ D’autres billets viendront détailler les fonctionnalités de Cecil, telle que
 
 > Notes :
 >
-> - Pour reproduire le *build* et le déploiement automatisé montré dans le tweet d’introduction je vous invite à consulter la documentation : [*Build and deploy with Netlify*](https://cecil.app/documentation/publish/#build-and-deploy-with-netlify).
+> - Pour reproduire le *build* et le déploiement automatisé montré dans le tweet d’introduction je vous invite à consulter la documentation : [*Build and deploy with Netlify*](https://cecil.app/documentation/publish/#build-and-deploy-with-netlify) ;
 >
 > - Le logo à été créé par la fantastique [Cécile Ricordeau, Directrice de Création freelance](https://www.cecillie.fr/).
