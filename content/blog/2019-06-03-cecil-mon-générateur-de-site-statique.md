@@ -94,16 +94,18 @@ Enfin, le site est généré dans le répertoire ***_site*** :
    └─ style.css
 ```
 
-Et voilà !
-
 ## aller plus loin
 
-Plutôt que de paraphraser le [**site officiel**](https://cecil.app/), je vous invite à commencer par le « [Quick Start](https://cecil.app/documentation/quick-start/) » ! 🙂
+Après cette rapide introduction, plutôt que de paraphraser le [**site officiel**](https://cecil.app/), je vous invite à commencer par le « [Quick Start](https://cecil.app/documentation/quick-start/) » ! 🙂
+
+D’autres billets viendront détailler les fonctionnalités de Cecil, telle que la pagination automatique, la gestion de la taxonomie (les *tags*), les multiples formats de sortie (ex : RSS), la prévisualisation, etc.
+
+
 
 ----
 
-> Remarques :
+> Notes :
 >
-> - Pour mieux comprendre comment est réalisé le *build* et le déploiement automatisé montré dans le tweet d’introduction : [*Build and deploy with Netlify*](https://cecil.app/documentation/publish/#build-and-deploy-with-netlify).
+> - Pour reproduire le *build* et le déploiement automatisé montré dans le tweet d’introduction je vous invite à consulter la documentation : [*Build and deploy with Netlify*](https://cecil.app/documentation/publish/#build-and-deploy-with-netlify).
 >
 > - Le logo à été créé par la fantastique [Cécile Ricordeau, Directrice de Création freelance](https://www.cecillie.fr/).
