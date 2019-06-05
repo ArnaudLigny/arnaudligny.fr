@@ -2,7 +2,9 @@
 title: "Cecil : mon générateur de site statique"
 date: 2019-06-03
 tags: [Développement, SSG]
+image: /images/Cecil.png
 published: false
+typora-root-url: ../../static
 ---
 
 [Cecil](https://cecil.app/) est un projet personnel, se présentant sous la forme d'une application en [ligne de commande](https://fr.m.wikipedia.org/wiki/Interface_en_ligne_de_commande) facilitant la création d’un site web.
@@ -92,10 +94,16 @@ Enfin, le site est généré dans le répertoire ***_site*** :
    └─ style.css
 ```
 
+Et voilà !
+
 ## aller plus loin
 
 Plutôt que de paraphraser le [**site officiel**](https://cecil.app/), je vous invite à commencer par le « [Quick Start](https://cecil.app/documentation/quick-start/) » ! 🙂
 
 ----
 
-> Note : le logo De Cecil à été créé par la fantastique [Cécile Ricordeau, Directrice de Création freelance](https://www.cecillie.fr/).
+> Remarques :
+>
+> - Pour mieux comprendre comment est réalisé le *build* et le déploiement automatisé montré dans le tweet d’introduction : [*Build and deploy with Netlify*](https://cecil.app/documentation/publish/#build-and-deploy-with-netlify).
+>
+> - Le logo à été créé par la fantastique [Cécile Ricordeau, Directrice de Création freelance](https://www.cecillie.fr/).
