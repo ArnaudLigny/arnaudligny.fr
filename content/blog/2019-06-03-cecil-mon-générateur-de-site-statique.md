@@ -45,7 +45,7 @@ La réponse tiens en 3 points :
 
 > Concernant la programmation, je n’avais ni le temps ni l’envie d’investir dans un nouveau langage en dehors de mon temps de travail. Aussi j’ai préféré enrichir et développer mes connaissance déjà solide en PHP. Plusieurs années après je regrette nullement ce choix !
 
-## Comment Cecil fonctionne ?
+## Comment ça marche ?
 
 Le principe de Cecil est très simple : il s’agit d’une archive PHP ([Phar](https://www.php.net/manual/fr/intro.phar.php)), exécutable en ligne de commande, manipulant des fichiers selon une arborescence donnée.
 
@@ -63,9 +63,39 @@ Ainsi, pour générer (*builder*) un site il suffit de lancer la commande `php c
 |     ├─ list.html.twig
 |     └─ page.html.twig
 └─ static
-   └─ styles
-      └─ main.scss
+   └─ style.css
 ```
 
-to do
+On y trouve les contenus (dans le répertoire [***content***](https://cecil.app/documentation/content/)) qui doivent être organisés selon l’arboresence cible du site web.  
+Chacune des pages, qu'il s’agisse d’une page simple (par exemple “à propos”) ou encore un billet de blog, peut être redigée au format texte ou, pour une rendu plus travaillé, au format [Markdown](https://fr.m.wikipedia.org/wiki/Markdown).
 
+Les templates ([***layouts***](https://cecil.app/documentation/templates/)) quant à eux doivent être des fichiers [Twig](https://twig.symfony.com/doc/templates.html).
+
+Les *assets* (tels que les fichiers CSS, les images, etc.) doivent être placés dans le répertoire ***static*** et sont copiés tel quel dans le site généré.
+
+Enfin, le site est généré dans le répertoire ***_site*** :
+
+```
+<mywebsite>
+├─ content
+├─ layouts
+├─ static
+└─ _site
+   ├─ blog
+   |  ├─ post-1
+   |  |  └─ index.html
+   |  └─ post-2
+   |     └─ index.html
+   ├─ about
+   |  └─ index.html
+   ├─ index.html
+   └─ style.css
+```
+
+## aller plus loin
+
+Plutôt que de paraphraser le [**site officiel**](https://cecil.app/), je vous invite à commencer par le « [Quick Start](https://cecil.app/documentation/quick-start/) » ! 🙂
+
+----
+
+> Note : le logo De Cecil à été créé par la fantastique [Cécile Ricordeau, Directrice de Création freelance](https://www.cecillie.fr/).
