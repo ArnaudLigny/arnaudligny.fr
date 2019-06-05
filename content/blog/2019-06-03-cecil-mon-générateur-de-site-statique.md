@@ -37,13 +37,13 @@ Une fois le site web (re)généré, il suffit de le publier sur n’importe quel
 
 ## Pourquoi créer un nouvel outil ?
 
-En effet, quand j’ai commencé à imaginer cette application [la mouvance statique](https://frank.taillandier.me/2016/03/08/les-gestionnaires-de-contenu-statique/) était déjà engagée et il existait déjà de nombreux générateurs de site statique, tels que : [Jekyll](https://jekyllrb.com/), [Pelican](https://getpelican.com), [Sculpin](https://sculpin.io/), [Nikola](https://getnikola.com), [Hexo](https://hexo.io/), [Spress](https://spress.yosymfony.com/), ou encore [Hugo](https://gohugo.io/) qui était très prometteur !
+En effet, quand j’ai commencé à imaginer cette application [la mouvance statique](https://frank.taillandier.me/2016/03/08/les-gestionnaires-de-contenu-statique/) était bien engagée et il existait déjà de nombreux générateurs de site statique, tels que : [Jekyll](https://jekyllrb.com/), [Pelican](https://getpelican.com), [Sculpin](https://sculpin.io/), [Nikola](https://getnikola.com), [Hexo](https://hexo.io/), [Spress](https://spress.yosymfony.com/), ou encore [Hugo](https://gohugo.io/) qui était très prometteur !
 
 La réponse tient en 3 points :
 
 1. J’avais besoin d’un outil très simple fonctionnellement et techniquement
 2. Je souhaitais utiliser un moteur de template complet et agréable à utiliser au quotidien
-3. Enfin, naissait l’envie — après la naissance de mon fils — de me lancer dans énième *side project* 😄
+3. Enfin, naissait l’envie — après celle de mon fils — de me lancer dans énième *side project* 😄
 
 > Remarque :
 > Concernant le développement, je n’avais ni le temps ni l’envie d’investir dans un nouveau langage de programmation en dehors de mon temps de travail. Aussi j’ai préféré enrichir mes connaissances en PHP.  
