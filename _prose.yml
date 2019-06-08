@@ -10,6 +10,17 @@ prose:
           label: "Title"
           value: "page.md"
           placeholder: "Title"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          value: "CURRENT_DATETIME"
+          placeholder: "YYYY-MM-DD HH:MM"
+      - name: "menu"
+        field:
+          element: "text"
+          label: "Menu"
+          placeholder: "main"
       - name: "layout"
         field:
           element: "text"
@@ -31,12 +42,6 @@ prose:
         field:
           element: "text"
           label: "Date"
-          value: "CURRENT_DATETIME"
-          placeholder: "YYYY-MM-DD HH:MM"
-      - name: "updated"
-        field:
-          element: "text"
-          label: "Updated"
           value: "CURRENT_DATETIME"
           placeholder: "YYYY-MM-DD HH:MM"
       - name: "image"
