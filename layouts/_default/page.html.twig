@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>{% spaceless %}
 {% block title %}
-        {{ page.title }} &middot; {{ site.title }}
+        {{ page.title}} &middot; {{ site.title }}
 {% endblock title %}
 {% endspaceless %}</title>
     <meta name="description" content="{{ site.description|escape }}" />
@@ -22,7 +22,7 @@
     <meta property="og:site_name" content="{{ site.title }}" />
 {% block head_fb_meta %}
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:title" content="{{ block('title') }}" />
     <meta property="og:description" content="{{ page.content|striptags|slice(0, 150) }}" />
     <meta property="og:url" content="{{ url(page, {'canonical': true}) }}" />
 {% endblock head_fb_meta %}
