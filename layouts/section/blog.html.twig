@@ -37,12 +37,10 @@
                 </span>
             </div>
         </header>
-        <p>
 {% if post.image is defined %}
-            <img src="{{ post.image }}" alt="Image d'illustration"/>
+<p style="text-align: center"><img src="{{ post.image }}" alt="Image d'illustration" /></p>
 {% endif %}
-            {{ post.content|excerptHtml }}
-        </p>
+        <p>{{ post.content|excerptHtml }}</p>
         <footer class="more">
             <a href="{{ url(post) }}#more">Lire la suite ›</a>
         </footer>
@@ -67,12 +65,10 @@
 {% endif %}
             </div>
         </header>
-        <p>
 {% if post.image is defined %}
-            <img src="{{ post.image }}" alt="Image d'illustration"/>
+        <p style="text-align: center"><img src="{{ post.image }}" alt="Image d'illustration" /></p>
 {% endif %}
-            {{ post.content|excerptHtml }}
-        </p>
+        <p>{{ post.content|excerptHtml }}</p>
         <footer class="more">
             <a href="{{ url(post) }}#more">Lire la suite &raquo;</a>
         </footer>
