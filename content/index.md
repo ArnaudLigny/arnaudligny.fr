@@ -18,4 +18,3 @@ En plus de 10 ans j’ai apporté mon expertise à des dizaines de projets; à l
 
 *[IoT]: Internet of Things
 *[R&D]: Recherche et développement
-
