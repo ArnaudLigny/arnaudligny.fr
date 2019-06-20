@@ -1,3 +1,33 @@
+html {
+    background-color: #fcfcfc;
+    color: #444;
+    font: 90%/2.5rem "Raleway",sans-serif;
+}
+body {
+    font-size: 1.8em;
+    width: 760px;
+    margin: 0px auto;
+}
+p {
+    text-align: justify;
+}
+img {
+    max-width: 100%;
+}
+body > header > nav > ul > li {
+    display: inline;
+    padding-right: 30px;
+}
+body > footer > ul > li {
+    display: inline;
+    padding-right: 0;
+}
+aside {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border-style: groove;
+}
+
 h1, h2, h3 {
   font-weight: bold;
   text-align: left;
