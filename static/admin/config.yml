@@ -2,6 +2,7 @@ backend:
   name: github
   repo: Narno/arnaudligny.fr
   branch: master
+  squash_merges: true
 publish_mode: editorial_workflow
 media_folder: "static/images"
 public_folder: "/images"
@@ -14,6 +15,7 @@ slug:
 collections:
   - name: "billets"
     label: "Billets"
+    label_singular: "Billet"
     description: >
       Billets (de blog), listés dans la section 'Blog' et dans le flux RSS.
     folder: "content/blog"
@@ -29,6 +31,7 @@ collections:
       - {label: "Publié ?", name: "published", widget: boolean, default: false, required: true}
   - name: "pages"
     label: "Pages"
+    label_singular: "Page"
     description: >
       Pages "simple" du site : Accueil, À propos, etc.
     preview_path: "{{title}}"
