@@ -34,15 +34,15 @@ front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
+  preview_command: curl -SOL https://cecil.app/cecil.phar && php cecil.phar build
+    -v --baseurl=$DEPLOY_URL
   publish_command: hugo -d public
   preview_env:
-  - HUGO_ENV=staging
-  - HUGO_VERSION=0.55.6
+  - PHP_VERSION=7.2
   publish_env:
   - HUGO_ENV=production
   - HUGO_VERSION=0.55.6
-  preview_output_directory: public
+  preview_output_directory: _site
   output_directory: public
   instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
     -d public
