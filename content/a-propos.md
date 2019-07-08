@@ -1,7 +1,7 @@
 ---
 title: "À propos"
 date: 2019-02-27
-published: true
+draft: false
 ---
 Ce site web a pour objectif de présenter mon profil professionnel et de partager des billets de blog en relation avec mes domaines de compétence ou d'intérêt.
 
