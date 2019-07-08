@@ -25,3 +25,5 @@ fields:
   name: typora-root-url
   label: typora-root-url
   hidden: true
+pages:
+- content/blog/test.md
