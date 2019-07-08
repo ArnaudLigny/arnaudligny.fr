@@ -1,13 +1,10 @@
 [build]
-  command = "chmod +x scripts/netlify.sh && bash scripts/netlify.sh"
+  command = "chmod +x .netlify/build.sh && bash .netlify/build.sh"
   publish = "_site"
-  environment = { PHP_VERSION = "7.2" }
+  environment = { PHP_VERSION = "7.2", RUBY_VERSION = "2.6.2" }
 
 [context.deploy-preview]
-  command = "chmod +x scripts/netlify.sh && bash scripts/netlify.sh $DEPLOY_PRIME_URL"
+  command = "chmod +x .netlify/build.sh && bash .netlify/build.sh $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "chmod +x scripts/netlify.sh && bash scripts/netlify.sh $DEPLOY_PRIME_URL"
-
-[context.wip]
-  command = "chmod +x scripts/netlify-beta.sh && bash scripts/netlify-beta.sh $DEPLOY_PRIME_URL"
+  command = "chmod +x .netlify/build.sh && bash .netlify/build.sh $DEPLOY_PRIME_URL"
