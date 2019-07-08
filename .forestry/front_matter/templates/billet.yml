@@ -1,0 +1,19 @@
+---
+label: Billet
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: list
+  name: tags
+  label: tags
+- type: file
+  name: image
+  label: image
+- type: text
+  name: typora-root-url
+  label: typora-root-url
