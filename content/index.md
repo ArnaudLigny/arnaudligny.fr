@@ -4,7 +4,7 @@ date: 2017-12-21
 layout: index
 pagination:
   enabled: false
-published: true
+draft: false
 ---
 Hello, je suis Arnaud Ligny, consultant technique Web et mobile.
 
