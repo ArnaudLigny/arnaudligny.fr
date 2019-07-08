@@ -4,16 +4,23 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
 - type: datetime
   name: date
-  label: date
+  label: Date
+  config:
+    date_format: DD/MM/YYYY
+    required: true
+  default: now
 - type: list
   name: tags
-  label: tags
+  label: Tags
 - type: file
   name: image
-  label: image
+  label: Image
 - type: text
   name: typora-root-url
   label: typora-root-url
+  hidden: true
