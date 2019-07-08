@@ -3,7 +3,7 @@ title: "Cecil : mon générateur de site statique"
 date: 2019-06-05
 tags: [Développement, SSG]
 image: /images/Cecil.png
-published: true
+draft: false
 typora-root-url: ../../static
 ---
 
