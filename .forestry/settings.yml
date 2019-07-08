@@ -10,6 +10,8 @@ sections:
   create: documents
   match: "**/*"
   new_doc_ext: md
+  templates:
+  - billet
 - type: directory
   path: content/tags
   label: Tags
