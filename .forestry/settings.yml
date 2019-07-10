@@ -36,6 +36,10 @@ sections:
   new_doc_ext: md
 - type: heading
   label: Config
+- type: document
+  path: config.yml
+  label: Site
+  match: "**/*"
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
