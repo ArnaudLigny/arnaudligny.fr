@@ -24,7 +24,7 @@
             </span>
         </div>
     </header>
-{% if page.image is defined %}
+{% if page.image is defined and page.image %}
     <p style="text-align: center"><img src="{{ page.image }}" alt="Image d'illustration"/></p>
 {% endif %}
     {{ page.content }}
