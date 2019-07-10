@@ -39,7 +39,7 @@
                 </span>
             </div>
         </header>
-{% if post.image is defined %}
+{% if post.image is defined and post.image %}
 <p style="text-align: center"><img src="{{ post.image }}" alt="Image d'illustration" /></p>
 {% endif %}
         <p>{{ post.content|excerptHtml }}</p>
@@ -67,7 +67,7 @@
 {% endif %}
             </div>
         </header>
-{% if post.image is defined %}
+{% if post.image is defined and post.image %}
         <p style="text-align: center"><img src="{{ post.image }}" alt="Image d'illustration" /></p>
 {% endif %}
         <p>{{ post.content|excerptHtml }}</p>
