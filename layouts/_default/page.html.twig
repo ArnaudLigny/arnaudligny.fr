@@ -26,7 +26,7 @@
     <meta property="og:description" content="{{ page.content|striptags|slice(0, 150) }}" />
     <meta property="og:url" content="{{ url(page, {'canonical': true}) }}" />
 {% endblock head_fb_meta %}
-{% if page.image is defined %}
+{% if page.image is defined and page.image %}
     <meta property="og:image" content="{{ url(page.image, {'canonical': true}) }}" />
 {% else %}
     <meta property="og:image" content="{{ url('images/avatars/avatar-300.png', {'canonical': true}) }}" />
@@ -35,7 +35,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@{{ site.social.twitter }}" />
     <meta name="twitter:site" content="@{{ site.social.twitter }}" />
-{% if page.image is defined %}
+{% if page.image is defined and page.image %}
     <meta name="twitter:image" content="{{ url(page.image, {'canonical': true}) }}" />
 {% else %}
     <meta name="twitter:image" content="{{ url('images/avatars/avatar-300.png', {'canonical': true}) }}" />
