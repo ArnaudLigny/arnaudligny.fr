@@ -8,7 +8,7 @@ sections:
   label: Blog
 - type: directory
   path: content/blog
-  label: Posts
+  label: Billets
   create: documents
   match: "**/*"
   exclude: index.md
@@ -23,7 +23,7 @@ sections:
   exclude: index.md
   new_doc_ext: md
 - type: heading
-  label: Pages
+  label: Site
 - type: directory
   path: content
   label: Pages
