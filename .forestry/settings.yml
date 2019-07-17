@@ -38,7 +38,7 @@ sections:
   exclude: index.md
   new_doc_ext: md
 - type: heading
-  label: Config
+  label: Configuration
 - type: document
   path: config.yml
   label: Site
