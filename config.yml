@@ -1,57 +1,56 @@
-site:
-  title: "Arnaud Ligny"
-  baseline: "Consultant technique Web, mobile & e-commerce"
-  baseurl: https://arnaudligny.fr/
-  description: Arnaud Ligny, Consultant technique Web, mobile & e-commerce.
-  keywords: [Consultant technique, Web, Application Mobile, e-commerce, Magento, IoT]
-  language: fr
-  languages:
-    fr:
-      name: Français
-      locale: fr_FR
-  output:
-    formats:
-      netlify_redirects:
-        mediatype: 'text/plain'
-        extension: ''
-      webmanifest:
-        mediatype: 'application/manifest+json'
-        extension: 'webmanifest'
-  virtualpages:
-    manifest:
-      output: webmanifest
-    /code:
-      redirect: https://github.com/Narno
-    /blog/work-in-progress:
-      redirect: /
-    /blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento:
-      redirect: /blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/
-    /blog/t-l-charger-manuellement-une-extension-magento:
-      redirect: /blog/telecharger-manuellement-une-extension-magento/
-    _redirects:
-      output: netlify_redirects
-  menu:
-    main:
-      cv:
-        id: cv
-        name: CV
-        url: /CV_ArnaudLigny-2016.pdf
-        weight: 150
-  social:
-    twitter: ArnaudLigny
-    github: Narno
-    linkedin: arnaudligny
-    facebook_id: 516589570
-  googleanalytics: UA-30599234-2
-  author:
-    firstname: Arnaud
-    lastname: Ligny
-    email: arnaud[AROBASE]ligny[POINT]fr
-    username: Narno
-    job: Consultant technique
-  statut: En poste
-  source: https://github.com/Narno/arnaudligny.fr/edit/master/content/
-  comments: false
+title: "Arnaud Ligny"
+baseline: "Consultant technique Web, mobile & e-commerce"
+baseurl: https://arnaudligny.fr/
+description: Arnaud Ligny, Consultant technique Web, mobile & e-commerce.
+keywords: [Consultant technique, Web, Application Mobile, e-commerce, Magento, IoT]
+language: fr
+languages:
+  fr:
+    name: Français
+    locale: fr_FR
+output:
+  formats:
+    netlify_redirects:
+      mediatype: 'text/plain'
+      extension: ''
+    webmanifest:
+      mediatype: 'application/manifest+json'
+      extension: 'webmanifest'
+virtualpages:
+  manifest:
+    output: webmanifest
+  /code:
+    redirect: https://github.com/Narno
+  /blog/work-in-progress:
+    redirect: /
+  /blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento:
+    redirect: /blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/
+  /blog/t-l-charger-manuellement-une-extension-magento:
+    redirect: /blog/telecharger-manuellement-une-extension-magento/
+  _redirects:
+    output: netlify_redirects
+menu:
+  main:
+    cv:
+      id: cv
+      name: CV
+      url: /CV_ArnaudLigny-2016.pdf
+      weight: 150
+social:
+  twitter: ArnaudLigny
+  github: Narno
+  linkedin: arnaudligny
+  facebook_id: 516589570
+googleanalytics: UA-30599234-2
+author:
+  firstname: Arnaud
+  lastname: Ligny
+  email: arnaud[AROBASE]ligny[POINT]fr
+  username: Narno
+  job: Consultant technique
+statut: En poste
+source: https://github.com/Narno/arnaudligny.fr/edit/master/content/
+comments: false
 static:
   exclude:
     - CV_ArnaudLigny-2014.pdf
