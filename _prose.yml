@@ -53,6 +53,11 @@ prose:
               value: "Développement"
           placeholder: "Add tags"
           alterable: true
+      - name: "path"
+        field:
+          element: "text"
+          label: "Path"
+          placeholder: "Permalink"
     content/projets:
       - name: "title"
         field:
