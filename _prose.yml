@@ -16,11 +16,6 @@ prose:
           label: "Date"
           value: "CURRENT_DATETIME"
           placeholder: "YYYY-MM-DD HH:MM"
-      - name: "menu"
-        field:
-          element: "text"
-          label: "Menu"
-          placeholder: "main"
       - name: "layout"
         field:
           element: "text"
@@ -31,12 +26,6 @@ prose:
           element: "text"
           label: "Path"
           placeholder: "Permalink"
-      - name: "draft"
-        field:
-          element: "button"
-          label: "Draft"
-          on: "true"
-          off: "false"
     content/blog:
       - name: "title"
         field:
@@ -64,9 +53,3 @@ prose:
               value: "Développement"
           placeholder: "Add tags"
           alterable: true
-      - name: "draft"
-        field:
-          element: "button"
-          label: "Draft"
-          on: "true"
-          off: "false"
