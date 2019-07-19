@@ -63,3 +63,9 @@ prose:
           element: "text"
           label: "Path"
           placeholder: "Permalink"
+      - name: "draft"
+        field:
+          element: "button"
+          label: "Draft"
+          on: "true"
+          off: "false"
