@@ -58,6 +58,10 @@ prose:
           element: "text"
           label: "Path"
           placeholder: "Permalink"
+      - name: "typora-root-url"
+        field:
+          element: "hidden"
+          value: "../../static"
     content/projets:
       - name: "title"
         field:
