@@ -31,6 +31,12 @@ prose:
           element: "text"
           label: "Path"
           placeholder: "Permalink"
+      - name: "draft"
+        field:
+          element: "button"
+          label: "Draft"
+          on: "true"
+          off: "false"
     content/blog:
       - name: "title"
         field:
@@ -58,11 +64,6 @@ prose:
               value: "Développement"
           placeholder: "Add tags"
           alterable: true
-      - name: "path"
-        field:
-          element: "text"
-          label: "Path"
-          placeholder: "Permalink"
       - name: "draft"
         field:
           element: "button"
