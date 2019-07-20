@@ -37,7 +37,7 @@ Une fois le site web (re)généré, il suffit de le publier sur n’importe quel
 
 ## Pourquoi créer un nouvel outil ?
 
-En effet, quand j’ai commencé à imaginer cette application [la mouvance statique](https://frank.taillandier.me/2016/03/08/les-gestionnaires-de-contenu-statique/) était bien engagée et il existait déjà de nombreux générateurs de site statique, tels que : [Jekyll](https://jekyllrb.com/), [Pelican](https://getpelican.com), [Sculpin](https://sculpin.io/), [Nikola](https://getnikola.com), [Hexo](https://hexo.io/), [Spress](https://spress.yosymfony.com/), ou encore [Hugo](https://gohugo.io/) qui était très prometteur !
+En effet, quand j’ai commencé à imaginer cette application [la mouvance statique](https://frank.taillandier.me/2016/03/08/les-gestionnaires-de-contenu-statique/) était bien engagée et il existait déjà de nombreux générateurs de site statique, tels que : [Jekyll](https://jekyllrb.com/), [Pelican](https://getpelican.com), [Sculpin](https://sculpin.io/), [Nikola](https://getnikola.com), [Hexo](https://hexo.io/), [Spress](http://spress.yosymfony.com/), ou encore [Hugo](https://gohugo.io/) qui était très prometteur !
 
 La réponse tient en 3 points :
 
