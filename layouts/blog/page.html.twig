@@ -17,11 +17,13 @@
 {% if site.comments %}
             <span class="post-com">&#9998;&nbsp;<a href="{{ url(page) }}#disqus_thread">Commentaires</a></span>
 {% endif %}
+{% if post.tags is defined %}
             <span>
 {% for tag in page.tags|slice(0, 1) %}
                 <a href="{{ url('tags/' ~ tag) }}">#{{ tag }}</a>&nbsp;
 {% endfor %}
             </span>
+{% endif %}
         </div>
     </header>
 {% if page.image is defined and page.image %}
