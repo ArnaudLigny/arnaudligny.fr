@@ -12,6 +12,7 @@
 {% endblock head_fb_meta %}
 
 {% block content %}
+{{ page.content }}
 <section id="projects">
     <h1>Projets</h1>
 {% for project in site.pages|filterBySection(page.path)|sortByWeight %}
