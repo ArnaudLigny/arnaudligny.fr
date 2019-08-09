@@ -11,6 +11,7 @@ sections:
   label: Billets
   create: documents
   match: "**/*"
+  exclude: index.md
   new_doc_ext: md
   templates:
   - billet
