@@ -47,21 +47,12 @@ public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
-instant_preview: true
 build:
-  preview_command: curl -SOL https://cecil.app/cecil.phar && php cecil.phar build
-    -v --baseurl=$DEPLOY_URL
-  publish_command: hugo -d public
   preview_env:
   - PHP_VERSION=7.2
-  publish_env:
-  - HUGO_ENV=production
-  - HUGO_VERSION=0.55.6
   preview_output_directory: _site
-  output_directory: public
-  instant_preview_command: php cecil.phar serve -d --host=0.0.0.0 --port=8080
   install_dependencies_command: bash .forestry/install.sh
   preview_docker_image: composer:latest
   mount_path: "/usr/src"
   working_dir: "/usr/src"
-version: 0.55.6
+  instant_preview_command: php cecil.phar serve -d --host=0.0.0.0 --port=8080
