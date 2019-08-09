@@ -29,13 +29,6 @@ virtualpages:
     redirect: /blog/telecharger-manuellement-une-extension-magento/
   _redirects:
     output: netlify_redirects
-menu:
-  main:
-    cv:
-      id: cv
-      name: CV
-      url: /CV_ArnaudLigny-2016.pdf
-      weight: 150
 social:
   twitter: ArnaudLigny
   github: Narno
@@ -48,6 +41,7 @@ author:
   email: arnaud[AROBASE]ligny[POINT]fr
   username: Narno
   job: Consultant technique
+  cv: CV_ArnaudLigny-2016.pdf
 statut: En poste
 source: https://github.com/Narno/arnaudligny.fr/edit/master/content/
 comments: false
