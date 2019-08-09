@@ -1,4 +1,3 @@
----
 title: Arnaud Ligny
 baseline: Consultant technique Web, mobile & e-commerce
 baseurl: https://arnaudligny.fr/
@@ -57,10 +56,3 @@ static:
   - CV_ArnaudLigny-2014.pdf
   - CV_ArnaudLigny-2015.pdf
 editor: atom
-menu:
-  main:
-  - url: https://arnaudligny.fr
-    name: Test
-    weight: 3
-  - name: Projets
-    weight: 2
