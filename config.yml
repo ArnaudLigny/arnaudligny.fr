@@ -9,6 +9,25 @@ keywords:
 - e-commerce
 - Magento
 - IoT
+menu:
+  main:
+    blog:
+      weight: 1
+    projets:
+      weight: 2
+author:
+  firstname: Arnaud
+  lastname: Ligny
+  email: arnaud[AROBASE]ligny[POINT]fr
+  username: Narno
+  job: Consultant technique
+  cv: CV_ArnaudLigny-2016.pdf
+statut: En poste
+social:
+  twitter: ArnaudLigny
+  github: Narno
+  linkedin: arnaudligny
+  facebook_id: 516589570
 language: fr
 languages:
   fr:
@@ -35,20 +54,7 @@ virtualpages:
     redirect: "/blog/telecharger-manuellement-une-extension-magento/"
   _redirects:
     output: netlify_redirects
-social:
-  twitter: ArnaudLigny
-  github: Narno
-  linkedin: arnaudligny
-  facebook_id: 516589570
 googleanalytics: UA-30599234-2
-author:
-  firstname: Arnaud
-  lastname: Ligny
-  email: arnaud[AROBASE]ligny[POINT]fr
-  username: Narno
-  job: Consultant technique
-  cv: CV_ArnaudLigny-2016.pdf
-statut: En poste
 source: https://github.com/Narno/arnaudligny.fr/edit/master/content/
 comments: false
 static:
