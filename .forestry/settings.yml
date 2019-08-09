@@ -55,4 +55,3 @@ build:
   mount_path: "/usr/src"
   working_dir: "/usr/src"
   instant_preview_command: php cecil.phar serve -d --host=0.0.0.0 --port=8080
-version: 0.56.3
