@@ -1,8 +1,15 @@
-title: "Arnaud Ligny"
-baseline: "Consultant technique Web, mobile & e-commerce"
+---
+title: Arnaud Ligny
+baseline: Consultant technique Web, mobile & e-commerce
 baseurl: https://arnaudligny.fr/
 description: Arnaud Ligny, Consultant technique Web, mobile & e-commerce.
-keywords: [Consultant technique, Web, Application Mobile, e-commerce, Magento, IoT]
+keywords:
+- Consultant technique
+- Web
+- Application Mobile
+- e-commerce
+- Magento
+- IoT
 language: fr
 languages:
   fr:
@@ -11,22 +18,22 @@ languages:
 output:
   formats:
     netlify_redirects:
-      mediatype: 'text/plain'
+      mediatype: text/plain
       extension: ''
     webmanifest:
-      mediatype: 'application/manifest+json'
-      extension: 'webmanifest'
+      mediatype: application/manifest+json
+      extension: webmanifest
 virtualpages:
   manifest:
     output: webmanifest
-  /code:
+  "/code":
     redirect: https://github.com/Narno
-  /blog/work-in-progress:
-    redirect: /
-  /blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento:
-    redirect: /blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/
-  /blog/t-l-charger-manuellement-une-extension-magento:
-    redirect: /blog/telecharger-manuellement-une-extension-magento/
+  "/blog/work-in-progress":
+    redirect: "/"
+  "/blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento":
+    redirect: "/blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/"
+  "/blog/t-l-charger-manuellement-une-extension-magento":
+    redirect: "/blog/telecharger-manuellement-une-extension-magento/"
   _redirects:
     output: netlify_redirects
 social:
@@ -47,6 +54,13 @@ source: https://github.com/Narno/arnaudligny.fr/edit/master/content/
 comments: false
 static:
   exclude:
-    - CV_ArnaudLigny-2014.pdf
-    - CV_ArnaudLigny-2015.pdf
+  - CV_ArnaudLigny-2014.pdf
+  - CV_ArnaudLigny-2015.pdf
 editor: atom
+menu:
+  main:
+  - url: https://arnaudligny.fr
+    name: Test
+    weight: 3
+  - name: Projets
+    weight: 2
