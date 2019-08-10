@@ -1,3 +1,4 @@
+---
 title: Arnaud Ligny
 baseline: Consultant technique Web, mobile & e-commerce
 baseurl: https://arnaudligny.fr/
@@ -12,9 +13,9 @@ keywords:
 menu:
   main:
     blog:
-      weight: 1
+      weight: "10"
     projets:
-      weight: 2
+      weight: "2"
 author:
   firstname: Arnaud
   lastname: Ligny
@@ -27,7 +28,7 @@ social:
   twitter: ArnaudLigny
   github: Narno
   linkedin: arnaudligny
-  facebook_id: 516589570
+  facebook_id: "516589570"
 language: fr
 languages:
   fr:
