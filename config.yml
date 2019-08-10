@@ -13,9 +13,9 @@ keywords:
 menu:
   main:
     blog:
-      weight: "1"
+      weight: 1
     projets:
-      weight: "2"
+      weight: 2
 author:
   firstname: Arnaud
   lastname: Ligny
