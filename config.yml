@@ -13,7 +13,7 @@ keywords:
 menu:
   main:
     blog:
-      weight: "10"
+      weight: "1"
     projets:
       weight: "2"
 author:
