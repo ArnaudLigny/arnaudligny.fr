@@ -49,9 +49,9 @@ virtualpages:
   "/blog/work-in-progress":
     redirect: "/"
   "/blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento":
-    redirect: "/blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/"
+    redirect: "blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/"
   "/blog/t-l-charger-manuellement-une-extension-magento":
-    redirect: "/blog/telecharger-manuellement-une-extension-magento/"
+    redirect: "blog/telecharger-manuellement-une-extension-magento/"
   _redirects:
     output: netlify_redirects
 googleanalytics: UA-30599234-2
