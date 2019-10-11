@@ -8,4 +8,5 @@ image: "/images/le-statique-c-est-fantastique.png"
 typora-root-url: ''
 
 ---
+<!--break-->
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSgfI-5wg8n1crZOXnyGBgVMtzfedqVy2jobj3Iz-t_8htuVCsAcpoUcG37ibM7qjUDdilKtCDoaF-Q/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
