@@ -1,10 +1,10 @@
 ---
-date: 2017-09-21T22:57:38Z
+date: 2017-09-21T22:57:38.000+00:00
 title: Le statique c'est fantastique
 tags:
 - SSG
 - JAMstack
-image: "/images/Le statique c'est fantastique _ JAMstack, Générateurs & CMS headless.png"
+image: "/images/le-statique-c-est-fantastique.png"
 typora-root-url: ''
 
 ---
