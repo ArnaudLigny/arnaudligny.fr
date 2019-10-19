@@ -99,7 +99,7 @@ Il existe également un outil en ligne de commande pour Firefox : [***web-ext***
 
 Néanmoins j’ai rencontré un soucis avec la commande `web-ext sign` : la soumission est effective mais retourne systématiquement le message d'erreur « it could not be signed », ce qui est bloquant dans le cadre de son utilisation dans une étape d’intégration continue puisqu‘une commande qui ne retourne pas ”0” met en erreur tout le traitement.
 
-Pour palier à ce soucis j’utilise le *wrapper* [***web-ext-submit***](https://github.com/bfred-it/web-ext-submit) de [@bfred-it](https://twitter.com/bfred_it).
+Pour palier à ce soucis j’utilise le *wrapper* [***web-ext-submit***](https://github.com/bfred-it/web-ext-submit) de [Federico Brigante](https://github.com/fregante).
 
 Son utilisatation est similaire à celle de *Web Store Uplaod CLI* :
 
