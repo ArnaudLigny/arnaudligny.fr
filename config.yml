@@ -61,4 +61,4 @@ static:
   exclude:
   - CV_ArnaudLigny-2014.pdf
   - CV_ArnaudLigny-2015.pdf
-editor: atom
+editor: typora
