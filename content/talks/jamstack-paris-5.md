@@ -13,4 +13,6 @@ Un grand merci à [Matthieu Auger](https://twitter.com/matthieuauger) et [Nicola
 
 ## Vidéo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FTpBS7g7YnI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FTpBS7g7YnI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
