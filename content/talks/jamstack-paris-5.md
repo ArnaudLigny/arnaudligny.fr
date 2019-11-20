@@ -1,6 +1,7 @@
 ---
 title: "JAMstack Paris #5"
 date: 2019-11-05
+image: images/jamstack-paris-5.png
 ---
 
 Lors du meetup [JAMstack Paris #5](https://jamstack.paris) je suis intervenu pour partager mon retour d'expérience sur la création de [Cecil](https://cecil.app), mon générateur de site statique.
