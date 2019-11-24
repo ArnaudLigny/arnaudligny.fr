@@ -1,7 +1,11 @@
 ---
-title: "JAMstack Paris #5"
+title: "Cecil, mon générateur de site statique"
+event: "JAMstack Paris #5"
 date: 2019-11-05
-image: images/jamstack-paris-5.png
+image: /images/jamstack-paris-5.png
+alias: /talks/jamstack-paris-5/
+draft: false
+typora-root-url: ../../static
 ---
 
 Lors du meetup [JAMstack Paris #5](https://jamstack.paris) je suis intervenu pour partager mon retour d'expérience sur la création de [Cecil](https://cecil.app), mon générateur de site statique.
@@ -11,7 +15,6 @@ Un grand merci à [Matthieu Auger](https://twitter.com/matthieuauger) et [Nicola
 ## Slides
 
 <p data-notist="aligny/a0sRr4">View <a href="https://noti.st/aligny/a0sRr4">Cecil, mon générateur de site statique</a> on Notist.</p>
-
 ## Vidéo
 
 <div class="video-wrapper">

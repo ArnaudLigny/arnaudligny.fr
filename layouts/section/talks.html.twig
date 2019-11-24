@@ -1,0 +1,20 @@
+{% extends '_default/list.html.twig' %}
+
+{% block content %}
+<h1 class="page-title">{{ page.title }}</h1>
+<div class="pages">
+    {% for p in pages %}
+    <div class="page">
+        <h2 class="page-title">
+            <a href="{{ url(p) }}">{{ p.event }}<br/>{{ p.title|e }}</a>
+        </h2>
+        <span class="page-date">{{ p.date|date("j M Y") }}</span>
+        {{ p.content|excerptHtml }}
+        <footer class="more">
+            <a href="{{ url(p) }}#more">Lire la suite ›</a>
+        </footer>
+    </div>
+    <hr />
+    {% endfor %}
+</div>
+{% endblock content %}
