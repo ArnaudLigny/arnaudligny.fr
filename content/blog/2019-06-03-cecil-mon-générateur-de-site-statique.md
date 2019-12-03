@@ -9,14 +9,16 @@ typora-root-url: ../../static
 
 [Cecil](https://cecil.app/) est un projet personnel, se présentant sous la forme d'une application en [ligne de commande](https://fr.m.wikipedia.org/wiki/Interface_en_ligne_de_commande) facilitant la création d’un site web, statique.
 
-<blockquote class="twitter-tweet tw-align-center" data-lang="fr"><p lang="en" dir="ltr">Create and deploy a static blog in 1 minute with <a href="https://twitter.com/Cecil_Static?ref_src=twsrc%5Etfw">@Cecil_Static</a> (<a href="https://t.co/FzVEkJ7VaL">https://t.co/FzVEkJ7VaL</a>) and <a href="https://twitter.com/Netlify?ref_src=twsrc%5Etfw">@Netlify</a>, from a mobile phone! 😁 <a href="https://t.co/AMx3hPpaCd">pic.twitter.com/AMx3hPpaCd</a></p>&mdash; Arnaud Ligny 👨‍💻 💡 🚀 (@ArnaudLigny) <a href="https://twitter.com/ArnaudLigny/status/1123984989270544386?ref_src=twsrc%5Etfw">2 mai 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+![Cecil CLI demo](/images/projets/cecil-demo.gif)
 
 Le concept (et la première version) a émergé en 2013 et depuis je n’ai cessé de faire évoluer l’application, de l'enrichir, tout en essayant de respecter le principe suivant :
 
 > L’application doit être simple à appréhender et le contenu doit être au cœur de son usage.
 
 <!-- break -->
+
+<blockquote class="twitter-tweet tw-align-center" data-lang="fr"><p lang="en" dir="ltr">Create and deploy a static blog in 1 minute with <a href="https://twitter.com/Cecil_Static?ref_src=twsrc%5Etfw">@Cecil_Static</a> (<a href="https://t.co/FzVEkJ7VaL">https://t.co/FzVEkJ7VaL</a>) and <a href="https://twitter.com/Netlify?ref_src=twsrc%5Etfw">@Netlify</a>, from a mobile phone! 😁 <a href="https://t.co/AMx3hPpaCd">pic.twitter.com/AMx3hPpaCd</a></p>&mdash; Arnaud Ligny 👨‍💻 💡 🚀 (@ArnaudLigny) <a href="https://twitter.com/ArnaudLigny/status/1123984989270544386?ref_src=twsrc%5Etfw">2 mai 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Un générateur de site statique ?
 
@@ -104,8 +106,6 @@ D’autres billets viendront détailler les fonctionnalités de Cecil, telle que
 
 ----
 
-> Notes :
->
-> - Pour reproduire le *build* et le déploiement automatisé montré dans le tweet d’introduction je vous invite à consulter la documentation : [*Build and deploy with Netlify*](https://cecil.app/documentation/publish/#build-and-deploy-with-netlify) ;
->
-> - Le logo à été créé par la fantastique [Cécile Ricordeau, Directrice de Création freelance](https://www.cecillie.fr/).
+> Notes :  
+>Pour reproduire le *build* et le déploiement automatisé montré dans le tweet d’introduction je vous invite à consulter la documentation : [*Build and deploy with Netlify*](https://cecil.app/documentation/publish/#build-and-deploy-with-netlify) ;  
+> Le logo à été créé par la fantastique [Cécile Ricordeau, Directrice de Création freelance](https://www.cecillie.fr/).
