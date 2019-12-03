@@ -1,26 +1,16 @@
-{% set pages = site.pages.all %}
-{% if page.pages is defined %}
-{% set pages = page.pages %}
-{% endif %}
-{% if page.pagination.pages is defined %}
-{% set pages = page.pagination.pages %}
-{% endif %}
-
-{% extends '_default/page.html.twig' %}
+{% extends '_default/list.html.twig' %}
 
 {% block content %}
-<header>
-    {{ page.content }}
-</header>
 <ul class="list list--posts">
-{% for p in pages %}
+    {% for p in pages %}
     <li class="item item--post">
         <article class="article article--post typeset">
             <h2><a href="{{ url(p) }}">{{ p.title }}</a></h2>
+            {% include 'partials/post-meta.html.twig' with {'post': p} only %}
             {{ p.content|excerptHtml }}
         </article>
     </li>
-{% endfor %}
+    {% endfor %}
 </ul>
 {% include 'partials/pagination.html.twig' %}
 {% endblock content %}
