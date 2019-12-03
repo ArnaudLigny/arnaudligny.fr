@@ -14,7 +14,9 @@ Un grand merci à [Matthieu Auger](https://twitter.com/matthieuauger) et [Nicola
 
 ## Slides
 
-<p data-notist="aligny/a0sRr4">View <a href="https://noti.st/aligny/a0sRr4">Cecil, mon générateur de site statique</a> on Notist.</p>
+<p data-notist="aligny/a0sRr4">Consulter <a href="https://noti.st/aligny/a0sRr4"><em>Cecil, mon générateur de site statique</em></a> sur Notist.</p>
+<script async src="https://on.notist.cloud/embed/002.js"></script>
+
 ## Vidéo
 
 <div class="video-wrapper">
