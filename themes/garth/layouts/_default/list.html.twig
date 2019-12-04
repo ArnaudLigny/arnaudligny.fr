@@ -9,19 +9,19 @@
 {% extends '_default/page.html.twig' %}
 
 {% block content %}
-<header>
-    <h1>{{ page.title }}</h1>
-    {{ page.content }}
-</header>
-<ul class="list list--posts">
+        <header>
+          <h1>{{ page.title }}</h1>
+          {{ page.content }}
+        </header>
+        <ul class="list list--posts">
 {% for p in pages %}
-    <li class="item item--post">
-        <article class="article article--post typeset">
-            <h2><a href="{{ url(p) }}">{{ p.title }}</a></h2>
-            {{ p.content|excerptHtml }}
-        </article>
-    </li>
+          <li class="item item--post">
+            <article class="article article--post typeset">
+              <h2><a href="{{ url(p) }}">{{ p.title }}</a></h2>
+              {{ p.content|excerptHtml }}
+            </article>
+          </li>
 {% endfor %}
-</ul>
+        </ul>
 {% include 'partials/pagination.html.twig' %}
 {% endblock content %}

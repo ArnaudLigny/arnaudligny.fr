@@ -1,15 +1,15 @@
 {% if page.pagination.pages is defined %}
 {% set pagination = page.pagination %}
-<nav class="nav nav--paginator">
-    {% if pagination.links.next is defined %}
-    <a class="pagination pagination--previous" href="{{ url(site.pages[pagination.links.next]) }}">&larr; Older</a>
-    {% else %}
-    <span class="pagination pagination--previous">&larr; Older</span>
-    {% endif %}
-    {% if pagination.links.prev is defined %}
-    <a class="pagination pagination--next" href="{{ url(site.pages[pagination.links.prev]) }}">Newer &rarr;</a>
-    {% else %}
-    <span class="pagination pagination--next">Newer &rarr;</span>
-    {% endif %}
-</nav>
+        <nav class="nav nav--paginator">
+{% if pagination.links.next is defined %}
+          <a class="pagination pagination--previous" href="{{ url(site.pages[pagination.links.next]) }}">&larr; Older</a>
+{% else %}
+          <span class="pagination pagination--previous">&larr; Older</span>
+{% endif %}
+{% if pagination.links.prev is defined %}
+          <a class="pagination pagination--next" href="{{ url(site.pages[pagination.links.prev]) }}">Newer &rarr;</a>
+{% else %}
+          <span class="pagination pagination--next">Newer &rarr;</span>
+{% endif %}
+        </nav>
 {% endif %}

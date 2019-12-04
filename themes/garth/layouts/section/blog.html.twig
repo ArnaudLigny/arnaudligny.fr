@@ -1,20 +1,20 @@
 {% extends '_default/list.html.twig' %}
 
 {% block content %}
-<header>
-    <h1>{{ page.title }}</h1>
-    {{ page.content }}
-</header>
-<ul class="list list--posts">
-    {% for p in pages %}
-    <li class="item item--post">
-        <article class="article article--post typeset">
-            <h2><a href="{{ url(p) }}">{{ p.title }}</a></h2>
-            {% include 'partials/post-meta.html.twig' with {'post': p} only %}
-            {{ p.content|excerptHtml }}
-        </article>
-    </li>
-    {% endfor %}
-</ul>
+        <header>
+          <h1>{{ page.title }}</h1>
+          {{ page.content }}
+        </header>
+        <ul class="list list--posts">
+{% for p in pages %}
+          <li class="item item--post">
+            <article class="article article--post typeset">
+              <h2><a href="{{ url(p) }}">{{ p.title }}</a></h2>
+{% include 'partials/post-meta.html.twig' with {'post': p} only %}
+              {{ p.content|excerptHtml }}
+            </article>
+          </li>
+{% endfor %}
+        </ul>
 {% include 'partials/pagination.html.twig' %}
 {% endblock content %}
