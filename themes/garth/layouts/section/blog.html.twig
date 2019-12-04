@@ -1,6 +1,10 @@
 {% extends '_default/list.html.twig' %}
 
 {% block content %}
+<header>
+    <h1>{{ page.title }}</h1>
+    {{ page.content }}
+</header>
 <ul class="list list--posts">
     {% for p in pages %}
     <li class="item item--post">
