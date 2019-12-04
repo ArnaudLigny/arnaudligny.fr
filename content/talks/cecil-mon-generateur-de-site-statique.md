@@ -3,7 +3,7 @@ title: "Cecil, mon générateur de site statique"
 event: "JAMstack Paris #5"
 date: 2019-11-05
 image: /images/jamstack-paris-5.png
-alias: /talks/jamstack-paris-5/
+alias: /talks/jamstack-paris-5
 draft: false
 typora-root-url: ../../static
 ---
