@@ -15,6 +15,10 @@ menu:
       weight: 1
     projets:
       weight: 2
+  footer:
+    a-propos:
+      name: à propos
+      url: a-propos
 author:
   firstname: Arnaud
   lastname: Ligny
@@ -62,3 +66,6 @@ static:
   - CV_ArnaudLigny-2014.pdf
   - CV_ArnaudLigny-2015.pdf
 editor: typora
+theme: garth
+logo: aligny.jpg
+image: aligny.jpg

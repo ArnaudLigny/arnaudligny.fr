@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.language.locale|default('en-US') }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% include 'partials/metatags.html.twig' %}
+    <link rel="stylesheet" href="{{ url(toCSS('styles.scss')) }}">
+{% if site.favicon|default(false) %}
+    <link rel="shortcut icon" href="{{ site.favicon }}">
+{% else %}
+    <link rel="shortcut icon" href="{{ site.logo|default('') }}">
+{% endif %}
+  </head>
+  <body>
+{% include 'partials/site-header.html.twig' %}
+    <main class="main container">
+      <div class="content typeset">
+{% block content %}
+        <article class="article article--page">
+          <h1>{{ page.title }}</h1>
+          {{ page.content }}
+        </article>
+{% endblock content %}
+      </div>
+    </main>
+{% include 'partials/site-footer.html.twig' %}
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Neuton:400,700" rel="stylesheet">
+  </body>
+</html>
