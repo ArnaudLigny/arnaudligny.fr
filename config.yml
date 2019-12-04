@@ -45,6 +45,8 @@ output:
     webmanifest:
       mediatype: application/manifest+json
       extension: webmanifest
+  pagetypeformats:
+    section: ['html', 'atom', 'rss', 'json']
 virtualpages:
   manifest:
     output: webmanifest
