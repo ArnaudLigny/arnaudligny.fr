@@ -5,9 +5,9 @@
 {% include 'partials/metatags.html.twig' %}
     <link rel="stylesheet" href="{{ url(toCSS('styles.scss')) }}">
 {% if site.favicon|default(false) %}
-    <link rel="shortcut icon" href="{{ site.favicon }}">
+    <link rel="shortcut icon" href="{{ url(site.favicon) }}">
 {% else %}
-    <link rel="shortcut icon" href="{{ site.logo|default('') }}">
+    <link rel="shortcut icon" href="{{ url(site.logo|default('')) }}">
 {% endif %}
   </head>
   <body>
