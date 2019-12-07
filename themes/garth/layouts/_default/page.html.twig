@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 {% include 'partials/metatags.html.twig' %}
-    <link rel="stylesheet" href="{{ url(toCSS('styles.scss')) }}">
+    <link rel="stylesheet" href="{{ url(minify(toCSS('styles.scss'))) }}">
 {% if site.favicon|default(false) %}
     <link rel="shortcut icon" href="{{ url(site.favicon) }}">
 {% else %}
