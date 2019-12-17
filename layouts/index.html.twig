@@ -1,1 +1,8 @@
 {% extends '_default/page.html.twig' %}
+
+{% block content %}
+<article class="page typeset">
+  {{ page.content }}
+</article>
+{% include 'partials/lastposts.html.twig' %}
+{% endblock content %}
