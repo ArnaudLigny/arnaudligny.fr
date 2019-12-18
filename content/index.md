@@ -6,7 +6,7 @@ pagination:
   enabled: false
 draft: false
 ---
-# Hello, je suis Arnaud Ligny
+# Arnaud Ligny
 ## Consultant technique Web, mobile et e-commerce.
 
 Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité Web, mobile, e-commerce (et IoT).
