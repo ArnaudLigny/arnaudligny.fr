@@ -2,14 +2,12 @@
 title: "Cecil : mon générateur de site statique"
 date: 2019-06-05
 tags: [Développement, SSG]
-image: /images/Cecil.png
+image: /images/projets/cecil-demo.gif
 draft: false
 typora-root-url: ../../static
 ---
 
 [Cecil](https://cecil.app/) est un projet personnel, se présentant sous la forme d'une application en [ligne de commande](https://fr.m.wikipedia.org/wiki/Interface_en_ligne_de_commande) facilitant la création d’un site web, statique.
-
-![Cecil CLI demo](/images/projets/cecil-demo.gif)
 
 Le concept (et la première version) a émergé en 2013 et depuis je n’ai cessé de faire évoluer l’application, de l'enrichir, tout en essayant de respecter le principe suivant :
 
