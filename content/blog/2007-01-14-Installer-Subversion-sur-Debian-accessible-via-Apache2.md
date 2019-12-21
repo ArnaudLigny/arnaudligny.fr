@@ -143,7 +143,9 @@ Afin de s'assurer que notre configuration est parfaitement opérationnelle, nous
 #### Création des 3 branches de référence
 
 ```
-svn mkdir http://localhost/myrepository/svn/trunk http://localhost/myrepository/svn/branches http://localhost/myrepository/svn/tags -m "Création des 3 branches de référence."  --username=myuser
+svn mkdir http://localhost/myrepository/svn/trunk \
+http://localhost/myrepository/svn/branches \
+http://localhost/myrepository/svn/tags -m "Création des 3 branches de référence." --username=myuser
 ```
 
 #### Accès à ces branches via votre navigateur
