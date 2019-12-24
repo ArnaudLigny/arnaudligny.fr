@@ -6,8 +6,8 @@ draft: false
 typora-root-url: ../../static
 ---
 
-Vidéo rapide expliquant comment tester un site généré avec [Cecil](https://cecom.app) (en local via la commande `serve`) sur son téléphone mobile, sur le même réseau Wi-Fi.
+Courte vidéo expliquant comment tester un site généré avec [Cecil](https://cecil.app) (en local via la commande `cecil serve`) sur un téléphone mobile, sur le même réseau Wi-Fi.
 
 <video controls>
-	<source src="/videos/cecil-apercu-sur-mobile.mp4" type="video/mp4">
+  <source src="/videos/cecil-apercu-sur-mobile.mp4" type="video/mp4">
 </video>
