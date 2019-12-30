@@ -11,7 +11,7 @@ typora-root-url: ../../static
 
 Imaginons que vous soyez en train de créer la prochaine grande startup ou d'organiser un super évènement — la première question que tout le monde va vous poser est : « C'est quoi le site web ? ».
 <!-- break -->
-Une présence en ligne séduisante et fonctionnelle est tout simplement primordial en 2019, que ce soit pour les entreprises, les organisations à but non lucratif ou encore pour le recrutement de nouveaux employés — et il en va de même pour [Monetery](https://monetery.com/), l'événement technologique — inclusif — organisé chaque printemps par Dwolla. Nous avions besoin d’un site rapidement opératonnel et performant, nous avons donc d’abord opté pour une solution fiable et éprouvée que nous avions déjà utilisé : [GitHub Pages](https://pages.github.com/).
+Une présence en ligne séduisante et fonctionnelle est tout simplement primordial en 2019, que ce soit pour les entreprises, les organisations à but non lucratif ou encore pour le recrutement de nouveaux employés — et il en va de même pour [Monetery](https://monetery.com), l'événement technologique — inclusif — organisé chaque printemps par Dwolla. Nous avions besoin d’un site rapidement opératonnel et performant, nous avons donc d’abord opté pour une solution fiable et éprouvée que nous avions déjà utilisé : [GitHub Pages](https://pages.github.com).
 
 Cette solution a été rapidement opérationnelle lorsque nous avons lancé la page d’accueil de Monetery, mais il était évident que nous avions besoin d’une solution plus complète. En raison de notre processus de validation exigeant, la technique est rapidement devenue un obstacle.  
 Nous devions travailler à une meilleure solution afin de migrer nos contributeurs de contenu et effectuer les changements nécessaires rapidement.
@@ -21,17 +21,17 @@ Nous avons alors étudié les options qui s’offraient à nous :
 1. Mettre en place un outil de gestion de contenu (CMS) traditionnel tel que WordPress
 2. Trouver un CMS headless à intégrer dans un générateur de site statique (SSG)
 
-Le nombre de solutions potentielles pour ces deux options est très vaste. Connaissant déjà bien les solutions traditionnelles, nous avons donc fouillé du côté de [headlesscms.org](https://headlesscms.org/) et de [staticgen.com](https://www.staticgen.com) pour voir ce qui se passait ailleurs. Dwolla offre à son équipe d’ingénieurs du temps dédié au développement professionnel chaque semaine, ce qui nous a permis de tester les solutions potentielles.
+Le nombre de solutions potentielles pour ces deux options est très vaste. Connaissant déjà bien les solutions traditionnelles, nous avons donc fouillé du côté de [headlesscms.org](https://headlesscms.org) et de [staticgen.com](https://www.staticgen.com) pour voir ce qui se passait ailleurs. Dwolla offre à son équipe d’ingénieurs du temps dédié au développement professionnel chaque semaine, ce qui nous a permis de tester les solutions potentielles.
 
-L’une des solutions les plus intéressantes que nous avons testées vient de la société [Netlify](https://www.netlify.com/), et de son projet [Netlify CMS](https://www.netlifycms.org/).
+L’une des solutions les plus intéressantes que nous avons testées vient de la société [Netlify](https://www.netlify.com), et de son projet [Netlify CMS](https://www.netlifycms.org).
 
 Nous avons pensé que Netlify CMS pourrait être avantageux pour les raisons suivantes :
 
 - Il est conçu pour être utilisé avec des générateurs de site statique, ce qui nous permet de conserver les avantages en terme de vitesse, de sécurité et d’évolutivité qui nous ont attirés vers les SSG
-- Il est SSG agnostique, et fonctionne donc avec notre site [Jekyll](https://jekyllrb.com/) existant mais ne nous empècherait pas de changer d’avis (salut [GatsbyJS](https://www.gatsbyjs.org/) !)
-- Il n’y a pas de base de données car les modifications de contenu sont enregistrées via des *commits* Git — ce qui ravi les gens d‘[InfoSec](https://www.dwolla.com/security/) !
+- Il est SSG agnostique, et fonctionne donc avec notre site [Jekyll](https://jekyllrb.com) existant mais ne nous empècherait pas de changer d’avis (salut [GatsbyJS](https://www.gatsbyjs.org) !)
+- Il n’y a pas de base de données car les modifications de contenu sont enregistrées via des *commits* Git — ce qui ravi les gens de la [sécurité informatique](https://www.dwolla.com/security/) !
 - Il fournit une expérience d’édition simple et fonctionnelle
-- Il est open-source, il n’y a donc pas de dépendance à un fournisseur, et nous permet de reverser les fonctionnalités importantes à la communauté 
+- Il est open-source, il n’y a donc pas de dépendance à un fournisseur, et nous permet de reverser les fonctionnalités importantes à la communauté
 
 Suite à l’adhésion des parties prenantes, nous avons décidé de nous orienter vers cette solution. Nous allons parler des décisions que nous avons dû prendre et vous montrer comment intégrer Netlify CMS avec Jekyll sur votre propre site.
 
@@ -51,16 +51,14 @@ En général, publier votre site depuis Netlify est aussi simple que de créer u
 
 Si vous utilisez les *gems* intégrées à Jekyll et le processus de *build* proposé par GitHub, vous aurez besoin de quelques outils complémentaires pour que ça fonctionne. Vous aurez besoin d’un *Gemfile* pour vos dépendances, et c’est aussi une bonne idée d’intégrer la commande de *build* au code source :
 
-*Gemfile*
-
-``` {#gemfile}
+**Gemfile**
+```
 source "https://rubygems.org"
 gem 'github-pages'
 ```
 
-*netlify.toml*
-
-``` {#netlify.toml}
+**netlify.toml**
+```toml
 [build]
 publish = "_site/"
 command = "jekyll build"
@@ -72,7 +70,7 @@ Une fois que tout vous semble bon et que le déploiement Netlify se déroule cor
 
 Netlify CMS se compose d’une [application web monopage](https://fr.wikipedia.org/wiki/Application_web_monopage) (NDT : en anglais *single-page application* ou SPA) construite avec React qui réside dans un dossier admin de votre site. Pour Jekyll, il doit être placé à la racine du site. Il contiendra deux fichiers :
 
-``` {#file-structure}
+```
 admin
 ├ index.html
 └ config.yml
@@ -82,9 +80,8 @@ La [documentation de Netlify CMS](https://www.netlifycms.org/docs/add-to-your-si
 
 > Le premier fichier, `admin/index.html`, est le point d’entrée à l’admin de Netlify CMS. Cela signifie que les utilisateurs y accèdent via `votresite.com/admin/`. Du côté du code, c’est une page HTML qui charge le fichier Javascript de Netlify CMS. Dans cet exemple, nous chargeons le fichier depuis un CDN public :
 
-*admin/index.html*
-
-``` {#index.html}
+**admin/index.html**
+```html
 <!doctype html>
 <html>
 <head>
@@ -104,9 +101,8 @@ La [documentation de Netlify CMS](https://www.netlifycms.org/docs/add-to-your-si
 
 Pour commencer, voici à quoi peut ressembler le fichier de configuration :
 
-*admin/config.yml*
-
-``` {#config.yml}
+**admin/config.yml**
+```yaml
 backend:
   name: git-gateway
   branch: master
@@ -129,7 +125,7 @@ La section `backend` couvre la configuration de base tel que le choix de la bran
 
 Maintenant il ne nous reste plus qu’à déposer le widget Netlify Identify sur le site principal. C’est nécessaire car après s’être connecté l’utilisateur est redirigé vers la page d’accueil du site. Nous devons rediriger les utilisateurs vers l’administration du CMS, en ajoutant le script suivant avant la fermteture de la balise *body* :
 
-``` {#netlify-identity}
+```javascript
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
@@ -157,9 +153,8 @@ Sachant cela, pouvez-vous deviner pourquoi il existe deux types de collections ?
 
 Un fichier de collection est l’endroit idéal pour définir les champs des données pour les éléments qui sont valables sur l’ensemble du site, tels que la navigation globale, le pied de page et les valeurs par défaut. Jetons un oeil à un fichier de collection issu d’un cas réel :
 
-*admin/config.yml*
-
-``` {#config.yml-edit}
+**admin/config.yml**
+```yaml
 collections:
   - label: "Options transverses"
     name: options
@@ -189,9 +184,8 @@ Cela définira une nouvelle collection qui apparaîtra à gauche de l’interfac
 
 Voici un exemple de ce à quoi peut resembler un fichier de données :
 
-*\_data/nav.yml*
-
-``` {#nav.yml}
+**\_data/nav.yml**
+```yaml
 topLevelItems:
   - displayText: 'Une page'
     itemType: Link
@@ -205,7 +199,7 @@ topLevelItems:
 
 Voyons comment exploiter ces données dans un template Jekyll. Voici un template *Liquid* qui utilise nos données de navigation :
 
-``` {#nav-data}
+```html
 <ul>
   {% for item in site.data.nav.topLevelItems %}
     <li>
@@ -228,9 +222,8 @@ Dans cet exemple, nous allons utiliser une fonctionnalité intéressante de Jeky
 
 Regardons la structure d’un dossier de collection provenant d’un fichier de configuration réel pour voir comment ça marche :
 
-*admin/config.yml*
-
-``` {#config-collection}
+**admin/config.yml**
+```yaml
 collections:
  - label: "Pages"
     label_singular: "Page"
@@ -269,9 +262,8 @@ Veuillez noter les champs `permalink` et `preview_path`. Nous utiliserons le cha
 
 Voici un exemple de ce à quoi peut ressembler le fichier de contenu d’une page :
 
-*\_pages/home.md*
-
-``` {#home.md}
+**\_pages/home.md**
+```yaml
 ---
 Title: Accueil
 permalink: /
@@ -289,9 +281,8 @@ Nous travaillerons de concert avec la fonctionnalité de [collections](https://j
 
 Avant de commencer, nous avons besoin de compléter le fichier de configuration de Jekyll :
 
-*\_config.yml*
-
-``` {#jekyll-collections}
+**\_config.yml**
+```yaml
 collections:
   pages:
     output: true
@@ -303,9 +294,8 @@ Mais comment Jekyll fait-il pour savoir quel template utiliser ? Dans le cas pr�
 
 Regardons un exemple de template :
 
-*\_layouts/home.html*
-
-``` {#layouts-home}
+**\_layouts/home.html**
+```html
 ---
 layout: default
 ---
@@ -325,9 +315,8 @@ C’est un bon début, mais nous n’aurions pas besoin de tout ça dans notre d
 
 Pour commencer, nous devons définir nos composants dans le fichier de configuration de Netlify CMS :
 
-*\_admin/config.yml*
-
-``` {#define-components}
+**\_admin/config.yml**
+```yml
 collections:
   - label: "Pages"
       ...
@@ -357,9 +346,8 @@ Ici nous avons étendu notre collection de pages afin d’y inclure un widget de
 
 Créons maintenant un nouveau template pour le rendu de nos widgets :
 
-*\_layouts/blocks.html*
-
-``` {#render-widgets}
+**\_layouts/blocks.html**
+```html
 ---
 layout: default
 ---
@@ -371,9 +359,8 @@ layout: default
 
 Ici nous itérons sur chacun des composants de la page et incluons un autre fichier de template qui lui s’occupe du rendu. Voici à quoi pourrait ressembler un template de composant :
 
-*\_includes/blocks/hero.html*
-
-``` {#component-template}
+**\_includes/blocks/hero.html**
+```html
 <header class="page-hero">
   <h1>{{ block.heading }}</h1>
   {% if block.content and block.content != '' %}
@@ -388,7 +375,7 @@ Parce que nous avons transmis notre variable `block`, nous avons tout ce dont no
 
 ## Notre retour d'expérience avec Netlify + Netlify CMS
 
-Grâce à ces techniques, nos ingénieurs ont pu intégrer Netlify CMS à notre site jekyll existant pour [Monetery](https://monetery.com/) et mettre en oeuvre un CMS opérationnel en l’espace de quelques jours (trois pour être exact). 
+Grâce à ces techniques, nos ingénieurs ont pu intégrer Netlify CMS à notre site jekyll existant pour [Monetery](https://monetery.com/) et mettre en oeuvre un CMS opérationnel en l’espace de quelques jours (trois pour être exact).
 
 Les contributeurs de contenu ont été en mesure de s’intégrer rapidement et de commencer à publier des modifications et de nouvelles pages peu de temps après le lancement. Pendant ce temps, nous avons également intégré un nouvel ingénieur qui a pu commencer à contribuer de manière significative dès son deuxième jour de travail !
 
