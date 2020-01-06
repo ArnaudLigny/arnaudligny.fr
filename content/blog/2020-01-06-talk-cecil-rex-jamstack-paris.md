@@ -3,7 +3,7 @@ title: "Retour d’expérience sur la création de Cecil"
 date: 2020-01-06
 tags: [JAMstack, Talk, SSG, Développement]
 image: /images/cecil-youtube-cover.jpg
-draft: true
+draft: false
 typora-root-url: ../../static
 ---
 
