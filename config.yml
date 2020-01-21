@@ -73,4 +73,4 @@ logo: aligny.jpg
 image: aligny.jpg
 optimize:
   images:
-   enabled: false
+   enabled: true
