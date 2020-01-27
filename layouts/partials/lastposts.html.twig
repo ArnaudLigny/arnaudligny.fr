@@ -2,7 +2,7 @@
         <h2>Derniers billets</h2>
         <ul class="list list--posts">
 {% for post in site.pages|filterBy('section', 'blog')|sortByDate|slice(0, 4) %}
-          <li class="item item--post"></li>
+          <li class="item item--post">
             <a href="{{ url(post) }}">{{ post.title }}</a>
           </li>
 {% endfor %}
