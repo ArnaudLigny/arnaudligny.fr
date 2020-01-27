@@ -15,4 +15,4 @@ Lors du meetup [JAMstack Paris](https://jamstack.paris) #5 je suis intervenu pou
 
 Un grand merci à [Matthieu Auger](https://twitter.com/matthieuauger) et [Nicolas Goutay](https://twitter.com/phacks) pour l'organisation parfaite, et à [Inato](https://twitter.com/inatohealth) pour l'accueil très agréable 😊
 
-🍿**Les slides et la vidéo sont** [**disponibles sur le site**](/talks/cecil-mon-generateur-de-site-statique)**.**
+🍿**Les slides et la vidéo sont [disponibles sur le site](/talks/cecil-mon-generateur-de-site-statique).**
