@@ -12,8 +12,8 @@
 {%- if attributes is defined %},
       "attributes": {
         {% for key, value in attributes -%}
-        "{{ key }}": {{ value }}{% if not loop.last %},{% endif ~%}
-        {%- endfor %}
+        "{{ key }}": {{ value }}{% if not loop.last %},{% endif %}
+        {% endfor %}
       }
 {% endif %}
     }
