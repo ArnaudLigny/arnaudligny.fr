@@ -7,7 +7,7 @@ draft: false
 typora-root-url: ../../static
 ---
 
->  *Article original : [Implementing a CMS in 3 Days](https://www.dwolla.com/updates/implementing-netlify-cms/) de Shea Daniels*
+> *Article original : [Implementing a CMS in 3 Days](https://www.dwolla.com/updates/implementing-netlify-cms/) de Shea Daniels*
 
 Imaginons que vous soyez en train de créer la prochaine grande startup ou d'organiser un super évènement — la première question que tout le monde va vous poser est : « C'est quoi le site web ? ».
 <!-- break -->
@@ -316,7 +316,7 @@ C’est un bon début, mais nous n’aurions pas besoin de tout ça dans notre d
 Pour commencer, nous devons définir nos composants dans le fichier de configuration de Netlify CMS :
 
 **\_admin/config.yml**
-```yml
+```yaml
 collections:
   - label: "Pages"
       ...
