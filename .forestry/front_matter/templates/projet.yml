@@ -4,22 +4,32 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
 - type: datetime
   name: date
-  label: date
+  label: Date
+  config:
+    date_format: YYYY-MM-DD
+    required: true
 - type: number
   name: weight
-  label: weight
-- type: list
-  name: alias
-  label: alias
+  label: Weight
+  config:
+    required: true
 - type: text
   name: redirect
-  label: redirect
+  label: Redirect
+  config:
+    required: true
 - type: boolean
   name: published
-  label: published
+  label: Published
+- type: list
+  name: alias
+  label: Alias
 - type: text
   name: typora-root-url
   label: typora-root-url
+  hidden: true
