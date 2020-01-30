@@ -1,0 +1,25 @@
+---
+label: Projet
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: number
+  name: weight
+  label: weight
+- type: list
+  name: alias
+  label: alias
+- type: text
+  name: redirect
+  label: redirect
+- type: boolean
+  name: published
+  label: published
+- type: text
+  name: typora-root-url
+  label: typora-root-url
