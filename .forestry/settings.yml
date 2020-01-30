@@ -40,6 +40,8 @@ sections:
   match: "**/*"
   exclude: index.md
   new_doc_ext: md
+  templates:
+  - projet
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
