@@ -15,8 +15,9 @@ fields:
     date_format: DD/MM/YYYY
     required: true
   default: now
-- type: list
-  name: tags
+- name: tags
+  type: tag_list
+  default: []
   label: Tags
 - type: file
   name: image
