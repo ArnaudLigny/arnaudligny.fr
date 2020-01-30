@@ -4,6 +4,9 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: document
+  path: config.yml
+  label: Configuration
 - type: heading
   label: Blog
 - type: directory
@@ -37,11 +40,6 @@ sections:
   match: "**/*"
   exclude: index.md
   new_doc_ext: md
-- type: heading
-  label: Configuration
-- type: document
-  path: config.yml
-  label: Site
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
