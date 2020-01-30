@@ -1,12 +1,13 @@
 ---
-title: "Cecil"
+title: Cecil
 date: 2019-01-13
 weight: 1
 alias:
-  - projets/phpoole
+- projets/phpoole
 redirect: https://cecil.app
 published: true
-typora-root-url: ../../static
+typora-root-url: "../../static"
+
 ---
 Cecil is a CLI application, powered by [PHP](http://www.php.net/), that merge plain text files (written in [Markdown](https://daringfireball.net/projects/markdown/)), images and [Twig](https://twig.symfony.com/) templates to generate a [static website](https://en.wikipedia.org/wiki/Static_web_page).
 
