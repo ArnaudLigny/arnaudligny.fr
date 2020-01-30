@@ -16,7 +16,7 @@ menus:
     - id: projets
       weight: 2
   footer:
-    - id: a-propos:
+    - id: a-propos
       name: À propos
       url: a-propos
 author:
