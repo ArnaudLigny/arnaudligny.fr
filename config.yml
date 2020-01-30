@@ -9,14 +9,14 @@ keywords:
 - e-commerce
 - Magento
 - IoT
-menu:
+menus:
   main:
-    blog:
+    - id: blog
       weight: 1
-    projets:
+    - id: projets
       weight: 2
   footer:
-    a-propos:
+    - id: a-propos:
       name: À propos
       url: a-propos
 author:
