@@ -34,7 +34,7 @@ social:
   facebook_id: 516589570
 language: fr
 languages:
-  fr:
+  - code: fr
     name: Français
     locale: fr_FR
 output:
