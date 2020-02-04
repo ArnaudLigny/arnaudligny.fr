@@ -3,12 +3,12 @@ baseline: Consultant technique Web, mobile & e-commerce
 baseurl: https://arnaudligny.fr/
 description: Arnaud Ligny, Consultant technique Web, mobile & e-commerce.
 keywords:
-- Consultant technique
-- Web
-- Application Mobile
-- e-commerce
-- Magento
-- IoT
+ - Consultant technique
+ - Web
+ - Application Mobile
+ - e-commerce
+ - Magento
+ - IoT
 menus:
   main:
     - id: blog
