@@ -47,18 +47,23 @@ output:
       extension: webmanifest
   pagetypeformats:
     section: ['html', 'atom', 'rss', 'json']
+defaultpages:
+  sitemap:
+    published: true
+  404:
+    published: true
 virtualpages:
-  manifest:
+  - path: manifest
     output: webmanifest
-  /code:
+  - path: code
     redirect: https://github.com/Narno
-  /blog/work-in-progress:
+  - path: blog/work-in-progress
     redirect: /
-  /blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento:
+  - path: blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento
     redirect: blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/
-  /blog/t-l-charger-manuellement-une-extension-magento:
+  - path: blog/t-l-charger-manuellement-une-extension-magento
     redirect: blog/telecharger-manuellement-une-extension-magento/
-  _redirects:
+  - path: _redirects
     output: netlify_redirects
 googleanalytics: UA-30599234-2
 source: https://github.com/Narno/arnaudligny.fr/edit/master/content/
