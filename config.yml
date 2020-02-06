@@ -39,12 +39,9 @@ languages:
     locale: fr_FR
 output:
   formats:
-    netlify_redirects:
+    - name: netlify_redirects
       mediatype: text/plain
       extension: ''
-    webmanifest:
-      mediatype: application/manifest+json
-      extension: webmanifest
   pagetypeformats:
     section: ['html', 'atom', 'rss', 'json']
 defaultpages:
