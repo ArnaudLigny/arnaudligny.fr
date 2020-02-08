@@ -70,6 +70,10 @@ static:
   - CV_ArnaudLigny-2014.pdf
   - CV_ArnaudLigny-2015.pdf
 editor: typora
-theme: garth
+theme:
+  - garth
+  - serviceworker
 logo: aligny.jpg
 image: aligny.jpg
+serviceworker:
+  enabled: true
