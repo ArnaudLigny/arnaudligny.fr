@@ -77,3 +77,6 @@ logo: aligny.jpg
 image: aligny.jpg
 serviceworker:
   enabled: true
+  precache:
+    - aligny.jpg
+    - styles.min.css
