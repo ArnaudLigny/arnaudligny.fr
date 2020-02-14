@@ -5,11 +5,13 @@ tags: Magento
 image: /images/download-magento-extension.png
 ---
 
-> **Mise à jour du 05/01/2013 :** J'ai créé un outil pour ça (in english) : [http://mage.narno.com](http://mage.narno.com).
+> **Mise à jour du 05/01/2013 :** J'ai créé un outil pour ça (in english) : [~mage.narno.com~](http://mage.narno.com).
 
 Je partage ici une petite astuce pour télécharger simplement une extension Magento, sans utiliser le downloader.
 
 L'idée est d'obtenir le code source d'une extension [MagentoConnect](http://www.magentocommerce.com/magento-connect), sans l'installer (afin d'étudier son code source par exemple).
+
+<!-- excerpt -->
 
 > **Mise à jour du 01/12/2011 :** Je me suis enfin décidé à mettre à jour ce tutoriel avec l'arrivé de MagentoConnect 2.0, dont le protocole à légèrement changé. Voir ci-dessous.
 
@@ -18,7 +20,7 @@ Pour rappel, il faut savoir que Magento utilise un serveur [PEAR](http://pear.ph
 > **MagentoConnect 2.0 :** Ce n'est plus PEAR, mais les fondamentaux reste identiques !
 
 Voici la procédure à suivre, en utilisant l'exemple du [Modern Theme](http://www.magentocommerce.com/magento-connect/Magento+Core/extension/146/modern-theme-for-magento-frontend-interface).
-<!-- excerpt -->
+
 ## 1. Déterminer l'extension à télécharger via sa page sur MagentoConnect
 
 Modern Theme : [http://www.magentocommerce.com/magento-connect/Magento+Core/extension/146/modern-theme-for-magento-frontend-interface](http://www.magentocommerce.com/magento-connect/Magento+Core/extension/146/modern-theme-for-magento-frontend-interface)
