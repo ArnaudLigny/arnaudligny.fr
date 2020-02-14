@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "754f7adda9364798c45e046d299998f3",
+    "content-hash": "091077f236cd45dc66936a0739bd6ae0",
     "packages": [
         {
             "name": "cecil/theme-garth",
@@ -93,16 +93,16 @@
         },
         {
             "name": "cecil/theme-serviceworker",
-            "version": "1.4.1",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-serviceworker.git",
-                "reference": "dcb8746a7d176d8e20a20b3d67bdbf4110767a65"
+                "reference": "1b6ac4eaa9bcdabfc245c3d218d1c080f70702cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-serviceworker/zipball/dcb8746a7d176d8e20a20b3d67bdbf4110767a65",
-                "reference": "dcb8746a7d176d8e20a20b3d67bdbf4110767a65",
+                "url": "https://api.github.com/repos/Cecilapp/theme-serviceworker/zipball/1b6ac4eaa9bcdabfc245c3d218d1c080f70702cd",
+                "reference": "1b6ac4eaa9bcdabfc245c3d218d1c080f70702cd",
                 "shasum": ""
             },
             "require": {
@@ -125,7 +125,7 @@
                 "service worker",
                 "theme"
             ],
-            "time": "2020-02-13T20:51:42+00:00"
+            "time": "2020-02-14T00:30:35+00:00"
         }
     ],
     "packages-dev": [],
