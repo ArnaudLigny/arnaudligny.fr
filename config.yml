@@ -50,8 +50,6 @@ defaultpages:
   404:
     published: true
 virtualpages:
-  - path: manifest
-    output: webmanifest
   - path: code
     redirect: https://github.com/Narno
   - path: blog/work-in-progress
@@ -75,6 +73,8 @@ theme:
   - serviceworker
 logo: aligny.jpg
 image: aligny.jpg
+manifest:
+  theme_color: '#CADCF2'
 serviceworker:
   enabled: true
   precache:
