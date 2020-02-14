@@ -12,14 +12,14 @@ Ces dernières années j’ai développé quelques extensions pour navigateur we
 
 Initialement conçues et développées pour mon usage personnelle, j’ai ensuite décidé de les partager, non seulement sur [GitHub](https://github.com/Narno?tab=repositories&q=topic%3Aweb-extension&type=source) (sous licence open-source) mais aussi, sur les *stores* officiels afin d’en simplifier l'installation.
 
+<!-- break-->
+
 Néanmoins, au fil des mises à jour il devenait pénible :
 
 1. de mettre à disposition l’extension / l’add-on sous forme d’archive ZIP dans la section *Releases* du dépôt GitHub ;
 2. de créer une nouvelle version et de l’uploader depuis la page de gestion de chacun des *stores*.
 
 Aussi, j’ai cherché à automatiser ces étapes via l’[**intégration continue**](https://fr.m.wikipedia.org/wiki/Int%C3%A9gration_continue) et le [**déploiement continu**](https://fr.m.wikipedia.org/wiki/Livraison_continue).
-
-<!-- break-->
 
 ## Intégration continue {#integration-continue}
 
