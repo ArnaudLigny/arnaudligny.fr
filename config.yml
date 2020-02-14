@@ -76,7 +76,7 @@ image: aligny.jpg
 manifest:
   theme_color: '#CADCF2'
   icons:
-    - src: aligny-512.jpg
+    - src: icon-512x512.png
       sizes: 512x512
       type: image/png
 serviceworker:
@@ -85,3 +85,4 @@ serviceworker:
   precache:
     - aligny.jpg
     - styles.min.css
+    - icon-512x512.png
