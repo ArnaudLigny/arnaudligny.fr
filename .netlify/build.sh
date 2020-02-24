@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 echo "Downloading Cecil"
-curl -sSOL https://cecil.app/cecil.phar
+curl -sSOL https://github.com/Cecilapp/Cecil/releases/latest/download/cecil.phar
 php cecil.phar --version
 
 echo "Started Cecil build"
