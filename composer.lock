@@ -93,16 +93,16 @@
         },
         {
             "name": "cecil/theme-serviceworker",
-            "version": "1.5.2",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-serviceworker.git",
-                "reference": "227989771454f60153c42137ed1719629f671179"
+                "reference": "80e7beb4ab2db959d6ff70723ea1479565385c18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-serviceworker/zipball/227989771454f60153c42137ed1719629f671179",
-                "reference": "227989771454f60153c42137ed1719629f671179",
+                "url": "https://api.github.com/repos/Cecilapp/theme-serviceworker/zipball/80e7beb4ab2db959d6ff70723ea1479565385c18",
+                "reference": "80e7beb4ab2db959d6ff70723ea1479565385c18",
                 "shasum": ""
             },
             "require": {
@@ -125,7 +125,7 @@
                 "service worker",
                 "theme"
             ],
-            "time": "2020-02-14T13:56:58+00:00"
+            "time": "2020-02-27T14:48:24+00:00"
         }
     ],
     "packages-dev": [],
