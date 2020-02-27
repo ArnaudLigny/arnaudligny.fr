@@ -86,3 +86,6 @@ serviceworker:
     - aligny.jpg
     - styles.min.css
     - icon-512x512.png
+  notification:
+    enabled: true
+    message: 'Nouvelle version'
