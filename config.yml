@@ -89,3 +89,7 @@ serviceworker:
   notification:
     enabled: true
     message: 'Nouvelle version'
+cache:
+  enabled: true
+  dir: /opt/buildhome/cache
+  external: true
