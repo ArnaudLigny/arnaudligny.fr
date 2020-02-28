@@ -91,5 +91,5 @@ serviceworker:
     message: 'Nouvelle version'
 cache:
   enabled: true
-  dir: /opt/buildhome/cache
-  external: true
+  dir: .cache #/opt/buildhome/cache
+  external: false
