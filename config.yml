@@ -87,7 +87,7 @@ serviceworker:
     - styles.min.css
     - icon-512x512.png
   notification:
-    enabled: true
+    enabled: false
     message: 'Nouvelle version'
 cache:
   enabled: true
