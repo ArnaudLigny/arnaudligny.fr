@@ -1,47 +1,14 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Netlify CMS</title>
-  <link rel="stylesheet" href="https://unpkg.com/netlify-cms@latest/dist/cms.css" />
-</head>
-<body>
-  <script src="https://unpkg.com/netlify-cms@latest/dist/netlify-cms.js"></script>
-  <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-    CMS.registerPreviewStyle("/css/style.css");
-  </script>
-  <script>
-    var PostPreview = createClass({
-      render: function() {
-        var entry = this.props.entry;
-        var date = entry.getIn(['data', 'date']);
-        var image = entry.getIn(['data', 'image']);
-        var bg = this.props.getAsset(image);
-        var tags = entry.getIn(['data', 'tags']);
-        try {
-          date = date.toLocaleDateString('fr-FR', {year:'numeric', month:'short', day:'numeric'});
-        } catch (e) {
-          date ? date = date.toString() : null;
-        }
-        return h('div', {},
-          h('h1', {}, entry.getIn(['data', 'title'])),
-          h('div', {"className": "post-meta"},
-            h('span', {"className": "post-date"}, date)
-          ),
-          bg ? h('img', {src: bg.toString()}) : null,
-          this.props.widgetFor('body'),
-          tags ? tags.map(function(value) {
-            return h('span', {},
-              h('a', {}, '#'+value),
-              ' '
-            );
-          }) : null
-        );
-      }
-    });
-    CMS.registerPreviewTemplate("billets", PostPreview);
-  </script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netlify CMS</title>
+    <link rel="stylesheet" href="https://unpkg.com/netlify-cms@latest/dist/cms.css" />
+  </head>
+  <body>
+    <script src="https://unpkg.com/netlify-cms@latest/dist/netlify-cms.js"></script>
+    <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script type="module" src="/admin/templates/index.js"></script>
+  </body>
 </html>
