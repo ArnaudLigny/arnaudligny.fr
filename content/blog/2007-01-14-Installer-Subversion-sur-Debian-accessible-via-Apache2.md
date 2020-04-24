@@ -3,7 +3,6 @@ title: 'Installer Subversion sur Debian, accessible via Apache2'
 date: 2007-01-14
 tags:
   - Développement
-
 ---
 
 Je m'étais promis d'installer [SVN](http://subversion.tigris.org) sur mon serveur afin de me simplifier la vie de développeur et c'est enfin fait !
@@ -54,13 +53,13 @@ Dans le cas présenté ici, j'ai modifié le fichier de configuration d'Apache2,
     DAV svn
     SVNPath /path/to/svn/repositories/myrepository
     # how to authenticate a user
-    AuthType Basic	
-    AuthName "SVN : My Repository"	
-    AuthUserFile /path/to/private/myrepository.htpasswd	
-    # our access control policy	
-    AuthzSVNAccessFile /path/to/private/myrepository.authz	
-    <LimitExcept GET PROPFIND OPTIONS REPORT>		
-        Require valid-user	
+    AuthType Basic
+    AuthName "SVN : My Repository"
+    AuthUserFile /path/to/private/myrepository.htpasswd
+    # our access control policy
+    AuthzSVNAccessFile /path/to/private/myrepository.authz
+    <LimitExcept GET PROPFIND OPTIONS REPORT>
+        Require valid-user
     </LimitExcept>
 </location>
 ```
