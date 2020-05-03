@@ -67,6 +67,7 @@ static:
   exclude:
     - CV_ArnaudLigny-2014.pdf
     - CV_ArnaudLigny-2015.pdf
+    - '/\.scss$/'
 editor: typora
 theme:
   - garth
@@ -90,5 +91,5 @@ serviceworker:
     enabled: false
     message: 'Nouvelle version'
 cache:
-  enabled: true
+  enabled: false
   dir: .cache
