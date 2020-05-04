@@ -91,5 +91,5 @@ serviceworker:
     enabled: false
     message: 'Nouvelle version'
 cache:
-  enabled: false
+  enabled: true
   dir: .cache
