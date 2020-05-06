@@ -9,6 +9,8 @@ draft: false
 # Arnaud Ligny
 ## Consultant technique Web, mobile et e-commerce.
 
+test
+
 Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité Web, mobile, e-commerce (et IoT).
 
 Domaines de compétence : avant-vente, recommandation technique, conception produit, prototypage, accompagnement des équipes de production, R&D.
