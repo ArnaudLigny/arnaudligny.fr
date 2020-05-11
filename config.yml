@@ -85,7 +85,7 @@ serviceworker:
   debug: false
   precache:
     - aligny.jpg
-    - styles.min.css
+    - styles.css
     - icon-512x512.png
   notification:
     enabled: false
