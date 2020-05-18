@@ -77,19 +77,12 @@ image: aligny.jpg
 manifest:
   theme_color: '#CADCF2'
   icons:
-    - src: icon-512x512.png
+    - src: aligny-512.webp
       sizes: 512x512
-      type: image/png
+      type: image/webp
 serviceworker:
   enabled: true
   debug: false
   precache:
     - aligny.jpg
-    - styles.css
-    - icon-512x512.png
-  notification:
-    enabled: false
-    message: 'Nouvelle version'
-cache:
-  enabled: true
-  dir: .cache
+    - aligny-512.webp
