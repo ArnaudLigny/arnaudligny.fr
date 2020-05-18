@@ -72,17 +72,17 @@ editor: typora
 theme:
   - garth
   - serviceworker
-logo: aligny.jpg
-image: aligny.jpg
+logo: logo.jpg
+image: logo.jpg
 manifest:
   theme_color: '#CADCF2'
   icons:
-    - src: aligny-512.webp
+    - src: logo-512.webp
       sizes: 512x512
       type: image/webp
 serviceworker:
   enabled: true
   debug: false
   precache:
-    - aligny.jpg
-    - aligny-512.webp
+    - logo.jpg
+    - logo-512.webp
