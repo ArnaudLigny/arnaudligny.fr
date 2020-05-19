@@ -3,8 +3,8 @@
 {% block head %}
 {{- parent() -}}
     <!-- dark mode -->
-    <link rel="stylesheet" href="{{ url(minify(toCSS('styles-dark.scss'))) }}" media="(prefers-color-scheme: dark)">
-    <link rel="stylesheet" href="{{ url(minify(toCSS('styles.scss'))) }}" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+    <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss')|minify|url }}" media="(prefers-color-scheme: dark)">
+    <!--<link rel="stylesheet" href="{{ asset('sass/garth.scss')|minify|url }}" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">-->
     <!-- PWA -->
     <meta name="theme-color" content="{{ site.manifest.theme_color|default('#FFF') }}">
     <link rel="apple-touch-icon" href="aligny-512.jpg">
