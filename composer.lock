@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cecil/theme-garth",
-            "version": "1.0.7",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-garth.git",
-                "reference": "8cfdc5f83616f8ad162b4faaab205368cbc11474"
+                "reference": "9bba8ce9d8dbf5823217042127345e34c212a02b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-garth/zipball/8cfdc5f83616f8ad162b4faaab205368cbc11474",
-                "reference": "8cfdc5f83616f8ad162b4faaab205368cbc11474",
+                "url": "https://api.github.com/repos/Cecilapp/theme-garth/zipball/9bba8ce9d8dbf5823217042127345e34c212a02b",
+                "reference": "9bba8ce9d8dbf5823217042127345e34c212a02b",
                 "shasum": ""
             },
             "require": {
@@ -40,7 +40,13 @@
                 "cecil",
                 "theme"
             ],
-            "time": "2020-02-24T14:20:40+00:00"
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/narno",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-05-19T18:49:02+00:00"
         },
         {
             "name": "cecil/theme-installer",
