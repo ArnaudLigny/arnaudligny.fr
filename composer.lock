@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a47bffb9b596379dcd77fbe3bc88ac71",
+    "content-hash": "c05fbd5d73e23a6acf2040a8a5afc9aa",
     "packages": [
         {
             "name": "cecil/theme-garth",
@@ -99,16 +99,16 @@
         },
         {
             "name": "cecil/theme-serviceworker",
-            "version": "1.6.2",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-serviceworker.git",
-                "reference": "5411e35d4fc6db9ee8bd54d0636f99fb65e3d7a8"
+                "reference": "8f83c3e104dbc71c599ef2aaa219ca64954f2397"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-serviceworker/zipball/5411e35d4fc6db9ee8bd54d0636f99fb65e3d7a8",
-                "reference": "5411e35d4fc6db9ee8bd54d0636f99fb65e3d7a8",
+                "url": "https://api.github.com/repos/Cecilapp/theme-serviceworker/zipball/8f83c3e104dbc71c599ef2aaa219ca64954f2397",
+                "reference": "8f83c3e104dbc71c599ef2aaa219ca64954f2397",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,13 @@
                 "service worker",
                 "theme"
             ],
-            "time": "2020-04-15T22:39:29+00:00"
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/narno",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-05-28T14:00:12+00:00"
         }
     ],
     "packages-dev": [],
