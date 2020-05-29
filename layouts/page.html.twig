@@ -2,6 +2,15 @@
 
 {% block head %}
 {{- parent() ~}}
+    <!-- style enhancements -->
+    <style>
+      .nav {
+        padding: inherit;
+      }
+      .list .item {
+        padding: inherit;
+      }
+    </style>
     <!-- dark mode -->
     <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss')|minify|url }}" media="(prefers-color-scheme: dark)">
     <!-- PWA -->
