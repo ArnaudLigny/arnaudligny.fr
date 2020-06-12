@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c05fbd5d73e23a6acf2040a8a5afc9aa",
+    "content-hash": "1761d535a02caa8c94089486aeedd10d",
     "packages": [
         {
             "name": "cecil/theme-garth",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-garth.git",
-                "reference": "9bba8ce9d8dbf5823217042127345e34c212a02b"
+                "reference": "e07b3aeee7ba039675a05f661b8a9c6ec4353340"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-garth/zipball/9bba8ce9d8dbf5823217042127345e34c212a02b",
-                "reference": "9bba8ce9d8dbf5823217042127345e34c212a02b",
+                "url": "https://api.github.com/repos/Cecilapp/theme-garth/zipball/e07b3aeee7ba039675a05f661b8a9c6ec4353340",
+                "reference": "e07b3aeee7ba039675a05f661b8a9c6ec4353340",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-05-19T18:49:02+00:00"
+            "time": "2020-06-12T11:22:05+00:00"
         },
         {
             "name": "cecil/theme-installer",
@@ -99,16 +99,16 @@
         },
         {
             "name": "cecil/theme-serviceworker",
-            "version": "1.7.1",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-serviceworker.git",
-                "reference": "23f0b622573e57f192c884a3e75d64f79faf45ce"
+                "reference": "36c32a3615b00ba672d65bb0c804488580873e35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-serviceworker/zipball/23f0b622573e57f192c884a3e75d64f79faf45ce",
-                "reference": "23f0b622573e57f192c884a3e75d64f79faf45ce",
+                "url": "https://api.github.com/repos/Cecilapp/theme-serviceworker/zipball/36c32a3615b00ba672d65bb0c804488580873e35",
+                "reference": "36c32a3615b00ba672d65bb0c804488580873e35",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-05-29T21:17:14+00:00"
+            "time": "2020-06-12T22:08:56+00:00"
         }
     ],
     "packages-dev": [],
