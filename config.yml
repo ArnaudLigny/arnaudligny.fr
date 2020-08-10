@@ -92,4 +92,4 @@ serviceworker:
     - logo-512.png
     - logo-512.webp
   notification:
-    enabled: true
+    enabled: false
