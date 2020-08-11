@@ -3,7 +3,7 @@ title: Diffuser son podcast simplement
 date: 2020-08-10
 tags: [Podcast, SSG, Cecil]
 image: /images/staticast/staticast-preview.png
-draft: false
+published: true
 typora-root-url: ../../static
 ---
 
@@ -43,7 +43,7 @@ La mise en oeuvre est relativement simple.
 
 1. S’assurer que votre ordinateur est équipé de [PHP](https://php.net) (ce qui est le cas sur macOS et sur de nombreuses distributions Linux) 
 3. [Télécharger `cecil.phar`](https://github.com/Cecilapp/Cecil/releases/latest/download/cecil.phar)
-3. [Télécharger *Staticast*](https://github.com/Cecilapp/staticast/archive/master.zip)
+3. [Télécharger *Staticast*](https://github.com/Cecilapp/staticast/archive/master.zip) et installer le theme via `composer install`
 4. Placer `cecil.phar` à la racine du dossier
 
 ### Création d'un épisode
