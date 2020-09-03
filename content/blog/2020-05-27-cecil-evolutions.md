@@ -1,7 +1,9 @@
 ---
-title: Évolutions de Cecil
+title: "Évolutions de Cecil"
 date: 2020-05-27
-tags: [Cecil, SSG]
+tags:
+  - Cecil
+  - SSG
 draft: true
 typora-root-url: ../../static
 ---

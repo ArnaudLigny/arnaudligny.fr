@@ -1,14 +1,14 @@
 ---
-title: Retour d’expérience sur la création de Cecil
+title: "Retour d’expérience sur la création de Cecil"
 date: 2020-01-06
 tags:
-- JAMstack
-- Talk
-- SSG
-- Développement
-image: "/images/cecil-youtube-cover.jpg"
+  - JAMstack
+  - Talk
+  - SSG
+  - Développement
+image: /images/cecil-youtube-cover.jpg
 draft: false
-typora-root-url: "../../static"
+typora-root-url: ../../static
 
 ---
 Lors du meetup [JAMstack Paris](https://jamstack.paris) #5 je suis intervenu pour partager mon retour d'expérience sur la création de [Cecil, mon générateur de site statique](https://arnaudligny.fr/talks/cecil-mon-generateur-de-site-statique).

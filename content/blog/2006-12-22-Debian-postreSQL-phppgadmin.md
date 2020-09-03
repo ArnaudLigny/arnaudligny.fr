@@ -1,5 +1,5 @@
 ---
-title: 'Debian + postreSQL + phppgadmin'
+title: "Debian + postreSQL + phppgadmin"
 date: 2006-12-22
 tags:
   - Développement

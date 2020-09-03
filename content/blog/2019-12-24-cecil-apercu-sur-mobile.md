@@ -1,8 +1,11 @@
 ---
 title: "Cecil : aperçu sur mobile"
 date: 2019-12-24
-tags: [Développement, SSG, Cecil]
-image: "/images/cecil-mobile-preview-banner.png"
+tags:
+  - Développement
+  - SSG
+  - Cecil
+image: /images/cecil-mobile-preview-banner.png
 draft: false
 typora-root-url: ../../static
 ---

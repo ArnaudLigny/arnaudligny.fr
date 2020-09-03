@@ -1,7 +1,8 @@
 ---
 title: "Utiliser Gettext pour traduire vos modules Magento"
 date: 2010-11-03
-tags: Magento
+tags:
+  - Magento
 image: /images/poedit.png
 ---
 

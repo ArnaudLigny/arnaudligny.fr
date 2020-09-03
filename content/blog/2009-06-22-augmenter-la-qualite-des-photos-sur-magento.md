@@ -1,7 +1,8 @@
 ---
 title: "Augmenter la qualité des photos sur Magento"
 date: 2009-06-22
-tags: Magento
+tags:
+  - Magento
 ---
 
 J'ai récemment été confronté à des problèmes de qualité des photos sur [Magento](http://www.magentocommerce.com).

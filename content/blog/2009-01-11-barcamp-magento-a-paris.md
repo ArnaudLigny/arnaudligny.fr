@@ -1,7 +1,9 @@
 ---
 title: "Barcamp Magento à Paris"
 date: 11-01-2009
-tags: [e-commerce, Magento]
+tags: 
+  - e-commerce
+  - Magento
 path: blog/barcamp-magento-a-paris
 ---
 [**Magento Commerce**](/tags/magento/), la solution e-commerce incontournable, se fait inviter **à Paris le 2 février prochain** !

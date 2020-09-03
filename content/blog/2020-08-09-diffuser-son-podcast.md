@@ -1,7 +1,10 @@
 ---
-title: Diffuser son podcast simplement
+title: "Diffuser son podcast simplement"
 date: 2020-08-10
-tags: [Podcast, SSG, Cecil]
+tags:
+  - Podcast
+  - SSG
+  - Cecil
 image: /images/staticast/staticast-preview.png
 published: true
 typora-root-url: ../../static
