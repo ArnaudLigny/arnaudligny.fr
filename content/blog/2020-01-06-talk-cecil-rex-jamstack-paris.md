@@ -6,6 +6,7 @@ tags:
   - Talk
   - SSG
   - Développement
+  - Cecil
 image: /images/cecil-youtube-cover.jpg
 draft: false
 typora-root-url: ../../static
