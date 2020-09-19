@@ -3,14 +3,14 @@
 {% block head %}
 {{- parent() ~}}
     <!-- style enhancements -->
-    <style>
+    <style>{% apply minify_css %}
       .nav {
         padding: inherit;
       }
       .list .item {
         padding: inherit;
       }
-    </style>
+    {% endapply %}</style>
     <!-- dark mode -->
     <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss')|minify|url }}" media="(prefers-color-scheme: dark)">
     <!-- PWA -->
