@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1761d535a02caa8c94089486aeedd10d",
+    "content-hash": "cd9e28b7402c5fb80777623512a5797d",
     "packages": [
         {
             "name": "cecil/theme-garth",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-garth.git",
-                "reference": "930458813fa7f1dc56f19418522ade6c47643e6b"
+                "reference": "48b605afa018c9aebe1a17454191d4ef4210c0a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-garth/zipball/930458813fa7f1dc56f19418522ade6c47643e6b",
-                "reference": "930458813fa7f1dc56f19418522ade6c47643e6b",
+                "url": "https://api.github.com/repos/Cecilapp/theme-garth/zipball/48b605afa018c9aebe1a17454191d4ef4210c0a5",
+                "reference": "48b605afa018c9aebe1a17454191d4ef4210c0a5",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-08-14T22:08:58+00:00"
+            "time": "2020-09-19T20:53:47+00:00"
         },
         {
             "name": "cecil/theme-installer",
