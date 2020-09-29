@@ -11,10 +11,13 @@ keywords:
  - IoT
 menus:
   main:
-    - id: blog
+    - id: cv
+      name: CV
       weight: 1
-    - id: projets
+    - id: blog
       weight: 2
+    - id: projets
+      weight: 3
   footer:
     - id: a-propos
       name: À propos
