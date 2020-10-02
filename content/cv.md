@@ -9,7 +9,8 @@ typora-root-url: ../../static
 
 > Hello, je suis [Arnaud Ligny](https://arnaudligny.fr), consultant technique web, mobile & e-commerce.
 
-Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web, mobile, e-commerce (et IoT) depuis plus de 10 ans.
+Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web, mobile, e-commerce (et IoT).  
+En 15 ans j’ai apporté mon expertise sur des projets de startup, de maisons de luxe, de prêt à porter et de grandes marques telles que Libeo, Brigad, Hermès, Christian Louboutin, Repetto, Zadig & Voltaire, Etam, The Kooples, Du Pareil au Même, Leroy Merlin, Saint-Maclou, Ducray.
 
 J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leur besoin, estimer la charge de travail afin de mettre en œuvre la meilleure approche technique, faire le lien entre les équipes métiers, la DSI et les développeurs, suivre la qualité et les méthodes de travail.
 
