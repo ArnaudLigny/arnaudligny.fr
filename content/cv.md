@@ -24,7 +24,7 @@ J’ai également conçu et développement un générateur de site statique  : [
 
 ### [Adfab](https://adfab.fr) – *sept. 2015 à mars 2020*
 
-J’ai été embauché par le studio de développement Adfab afin d’aider l’équipe commerciale à consolidier la qualité des réponses aux appels d’offres.  
+J’ai été embauché par le studio de développement Adfab afin d’aider l’équipe commerciale à consolider la qualité des réponses aux appels d’offres.  
 J’ai ainsi réalisé des centaines de présentations (au format Apple Keynote, Microsoft PowerPoint et Google Slides) et leur estimation de charge (de développement) associée.
 
 Je me suis également impliqué dans l’amélioration des méthodes de travail, des outils et de la qualité, via la mise en place de modèles de document (présentation, chiffrage, wiki projet, etc.) et de process.  
@@ -48,25 +48,25 @@ Points d’attention : délais court, méthodologie Agile, démo client chaque s
 
 Pilotage complet du projet de refonte complet du site e-commerce Saint-Maclou.com, sur [Magento](/tags/magento), en partenariat avec l’agence [5ème Gauche](http://www.5emegauche.com).
 
-Points d’attention : budget développement serré, optimisation des performances, outil d’aide au choix, outil de clacul de surface, connecteur CRM, store locator, déploiement continu.
+Points d’attention : budget développement serré, optimisation des performances, outil d’aide au choix, outil de calcul de surface, connecteur CRM, store locator, déploiement continu.
 
 ***Tereos (app mobile)***
 
-Avant-vente puis conception d’une application mobile ([React Native](/tags/react-native)) visant à fournir un ensmble d’outils aux planteurs (Betterave sucrière).
+Avant-vente puis conception d’une application mobile ([React Native](/tags/react-native)) visant à fournir un ensemble d’outils aux planteurs (Betterave sucrière).
 
-Points d’attention : métier complexe, interfaces d’authentification et d’optentio ndes donnés, contrainte physiques fortes (connexion dégradée, mode hors-ligne), alertes push.
+Points d’attention : métier complexe, interfaces d’authentification et d’obtention des donnés, contrainte physiques fortes (connexion dégradée, mode hors-ligne), alertes push.
 
 ## Architecte IoT
 
 ### [The Bubbles Company](https://bubbles-company.com) ([Dooh It](https://doohit.fr)) – *sept. 2014 à janv. 2015*
 
-Les Bubbles sont une solution de rechargement de batterie pour téléphone mobile, ayant pour objectif de faire du « drive to store » en offrant des contenus via l’écran LCD du modèle sécurisé et via l’aplication mobile.
+Les Bubbles sont une solution de rechargement de batterie pour téléphone mobile, ayant pour objectif de faire du « drive to store » en offrant des contenus via l’écran LCD du modèle sécurisé et via l’application mobile.
 
 J’ai réalisé la conception, le prototypage du socle technique (hardware et software) ainsi que le protocole de communication des objets connectés.
 
-J’ai notament travaillé avec les ingénieurs de [Canon Bretagne](https://www.canon-bretagne.fr) sur les aspects matériels et électroniques et avec [Ova Design](http://ovadesign.com) sur la conception ergonomique des Bubbles.
+J’ai notamment travaillé avec les ingénieurs de [Canon Bretagne](https://www.canon-bretagne.fr) sur les aspects matériels et électroniques et avec [Ova Design](http://ovadesign.com) sur la conception ergonomique des Bubbles.
 
-D’autre part j’ai récruté l’équipe technique et identifié le potentiel prestataire en charge de la réalisation des applications mobiles.
+D’autre part j’ai recruté l’équipe technique et identifié le potentiel prestataire en charge de la réalisation des applications mobiles.
 
 Technologies et outils : RabbitMQ, STOMP, Symfony, Bluetoouh, NFC, iBeacon, Wi-Fi, Web App, App mobile, géolocalisation, etc.
 
@@ -158,3 +158,4 @@ DHL, Bergerat Monnoyeur, CUC / Abix, NewWorks, Beryl, M6, France Télévisions, 
 *[ERP]: Progiciel de Gestion Intégré
 *[ESB]: Enterprise Service Bus
 *[TMA]: Tierce Maintenance Applicative
+*[CRM]: Customer Relationship Management
