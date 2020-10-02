@@ -1,6 +1,7 @@
 ---
 title: Consultant technique senior
 date: 2020-09-22
+updated: 2020-10-02
 published: false
 menu: main
 typora-root-url: ../../static
