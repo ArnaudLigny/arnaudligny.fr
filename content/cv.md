@@ -1,39 +1,69 @@
 ---
-title: Consultant technique web et mobile
+title: Consultant technique senior
 date: 2020-09-22
 published: false
 menu: main
 typora-root-url: ../../static
 ---
-<img src="/logo-300.jpg" width="150" height="150" class="profile-picture" />
+<img src="/logo-300.jpg" width="150" height="150" class="profile-picture" alt="Photo de profil d'Arnaud Ligny" />
 
-Hello, je suis **Arnaud Ligny**, consultant technique web et mobile.
+> Hello, je suis [Arnaud Ligny](https://arnaudligny.fr), consultant technique web, mobile & e-commerce.
 
-Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité Web, mobile, e-commerce et IoT.
+Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web, mobile, e-commerce (et IoT) depuis plus de 10 ans.
 
-Mes compétences : avant-vente, conception fonctionnelle et technique, prototypage, accompagnement des équipes de production, R&D.
+J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leur besoin, estimer la charge de travail afin de mettre en oeuvre la meileure approche technique, faire le lien entre les équipes métiers et les équipes de développement, suivre la qualité et les méthodes de travail.
 
-En plus de 10 ans j’ai apporté mon expertise à des dizaines de projets, entre autres, pour Etam, Saint Maclou, Hermès, Tereos, Du Côté de Chez Vous, ArtMapper, Christian Louboutin, Ducray, Zadig & Voltaire, Le Havre, Du Pareil au Même, The Kooples, Repetto, Brigad, FNBP, Libeo. 
+**Mes compétences** : avant-vente, conception fonctionnelle et technique, prototypage, accompagnement des équipes de production, méthodes agiles, qualité et méthodes.
 
-## Consultant technique senior, web & mobile
+## Consultant technique senior (web, mobile & e-commerce)
 
 ### [Adfab](https://adfab.fr) – *sept. 2015 à mars 2020*
 
-Projets
+J’ai été embauché par le studio de développement Adfab afin d’aider l’équipe commerciale à consolidier la qualité des réponses aux appels d’offres.  
+J’ai ainsi réalisé des centaines de présentations (au format Apple Keynote, Microsoft PowerPoint et Google Slides) et leur estimation de charge (de développement) associée.
 
-Du Côté de Chez Vous
+Je me suis également impliqué dans l’amélioration des méthodes de travail, des outils et de la qualité, via la mise en place de modèles de document (présentation, chiffrage, wiki projet, etc.) et de process.  
+Je suis également intervenu, avec le directeur technique, sur l’accompagnement des développeurs à l’utilisation des outils (intégration et de déploiement continu).
 
-***Clients***
+#### Quelques clients / projets
 
-Tereos, Legrand, Leroy Merlin, 
+***Du Côté de Chez Vous (Leroy Merlin)***
 
-----
+Avant-vente, accompagnement, conseils techniques et pilotage de la réalisation de la refonte du site web.
+
+Points d’attention : site statique généré et déployé de manière atomique, CMS headless [Contentful](https://www.contentful.com).
+
+***Brigad Planning (web app et app mobile)***
+
+Pilotage complet du projet « spin-off » *Planning* de la startup [Brigad](https://brigad.co) avec une équipe de 4 développeurs, et en relation directe avec le fondateur.
+
+Points d’attention : délais court, méthodologie Agile, démo client chaque semaine en visio.
+
+***Saint Maclou (e-commerce)***
+
+Pilotage complet du projet de refonte complet du site e-commerce Saint-Maclou.com, sur [Magento](/tags/magento), en partenariat avec l’agence [5ème Gauche](http://www.5emegauche.com).
+
+Points d’attention : budget développement serré, optimisation des performances, outil d’aide au choix, outil de clacul de surface, connecteur CRM, store locator, déploiement continu.
+
+***Tereos (app mobile)***
+
+Avant-vente puis conception d’une application mobile ([React Native](/tags/react-native)) visant à fournir un ensmble d’outils aux planteurs (Betterave sucrière).
+
+Points d’attention : métier complexe, interfaces d’authentification et d’optentio ndes donnés, contrainte physiques fortes (connexion dégradée, mode hors-ligne), alertes push.
 
 ## Architecte IoT
 
 ### [The Bubbles Company](https://bubbles-company.com) ([Dooh It](https://doohit.fr)) – *sept. 2014 à janv. 2015*
 
-Conception, prototypage du socle technique (hardware et software) et du protocole de communication des objets connectés (les Bubbles).
+Les Bubbles sont une solution de rechargement de batterie pour téléphone mobile, ayant pour objectif de faire du « drive to store » en offrant des contenus via l’écran LCD du modèle sécurisé et via l’aplication mobile.
+
+J’ai réalisé la conception, le prototypage du socle technique (hardware et software) ainsi que le protocole de communication des objets connectés.
+
+J’ai notament travaillé avec les ingénieurs de [Canon Bretagne](https://www.canon-bretagne.fr) sur les aspects matériels et électroniques et avec [Ova Design](http://ovadesign.com) sur la conception ergonomique des Bubbles.
+
+D’autre part j’ai récruté l’équipe technique et identifié le potentiel prestataire en charge de la réalisation des applications mobiles.
+
+Technologies et outils : RabbitMQ, STOMP, Symfony, Bluetoouh, NFC, iBeacon, Wi-Fi, Web App, App mobile, géolocalisation, etc.
 
 ---
 
