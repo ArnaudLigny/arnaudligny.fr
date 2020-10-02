@@ -56,6 +56,8 @@ Avant-vente puis conception d’une application mobile ([React Native](/tags/rea
 
 Points d’attention : métier complexe, interfaces d’authentification et d’obtention des donnés, contrainte physiques fortes (connexion dégradée, mode hors-ligne), alertes push.
 
+----
+
 ## Architecte IoT
 
 ### [The Bubbles Company](https://bubbles-company.com) ([Dooh It](https://doohit.fr)) – *sept. 2014 à janv. 2015*
