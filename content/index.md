@@ -1,21 +1,17 @@
 ---
-title: "Qui suis-je ?"
+title: "Accueil"
 date: 2017-12-21
+updated: 2020-10-02
 layout: index
 pagination:
   enabled: false
-draft: false
+published: true
 ---
 # Arnaud Ligny
-## Consultant technique Web, mobile et e-commerce.
+> Hello, je suis Arnaud Ligny, consultant technique web, mobile & e-commerce.
 
-Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité Web, mobile, e-commerce (et IoT).
+J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leur besoin, estimer la charge de travail afin de mettre en oeuvre la meileure approche technique, faire le lien entre les équipes métiers et les équipes de développement, suivre la qualité et les méthodes de travail.
 
-Domaines de compétence : avant-vente, recommandation technique, conception produit, prototypage, accompagnement des équipes de production, R&D.
-
-En plus de 10 ans j’ai apporté mon expertise à des dizaines de projets, entre autres, pour [Etam](http://www.etam.com), [Saint Maclou](https://www.saint-maclou.com), [Hermès](http://france.hermes.com), [Tereos](https://itunes.apple.com/fr/app/tereos-coop%C3%A9rateurs/id1215356212), [Du Côté de Chez Vous](https://www.ducotedechezvous.com), [ArtMapper](http://www.artmapper.co), [Christian Louboutin](http://eu.christianlouboutin.com/fr_fr/), [Ducray](https://dermocontrol.ducray.com), [Zadig & Voltaire](http://www.zadig-et-voltaire.com), [Le Havre](https://www.lehavre.fr/actualites/tout-le-havre-portee-de-main), [Du Pareil au Même](http://www.dpam.com), [The Kooples](http://www.thekooples.com), [Repetto](http://www.repetto.fr), [Brigad](https://plan.brigad.co/), [FNBP](https://play.google.com/store/apps/details?id=com.fnbp.monwhospop), [Libeo](https://libeo.io).
-
-[Twitter](https://twitter.com/ArnaudLigny) — [GitHub](https://github.com/Narno) — [LinkedIn](https://fr.linkedin.com/in/arnaudligny/fr/)
+[CV](/cv/) — [LinkedIn](https://fr.linkedin.com/in/arnaudligny/fr/) — [Twitter](https://twitter.com/ArnaudLigny) — [GitHub](https://github.com/Narno)
 
 *[IoT]: Internet of Things
-*[R&D]: Recherche et développement
