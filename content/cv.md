@@ -11,9 +11,14 @@ typora-root-url: ../../static
 
 Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web, mobile, e-commerce (et IoT) depuis plus de 10 ans.
 
-J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leur besoin, estimer la charge de travail afin de mettre en oeuvre la meileure approche technique, faire le lien entre les équipes métiers et les équipes de développement, suivre la qualité et les méthodes de travail.
+J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leur besoin, estimer la charge de travail afin de mettre en œuvre la meilleure approche technique, faire le lien entre les équipes métiers, la DSI et les développeurs, suivre la qualité et les méthodes de travail.
 
 **Mes compétences** : avant-vente, conception fonctionnelle et technique, prototypage, accompagnement des équipes de production, méthodes agiles, qualité et méthodes.
+
+**Mes centres d’intérêt** : je m’intéresse de prêt à la simplification et la performance des sites web de contenu, via une approche [progressive et découplée](https://jamstatic.fr) et à la [Jamstack](/tags/jamstack).  
+J’ai également conçu et développement un générateur de site statique  : [Cecil](https://cecil.app).
+
+----
 
 ## Consultant technique senior (web, mobile & e-commerce)
 
