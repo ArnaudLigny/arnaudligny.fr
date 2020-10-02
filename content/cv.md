@@ -15,8 +15,8 @@ J’aime me définir comme un **facilitateur** : comprendre et aider mes clients
 
 **Mes compétences** : avant-vente, conception fonctionnelle et technique, prototypage, accompagnement des équipes de production, méthodes agiles, qualité et méthodes.
 
-**Mes centres d’intérêt** : je m’intéresse de prêt à la simplification et la performance des sites web de contenu, via une approche [progressive et découplée](https://jamstatic.fr) et à la [Jamstack](/tags/jamstack).  
-J’ai également conçu et développement un générateur de site statique  : [Cecil](https://cecil.app).
+**Mes centres d’intérêt** : je m’intéresse de prêt à la simplification et la performance des sites web, via une approche [progressive et découplée](https://jamstatic.fr) et à la [Jamstack](/tags/jamstack).  
+J’ai également conçu et développé un générateur de site statique  : [Cecil](https://cecil.app).
 
 ----
 
