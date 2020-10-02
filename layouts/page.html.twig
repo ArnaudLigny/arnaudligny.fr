@@ -10,6 +10,17 @@
       .list .item {
         padding: inherit;
       }
+      @media print {
+        header, footer {
+          display: none;
+        }
+      }
+      .profile-picture {
+        float: right;
+        border-radius: 5%;
+        overflow: hidden;
+        margin: 1rem !important;
+      }
     {% endapply %}</style>
     <!-- dark mode -->
     <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss')|minify|url }}" media="(prefers-color-scheme: dark)">
