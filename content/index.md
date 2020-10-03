@@ -7,10 +7,9 @@ pagination:
   enabled: false
 published: true
 ---
-# Arnaud Ligny
-## Consultant technique web, mobile & e-commerce
+# Hello, je suis Arnaud.
 
-J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leur besoin, estimer la charge de travail afin de mettre en œuvre la meilleure approche technique, faire le lien entre les équipes métiers, la DSI et les développeurs, suivre la qualité et les méthodes de travail.
+J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leur besoin; imaginer l'approche technique la plus adopatée et estimer la charge de travail associée; faire le lien entre les équipes métiers, la DSI et les développeurs; suivre la qualité et les méthodes de travail.
 
 Pour connaître mon parcours plus en détails, n’hésitez pas à consulter mon [CV](/cv/).
 
