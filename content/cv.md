@@ -26,7 +26,11 @@ J’ai également conçu et développé un générateur de site statique : [Ceci
 
 ### [Aperture Lab](https://aperturelab.fr) – Indépendant – *juin 2020 à aujourd'hui*
 
-Conception et développement de [Cecil](https://cecil.app), un générateur de site statique simple et efficace.
+- conception et développement de [Cecil](https://cecil.app), un générateur de site statique simple et efficace
+- administration et contribution au site [Jamstatic](https://jamstatic.fr)
+- maintenance de [The Butler](https://github.com/Cecilapp/the-butler), un moteur de blog
+- création de [Staticast](https://staticast.netlify.app), une plateforme de publication de podcast
+- missions freelance de conseil et d'accompagnement sur la mise en place de solutions web, mobile et e-commerce
 
 ## Consultant technique senior (web, mobile & e-commerce)
 
