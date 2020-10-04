@@ -13,14 +13,20 @@ typora-root-url: ../../static
 Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web, mobile, e-commerce (et IoT).  
 En 15 ans j’ai apporté mon expertise sur des projets de startup, de maisons de luxe, de prêt à porter et de grandes marques telles que Libeo, Brigad, Hermès, Christian Louboutin, Repetto, Zadig & Voltaire, Etam, The Kooples, Du Pareil au Même, Leroy Merlin, Saint-Maclou, Ducray.
 
-J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leur besoin; imaginer l'approche technique la plus adopatée et estimer la charge de travail associée; faire le lien entre les équipes métiers, la DSI et les développeurs; suivre la qualité et les méthodes de travail.
+J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leur besoin; imaginer l'approche technique la plus adopatée; faire le lien entre les équipes métiers, la DSI et les développeurs; suivre la qualité et les méthodes de travail.
 
 **Mes compétences** : avant-vente, conception fonctionnelle et technique, prototypage, accompagnement des équipes de production, méthodes agiles, qualité et méthodes.
 
 **Mes centres d’intérêt** : je m’intéresse de prêt à la simplification et la performance des sites web, via une approche [progressive et découplée](https://jamstatic.fr) et à la [Jamstack](/tags/jamstack).  
-J’ai également conçu et développé un générateur de site statique  : [Cecil](https://cecil.app).
+J’ai également conçu et développé un générateur de site statique : [Cecil](https://cecil.app).
 
 ----
+
+## Concepteur produit
+
+### [Aperture Lab](https://aperturelab.fr) – Indépendant – *juin 2020 à maintenant*
+
+Conception et développement de [Cecil](https://cecil.app), un générateur de site statique simple et efficace.
 
 ## Consultant technique senior (web, mobile & e-commerce)
 
@@ -62,7 +68,7 @@ Points d’attention : métier complexe, interfaces d’authentification et d’
 
 ## Architecte IoT
 
-### [The Bubbles Company](https://bubbles-company.com) ([Dooh It](https://doohit.fr)) – *sept. 2014 à janv. 2015*
+### [The Bubbles Company](https://bubbles-company.com) ([Dooh It](https://doohit.fr)) – *sept. 2014 à juin 2015*
 
 Les Bubbles sont une solution de rechargement de batterie pour téléphone mobile, ayant pour objectif de faire du « drive to store » en offrant des contenus via l’écran LCD du modèle sécurisé et via l’application mobile.
 
