@@ -28,7 +28,7 @@ J’ai également conçu et développé un générateur de site statique : [Ceci
 
 - conception et développement de [Cecil](https://cecil.app), un générateur de site statique simple et efficace
 - administration et contribution au site [Jamstatic](https://jamstatic.fr)
-- maintenance de [The Butler](https://github.com/Cecilapp/the-butler), un moteur de blog
+- maintenance de [The Butler](https://github.com/Cecilapp/the-butler#the-butler), un moteur de blog clef en main
 - création de [Staticast](https://staticast.netlify.app), une plateforme de publication de podcast
 - missions freelance de conseil et d'accompagnement sur la mise en place de solutions web, mobile et e-commerce
 
