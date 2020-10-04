@@ -32,6 +32,8 @@ J’ai également conçu et développé un générateur de site statique : [Ceci
 - création de [Staticast](https://staticast.netlify.app), une plateforme de publication de podcast
 - missions freelance de conseil et d'accompagnement sur la mise en place de solutions web, mobile et e-commerce
 
+----
+
 ## Consultant technique senior (web, mobile & e-commerce)
 
 ### [Adfab](https://adfab.fr) – *sept. 2015 à mars 2020*
