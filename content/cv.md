@@ -24,7 +24,7 @@ J’ai également conçu et développé un générateur de site statique : [Ceci
 
 ## Concepteur produit
 
-### [Aperture Lab](https://aperturelab.fr) – Indépendant – *juin 2020 à maintenant*
+### [Aperture Lab](https://aperturelab.fr) – Indépendant – *juin 2020 à aujourd'hui*
 
 Conception et développement de [Cecil](https://cecil.app), un générateur de site statique simple et efficace.
 
