@@ -20,11 +20,11 @@ J’aime me définir comme un **facilitateur** : comprendre et aider mes clients
 **Mes centres d’intérêt** : je m’intéresse de prêt à la simplification et la performance des sites web, via une approche [progressive et découplée](https://jamstatic.fr) et à la [Jamstack](/tags/jamstack).  
 J’ai également conçu et développé un générateur de site statique : [Cecil](https://cecil.app).
 
-----
+## Expérience
 
-## Concepteur produit
+### Concepteur produit
 
-### [Aperture Lab](https://aperturelab.fr) – Indépendant – *juin 2020 à aujourd'hui*
+#### [Aperture Lab](https://aperturelab.fr) – Indépendant – *juin 2020 à aujourd'hui*
 
 - conception et développement de [Cecil](https://cecil.app), un générateur de site statique simple et efficace
 - administration et contribution au site [Jamstatic](https://jamstatic.fr)
@@ -32,11 +32,9 @@ J’ai également conçu et développé un générateur de site statique : [Ceci
 - création de [Staticast](https://staticast.netlify.app), une plateforme de publication de podcast
 - missions freelance de conseil et d'accompagnement sur la mise en place de solutions web, mobile et e-commerce
 
-----
+### Consultant technique senior (web, mobile & e-commerce)
 
-## Consultant technique senior (web, mobile & e-commerce)
-
-### [Adfab](https://adfab.fr) – *sept. 2015 à mars 2020*
+#### [Adfab](https://adfab.fr) – *sept. 2015 à mars 2020*
 
 J’ai été embauché par le studio de développement Adfab afin d’aider l’équipe commerciale à consolider la qualité des réponses aux appels d’offres.  
 J’ai ainsi réalisé des centaines de présentations (au format Apple Keynote, Microsoft PowerPoint et Google Slides) et leur estimation de charge (de développement) associée.
@@ -44,7 +42,7 @@ J’ai ainsi réalisé des centaines de présentations (au format Apple Keynote,
 Je me suis également impliqué dans l’amélioration des méthodes de travail, des outils et de la qualité, via la mise en place de modèles de document (présentation, chiffrage, wiki projet, etc.) et de process.  
 Je suis également intervenu, avec le directeur technique, sur l’accompagnement des développeurs à l’utilisation des outils (intégration et de déploiement continu).
 
-#### Quelques clients / projets
+##### Quelques clients / projets
 
 ***Du Côté de Chez Vous (Leroy Merlin)***
 
@@ -70,11 +68,9 @@ Avant-vente puis conception d’une application mobile ([React Native](/tags/rea
 
 Points d’attention : métier complexe, interfaces d’authentification et d’obtention des donnés, contrainte physiques fortes (connexion dégradée, mode hors-ligne), alertes push.
 
-----
+### Architecte IoT
 
-## Architecte IoT
-
-### [The Bubbles Company](https://bubbles-company.com) ([Dooh It](https://doohit.fr)) – *sept. 2014 à juin 2015*
+#### [The Bubbles Company](https://bubbles-company.com) ([Dooh It](https://doohit.fr)) – *sept. 2014 à juin 2015*
 
 Les Bubbles sont une solution de rechargement de batterie pour téléphone mobile, ayant pour objectif de faire du « drive to store » en offrant des contenus via l’écran LCD du modèle sécurisé et via l’application mobile.
 
@@ -86,11 +82,9 @@ D’autre part j’ai recruté l’équipe technique et identifié le potentiel 
 
 Technologies et outils : RabbitMQ, STOMP, Symfony, Bluetoouh, NFC, iBeacon, Wi-Fi, Web App, App mobile, géolocalisation, etc.
 
----
+### Consultant e-commerce & Chef de projet technique
 
-## Consultant e-commerce & Chef de projet technique
-
-### [Hermès](https://www.hermes.com) – *août 2012 à août 2014*
+#### [Hermès](https://www.hermes.com) – *août 2012 à août 2014*
 
 Pilotage technique des projets e-commerce du groupe Hermès.
 
@@ -115,11 +109,9 @@ Pilotage de la maintenance et des évolutions du site e-commerce Magento : activ
 
 Pilotage de la maintenance, des optimisations des performances et de la navigation produits du site e-commerce Magento.
 
-----
+### Consultant technique e-commerce, spécialiste Magento
 
-## Consultant technique e-commerce, spécialiste Magento
-
-### Baobaz – *juin 2009 à août 2012*
+#### Baobaz – *juin 2009 à août 2012*
 
 Référent fonctionnel et technique sur la plateforme e-commerce Magento (Enterprise et Community Edition) :
 
@@ -141,11 +133,9 @@ Suite de modules Magento pour les retailers et la mode :
 
 Zadig & Voltaire, The Kooples, Christian Louboutin, Jennyfer, Carré Blanc, Etam, 1-2-3, La Halle aux Chaussures, Burton of London.
 
-----
+### Lead Developper, spécialiste e-commerce
 
-## Lead Developper, spécialiste e-commerce
-
-### Baobaz – *juin 2007 à janv. 2010*
+#### Baobaz – *juin 2007 à janv. 2010*
 
 Analyse, conception fonctionnelle et technique, pilotage équipe de développement, gestion de projet technique, avant vente.
 
@@ -155,11 +145,9 @@ Spécialiste osCommerce et Magento.
 
 Repetto, Du Pareil au Même, Natalys, Marèse, Zadig & Voltaire, Texto.
 
-----
+### Lead Developper, spécialiste gestion de contenu
 
-## Lead Developper, spécialiste gestion de contenu
-
-### Stockho – *févr. 2005 à juin 2007*
+#### Stockho – *févr. 2005 à juin 2007*
 
 Analyse fonctionnelle et technique, gestion de projet technique, avant vente, TMA, expert Drupal.
 
