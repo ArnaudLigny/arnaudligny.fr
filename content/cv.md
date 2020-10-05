@@ -13,7 +13,7 @@ typora-root-url: ../../static
 Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web, mobile, e-commerce (et IoT).  
 En 15 ans j’ai apporté mon expertise sur des projets de startup, de maisons de luxe, de prêt à porter et de grandes marques telles que Libeo, Brigad, Hermès, Christian Louboutin, Repetto, Zadig & Voltaire, Etam, The Kooples, Du Pareil au Même, Leroy Merlin, Saint-Maclou, Ducray.
 
-J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leur besoin; imaginer l'approche technique la plus adopatée; faire le lien entre les équipes métiers, la DSI et les développeurs; suivre la qualité et les méthodes de travail.
+> J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leur besoin; imaginer l'approche technique la plus adaptée; faire le lien entre les équipes métiers, la DSI et les développeurs; suivre la qualité et les méthodes de travail.
 
 **Mes compétences** : avant-vente, conception fonctionnelle et technique, prototypage, accompagnement des équipes de production, méthodes agiles, qualité et méthodes.
 
@@ -48,25 +48,25 @@ Je suis également intervenu, avec le directeur technique, sur l’accompagnemen
 
 Avant-vente, accompagnement, conseils techniques et pilotage de la réalisation de la refonte du site web.
 
-Points d’attention : site statique généré et déployé de manière atomique, CMS headless [Contentful](https://www.contentful.com).
+> Points d’attention : site statique généré et déployé de manière atomique, CMS headless [Contentful](https://www.contentful.com).
 
 ***Brigad Planning (web app et app mobile)***
 
 Pilotage complet du projet « spin-off » *Planning* de la startup [Brigad](https://brigad.co) avec une équipe de 4 développeurs, et en relation directe avec le fondateur.
 
-Points d’attention : délais court, méthodologie Agile, démo client chaque semaine en visio.
+> Points d’attention : délais court, méthodologie Agile, démo client chaque semaine en visio.
 
 ***Saint Maclou (e-commerce)***
 
 Pilotage complet du projet de refonte complet du site e-commerce Saint-Maclou.com, sur [Magento](/tags/magento), en partenariat avec l’agence [5ème Gauche](http://www.5emegauche.com).
 
-Points d’attention : budget développement serré, optimisation des performances, outil d’aide au choix, outil de calcul de surface, connecteur CRM, store locator, déploiement continu.
+> Points d’attention : budget développement serré, optimisation des performances, outil d’aide au choix, outil de calcul de surface, connecteur CRM, store locator, déploiement continu.
 
 ***Tereos (app mobile)***
 
 Avant-vente puis conception d’une application mobile ([React Native](/tags/react-native)) visant à fournir un ensemble d’outils aux planteurs (Betterave sucrière).
 
-Points d’attention : métier complexe, interfaces d’authentification et d’obtention des donnés, contrainte physiques fortes (connexion dégradée, mode hors-ligne), alertes push.
+> Points d’attention : métier complexe, interfaces d’authentification et d’obtention des donnés, contrainte physiques fortes (connexion dégradée, mode hors-ligne), alertes push.
 
 ### Architecte IoT
 
@@ -78,9 +78,9 @@ J’ai réalisé la conception, le prototypage du socle technique (hardware et s
 
 J’ai notamment travaillé avec les ingénieurs de [Canon Bretagne](https://www.canon-bretagne.fr) sur les aspects matériels et électroniques et avec [Ova Design](http://ovadesign.com) sur la conception ergonomique des Bubbles.
 
-D’autre part j’ai recruté l’équipe technique et identifié le potentiel prestataire en charge de la réalisation des applications mobiles.
+D’autre part j’ai recruté l’équipe technique et identifié les potentiels prestataires en charge de la réalisation des applications mobiles.
 
-Technologies et outils : RabbitMQ, STOMP, Symfony, Bluetoouh, NFC, iBeacon, Wi-Fi, Web App, App mobile, géolocalisation, etc.
+> Technologies et outils : RabbitMQ, STOMP, Symfony, Bluetoouh, NFC, iBeacon, Wi-Fi, Web App, App mobile, géolocalisation, etc.
 
 ### Consultant e-commerce & Chef de projet technique
 
@@ -129,9 +129,7 @@ Suite de modules Magento pour les retailers et la mode :
 - Pilotage de l’équipe de développement
 - Modules principaux : Silhouette, Dressing, Wishlist soldes, Promotions, Newsletter, Store locator, Checkout, Antifraude, SAV Ticketing, RMA, Carreer, Click and collect, SEO
 
-***Clients***
-
-Zadig & Voltaire, The Kooples, Christian Louboutin, Jennyfer, Carré Blanc, Etam, 1-2-3, La Halle aux Chaussures, Burton of London.
+> Clients : Zadig & Voltaire, The Kooples, Christian Louboutin, Jennyfer, Carré Blanc, Etam, 1-2-3, La Halle aux Chaussures, Burton of London.
 
 ### Lead Developper, spécialiste e-commerce
 
@@ -141,9 +139,7 @@ Analyse, conception fonctionnelle et technique, pilotage équipe de développeme
 
 Spécialiste osCommerce et Magento.
 
-***Clients***
-
-Repetto, Du Pareil au Même, Natalys, Marèse, Zadig & Voltaire, Texto.
+> Clients : Repetto, Du Pareil au Même, Natalys, Marèse, Zadig & Voltaire, Texto.
 
 ### Lead Developper, spécialiste gestion de contenu
 
@@ -153,9 +149,7 @@ Analyse fonctionnelle et technique, gestion de projet technique, avant vente, TM
 
 Pilotage du pôle PHP, maintenance et évolution du CMS interne (EasyBao, un générateur de site statique performant et sécurisé).
 
-***Clients***
-
-DHL, Bergerat Monnoyeur, CUC / Abix, NewWorks, Beryl, M6, France Télévisions, Pièces Jaunes, etc.
+> Clients : DHL, Bergerat Monnoyeur, CUC / Abix, NewWorks, Beryl, M6, France Télévisions, Pièces Jaunes, etc.
 
 *[DAM]: Digital Asset Management
 *[DSI]: Direction des Services Informatiques
@@ -163,3 +157,8 @@ DHL, Bergerat Monnoyeur, CUC / Abix, NewWorks, Beryl, M6, France Télévisions, 
 *[ESB]: Enterprise Service Bus
 *[TMA]: Tierce Maintenance Applicative
 *[CRM]: Customer Relationship Management
+*[SEO]: Search Engine Optimisation
+*[RMA]: Return Merchandise Authorization
+*[PIM]: Product Information Management
+*[AMOA]: Assistance à la maîtrise d'ouvrage
+*[IoT]: Internet of Things
