@@ -9,7 +9,7 @@ published: true
 ---
 # Hello, je suis Arnaud.
 
-J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leur besoin; imaginer l'approche technique la plus adopatée; faire le lien entre les équipes métiers, la DSI et les développeurs; suivre la qualité et les méthodes de travail.
+> J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leur besoin; imaginer l'approche technique la plus adaptée; faire le lien entre les équipes métiers, la DSI et les développeurs; suivre la qualité et les méthodes de travail.
 
 **Mes compétences** : avant-vente, conception fonctionnelle et technique, prototypage, accompagnement des équipes de production, méthodes agiles, qualité et méthodes.
 
