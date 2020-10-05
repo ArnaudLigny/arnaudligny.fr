@@ -2,24 +2,19 @@
 title: Consultant technique senior
 date: 2020-09-22
 updated: 2020-10-05
-published: true
+intro: |
+  > Hello, je suis [Arnaud Ligny](https://arnaudligny.fr), consultant technique web, mobile & e-commerce.
+
+  Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web, mobile, e-commerce (et IoT).  
+  En 15 ans j’ai apporté mon expertise sur des projets de startup, de maisons de luxe, de prêt à porter et de grandes marques telles que Libeo, Brigad, Hermès, Christian Louboutin, Repetto, Zadig & Voltaire, Etam, The Kooples, Du Pareil au Même, Leroy Merlin, Saint-Maclou, Ducray.
+
+  *[IoT]: Internet of Things
 menu: main
+layout: cv
+output: [html, json]
+published: true
 typora-root-url: ../../static
 ---
-<img src="/logo-300.jpg" width="150" height="150" class="profile-picture" alt="Photo de profil d'Arnaud Ligny" />
-
-> Hello, je suis [Arnaud Ligny](https://arnaudligny.fr), consultant technique web, mobile & e-commerce.
-
-Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web, mobile, e-commerce (et IoT).  
-En 15 ans j’ai apporté mon expertise sur des projets de startup, de maisons de luxe, de prêt à porter et de grandes marques telles que Libeo, Brigad, Hermès, Christian Louboutin, Repetto, Zadig & Voltaire, Etam, The Kooples, Du Pareil au Même, Leroy Merlin, Saint-Maclou, Ducray.
-
-> J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leur besoin; imaginer l'approche technique la plus adaptée; faire le lien entre les équipes métiers, la DSI et les développeurs; suivre la qualité et les méthodes de travail.
-
-**Mes compétences** : avant-vente, conception fonctionnelle et technique, prototypage, accompagnement des équipes de production, méthodes agiles, qualité et méthodes.
-
-**Mes centres d’intérêt** : je m’intéresse de prêt à la simplification et la performance des sites web, via une approche [progressive et découplée](https://jamstatic.fr) et à la [Jamstack](/tags/jamstack).  
-J’ai également conçu et développé un générateur de site statique : [Cecil](https://cecil.app).
-
 ## Expérience
 
 ### Concepteur produit
