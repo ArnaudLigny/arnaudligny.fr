@@ -4,22 +4,26 @@
 {{- parent() ~}}
     <!-- style enhancements -->
     <style>{% apply minify_css %}
+      /* accessibility */
       .nav {
         padding: inherit;
       }
       .list .item {
         padding: inherit;
       }
-      @media print {
-        header, footer {
-          display: none;
-        }
-      }
+      /* CV */
       .profile-picture {
         float: right;
         border-radius: 5%;
         overflow: hidden;
         margin: 1rem !important;
+      }
+      @media print {
+        header, footer {
+          display: none;
+        }
+        abbr[title] {
+          text-decoration: none;
       }
     {% endapply %}</style>
     <!-- dark mode -->
