@@ -2,7 +2,8 @@
 
 {% block content %}
         <article class="page typeset">
-          {{ page.content }}
+          <h1>{{ page.title }}</h1>
+          {{- page.content ~}}
         </article>
 {% include 'partials/lastposts.html.twig' %}
 {% endblock content %}

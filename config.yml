@@ -11,6 +11,9 @@ keywords:
  - IoT
 menus:
   main:
+    - id: index
+      name: Accueil
+      weight: 0
     - id: cv
       name: CV
       weight: 1
