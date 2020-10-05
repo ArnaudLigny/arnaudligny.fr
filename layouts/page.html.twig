@@ -11,6 +11,14 @@
       .list .item {
         padding: inherit;
       }
+      /* print */
+      @media print {
+        header, footer {
+          display: none;
+        }
+        abbr[title] {
+          text-decoration: none;
+      }
       /* CV */
       .profile-picture {
         float: right;
@@ -22,13 +30,6 @@
         .profile-picture {
           display: none!important;
         }
-      }
-      @media print {
-        header, footer {
-          display: none;
-        }
-        abbr[title] {
-          text-decoration: none;
       }
     {% endapply %}</style>
     <!-- dark mode -->
