@@ -6,6 +6,7 @@ tags:
   - SSG
   - Cecil
 image: /images/staticast/staticast-preview.png
+image_header: false
 published: true
 typora-root-url: ../../static
 ---
