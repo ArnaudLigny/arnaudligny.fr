@@ -17,6 +17,7 @@ Ci-dessous une [courte vidéo](/videos/cecil-apercu-sur-mobile.mp4) expliquant c
 2. générer et servir le site via cette adresse : `cecil serve --host=192.168.X.Y`
 3. ouvrir l’adresse du serveur sur le téléphone mobile : `http://192.168.X.Y:8000`
 <!-- break -->
+
 <video controls>
   <source src="/videos/cecil-apercu-sur-mobile.mp4" type="video/mp4">
 </video>
