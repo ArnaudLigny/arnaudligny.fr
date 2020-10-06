@@ -6,6 +6,7 @@ tags:
   - SSG
   - Cecil
 image: /images/projets/cecil-demo.gif
+image_header: false
 draft: false
 typora-root-url: ../../static
 ---
