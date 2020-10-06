@@ -6,6 +6,7 @@ tags:
   - Développement
   - SSG
 image: /images/cecil-mobile-preview-banner.png
+image_header: false
 draft: false
 typora-root-url: ../../static
 ---
