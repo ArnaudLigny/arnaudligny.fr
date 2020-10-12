@@ -1,6 +1,6 @@
 ---
 title: "Magento : un projet e-commerce à suivre !"
-date: 25-08-2007
+date: 2007-08-25
 tags:
   - e-commerce
   - Magento
