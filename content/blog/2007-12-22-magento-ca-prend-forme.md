@@ -1,6 +1,6 @@
 ---
 title: "Magento : ça prend forme !"
-date: 22-12-2007
+date: 2007-12-22
 tags:
   - e-commerce
   - Magento
