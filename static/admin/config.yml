@@ -32,7 +32,7 @@ collections:
       - {label: "Texte", name: "body", widget: markdown}
       - {label: "Tags", name: "tags", widget: list, required: false}
       - {label: "Brouillon", name: "draft", widget: boolean, default: true, required: true}
-    summary: "{{title}} | {{date}}"
+    summary: "{{title}} – {{date}}"
     sortable_fields: ['title', 'date']
     view_filters:
       - label: 'Publié en 2020'
