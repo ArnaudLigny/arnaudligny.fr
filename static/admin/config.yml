@@ -6,7 +6,10 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "static/images"
 public_folder: "/images"
+site_url: https://arnaudligny.fr
 display_url: https://arnaudligny.fr
+logo_url: https://arnaudligny.fr/logo.jpg
+locale: 'fr'
 show_preview_links: true
 slug:
   encoding: "ascii"
@@ -29,6 +32,15 @@ collections:
       - {label: "Texte", name: "body", widget: markdown}
       - {label: "Tags", name: "tags", widget: list, required: false}
       - {label: "Brouillon", name: "draft", widget: boolean, default: true, required: true}
+    summary: "Version: {{version}} - {{title}}"
+    sortable_fields: ['title', 'date']
+    view_filters:
+      - label: 'Posts published in 2020'
+        field: date
+        pattern: '2020'
+      - label: Drafts
+        field: draft
+        pattern: true
   - name: "pages"
     label: "Pages"
     label_singular: "Page"

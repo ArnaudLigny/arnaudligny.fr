@@ -1,6 +1,7 @@
+import CMS from 'netlify-cms-app';
+import { fr } from 'netlify-cms-locales';
 import Post from '/admin/templates/post.js'
 
-//CMS.registerPreviewStyle('/css/style.css');
+CMS.registerLocale('fr', fr);
 CMS.registerPreviewStyle('/styles.min.css');
-
-CMS.registerPreviewTemplate('billets', PostPreview);
+CMS.registerPreviewTemplate('billets', Post);

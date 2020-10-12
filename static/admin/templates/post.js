@@ -1,4 +1,4 @@
-const PostPreview = createClass({
+const Post = createClass({
   render() {
     const entry = this.props.entry;
     const date = entry.getIn(['data', 'date']);
@@ -27,4 +27,4 @@ const PostPreview = createClass({
   }
 });
 
-export default PostPreview
+export default Post
