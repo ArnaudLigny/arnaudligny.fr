@@ -1,7 +1,7 @@
 const Post = createClass({
   render() {
     const entry = this.props.entry;
-    const date = entry.getIn(['data', 'date']);
+    let date = entry.getIn(['data', 'date']);
     const image = entry.getIn(['data', 'image']);
     //const bg = this.props.getAsset(image);
     const tags = entry.getIn(['data', 'tags']);
