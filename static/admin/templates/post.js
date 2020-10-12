@@ -3,7 +3,7 @@ const Post = createClass({
     const entry = this.props.entry;
     const date = entry.getIn(['data', 'date']);
     const image = entry.getIn(['data', 'image']);
-    const bg = this.props.getAsset(image);
+    //const bg = this.props.getAsset(image);
     const tags = entry.getIn(['data', 'tags']);
     try {
       date = date.toLocaleDateString('fr-FR', {year:'numeric', month:'short', day:'numeric'});
@@ -15,7 +15,7 @@ const Post = createClass({
       h('div', {"className": "post-meta"},
         h('span', {"className": "post-date"}, date)
       ),
-      bg ? h('img', {src: bg.toString()}) : null,
+      //bg ? h('img', {src: bg.toString()}) : null,
       this.props.widgetFor('body'),
       tags ? tags.map(function(value) {
         return h('span', {},
