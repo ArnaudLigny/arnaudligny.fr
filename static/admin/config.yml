@@ -8,7 +8,7 @@ media_folder: "static/images"
 public_folder: "/images"
 site_url: https://arnaudligny.fr
 display_url: https://arnaudligny.fr
-logo_url: https://arnaudligny.fr/logo.jpg
+#logo_url: https://arnaudligny.fr/logo.jpg
 locale: 'fr'
 show_preview_links: true
 slug:
