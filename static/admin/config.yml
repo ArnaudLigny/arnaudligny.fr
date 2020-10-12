@@ -20,7 +20,7 @@ collections:
     label: "Billets"
     label_singular: "Billet"
     description: >
-      Billets (de blog), listés dans la section 'Blog' et dans le flux RSS.
+      Billets listés dans la section 'Blog' et dans le flux RSS.
     folder: "content/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -45,7 +45,7 @@ collections:
     label: "Pages"
     label_singular: "Page"
     description: >
-      Pages "simple" du site : Accueil, À propos, etc.
+      Pages du site (Accueil, À propos, etc.).
     preview_path: "{{title}}"
     files:
       - name: "code"
