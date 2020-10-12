@@ -48,13 +48,6 @@ collections:
       Pages du site (Accueil, À propos, etc.).
     preview_path: "{{title}}"
     files:
-      - name: "code"
-        label: "Code"
-        file: "content/code.md"
-        delete: false
-        fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "redirect.html"}
-          - {label: "Redirection", name: "destination", widget: string}
       - name: "a-propos"
         label: "À propos"
         file: "content/a-propos.md"
