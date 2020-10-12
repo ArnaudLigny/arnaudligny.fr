@@ -35,10 +35,10 @@ collections:
     summary: "{{title}} | {{date}}"
     sortable_fields: ['title', 'date']
     view_filters:
-      - label: 'Posts published in 2020'
+      - label: 'Publié en 2020'
         field: date
         pattern: '2020'
-      - label: Drafts
+      - label: Brouillons
         field: draft
         pattern: true
   - name: "pages"
