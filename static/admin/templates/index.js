@@ -1,5 +1,5 @@
-import CMS from 'netlify-cms-app';
-import { fr } from 'netlify-cms-locales';
+//import CMS from 'netlify-cms-app';
+//import { fr } from 'netlify-cms-locales';
 import Post from '/admin/templates/post.js'
 
 CMS.registerLocale('fr', fr);
