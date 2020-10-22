@@ -44,25 +44,25 @@ Je suis également intervenu, avec le directeur technique, sur l’accompagnemen
 
 ##### Quelques clients / projets
 
-***Du Côté de Chez Vous (Leroy Merlin)***
+###### *Du Côté de Chez Vous (Leroy Merlin)*
 
 Avant-vente, accompagnement, conseils techniques et pilotage de la réalisation de la refonte du site web.
 
 > Points d’attention : site statique généré et déployé de manière atomique, CMS headless [Contentful](https://www.contentful.com).
 
-***Brigad Planning (web app et app mobile)***
+###### *Brigad Planning (web app et app mobile)*
 
 Pilotage complet du projet « spin-off » *Planning* de la startup [Brigad](https://brigad.co) avec une équipe de 4 développeurs, et en relation directe avec le fondateur.
 
 > Points d’attention : délais court, méthodologie Agile, démo client chaque semaine en visio.
 
-***Saint Maclou (e-commerce)***
+###### *Saint Maclou (e-commerce)*
 
 Pilotage complet du projet de refonte complet du site e-commerce Saint-Maclou.com, sur [Magento](/tags/magento), en partenariat avec l’agence [5ème Gauche](http://www.5emegauche.com).
 
 > Points d’attention : budget développement serré, optimisation des performances, outil d’aide au choix, outil de calcul de surface, connecteur CRM, store locator, déploiement continu.
 
-***Tereos (app mobile)***
+###### *Tereos (app mobile)*
 
 Avant-vente puis conception d’une application mobile ([React Native](/tags/react-native)) visant à fournir un ensemble d’outils aux planteurs (Betterave sucrière).
 
