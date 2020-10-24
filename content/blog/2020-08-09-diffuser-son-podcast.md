@@ -1,6 +1,7 @@
 ---
 title: "Diffuser son podcast simplement"
 date: 2020-08-10
+updated: 2020-10-24
 tags:
   - Podcast
   - SSG
@@ -11,27 +12,31 @@ published: true
 typora-root-url: ../../static
 ---
 
-Pendant le confinement j’ai écouté de nombreux podcasts divers et variés, depuis mon ordinateur, et j’ai constaté que la plupart des podcasteurs diffusaient leurs épisodes selon l’une des 2 manières suivantes :
+Pendant le confinement j’ai écouté de nombreux podcasts divers et variés (depuis mon ordinateur ou mon smartphone) et j’ai constaté que la plupart des podcasteurs diffusaient leurs épisodes selon l’une des 2 manières suivantes :
 
 1. en auto-hébergé via un site [WordPress](https://fr.wordpress.com) équipé d’un plugin dédié (tel que [PowerPress](https://wordpress.org/plugins/powerpress/) ou encore [Seriously Simple Podcast](https://wordpress.org/plugins/seriously-simple-podcasting/)) : type de contenu dédié + lecteur « amélioré »
-2. via une plateforme de diffusion/hébergement dédiée ([Ausha](https://fr.ausha.co), [podCloud](https://podcloud.fr/pricing), etc.) : facilité d’utilisation, nombreux services, mais captif.
+2. via une plateforme de diffusion / hébergement dédiée (ex : [Ausha](https://fr.ausha.co), [podCloud](https://podcloud.fr/pricing), etc.) : facilité d’utilisation, nombreux services, mais captif.
 
 Aussi, je me suis dis que ça pourrait être intéressant de proposer une solution alternative !
 <!-- break -->
 
 ## L'idée
 
-Cette solution aurait pour objectif d’être auto-hébergeable (ou plutôt : que l’on peut héberger sur le serveur web de son choix et qui puisse être migrée sans trop d'efforts), simple à contribuer (déposer le fichier audio de l’épisode + rédiger la description) et qui génère automatique un flux [RSS](https://fr.m.wikipedia.org/wiki/RSS) contenant les balises spécifiques au [podcasting](https://fr.m.wikipedia.org/wiki/Podcasting).
+Cette solution aurait pour objectifs :
+
+1. d’être auto-hébergée (ou plutôt : que l’on puisse l’héberger sur le serveur web de son choix et qu’elle puisse être migrée avec peu d'efforts)
+2. d’être simple à contribuer (déposer le fichier audio de l’épisode + rédiger la description)
+3. de générer automatique le flux [RSS](https://fr.m.wikipedia.org/wiki/RSS) contenant les balises spécifiques au [podcasting](https://fr.m.wikipedia.org/wiki/Podcasting).
 
 ## Concrétisation
 
-Étant moi-même intéressé par les solutions « [statiques](https://arnaudligny.fr/talks/le-statique-c-est-fantastique/) », en particulier via [Cecil](https://arnaudligny.fr/tags/cecil/) ([mon générateur de site statique](https://arnaudligny.fr/blog/cecil-mon-generateur-de-site-statique/)) j’ai entrepris pendant le confinement de créer un template « clef en main » permettant de créer rapidement un site web de diffusion de podcast : [***Staticast***](https://github.com/Cecilapp/staticast).
+Étant moi-même intéressé par les solutions « [statiques](https://arnaudligny.fr/talks/le-statique-c-est-fantastique/) », en particulier via [Cecil](https://arnaudligny.fr/tags/cecil/) ([mon générateur de site statique](https://arnaudligny.fr/blog/cecil-mon-generateur-de-site-statique/)) j’ai entrepris – pendant le confinement – de créer un template « clef en main » permettant de créer rapidement un site web de diffusion de podcast : [***Staticast***](https://github.com/Cecilapp/staticast#readme).
 
 <video autoplay loop muted>
   <source src="/images/staticast/staticast-demo.mp4" type="video/mp4">
 </video>
 
-> [Le site de démonstration](https://staticast.netlify.app)
+> [Voir le site de démo](https://staticast.cecil.app)
 
 ## Le principe
 
@@ -72,3 +77,7 @@ Une fois satisfait du résultat localement, il ne reste plus qu'à publier le si
 Et voilà ! 🍾
 
 Bien entendu [***Staticast***](https://github.com/Cecilapp/staticast) nécessite de devoir mettre un peu les mains dans le cambouis, mais rien d'insurmontable. Et surtout, une fois l'étape d'installation réalisée, l'utilisation au quotidien est très simple !
+
+> **Mise à jour d’octobre**  
+> J’ai ajouté la possibilité de créer un nouveau projet Staticast hébergé par Netlify et fournissant un CMS par défaut :  
+> [![Deployer sur Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Cecilapp/staticast&stack=cms)
