@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd9e28b7402c5fb80777623512a5797d",
+    "content-hash": "e15f8460ceb5e0b5d89cd93c790fcabd",
     "packages": [
         {
             "name": "cecil/theme-garth",
@@ -96,6 +96,48 @@
                 "themes"
             ],
             "time": "2018-11-21T14:35:40+00:00"
+        },
+        {
+            "name": "cecil/theme-netlify",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cecilapp/theme-netlify.git",
+                "reference": "0038fa19ac3102edb9b722fd7cb5d04eaf8fb2d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cecilapp/theme-netlify/zipball/0038fa19ac3102edb9b722fd7cb5d04eaf8fb2d0",
+                "reference": "0038fa19ac3102edb9b722fd7cb5d04eaf8fb2d0",
+                "shasum": ""
+            },
+            "require": {
+                "cecil/theme-installer": "^1.3"
+            },
+            "type": "cecil-theme",
+            "extra": {
+                "name": "netlify",
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Cecil component theme Netlify",
+            "keywords": [
+                "cecil",
+                "netlify",
+                "theme"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/narno",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-10-19T14:33:45+00:00"
         },
         {
             "name": "cecil/theme-serviceworker",

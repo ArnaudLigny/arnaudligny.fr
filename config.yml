@@ -44,10 +44,6 @@ languages:
     name: Français
     locale: fr_FR
 output:
-  formats:
-    - name: netlify_redirects
-      mediatype: text/plain
-      extension: ''
   pagetypeformats:
     section: ['html', 'atom', 'rss', 'json']
 defaultpages:
@@ -64,8 +60,6 @@ virtualpages:
     redirect: blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/
   - path: blog/t-l-charger-manuellement-une-extension-magento
     redirect: blog/telecharger-manuellement-une-extension-magento/
-  - path: _redirects
-    output: netlify_redirects
 googleanalytics: UA-30599234-2
 source: https://github.com/Narno/arnaudligny.fr/edit/master/content/
 comments: false
@@ -78,6 +72,7 @@ editor: typora
 theme:
   - garth
   - serviceworker
+  - netlify
 logo: logo.jpg
 image: logo.jpg
 manifest:
@@ -99,3 +94,9 @@ serviceworker:
     - logo-512.webp
   notification:
     enabled: false
+netlify:
+  redirects:
+    - from: https://arnaudligny.netlify.com/*
+      to: https://arnaudligny.fr/:splat
+      status: 301
+      force: true
