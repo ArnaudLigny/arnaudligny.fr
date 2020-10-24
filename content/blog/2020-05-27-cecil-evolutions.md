@@ -4,6 +4,8 @@ date: 2020-05-27
 tags:
   - Cecil
   - SSG
+image: /images/cecil-card.png
+image_header: false
 published: true
 typora-root-url: ../../static
 ---
