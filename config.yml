@@ -29,23 +29,22 @@ author:
   firstname: Arnaud
   lastname: Ligny
   email: arnaud[AROBASE]ligny[POINT]fr
-#  username: Narno
   job: Consultant technique
   cv: CV_ArnaudLigny-2016.pdf
   statut: En poste
-#social:
-#  twitter: ArnaudLigny
-#  github: Narno
-#  linkedin: arnaudligny
-#  facebook_id: 516589570
 social:
   facebook:
     id: 516589570
     firstname: Arnaud
     lastname: Ligny
-    username: ArnaudLigny
+    username: Narno
   twitter:
-    site: Narno
+    site: ArnaudLigny
+    creator: ArnaudLigny
+  github:
+    username: Narno
+  linkedin:
+    username: arnaudligny
 language: fr
 languages:
   - code: fr
