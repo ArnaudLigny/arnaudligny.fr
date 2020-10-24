@@ -5,7 +5,7 @@ tags:
   - Développement
   - SSG
   - Cecil
-image: /images/projets/cecil-demo.gif
+image: /images/cecil-card.png
 image_header: false
 draft: false
 typora-root-url: ../../static
