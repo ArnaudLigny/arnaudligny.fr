@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cecil/theme-garth",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-garth.git",
-                "reference": "48b605afa018c9aebe1a17454191d4ef4210c0a5"
+                "reference": "502c1a529d5679d369e207709c751d20c250ef01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-garth/zipball/48b605afa018c9aebe1a17454191d4ef4210c0a5",
-                "reference": "48b605afa018c9aebe1a17454191d4ef4210c0a5",
+                "url": "https://api.github.com/repos/Cecilapp/theme-garth/zipball/502c1a529d5679d369e207709c751d20c250ef01",
+                "reference": "502c1a529d5679d369e207709c751d20c250ef01",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-09-19T20:53:47+00:00"
+            "time": "2020-11-01T23:09:47+00:00"
         },
         {
             "name": "cecil/theme-installer",
@@ -99,16 +99,16 @@
         },
         {
             "name": "cecil/theme-netlify",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-netlify.git",
-                "reference": "0038fa19ac3102edb9b722fd7cb5d04eaf8fb2d0"
+                "reference": "dcdfd2ecdcd5ed9f6c7d7bcd5f82d5a8aacfca58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-netlify/zipball/0038fa19ac3102edb9b722fd7cb5d04eaf8fb2d0",
-                "reference": "0038fa19ac3102edb9b722fd7cb5d04eaf8fb2d0",
+                "url": "https://api.github.com/repos/Cecilapp/theme-netlify/zipball/dcdfd2ecdcd5ed9f6c7d7bcd5f82d5a8aacfca58",
+                "reference": "dcdfd2ecdcd5ed9f6c7d7bcd5f82d5a8aacfca58",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-10-19T14:33:45+00:00"
+            "time": "2020-10-25T00:23:45+00:00"
         },
         {
             "name": "cecil/theme-serviceworker",
