@@ -19,7 +19,7 @@ typora-root-url: ../../static
 
 ### Concepteur produit & Consultant technique freelance
 
-#### [Indépendant](https://aperturelab.fr) – *juin 2020 à aujourd'hui*
+#### [studio cecillie](https://studio.cecillie.fr) – *juin 2020 à aujourd'hui*
 
 ##### Produit
 
@@ -29,8 +29,8 @@ typora-root-url: ../../static
 
 ##### Freelance
 
+- missions de conseil et accompagnement technique à la mise en place de solutions web, mobile et e-commerce
 - administration et contribution au site [Jamstatic](https://jamstatic.fr)
-- missions de conseil et d'accompagnement sur la mise en place de solutions web, mobile et e-commerce
 
 ### Consultant technique senior (web, mobile & e-commerce)
 
