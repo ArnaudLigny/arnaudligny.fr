@@ -8,9 +8,9 @@ php cecil.phar --version
 
 echo "Started Cecil build"
 if [[ $1 == "preview" ]]; then
-  php cecil.phar build -v --baseurl=$DEPLOY_PRIME_URL --drafts || { sleep 30; false; }
+  php cecil.phar build -vv --baseurl=$DEPLOY_PRIME_URL --drafts || { sleep 30; false; }
 else
-  php cecil.phar build -v --baseurl=$URL --postprocess
+  php cecil.phar build -vv --baseurl=$URL --postprocess
 fi
 
 # build success? can deploy?
