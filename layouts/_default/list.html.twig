@@ -19,7 +19,7 @@
             <li class="item item--page">
               <article class="page typeset">
                 <h2><a href="{{ url(p) }}">{{ p.title }}</a></h2>
-                {{ p.content|excerptHtml }}
+                {{ p.content|excerpt_html }}
               </article>
             </li>
 {% endfor %}
