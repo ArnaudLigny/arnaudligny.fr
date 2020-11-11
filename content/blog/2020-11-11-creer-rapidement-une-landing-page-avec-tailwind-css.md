@@ -88,7 +88,7 @@ module.exports = {
 Tailwind CSS est vraiment très facile à prendre en main, intuitif, pour un résultat qualitatif en quelques heures.  
 J’imagine que certains puristes trouverons l’approche trop dirigiste et uniforme (en terme de rendu) mais retenez que Tailwind CSS est un outil « d’industrialisation » qui tend vers l’efficacité avant tout.
 
-Enfin, afin d’illustrer mon propos je vous invite à regarder le résultat via le [mini-site de ***The Butler***](https://the-butler.cecil.app/) (ma solution permettant de créer un blog en 1 minute grâce à [Cecil](https://cecil.app/) et [Netlify](https://www.netlify.com/)).
+Enfin, afin d’illustrer mon propos je vous invite à regarder un exemple de résultat via la [landing page de ***The Butler***](https://the-butler.cecil.app/) (ma solution permettant de créer un blog en 1 minute grâce à [Cecil](https://cecil.app/) et [Netlify](https://www.netlify.com/)).
 
 J’en ai d’ailleurs fait un thème « clef en main » pour [Cecil](https://cecil.app/) (mon générateur de site statique), disponible sur GitHub : [github.com/Cecilapp/theme-applanding](https://github.com/Cecilapp/theme-applanding#readme).
 
