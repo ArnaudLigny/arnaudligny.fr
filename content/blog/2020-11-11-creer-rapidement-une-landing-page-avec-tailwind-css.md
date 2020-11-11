@@ -81,7 +81,7 @@ module.exports = {
 }
 ```
 
-> Note : pour forcer la purge en local il suffit d’ajouter le paramètre `enabled: true` à la configuration de la purge.
+> Note : pour forcer la purge en local il suffit d’ajouter le paramètre `enabled: true` à la configuration.
 
 ## Conclusion
 
