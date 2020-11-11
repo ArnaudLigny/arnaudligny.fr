@@ -7,7 +7,6 @@ tags:
 image: /images/tailwind-css.png
 image_header: false
 typora-root-url: ../../static
-draft: true
 ---
 
 Ça faisait plusieurs semaines que j'avais envie de créer des mini-sites (*landing pages*) dédiés à quelques-unes de mes solutions open-source.
