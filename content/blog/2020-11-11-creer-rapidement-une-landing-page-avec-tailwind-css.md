@@ -26,14 +26,14 @@ L’approche proposer par Tailwind CSS est de travailler avec des classes CSS pr
 
 Par exemple, pour centrer du texte dans une balise `div` il suffit de lui appliquer la classe `text-center`. Simple et intuitif.
 
-Néanmoins, ça devient un peu moins intuitif quand il faut se souvenir du « shortcut » de chacune de ces classes. Par exemple `-my-10` pour appliquer une marge négative de 40 pixels en haut et en bas.  
-Mais il existe des solutions telles que [*Tailwind Cheat Sheet*](https://nerdcave.com/tailwind-cheat-sheet) qui liste toutes les classes de manière très visuelle, et offre un moteur de recherche (ou plutôt de filtrage) très efficace.
+Néanmoins, ça devient un peu moins intuitif quand il faut se souvenir de « l’alias » de chacune de ces classes. Par exemple `-my-10` pour appliquer une marge négative de 40 pixels en haut et en bas.  
+Mais il existe des outils, tel que que [*Tailwind Cheat Sheet*](https://nerdcave.com/tailwind-cheat-sheet) qui liste toutes les classes de manière très visuelle, et offre un moteur de recherche (ou plutôt de filtrage) très efficace.
 
 ![Tailwind Cheat Sheet](/images/2020-11-11-creer-rapidement-une-landing-page-avec-tailwind-css/image-20201111221533370.png)
 
 De plus, pour « jouer » avec les breakpoints il suffit d’ajouter le préfixe adéquate à la classe cible.
 
-Par exemple `p-2 md:p-4` appliquera un `padding-top` de 0.5rem par défaut et de 1rem à partir d’une largeur d’écran de 768px.
+Par exemple `pt-2 md:pt-4` appliquera un `padding-top` de 0.5rem par défaut et de 1rem à partir d’une largeur d’écran de 768px.
 
 ## En pratique
 
