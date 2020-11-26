@@ -61,6 +61,9 @@ defaultpages:
 virtualpages:
   - path: code
     redirect: https://github.com/Narno
+  - path: tw
+    redirect: https://twitter.com/ArnaudLigny
+  # old URL
   - path: blog/work-in-progress
     redirect: /
   - path: blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento
