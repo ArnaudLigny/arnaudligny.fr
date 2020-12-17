@@ -7,7 +7,7 @@ fi
 php cecil.phar --version
 
 echo "Started Cecil build"
-if [[ $1 == "preview" ]]; then
+if [[ $CECIL_ENV != "production" ]]; then
   php cecil.phar build -vv --baseurl=$DEPLOY_PRIME_URL --drafts || { sleep 30; false; }
 else
   php cecil.phar build -vv --baseurl=$URL --postprocess
