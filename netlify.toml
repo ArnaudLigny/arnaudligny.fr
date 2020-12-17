@@ -1,9 +1,11 @@
 [build]
-  command = "chmod +x .netlify/build.sh && bash .netlify/build.sh"
   publish = "_site"
+  command = "chmod +x .netlify/build.sh && bash .netlify/build.sh"
+[build.environment]
+  CECIL_ENV = "production"
 
-[context.deploy-preview]
-  command = "chmod +x .netlify/build.sh && bash .netlify/build.sh preview"
+[context.deploy-preview.environment]
+  CECIL_ENV = "preview"
 
-[context.branch-deploy]
-  command = "chmod +x .netlify/build.sh && bash .netlify/build.sh preview"
+[context.branch-deploy.environment]
+  CECIL_ENV = "branch"
