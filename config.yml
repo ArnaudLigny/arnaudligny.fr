@@ -52,7 +52,7 @@ languages:
     locale: fr_FR
 output:
   pagetypeformats:
-    section: ['html', 'atom', 'rss', 'json']
+    section: ['html', 'atom', 'json']
 defaultpages:
   sitemap:
     published: true
