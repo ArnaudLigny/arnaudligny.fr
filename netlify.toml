@@ -3,6 +3,7 @@
   command = "chmod +x .netlify/build.sh && bash .netlify/build.sh"
 [build.environment]
   CECIL_ENV = "production"
+  CECIL_CACHE_DIR = "/opt/build/cache/"
 
 [context.deploy-preview.environment]
   CECIL_ENV = "preview"
