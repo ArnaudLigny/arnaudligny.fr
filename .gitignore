@@ -3,6 +3,5 @@ cecil.phar
 .cecil/
 .cache/
 _site/
-# Netlify
-.netlify/
-opt/
+# Netlify cache
+opt/build/cache/
