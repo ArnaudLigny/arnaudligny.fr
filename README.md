@@ -5,18 +5,21 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5df6352b-ec80-455f-a6d8-059c176675c4/deploy-status)](https://app.netlify.com/sites/arnaudligny/deploys)
 
 ## Build and serve locally
+
 ```bash
 curl -SOL https://cecil.app/cecil.phar
 php cecil.phar serve
 ```
 
 ## HTML code analysis
+
 ```bash
 npm install htmlhint -g
 htmlhint _site
 ```
 
 ## Deploy with Netlify CLI
+
 ```bash
 cd _site
 npm install netlify-cli -g
