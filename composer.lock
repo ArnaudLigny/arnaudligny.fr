@@ -120,16 +120,16 @@
         },
         {
             "name": "cecil/theme-netlify",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-netlify.git",
-                "reference": "278118f2ee19e0e99d84c53fea0ba560279a72c6"
+                "reference": "757e2920a06eb9261356fe8911bb6566976de25d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-netlify/zipball/278118f2ee19e0e99d84c53fea0ba560279a72c6",
-                "reference": "278118f2ee19e0e99d84c53fea0ba560279a72c6",
+                "url": "https://api.github.com/repos/Cecilapp/theme-netlify/zipball/757e2920a06eb9261356fe8911bb6566976de25d",
+                "reference": "757e2920a06eb9261356fe8911bb6566976de25d",
                 "shasum": ""
             },
             "require": {
@@ -154,7 +154,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-netlify/issues",
-                "source": "https://github.com/Cecilapp/theme-netlify/tree/1.1.4"
+                "source": "https://github.com/Cecilapp/theme-netlify/tree/1.1.5"
             },
             "funding": [
                 {
@@ -166,7 +166,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-27T22:58:32+00:00"
+            "time": "2021-01-02T22:21:31+00:00"
         },
         {
             "name": "cecil/theme-serviceworker",
