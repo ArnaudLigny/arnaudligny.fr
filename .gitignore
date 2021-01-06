@@ -3,6 +3,6 @@ cecil.phar
 .cecil/
 .cache/
 _site/
-# Local Netlify folders
 .netlify
 opt/build/cache/
+node_modules/
