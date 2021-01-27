@@ -8,8 +8,9 @@
   },
   "scripts": {
     "serve": "cecil serve",
+    "serve-silent": "nohup cecil serve > cecil.log 2>&1 &",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --record --key fddd87b0-86c1-489a-9344-731527c894ee --spec 'cypress/integration/ali/**/*'",
-    "ci": "start-server-and-test serve http://localhost:8000 cypress:run"
+    "ci": "start-server-and-test serve-silent http://localhost:8000 cypress:run"
   }
 }
