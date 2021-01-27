@@ -1,8 +1,10 @@
-vendor/
+vendor
 cecil.phar
-.cecil/
-.cache/
-_site/
+.cecil
+.cache
+_site
 .netlify
-opt/build/cache/
-node_modules/
+opt/build/cache
+node_modules
+cypress/screenshots
+cypress/videos
