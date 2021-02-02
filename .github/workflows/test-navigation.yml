@@ -9,16 +9,16 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
+    - name: Download Cecil
+      run: |
+        curl -sSOL https://cecil.app/cecil.phar
+
     - name: Install theme(s)
       run: |
         if [[ -f "composer.json" ]]; then
           curl -sS https://getcomposer.org/installer | php
           php composer.phar install --prefer-dist --no-dev --no-progress --ansi
         fi
-
-    - name: Download Cecil
-      run: |
-        curl -sSOL https://cecil.app/cecil.phar
 
     - name: Use Node.js v12
       uses: actions/setup-node@v1
@@ -41,18 +41,11 @@ jobs:
         restore-keys: |
           cypress-${{ runner.os }}-cypress-
 
-    - name: Install dependencies and verify Cypress
+    - name: Install Cypress
       env:
         CI: 1
       run: |
         npm ci
-        npx cypress verify
-        npx cypress info
-        npx cypress version
-        npx cypress version --component package
-        npx cypress version --component binary
-        npx cypress version --component electron
-        npx cypress version --component node
 
     - name: Run Cypress tests
       run: npm run ci:record
