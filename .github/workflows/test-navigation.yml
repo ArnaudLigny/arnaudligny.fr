@@ -1,0 +1,61 @@
+name: Integration
+
+on: push
+
+jobs:
+  test-navigation:
+    name: Test navigation
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Use Node.js v12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+
+    - name: Cache node modules
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Cache Cypress binary
+      uses: actions/cache@v1
+      with:
+        path: ~/.cache/Cypress
+        key: cypress-${{ runner.os }}-cypress-${{ hashFiles('**/package.json') }}
+        restore-keys: |
+          cypress-${{ runner.os }}-cypress-
+
+    - name: install dependencies and verify Cypress
+      env:
+        CI: 1
+      run: |
+        npm ci
+        npx cypress verify
+        npx cypress info
+        npx cypress version
+        npx cypress version --component package
+        npx cypress version --component binary
+        npx cypress version --component electron
+        npx cypress version --component node
+
+    - name: Run Cypress tests
+      run: npm run test:ci:record
+      env:
+        #CYPRESS_RECORD_KEY: ${{ secrets.CypressRecordKey }}
+        TERM: xterm
+
+    - uses: actions/upload-artifact@master
+      with:
+        name: screenshots
+        path: cypress/screenshots
+        if: failure()
+
+    - uses: actions/upload-artifact@master
+      with:
+        name: videos
+        path: cypress/videos
