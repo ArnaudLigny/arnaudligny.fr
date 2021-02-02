@@ -1,5 +1,5 @@
 describe('Navigation', function () {
-  it('Blog post, about, home', function () {
+  it('[Mobile] Blog post, about, home', function () {
     cy.viewport(375, 667)
     cy.visit('/')
     cy.get('.container > .nav > .list > .item--nav-2 > a').click()
