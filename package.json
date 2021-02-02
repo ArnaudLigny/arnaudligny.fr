@@ -13,6 +13,7 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run --record --key fddd87b0-86c1-489a-9344-731527c894ee",
     "ci": "start-server-and-test serve-silent http://localhost:8000 cy:run",
-    "test:ci:record": "run-p --race serve cy:run"
+    "ci:serve": "php cecil.phar serve",
+    "ci:record": "run-p --race ci:serve cy:run"
   }
 }

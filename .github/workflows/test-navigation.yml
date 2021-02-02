@@ -30,6 +30,10 @@ jobs:
         restore-keys: |
           cypress-${{ runner.os }}-cypress-
 
+    - name: Download Cecil
+      run: |
+        curl -sSOL https://cecil.app/cecil.phar
+
     - name: install dependencies and verify Cypress
       env:
         CI: 1
@@ -44,7 +48,7 @@ jobs:
         npx cypress version --component node
 
     - name: Run Cypress tests
-      run: npm run test:ci:record
+      run: npm run ci:record
       env:
         #CYPRESS_RECORD_KEY: ${{ secrets.CypressRecordKey }}
         TERM: xterm
