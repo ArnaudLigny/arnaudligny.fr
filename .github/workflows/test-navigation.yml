@@ -41,11 +41,18 @@ jobs:
         restore-keys: |
           cypress-${{ runner.os }}-cypress-
 
-    - name: Install Cypress
+    - name: Install Cypress and verify
       env:
         CI: 1
       run: |
         npm ci
+        npx cypress verify
+        npx cypress info
+        npx cypress version
+        npx cypress version --component package
+        npx cypress version --component binary
+        npx cypress version --component electron
+        npx cypress version --component node
 
     - name: Run Cypress tests
       run: npm run ci:record
