@@ -54,10 +54,10 @@ jobs:
         TERM: xterm
 
     - uses: actions/upload-artifact@master
+      if: ${{ failure() }}
       with:
         name: screenshots
         path: cypress/screenshots
-        if: ${{ failure() }}
 
     - uses: actions/upload-artifact@master
       with:
