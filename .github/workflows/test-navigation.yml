@@ -57,7 +57,7 @@ jobs:
     - name: Run Cypress tests
       run: npm run ci:record
       env:
-        #CYPRESS_RECORD_KEY: ${{ secrets.CypressRecordKey }}
+        CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         TERM: xterm
 
     - uses: actions/upload-artifact@master
