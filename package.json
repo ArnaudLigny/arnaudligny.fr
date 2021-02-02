@@ -4,13 +4,15 @@
   },
   "devDependencies": {
     "cypress": "6.3.0",
-    "start-server-and-test": "^1.11.7"
+    "start-server-and-test": "^1.11.7",
+    "npm-run-all": "^4.1.2"
   },
   "scripts": {
     "serve": "cecil serve",
     "serve-silent": "nohup cecil serve > cecil.log 2>&1 &",
     "cy:open": "cypress open",
-    "cy:run": "cypress run --record --key fddd87b0-86c1-489a-9344-731527c894ee --spec 'cypress/integration/**/*'",
-    "ci": "start-server-and-test serve-silent http://localhost:8000 cy:run"
+    "cy:run": "cypress run --record --key fddd87b0-86c1-489a-9344-731527c894ee",
+    "ci": "start-server-and-test serve-silent http://localhost:8000 cy:run",
+    "test:ci:record": "run-p --race serve cy:run"
   }
 }
