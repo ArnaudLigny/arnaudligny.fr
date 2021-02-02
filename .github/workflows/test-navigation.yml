@@ -4,7 +4,7 @@ on: push
 
 jobs:
   test-navigation:
-    name: Test navigation
+    name: Navigation
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@master
