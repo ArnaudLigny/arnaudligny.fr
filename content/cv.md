@@ -24,8 +24,8 @@ typora-root-url: ../../static
 ##### Produit
 
 - conception et développement de [Cecil](https://cecil.app), un générateur de site statique simple et efficace
-- maintenance de [The Butler](https://github.com/Cecilapp/the-butler#the-butler), un moteur de blog clef en main
-- création de [Staticast](https://staticast.netlify.app), une plateforme de publication de podcast
+- maintenance de [The Butler](https://the-butler.cecil.app), un moteur de blog clef en main
+- création de [Staticast](https://staticast.cecil.app), une plateforme de publication de podcast
 
 ##### Freelance
 
