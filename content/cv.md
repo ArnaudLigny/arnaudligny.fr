@@ -17,20 +17,29 @@ typora-root-url: ../../static
 ---
 ## Expérience
 
-### Concepteur produit & Consultant technique freelance
+### [studio cecillie](https://studio.cecillie.fr)
 
-#### [studio cecillie](https://studio.cecillie.fr) – *juin 2020 à aujourd'hui*
+#### Consultant technique, expert e-commerce – *oct. 2020 à aujourd’hui*
 
-##### Produit
+Missions de conseil et d’accompagnement technique pour la mise en oeuvre de solutions web, mobile et e-commerce.
 
-- conception et développement de [Cecil](https://cecil.app), un générateur de site statique simple et efficace
-- maintenance de [The Butler](https://the-butler.cecil.app), un moteur de blog clef en main
-- création de [Staticast](https://staticast.cecil.app), une plateforme de publication de podcast
+#### Concepteur produit – *juin 2020 à aujourd’hui*
 
-##### Freelance
+- Conception et développement de [Cecil](https://cecil.app), un générateur de site statique simple et efficace
+- Maintenance de [The Butler](https://the-butler.cecil.app), un moteur de blog clef en main
+- Création de [Staticast](https://staticast.cecil.app), une plateforme de publication de podcast
 
-- missions de conseil et accompagnement technique à la mise en place de solutions web, mobile et e-commerce
-- administration et contribution au site [Jamstatic](https://jamstatic.fr)
+### Co-animateur
+
+#### [Génération statique](https://anchor.fm/jamstatic) – *oct. 2020 à aujourd’hui*
+
+Co-animateur du podcast Génération statique où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
+
+### Co-administrateur
+
+#### [Jamstatic](https://jamstatic.fr) – *janv. 2017 à aujourd’hui*
+
+Co-administrateur de la communauté Jamstatic, dédiée aux sites statiques et aux architectures découplées.
 
 ### Consultant technique senior (web, mobile & e-commerce)
 
@@ -160,5 +169,5 @@ Pilotage du pôle PHP, maintenance et évolution du CMS interne (EasyBao, un gé
 *[SEO]: Search Engine Optimisation
 *[RMA]: Return Merchandise Authorization
 *[PIM]: Product Information Management
-*[AMOA]: Assistance à la maîtrise d'ouvrage
+*[AMOA]: Assistance à la maîtrise d’ouvrage
 *[IoT]: Internet of Things
