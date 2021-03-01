@@ -17,17 +17,11 @@ typora-root-url: ../../static
 ---
 ## Expérience
 
-### [studio cecillie](https://studio.cecillie.fr)
+### Consultant technique senior - Expert e-commerce
 
-#### Consultant technique, expert e-commerce – *oct. 2020 à aujourd’hui*
+#### [studio cecillie](https://studio.cecillie.fr) – *oct. 2020 à aujourd’hui*
 
 Missions de conseil et d’accompagnement technique pour la mise en oeuvre de solutions web, mobile et e-commerce.
-
-#### Concepteur produit – *juin 2020 à aujourd’hui*
-
-- Conception et développement de [Cecil](https://cecil.app), un générateur de site statique simple et efficace
-- Maintenance de [The Butler](https://the-butler.cecil.app), un moteur de blog clef en main
-- Création de [Staticast](https://staticast.cecil.app), une plateforme de publication de podcast
 
 ### Co-animateur
 
@@ -35,13 +29,21 @@ Missions de conseil et d’accompagnement technique pour la mise en oeuvre de so
 
 Co-animateur du podcast Génération statique où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
 
+### Concepteur produits web
+
+#### [Aperture Lab](https://aperturelab.fr) – *sept. 2013 à aujourd’hui*
+
+- Conception et développement de [Cecil](https://cecil.app), un générateur de site statique simple et efficace
+- Maintenance de [The Butler](https://the-butler.cecil.app), un moteur de blog clef en main
+- Création de [Staticast](https://staticast.cecil.app), une plateforme de publication de podcast
+
 ### Co-administrateur
 
 #### [Jamstatic](https://jamstatic.fr) – *janv. 2017 à aujourd’hui*
 
 Co-administrateur de la communauté Jamstatic, dédiée aux sites statiques et aux architectures découplées.
 
-### Consultant technique senior (web, mobile & e-commerce)
+### Consultant technique senior - Web, mobile & e-commerce
 
 #### [Adfab](https://adfab.fr) – *sept. 2015 à mars 2020*
 
@@ -118,7 +120,7 @@ Pilotage de la maintenance et des évolutions du site e-commerce Magento : activ
 
 Pilotage de la maintenance, des optimisations des performances et de la navigation produits du site e-commerce Magento.
 
-### Consultant technique e-commerce, spécialiste Magento
+### Consultant technique e-commerce - Spécialiste Magento
 
 #### Baobaz – *juin 2009 à août 2012*
 
@@ -140,7 +142,7 @@ Suite de modules Magento pour les retailers et la mode :
 
 > Clients : Zadig & Voltaire, The Kooples, Christian Louboutin, Jennyfer, Carré Blanc, Etam, 1-2-3, La Halle aux Chaussures, Burton of London.
 
-### Lead Developper, spécialiste e-commerce
+### Lead Developper - Spécialiste e-commerce
 
 #### Baobaz – *juin 2007 à janv. 2010*
 
