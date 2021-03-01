@@ -21,7 +21,9 @@ typora-root-url: ../../static
 
 #### [studio cecillie](https://studio.cecillie.fr) – *oct. 2020 à aujourd’hui*
 
-Missions de conseil et d’accompagnement technique pour la mise en oeuvre de solutions web, mobile et e-commerce.
+Missions de conseil et d’accompagnement technique à la mise en oeuvre de solutions web, mobile et e-commerce.
+
+> Clients : Valtech, Yves Rocher, Promod.
 
 ### Co-animateur
 
@@ -152,7 +154,7 @@ Spécialiste osCommerce et Magento.
 
 > Clients : Repetto, Du Pareil au Même, Natalys, Marèse, Zadig & Voltaire, Texto.
 
-### Lead Developper, spécialiste gestion de contenu
+### Lead Developper - Spécialiste gestion de contenu
 
 #### Stockho – *févr. 2005 à juin 2007*
 
