@@ -42,7 +42,7 @@ Une fois PHP installé, vous pouvez télécharger Cecil :
 curl -LO https://cecil.app/cecil.phar
 ```
 
-## Créer un nouveau projet
+## Créer un nouveau site
 
 Une fois `cecil.phar` téléchargé, vous pouvez créer un nouveau site :
 
