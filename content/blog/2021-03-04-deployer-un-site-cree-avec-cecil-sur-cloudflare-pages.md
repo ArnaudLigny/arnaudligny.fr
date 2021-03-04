@@ -13,7 +13,7 @@ typora-root-url: ../../static
 [Cecil](https://cecil.app/) est un outil en ligne de commande permettant de générer un site statique, écrit en PHP. Cecil est simple et efficace.
 
 Dans ce guide, vous allez créer un nouveau site avec Cecil et le déployer en utilisant [Cloudflare Pages](https://pages.cloudflare.com).
-
+<!-- break -->
 ## Installer Cecil
 
 Cecil est écrit en PHP, ce qui signifie que vous aurez besoin que PHP version 7+ soit installé pour exécuter l’application.
