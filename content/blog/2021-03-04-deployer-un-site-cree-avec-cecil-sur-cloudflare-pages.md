@@ -39,7 +39,7 @@ Une fois `cecil.phar` téléchargé, vous pouvez créer un nouveau site :
 php cecil.phar new:site my-cecil-site
 ```
 
-Vous pouvez également ajouter un thème à votre nouveau site. Il existe quelques thèmes disponibles ici : https://github.com/cecilapp?q=theme#org-repositories.
+Vous pouvez également ajouter un thème à votre nouveau site. Il existe quelques thèmes disponibles ici : https://cecil.app/themes/.
 
 ## Créer un dépôt GitHub
 
