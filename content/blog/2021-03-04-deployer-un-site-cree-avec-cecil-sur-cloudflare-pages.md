@@ -18,23 +18,11 @@ Dans ce guide, vous allez créer un nouveau site avec Cecil et le déployer en u
 
 Cecil est écrit en PHP, ce qui signifie que vous aurez besoin que PHP version 7+ soit installé pour exécuter l’application.
 
-### Linux
-
-```bash
-apt-get install php-cli
-```
-
-### macOS
-
-```bash
-brew install php
-```
-
-### Windows
-
-```bash
-choco install php
-```
+| OS      | Commande                  |
+| ------- | ------------------------- |
+| Linux   | `apt-get install php-cli` |
+| macOS   | `brew install php`        |
+| Windows | `choco install php`       |
 
 Une fois PHP installé, vous pouvez télécharger Cecil :
 
