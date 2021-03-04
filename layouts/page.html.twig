@@ -2,7 +2,7 @@
 
 {% block head %}
 {{ parent() }}
-    {#- Style enhancements #}
+    {#- Style enhancements ~#}
     <style>{% apply minify_css %}
       /* accessibility */
       .nav {
@@ -30,6 +30,7 @@
         }
         abbr[title] {
           text-decoration: none;
+        }
       }
     {% endapply %}</style>
     <!-- dark mode -->
@@ -38,6 +39,6 @@
     <meta name="theme-color" content="{{ site.manifest.theme_color|default('#FFF') }}">
     <link rel="apple-touch-icon" href="aligny-512.jpg">
     <link rel="manifest" href="{{ url('manifest') }}">
-{% include 'partials/regsw.js.twig' %}
+    {%~ include 'partials/regsw.js.twig' %}
     <!-- /PWA -->
 {% endblock head %}
