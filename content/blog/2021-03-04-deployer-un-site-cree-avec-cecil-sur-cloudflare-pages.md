@@ -82,6 +82,7 @@ Vous pouvez ensuite déployer votre site sur Cloudflare Pages en vous rendant su
 | ------------------ | ------ |
 | `PHP_VERSION`      | `7.2`  |
 
+
 Une fois que vous avez configuré votre site, vous pouvez effectuer votre premier déploiement. Vous devriez voir Cloudflare Pages télécharger Cecil, installer les thèmes, et générer votre site, avant de le déployer.
 
 > Pour le guide complet de déploiement de votre premier site sur Cloudflare Pages, consultez [le quide de démarrage officiel](https://developers.cloudflare.com/pages/getting-started).
