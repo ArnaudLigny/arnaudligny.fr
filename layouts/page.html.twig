@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss')|minify|url }}" media="(prefers-color-scheme: dark)">
     <!-- PWA -->
     <meta name="theme-color" content="{{ site.manifest.theme_color|default('#FFF') }}">
-    <link rel="apple-touch-icon" href="aligny-512.jpg">
+    <link rel="apple-touch-icon" href="{{ asset('aligny-512.jpg') }}">
     <link rel="manifest" href="{{ url('manifest') }}">
     {%~ include 'partials/regsw.js.twig' %}
     <!-- /PWA -->
