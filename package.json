@@ -4,8 +4,8 @@
   },
   "devDependencies": {
     "cypress": "6.3.0",
-    "start-server-and-test": "^1.11.7",
-    "npm-run-all": "^4.1.2"
+    "npm-run-all": "^4.1.2",
+    "start-server-and-test": "^1.12.1"
   },
   "scripts": {
     "serve": "cecil serve",
