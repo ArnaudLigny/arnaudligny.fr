@@ -14,3 +14,6 @@
 
 [[plugins]]
   package = "netlify-plugin-cecil-cache"
+
+  [plugins.inputs]
+  cacheDir = "pouet"
