@@ -19,9 +19,9 @@ module.exports = {
 
       // test
       utils.status.show({
-        title: 'Main title',
-        summary: 'Message below the title',
-        text: 'Detailed information shown in a collapsible section'
+        title: 'Cache',
+        summary: 'Cecil cache restored from previous build.',
+        text: cacheDirs
       })
 
       console.log('Found the Cecil cache (in "%s").', inputs.cacheDir);
