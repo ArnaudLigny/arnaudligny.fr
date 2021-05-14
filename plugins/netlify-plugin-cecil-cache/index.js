@@ -16,7 +16,15 @@ module.exports = {
     const cacheDirs = getCacheDirs(constants, inputs);
 
     if (await utils.cache.restore(cacheDirs)) {
-      console.log('Found the Cecil cache.');
+
+      // test
+      utils.status.show({
+        title: 'Main title',
+        summary: 'Message below the title',
+        text: 'Detailed information shown in a collapsible section'
+      })
+
+      console.log('Found the Cecil cache (in "%s").', inputs.cacheDir);
     } else {
       console.log('Cecil cache not found.');
     }
