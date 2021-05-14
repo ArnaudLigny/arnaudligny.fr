@@ -16,5 +16,5 @@
   #package = "netlify-plugin-cecil-cache"
   package = "/plugins/netlify-plugin-cecil-cache"
 
-  [plugins.inputs]
-  cacheDir = "pouet"
+  #[plugins.inputs]
+  #cacheDir = ".cache"
