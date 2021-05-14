@@ -25,7 +25,7 @@ module.exports = {
     const cacheDirs = getCacheDirs(constants, inputs);
 
     if (await utils.cache.save(cacheDirs)) {
-      console.log('Stored the Cecil cache (%s) to speed up next builds.', inputs.cacheDir);
+      console.log('Stored the Cecil cache (from "%s") to speed up next builds.', inputs.cacheDir);
     } else {
       console.log('No Cecil build found.');
     }
