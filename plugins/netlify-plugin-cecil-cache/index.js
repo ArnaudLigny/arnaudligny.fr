@@ -21,7 +21,7 @@ module.exports = {
       utils.status.show({
         title: 'Cache',
         summary: 'Cecil cache restored from previous build.',
-        text: cacheDirs
+        text: '<ul><li>' + cacheDirs.join('</li><li>') + '</li></ul>'
       })
 
       console.log('Found the Cecil cache (in "%s").', inputs.cacheDir);
