@@ -13,18 +13,15 @@ module.exports = {
       );
     }
 
-    const files = await utils.cache.list()
-    console.log('Cached files', files)
-
     const cacheDirs = getCacheDirs(constants, inputs);
 
     if (await utils.cache.restore(cacheDirs)) {
 
-      // test
       utils.status.show({
         title: 'Build cache',
         summary: 'Cecil cache restored from previous build.',
-        text: cacheDirs.join("\n")
+        //text: cacheDirs.join("\n")
+        text: await utils.cache.list()
       })
 
       console.log('Found the Cecil cache (%s).', cacheDirs.join(', '));
