@@ -17,7 +17,7 @@ module.exports = {
 
     if (await utils.cache.restore(cacheDirs)) {
       utils.status.show({
-        title: 'Build cache',
+        title: 'Build cache restored',
         summary: 'Cecil cache restored from previous build.',
         text: (await utils.cache.list()).join("\n")
       })
@@ -31,7 +31,7 @@ module.exports = {
 
     if (await utils.cache.save(cacheDirs)) {
       utils.status.show({
-        title: 'Build cache',
+        title: 'Build cache stored',
         summary: 'Cecil cache stored to speed up next builds.',
         text: (await utils.cache.list()).join("\n")
       })
