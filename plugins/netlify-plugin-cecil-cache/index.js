@@ -21,7 +21,7 @@ module.exports = {
         summary: 'Cecil cache restored from previous build.',
         text: (await utils.cache.list()).join("\n")
       })
-      console.log('Found the Cecil cache (%s).', cacheDirs.join(', '));
+      console.log('Cecil cache (%s) restored from previous build.', cacheDirs.join(', '));
     } else {
       console.log('Cecil cache not found.');
     }
@@ -32,10 +32,10 @@ module.exports = {
     if (await utils.cache.save(cacheDirs)) {
       utils.status.show({
         title: 'Build cache',
-        summary: 'Cecil cache stored for future builds.',
+        summary: 'Cecil cache stored to speed up next builds.',
         text: (await utils.cache.list()).join("\n")
       })
-      console.log('Stored the Cecil cache (%s) to speed up next builds.', cacheDirs.join(', '));
+      console.log('Cecil cache (%s) stored to speed up next builds.', cacheDirs.join(', '));
     } else {
       console.log('No Cecil build found.');
     }
