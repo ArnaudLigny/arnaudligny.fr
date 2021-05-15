@@ -21,7 +21,7 @@ module.exports = {
         title: 'Build cache',
         summary: 'Cecil cache restored from previous build.',
         //text: cacheDirs.join("\n")
-        text: await utils.cache.list()
+        text: (await utils.cache.list()).join("\n")
       })
 
       console.log('Found the Cecil cache (%s).', cacheDirs.join(', '));
