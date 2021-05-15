@@ -13,6 +13,9 @@ module.exports = {
       );
     }
 
+    const files = await utils.cache.list()
+    console.log('Cached files', files)
+
     const cacheDirs = getCacheDirs(constants, inputs);
 
     if (await utils.cache.restore(cacheDirs)) {
