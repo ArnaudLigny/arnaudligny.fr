@@ -24,7 +24,7 @@ module.exports = {
 
       utils.status.show({
         title: 'Build cache',
-        summary: 'Cecil cache restored from previous build. ' + count(cachedFiles) + ' files.'
+        summary: 'Cecil cache restored from previous build. ' + cachedFiles.length + ' files.'
       })
       console.log('Cecil cache (%s) restored from previous build.', cacheDirs.join(', '));
       if (inputs.debug) printDebug(cachedFiles);
@@ -40,7 +40,7 @@ module.exports = {
 
       utils.status.show({
         title: 'Build cache',
-        summary: 'Cecil cache stored to speed up next builds. ' + count(cachedFiles) + ' files.'
+        summary: 'Cecil cache stored to speed up next builds. ' + cachedFiles.length + ' files.'
       })
       console.log('Cecil cache (%s) stored to speed up next builds.', cacheDirs.join(', '));
       if (inputs.debug) printDebug(cachedFiles);
