@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "netlify-plugin-cecil-cache": "^0.2.3"
+    "netlify-plugin-cecil-cache": "^0.2.4"
   },
   "devDependencies": {
     "cypress": "6.3.0",
