@@ -30,11 +30,6 @@ module.exports = {
     const cacheDirs = getCacheDirs(constants, inputs);
 
     if (await utils.cache.save(cacheDirs)) {
-      utils.status.show({
-        title: 'Build cache',
-        summary: 'Cecil cache stored to speed up next builds.',
-        text: (await utils.cache.list()).join("\n")
-      })
       console.log('Cecil cache (%s) stored to speed up next builds.', cacheDirs.join(', '));
     } else {
       console.log('No Cecil build found.');
