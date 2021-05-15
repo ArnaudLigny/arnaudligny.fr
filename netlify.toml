@@ -18,4 +18,4 @@
 
   [plugins.inputs]
   #cacheDir = ".cache"
-  debug = true
+  #debug = true
