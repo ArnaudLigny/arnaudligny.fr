@@ -46,23 +46,24 @@
 {% block footer %}
 {{ parent() }}
     {%~ include 'partials/cloudflareinsights.js.twig' ~%}
-    {# highlight.js #}
-    {% set highlight_version = '10.7.2' %}
+    {#- highlight.js ~#}
+    {%- set highlight_version = '10.7.2' ~%}
     <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/github.min.css',{minify:false})|url }}">
+    <link rel="stylesheet" href="{{ asset('css/github-dark.css')|url }}" media="(prefers-color-scheme: dark)">
     <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/highlight.min.js',{minify:false})|url }}"></script>
     <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/languages/twig.min.js',{minify:false})|url }}"></script>
     <script>{% apply minifyJS %}
       hljs.highlightAll();
     {% endapply %}</script>
-    {# anchor.js #}
-    {% set anchor_version = '4.3.1' %}
+    {#- anchor.js ~#}
+    {%- set anchor_version = '4.3.1' ~%}
     <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ anchor_version ~ '/anchor.min.js',{minify:false})|url }}"></script>
     <script>{% apply minifyJS %}
       var selector = 'body > main > div > article > h2, body > main > div > article > h3';
       anchors.options = {
-          placement: 'left',
-          visible: 'over',
-          icon: '#'
+        placement: 'left',
+        visible: 'over',
+        icon: '#'
       };
       anchors.add(selector);
     {% endapply %}</script>
