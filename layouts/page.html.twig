@@ -54,4 +54,16 @@
     <script>{% apply minifyJS %}
       hljs.highlightAll();
     {% endapply %}</script>
+    {# anchor.js #}
+    {% set anchor_version = '4.3.1' %}
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ anchor_version ~ '/anchor.min.js',{minify:false})|url }}"></script>
+    <script>{% apply minifyJS %}
+      var selector = 'body > main > div > article > h2, body > main > div > article > h3';
+      anchors.options = {
+          placement: 'left',
+          visible: 'over',
+          icon: '#'
+      };
+      anchors.add(selector);
+    {% endapply %}</script>
 {% endblock footer %}
