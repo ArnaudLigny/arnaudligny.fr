@@ -46,4 +46,12 @@
 {% block footer %}
 {{ parent() }}
     {%~ include 'partials/cloudflareinsights.js.twig' ~%}
+    {# highlight.js #}
+    {% set highlight_version = '10.7.2' %}
+    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/github.min.css',{minify:false})|url }}">
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/highlight.min.js',{minify:false})|url }}"></script>
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/languages/twig.min.js',{minify:false})|url }}"></script>
+    <script>{% apply minifyJS %}
+      hljs.highlightAll();
+    {% endapply %}</script>
 {% endblock footer %}
