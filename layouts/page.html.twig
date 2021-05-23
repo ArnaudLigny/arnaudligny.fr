@@ -34,10 +34,10 @@
       }
     {% endapply %}</style>
     <!-- dark mode -->
-    <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss')|minify|url }}" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss') }}" media="(prefers-color-scheme: dark)">
     <!-- PWA -->
     <meta name="theme-color" content="{{ site.manifest.theme_color|default('#FFF') }}">
-    <link rel="apple-touch-icon" href="{{ asset('logo-512.jpg')|url }}">
+    <link rel="apple-touch-icon" href="{{ asset('logo-512.jpg') }}">
     <link rel="manifest" href="{{ url('manifest') }}">
     {%~ include 'partials/regsw.js.twig' %}
     <!-- /PWA -->
@@ -48,16 +48,16 @@
     {%~ include 'partials/cloudflareinsights.js.twig' ~%}
     {#- highlight.js ~#}
     {%- set highlight_version = '10.7.2' ~%}
-    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/github.min.css',{minify:false})|url }}">
-    <link rel="stylesheet" href="{{ asset('css/github-dark.css')|url }}" media="(prefers-color-scheme: dark)">
-    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/highlight.min.js',{minify:false})|url }}"></script>
-    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/languages/twig.min.js',{minify:false})|url }}"></script>
+    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/github.min.css',{minify:false}) }}">
+    <link rel="stylesheet" href="{{ asset('css/github-dark.css') }}" media="(prefers-color-scheme: dark)">
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/highlight.min.js',{minify:false}) }}"></script>
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/languages/twig.min.js',{minify:false}) }}"></script>
     <script>{% apply minifyJS %}
       hljs.highlightAll();
     {% endapply %}</script>
     {#- anchor.js ~#}
     {%- set anchor_version = '4.3.1' ~%}
-    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ anchor_version ~ '/anchor.min.js',{minify:false})|url }}"></script>
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ anchor_version ~ '/anchor.min.js',{minify:false}) }}"></script>
     <script>{% apply minifyJS %}
       var selector = 'body > main > div > article > h2, body > main > div > article > h3';
       anchors.options = {
