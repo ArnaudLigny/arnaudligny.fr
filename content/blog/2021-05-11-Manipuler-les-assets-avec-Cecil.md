@@ -4,7 +4,7 @@ date: 2021-05-11
 published: false
 ---
 
-Dans cet article je vais vous montrer comment [Cecil](https://cecil.app), [mon générateur de site statique](/blog/cecil-mon-generateur-de-site-statique/), permet de manipuler des assets, sans dépendances à outils tiers, uniquement avec une fonction et des filtres [Twig](https://twig.symfony.com/doc/templates.html).
+Dans cet article je vais vous montrer comment [Cecil](https://cecil.app), [mon générateur de site statique](/blog/cecil-mon-generateur-de-site-statique/), permet de manipuler des assets, sans dépendances à des outils tiers.
 
 ```twig
 <link rel="stylesheet" href="{{ asset('css/styles.scss')|to_css|minify|fingerprint }}">
@@ -25,7 +25,7 @@ Dans l’exemple ci-dessus l’URL vers le fichier de la feuille de styles est �
 Néanmoins, on peut rapidement se poser les questions suivantes :
 
 - Comment compresser ma feuille de styles pour gagner en performance ?
-- Comment compiler un fichier [Sass](https://sass-lang.com) et modifier des variables sans installer un outil tiers ?
+- Comment compiler ma feuille de style au format [Sass](https://sass-lang.com) et modifier des variables ?
 - Comment informer les navigateurs web que ma feuille de style à été modifiée et ne pas demander aux internautes de « vider le cache » ?
 
 Cecil, grâce à sa fonction [`asset()`](https://cecil.app/documentation/templates/#asset) combinée à quelques [filtres Twig](https://cecil.app/documentation/templates/#filters), répond à ces besoins.
@@ -33,7 +33,7 @@ Cecil, grâce à sa fonction [`asset()`](https://cecil.app/documentation/templat
 
 ## Créer un asset
 
-Reprenons l’exemple précédent mais cette fois avec la fonction `asset()` :
+Reprenons l’exemple précédent en y appliquant la fonction `asset()` :
 
 ```twig
 <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
