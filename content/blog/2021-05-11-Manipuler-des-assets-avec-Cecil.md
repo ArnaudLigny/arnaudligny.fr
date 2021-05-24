@@ -12,58 +12,85 @@ Ainsi, une feuille de styles peut être chargée en indiquant simplement le chem
 <link rel="stylesheet" href="/css/styles.css">
 ```
 
-Dans l’exemple ci-dessus l’URL vers la feuille de styles est « en dur » dans le template HTML : dans la plupart des cas cette solution est fonctionnelle et suffisante.
+Dans l’exemple ci-dessus l’URL vers le fichier de la feuille de styles est « en dur » dans le template HTML et c’est suffisant dans la plupart des cas.
 
-On peut appliquer la même méthode pour une image [Open Graph](https://opengraphprotocol.org) :
+Néanmoins, quid des questions suivantes :
+
+- Comment compresser ma feuille de styles pour gagner en performance ?
+- Comment compiler un fichier [Sass](https://sass-lang.com) et modifier des variables facilement ?
+- Comment informer les navigateurs web que ma feuille de style à été modifiée et ne pas demander aux internautes de « vider le cache » ?
+- etc.
+
+[Cecil](https://cecil.app), grâce à sa fonction [`asset()`](https://cecil.app/documentation/templates/#asset) combinée à un certain nombre de [filtres Twig](https://cecil.app/documentation/templates/#filters), répond à ces questions en permettant de manipuler (ou « processer ») facilement des ressources web.
+<!-- break -->
+
+## Créer un asset
+
+Reprenons l’exemple précédent mais cette fois avec la fonction `asset()` :
+
+```twig
+<link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+```
+
+### Prise d’empreinte (fingerprinting)
+
+Le filtre `fingerprint` créé l’empreinte de la ressource (d’après son contenu) et complète le nom du fichier en conséquence.   Ainsi, si le fichier image est modifié il aura une aura empreinte différente lors de la génération du site : le consommateur du fichier image considérera donc que cette ressource est différente de celle qu’il a dans son cache et téléchargera l’image modifiée.
+
+Template :
+```twig
+<link rel="stylesheet" href="{{ asset('css/styles.css')|fingerprint }}">
+```
+Rendu :
+```html
+<link rel="stylesheet" href="/css/styles.e549285c8ffa8af5e6254263c98d4397.css">
+```
+
+### Minification
+
+Le filtre `minify` compresse un asset du type CSS ou JavaScript.
+
+Template :
+
+```twig
+<link rel="stylesheet" href="{{ asset('css/styles.css')|minify }}">
+```
+
+Rendu :
 
 ```html
-<meta property="og:image" content="/images/image.jpg">
+<link rel="stylesheet" href="/css/styles.min.css">
 ```
 
-Sauf quand dans le cas ci-dessus, l’URL n’est pas valide car elle doit être absolue pour être utilisée par un service tiers.
+### Compilation Sass
 
-## Créer une URL
+Le filtre `to_css` compile un asset de type [Sass](https://sass-lang.com).
 
-Aussi, afin de dynamiser les URL, Cecil expose la [fonction Twig](https://twig.symfony.com/doc/2.x/templates.html#functions) [`url()`](https://cecil.app/documentation/templates/#url).
-
-Reprenons l’exemple ci-dessus en utilisant cette fonction :
+Template :
 
 ```twig
-<meta property="og:image" content="{{ url('images/image.jpg',{canonical:true}) }}">
-->
-<meta property="og:image" content="https://domain.tld/images/image.jpg">
+<link rel="stylesheet" href="{{ asset('css/styles.scss')|to_css }}">
 ```
 
-Néanmoins cette méthode reste limitée car elle se contente de générer une URL « fixe » pour une ressource donnée : si l’image est modifiée, le consommateur de cette URL (un navigateur web de l’internaute, le robot Twitter de création de Card, etc.) ne le saura pas et utilisera l’image qu’il a dans son cache, jusqu’à péremption.
+Rendu :
 
-## Manipuler une ressource
+```html
+<link rel="stylesheet" href="/css/styles.css">
+```
 
-Nous arrivons ainsi dans le vif du sujet : Cecil expose une fonction [`asset()`](https://cecil.app/documentation/templates/#asset) permettant de manipuler des ressources web.
+### Regroupement (bundle)
 
-Reprenons une nouvelle fois l’exemple précédent mais cette fois avec la fonction `asset()` :
+La fonction `asset()` peut également combiner une liste d’assets du même type.
+
+Template :
 
 ```twig
-<meta property="og:image" content="{{ url('images/image.jpg',{canonical:true}) }}">
-->
-<meta property="og:image" content="{{ asset('images/image.jpg')|url({canonical:true}) }}">
+<link rel="stylesheet" href="{{ asset(['css/styles-a.css', 'css/styles-b.css']) }}">
 ```
 
-A première vue cette approche semble plus verbeuse, puisqu’il est nécessaire de :
+Rendu :
 
-1. utiliser la fonction `asset()` pour créer un objet ressource
-2. utiliser le filtre [`url`](https://cecil.app/documentation/templates/#url-1) avec l’option permettant de retourner une URL canonique
-
-Néanmoins Cecil va également appliquer un certain nombre d’actions par défaut sur la ressource manipulée.
-
-### Fingerprinting
-
-```twig
-<meta property="og:image" content="{{ asset('images/image.jpg')|url({canonical:true}) }}">
-->
-<meta property="og:image" content="https://domain.tld/image.e549285c8ffa8af5e6254263c98d4397.jpg">
+```html
+<link rel="stylesheet" href="/css/styles.css">
 ```
 
-Cecil détermine automatiquement l’empreinte (_fingerprint_) de la ressource d’après son contenu, compléte le nom du fichier avec cette empreinte et enregistre le fichier.
-
-Aussi, si le fichier image est modifié il aura une aura empreinte différente lors de la génération du site : le consommateur du fichier image considérera donc que cette ressource est différente de celle qu’il a dans son cache et téléchargera cette nouvelle image.
-
+### 
