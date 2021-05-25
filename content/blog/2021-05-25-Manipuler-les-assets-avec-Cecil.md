@@ -206,7 +206,7 @@ assets:
   minify:
     enabled: true # minifie automatiquement un fichier CSS ou JavaScript
   fingerprint:
-    enabled: true # applique l'empreinte du fichier à son nom
+    enabled: true # applique automatiquement l'empreinte du fichier à son nom
 ```
 
 Template :
