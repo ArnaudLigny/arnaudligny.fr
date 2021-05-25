@@ -1,11 +1,12 @@
 ---
 title: Manipuler les assets avec Cecil
+description: "Dans cet article j‘explique comment Cecil permet de manipuler des assets, sans dépendances à des outils tiers."
 date: 2021-05-25
 tags: [Cecil, asset]
 published: true
 ---
 
-Dans cet article je vais vous montrer comment [Cecil](https://cecil.app), [mon générateur de site statique](/blog/cecil-mon-generateur-de-site-statique/), permet de manipuler des assets, sans dépendances à des outils tiers.
+Dans cet article j‘explique comment [Cecil](https://cecil.app), [mon générateur de site statique](/blog/cecil-mon-generateur-de-site-statique/), permet de manipuler des assets, sans dépendances à des outils tiers.
 
 ```twig
 <link rel="stylesheet" href="{{ asset('css/styles.scss')|to_css|minify|fingerprint }}">
