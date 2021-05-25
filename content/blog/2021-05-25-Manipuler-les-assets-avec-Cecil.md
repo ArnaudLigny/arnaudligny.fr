@@ -121,7 +121,7 @@ La fonction `asset()` peut également combiner une liste d’assets du même typ
 Template :
 
 ```twig
-<link rel="stylesheet" href="{{ asset(['css/styles-a.css', 'css/styles-b.css']) }}">
+<link rel="stylesheet" href="{{ asset(['css/styles-a.css','css/styles-b.css']) }}">
 ```
 
 Rendu :
@@ -140,7 +140,7 @@ Il est possible de personnaliser ce nom via l’option `filename`.
 Template :
 
 ```twig
-<link rel="stylesheet" href="{{ asset(['css/styles-a.css', 'css/styles-b.css'], {filename: 'main.css'}) }}">
+<link rel="stylesheet" href="{{ asset(['css/styles-a.css','css/styles-b.css'],{filename:'main.css'}) }}">
 ```
 
 Rendu :
