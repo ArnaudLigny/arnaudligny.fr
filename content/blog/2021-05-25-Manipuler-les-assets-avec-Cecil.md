@@ -1,12 +1,15 @@
 ---
 title: Manipuler les assets avec Cecil
-description: "Dans cet article j‘explique comment Cecil permet de manipuler des assets, sans dépendances à des outils tiers."
+description: "Dans cet article j’explique comment Cecil permet de manipuler des assets, sans dépendances à des outils tiers."
 date: 2021-05-25
 tags: [Cecil, asset]
+image: /images/2021-05-25-manipuler-les-assets-avec-cecil/share.png
+image_header: false
 published: true
+typora-root-url: ../../static
 ---
 
-Dans cet article j‘explique comment [Cecil](https://cecil.app), [mon générateur de site statique](/blog/cecil-mon-generateur-de-site-statique/), permet de manipuler des assets, sans dépendances à des outils tiers.
+Dans cet article j’explique comment [Cecil](https://cecil.app), [mon générateur de site statique](/blog/cecil-mon-generateur-de-site-statique/), permet de manipuler des assets, sans dépendances à des outils tiers.
 
 ```twig
 <link rel="stylesheet" href="{{ asset('css/styles.scss')|to_css|minify|fingerprint }}">
@@ -81,7 +84,7 @@ Il est possible de paramétrer les règles de compilation via le fichier de conf
 assets:
   compile:
     style: expanded # expanded ou compressed
-    import: [sass, scss] # liste des chemins importés, relatif au dossier static/
+    import: [sass, node_modules] # liste des chemins importés, relatifs au dossier static/
 ```
 
 Il est également possible de remplacer la valeur des variables :
@@ -92,18 +95,21 @@ assets:
     primary: '#5a5a5a'
 ```
 
-> Documentation : https://cecil.app/documentation/configuration/#assets
+> Documentation : <https://cecil.app/documentation/configuration/#assets>
 
 ### Empreinte (fingerprint)
 
-Le filtre `fingerprint` crée l’empreinte de la ressource (d’après son contenu) et complète le nom du fichier en conséquence.   
+Le filtre `fingerprint` crée l’empreinte de la ressource (d’après son contenu) et complète le nom du fichier en conséquence.  
 Ainsi, si le fichier est modifié il aura une empreinte différente lors de la génération du site : le consommateur du fichier considérera donc que cette ressource est différente de celle qu’il a dans son cache et la téléchargera.
 
 Template :
+
 ```twig
 <link rel="stylesheet" href="{{ asset('css/styles.css')|fingerprint }}">
 ```
+
 Rendu :
+
 ```html
 <link rel="stylesheet" href="/css/styles.e549285c8ffa8af5e6254263c98d4397.css">
 ```
@@ -138,6 +144,7 @@ Template :
 ```
 
 Rendu :
+
 ```html
 <link rel="stylesheet" href="/main.css">
 ```
@@ -170,7 +177,7 @@ Exemples :
 Durée : {{ asset('title.mp3').audio.duration|round }} min
 ```
 
-> Documentation : https://cecil.app/documentation/templates/#attributes
+> Documentation : <https://cecil.app/documentation/templates/#attributes>
 
 ### Fichier distant
 
@@ -184,7 +191,7 @@ Exemple :
 
 Le fichier, lors de la génération du site, sera enregistré de la manière suivante :
 
-```
+```text
 /assets/cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.1/anchor.min.js
 ```
 
@@ -213,4 +220,3 @@ Rendu :
 ```html
 <link rel="stylesheet" href="/css/styles.e549285c8ffa8af5e6254263c98d4397.min.css">
 ```
-
