@@ -11,6 +11,7 @@ Dans cet article j‘explique comment [Cecil](https://cecil.app), [mon générat
 ```twig
 <link rel="stylesheet" href="{{ asset('css/styles.scss')|to_css|minify|fingerprint }}">
 ```
+<!-- break -->
 
 ## Les bases
 
@@ -31,7 +32,6 @@ Néanmoins, on peut rapidement se poser les questions suivantes :
 - Comment informer les navigateurs web que ma feuille de style à été modifiée et ne pas demander aux internautes de « vider le cache » ?
 
 Cecil, grâce à sa fonction [`asset()`](https://cecil.app/documentation/templates/#asset) combinée à quelques [filtres Twig](https://cecil.app/documentation/templates/#filters), répond à ces besoins.
-<!-- break -->
 
 ## Créer un asset
 
