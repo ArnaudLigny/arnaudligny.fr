@@ -46,6 +46,15 @@ Reprenons l’exemple précédent en y appliquant la fonction `asset()` :
 
 On crée ainsi un objet « asset » à partir du fichier `styles.css` préalablement déposé dans le dossier `static/css/` du projet.
 
+### Remarque
+
+Dans un contexte d’affichage l’objet « asset » retournera le chemin web relatif (`path`) de la ressource.  
+Vous pouvez utiliser le filtre [`url`](https://cecil.app/documentation/templates/#url-1) pour manipuler l’URL générée, par exemple :
+
+```twig
+{{ asset('css/styles.css')|url({canonical:true}) }}
+```
+
 ### Minification
 
 Le filtre `minify` réduit la taille d’un asset du type CSS ou JavaScript, en supprimant les espaces, retours à la ligne, etc.
@@ -220,3 +229,4 @@ Rendu :
 ```html
 <link rel="stylesheet" href="/css/styles.e549285c8ffa8af5e6254263c98d4397.min.css">
 ```
+
