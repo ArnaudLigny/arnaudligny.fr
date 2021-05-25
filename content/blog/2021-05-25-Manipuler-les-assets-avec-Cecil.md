@@ -12,7 +12,7 @@ typora-root-url: ../../static
 Dans cet article j’explique comment [Cecil](https://cecil.app), [mon générateur de site statique](/blog/cecil-mon-generateur-de-site-statique/), permet de manipuler des assets, sans dépendances à des outils tiers.
 
 ```twig
-<link rel="stylesheet" href="{{ asset('css/styles.scss')|to_css|minify|fingerprint }}">
+<link rel="stylesheet" href="{{ asset('sass/styles.scss')|to_css|minify|fingerprint }}">
 ```
 <!-- break -->
 
@@ -78,7 +78,7 @@ Le filtre `to_css` compile un asset de type [Sass](https://sass-lang.com).
 Template :
 
 ```twig
-<link rel="stylesheet" href="{{ asset('css/styles.scss')|to_css }}">
+<link rel="stylesheet" href="{{ asset('sass/styles.scss')|to_css }}">
 ```
 
 Rendu :
@@ -221,7 +221,7 @@ assets:
 Template :
 
 ```twig
-<link rel="stylesheet" href="{{ asset('css/styles.scss') }}">
+<link rel="stylesheet" href="{{ asset('sass/styles.scss') }}">
 ```
 
 Rendu :
