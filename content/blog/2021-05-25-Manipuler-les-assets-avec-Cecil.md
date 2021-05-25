@@ -31,7 +31,7 @@ Dans l’exemple ci-dessus l’URL vers le fichier de la feuille de styles est �
 Néanmoins, on peut rapidement se poser les questions suivantes :
 
 - Comment compresser ma feuille de styles pour gagner en performance ?
-- Comment compiler ma feuille de style au format [Sass](https://sass-lang.com) et modifier des variables ?
+- Comment compiler ma feuille de styles au format [Sass](https://sass-lang.com) et modifier des variables ?
 - Comment informer les navigateurs web que ma feuille de style à été modifiée et ne pas demander aux internautes de « vider le cache » ?
 
 Cecil, grâce à sa fonction [`asset()`](https://cecil.app/documentation/templates/#asset) combinée à quelques [filtres Twig](https://cecil.app/documentation/templates/#filters), répond à ces besoins.
