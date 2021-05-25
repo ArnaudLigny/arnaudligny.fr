@@ -1,7 +1,8 @@
 ---
 title: Manipuler les assets avec Cecil
 date: 2021-05-25
-published: false
+tags: [Cecil, asset]
+published: true
 ---
 
 Dans cet article je vais vous montrer comment [Cecil](https://cecil.app), [mon générateur de site statique](/blog/cecil-mon-generateur-de-site-statique/), permet de manipuler des assets, sans dépendances à des outils tiers.
