@@ -88,15 +88,15 @@ Il est également possible de remplacer la valeur des variables :
 
 ```yaml
 assets:
-    variables:
-      primary: '#5a5a5a'
+  variables:
+    primary: '#5a5a5a'
 ```
 
 > Documentation : https://cecil.app/documentation/configuration/#assets
 
-### Empreinte (fingerprinting)
+### Empreinte (fingerprint)
 
-Le filtre `fingerprint` créé l’empreinte de la ressource (d’après son contenu) et complète le nom du fichier en conséquence.   
+Le filtre `fingerprint` crée l’empreinte de la ressource (d’après son contenu) et complète le nom du fichier en conséquence.   
 Ainsi, si le fichier est modifié il aura une empreinte différente lors de la génération du site : le consommateur du fichier considérera donc que cette ressource est différente de celle qu’il a dans son cache et la téléchargera.
 
 Template :
@@ -124,9 +124,9 @@ Rendu :
 <link rel="stylesheet" href="/css/styles.css">
 ```
 
-Par défaut le bundle porte le nom suivant :
+Par défaut le fichier bundle porte le nom suivant :
 
-- `style.css` pour les fichiers CSS
+- `styles.css` pour les fichiers CSS
 - `scripts.js` pour les fichiers JavaScript
 
 Il est possible de personnaliser ce nom via l’option `filename`.
@@ -134,7 +134,7 @@ Il est possible de personnaliser ce nom via l’option `filename`.
 Template :
 
 ```twig
-{{ asset(['css/styles-a.css', 'css/styles-b.css'], {filename: 'main.css'}) }}
+<link rel="stylesheet" href="{{ asset(['css/styles-a.css', 'css/styles-b.css'], {filename: 'main.css'}) }}">
 ```
 
 Rendu :
@@ -144,26 +144,26 @@ Rendu :
 
 ### Attributs d’un asset
 
-D’autre part, un asset expose un certain nombre d’attribut en fonction de son type :
+D’autre part, un asset expose des attributs (en fonction de son type) :
 
-- `file`: Chemin du fichier local
-- `path`: Chemin web relatif
-- `ext`: Extension
-- `type`: Type de média (ex : `image`)
-- `subtype`: Sous-type de média (ex : `image/jpeg`)
-- `size`: Poids (en octets)
-- `source`: Contenu avant traitement
-- `content`: Contenu après traitement
-- `integrity`: Hachage d'intégrité
-- `width`: Largeur (dans le cas d’un fichier image)
-- `height`: Hauteur (dans le cas d’un fichier image)
-- `audio`: Tableau [Mp3Info](https://github.com/wapmorgan/Mp3Info#audio-information) (dans le cas d’un fichier MP3)
+- `file` : Chemin du fichier local
+- `path` : Chemin web relatif
+- `ext` : Extension
+- `type` : Type de média (ex : `image`)
+- `subtype` : Sous-type de média (ex : `image/jpeg`)
+- `size` : Poids (en octets)
+- `source` : Contenu avant traitement
+- `content` : Contenu après traitement
+- `integrity` : Hachage d'intégrité
+- `width` : Largeur (dans le cas d’un fichier image)
+- `height` : Hauteur (dans le cas d’un fichier image)
+- `audio` : Tableau [Mp3Info](https://github.com/wapmorgan/Mp3Info#audio-information) (dans le cas d’un fichier MP3)
 
 Exemples :
 
 ```twig
 {% set image = asset('image.jpg') %}
-<img src="{{ image }}" width="{{ image.width }}" integrity="{{ image.integrity }}" crossorigin="anonymous" />
+<img src="{{ image }}" width="{{ image.width }}" integrity="{{ image.integrity }}" crossorigin="anonymous">
 ```
 
 ```twig
@@ -190,7 +190,7 @@ Le fichier, lors de la génération du site, sera enregistré de la manière sui
 
 ### Paramétrage par défaut
 
-Enfin, Cecil applique l’ensemble des traitements par défaut, désactivables via la configuration :
+Enfin, par défaut Cecil applique l’ensemble des traitements, désactivables via la configuration :
 
 ```yaml
 assets:
