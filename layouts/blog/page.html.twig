@@ -1,6 +1,7 @@
 {% extends 'page.html.twig' %}
 
 {% block content %}
+        <div id="search"></div>
         <article class="article article--page typeset">
           <h1>{{ page.title }}</h1>
 {% include 'partials/post-meta.html.twig' with {'post': page} only %}
@@ -8,3 +9,25 @@
           {{ page.content }}
         </article>
 {% endblock content %}
+
+{% block footer %}
+{{ parent() }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: '8NG3TKYY09',
+        apiKey: 'c7c3337af9600b27dc2c5d9327402710',
+        siteId: '5df6352b-ec80-455f-a6d8-059c176675c4',
+        branch: 'master',
+        selector: 'div#search',
+        theme: {
+          mark: '#fff',
+          background: '#23263b',
+          selected: '#111432',
+          text: '#d6d6e7',
+          colorSourceIcon: '#d6d6e7'
+        }
+      });
+    </script>
+{% endblock footer %}
