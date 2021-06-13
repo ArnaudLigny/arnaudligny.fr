@@ -19,3 +19,8 @@
   #[plugins.inputs]
   #cacheDir = ".cache"
   #debug = true
+
+[dev]
+  command = "cecil serve --open"
+  targetPort = 8000
+  framework = "#custom"
