@@ -8,7 +8,7 @@ tags:
 image: /images/demo-cv-cecil.png
 image_header: false
 typora-root-url: ../../static
-alias: demo-cv-cecil
+alias: blog/demo-cv-cecil
 ---
 
 En ce moment je suis en train de refaire mon CV, qui sera bien entendu consultable sur [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6714975589477990401/), mais également sur [mon site web](https://arnaudligny.fr/cv/).
