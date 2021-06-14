@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: "/static/forestry"
 webhook_url: 
 sections:
-- type: document
-  path: config.yml
-  label: Configuration
 - type: heading
   label: Blog
 - type: directory
@@ -42,6 +39,9 @@ sections:
   new_doc_ext: md
   templates:
   - projet
+- type: document
+  path: config.yml
+  label: Configuration
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
