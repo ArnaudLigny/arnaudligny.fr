@@ -78,7 +78,8 @@ static:
   exclude:
     - CV_ArnaudLigny-2014.pdf
     - CV_ArnaudLigny-2015.pdf
-    - '*.scss'
+    - _bck
+    - gdpr-cookie-notice
 editor: typora
 theme:
   - garth
