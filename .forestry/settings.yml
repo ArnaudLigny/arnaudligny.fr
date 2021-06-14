@@ -39,6 +39,8 @@ sections:
   new_doc_ext: md
   templates:
   - projet
+- type: heading
+  label: Settings
 - type: document
   path: config.yml
   label: Configuration
