@@ -52,13 +52,13 @@
     <link rel="stylesheet" href="{{ asset('css/github-dark.css') }}" media="(prefers-color-scheme: dark)">
     <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/highlight.min.js',{minify:false}) }}"></script>
     <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/languages/twig.min.js',{minify:false}) }}"></script>
-    <script>{% apply minifyJS %}
+    <script>{% apply minify_js %}
       hljs.highlightAll();
     {% endapply %}</script>
     {#- anchor.js ~#}
     {%- set anchor_version = '4.3.1' ~%}
     <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ anchor_version ~ '/anchor.min.js',{minify:false}) }}"></script>
-    <script>{% apply minifyJS %}
+    <script>{% apply minify_js %}
       var selector = 'body > main > div > article > h2, body > main > div > article > h3';
       anchors.options = {
         placement: 'left',
