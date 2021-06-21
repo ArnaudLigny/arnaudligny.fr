@@ -8,6 +8,6 @@ typora-root-url: "../../static"
 ---
 Bot [Slack](https://slack.com) qui vous rappelle quand il est temps d'aller chercher votre enfant à l'école.
 
-![Exemple de rappel](https://narno.dev/leo-bot/docs/leo-bot-slack-example.png)
+![Exemple de rappel](/images/projets/leo-bot-slack-example.png)
 
 [narno.dev/leo-bot](https://narno.dev/leo-bot/)

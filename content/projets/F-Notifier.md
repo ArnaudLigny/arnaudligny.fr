@@ -8,6 +8,6 @@ typora-root-url: "../../static"
 ---
 Extension pour navigateur (Chrome, Firefox et Opera) indiquant le nombre de notifications Facebook non lues.
 
-![](https://narno.dev/F-Notifier/docs/screenshot.png)
+![Capture d'écran de F-Notifier](/images/projets/f-notifier-screenshot.png)
 
 [narno.dev/F-Notifier](https://narno.dev/F-Notifier/)
