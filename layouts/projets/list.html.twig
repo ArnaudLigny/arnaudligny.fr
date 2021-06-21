@@ -1,0 +1,20 @@
+{% extends '_default/list.html.twig' %}
+
+{% block content %}
+        <section>
+          <header class="typeset">
+            <h1>{{ page.title }}</h1>
+            {{- page.content ~}}
+          </header>
+          <ul class="list list--pages">
+            {%- for p in pages|sort_by_weight ~%}
+            <li class="item item--page">
+              <article class="page typeset">
+                <h2><a href="{{ url(p) }}">{{ p.title }}</a></h2>
+                {{ p.content|excerpt_html }}
+              </article>
+            </li>
+            {%- endfor ~%}
+          </ul>
+        </section>
+{% endblock content %}
