@@ -1,6 +1,6 @@
 ---
 title: J'ai créé un site e-commerce avec Cecil et Snipcart
-date: 2021-05-27
+date: 2021-06-24
 tags: [Cecil, e-commerce]
 image: /images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr.jpg
 image_header: true
@@ -8,7 +8,7 @@ draft: true
 typora-root-url: ../../static
 ---
 
-En début d’année ma chérie terminait la [campagne Ulule de son projet « Paysages à vélo »](https://fr.ulule.com/paysages-a-velo/) et se posait la question de continuer la vente de ses créations via une boutique en ligne.
+En début d’année ma chérie terminait la [campagne Ulule de son projet ***Paysages à vélo***](https://fr.ulule.com/paysages-a-velo/) et se posait la question de continuer la vente de ses créations via une boutique en ligne.
 
 Elle m’a alors sollicité pour l’aider à concevoir et construire cette boutique. Elle hésitait entre une solution clef en main telle que *Shopify* ou une solution basée sur une framework e-commerce tel *WooCommerce*.  
 Néanmoins, la première solution reste onéreuse pour un petit projet (peu de ventes) et la seconde demande beaucoup d’énergie pour un petit catalogue.
@@ -18,7 +18,7 @@ Je lui ai alors proposé de créer un site web statique avec [**Cecil**](https:/
 
 ## Pourquoi un site statique ?
 
-<img src="/images/2021-05-27-un-site-e-commerce-avec-cecil-et-snipcart/cecil-logo-netlify-cms.png" style="zoom:33%;float:right;" />
+<img src="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/cecil.png"  />
 
 Je suis un fervent promoteur de l’approche statique pour la diffusion de sites web de contenu pour les raisons suivantes :
 
@@ -30,7 +30,7 @@ Dans le cas de ce projet j’ai donc utilisé mon propre [générateur de site s
 
 ## Pourquoi Snipcart ?
 
-<img src="/images/2021-05-27-un-site-e-commerce-avec-cecil-et-snipcart/snipcart.png" style="zoom:33%;float:right;" />
+<img src="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/snipcart.png"  />
 
 [Snipcart](https://snipcart.com) n’est pas une solution e-commerce clef en main mais plutôt un « checkout » (tunnel d’achat) à ajouter à n’importe quel site web.
 
@@ -49,7 +49,7 @@ Intérêt de cette approche et de Snipcart en particulier :
 
 > Le code source est disponible sur GitHub : [github.com/cecillie/eshop](https://github.com/cecillie/eshop).
 
-### Définition des produits
+### Création du catalogue
 
 Dans le cas de [Paysages à vélo](https://shop.cecillie.fr/) le catalogue est très simple et n’est composé que de 6 modèles, avec 2 variants pour chacun (au moment où j’écris cet article).  
 Les propriétés et le texte de la fiche produit sont définis dans un fichier [Markdown](https://daringfireball.net/projects/markdown/) :
@@ -93,7 +93,7 @@ Ici j’utilise [`cascade`](https://cecil.app/documentation/content/#cascade) qu
         - `html` : le texte afficher dans la liste déroulante
         - `price` : le prix modifié par rapport au prix de référence, qui peut donc être négatif
 
-Ensuite, chacun des produits est caractérisé par via son propre fichier Markdown, par exemple `content/products/1.pink-gravel.md` :
+Ensuite, chacun des produits est caractérisé via son propre fichier Markdown, par exemple `content/products/1.pink-gravel.md` :
 
 ```yaml
 ---
@@ -109,7 +109,8 @@ published: true
 **Gavarnie, Hautes-Pyrénées.**  
 **Femme ridant en toute liberté au pieds des montagnes.**
 
-_Impression numérique sans bordure sur papier couché premium semi mat 200 g (carte A5 300 g). Les affiches sont toutes signées à la main._
+_Impression numérique sans bordure sur papier couché premium semi mat 200 g (carte A5 300 g). 
+Les affiches sont toutes signées à la main._
 ```
 
 ## Templates et intégration Snipcart
@@ -166,7 +167,7 @@ Concentrons nous sur le cœur de la fiche produit, à savoir l’ajout au panier
     <label for="{{ productId }}-qty">Quantité</label>
     <input type="number" id="{{ productId }}-qty" class="qty" min="1" max="10" value="1" />
   </div>
-  {%~ include 'components/add-item.html.twig' with {'productId':productId,'product':product,'label':"Ajouter au panier"} only ~%}
+  {%~ include 'components/add-item.html.twig' with {'productId':productId,'product':product} only ~%}
 </div>
 ```
 
@@ -201,5 +202,62 @@ L’intégration de Snipcart est très simple, et nécessite :
 <script src="https://cdn.snipcart.com/themes/v3.0.11/default/snipcart.js"></script>
 ```
 
-Démo : https://codepen.io/thatfrankdev/pen/xxwRXQw?editors=1000
+- Démo : https://codepen.io/thatfrankdev/pen/xxwRXQw?editors=1000
+- Template de *Paysages à vélo* : [layouts/components/add-item.html.twig](layouts/components/add-item.html.twig)
 
+### Personnalisation du tunnel d’achat
+
+J’ai également pris le temps de personnaliser le tunnel d’achat à la fois au niveau du rendu graphique et des étapes.
+
+![image-20210624105412625](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/image-20210624105412625.png)
+
+#### Personnalisation du rendu
+
+Concernant le rendu graphique, ce n’est pas le plus commode à réaliser : il est en effet nécessaire d’inspecter l’ensemble des composants HTML afin d’identifier les classes CSS, de les dupliquer et de les modifier selon ses besoins.
+
+Par exemple, pour remplacer la police de caractère :
+
+```css
+.snipcart {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+```
+
+La feuille de style Sass de *Paysages à vélo* disponible sur [GitHub](https://github.com/cecillie/eshop/blob/main/static/css/main.scss#L418).
+
+Néanmoins, depuis la version 3.2, Snipcart a introduit la notion de « Theming » qui facilite grandement la personnalisation via des propriétés CSS : https://docs.snipcart.com/v3/setup/theming.
+
+#### Personnalisation des textes
+
+Les textes de l’interface de Snipcart sont disponibles en français (j’ai d’ailleurs [apporté ma contribution sur la version `fr-FR`](https://github.com/snipcart/snipcart-l10n/blob/master/locales/fr-FR.json)) sans paramétrage particulier (autre qu’en définissant l’attribut `lang` de la balise `<html>`) mais si vous souhaitez personnaliser les textes, ça reste possible en chargeant son propre fichier de langue :
+
+```javascript
+document.addEventListener('snipcart.ready', function() {
+  fetch('/snipcart/{{ language }}.json')
+    .then(response => response.json())
+    .then(translation => Snipcart.api.session.setLanguage('{{ language }}', translation))
+});
+```
+
+#### Personnalisation des formulaires
+
+Snipcart permet également de modifier et d’enrichir les étapes du tunnel d’achat via des [templates Vue.js](https://docs.snipcart.com/v3/setup/customization) :
+
+```html
+<div hidden id="snipcart" data-api-key="{{ site.snipcart.apikey }}" data-templates-url="/snipcart/templates.tpl"></div>
+```
+
+Ainsi, dans le cas de *Paysages à vélo* j’ai :
+
+1. Modifier l’affichage des lignes du panier afin d’y indiquer le format d’impression sélectionné à côté du nom du produit ;
+2. Désactiver la suggestion d’adresse (qui n’est pas très fiable sur le territoire français) ;
+3. Ajouter un champ de saisi d’un message cadeau.
+
+Pour les curieux le [code source est disponible sur GitHub](https://github.com/cecillie/eshop/blob/main/static/snipcart/templates.tpl).
+
+## Gestion de contenu (CMS)
+
+<video autoplay loop>
+    <source src="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.webm" type="video/webm">
+    <source src="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.mp3" type="video/mp4">
+</video>
