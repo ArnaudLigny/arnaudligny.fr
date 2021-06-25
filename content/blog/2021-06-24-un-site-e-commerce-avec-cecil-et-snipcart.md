@@ -281,10 +281,11 @@ Néanmoins il peut s’avérer plus commode et plus agréable de pouvoir s’app
 
 De plus Forestry offre un fonctionnalité de prévisualisation, en contexte, très efficace !
 
-<video autoplay loop>
+<video controls>
   <source src="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.webm" type="video/webm">
   <source src="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.mp3" type="video/mp4">
 </video>
+
 ## Conclusion
 
 J’ai pris beaucoup de plaisir à réaliser ce petit site e-commerce, principalement grâce à Snipcart qui m’a permis d’être libre sur la création du site web catalogue tout en offrant des options de personnalisation du tunnel d’achat relativement simples à mettre en œuvre (j’aurais d’ailleurs pu également parler de la possibilité de [personnaliser les frais de port via *webhook*](https://docs.snipcart.com/v3/webhooks/shipping)).
