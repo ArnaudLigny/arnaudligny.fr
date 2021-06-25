@@ -112,9 +112,9 @@ _Impression numérique sans bordure sur papier couché premium semi mat 200 g (c
 Les affiches sont toutes signées à la main._
 ```
 
-## Templates et intégration Snipcart
+### Templates et intégration Snipcart
 
-### Liste des produits
+#### Liste des produits
 
 La volumétrie du catalogue étant très faible il n’est pas nécessaire de construire une arborescence complexe : afficher l’ensemble des produits sur la page d’accueil est suffisant.
 
@@ -135,7 +135,7 @@ Ainsi le template [Twig](https://twig.symfony.com/) `layouts/index.html.twig` li
 {% endblock %}
 ```
 
-### Fiche produit
+#### Fiche produit
 
 La fiche produit (un [composant Twig](https://github.com/cecillie/eshop/blob/main/layouts/components/product.html.twig) réutilisable) va afficher :
 
@@ -178,7 +178,7 @@ Cette portion du template `layouts/components/product.html.twig` est composée d
 
 C’est le composant bouton qui porte les attributs permettant l’ajout du produit au panier Snipcart.
 
-### Intégration Snipcart
+#### Intégration Snipcart
 
 L’intégration de Snipcart est simple, et nécessite :
 
