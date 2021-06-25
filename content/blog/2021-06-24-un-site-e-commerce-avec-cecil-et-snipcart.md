@@ -2,7 +2,7 @@
 title: "J'ai créé un site e-commerce avec Cecil et Snipcart"
 description: "Un site e-commerce statique performant et peu couteux grâce à Cecil et Snipcart."
 date: 2021-06-24
-tags: [Cecil, e-commerce, SSG]
+tags: [Cecil, E-commerce, SSG]
 image: /images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr.jpg
 image_header: true
 typora-root-url: "../../static"

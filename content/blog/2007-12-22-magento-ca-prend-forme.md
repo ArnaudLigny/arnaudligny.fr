@@ -2,7 +2,7 @@
 title: "Magento : ça prend forme !"
 date: 2007-12-22
 tags:
-  - e-commerce
+  - E-commerce
   - Magento
 path: blog/magento-ca-prend-forme
 ---

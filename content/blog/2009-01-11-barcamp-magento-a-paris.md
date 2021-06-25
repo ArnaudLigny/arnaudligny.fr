@@ -2,7 +2,7 @@
 title: "Barcamp Magento à Paris"
 date: 11-01-2009
 tags: 
-  - e-commerce
+  - E-commerce
   - Magento
 path: blog/barcamp-magento-a-paris
 ---
