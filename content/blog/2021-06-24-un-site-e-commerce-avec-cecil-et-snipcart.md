@@ -14,6 +14,7 @@ Néanmoins, la première solution reste onéreuse pour un petit projet (peu de v
 
 Je lui ai alors proposé de créer un site web statique avec [**Cecil**](https://cecil.app) auquel nous brancherions la solution e-commerce [**Snipcart**](https://snipcart.com) afin de dynamiser les interactions utilisateur.
 <!-- break -->
+[toc]
 
 ## Pourquoi un site statique ?
 
