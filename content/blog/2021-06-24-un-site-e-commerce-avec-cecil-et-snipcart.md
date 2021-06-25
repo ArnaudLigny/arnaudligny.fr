@@ -1,11 +1,10 @@
 ---
 title: "J'ai créé un site e-commerce avec Cecil et Snipcart"
-description: "Un site e-commerce statique grâce à Cecil et Snipcart."
+description: "Un site e-commerce statique performant et peu couteux grâce à Cecil et Snipcart."
 date: 2021-06-24
-tags: [Cecil, e-commerce]
+tags: [Cecil, e-commerce, SSG]
 image: /images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr.jpg
 image_header: true
-draft: true
 typora-root-url: "../../static"
 ---
 En début d’année ma chérie terminait la [campagne Ulule de son projet ***Paysages à vélo***](https://fr.ulule.com/paysages-a-velo/) et se posait la question de continuer la vente de ses créations via une boutique en ligne.
@@ -204,7 +203,7 @@ L’intégration de Snipcart est simple, et nécessite :
 ```
 
 - Démo : https://codepen.io/thatfrankdev/pen/xxwRXQw?editors=1000
-- Template de *Paysages à vélo* : [layouts/components/add-item.html.twig](layouts/components/add-item.html.twig)
+- Template de *Paysages à vélo* : [layouts/components/add-item.html.twig](https://github.com/cecillie/eshop/blob/main/layouts/components/add-item.html.twig)
 
 ### Personnalisation du tunnel d’achat
 
@@ -254,7 +253,25 @@ Ainsi, dans le cas de *Paysages à vélo* j’ai :
 2. Désactiver la suggestion d’adresse (qui n’est pas très fiable sur le territoire français) ;
 3. Ajouter un champ de saisi d’un message cadeau.
 
-Pour les curieux le [code source est disponible sur GitHub](https://github.com/cecillie/eshop/blob/main/static/snipcart/templates.tpl).
+Par exemple, dans le cas du champ de saisi du message cadeau, le code ressemble à ça :
+
+```html
+<shipping-address section="bottom">
+  <fieldset class="snipcart-form__set">
+    <hr class="snipcart-form__separator" />
+    <!-- Gift message -->
+    <div class="snipcart-form__field">
+      <snipcart-label class="snipcart__font--tiny" for="Message cadeau">Message cadeau</snipcart-label>
+      <snipcart-input name="Message cadeau"></snipcart-input>
+      <p class="snipcart__font--tiny snipcart-form__footer">
+        (Votre message sera écrit à la main sur une carte, ajoutée au colis)
+      </p>
+    </div>
+  </fieldset>
+</address-fields>
+```
+
+> Si vous voulez en voir plus le [code source est disponible sur GitHub](https://github.com/cecillie/eshop/blob/main/static/snipcart/templates.tpl).
 
 ## Gestion de contenu (CMS)
 
@@ -270,9 +287,9 @@ De plus Forestry offre un fonctionnalité de prévisualisation, en contexte, tr�
 </video>
 ## Conclusion
 
-J’ai pris beaucoup de plaisir à réaliser ce petit site e-commerce, principalement grâce à Snipcart qui m’a permis d’être libre sur la création du catalogue tout en offrant des options de personnalisation du tunnel d’achat relativement simples à mettre en œuvre (j’aurais d’ailleurs pu aussi parler de la possibilité de personnaliser les frais de port de port via *webhook*. Peut être dans un article complémentaire).
+J’ai pris beaucoup de plaisir à réaliser ce petit site e-commerce, principalement grâce à Snipcart qui m’a permis d’être libre sur la création du site web catalogue tout en offrant des options de personnalisation du tunnel d’achat relativement simples à mettre en œuvre (j’aurais d’ailleurs pu également parler de la possibilité de [personnaliser les frais de port via *webhook*](https://docs.snipcart.com/v3/webhooks/shipping)).
 
-**Et surtout :** l’utilisatrice principale du site est autonome sur la gestion des contenus, la création de nouveaux produits et la gestion des commandes, ce qui est finalement le plus important dans la réussite d’un site e-commerce ! 🛒😊
+**Et surtout :** l’utilisatrice du site est autonome sur la gestion des contenus, la création de nouveaux produits et la gestion des commandes, ce qui est finalement le plus important dans la réussite d’un site e-commerce ! 🛒😊
 
 Enfin, je vous invite à :
 
