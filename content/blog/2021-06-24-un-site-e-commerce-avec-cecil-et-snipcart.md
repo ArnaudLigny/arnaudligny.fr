@@ -230,7 +230,7 @@ La feuille de style Sass de *Paysages à vélo* disponible sur [GitHub](https://
 
 #### Personnalisation des textes
 
-Les textes de l’interface de Snipcart sont disponibles en français (j’ai d’ailleurs apporté ma contribution sur [la version `fr-FR`](https://github.com/snipcart/snipcart-l10n/blob/master/locales/fr-FR.json)) sans paramétrage particulier (autre qu’en définissant l’attribut `lang` de la balise `<html>`) mais si vous souhaitez personnaliser les textes, ça reste possible en chargeant son propre fichier de langue :
+Les textes de l’interface de Snipcart sont disponibles en français (à laquelle j’ai d’ailleurs apporté [ma contribution](https://github.com/snipcart/snipcart-l10n/blob/master/locales/fr-FR.json)) sans paramétrage particulier (autre qu’en définissant l’attribut `lang` de la balise `<html>`) mais si vous souhaitez personnaliser les textes, ça reste possible en chargeant son propre fichier de langue :
 
 ```javascript
 document.addEventListener('snipcart.ready', function() {
