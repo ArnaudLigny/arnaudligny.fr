@@ -18,7 +18,7 @@ Je lui ai alors proposé de créer un site web statique avec [**Cecil**](https:/
 
 ## Pourquoi un site statique ?
 
-<img src="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/cecil.png"  />
+![Logo Cecil](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/cecil.png)
 
 Je suis un fervent promoteur de l’approche statique pour la diffusion de sites web de contenu pour les raisons suivantes (entre autres) :
 
@@ -30,7 +30,7 @@ Dans le cas de ce projet j’ai donc utilisé [mon propre générateur de site s
 
 ## Pourquoi Snipcart ?
 
-<img src="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/snipcart.png"  />
+![Logo Snipcart](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/snipcart.png)
 
 [Snipcart](https://snipcart.com) n’est pas une solution e-commerce clef en main mais plutôt un « checkout » (tunnel d’achat) à ajouter à n’importe quel site web.
 
@@ -230,7 +230,7 @@ La feuille de style Sass de *Paysages à vélo* disponible sur [GitHub](https://
 
 #### Personnalisation des textes
 
-Les textes de l’interface de Snipcart sont disponibles en français (j’ai d’ailleurs [apporté ma contribution sur la version `fr-FR`](https://github.com/snipcart/snipcart-l10n/blob/master/locales/fr-FR.json)) sans paramétrage particulier (autre qu’en définissant l’attribut `lang` de la balise `<html>`) mais si vous souhaitez personnaliser les textes, ça reste possible en chargeant son propre fichier de langue :
+Les textes de l’interface de Snipcart sont disponibles en français (j’ai d’ailleurs apporté ma contribution sur [la version `fr-FR`](https://github.com/snipcart/snipcart-l10n/blob/master/locales/fr-FR.json)) sans paramétrage particulier (autre qu’en définissant l’attribut `lang` de la balise `<html>`) mais si vous souhaitez personnaliser les textes, ça reste possible en chargeant son propre fichier de langue :
 
 ```javascript
 document.addEventListener('snipcart.ready', function() {
