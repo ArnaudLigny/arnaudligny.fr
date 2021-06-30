@@ -5,7 +5,6 @@ tags: [Cecil, GitHub]
 image: /images/2021-06-29-generer-et-heberger-un-site-statique-avec-github/github-settings-pages-after.png
 image_header: false
 typora-root-url: "../../static"
-draft: true
 ---
 [GitHub](https://github.com) fourni l’outillage nécessaire pour générer un site statique et pour l’héberger  – gratuitement –  grâce à [GitHub Pages](https://pages.github.com/) et [GitHub Actions](https://github.com/features/actions).
 
