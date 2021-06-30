@@ -11,3 +11,12 @@ draft: true
 
 Dans cet article je vais montrer comment faire avec [Cecil](https://cecil.app), mon générateur de site statique.
 <!-- break -->
+
+## Qu’est-ce que GitHub Pages ?
+
+to do
+
+## Qu’est-ce que GitHub Actions ?
+
+to do
+
