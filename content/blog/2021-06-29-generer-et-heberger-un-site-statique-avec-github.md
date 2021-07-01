@@ -2,7 +2,7 @@
 title: "Générer et héberger un site web statique avec GitHub"
 date: 2021-06-29
 tags: [Cecil, GitHub]
-image: /images/2021-06-29-generer-et-heberger-un-site-statique-avec-github/github-settings-pages-after.png
+image: /images/2021-06-29-generer-et-heberger-un-site-statique-avec-github/share.png
 image_header: false
 typora-root-url: ../../static
 ---
