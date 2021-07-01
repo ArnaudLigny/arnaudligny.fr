@@ -1,10 +1,10 @@
 ---
-title: Générer et héberger un site web statique avec GitHub
+title: "Générer et héberger un site web statique avec GitHub"
 date: 2021-06-29
 tags: [Cecil, GitHub]
 image: /images/2021-06-29-generer-et-heberger-un-site-statique-avec-github/github-settings-pages-after.png
 image_header: false
-typora-root-url: "../../static"
+typora-root-url: ../../static
 ---
 [GitHub](https://github.com) fourni l’outillage nécessaire pour générer un site statique et pour l’héberger  – gratuitement –  grâce à [GitHub Pages](https://pages.github.com/) et [GitHub Actions](https://github.com/features/actions).
 
@@ -87,25 +87,29 @@ C’est là que la marketplace montrent tout son intérêt. En effet, pour chacu
 ```yml
 build:
   name: Build
-  runs-on: ubuntu-latest # Utilisation d'une image Linux Ubuntu
+  # Utilisation d'une image Linux Ubuntu
+  runs-on: ubuntu-latest
   steps:
 
   - name: Checkout source
     uses: actions/checkout@v2
     with:
-      fetch-depth: 1 # Inutile de récupérer tout l'historique : la dernière version suffit
+      # Inutile de récupérer tout l'historique : la dernière version suffit
+      fetch-depth: 1
 
   - name: Build site with Cecil
     uses: Cecilapp/Cecil-Action@v3
     with:
-      config: 'cecil.yml' # Pour éviter les conflits, utilisation d'un nom spécifique
+      # Pour éviter les conflits, utilisation d'un nom spécifique
+      config: 'cecil.yml'
 
   - name: Upload site to Artifacts
     uses: actions/upload-artifact@v2
     with:
       name: _site
       path: _site
-      if-no-files-found: error # La tâche de déploiement ne sera pas exécutée si aucun fichier n'est généré
+      # La tâche ne sera pas exécutée si aucun fichier n'est généré
+      if-no-files-found: error
 ```
 
 #### 2. `deploy` : déploiement des fichiers générés
@@ -116,7 +120,8 @@ build:
 ```yml
 deploy:
   name: Deploy
-  needs: build # La tâche 'deploy' est exécutée après la tâche 'build'
+  # La tâche 'deploy' est exécutée après la tâche 'build'
+  needs: build
   runs-on: ubuntu-latest
   steps:
 
@@ -129,9 +134,11 @@ deploy:
   - name: Deploy site to GitHub Pages
     uses: Cecilapp/GitHub-Pages-deploy@v3
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Accès en écriture à la branche cible (`gh-pages`)
+      # Accès en écriture à la branche cible (`gh-pages`)
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     with:
-      email: arnaud@ligny.org # Adresse e-mail valide sur GitHub
+      # Adresse e-mail valide sur GitHub
+      email: arnaud@ligny.org
 ```
 
 > Note : par défaut _GitHub-Pages-deploy_ utilise le dossier `_site` comme source et le déploie dans la branche `gh-pages`.
