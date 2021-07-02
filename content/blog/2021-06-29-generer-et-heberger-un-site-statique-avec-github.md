@@ -155,7 +155,7 @@ Enfin, il reste à activer _GitHub Pages_ au sein du dépôt via `Settings` > `P
 
 ![GitHub Pages settings](/images/2021-06-29-generer-et-heberger-un-site-statique-avec-github/github-settings-pages-after.png)
 
-Et voilà ! 🎉
+Et voilà comment générer et déployer automatiquement un site web statique, hébergé gratuitement ! 🎉
 
 Si vous souhaitez tester par vous même, en moins d’une minute, je vous invite à jouer avec le template [`Single-GitHub-Page`](https://github.com/Cecilapp/Single-GitHub-Page).
 
