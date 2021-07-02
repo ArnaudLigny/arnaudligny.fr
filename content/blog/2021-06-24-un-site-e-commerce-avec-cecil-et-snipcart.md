@@ -250,9 +250,9 @@ Snipcart permet également de modifier et d’enrichir les étapes du tunnel d�
 
 Ainsi, dans le cas de *Paysages à vélo* j’ai :
 
-1. Modifier l’affichage des lignes du panier afin d’y indiquer le format d’impression sélectionné à côté du nom du produit ;
-2. Désactiver la suggestion d’adresse (qui n’est pas très fiable sur le territoire français) ;
-3. Ajouter un champ de saisi d’un message cadeau.
+1. Modifié l’affichage des lignes du panier afin d’y indiquer le format d’impression sélectionné à côté du nom du produit ;
+2. Désactivé la suggestion d’adresse (qui n’est pas très fiable sur le territoire français) ;
+3. Ajouté un champ de saisi d’un message cadeau.
 
 Par exemple, dans le cas du champ de saisi du message cadeau, le code ressemble à ça :
 
