@@ -1,7 +1,8 @@
 ---
 title: "Générer et héberger un site web statique avec GitHub"
 date: 2021-06-29
-tags: [Cecil, GitHub]
+updated: 2021-07-03
+tags: [SSG, Cecil, GitHub]
 image: /images/2021-06-29-generer-et-heberger-un-site-statique-avec-github/share.png
 image_header: false
 typora-root-url: ../../static
@@ -157,7 +158,10 @@ Enfin, il reste à activer _GitHub Pages_ au sein du dépôt via `Settings` > `P
 
 Et voilà comment générer et déployer automatiquement un site web statique, hébergé gratuitement ! 🎉
 
-Si vous souhaitez tester par vous même, en moins d’une minute, je vous invite à jouer avec le template [`Single-GitHub-Page`](https://github.com/Cecilapp/Single-GitHub-Page).
+Remarques :
+
+- Dans cet article j’ai utilisé [Cecil Action](https://github.com/marketplace/actions/cecil-action) mais j’aurais également pu effectuer la même démonstration avec une action [Hugo](https://github.com/marketplace?type=actions&query=hugo) ou [Eleventy](https://github.com/marketplace?type=actions&query=eleventy) ;
+- Si vous souhaitez tester par vous même, en moins d’une minute, je vous invite à essayer avec le template [`Single-GitHub-Page`](https://github.com/Cecilapp/Single-GitHub-Page).
 
 *[SSG]: Static Site Generator (Générateur de site statique)
 
