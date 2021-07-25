@@ -19,3 +19,4 @@ Aussi, après plusieurs comparatifs, j’ai retenu la solution [Algolia](https:/
 * [tarifs abordables](https://www.algolia.com/pricing/) (dont un plan gratuit)
 * [documentation riche](https://www.algolia.com/doc/)
 * nombreuses bibliothèques de code [open source](https://github.com/algolia)
+
