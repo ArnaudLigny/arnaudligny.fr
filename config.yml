@@ -9,6 +9,11 @@ keywords:
  - e-commerce
  - Magento
  - IoT
+language: fr
+languages:
+  - code: fr
+    name: Français
+    locale: fr_FR
 menus:
   main:
     - id: index
@@ -45,11 +50,6 @@ social:
     username: Narno
   linkedin:
     username: arnaudligny
-language: fr
-languages:
-  - code: fr
-    name: Français
-    locale: fr_FR
 output:
   pagetypeformats:
     section: ['html', 'atom', 'json']
