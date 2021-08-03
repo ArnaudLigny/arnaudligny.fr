@@ -1,7 +1,7 @@
 ---
 title: Consultant technique senior
 date: 2020-09-22
-updated: 2020-10-05
+updated: 2021-08-03
 intro: |
   > Hello, je suis [Arnaud Ligny](https://arnaudligny.fr), consultant technique web, mobile & e-commerce.
 
@@ -11,6 +11,7 @@ intro: |
   *[IoT]: Internet of Things
 menu: main
 layout: cv
+image: /images/photo-cv.jpg
 output: [html, json]
 published: true
 typora-root-url: ../../static
