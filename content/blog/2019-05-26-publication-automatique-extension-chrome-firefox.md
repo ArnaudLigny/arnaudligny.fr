@@ -27,13 +27,13 @@ Aussi, j’ai cherché à automatiser ces étapes via l’[**intégration contin
 
 [![Tableau de bord de Travis CI](/images/f-notifier-travis-ci.png)](https://travis-ci.org/Narno/F-Notifier/builds)
 
-Le principe de l’intégration continue vise à automatiser l‘exécution des [*tests*](#tests) et le [*build*](#build) du programme (ici l’extension programmée en JavaScript) à chaque livraison de code (sur le dépôt) afin de s’assurer de la qualité du code et de prévenir les risques de regression.
+Le principe de l’intégration continue vise à automatiser l‘exécution des [*tests*](#tests) et le [*build*](#build) du programme (ici l’extension programmée en JavaScript) à chaque livraison de code (sur le dépôt) afin de s’assurer de la qualité du code et de prévenir les risques de régression.
 
-Dans le cas d’une distribition open-source je recommanderais la solution [**Travis CI**](https://travis-ci.com/) qui est gratuite pour les petits projets, très simple à paramétrer, et qui propose également de l’outillage permettant le [déploiement continu](#deploiement-continu).
+Dans le cas d’une distribution open-source je recommanderais la solution [**Travis CI**](https://travis-ci.com/) qui est gratuite pour les petits projets, très simple à paramétrer, et qui propose également de l’outillage permettant le [déploiement continu](#deploiement-continu).
 
 ### Tests {#tests}
 
-Pour la plupart de mes extensions, qui sont sommes toute très simple, je me suis concentré sur la qualité du code JavaScript via [ESLint](https://eslint.org/) en utilisant la blitiothèque [**xo**](https://github.com/xojs/xo).
+Pour la plupart de mes extensions, qui sont sommes toute très simple, je me suis concentré sur la qualité du code JavaScript via [ESLint](https://eslint.org/) en utilisant la bibliothèque [**xo**](https://github.com/xojs/xo).
 
 **Exemple :** [`package.json`](https://github.com/Narno/F-Notifier/blob/2.3.1/package.json#L38).
 
@@ -55,7 +55,7 @@ Détaillons maintenant l’objet de cet article, à savoir :
 
 > ***Comment automatiser la publication d’une extension Google Chrome sur le Chrome Web Store et une extension Mozilla Firefox sur Firefox Add-ons ?***
 
-La publication est la dernière étape de l’intégation continue, exécutée si et seulement si le *build* est un succès (de manière automatique via une ligne de commande).
+La publication est la dernière étape de l’intégration continue, exécutée si et seulement si le *build* est un succès (de manière automatique via une ligne de commande).
 
 ### *Release* GitHub {#release-github}
 
@@ -77,7 +77,7 @@ deploy:
     file: "dist/*"
 ```
 
-> Note : la variable d’envrionnement `GH_TOKEN` doit être ajoutée à la configuration du projet Travis CI.
+> Note : la variable d’environnement `GH_TOKEN` doit être ajoutée à la configuration du projet Travis CI.
 
 ### *Chrome Web Store* {#chrome-web-store}
 
@@ -88,7 +88,7 @@ Et bien entendu il existe un module *Node.js* (et son *wrapper* en ligne de comm
 Cet outil est très efficace même si le paramétrage reste pénible la première fois. L’objectif est de :
 
 1. [générer les clefs de l’API](https://github.com/DrewML/chrome-webstore-upload/blob/master/How%20to%20generate%20Google%20API%20keys.md) ;
-2. enregistrer les variables d’environnement correpondantes dans la configuration du projet Travis CI : `CLIENT_ID`, `CLIENT_SECRET` et `REFRESH_TOKEN` ;
+2. enregistrer les variables d’environnement correspondantes dans la configuration du projet Travis CI : `CLIENT_ID`, `CLIENT_SECRET` et `REFRESH_TOKEN` ;
 3. exécuter la commande `webstore upload --auto-publish`.
 
 **Exemple de configuration Travis CI :**
@@ -103,10 +103,10 @@ Néanmoins j’ai rencontré un soucis avec la commande `web-ext sign` : la soum
 
 Pour palier à ce soucis j’utilise le *wrapper* [***web-ext-submit***](https://github.com/bfred-it/web-ext-submit) de [Federico Brigante](https://github.com/fregante).
 
-Son utilisatation est similaire à celle de *Web Store Uplaod CLI* :
+Son utilisation est similaire à celle de *Web Store Upload CLI* :
 
 1. [générer les clefs d’API](https://addons.mozilla.org/developers/addon/api/key/) ;
-2. enregistrer les variables d’environnement correpondantes dans la configuration du projet Travis CI : `WEB_EXT_API_KEY` et `WEB_EXT_API_SECRET`;
+2. enregistrer les variables d’environnement correspondantes dans la configuration du projet Travis CI : `WEB_EXT_API_KEY` et `WEB_EXT_API_SECRET`;
 3. exécuter la commande `webext submit`.
 
 ## Conclusion
@@ -119,3 +119,4 @@ Néanmoins ça prend toujours un peu de temps la première fois, aussi je vous i
 - [`.travis.yml`](https://github.com/Narno/F-Notifier/blob/2.3.1/.travis.yml).
 
 Et voilà ! 😃
+
