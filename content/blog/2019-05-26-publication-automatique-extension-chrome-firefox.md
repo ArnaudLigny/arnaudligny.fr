@@ -1,7 +1,7 @@
 ---
 title: "Publication automatique d’une extension Chrome ou Firefox"
 date: 2019-05-26
-updated: 2019-05-29
+updated: 2021-09-06
 tags:
   - Développement
 image: /images/store_developer_dashboard.png
@@ -9,6 +9,13 @@ image_header: false
 published: true
 typora-root-url: ../../static
 ---
+
+**Mis à jour le 06/09/21**
+
+Dans cet article je fais référence à **Travis CI** en tant qu’outil de CI/CD, mais depuis j’ai migré vers [**GitHub Actions**](https://arnaudligny.fr/blog/generer-et-heberger-un-site-statique-avec-github/#qu-est-ce-que-github-actions).  
+Voici un exemple complet de workflow : [release.yml](https://github.com/Narno/F-Notifier/blob/2.7.4/.github/workflows/release.yml).
+
+----
 
 Ces dernières années j’ai développé quelques extensions pour navigateur web, d'abord pour [Chrome](https://chrome.google.com/webstore/search/ligny?_category=extensions), puis pour [Firefox](https://addons.mozilla.org/fr/firefox/user/77216/) (avec la standardisation de l'API [*WebExtensions*](https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions)).
 
@@ -113,10 +120,6 @@ Son utilisation est similaire à celle de *Web Store Upload CLI* :
 
 Comme vous avez pu le lire, en combinant les outils adaptés, il est relativement simple d’automatiser la publication d’une extension pour navigateur.
 
-Néanmoins ça prend toujours un peu de temps la première fois, aussi je vous invite à vous inspirer d’un de mes projets — [***F-Notifier*** (~ 400 utilisateurs)](https://github.com/Narno/F-Notifier) — et plus particulièrement des fichiers suivant :
-
-- [`package.json`](https://github.com/Narno/F-Notifier/blob/2.3.1/package.json) ;
-- [`.travis.yml`](https://github.com/Narno/F-Notifier/blob/2.3.1/.travis.yml).
+Néanmoins ça prend toujours un peu de temps la première fois, aussi je vous invite à vous inspirer d’un de mes projets — [***F-Notifier*** (~ 400 utilisateurs)](https://github.com/Narno/F-Notifier) — et plus particulièrement des fichiers [`package.json`](https://github.com/Narno/F-Notifier/blob/2.3.1/package.json) et [`.travis.yml`](https://github.com/Narno/F-Notifier/blob/2.3.1/.travis.yml).
 
 Et voilà ! 😃
-
