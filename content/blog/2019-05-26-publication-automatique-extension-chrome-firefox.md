@@ -13,7 +13,7 @@ typora-root-url: ../../static
 **Mis à jour le 06/09/21**
 
 Dans cet article je fais référence à **Travis CI** en tant qu’outil de CI/CD, mais depuis j’ai migré vers [**GitHub Actions**](https://arnaudligny.fr/blog/generer-et-heberger-un-site-statique-avec-github/#qu-est-ce-que-github-actions).  
-Voici un exemple complet de workflow : [release.yml](https://github.com/Narno/F-Notifier/blob/2.7.4/.github/workflows/release.yml).
+Voici un exemple complet de workflow : [`release.yml`](https://github.com/Narno/F-Notifier/blob/2.7.4/.github/workflows/release.yml).
 
 ----
 
