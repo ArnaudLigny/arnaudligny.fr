@@ -1,5 +1,5 @@
 ---
-title: Un moteur de recherche sur un site statique grâce à Algolia
+title: Ajouter un moteur de recherche à un site statique grâce à Algolia
 date: 2021-07-26
 tags: [SSG, Recherche, Cecil]
 image: /images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png
