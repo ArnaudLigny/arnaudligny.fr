@@ -59,5 +59,3 @@ Une fois le numéro de version choisi (le dernier en l'occurrence) il suffit de 
 Voilà, c'est tout simple et très pratique !
 
 Il faut toutefois noter que l'extension ainsi télécharger n'est pas installable en l'état : il faut suivre la répartition des fichiers indiquer dans `package.xml`.
-
-_Initialement publié sur [Narno.com](http://narno.com/blog/telecharger-manuellement-une-extension-magento)._

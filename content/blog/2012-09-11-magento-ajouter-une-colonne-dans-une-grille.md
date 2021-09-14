@@ -111,5 +111,3 @@ Même logique que pour le block : Je vérifie que la collection courante corresp
 Et voilà ! :-)
 
 *[SKU]: Stock Keeping Unit
-
-_Initialement publié sur [Narno.com](http://narno.com/blog/magento-ajouter-une-colonne-dans-une-grille)._

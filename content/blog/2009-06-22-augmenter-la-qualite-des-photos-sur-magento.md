@@ -60,5 +60,3 @@ echo $this->helper('catalog/image')
     ->resize(42, 50)
     ->setQuality(90);
 ```
-
-_Initialement publié sur [Narno.com](http://narno.com/blog/augmenter-la-qualite-des-photos-sur-magento)._

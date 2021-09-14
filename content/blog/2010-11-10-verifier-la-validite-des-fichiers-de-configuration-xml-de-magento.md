@@ -131,5 +131,3 @@ Pour aller plus loin dans la validation des fichiers XML de Magento, il serait n
 
 *[XML]: Extensible Markup Language  
 *[DTD]: Document type definition
-
-_Initialement publié sur [Narno.com](http://narno.com/blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento)._

@@ -134,5 +134,3 @@ A partir de là, vous allez pouvoir commencer à vous amuser grâce à des logic
 Vous verrez que c'est très agréable à utiliser et que c'est nettement plus adapté à un usage professionnel : vous n'aurez plus à recherche manuellement les chaînes à traduire au milieu de vos lignes de codes, le logiciel le fera pour vous en scannant les répertoires de votre module ! Ce sera certainement le sujet du prochain billet ;-)
 
 *[CSV]: Comma Separated Values
-
-_Initialement publié sur [Narno.com](http://narno.com/blog/utiliser-gettext-pour-traduire-vos-modules-magento)._

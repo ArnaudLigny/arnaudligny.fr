@@ -17,5 +17,3 @@ Enfin, le pire arrive : le package (archive ZIP dans la majorité des cas), est 
 Dans ce cas il m'est arrivé d'abandonner et coder moi même le module en question.
 
 Bref, encore une fois soyez prudent et prenez le temps de lire les avis et de faire une recherche sur les forum avant d'acheter.
-
-_Initialement publié sur [Narno.com](http://narno.com/blog/modules-payant-pour-magento-attention-aux-arnaques)._

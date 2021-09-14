@@ -90,4 +90,4 @@ L'élément différenciant restant l'expérience utilisateur "plus immersive" et
 *[UI]: User Interface
 *[GPS]: Global Positioning System
 
-_Initialement publié sur [Adfab Connect](https://connect.adfab.fr/mobile/application-mobile-native-ou-hybride)._
+> _Initialement publié sur [Adfab Connect](https://connect.adfab.fr/mobile/application-mobile-native-ou-hybride)._
