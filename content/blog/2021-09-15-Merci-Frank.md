@@ -15,7 +15,7 @@ Je crois que la seule chose que je regrette c’est que nous n’ayons pas pu no
 Reste que j’ai été marqué par les centaines d’heures que nous avons passé a discuter ensemble et les projets que nous avons réalisés, grâce à ta bonne humeur, ton humilité, ton envie de "faire" et de partager.
 
 Merci Frank ! ❤️
-
+<!-- break -->
 _Photo utilisée pour l’Open Graph de Franck Paul[^3], Paris Web 2016, CC BY-NC-SA 2.0._
 
 [^1]: [Jamstatic](https://jamstatic.fr), sites statiques et architectures découplées.
