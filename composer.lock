@@ -174,16 +174,16 @@
         },
         {
             "name": "cecil/theme-serviceworker",
-            "version": "1.9.3",
+            "version": "1.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-serviceworker.git",
-                "reference": "8169abc6a8e1e82d7fc39d0c364f0dd00e281298"
+                "reference": "46aa34e435e573b20046c5f7e0031c4ccc0de2bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-serviceworker/zipball/8169abc6a8e1e82d7fc39d0c364f0dd00e281298",
-                "reference": "8169abc6a8e1e82d7fc39d0c364f0dd00e281298",
+                "url": "https://api.github.com/repos/Cecilapp/theme-serviceworker/zipball/46aa34e435e573b20046c5f7e0031c4ccc0de2bf",
+                "reference": "46aa34e435e573b20046c5f7e0031c4ccc0de2bf",
                 "shasum": ""
             },
             "require": {
@@ -208,15 +208,23 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-serviceworker/issues",
-                "source": "https://github.com/Cecilapp/theme-serviceworker/tree/1.9.3"
+                "source": "https://github.com/Cecilapp/theme-serviceworker/tree/1.9.4"
             },
             "funding": [
                 {
                     "url": "https://www.paypal.me/narno",
                     "type": "custom"
+                },
+                {
+                    "url": "https://github.com/Narno",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/cecil",
+                    "type": "open_collective"
                 }
             ],
-            "time": "2020-11-09T21:34:01+00:00"
+            "time": "2021-09-15T00:02:26+00:00"
         }
     ],
     "packages-dev": [],
@@ -227,5 +235,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
