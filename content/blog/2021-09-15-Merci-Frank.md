@@ -1,5 +1,7 @@
 ---
 title: Merci Frank !
+image: images/frank.jpg
+image_header: false
 ---
 J’avais juste envie de te dire merci. Merci de m’avoir permis de te connaitre et de partager avec toi.
 
