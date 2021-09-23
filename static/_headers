@@ -20,6 +20,3 @@
 
 /js/*
   Cache-Control: public, max-age=360000
-
-/darnes-feed
-  Content-Type: "text/xml"
