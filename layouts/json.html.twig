@@ -1,0 +1,19 @@
+{% extends 'page.html.twig' %}
+
+{% set superheroes = asset('https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json').content|json_decode %}
+
+{% block content %}
+
+<article class="page typeset">
+  {{ page.content }}
+  <p>
+    {{ superheroes.squadName }} members:
+    <ol>
+    {% for member in superheroes.members %}
+      <li>{{ member.name }} ({{ member.age }} yo)</li>
+    {% endfor %}
+    </ol>
+  </p>
+</article>
+
+{% endblock %}
