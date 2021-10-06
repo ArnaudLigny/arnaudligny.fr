@@ -2,7 +2,7 @@
 title: "leo-bot"
 date: 2019-01-13
 weight: 4
-redirect: https://arnaudligny.gothub.io/leo-bot/
+redirect: https://arnaudligny.github.io/leo-bot/
 published: true
 typora-root-url: "../../static"
 ---
@@ -10,4 +10,4 @@ Bot [Slack](https://slack.com) qui vous rappelle quand il est temps d'aller cher
 
 ![Exemple de rappel](/images/projets/leo-bot-slack-example.png)
 
-[arnaudligny.gothub.io/leo-bot](https://arnaudligny.gothub.io/leo-bot/)
+[arnaudligny.github.io/leo-bot](https://arnaudligny.github.io/leo-bot/)
