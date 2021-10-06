@@ -35,15 +35,15 @@ Voyons maintenant comment l’utiliser, en créant un module simple, qui va over
 
 > Note : Le code qui suit n'est fonctionnel tel quel, il s'agit de portion de code. Si j'ai le courage, je packagerai un module téléchargeable.
 
-`app/code/local/Narno/Gettext/Model/Translate.php`
+`app/code/local/ArnaudLigny/Gettext/Model/Translate.php`
 
 ```php
 /**
- * Narno Gettext Translate model
+ * Gettext Translate model
  *
  * New feature: support Gettext file (binary).
  */
-class Narno_Gettext_Model_Translate extends Mage_Core_Model_Translate
+class ArnaudLigny_Gettext_Model_Translate extends Mage_Core_Model_Translate
 {
     /**
      * Config file: translate files types
@@ -98,25 +98,25 @@ class Narno_Gettext_Model_Translate extends Mage_Core_Model_Translate
 }
 ```
 
-```Narno/Gettext/etc/config.xml```
+```ArnaudLigny/Gettext/etc/config.xml```
 
 ```xml
 <config>
     <frontend>
         <translate>
             <modules>
-                <Narno_Gettext>
+                <ArnaudLigny_Gettext>
                     <files>
-                        <mo>Narno_Gettext.mo</mo>
+                        <mo>ArnaudLigny_Gettext.mo</mo>
                     </files>
-                </Narno_Gettext>
+                </ArnaudLigny_Gettext>
             </modules>
         </translate>
     </frontend>
 </config>
 ```
 
-Si vous comparez la classe `Narno_Gettext_Model_Translate` avec la classe originale `Mage_Core_Model_Translate`, vous constaterez que j'ai introduis la possibilité de déterminer le type du fichier de traduction. De ce fait, le format CSV reste utilisable, via le noeud XML "default" (ou CSV). Pour charger un fichier binaire Gettest, il suffit d'utiliser le type "MO".
+Si vous comparez la classe `ArnaudLigny_Gettext_Model_Translate` avec la classe originale `Mage_Core_Model_Translate`, vous constaterez que j'ai introduis la possibilité de déterminer le type du fichier de traduction. De ce fait, le format CSV reste utilisable, via le noeud XML "default" (ou CSV). Pour charger un fichier binaire Gettest, il suffit d'utiliser le type "MO".
 
 En ce qui concerne l’accès aux données binaires stockées dans le fichier .mo, rien de plus simple avec ZF en instanciant l'objet adéquate, en passant en paramètre le fichier de traduction et la locale correspondante. Magento utilisant déjà les locales, aucune bidouille n'est nécessaire :
 

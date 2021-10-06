@@ -12,6 +12,7 @@ published: true
 En l'état j'aurais tendance à dire que non.
 
 Voici ce que propose Magento :
+
 * URL simplifiée et réécriture automatique ;
 * Méta données (titre et description) génériques et spécifiques par page ;
 * Génération automatique du [sitemap XML](https://www.sitemaps.org) ;
@@ -24,6 +25,7 @@ Voici un exemple flagrant : si un des produits du catalogue appartient à plusie
 
 Cela peut semblé négligeable car Google ne pénalise pas le contenu dupliqué à l'intérieur d'un même site.  
 Néanmoins le problème du _duplicate content_ à toujours des conséquences :
+
 * Le sitemap est surchargée d'URL inutiles et ne sera donc pas entièrement [crawlé](http://fr.wikipedia.org/wiki/Crawler) par Google (et les autres moteurs de recherche) ;
 * Google va devoir faire l'effort de choisir entre l'une des URL pointant vers le produit, afin de déterminer la plus pertinente.
 
@@ -35,6 +37,7 @@ Néanmoins, dans le cas de Magento les options de configuration proposées par d
 Tel que je présente les choses le tableau de la SEO pour Magento pourrait semblé bien noir, mais il ne faut pas oublier que Magento est basé sur un framework : Il est donc possible d'améliorer tout ça grâce à quelques développements spécifiques s'appuyant sur les conseils d'un spécialiste du SEO.
 
 Il n'en reste pas moins qu'il sera rapidement nécessaire que la société Varien intègre certains fondamentaux, tel que la prise en compte de la langue du site, non pas via la session utilisateur (arg !) mais plutôt via l'URL (via un répertoire virtuel ou un sous-domaine), par exemple :
+
 * `http://fr.ma-boutique.com`
 * `http://www.ma-boutique.com/fr/`
 

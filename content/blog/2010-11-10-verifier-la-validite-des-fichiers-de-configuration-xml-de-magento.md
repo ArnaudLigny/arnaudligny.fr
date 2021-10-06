@@ -118,7 +118,7 @@ Voilà, c'est tout simple et le résultat est tout de même plus explicite :
 CONFIG FILE ERROR
 expected '>'
 Code: 73
-File: magento\app\code\local\Narno\MonModule\etc\config.xml
+File: magento\app\code\local\ArnaudLigny\MonModule\etc\config.xml
 Line: 20
 Column: 1
 ```

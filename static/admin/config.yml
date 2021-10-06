@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: Narno/arnaudligny.fr
+  repo: ArnaudLigny/arnaudligny.fr
   branch: master
   squash_merges: true
 publish_mode: editorial_workflow

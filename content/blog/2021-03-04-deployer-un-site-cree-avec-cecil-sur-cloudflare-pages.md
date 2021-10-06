@@ -54,7 +54,7 @@ git push -u origin main
 
 ### Script de génération
 
-Commencez par télécharger le script [`build.sh`](https://gist.githubusercontent.com/Narno/6b2aa9e6b25581c96435e9296efe0c0e/raw/build.sh) et placez le à la racine de votre site.
+Commencez par télécharger le script [`build.sh`](https://gist.githubusercontent.com/ArnaudLigny/6b2aa9e6b25581c96435e9296efe0c0e/raw/build.sh) et placez le à la racine de votre site.
 
 Vous pouvez ensuite déployer votre site sur Cloudflare Pages en vous rendant sur le tableau de bord et en créant un nouveau site.
 

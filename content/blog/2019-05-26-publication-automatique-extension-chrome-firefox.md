@@ -13,13 +13,13 @@ typora-root-url: ../../static
 **Mis à jour le 06/09/21**
 
 Dans cet article je fais référence à **Travis CI** en tant qu’outil de CI/CD, mais depuis j’ai migré vers [**GitHub Actions**](https://arnaudligny.fr/blog/generer-et-heberger-un-site-statique-avec-github/#qu-est-ce-que-github-actions).  
-Voici un exemple complet de workflow : [`release.yml`](https://github.com/Narno/F-Notifier/blob/2.7.4/.github/workflows/release.yml).
+Voici un exemple complet de workflow : [`release.yml`](https://github.com/ArnaudLigny/F-Notifier/blob/2.7.4/.github/workflows/release.yml).
 
 ----
 
 Ces dernières années j’ai développé quelques extensions pour navigateur web, d'abord pour [Chrome](https://chrome.google.com/webstore/search/ligny?_category=extensions), puis pour [Firefox](https://addons.mozilla.org/fr/firefox/user/77216/) (avec la standardisation de l'API [*WebExtensions*](https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions)).
 
-Initialement conçues et développées pour mon usage personnelle, j’ai ensuite décidé de les partager, non seulement sur [GitHub](https://github.com/Narno?tab=repositories&q=topic%3Aweb-extension&type=source) (sous licence open-source) mais aussi, sur les *stores* officiels afin d’en simplifier l'installation.
+Initialement conçues et développées pour mon usage personnelle, j’ai ensuite décidé de les partager, non seulement sur [GitHub](https://github.com/ArnaudLigny?tab=repositories&q=topic%3Aweb-extension&type=source) (sous licence open-source) mais aussi, sur les *stores* officiels afin d’en simplifier l'installation.
 
 <!-- break-->
 
@@ -32,7 +32,7 @@ Aussi, j’ai cherché à automatiser ces étapes via l’[**intégration contin
 
 ## Intégration continue {#integration-continue}
 
-[![Tableau de bord de Travis CI](/images/f-notifier-travis-ci.png)](https://travis-ci.org/Narno/F-Notifier/builds)
+[Tableau de bord de Travis CI](/images/f-notifier-travis-ci.png)
 
 Le principe de l’intégration continue vise à automatiser l‘exécution des [*tests*](#tests) et le [*build*](#build) du programme (ici l’extension programmée en JavaScript) à chaque livraison de code (sur le dépôt) afin de s’assurer de la qualité du code et de prévenir les risques de régression.
 
@@ -42,7 +42,7 @@ Dans le cas d’une distribution open-source je recommanderais la solution [**Tr
 
 Pour la plupart de mes extensions, qui sont sommes toute très simple, je me suis concentré sur la qualité du code JavaScript via [ESLint](https://eslint.org/) en utilisant la bibliothèque [**xo**](https://github.com/xojs/xo).
 
-**Exemple :** [`package.json`](https://github.com/Narno/F-Notifier/blob/2.3.1/package.json#L38).
+**Exemple :** [`package.json`](https://github.com/ArnaudLigny/F-Notifier/blob/2.3.1/package.json#L38).
 
 ### *Build* {#build}
 
@@ -54,7 +54,7 @@ Dans le cas d’une extension web, la phase de *build* consiste à :
 
 Pour réaliser ces étapes répétitives j’ai opté pour la boîte à outils [**Gulp**](https://gulpjs.com/) qui se paramètre via quelques lignes de JavaScript.
 
-**Exemple :** [`gulpfile.js`](https://github.com/Narno/F-Notifier/blob/2.3.1/gulpfile.js).
+**Exemple :** [`gulpfile.js`](https://github.com/ArnaudLigny/F-Notifier/blob/2.3.1/gulpfile.js).
 
 ## Déploiement continu {#deploiement-continu}
 
@@ -66,7 +66,7 @@ La publication est la dernière étape de l’intégration continue, exécutée 
 
 ### *Release* GitHub {#release-github}
 
-[![GitHub release](/images/f-notifier-github-release.png)](https://github.com/Narno/F-Notifier/releases)
+[![GitHub release](/images/f-notifier-github-release.png)](https://github.com/ArnaudLigny/F-Notifier/releases)
 
 Comme indiqué plus haut Travis CI offre une option simple, via la [configuration](https://docs.travis-ci.com/user/deployment/releases/), de déploiement du résultat du *build* en tant qu’*asset* attaché à une nouvelle release.
 
@@ -120,6 +120,6 @@ Son utilisation est similaire à celle de *Web Store Upload CLI* :
 
 Comme vous avez pu le lire, en combinant les outils adaptés, il est relativement simple d’automatiser la publication d’une extension pour navigateur.
 
-Néanmoins ça prend toujours un peu de temps la première fois, aussi je vous invite à vous inspirer d’un de mes projets — [***F-Notifier*** (~ 400 utilisateurs)](https://github.com/Narno/F-Notifier) — et plus particulièrement des fichiers [`package.json`](https://github.com/Narno/F-Notifier/blob/2.3.1/package.json) et [`.travis.yml`](https://github.com/Narno/F-Notifier/blob/2.3.1/.travis.yml).
+Néanmoins ça prend toujours un peu de temps la première fois, aussi je vous invite à vous inspirer d’un de mes projets — [***F-Notifier*** (~ 400 utilisateurs)](https://github.com/ArnaudLigny/F-Notifier) — et plus particulièrement des fichiers [`package.json`](https://github.com/ArnaudLigny/F-Notifier/blob/2.3.1/package.json) et [`.travis.yml`](https://github.com/ArnaudLigny/F-Notifier/blob/2.3.1/.travis.yml).
 
 Et voilà ! 😃

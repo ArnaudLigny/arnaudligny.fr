@@ -5,7 +5,7 @@ if [ -z "$GH_TOKEN" ]; then
   exit
 fi
 if [ -z "$REPO" ]; then
-  REPO="Narno/arnaudligny.fr"
+  REPO="ArnaudLigny/arnaudligny.fr"
 fi
 if [ -z "$TARGET_BRANCH" ]; then
   TARGET_BRANCH="gh-pages"

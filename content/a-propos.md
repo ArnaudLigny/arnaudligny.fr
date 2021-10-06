@@ -12,7 +12,7 @@ Les contenus du site sont couverts par la licence [Creative Commons BY-SA 4.0](h
 
 ## Sous le capot
 
-* les contenus et les templates sont versionnés sur [GitHub](https://github.com/Narno/arnaudligny.fr/)
+* les contenus et les templates sont versionnés sur [GitHub](https://github.com/ArnaudLigny/arnaudligny.fr/)
 * le site web est généré par [Cecil](https://cecil.app) (mon générateur de site statique)
 * le theme est un portage de [Garth](https://github.com/daviddarnes/garth) (créé par [@daviddarnes](https://github.com/daviddarnes))
 * le déploiement continu et l'hébergement sont assurés par [Netlify](https://netlify.com)

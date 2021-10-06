@@ -38,16 +38,16 @@ author:
   cv: CV_ArnaudLigny-2016.pdf
   statut: En poste
 social:
-  facebook:
-    id: 516589570
-    firstname: Arnaud
-    lastname: Ligny
-    username: Narno
+  #facebook:
+  #  id: 516589570
+  #  firstname: Arnaud
+  #  lastname: Ligny
+  #  username: Narno
   twitter:
     site: ArnaudLigny
     creator: ArnaudLigny
   github:
-    username: Narno
+    username: ArnaudLigny
   linkedin:
     username: arnaudligny
 output:
@@ -60,7 +60,7 @@ defaultpages:
     published: true
 virtualpages:
   - path: code
-    redirect: https://github.com/Narno
+    redirect: https://github.com/ArnaudLigny
   - path: tw
     redirect: https://twitter.com/ArnaudLigny
   # old URL
@@ -72,7 +72,7 @@ virtualpages:
     redirect: blog/telecharger-manuellement-une-extension-magento/
 googleanalytics: UA-30599234-2
 cloudflareinsights: aa58d54d00e04d9e8f0fc44730cafff7
-source: https://github.com/Narno/arnaudligny.fr/edit/master/content/
+source: https://github.com/ArnaudLigny/arnaudligny.fr/edit/master/content/
 comments: false
 static:
   exclude:
