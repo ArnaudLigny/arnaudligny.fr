@@ -1,6 +1,6 @@
 ---
-title: "J'ai créé un site e-commerce avec Cecil et Snipcart"
-description: "Un site e-commerce statique performant et peu couteux grâce à Cecil et Snipcart."
+title: "Créer un site e-commerce avec Cecil et Snipcart"
+description: "Comment créer un site e-commerce statique performant et peu couteux grâce à Cecil et Snipcart."
 date: 2021-06-24
 tags: [Cecil, E-commerce, SSG]
 image: /images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr.jpg
@@ -14,6 +14,7 @@ Néanmoins, la première solution reste onéreuse pour un petit projet (peu de v
 
 Je lui ai alors proposé de créer un site web statique avec [**Cecil**](https://cecil.app) auquel nous brancherions la solution e-commerce [**Snipcart**](https://snipcart.com) afin de dynamiser les interactions utilisateur.
 <!-- break -->
+
 [toc]
 
 ## Pourquoi un site statique ?
