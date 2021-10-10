@@ -15,9 +15,9 @@
 [[plugins]]
   #package = "/plugins/netlify-plugin-cecil-cache"
   package = "netlify-plugin-cecil-cache"
-  [plugins.inputs]
-  cacheDir = ".cache"
-  debug = true
+  #[plugins.inputs]
+  #cacheDir = ".cache"
+  #debug = true
 
 [dev]
   command = "cecil serve --open"
