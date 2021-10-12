@@ -3,10 +3,10 @@ title: Consultant technique senior
 date: 2020-09-22
 updated: 2021-08-03
 intro: |
-  > Hello, je suis [Arnaud Ligny](https://arnaudligny.fr), consultant technique web, mobile & e-commerce.
+  Hello, je suis [Arnaud Ligny](https://arnaudligny.fr), consultant technique web, mobile & e-commerce.
 
   Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web, mobile, e-commerce (et IoT).  
-  En 15 ans j’ai apporté mon expertise sur des projets de startup, de maisons de luxe, de prêt à porter et de grandes marques telles que Promod, Yves Rocher, Libeo, Brigad, Leroy Merlin, Ducray, Saint-Maclou, Hermès, Christian Louboutin, Repetto, Zadig & Voltaire, Etam, The Kooples, Du Pareil au Même.
+  En 15 ans j’ai apporté mon expertise sur des projets de startup, de maisons de luxe, de prêt à porter et de grandes marques telles que _Promod_, _Yves Rocher_, _Libeo_, _Brigad_, _Leroy Merlin_, _Ducray_, _Saint-Maclou_, _Hermès_, _Christian Louboutin_, _Repetto_, _Zadig & Voltaire_, _Etam_, _The Kooples_, _Du Pareil au Même_.
 
   *[IoT]: Internet of Things
 menu: main
