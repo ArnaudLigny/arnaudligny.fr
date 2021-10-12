@@ -6,7 +6,7 @@ intro: |
   > Hello, je suis [Arnaud Ligny](https://arnaudligny.fr), consultant technique web, mobile & e-commerce.
 
   Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web, mobile, e-commerce (et IoT).  
-  En 15 ans j’ai apporté mon expertise sur des projets de startup, de maisons de luxe, de prêt à porter et de grandes marques telles que Libeo, Brigad, Hermès, Christian Louboutin, Repetto, Zadig & Voltaire, Etam, The Kooples, Du Pareil au Même, Leroy Merlin, Saint-Maclou, Ducray.
+  En 15 ans j’ai apporté mon expertise sur des projets de startup, de maisons de luxe, de prêt à porter et de grandes marques telles que Promod, Yves Rocher, Libeo, Brigad, Leroy Merlin, Ducray, Saint-Maclou, Hermès, Christian Louboutin, Repetto, Zadig & Voltaire, Etam, The Kooples, Du Pareil au Même.
 
   *[IoT]: Internet of Things
 menu: main
