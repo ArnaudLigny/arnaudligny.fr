@@ -113,4 +113,5 @@ netlify:
       status: 301
       force: true
 metatags:
-  jsonld: true
+  jsonld:
+    enabled: true
