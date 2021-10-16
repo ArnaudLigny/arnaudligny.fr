@@ -33,23 +33,22 @@ menus:
 author:
   firstname: Arnaud
   lastname: Ligny
+  url: https://arnaudligny.fr
   email: arnaud[AROBASE]ligny[POINT]fr
   job: Consultant technique
   cv: CV_ArnaudLigny-2016.pdf
   statut: En poste
 social:
-  #facebook:
-  #  id: 516589570
-  #  firstname: Arnaud
-  #  lastname: Ligny
-  #  username: Narno
   twitter:
     site: ArnaudLigny
     creator: ArnaudLigny
+    url: https://twitter.com/ArnaudLigny
   github:
     username: ArnaudLigny
+    url: https://github.com/ArnaudLigny
   linkedin:
     username: arnaudligny
+    url: https://fr.linkedin.com/in/arnaudligny/fr/
 output:
   pagetypeformats:
     section: ['html', 'atom', 'json']
