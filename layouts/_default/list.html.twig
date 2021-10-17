@@ -15,15 +15,15 @@
             {{- page.content ~}}
           </header>
           <ul class="list list--pages">
-{% for p in pages %}
+            {%- for p in pages ~%}
             <li class="item item--page">
               <article class="page typeset">
                 <h2><a href="{{ url(p) }}">{{ p.title }}</a></h2>
                 {{ p.content|excerpt_html }}
               </article>
             </li>
-{% endfor %}
+            {%- endfor ~%}
           </ul>
-{% include 'partials/pagination.html.twig' %}
+          {%~ include 'partials/pagination.html.twig' ~%}
         </section>
 {% endblock content %}
