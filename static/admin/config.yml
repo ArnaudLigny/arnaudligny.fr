@@ -37,10 +37,10 @@ collections:
       - label: Brouillons
         field: draft
         pattern: true
-      - label: 'Publiés en 2020'
+      - label: '2020'
         field: date
         pattern: '2020'
-      - label: 'Publiés en 2021'
+      - label: '2021'
         field: date
         pattern: '2021'
   - name: "projets"
