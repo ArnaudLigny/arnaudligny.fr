@@ -34,12 +34,15 @@ collections:
     summary: "{{title}} – {{date}}"
     sortable_fields: ['title', 'date']
     view_filters:
-      - label: 'Publié en 2020'
-        field: date
-        pattern: '2020'
       - label: Brouillons
         field: draft
         pattern: true
+      - label: 'Publiés en 2020'
+        field: date
+        pattern: '2020'
+      - label: 'Publiés en 2021'
+        field: date
+        pattern: '2021'
   - name: "projets"
     label: "Projets"
     label_singular: "Projet"
