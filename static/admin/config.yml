@@ -19,7 +19,7 @@ collections:
     label: "Billets"
     label_singular: "Billet"
     description: >
-      Billets listés dans la section 'Blog' et dans le flux RSS.
+      Billets listés dans la section <em>Blog</em> et dans le flux RSS.
     folder: "content/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
