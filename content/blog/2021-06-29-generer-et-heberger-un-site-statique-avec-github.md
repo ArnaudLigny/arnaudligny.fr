@@ -1,34 +1,40 @@
 ---
-title: "Générer et héberger un site web statique avec GitHub"
-description: Dans cet article j’explique comment mettre en pratique GitHub Pages et GitHub Actions, en utilisant Cecil comme générateur de site statique.
+title: Générer et héberger un site web statique avec GitHub
 date: 2021-06-29
-updated: 2021-10-21
-tags: [SSG, Cecil, GitHub]
 image: /images/2021-06-29-generer-et-heberger-un-site-statique-avec-github/share.png
+tags:
+  - SSG
+  - Cecil
+  - GitHub
+draft: false
 image_header: false
+updated: 2021-10-21
+description: Dans cet article j’explique comment mettre en pratique GitHub Pages
+  et GitHub Actions, en utilisant Cecil comme générateur de site statique.
 typora-root-url: ../../static
 ---
 [GitHub](https://github.com) fourni l’outillage nécessaire pour générer un site statique et pour l’héberger – gratuitement – grâce à [GitHub Pages](https://pages.github.com/) et [GitHub Actions](https://github.com/features/actions).
 
 Dans cet article j’explique comment mettre en pratique GitHub Pages et GitHub Actions, en utilisant [Cecil](https://cecil.app) comme générateur de site statique.
+
 <!-- break -->
 
-[toc]
+\[toc]
 
 ## Qu’est-ce que GitHub Pages ?
 
 ![GitHub Pages](/images/2021-06-29-generer-et-heberger-un-site-statique-avec-github/github-pages.png)
 
-[GitHub Pages](https://pages.github.com/) est une solution d’hébergement de pages web statiques permettant de créer rapidement un site web associé à un projet GitHub.  
+[GitHub Pages](https://pages.github.com/) est une solution d’hébergement de pages web statiques permettant de créer rapidement un site web associé à un projet GitHub.\
 Historiquement, cette branche dédiée d’un dépôt, utilise [Jekyll](https://jekyllrb.com/) par défaut pour générer à la volée des pages web à partir de son contenu (fichiers Markdown et HTML).
 
 Aujourd’hui de nombreux développeurs ont abandonnés Jekyll au profit d’autres générateurs de site statique, plus riches en fonctionnalités, afin de profiter de cette solution d’hébergement gratuite.
 
 GitHub Pages est très facile à utiliser, puisqu’il suffit de commiter des fichiers dans un dépôt GitHub pour obtenir un site web, mais reste limité et ne propose que les réglages suivants :
 
-- Choix de la branche (et du dossier : racine ou `/docs`) à utiliser
-- Possibilité de choisir un domaine personnalisé (via un enregistrement `CNAME`)
-- Activation de HTTPS
+1. Choix de la branche (et du dossier : racine ou `/docs`) à utiliser
+2. Possibilité de choisir un domaine personnalisé (via un enregistrement `CNAME`)
+3. Activation de HTTPS
 
 Comme je viens de l’indiquer, l’idée ici de s’appuyer sur le SSG de son choix : mais dans ce cas, comment automatiser la génération en cas de modification d’une page de contenu ou d’un template ? C’est là que GitHub Actions intervient  ! 😀
 
@@ -40,13 +46,13 @@ Comme je viens de l’indiquer, l’idée ici de s’appuyer sur le SSG de son c
 
 Le principe est très proche de ce que propose des outils comme [Jenkins](https://www.jenkins.io/), [Travis CI](https://www.travis-ci.com/) ou encore [GitLab CI](https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/).
 
-En pratique c’est plutôt simple : un fichier de configuration permet de déterminer quelles actions déclencher, selon quel(s) évènement(s), dans un ou plusieurs environnements donnés, dans un certain ordre et de produire un « livrable » ou un résultat (positif ou négatif).
+En pratique c’est plutôt simple : un fichier de configuration permet de déterminer quelles actions déclencher, selon quels évènements, dans un ou plusieurs environnements donnés, dans un certain ordre et de produire un « livrable » ou un résultat (positif ou négatif).
 
-Ce qui fait la puissance de GitHub Actions c’est la fois la rapidité de mise à disposition de ses machines virtuelles et surtout, comme son nom l’indique, de ses (très nombreuses) [**Actions** mis à disposition par la communauté sur la marketplace](https://github.com/marketplace?type=actions).
+Ce qui fait la puissance de GitHub Actions c’est à la fois la rapidité de mise à disposition de ses machines virtuelles et surtout, comme son nom l’indique, de ses (très nombreuses) [**Actions** mis à disposition par la communauté sur la marketplace](https://github.com/marketplace?type=actions).
 
 ## En pratique, comment faire ?
 
-Le principe semble simple mais, en pratique, est-ce que c’est aussi facile à mettre en œuvre ?  
+Le principe semble simple mais, en pratique, est-ce que c’est aussi facile à mettre en œuvre ?\
 La réponse est oui bien sûr ! 😀
 
 Comme je l’indiquais en introduction, je vais illustrer mon propos en expliquant comment automatiser la génération d’un site statique avec [Cecil](https://cecil.app) et comment le déployer.
@@ -143,11 +149,11 @@ deploy:
       email: arnaud@ligny.org
 ```
 
-> Note : par défaut _GitHub-Pages-deploy_ utilise le dossier `_site` comme source et le déploie dans la branche `gh-pages`.
+> Note : par défaut *GitHub-Pages-deploy* utilise le dossier `_site` comme source et le déploie dans la branche `gh-pages`.
 
 ### Paramétrage de GitHub Pages
 
-Enfin, il reste à activer _GitHub Pages_ au sein du dépôt via `Settings` > `Pages`.
+Enfin, il reste à activer *GitHub Pages* au sein du dépôt via `Settings` > `Pages`.
 
 ![GitHub Pages settings](/images/2021-06-29-generer-et-heberger-un-site-statique-avec-github/github-settings-pages-before.png)
 
@@ -161,8 +167,7 @@ Et voilà comment générer et déployer automatiquement un site web statique, h
 
 Remarques :
 
-- Dans cet article j’ai utilisé [Cecil Action](https://github.com/marketplace/actions/cecil-action) mais j’aurais également pu effectuer la même démonstration avec une action [Hugo](https://github.com/marketplace?type=actions&query=hugo) ou [Eleventy](https://github.com/marketplace?type=actions&query=eleventy) ;
-- Si vous souhaitez tester par vous même, en moins d’une minute, je vous invite à essayer avec le template [`Single-GitHub-Page`](https://github.com/Cecilapp/Single-GitHub-Page).
+* Dans cet article j’ai utilisé [Cecil Action](https://github.com/marketplace/actions/cecil-action) mais j’aurais également pu effectuer la même démonstration avec une action [Hugo](https://github.com/marketplace?type=actions&query=hugo) ou [Eleventy](https://github.com/marketplace?type=actions&query=eleventy) ;
+* Si vous souhaitez tester par vous même, en moins d’une minute, je vous invite à essayer avec le template [`Single-GitHub-Page`](https://github.com/Cecilapp/Single-GitHub-Page).
 
-*[SSG]: Static Site Generator (Générateur de site statique)
-
+\*\[SSG]: Static Site Generator (Générateur de site statique)
