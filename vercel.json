@@ -15,13 +15,22 @@
       "source" : "**/*.@(jpg|jpeg|gif|png)",
       "headers" : [{
         "key" : "Cache-Control",
-        "value" : "max-age=7200"
+        "value" : "private, max-age=360000"
       }]
     }, {
       "source" : "404.html",
       "headers" : [{
         "key" : "Cache-Control",
-        "value" : "max-age=300"
+        "value" : "private, max-age=360000"
+      }]
+    }, {
+      "source" : "/manifest.webmanifest",
+      "headers" : [{
+        "key" : "Content-Type",
+        "value" : "application/manifest+json"
+      }, {
+        "key" : "Cache-Control",
+        "value" : "private, max-age=360000"
       }]
     }
   ]
