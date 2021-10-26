@@ -14,6 +14,7 @@
     "cy:run": "cypress run --record",
     "ci": "start-server-and-test serve-silent http://localhost:8000 cy:run",
     "ci:serve": "php cecil.phar serve",
-    "ci:record": "run-p --race ci:serve cy:run"
+    "ci:record": "run-p --race ci:serve cy:run",
+    "build": "bash ./scripts/vercel-install.sh && bash ./scripts/vercel-build.sh"
   }
 }
