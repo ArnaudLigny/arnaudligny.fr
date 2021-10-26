@@ -8,13 +8,13 @@
     "start-server-and-test": "^1.12.1"
   },
   "scripts": {
+    "build": "bash ./scripts/vercel-install.sh && bash ./scripts/vercel-build.sh",
     "serve": "cecil serve",
     "serve-silent": "nohup cecil serve > cecil.log 2>&1 &",
     "cy:open": "cypress open",
     "cy:run": "cypress run --record",
     "ci": "start-server-and-test serve-silent http://localhost:8000 cy:run",
     "ci:serve": "php cecil.phar serve",
-    "ci:record": "run-p --race ci:serve cy:run",
-    "build": "bash ./scripts/vercel-install.sh && bash ./scripts/vercel-build.sh"
+    "ci:record": "run-p --race ci:serve cy:run"
   }
 }
