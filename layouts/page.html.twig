@@ -23,6 +23,11 @@
           display: none!important;
         }
       }
+      @media screen {
+        .print {
+          display: none;
+        }
+      }
       /* print */
       @media print {
         header, footer {
@@ -30,6 +35,9 @@
         }
         abbr[title] {
           text-decoration: none;
+        }
+        .print {
+          display: block;
         }
       }
     {% endapply %}</style>
