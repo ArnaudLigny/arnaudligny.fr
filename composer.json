@@ -1,6 +1,6 @@
 {
   "require": {
-    "cecil/theme-garth": "^1.3",
+    "cecil/theme-garth": "^1.4",
     "cecil/theme-serviceworker": "^1.9",
     "cecil/theme-netlify": "^1.1"
   }
