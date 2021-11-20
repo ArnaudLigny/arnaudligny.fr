@@ -114,3 +114,9 @@ netlify:
 metatags:
   jsonld:
     enabled: true
+body:
+  images:
+    resize:
+      enabled: true
+    responsive:
+      enabled: true
