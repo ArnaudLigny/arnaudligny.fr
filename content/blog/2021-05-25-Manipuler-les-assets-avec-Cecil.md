@@ -14,8 +14,9 @@ Dans cet article j’explique comment [Cecil](https://cecil.app), [mon générat
 <link rel="stylesheet" href="{{ asset('sass/styles.scss')|to_css|minify|fingerprint }}">
 ```
 <!-- break -->
+[toc]
 
-## Les bases
+## Qu’est-ce qu’un asset ?
 
 Un _asset_ est une **ressource web, tel qu’un fichier CSS, JavaScript ou encore une image**, permettant d’habiller ou de dynamiser un site web.
 
@@ -45,14 +46,58 @@ Reprenons l’exemple précédent en y appliquant la fonction `asset()` :
 
 On crée ainsi un objet « asset » à partir du fichier `styles.css` préalablement déposé dans le dossier `static/css/` du projet.
 
-### Remarque
+### Regroupement (bundle)
 
-Dans un contexte d’affichage l’objet « asset » retournera le chemin web relatif (`path`) de la ressource.  
-Vous pouvez utiliser le filtre [`url`](https://cecil.app/documentation/templates/#url-1) pour manipuler l’URL générée, par exemple :
+La fonction `asset()` peut également combiner une liste d’assets du même type.
+
+Template :
 
 ```twig
-{{ asset('css/styles.css')|url({canonical:true}) }}
+<link rel="stylesheet" href="{{ asset(['css/styles-a.css','css/styles-b.css']) }}">
 ```
+
+Rendu :
+
+```html
+<link rel="stylesheet" href="/css/styles.css">
+```
+
+Par défaut le fichier bundle porte le nom suivant :
+
+- `styles.css` pour les fichiers CSS
+- `scripts.js` pour les fichiers JavaScript
+
+Il est possible de personnaliser ce nom via l’option `filename`.
+
+Template :
+
+```twig
+<link rel="stylesheet" href="{{ asset(['css/styles-a.css','css/styles-b.css'],{filename:'main.css'}) }}">
+```
+
+Rendu :
+
+```html
+<link rel="stylesheet" href="/main.css">
+```
+
+### Fichier distant
+
+Si le chemin passé à la fonction `asset()` est une URL, le fichier sera téléchargé localement et mis en cache pour les prochaines générations.
+
+Exemple :
+
+```twig
+{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.1/anchor.min.js') }}
+```
+
+Le fichier, lors de la génération du site, sera enregistré de la manière suivante :
+
+```text
+/assets/cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.1/anchor.min.js
+```
+
+## Manipuler un asset
 
 ### Minification
 
@@ -122,44 +167,25 @@ Rendu :
 <link rel="stylesheet" href="/css/styles.e549285c8ffa8af5e6254263c98d4397.css">
 ```
 
-### Regroupement (bundle)
+### Redimensionnement
 
-La fonction `asset()` peut également combiner une liste d’assets du même type.
+Le filtre `resize` permet de redimensionner une image, selon une nouvelle largeur (si celle-ci est inférieure à la largeur de l’image d'origine).
 
 Template :
 
 ```twig
-<link rel="stylesheet" href="{{ asset(['css/styles-a.css','css/styles-b.css']) }}">
+<img src="{{ asset('image.jpg')|resize(800) }}">
 ```
 
 Rendu :
 
 ```html
-<link rel="stylesheet" href="/css/styles.css">
+<img src="/assets/thumbnails/800/image.jpg">
 ```
 
-Par défaut le fichier bundle porte le nom suivant :
+## Attributs d’un asset
 
-- `styles.css` pour les fichiers CSS
-- `scripts.js` pour les fichiers JavaScript
-
-Il est possible de personnaliser ce nom via l’option `filename`.
-
-Template :
-
-```twig
-<link rel="stylesheet" href="{{ asset(['css/styles-a.css','css/styles-b.css'],{filename:'main.css'}) }}">
-```
-
-Rendu :
-
-```html
-<link rel="stylesheet" href="/main.css">
-```
-
-### Attributs d’un asset
-
-D’autre part, un asset expose des attributs (en fonction de son type) :
+Un asset expose des attributs (en fonction de son type) :
 
 - `file` : Chemin du fichier local
 - `path` : Chemin web relatif
@@ -187,25 +213,9 @@ Durée : {{ asset('title.mp3').audio.duration|round }} min
 
 > Documentation : <https://cecil.app/documentation/templates/#attributes>
 
-### Fichier distant
-
-De plus, si le chemin passé à la fonction `asset()` est une URL, le fichier sera téléchargé localement et mis en cache pour les prochaines générations.
-
-Exemple :
-
-```twig
-{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.1/anchor.min.js') }}
-```
-
-Le fichier, lors de la génération du site, sera enregistré de la manière suivante :
-
-```text
-/assets/cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.1/anchor.min.js
-```
-
 ### Paramétrage par défaut
 
-Enfin, par défaut Cecil applique l’ensemble des traitements, désactivables via la configuration :
+Par défaut Cecil applique l’ensemble des traitements (`compile`, `minify` et `fingerprint`), désactivables via la configuration :
 
 ```yaml
 assets:
@@ -229,3 +239,11 @@ Rendu :
 <link rel="stylesheet" href="/css/styles.e549285c8ffa8af5e6254263c98d4397.min.css">
 ```
 
+## Remarque
+
+Dans un contexte d’affichage l’objet « asset » retournera le chemin web relatif (`path`) de la ressource.  
+Vous pouvez utiliser le filtre [`url`](https://cecil.app/documentation/templates/#url-1) pour manipuler l’URL générée, par exemple :
+
+```twig
+{{ asset('css/styles.css')|url({canonical:true}) }}
+```
