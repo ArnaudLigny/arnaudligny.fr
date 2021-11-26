@@ -120,3 +120,7 @@ body:
       enabled: true
     responsive:
       enabled: true
+assets:
+  images:
+    optimize:
+      enabled: true
