@@ -123,4 +123,4 @@ body:
 assets:
   images:
     optimize:
-      enabled: true
+      #enabled: true
