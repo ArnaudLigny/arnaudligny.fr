@@ -299,4 +299,3 @@ Enfin, je vous invite à :
 - Étudier le [code source du projet](https://github.com/cecillie/eshop) si vous souhaitez en savoir plus et vous inspirer ;
 - Jeter un œil à mon générateur de site statique : [Cecil](https://cecil.app/) ;
 - Consulter le site officiel de [Snipcart](https://snipcart.com/fr).
-
