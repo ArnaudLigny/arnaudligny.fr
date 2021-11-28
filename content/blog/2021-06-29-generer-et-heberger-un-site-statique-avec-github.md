@@ -19,7 +19,7 @@ Dans cet article j’explique comment mettre en pratique GitHub Pages et GitHub 
 
 <!-- break -->
 
-\[toc]
+[toc]
 
 ## Qu’est-ce que GitHub Pages ?
 
@@ -170,4 +170,4 @@ Remarques :
 * Dans cet article j’ai utilisé [Cecil Action](https://github.com/marketplace/actions/cecil-action) mais j’aurais également pu effectuer la même démonstration avec une action [Hugo](https://github.com/marketplace?type=actions&query=hugo) ou [Eleventy](https://github.com/marketplace?type=actions&query=eleventy) ;
 * Si vous souhaitez tester par vous même, en moins d’une minute, je vous invite à essayer avec le template [`Single-GitHub-Page`](https://github.com/Cecilapp/Single-GitHub-Page).
 
-\*\[SSG]: Static Site Generator (Générateur de site statique)
+*[SSG]: Static Site Generator (Générateur de site statique)
