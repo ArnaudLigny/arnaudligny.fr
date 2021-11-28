@@ -19,7 +19,7 @@ Je lui ai alors proposé de créer un site web statique avec [**Cecil**](https:/
 
 ## Pourquoi un site statique ?
 
-![Logo Cecil](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/cecil.png)
+![Logo Cecil](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/cecil.png "Logo de Cecil")
 
 Je suis un fervent promoteur de l’approche statique pour la diffusion de sites web de contenu pour les raisons suivantes (entre autres) :
 
@@ -31,7 +31,7 @@ Dans le cas de ce projet j’ai donc utilisé [mon propre générateur de site s
 
 ## Pourquoi Snipcart ?
 
-![Logo Snipcart](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/snipcart.png)
+![Logo Snipcart](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/snipcart.png "Logo de Snipcart")
 
 [Snipcart](https://snipcart.com) n’est pas une solution e-commerce clef en main mais plutôt un « checkout » (tunnel d’achat) à ajouter à n’importe quel site web.
 
@@ -55,7 +55,7 @@ En pratique nous avons 6 modèles composés d’1 variant « format ».
 
 Les attributs et le texte de la fiche produit sont définis dans un fichier [Markdown](https://daringfireball.net/projects/markdown/) (avec un « [front matter](https://cecil.app/documentation/content/#front-matter) ») :
 
-```
+```text
 content/products
 |_ index.md
 |_ 1.pink-gravel.md
@@ -89,10 +89,10 @@ J’ai utilisé la variable spéciale [`cascade`](https://cecil.app/documentatio
 
 - `price` : le prix de référence
 - `variants` : qui caractérise les déclinaisons pour chacun des produits, en l’occurrence le *format* d’impression
-    - `options` :
-        - `value` : la valeur du format (ex : « A3 »)
-        - `html` : le texte affiché dans la liste déroulante
-        - `price` : le prix modifié par rapport au prix de référence (qui peut être négatif)
+  - `options` :
+    - `value` : la valeur du format (ex : « A3 »)
+    - `html` : le texte affiché dans la liste déroulante
+    - `price` : le prix modifié par rapport au prix de référence (qui peut être négatif)
 
 Ensuite chacun des produits est caractérisé via son propre fichier Markdown, par exemple `content/products/1.pink-gravel.md` :
 
@@ -146,7 +146,7 @@ La fiche produit (un [composant Twig](https://github.com/cecillie/eshop/blob/mai
 
 Concentrons nous sur le cœur de la fiche produit, à savoir l’ajout au panier :
 
-![Ajouter au panier](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/add-to-cart.png)
+![Ajouter au panier](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/add-to-cart.png "Formulaire d’ajout au panier")
 
 ```twig
 <div class="product__details">
@@ -211,7 +211,7 @@ L’intégration de Snipcart est simple, et nécessite :
 
 J’ai également pris le temps de personnaliser le tunnel d’achat à la fois au niveau du rendu graphique et des étapes.
 
-![image-20210624105412625](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/image-20210624105412625.png)
+![image-20210624105412625](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/image-20210624105412625.png "Exemple de panier")
 
 #### Personnalisation du rendu
 
