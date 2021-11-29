@@ -211,7 +211,7 @@ L’intégration de Snipcart est simple, et nécessite :
 
 J’ai également pris le temps de personnaliser le tunnel d’achat à la fois au niveau du rendu graphique et des étapes.
 
-![Exemple de panier](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/image-20210624105412625.png "Exemple de panier")
+![Exemple de panier](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr-cart.png "Exemple de panier")
 
 #### Personnalisation du rendu
 
