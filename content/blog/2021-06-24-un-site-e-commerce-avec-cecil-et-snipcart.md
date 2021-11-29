@@ -19,7 +19,7 @@ Je lui ai alors proposé de créer un site web statique avec [**Cecil**](https:/
 
 ## Pourquoi un site statique ?
 
-![Logo Cecil](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/cecil.png "Logo de Cecil")
+![Logo de Cecil](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/cecil.png "Logo de Cecil")
 
 Je suis un fervent promoteur de l’approche statique pour la diffusion de sites web de contenu pour les raisons suivantes (entre autres) :
 
@@ -146,7 +146,7 @@ La fiche produit (un [composant Twig](https://github.com/cecillie/eshop/blob/mai
 
 Concentrons nous sur le cœur de la fiche produit, à savoir l’ajout au panier :
 
-![Ajouter au panier](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/add-to-cart.png "Formulaire d’ajout au panier")
+![Formulaire d’ajout au panier](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/add-to-cart.png "Formulaire d’ajout au panier")
 
 ```twig
 <div class="product__details">
@@ -211,7 +211,7 @@ L’intégration de Snipcart est simple, et nécessite :
 
 J’ai également pris le temps de personnaliser le tunnel d’achat à la fois au niveau du rendu graphique et des étapes.
 
-![image-20210624105412625](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/image-20210624105412625.png "Exemple de panier")
+![Exemple de panier](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/image-20210624105412625.png "Exemple de panier")
 
 #### Personnalisation du rendu
 
