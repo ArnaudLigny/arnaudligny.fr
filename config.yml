@@ -130,3 +130,5 @@ assets:
       enabled: true
     responsive:
       enabled: true
+    webp:
+      enabled: true
