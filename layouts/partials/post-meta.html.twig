@@ -9,13 +9,5 @@
 {% endif %}
                 <small class="small post-meta">
                   {%~ if category is defined is not empty %}{{ category ~ "&nbsp;&middot;&nbsp;" -}}{% endif ~%}
-                  <time datetime="{{ post.date|date('c') }}" class="time">{{ post.date|date("j M Y")|replace({
-'Feb': 'Fév',
-'Mar': 'Mars',
-'May': 'Mai',
-'Jun': 'Juin',
-'Aug': 'Août',
-'Dec': 'Déc'
-}) }}
-                  </time>
+                  <time datetime="{{ post.date|date('c') }}" class="time">{{ post.date|localizeddate('medium', 'none') }}</time>
                 </small>
