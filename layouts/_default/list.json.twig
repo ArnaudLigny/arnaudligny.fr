@@ -2,11 +2,5 @@
 {% if page.pages is defined %}
 {% set items = page.pages %}
 {% endif %}
-{# disable pagination
-{% if page.pagination.pages is defined %}
-{% set pagination = page.pagination %}
-{% set items = page.pagination.pages %}
-{% endif %}
-#}
 
 {% extends '_default/page.json.twig' %}
