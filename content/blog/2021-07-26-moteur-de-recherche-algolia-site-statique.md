@@ -1,6 +1,7 @@
 ---
-title: Ajouter un moteur de recherche à un site statique grâce à Algolia
+title: Un moteur de recherche sur un site statique grâce à Algolia
 date: 2021-07-26
+updated: 2021-12-05
 tags: [SSG, Recherche, Cecil]
 image: /images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png
 image_header: false
@@ -22,6 +23,8 @@ Aussi, il est important que les résultats retournés soient granulaires, par se
 Dans un premier temps j’ai expérimenté le [moteur de recherche personnalisé de Google](https://cse.google.com/) (CSE) qui permet de présenter les résultats indexés par Google pour un site (comme avec la commande `site:`).  
 Si les résultats sont pertinents pour un site contenant de nombreuses pages, il ne semble pas possible de personnaliser les résultats par sections dans une même page, ce qui n’est pas pertinent dans mon cas.
 
+*[CSE]: Custom Search Engine
+
 Aussi, après plusieurs comparatifs, j’ai retenu la solution [Algolia](https://www.algolia.com/) pour les raisons suivantes :
 
 * efficacité reconnue
@@ -38,13 +41,3 @@ Pour intégrer cette bibliothèque il est nécessaire de comprendre le principe 
 En effet, afin d’afficher des résultats, il est nécessaire de nourrir un référentiel
 
 
-
-
-
-
-
-
-
-
-
-*[CSE]: Custom Search Engine
