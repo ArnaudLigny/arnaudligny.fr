@@ -1,0 +1,27 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2021-12-05 21:32+0100\n"
+"PO-Revision-Date: 2021-12-05 21:40+0100\n"
+"Last-Translator: Arnaud Ligny <arnaud@ligny.org>\n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ../../../layouts\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: partials/pagination.html.twig:7 partials/pagination.html.twig:9
+msgid "Previous"
+msgstr "Précédent"
+
+#: partials/pagination.html.twig:11
+msgid "Page %pagination_current% of %pagination_count%"
+msgstr "Page %pagination_current% sur %pagination_count%"
+
+#: partials/pagination.html.twig:13 partials/pagination.html.twig:15
+msgid "Next"
+msgstr "Suivant"

@@ -1,0 +1,18 @@
+{% if page.pagination.pages is defined %}
+{% set pagination = page.pagination %}
+{% set pagination_current = pagination.current %}
+{% set pagination_count = pagination.count %}
+        <nav class="nav nav--paginator">
+          {%- if pagination.links.prev is defined ~%}
+          <a class="pagination pagination--previous" href="{{ url(site.pages[pagination.links.prev]) }}">&larr; {% trans %}Previous{% endtrans %}</a>
+          {%- else ~%}
+          <span class="pagination pagination--previous">&larr; {% trans %}Previous{% endtrans %}</span>
+          {%- endif ~%}
+          <span class="pagination pagination--counter">{% trans %}Page {{ pagination_current }} of {{ pagination_count }}{% endtrans %}</span>
+          {%- if pagination.links.next is defined ~%}
+          <a class="pagination pagination--next" href="{{ url(site.pages[pagination.links.next]) }}">{% trans %}Next{% endtrans %} &rarr;</a>
+          {%- else ~%}
+          <span class="pagination pagination--next">{% trans %}Next{% endtrans %} &rarr;</span>
+          {%- endif ~%}
+        </nav>
+{% endif %}
