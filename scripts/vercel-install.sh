@@ -7,7 +7,7 @@ echo "Installing PHP $PHP_VERSION..."
 amazon-linux-extras install -y php$PHP_VERSION
 echo "================================================================================"
 echo "Installing PHP dependencies..."
-yum install -y php-{cli,mbstring,dom,xml,intl,gettext,gd,imagick}
+yum install -y php-{cli,mbstring,dom,xml,intl,php-gettext,gd,imagick}
 php --version
 
 if [ "$INSTALL_OPTIM" = true ]; then
