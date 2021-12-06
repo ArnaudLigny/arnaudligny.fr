@@ -7,12 +7,12 @@ echo "Installing PHP $PHP_VERSION..."
 #amazon-linux-extras install php$PHP_VERSION
 echo "================================================================================"
 echo "Installing PHP dependencies..."
-#yum install -y gettext php-gettext
 #yum install php-{cli,mbstring,dom,xml,intl,gettext,gd,imagick}
 
 yum update -y
 amazon-linux-extras enable php7.4
 yum clean metadata
+yum install -y gettext
 yum install -y php php-{cli,mbstring,dom,xml,intl,gettext,gd,imagick}
 
 php --version
