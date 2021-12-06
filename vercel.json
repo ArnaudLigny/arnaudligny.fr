@@ -1,7 +1,7 @@
 {
   "build": {
     "env": {
-      "PHP_VERSION": "7.2",
+      "PHP_VERSION": "7.4",
       "INSTALL_OPTIM": "false"
     }
   },
