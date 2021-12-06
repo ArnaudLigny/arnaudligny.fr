@@ -4,10 +4,14 @@ if [ -z $PHP_VERSION ]; then
 fi
 echo "================================================================================"
 echo "Installing PHP $PHP_VERSION..."
-amazon-linux-extras install -y php$PHP_VERSION
-echo "================================================================================"
-echo "Installing PHP dependencies..."
-yum install -y php-{cli,mbstring,dom,xml,intl,php-gettext,gd,imagick}
+#amazon-linux-extras install -y php$PHP_VERSION
+#yum install -y php-{cli,mbstring,dom,xml,intl,php-gettext,gd,imagick}
+
+yum install -y amazon-linux-extras
+amazon-linux-extras enable php7.4
+yum clean metadata
+yum install php php-{common,curl,mbstring,gd,gettext,bcmath,json,xml,fpm,intl,zip,imap}
+
 php --version
 
 if [ "$INSTALL_OPTIM" = true ]; then
