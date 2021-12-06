@@ -1,10 +1,4 @@
 {
-  "build": {
-    "env": {
-      "PHP_VERSION": "7.4",
-      "INSTALL_OPTIM": "false"
-    }
-  },
   "builds": [{
     "src": "package.json",
     "use": "@vercel/static-build",
@@ -15,13 +9,13 @@
       "source" : "/:all*(svg|jpg|jpeg|gif|png)",
       "headers" : [{
         "key" : "Cache-Control",
-        "value" : "private, max-age=360000"
+        "value" : "public, max-age=31536000"
       }]
     }, {
       "source" : "/404.html",
       "headers" : [{
         "key" : "Cache-Control",
-        "value" : "private, max-age=360000"
+        "value" : "public, max-age=31536000"
       }]
     }, {
       "source" : "/manifest.webmanifest",
