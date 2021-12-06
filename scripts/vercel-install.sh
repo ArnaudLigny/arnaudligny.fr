@@ -1,11 +1,11 @@
 #!/bin/bash
-
-echo "================================================================================"
 if [ -z $PHP_VERSION ]; then
   PHP_VERSION='7.2'
 fi
+echo "================================================================================"
 echo "Installing PHP $PHP_VERSION..."
 amazon-linux-extras install php$PHP_VERSION
+echo "================================================================================"
 echo "Installing PHP dependencies..."
 yum install php-cli php-{mbstring,gd,dom,xml,intl,gettext}
 php --version
