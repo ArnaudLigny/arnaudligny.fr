@@ -1,10 +1,12 @@
 #!/bin/bash
 
 echo "================================================================================"
+# prod
 if [ -z $VERCEL_URL ]; then
-  php cecil.phar build -v
+  php cecil.phar build -v --config=config_prod.yml
+# preview
 else
-  php cecil.phar build -v --baseurl=https://$VERCEL_URL
+  php cecil.phar build -vv --baseurl=https://$VERCEL_URL
   echo "URL: https://$VERCEL_URL"
 fi
 

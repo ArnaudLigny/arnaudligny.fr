@@ -22,7 +22,7 @@ if [ -f "./composer.json" ]; then
   php composer.phar install --prefer-dist --no-dev --no-progress --no-interaction
 fi
 
-php cecil.phar build -v
+php cecil.phar build -v --config=config_prod.yml
 
 # build success? can deploy?
 if [ $? = 0 ]; then
