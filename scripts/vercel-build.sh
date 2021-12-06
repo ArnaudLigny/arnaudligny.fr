@@ -2,15 +2,15 @@
 
 echo "================================================================================"
 if [[ $VERCEL_ENV == "production" ]]; then
-  $cmd="cecil.phar build -v --config=config_prod.yml --postprocess"
+  CMD="cecil.phar build -v --config=config_prod.yml --postprocess"
 else
-  $cmd="cecil.phar build -v --drafts"
+  CMD="cecil.phar build -v --drafts"
 fi
 
 if [ -z $VERCEL_URL ]; then
-    php $cmd
+    php $CMD
   else
-    php $cmd --baseurl=https://$VERCEL_URL
+    php $CMD --baseurl=https://$VERCEL_URL
     echo "URL: https://$VERCEL_URL"
   fi
 
