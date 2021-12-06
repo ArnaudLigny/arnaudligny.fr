@@ -69,8 +69,6 @@ virtualpages:
     redirect: blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/
   - path: blog/t-l-charger-manuellement-une-extension-magento
     redirect: blog/telecharger-manuellement-une-extension-magento/
-googleanalytics: UA-30599234-2
-cloudflareinsights: aa58d54d00e04d9e8f0fc44730cafff7
 source: https://github.com/ArnaudLigny/arnaudligny.fr/edit/master/content/
 comments: false
 static:
@@ -97,7 +95,7 @@ manifest:
       sizes: 512x512
       type: image/webp
 serviceworker:
-  enabled: true
+  enabled: false
   debug: false
   precache:
     - logo.jpg
@@ -116,11 +114,19 @@ metatags:
     enabled: true
 body:
   images:
+    caption:
+      enabled: false
     resize:
-      enabled: true
+      enabled: false
     responsive:
-      enabled: true
+      enabled: false
+    webp:
+      enabled: false
 assets:
   images:
     optimize:
-      #enabled: true
+      enabled: false
+    responsive:
+      enabled: false
+    webp:
+      enabled: false

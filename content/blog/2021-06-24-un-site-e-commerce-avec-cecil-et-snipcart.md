@@ -4,7 +4,7 @@ description: "Comment créer un site e-commerce statique performant et peu coute
 date: 2021-06-24
 tags: [Cecil, E-commerce, SSG]
 image: /images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr.jpg
-image_header: true
+image_header: false
 typora-root-url: "../../static"
 ---
 En début d’année ma chérie terminait la [campagne Ulule de son projet ***Paysages à vélo***](https://fr.ulule.com/paysages-a-velo/) et se posait la question de continuer la vente de ses créations via une boutique en ligne.
@@ -19,7 +19,7 @@ Je lui ai alors proposé de créer un site web statique avec [**Cecil**](https:/
 
 ## Pourquoi un site statique ?
 
-![Logo Cecil](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/cecil.png)
+![Logo de Cecil](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/cecil.png "Logo de Cecil")
 
 Je suis un fervent promoteur de l’approche statique pour la diffusion de sites web de contenu pour les raisons suivantes (entre autres) :
 
@@ -31,7 +31,7 @@ Dans le cas de ce projet j’ai donc utilisé [mon propre générateur de site s
 
 ## Pourquoi Snipcart ?
 
-![Logo Snipcart](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/snipcart.png)
+![Logo Snipcart](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/snipcart.png "Logo de Snipcart")
 
 [Snipcart](https://snipcart.com) n’est pas une solution e-commerce clef en main mais plutôt un « checkout » (tunnel d’achat) à ajouter à n’importe quel site web.
 
@@ -55,7 +55,7 @@ En pratique nous avons 6 modèles composés d’1 variant « format ».
 
 Les attributs et le texte de la fiche produit sont définis dans un fichier [Markdown](https://daringfireball.net/projects/markdown/) (avec un « [front matter](https://cecil.app/documentation/content/#front-matter) ») :
 
-```
+```text
 content/products
 |_ index.md
 |_ 1.pink-gravel.md
@@ -89,10 +89,10 @@ J’ai utilisé la variable spéciale [`cascade`](https://cecil.app/documentatio
 
 - `price` : le prix de référence
 - `variants` : qui caractérise les déclinaisons pour chacun des produits, en l’occurrence le *format* d’impression
-    - `options` :
-        - `value` : la valeur du format (ex : « A3 »)
-        - `html` : le texte affiché dans la liste déroulante
-        - `price` : le prix modifié par rapport au prix de référence (qui peut être négatif)
+  - `options` :
+    - `value` : la valeur du format (ex : « A3 »)
+    - `html` : le texte affiché dans la liste déroulante
+    - `price` : le prix modifié par rapport au prix de référence (qui peut être négatif)
 
 Ensuite chacun des produits est caractérisé via son propre fichier Markdown, par exemple `content/products/1.pink-gravel.md` :
 
@@ -146,7 +146,7 @@ La fiche produit (un [composant Twig](https://github.com/cecillie/eshop/blob/mai
 
 Concentrons nous sur le cœur de la fiche produit, à savoir l’ajout au panier :
 
-![Ajouter au panier](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/add-to-cart.png)
+![Formulaire d’ajout au panier](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/add-to-cart.png "Formulaire d’ajout au panier")
 
 ```twig
 <div class="product__details">
@@ -211,7 +211,7 @@ L’intégration de Snipcart est simple, et nécessite :
 
 J’ai également pris le temps de personnaliser le tunnel d’achat à la fois au niveau du rendu graphique et des étapes.
 
-![image-20210624105412625](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/image-20210624105412625.png)
+![Exemple de panier](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr-cart.png "Exemple de panier")
 
 #### Personnalisation du rendu
 
@@ -283,20 +283,19 @@ Néanmoins il peut s’avérer plus commode et plus agréable de pouvoir s’app
 
 De plus Forestry offre un fonctionnalité de prévisualisation, en contexte, très efficace !
 
-<video controls>
+<video controls preload="none" poster="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.mp4_poster.webp">
   <source src="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.webm" type="video/webm">
-  <source src="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.mp3" type="video/mp4">
+  <source src="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.mp4" type="video/mp4">
 </video>
 
 ## Conclusion
 
 J’ai pris beaucoup de plaisir à réaliser ce petit site e-commerce, principalement grâce à Snipcart qui m’a permis d’être libre sur la création du site web catalogue tout en offrant des options de personnalisation du tunnel d’achat relativement simples à mettre en œuvre (j’aurais d’ailleurs pu également parler de la possibilité de [personnaliser les frais de port via *webhook*](https://docs.snipcart.com/v3/webhooks/shipping)).
 
-**Et surtout :** l’utilisatrice du site est autonome sur la gestion des contenus, la création de nouveaux produits et la gestion des commandes, ce qui est finalement le plus important dans la réussite d’un site e-commerce ! 🛒😊
+**Et surtout :** l’utilisatrice du site est autonome sur la gestion des contenus, la création de nouveaux produits et la gestion des commandes, ce qui est finalement le plus important pour la réussite d’un site e-commerce ! 🛒😊
 
 Enfin, je vous invite à :
 
 - Étudier le [code source du projet](https://github.com/cecillie/eshop) si vous souhaitez en savoir plus et vous inspirer ;
 - Jeter un œil à mon générateur de site statique : [Cecil](https://cecil.app/) ;
 - Consulter le site officiel de [Snipcart](https://snipcart.com/fr).
-

@@ -40,6 +40,13 @@
           display: block;
         }
       }
+      /* figure caption */
+      figcaption {
+        font-style: italic;
+        font-size: smaller;
+        padding: 3px;
+        text-align: center;
+      }
     {% endapply %}</style>
     <!-- dark mode -->
     <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss') }}" media="(prefers-color-scheme: dark)">
@@ -56,16 +63,17 @@
     {%~ include 'partials/cloudflareinsights.js.twig' ~%}
     {#- highlight.js ~#}
     {%- set highlight_version = '10.7.2' ~%}
-    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/github.min.css',{minify:false}) }}">
+    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/github.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/github-dark.css') }}" media="(prefers-color-scheme: dark)">
-    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/highlight.min.js',{minify:false}) }}"></script>
-    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/languages/twig.min.js',{minify:false}) }}"></script>
-    <script>{% apply minify_js %}
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/highlight.min.js') }}"></script>
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/languages/twig.min.js') }}"></script>
+    <script>
+      hljs.configure({languages:[]});
       hljs.highlightAll();
-    {% endapply %}</script>
+    </script>
     {#- anchor.js ~#}
     {%- set anchor_version = '4.3.1' ~%}
-    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ anchor_version ~ '/anchor.min.js',{minify:false}) }}"></script>
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ anchor_version ~ '/anchor.min.js') }}"></script>
     <script>{% apply minify_js %}
       var selector = 'body > main > div > article > h2, body > main > div > article > h3';
       anchors.options = {
