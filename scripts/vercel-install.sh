@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ -z $PHP_VERSION ]; then
-  PHP_VERSION='7.4'
+  PHP_VERSION='7.2'
 fi
 echo "================================================================================"
 echo "Installing PHP $PHP_VERSION..."
@@ -11,11 +11,11 @@ php --version
 if [ "$INSTALL_OPTIM" = true ]; then
   echo "================================================================================"
   echo "Installing images optim' lib..."
-  yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-  yum install jpegoptim
-  yum install pngquant
-  yum install gifsicle
-  yum install libwebp-tools
+  yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+  yum install -y jpegoptim
+  yum install -y pngquant
+  yum install -y gifsicle
+  yum install -y libwebp-tools
 fi
 
 echo "================================================================================"
