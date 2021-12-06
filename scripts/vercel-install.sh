@@ -7,8 +7,10 @@ echo "Installing PHP $PHP_VERSION..."
 amazon-linux-extras install php$PHP_VERSION
 echo "================================================================================"
 echo "Installing PHP dependencies..."
-yum install -y gettext php-gettext
-yum install php-cli php-{mbstring,dom,xml,intl,gettext,gd,imagick}
+yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
+#yum install -y gettext php-gettext
+yum install php-{cli,mbstring,dom,xml,intl,gettext,gd,imagick}
 php --version
 
 if [ "$INSTALL_OPTIM" = true ]; then
