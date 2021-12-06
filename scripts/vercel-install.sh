@@ -6,7 +6,7 @@ if [ -z $PHP_VERSION ]; then
 fi
 echo "Installing PHP $PHP_VERSION..."
 amazon-linux-extras install php$PHP_VERSION
-yum install php-cli php-mbstring php-intl php-gd php-dom php-xml
+yum install php-cli php-{mbstring,gd,dom,xml,intl,gettext}
 php --version
 
 if [ "$INSTALL_OPTIM" = true ]; then
