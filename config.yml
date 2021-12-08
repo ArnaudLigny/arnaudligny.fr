@@ -82,8 +82,8 @@ theme:
   - garth
   - serviceworker
   - netlify
-logo: logo.jpg
-image: logo.jpg
+logo: logo.png
+image: logo.png
 manifest:
   theme_color: '#CADCF2'
   icons:
