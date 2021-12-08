@@ -101,10 +101,11 @@ manifest:
 serviceworker:
   enabled: false
   debug: false
-  precache:
-    - logo.jpg
-    - logo-512.png
-    - logo-512.webp
+  #precache:
+  #  - logo.png
+  #  - logo-192.png
+  #  - logo-512.png
+  #  - logo-512.webp
   notification:
     enabled: false
 netlify:
