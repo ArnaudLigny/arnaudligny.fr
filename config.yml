@@ -3,12 +3,12 @@ baseline: Consultant technique web, mobile & e-commerce
 baseurl: https://arnaudligny.fr/
 description: Arnaud Ligny, Consultant technique web, mobile & e-commerce.
 keywords:
- - Consultant technique
- - Web
- - Application Mobile
- - e-commerce
- - Magento
- - IoT
+  - Consultant technique
+  - Web
+  - Application Mobile
+  - e-commerce
+  - Magento
+  - IoT
 language: fr
 languages:
   - code: fr
@@ -82,11 +82,14 @@ theme:
   - garth
   - serviceworker
   - netlify
-logo: logo.jpg
-image: logo.jpg
+logo: logo.png
+image: logo.png
 manifest:
   theme_color: '#CADCF2'
   icons:
+    - src: logo-192.png
+      sizes: 192x192
+      type: image/png
     - src: logo-512.png
       sizes: 512x512
       type: image/png
@@ -94,21 +97,17 @@ manifest:
     - src: logo-512.webp
       sizes: 512x512
       type: image/webp
+  shortcuts: true
 serviceworker:
   enabled: false
   debug: false
-  precache:
-    - logo.jpg
-    - logo-512.png
-    - logo-512.webp
+  #precache:
+  #  - logo.png
+  #  - logo-192.png
+  #  - logo-512.png
+  #  - logo-512.webp
   notification:
     enabled: false
-netlify:
-  redirects:
-    - from: https://arnaudligny.netlify.com/*
-      to: https://arnaudligny.fr/:splat
-      status: 301
-      force: true
 metatags:
   jsonld:
     enabled: true
