@@ -13,7 +13,7 @@ if [ "$PHP_OK" != "1" ]; then
   exit 1;
 fi
 # Force PHP version
-if [ -z $PHP_VERSION ]; then
+if [ -z "${PHP_VERSION}" ]; then
   PHP_VERSION="7.4"
 fi
 
