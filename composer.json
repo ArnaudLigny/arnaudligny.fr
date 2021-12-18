@@ -3,5 +3,10 @@
     "cecil/theme-garth": "^1.4",
     "cecil/theme-serviceworker": "^1.9",
     "cecil/theme-netlify": "^1.1"
+  },
+  "config": {
+    "allow-plugins": {
+      "cecil/theme-installer": true
+    }
   }
 }
