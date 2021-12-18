@@ -14,7 +14,7 @@ if [ "$PHP_OK" != "1" ]; then
 fi
 # Force PHP version
 if [ -z "${PHP_VERSION}" ]; then
-  PHP_VERSION="7.4"
+  export PHP_VERSION="7.4"
 fi
 
 # Test if Cecil is installed
