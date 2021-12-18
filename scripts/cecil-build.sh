@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Force PHP version
-if [ -z "${PHP_VERSION}" ]; then
-  export PHP_VERSION="7.4"
-fi
 # Test if PHP is installed
 php --version > /dev/null 2>&1
 PHP_IS_INSTALLED=$?
@@ -13,8 +9,9 @@ if [ $PHP_IS_INSTALLED -ne 0 ]; then
 fi
 PHP_OK=$(php -r 'echo (bool) version_compare(phpversion(), "7.1.3", ">=");')
 if [ "$PHP_OK" != "1" ]; then
-  echo "PHP version is not compatible. Please install PHP 7.1.3 or higher."
-  exit 1;
+  #echo "PHP version is not compatible. Please install PHP 7.1.3 or higher."
+  #exit 1;
+  export PHP_VERSION="7.4"
 fi
 
 # Test if Cecil is installed
