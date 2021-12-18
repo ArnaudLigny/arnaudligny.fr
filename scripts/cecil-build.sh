@@ -85,9 +85,9 @@ esac
 # Context
 CMD_OPTIONS="-v"
 if [ "$CONTEXT" = "production" ]; then
-  CMD_OPTIONS+=" --postprocess"
+  CMD_OPTIONS="${CMD_OPTIONS} --postprocess"
 else
-  CMD_OPTIONS+=" --drafts"
+  CMD_OPTIONS="${CMD_OPTIONS} --drafts"
 fi
 
 # Run build
