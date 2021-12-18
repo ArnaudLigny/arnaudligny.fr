@@ -3,12 +3,12 @@
 # Test if PHP is installed
 php --version > /dev/null 2>&1
 PHP_IS_INSTALLED=$?
-if [[ $PHP_IS_INSTALLED -ne 0 ]]; then
+if [ $PHP_IS_INSTALLED -ne 0 ]; then
   echo "PHP is not installed. Please install it before running this script."
   exit 1;
 fi
 PHP_OK=$(php -r 'echo (bool) version_compare(phpversion(), "7.1.3", ">=");')
-if [[ $PHP_OK != "" ]]; then
+if [ $PHP_OK != "1" ]; then
   echo "PHP version is not compatible. Please install PHP 7.1.3 or higher."
   exit 1;
 fi
@@ -27,7 +27,7 @@ COMPOSER_IS_INSTALLED=$?
 
 # Cecil is not installed
 CECIL_CMD="cecil"
-if [[ $CECIL_IS_INSTALLED -ne 0 ]]; then
+if [ $CECIL_IS_INSTALLED -ne 0 ]; then
   echo "Installing Cecil"
   if [ -z $CECIL_VERSION ]; then
     curl -sSOL https://cecil.app/cecil.phar
@@ -41,7 +41,7 @@ fi
 
 # Composer is not installed
 COMPOSER_CMD="composer"
-if [[ $COMPOSER_IS_INSTALLED -ne 0 ]]; then
+if [ $COMPOSER_IS_INSTALLED -ne 0 ]; then
   echo "Installing Composer"
   curl -sS https://getcomposer.org/installer | php
   COMPOSER_CMD="php composer.phar"
@@ -54,15 +54,15 @@ if [ -f "./composer.json" ]; then
 fi
 
 # Running on
-if [[ "NETLIFY" == "true" ]]; then
+if [ "NETLIFY" == "true" ]; then
   RUNNING_ON="Netlify"
 fi
-if [[ "VERCEL" == "1" ]]; then
+if [ "VERCEL" == "1" ]; then
   RUNNING_ON="Vercel"
 fi
 case $RUNNING_ON in
   "Netlify")
-    if [[ "CONTEXT" == "production" ]]; then
+    if [ "CONTEXT" == "production" ]; then
       URL=$URL
     else
       URL=$DEPLOY_PRIME_URL
@@ -70,7 +70,7 @@ case $RUNNING_ON in
     ;;
   "Vercel")
     URL=$VERCEL_URL
-    if [[ "VERCEL_ENV" == "production" ]]; then
+    if [ "VERCEL_ENV" == "production" ]; then
       CONTEXT="production"
     fi
     ;;
@@ -84,7 +84,7 @@ esac
 
 # Context
 CMD_OPTIONS="-v"
-if [[ "CONTEXT" == "production" ]]; then
+if [ "CONTEXT" == "production" ]; then
   CMD_OPTIONS+=" --postprocess"
 else
   CMD_OPTIONS+=" --drafts"
