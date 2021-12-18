@@ -1,10 +1,9 @@
 #!/bin/bash
 
-# Try to force PHP version
+# PHP
 if [ -z "${PHP_VERSION}" ]; then
   export PHP_VERSION="7.4"
 fi
-# Test if PHP is installed
 php --version > /dev/null 2>&1
 PHP_IS_INSTALLED=$?
 if [ $PHP_IS_INSTALLED -ne 0 ]; then
@@ -17,15 +16,9 @@ if [ "$PHP_OK" != "1" ]; then
   exit 1;
 fi
 
-# Test if Cecil is installed
+# Cecil
 cecil --version > /dev/null 2>&1
 CECIL_IS_INSTALLED=$?
-
-# Test if Composer is installed
-composer --version > /dev/null 2>&1
-COMPOSER_IS_INSTALLED=$?
-
-# Cecil is not installed
 CECIL_CMD="cecil"
 if [ $CECIL_IS_INSTALLED -ne 0 ]; then
   echo "Installing Cecil"
@@ -39,7 +32,9 @@ else
   echo "$($CECIL_CMD --version) is already installed"
 fi
 
-# Composer is not installed
+# Composer
+composer --version > /dev/null 2>&1
+COMPOSER_IS_INSTALLED=$?
 COMPOSER_CMD="composer"
 if [ $COMPOSER_IS_INSTALLED -ne 0 ]; then
   echo "Installing Composer"
