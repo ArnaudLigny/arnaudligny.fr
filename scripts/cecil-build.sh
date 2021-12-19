@@ -21,15 +21,16 @@ cecil --version > /dev/null 2>&1
 CECIL_IS_INSTALLED=$?
 CECIL_CMD="cecil"
 if [ $CECIL_IS_INSTALLED -ne 0 ]; then
-  echo "Installing Cecil"
   if [ -z $CECIL_VERSION ]; then
-    curl -SOL https://cecil.app/cecil.phar
+    echo "Installing Cecil..."
+    curl -sSOL https://cecil.app/cecil.phar
   else
-    curl -SOL https://cecil.app/download/$CECIL_VERSION/cecil.phar
+    echo "Installing Cecil ${CECIL_VERSION}..."
+    curl -sSOL https://cecil.app/download/$CECIL_VERSION/cecil.phar
   fi
   CECIL_CMD="php cecil.phar"
 else
-  echo "$($CECIL_CMD --version) is already installed"
+  echo "$($CECIL_CMD --version) is already installed."
 fi
 
 # Composer
@@ -41,11 +42,11 @@ if [ $COMPOSER_IS_INSTALLED -ne 0 ]; then
   curl -sS https://getcomposer.org/installer | php
   COMPOSER_CMD="php composer.phar"
 else
-  echo "$($COMPOSER_CMD --version) is already installed"
+  echo "$($COMPOSER_CMD --version) is already installed."
 fi
 if [ -f "./composer.json" ]; then
-  echo "Installing theme(s)"
-  $COMPOSER_CMD install --prefer-dist --no-dev --no-progress --no-interaction
+  echo "Installing themes..."
+  $COMPOSER_CMD install --prefer-dist --no-dev --no-progress --no-interaction --quiet
 fi
 
 # Running on
@@ -64,6 +65,9 @@ case $RUNNING_ON in
     fi
     ;;
   "Vercel")
+    echo "Installing PHP ${PHP_VERSION}..."
+    amazon-linux-extras install -y php$PHP_VERSION
+    yum install -y php-{cli,mbstring,dom,xml,intl,gettext,gd,imagick}
     URL=$VERCEL_URL
     if [ "$VERCEL_ENV" = "production" ]; then
       CONTEXT="production"
