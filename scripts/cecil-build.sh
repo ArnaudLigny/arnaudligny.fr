@@ -1,9 +1,43 @@
 #!/bin/bash
 
-# PHP
+# Default variables
 if [ -z "${PHP_VERSION}" ]; then
   export PHP_VERSION="7.4"
 fi
+
+# Running on
+if [ "$NETLIFY" = "true" ]; then
+  RUNNING_ON="Netlify"
+fi
+if [ "$VERCEL" = "1" ]; then
+  RUNNING_ON="Vercel"
+fi
+case $RUNNING_ON in
+  "Netlify")
+    if [ "$CONTEXT" = "production" ]; then
+      URL=$URL
+    else
+      URL=$DEPLOY_PRIME_URL
+    fi
+    ;;
+  "Vercel")
+    echo "Installing PHP ${PHP_VERSION}..."
+    amazon-linux-extras install -y php$PHP_VERSION
+    yum install -y php-{cli,mbstring,dom,xml,intl,gettext,gd,imagick}
+    URL=$VERCEL_URL
+    if [ "$VERCEL_ENV" = "production" ]; then
+      CONTEXT="production"
+    fi
+    ;;
+  "Netlify" | "Vercel")
+    #
+    ;;
+  *)
+    #
+    ;;
+esac
+
+# PHP
 php --version > /dev/null 2>&1
 PHP_IS_INSTALLED=$?
 if [ $PHP_IS_INSTALLED -ne 0 ]; then
@@ -48,38 +82,6 @@ if [ -f "./composer.json" ]; then
   echo "Installing themes..."
   $COMPOSER_CMD install --prefer-dist --no-dev --no-progress --no-interaction --quiet
 fi
-
-# Running on
-if [ "$NETLIFY" = "true" ]; then
-  RUNNING_ON="Netlify"
-fi
-if [ "$VERCEL" = "1" ]; then
-  RUNNING_ON="Vercel"
-fi
-case $RUNNING_ON in
-  "Netlify")
-    if [ "$CONTEXT" = "production" ]; then
-      URL=$URL
-    else
-      URL=$DEPLOY_PRIME_URL
-    fi
-    ;;
-  "Vercel")
-    echo "Installing PHP ${PHP_VERSION}..."
-    amazon-linux-extras install -y php$PHP_VERSION
-    yum install -y php-{cli,mbstring,dom,xml,intl,gettext,gd,imagick}
-    URL=$VERCEL_URL
-    if [ "$VERCEL_ENV" = "production" ]; then
-      CONTEXT="production"
-    fi
-    ;;
-  "Netlify" | "Vercel")
-    #
-    ;;
-  *)
-    #
-    ;;
-esac
 
 # Context
 CMD_OPTIONS="-v"
