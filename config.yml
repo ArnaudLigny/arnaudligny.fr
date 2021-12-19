@@ -111,21 +111,27 @@ serviceworker:
 metatags:
   jsonld:
     enabled: true
+netlify:
+  redirects:
+    - from: https://arnaudligny.netlify.com/*
+      to: https://arnaudligny.fr/:splat
+      status: 301
+      force: true
 body:
   images:
     caption:
-      enabled: false
+      enabled: true
     resize:
-      enabled: false
+      enabled: true
     responsive:
-      enabled: false
+      enabled: true
     webp:
-      enabled: false
+      enabled: true
 assets:
   images:
     optimize:
-      enabled: false
+      enabled: true
     responsive:
-      enabled: false
+      enabled: true
     webp:
-      enabled: false
+      enabled: true

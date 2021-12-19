@@ -1,0 +1,23 @@
+googleanalytics: UA-30599234-2
+cloudflareinsights: aa58d54d00e04d9e8f0fc44730cafff7
+serviceworker:
+  enabled: true
+
+body:
+  images:
+    caption:
+      enabled: false
+    resize:
+      enabled: false
+    responsive:
+      enabled: false
+    webp:
+      enabled: false
+assets:
+  images:
+    optimize:
+      enabled: false
+    responsive:
+      enabled: false
+    webp:
+      enabled: false
