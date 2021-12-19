@@ -23,6 +23,7 @@ case $RUNNING_ON in
   "Vercel")
     echo "Installing PHP ${PHP_VERSION}..."
     amazon-linux-extras install -y php$PHP_VERSION
+    echo "Installing PHP extensions..."
     yum install -y php-{cli,mbstring,dom,xml,intl,gettext,gd,imagick}
     URL=$VERCEL_URL
     if [ "$VERCEL_ENV" = "production" ]; then
