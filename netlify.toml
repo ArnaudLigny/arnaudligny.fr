@@ -1,6 +1,7 @@
 [build]
   publish = "_site"
-  command = "bash ./scripts/netlify-build.sh"
+  #command = "bash ./scripts/netlify-build.sh"
+  command = "bash ./scripts/cecil-build.sh"
 
 [build.environment]
   PHP_VERSION = "7.4"
