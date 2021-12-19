@@ -12,6 +12,9 @@ fi
 if [ "$VERCEL" = "1" ]; then
   RUNNING_ON="Vercel"
 fi
+if [ "$RENDER" = "true" ]; then
+  RUNNING_ON="Render"
+fi
 case $RUNNING_ON in
   "Netlify")
     if [ "$CONTEXT" = "production" ]; then
@@ -30,11 +33,11 @@ case $RUNNING_ON in
       CONTEXT="production"
     fi
     ;;
-  "Netlify" | "Vercel")
-    #
-    ;;
-  *)
-    #
+  "Render")
+    URL=$RENDER_EXTERNAL_URL
+    if [ "IS_PULL_REQUEST" = "true" ]; then
+      CONTEXT="preview"
+    fi
     ;;
 esac
 
