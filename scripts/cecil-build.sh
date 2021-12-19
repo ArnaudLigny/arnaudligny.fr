@@ -4,6 +4,9 @@
 if [ -z "${PHP_VERSION}" ]; then
   export PHP_VERSION="7.4"
 fi
+RUNNING_ON=""
+URL=""
+CMD_OPTIONS=" -v"
 
 # Running on
 if [ "$NETLIFY" = "true" ]; then
@@ -11,6 +14,9 @@ if [ "$NETLIFY" = "true" ]; then
 fi
 if [ "$VERCEL" = "1" ]; then
   RUNNING_ON="Vercel"
+fi
+if [ "$CF_PAGES" = "1" ]; then
+  RUNNING_ON="CFPages"
 fi
 if [ "$RENDER" = "true" ]; then
   RUNNING_ON="Render"
@@ -30,6 +36,11 @@ case $RUNNING_ON in
     yum install -y php-{cli,mbstring,dom,xml,intl,gettext,gd,imagick}
     URL=$VERCEL_URL
     if [ "$VERCEL_ENV" = "production" ]; then
+      CONTEXT="production"
+    fi
+    ;;
+  "CFPages")
+    if [ "CF_PAGES_BRANCH" = "master" | "CF_PAGES_BRANCH" = "main" ]; then
       CONTEXT="production"
     fi
     ;;
@@ -73,24 +84,26 @@ else
   echo "$($CECIL_CMD --version) is already installed."
 fi
 
-# Composer
-composer --version > /dev/null 2>&1
-COMPOSER_IS_INSTALLED=$?
-COMPOSER_CMD="composer"
-if [ $COMPOSER_IS_INSTALLED -ne 0 ]; then
-  echo "Installing Composer"
-  curl -sS https://getcomposer.org/installer | php
-  COMPOSER_CMD="php composer.phar"
-else
-  echo "$($COMPOSER_CMD --version) is already installed."
-fi
+# Themes
 if [ -f "./composer.json" ]; then
+  composer --version > /dev/null 2>&1
+  COMPOSER_IS_INSTALLED=$?
+  COMPOSER_CMD="composer"
+  if [ $COMPOSER_IS_INSTALLED -ne 0 ]; then
+    echo "Installing Composer"
+    curl -sS https://getcomposer.org/installer | php
+    COMPOSER_CMD="php composer.phar"
+  else
+    echo "$($COMPOSER_CMD --version) is already installed."
+  fi
   echo "Installing themes..."
   $COMPOSER_CMD install --prefer-dist --no-dev --no-progress --no-interaction --quiet
 fi
 
-# Context
-CMD_OPTIONS="-v"
+# Options
+if [ -z "${URL}" ]; then
+  CMD_OPTIONS="${CMD_OPTIONS} --baseurl=${URL}"
+fi
 if [ "$CONTEXT" = "production" ]; then
   CMD_OPTIONS="${CMD_OPTIONS} --postprocess"
 else
@@ -98,10 +111,12 @@ else
 fi
 
 # Run build
-$CECIL_CMD build --baseurl=$URL $CMD_OPTIONS
+$CECIL_CMD build$CMD_OPTIONS
+BUILD_SUCCESS=$?
 
 # Build success? Can deploy?
-if [ $? = 0 ]; then
-  exit 0
+if [ $BUILD_SUCCESS -ne 0 ]; then
+  echo "Build fail."; exit 1
 fi
-echo "Build fail."; exit 1
+
+exit 0
