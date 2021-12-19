@@ -2,7 +2,7 @@ previewsEnabled: true
 services:
 - type: web
   name: arnaudligny.fr
-  env: docker #static
+  env: docker
   buildCommand: ./scripts/cecil-build.sh
   staticPublishPath: _site
   pullRequestPreviewsEnabled: true
