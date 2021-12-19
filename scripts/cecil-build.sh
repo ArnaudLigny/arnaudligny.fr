@@ -23,9 +23,9 @@ CECIL_CMD="cecil"
 if [ $CECIL_IS_INSTALLED -ne 0 ]; then
   echo "Installing Cecil"
   if [ -z $CECIL_VERSION ]; then
-    curl -sSOL https://cecil.app/cecil.phar
+    curl -SOL https://cecil.app/cecil.phar
   else
-    curl -sSOL https://cecil.app/download/$CECIL_VERSION/cecil.phar
+    curl -SOL https://cecil.app/download/$CECIL_VERSION/cecil.phar
   fi
   CECIL_CMD="php cecil.phar"
 else
@@ -45,7 +45,7 @@ else
 fi
 if [ -f "./composer.json" ]; then
   echo "Installing theme(s)"
-  $COMPOSER_CMD install --prefer-dist --no-dev --no-progress --no-interaction --quiet
+  $COMPOSER_CMD install --prefer-dist --no-dev --no-progress --no-interaction
 fi
 
 # Running on
