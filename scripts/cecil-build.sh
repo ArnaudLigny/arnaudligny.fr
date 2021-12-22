@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Default variables
-export PHP_REQUIRED_VERSION="7.4.27"
+export PHP_REQUIRED_VERSION="7.4"
 if [ -z "${PHP_VERSION}" ]; then
   export PHP_VERSION="7.4"
 fi
