@@ -59,7 +59,7 @@ if [ $PHP_IS_INSTALLED -ne 0 ]; then
   echo "PHP is not installed. Please install it before running this script."
   exit 1;
 else
-  php --version
+  php -r 'echo "PHP ".PHP_VERSION;'
 fi
 PHP_OK=$(php -r 'echo (bool) version_compare(phpversion(), "7.1.3", ">=");')
 if [ "$PHP_OK" != "1" ]; then
