@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Default variables
+export PHP_REQUIRED_VERSION="7.4.27"
 if [ -z "${PHP_VERSION}" ]; then
   export PHP_VERSION="7.4"
 fi
@@ -59,11 +60,11 @@ if [ $PHP_IS_INSTALLED -ne 0 ]; then
   echo "PHP is not installed. Please install it before running this script."
   exit 1;
 else
-  php -r 'echo "PHP ".PHP_VERSION;'
+  php -r 'echo "PHP ".PHP_VERSION." is already installed.".PHP_EOL;'
 fi
-PHP_OK=$(php -r 'echo (bool) version_compare(phpversion(), "7.1.3", ">=");')
+PHP_OK=$(php -r 'echo (bool) version_compare(phpversion(), getenv("PHP_REQUIRED_VERSION"), ">=");')
 if [ "$PHP_OK" != "1" ]; then
-  echo "PHP version is not compatible. Please install PHP 7.1.3 or higher."
+  echo "PHP version is not compatible. Please install PHP ${PHP_REQUIRED_VERSION} or higher."
   exit 1;
 fi
 
