@@ -8,7 +8,7 @@ fi
 if [ -z "${INSTALL_OPTIM}" ]; then
   export INSTALL_OPTIM="true"
 fi
-CMD_OPTIONS=" -v"
+CMD_OPTIONS=""
 
 # Running on
 RUNNING_ON=""
@@ -117,9 +117,9 @@ if [ -z "${URL}" ]; then
   CMD_OPTIONS="${CMD_OPTIONS} --baseurl=${URL}"
 fi
 if [ "$CONTEXT" = "production" ]; then
-  CMD_OPTIONS="${CMD_OPTIONS} --postprocess"
+  CMD_OPTIONS=" -v ${CMD_OPTIONS} --postprocess"
 else
-  CMD_OPTIONS="${CMD_OPTIONS} --drafts"
+  CMD_OPTIONS=" -vv ${CMD_OPTIONS} --drafts"
 fi
 
 # Run build
