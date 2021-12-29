@@ -36,6 +36,8 @@ case $RUNNING_ON in
   "Vercel")
     echo "Installing PHP ${PHP_VERSION}..."
     amazon-linux-extras install -y php$PHP_VERSION
+    echo "Installing Gettext..."
+    yum install -y gettext
     echo "Installing PHP extensions..."
     yum install -y php-{cli,mbstring,dom,xml,intl,gettext,gd,imagick}
     if [ "$INSTALL_OPTIM" = "true" ]; then
