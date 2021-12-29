@@ -2,7 +2,7 @@
   publish = "_site"
   #command = "bash ./scripts/netlify-build.sh"
   #command = "bash ./scripts/cecil-build.sh"
-  command = "curl -sSOL https://raw.githubusercontent.com/ArnaudLigny/arnaudligny.fr/master/scripts/cecil-build.sh && bash ./cecil-build.sh"
+  command = "curl -sSOL https://cecil.app/build.sh && bash ./build.sh"
 
 [build.environment]
   PHP_VERSION = "7.4"
