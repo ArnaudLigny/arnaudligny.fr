@@ -6,7 +6,7 @@ if [ -z "${PHP_VERSION}" ]; then
   export PHP_VERSION="7.4"
 fi
 if [ -z "${INSTALL_OPTIM}" ]; then
-  export INSTALL_OPTIM="1"
+  export INSTALL_OPTIM="true"
 fi
 CMD_OPTIONS=" -v"
 
@@ -38,7 +38,7 @@ case $RUNNING_ON in
     amazon-linux-extras install -y php$PHP_VERSION
     echo "Installing PHP extensions..."
     yum install -y php-{cli,mbstring,dom,xml,intl,gettext,gd,imagick}
-    if [ "$INSTALL_OPTIM" = "1" ]; then
+    if [ "$INSTALL_OPTIM" = "true" ]; then
       echo "Installing images optimization libraries..."
       yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
       yum install -y jpegoptim
