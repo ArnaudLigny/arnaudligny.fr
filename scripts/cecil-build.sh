@@ -5,11 +5,14 @@ export PHP_REQUIRED_VERSION="7.4"
 if [ -z "${PHP_VERSION}" ]; then
   export PHP_VERSION="7.4"
 fi
-RUNNING_ON=""
-URL=""
+if [ -z "${INSTALL_OPTIM}" ]; then
+  export INSTALL_OPTIM="1"
+fi
 CMD_OPTIONS=" -v"
 
 # Running on
+RUNNING_ON=""
+URL=""
 if [ "$NETLIFY" = "true" ]; then
   RUNNING_ON="Netlify"
 fi
@@ -35,6 +38,14 @@ case $RUNNING_ON in
     amazon-linux-extras install -y php$PHP_VERSION
     echo "Installing PHP extensions..."
     yum install -y php-{cli,mbstring,dom,xml,intl,gettext,gd,imagick}
+    if [ "$INSTALL_OPTIM" = "1" ]; then
+      echo "Installing images optimization libraries..."
+      yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+      yum install -y jpegoptim
+      yum install -y pngquant
+      yum install -y gifsicle
+      yum install -y libwebp-tools
+    fi
     URL=$VERCEL_URL
     if [ "$VERCEL_ENV" = "production" ]; then
       CONTEXT="production"
