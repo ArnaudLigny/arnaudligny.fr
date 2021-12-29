@@ -6,7 +6,7 @@ if [ -z "${PHP_VERSION}" ]; then
   export PHP_VERSION="7.4"
 fi
 if [ -z "${INSTALL_OPTIM}" ]; then
-  export INSTALL_OPTIM="true"
+  export INSTALL_OPTIM="false"
 fi
 CMD_OPTIONS=""
 
