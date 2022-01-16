@@ -78,11 +78,12 @@ collections:
     label_singular: "Page"
     description: >
       Pages : Accueil, À propos, etc.
-    preview_path: "{{title}}"
+    preview_path: "{{slug}}"
     files:
       - name: "index"
         label: "Home page"
         file: "content/index.md"
+        preview_path: ""
         delete: false
         fields:
           - {label: "Texte", name: "body", widget: markdown}
@@ -93,6 +94,7 @@ collections:
       - name: "cv"
         label: "CV"
         file: "content/cv.md"
+        preview_path: "cv"
         delete: false
         fields:
           - {label: "Titre", name: "title", widget: "string", default: "Consultant technique senior"}
@@ -105,6 +107,7 @@ collections:
       - name: "a-propos"
         label: "À propos"
         file: "content/a-propos.md"
+        preview_path: "a-propos"
         delete: false
         fields:
           - {label: "Titre", name: "title", widget: "string", default: "À propos"}
