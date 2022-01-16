@@ -78,7 +78,6 @@ collections:
     label_singular: "Page"
     description: >
       Pages : Accueil, À propos, etc.
-    preview_path: "{{slug}}"
     files:
       - name: "index"
         label: "Home page"
