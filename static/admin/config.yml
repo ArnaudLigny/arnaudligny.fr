@@ -50,7 +50,7 @@ collections:
       Mes projets.
     folder: "content/projets"
     create: true
-    preview_path: "projets/{{slug}}"
+    preview_path: "projets/{{title}}"
     fields:
       - {label: "Titre", name: "title", widget: string}
       - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
