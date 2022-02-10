@@ -7,7 +7,7 @@ pagination:
   enabled: false
 published: true
 ---
-> J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leurs besoins; imaginer l’approche technique la plus adaptée; faire le lien entre les équipes métiers, la DSI et les développeurs; suivre la qualité et les méthodes de travail.
+J’aime me définir comme un **facilitateur** : comprendre et aider mes clients à qualifier leurs besoins; imaginer l’approche technique la plus adaptée; faire le lien entre les équipes métiers, la DSI et les développeurs; suivre la qualité et les méthodes de travail.
 
 **Mes compétences** : conception fonctionnelle et technique, prototypage, avant-vente, accompagnement des équipes de production, méthodes agiles, qualité et organisation.
 
