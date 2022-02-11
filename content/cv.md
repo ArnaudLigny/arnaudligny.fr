@@ -21,7 +21,7 @@ typora-root-url: ../../static
 
 ### Freelance – Consultant technique web, expert e-commerce
 
-#### [studio cecillie](https://studio.cecillie.fr) – *oct. 2020 à aujourd’hui*
+#### [studio cecillie](https://studio.cecillie.fr) – *depuis 2020*
 
 Missions de conseil et d’accompagnement technique à la mise en oeuvre de solutions web, mobile et e-commerce.
 
@@ -29,14 +29,14 @@ Missions de conseil et d’accompagnement technique à la mise en oeuvre de solu
 
 ### Co-animateur
 
-#### [Jamstatic](https://jamstatic.fr) – *janv. 2017 à aujourd’hui*
+#### [Jamstatic](https://jamstatic.fr) – *depuis 2017*
 
-- Co-administrateur de la communauté Jamstatic, dédiée aux sites statiques et aux architectures découplées
-- Co-animateur du podcast Génération statique où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants
+- Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées
+- Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants
 
 ### Consultant technique senior - Web, mobile & e-commerce
 
-#### [Adfab](https://adfab.fr) – *sept. 2015 à mars 2020*
+#### [Adfab](https://adfab.fr) – *2015-2020*
 
 J’ai été embauché par le studio de développement Adfab afin d’aider l’équipe commerciale à consolider la qualité des réponses aux appels d’offres.  
 J’ai ainsi réalisé des centaines de présentations (au format Apple Keynote, Microsoft PowerPoint et Google Slides) et leur estimation de charge (de développement) associée.
@@ -72,7 +72,7 @@ Avant-vente puis conception d’une application mobile ([React Native](/tags/rea
 
 ### Architecte IoT
 
-#### [The Bubbles Company](https://bubbles-company.com) ([Dooh It](https://doohit.fr)) – *sept. 2014 à juin 2015*
+#### [The Bubbles Company](https://bubbles-company.com) ([Dooh It](https://doohit.fr)) – *2014-2015*
 
 Les Bubbles sont une solution de rechargement de batterie pour téléphone mobile, ayant pour objectif de faire du « drive to store » en offrant des contenus via l’écran LCD du modèle sécurisé et via l’application mobile.
 
@@ -86,7 +86,7 @@ D’autre part j’ai recruté l’équipe technique et identifié les potentiel
 
 ### Consultant e-commerce & Chef de projet technique
 
-#### [Hermès](https://www.hermes.com) – *août 2012 à août 2014*
+#### [Hermès](https://www.hermes.com) – *2012-2014*
 
 Pilotage technique des projets e-commerce du groupe Hermès.
 
@@ -113,7 +113,7 @@ Pilotage de la maintenance, des optimisations des performances et de la navigati
 
 ### Consultant technique e-commerce - Spécialiste Magento
 
-#### Baobaz – *juin 2009 à août 2012*
+#### Baobaz – *2009-2012*
 
 Référent fonctionnel et technique sur la plateforme e-commerce Magento (Enterprise et Community Edition) :
 
@@ -135,7 +135,7 @@ Suite de modules Magento pour les retailers et la mode :
 
 ### Lead Developper - Spécialiste e-commerce
 
-#### Baobaz – *juin 2007 à janv. 2010*
+#### Baobaz – *2007-2010*
 
 Analyse, conception fonctionnelle et technique, pilotage équipe de développement, gestion de projet technique, avant vente.
 
@@ -145,7 +145,7 @@ Spécialiste osCommerce et Magento.
 
 ### Lead Developper - Spécialiste gestion de contenu
 
-#### Stockho – *févr. 2005 à juin 2007*
+#### Stockho – *2005-2007*
 
 Analyse fonctionnelle et technique, gestion de projet technique, avant vente, TMA, expert Drupal.
 
