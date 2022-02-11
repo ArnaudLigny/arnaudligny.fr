@@ -19,7 +19,7 @@ typora-root-url: ../../static
 ---
 ## Expérience
 
-### Consultant technique senior - Expert e-commerce
+### Freelance – Consultant technique web, expert e-commerce
 
 #### [studio cecillie](https://studio.cecillie.fr) – *oct. 2020 à aujourd’hui*
 
@@ -29,23 +29,10 @@ Missions de conseil et d’accompagnement technique à la mise en oeuvre de solu
 
 ### Co-animateur
 
-#### [Génération statique](https://anchor.fm/jamstatic) – *oct. 2020 à aujourd’hui*
-
-Co-animateur du podcast Génération statique où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
-
-### Concepteur produits web
-
-#### [Aperture Lab](https://aperturelab.fr) – *sept. 2013 à aujourd’hui*
-
-- Conception et développement de [Cecil](https://cecil.app), un générateur de site statique simple et efficace
-- Maintenance de [The Butler](https://the-butler.cecil.app), un moteur de blog clef en main
-- Création de [Staticast](https://staticast.cecil.app), une plateforme de publication de podcast
-
-### Co-administrateur
-
 #### [Jamstatic](https://jamstatic.fr) – *janv. 2017 à aujourd’hui*
 
-Co-administrateur de la communauté Jamstatic, dédiée aux sites statiques et aux architectures découplées.
+- Co-administrateur de la communauté Jamstatic, dédiée aux sites statiques et aux architectures découplées
+- Co-animateur du podcast Génération statique où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants
 
 ### Consultant technique senior - Web, mobile & e-commerce
 
