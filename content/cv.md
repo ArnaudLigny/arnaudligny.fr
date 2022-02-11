@@ -23,66 +23,60 @@ typora-root-url: ../../static
 
 #### [studio cecillie](https://studio.cecillie.fr) – *depuis 2020*
 
-Missions de conseil et d’accompagnement technique à la mise en oeuvre de solutions web, mobile et e-commerce.
-
-> Clients : Valtech, Yves Rocher, Promod.
+Clients : Valtech, Yves Rocher, Promod…  
+👉 Missions de conseil et d’accompagnement technique à la mise en œuvre de solutions web, mobile et e-commerce.
 
 ### Co-animateur
 
 #### [Jamstatic](https://jamstatic.fr) – *depuis 2017*
 
-- Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées
-- Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants
+👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
+👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
 
 ### Consultant technique senior - Web, mobile & e-commerce
 
 #### [Adfab](https://adfab.fr) – *2015-2020*
 
-J’ai été embauché par le studio de développement Adfab afin d’aider l’équipe commerciale à consolider la qualité des réponses aux appels d’offres.  
-J’ai ainsi réalisé des centaines de présentations (au format Apple Keynote, Microsoft PowerPoint et Google Slides) et leur estimation de charge (de développement) associée.
+Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad Planning…  
+👉 Avant-vente : gestion des appels d’offres techniques, identification et recommandation des solutions techniques, chiffrages techniques, soutenances et relation clientèle;  
+👉 Production : optimisation des process et méthodologies, identification des outils et technologies, suivi qualité, suivi de projet.
 
-Je me suis également impliqué dans l’amélioration des méthodes de travail, des outils et de la qualité, via la mise en place de modèles de document (présentation, chiffrage, wiki projet, etc.) et de process.  
-Je suis également intervenu, avec le directeur technique, sur l’accompagnement des développeurs à l’utilisation des outils (intégration et de déploiement continu).
-
-##### Quelques clients / projets
+##### 🔎 Focus sur quelques projets
 
 ###### *Du Côté de Chez Vous (Leroy Merlin)*
 
-Avant-vente, accompagnement, conseils techniques et pilotage de la réalisation de la refonte du site web.
-
-> Points d’attention : site statique généré et déployé de manière atomique, CMS headless [Contentful](https://www.contentful.com).
+👉 Avant-vente, accompagnement, conseils techniques et pilotage de la réalisation de la refonte du site web.  
+👉 Points d’attention : site statique généré et déployé de manière atomique, CMS headless [Contentful](https://www.contentful.com).
 
 ###### *Brigad Planning (web app et app mobile)*
 
-Pilotage complet du projet « spin-off » *Planning* de la startup [Brigad](https://brigad.co) avec une équipe de 4 développeurs, et en relation directe avec le fondateur.
-
-> Points d’attention : délais court, méthodologie Agile, démo client chaque semaine en visio.
+👉 Pilotage complet du projet « spin-off » *Planning* de la startup [Brigad](https://brigad.co) avec une équipe de 4 développeurs, et en relation directe avec le fondateur.  
+👉 Points d’attention : délais court, méthodologie Agile, démo client chaque semaine en visio.
 
 ###### *Saint Maclou (e-commerce)*
 
-Pilotage complet du projet de refonte complet du site e-commerce Saint-Maclou.com, sur [Magento](/tags/magento), en partenariat avec l’agence [5ème Gauche](http://www.5emegauche.com).
-
-> Points d’attention : budget développement serré, optimisation des performances, outil d’aide au choix, outil de calcul de surface, connecteur CRM, store locator, déploiement continu.
+👉 Pilotage complet du projet de refonte complet du site e-commerce Saint-Maclou.com, sur [Magento](/tags/magento), en partenariat avec l’agence [5ème Gauche](http://www.5emegauche.com).  
+👉 Points d’attention : budget développement serré, optimisation des performances, outil d’aide au choix, outil de calcul de surface, connecteur CRM, store locator, déploiement continu.
 
 ###### *Tereos (app mobile)*
 
-Avant-vente puis conception d’une application mobile ([React Native](/tags/react-native)) visant à fournir un ensemble d’outils aux planteurs (Betterave sucrière).
-
-> Points d’attention : métier complexe, interfaces d’authentification et d’obtention des donnés, contrainte physiques fortes (connexion dégradée, mode hors-ligne), alertes push.
+👉 Avant-vente puis conception d’une application mobile ([React Native](/tags/react-native)) visant à fournir un ensemble d’outils aux planteurs (Betterave sucrière).  
+👉 Points d’attention : métier complexe, interfaces d’authentification et d’obtention des donnés, contrainte physiques fortes (connexion dégradée, mode hors-ligne), alertes push.
 
 ### Architecte IoT
 
-#### [The Bubbles Company](https://bubbles-company.com) ([Dooh It](https://doohit.fr)) – *2014-2015*
+#### [Dooh It](https://doohit.fr) (ex Bubbles) – *2014-2015*
 
-Les Bubbles sont une solution de rechargement de batterie pour téléphone mobile, ayant pour objectif de faire du « drive to store » en offrant des contenus via l’écran LCD du modèle sécurisé et via l’application mobile.
+Bubbles, solution de rechargement pour smartphone, permet de développer le drive-to-store en proposant des contenus via un écran LCD et une application mobile.
 
-J’ai réalisé la conception, le prototypage du socle technique (hardware et software) ainsi que le protocole de communication des objets connectés.
+👉 Conception et prototypage du socle technique (hardware et software);  
+👉 Conception du protocole de communication des objets connectés;  
+👉 Recrutement et mise en place de l’équipe technique interne;  
+👉 Identifications de prestataires techniques.
 
-J’ai notamment travaillé avec les ingénieurs de [Canon Bretagne](https://www.canon-bretagne.fr) sur les aspects matériels et électroniques et avec [Ova Design](http://ovadesign.com) sur la conception ergonomique des Bubbles.
+Technologies et outils : RabbitMQ, STOMP, Symfony, Bluetooth, NFC, iBeacon, Wi-Fi, Web App, App mobile, géolocalisation…
 
-D’autre part j’ai recruté l’équipe technique et identifié les potentiels prestataires en charge de la réalisation des applications mobiles.
-
-> Technologies et outils : RabbitMQ, STOMP, Symfony, Bluetoouh, NFC, iBeacon, Wi-Fi, Web App, App mobile, géolocalisation, etc.
+J’ai également travaillé avec les ingénieurs de [Canon Bretagne](https://www.canon-bretagne.fr) sur les aspects matériels et électroniques et avec [Ova Design](http://ovadesign.com) sur la conception ergonomique.
 
 ### Consultant e-commerce & Chef de projet technique
 
@@ -92,66 +86,66 @@ Pilotage technique des projets e-commerce du groupe Hermès.
 
 [***Hermès.com***](https://www.hermes.com)
 
-Accompagnement des chefs de projet métier Hermès sur la mise en place de nouvelles fonctionnalités (Import produits, export commandes, typologie produits, Web-to-store à l’international, données personnelles, version mobile, etc.) et pilotage des prestataires technique sur le site e-commerce (Magento);
+👉 Accompagnement des chefs de projet métier Hermès sur la mise en place de nouvelles fonctionnalités (import produits, export commandes, typologie produits, web-to-store à l’international, données personnelles, version mobile, etc.) et pilotage des prestataires technique sur le site e-commerce;  
+👉 Conception fonctionnelle et technique d’un DAM sur mesure;  
+👉 Pilotage technique (AMOA) du projet Cross-canal : coordination d’une quinzaine d’intervenants (métier, DSI, et prestataires) sur une durée de 6 mois.
 
-Conception fonctionnelle et technique d’un DAM sur mesure;
-
-Pilotage technique (AMOA) du projet Cross-canal : coordination d’une quinzaine d’intervenants (métier, DSI, et prestataires) sur une durée de 6 mois.  
 Environnement technique : Magento (e-commerce), Cegid Business Retail (ERP), Tibco (ESB).
 
 [***JohnLobb.com***](https://www.johnlobb.com)
 
-Pilotage technique de la refonte/maintenance du site e-commerce Magento : multi-devises (€, $ et £), multi-pays (Europe, UK, et USA), multi-langues (français, anglais, japonais).
+👉 Pilotage technique de la refonte/maintenance du site e-commerce Magento : multi-devises (€, $ et £), multi-pays (Europe, UK, et USA), multi-langues (français, anglais, japonais).
 
 [***Puiforcat.com***](https://www.puiforcat.com)
 
-Pilotage de la maintenance et des évolutions du site e-commerce Magento : activation du e-commerce dans plus de 30 pays.
+👉 Pilotage de la maintenance et des évolutions du site e-commerce Magento : activation du e-commerce dans plus de 30 pays.
 
 [***Cristalleries Saint-Louis.com***](https://www.saint-louis.com)
 
-Pilotage de la maintenance, des optimisations des performances et de la navigation produits du site e-commerce Magento.
+👉 Pilotage de la maintenance, des optimisations des performances et de la navigation produits du site e-commerce Magento.
 
 ### Consultant technique e-commerce - Spécialiste Magento
 
 #### Baobaz – *2009-2012*
 
+Clients : Zadig & Voltaire, The Kooples, Christian Louboutin, Jennyfer, Carré Blanc, Etam, 1-2-3, La Halle aux Chaussures, Burton of London…
+
 Référent fonctionnel et technique sur la plateforme e-commerce Magento (Enterprise et Community Edition) :
 
-- compréhension du besoin et conseil
-- avant vente et estimation de charge
-- conception catalogue (PIM, DAM) et interfaçage (ERP, CRM, entrepôts)
-- pilotage des développements, pont entre l’équipe marketing et les développeurs, sensibilisation à la performance et au SEO
-- maîtrise des problématiques de cross-canal (stock, système de caisse, retrait en magasin, etc.).
+👉 Compréhension du besoin et conseil;  
+👉 Avant vente et estimation de charge;  
+👉 Conception catalogue (PIM, DAM) et interfaçage (ERP, CRM, entrepôts);  
+👉 Pilotage des développements, pont entre l’équipe marketing et les développeurs, sensibilisation à la performance et au SEO;  
+👉 maîtrise des problématiques de cross-canal (stock, système de caisse, retrait en magasin, etc.).
 
 ***Fashiongento***
 
 Suite de modules Magento pour les retailers et la mode :
 
-- Identification des besoins, conception fonctionnelle et technique
-- Pilotage de l’équipe de développement
-- Modules principaux : Silhouette, Dressing, Wishlist soldes, Promotions, Newsletter, Store locator, Checkout, Antifraude, SAV Ticketing, RMA, Carreer, Click and collect, SEO
-
-> Clients : Zadig & Voltaire, The Kooples, Christian Louboutin, Jennyfer, Carré Blanc, Etam, 1-2-3, La Halle aux Chaussures, Burton of London.
+👉 Identification des besoins, conception fonctionnelle et technique;  
+👉 Pilotage de l’équipe de développement;  
+👉 Modules principaux : Silhouette, Dressing, Wishlist soldes, Promotions, Newsletter, Store locator, Checkout, Antifraude, SAV Ticketing, RMA, Carreer, Click and collect, SEO.
 
 ### Lead Developper - Spécialiste e-commerce
 
 #### Baobaz – *2007-2010*
 
-Analyse, conception fonctionnelle et technique, pilotage équipe de développement, gestion de projet technique, avant vente.
+Clients : Repetto, Du Pareil au Même, Natalys, Marèse, Zadig & Voltaire, Texto.
 
-Spécialiste osCommerce et Magento.
-
-> Clients : Repetto, Du Pareil au Même, Natalys, Marèse, Zadig & Voltaire, Texto.
+👉 Analyse, conception fonctionnelle et technique, pilotage équipe de développement, gestion de projet technique, avant vente;  
+👉 Spécialiste osCommerce et Magento.
 
 ### Lead Developper - Spécialiste gestion de contenu
 
 #### Stockho – *2005-2007*
 
-Analyse fonctionnelle et technique, gestion de projet technique, avant vente, TMA, expert Drupal.
+Clients : DHL, Bergerat Monnoyeur, CUC / Abix, NewWorks, Beryl, M6, France Télévisions, Pièces Jaunes, etc.
 
-Pilotage du pôle PHP, maintenance et évolution du CMS interne (EasyBao, un générateur de site statique performant et sécurisé).
+👉 Analyse fonctionnelle et technique, gestion de projet technique, avant vente, TMA, expert Drupal;  
+👉 Pilotage du pôle PHP, maintenance et évolution du CMS interne (EasyBao, un générateur de site statique performant et sécurisé).
 
-> Clients : DHL, Bergerat Monnoyeur, CUC / Abix, NewWorks, Beryl, M6, France Télévisions, Pièces Jaunes, etc.
+
+
 
 *[DAM]: Digital Asset Management
 *[DSI]: Direction des Services Informatiques
