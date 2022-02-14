@@ -38,7 +38,8 @@ Clients : Valtech, Yves Rocher, Promod…
 
 #### [Adfab](https://adfab.fr) – *2015-2020*
 
-Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad Planning…  
+Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad Planning, Le petit Souk, Le Havre, The Kooples, Dermocontrol, Accor, Libeo…
+
 👉 Avant-vente : gestion des appels d’offres techniques, identification et recommandation des solutions techniques, chiffrages techniques, soutenances et relation clientèle;  
 👉 Production : optimisation des process et méthodologies, identification des outils et technologies, suivi qualité, suivi de projet.
 
