@@ -33,7 +33,7 @@ Clients : Valtech, Yves Rocher, Promod…
 👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
 👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
 
-### Consultant technique – Expert e-commerce
+### Consultant technique e-commerce
 
 #### [Promod](https://www.promod.fr) – *2020-2021*
 
