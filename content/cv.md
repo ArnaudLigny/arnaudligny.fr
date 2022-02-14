@@ -96,7 +96,7 @@ Pilotage technique des projets e-commerce du groupe Hermès.
 
 [***Hermès.com***](https://www.hermes.com)
 
-👉 Accompagnement des chefs de projet métier Hermès sur la mise en place de nouvelles fonctionnalités (import produits, export commandes, typologie produits, web-to-store à l’international, données personnelles, version mobile, etc.) et pilotage des prestataires technique sur le site e-commerce;  
+👉 Accompagnement des chefs de projet métier Hermès sur la mise en place de nouvelles fonctionnalités (import produits, export commandes, typologie produits, web-to-store à l’international, données personnelles, version mobile…) et pilotage des prestataires technique sur le site e-commerce;  
 👉 Conception fonctionnelle et technique d’un DAM sur mesure;  
 👉 Pilotage technique (AMOA) du projet Cross-canal : coordination d’une quinzaine d’intervenants (métier, DSI, et prestataires) sur une durée de 6 mois.
 
@@ -126,6 +126,7 @@ Référent fonctionnel et technique sur la plateforme e-commerce Magento (Enterp
 👉 Pilotage des développements, pont entre l’équipe marketing et les développeurs, sensibilisation à la performance et au SEO;  
 👉 maîtrise des problématiques de cross-canal (stock, système de caisse, retrait en magasin…).
 
+*Fashiongento*, suite de modules Magento pour les retailers et la mode :  
 👉 Identification des besoins, conception fonctionnelle et technique;  
 👉 Pilotage de l’équipe de développement;  
 👉 Modules principaux : Silhouette, Dressing, Wishlist soldes, Promotions, Newsletter, Store locator, Checkout, Antifraude, SAV Ticketing, RMA, Carreer, Click and collect, SEO.
