@@ -21,6 +21,4 @@ J’ai également conçu et développé un générateur de site statique orient�
 
 [CV](/cv/) — [LinkedIn](https://fr.linkedin.com/in/arnaudligny/fr/) — [Twitter](https://twitter.com/ArnaudLigny) — [GitHub](https://github.com/ArnaudLigny) — <a href="mailto:arnaud+contact@ligny.fr?subject=Prise de contact" title="Prise de contact par e-mail">Contact</a>
 
-
-
 *[DSI]: Direction des Services Informatiques
