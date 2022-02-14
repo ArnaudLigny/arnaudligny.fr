@@ -37,11 +37,11 @@ Clients : Valtech, Yves Rocher, Promod…
 
 #### [Promod](https://www.promod.fr) – *2020-2021*
 
-Refonte complète du tunnel d’achat via une approche headless et la solution [commercetools](https://commercetools.com/).  
+Refonte complète du tunnel d’achat via une approche headless avec la solution [commercetools](https://commercetools.com).  
 👉 Compréhension, analyse et traduction du besoin client (phase de discovering);  
 👉 Pilotage des ateliers techniques entre les équipes métiers et les développeurs;  
 👉 Conception de l’architecture technique en accord avec la DOSI;  
-👉 Conception du produit et participation au backlog en collaboration le business analyst, les PO et CPO, et les équipes QA.  
+👉 Conception du produit et participation au backlog en collaboration avec le business analyst, les PO et CPO, et les équipes QA.  
 Outils : commercetools, Microsoft Azure, Node.js, NestJS, Terraform, Postman.
 
 ### Consultant technique senior - Web, mobile & e-commerce
