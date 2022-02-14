@@ -34,6 +34,19 @@ Clients : Valtech, Yves Rocher, Promod…
 👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
 👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
 
+### Consultant technique – Expert e-commerce
+
+#### [Promod](https://www.promod.fr) – *2020-2021*
+
+Refonte complète du tunnel d’achat via une approche headless et la solution [commercetools](https://commercetools.com/).
+
+👉 Compréhension, analyse et traduction du besoin client (phase de discovering);  
+👉 Pilotage des ateliers techniques entre les équipes métiers et les développeurs;  
+👉 Conception de l’architecture technique en accord avec la DOSI;  
+👉 Conception du produit et participation au backlog en collaboration le business analyst, les PO et CPO, et les équipes QA.
+
+Outils : commercetools, Microsoft Azure, Node.js, NestJS, Terraform, Postman.
+
 ### Consultant technique senior - Web, mobile & e-commerce
 
 #### [Adfab](https://adfab.fr) – *2015-2020*
@@ -159,3 +172,4 @@ Clients : DHL, Bergerat Monnoyeur, CUC / Abix, NewWorks, Beryl, M6, France Tél�
 *[PIM]: Product Information Management
 *[AMOA]: Assistance à la maîtrise d’ouvrage
 *[IoT]: Internet of Things
+*[DOSI]: Direction Opérationnelle des Systèmes d'Information
