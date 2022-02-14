@@ -23,7 +23,8 @@ typora-root-url: ../../static
 
 #### [studio cecillie](https://studio.cecillie.fr) – *depuis 2020*
 
-Clients : Valtech, Yves Rocher, Promod…  
+Clients : Valtech, Yves Rocher, Promod…
+
 👉 Missions de conseil et d’accompagnement technique à la mise en œuvre de solutions web, mobile et e-commerce.
 
 ### Co-animateur
@@ -143,7 +144,6 @@ Clients : DHL, Bergerat Monnoyeur, CUC / Abix, NewWorks, Beryl, M6, France Tél�
 
 👉 Analyse fonctionnelle et technique, gestion de projet technique, avant vente, TMA, expert Drupal;  
 👉 Pilotage du pôle PHP, maintenance et évolution du CMS interne (EasyBao, un générateur de site statique performant et sécurisé).
-
 
 
 
