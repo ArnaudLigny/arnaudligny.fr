@@ -94,7 +94,7 @@ J’ai également travaillé avec les ingénieurs de [Canon Bretagne](https://ww
 
 Pilotage technique des projets e-commerce du groupe Hermès.
 
-[***Hermès.com***](https://www.hermes.com)
+##### [***Hermès.com***](https://www.hermes.com)
 
 👉 Accompagnement des chefs de projet métier Hermès sur la mise en place de nouvelles fonctionnalités (import produits, export commandes, typologie produits, web-to-store à l’international, données personnelles, version mobile…) et pilotage des prestataires technique sur le site e-commerce;  
 👉 Conception fonctionnelle et technique d’un DAM sur mesure;  
@@ -102,15 +102,15 @@ Pilotage technique des projets e-commerce du groupe Hermès.
 
 Environnement technique : Magento (e-commerce), Cegid Business Retail (ERP), Tibco (ESB).
 
-[***JohnLobb.com***](https://www.johnlobb.com)
+##### [***JohnLobb.com***](https://www.johnlobb.com)
 
 👉 Pilotage technique de la refonte/maintenance du site e-commerce Magento : multi-devises (€, $ et £), multi-pays (Europe, UK, et USA), multi-langues (français, anglais, japonais).
 
-[***Puiforcat.com***](https://www.puiforcat.com)
+##### [***Puiforcat.com***](https://www.puiforcat.com)
 
 👉 Pilotage de la maintenance et des évolutions du site e-commerce Magento : activation du e-commerce dans plus de 30 pays.
 
-[***Cristalleries Saint-Louis.com***](https://www.saint-louis.com)
+##### [***Cristalleries Saint-Louis.com***](https://www.saint-louis.com)
 
 👉 Pilotage de la maintenance, des optimisations des performances et de la navigation produits du site e-commerce Magento.
 
