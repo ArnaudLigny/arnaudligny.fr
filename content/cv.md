@@ -23,8 +23,7 @@ typora-root-url: ../../static
 
 #### [studio cecillie](https://studio.cecillie.fr) – *depuis 2020*
 
-Clients : Valtech, Yves Rocher, Promod…
-
+Clients : Valtech, Yves Rocher, Promod…  
 👉 Missions de conseil et d’accompagnement technique à la mise en œuvre de solutions web, mobile et e-commerce.
 
 ### Co-animateur
@@ -38,21 +37,18 @@ Clients : Valtech, Yves Rocher, Promod…
 
 #### [Promod](https://www.promod.fr) – *2020-2021*
 
-Refonte complète du tunnel d’achat via une approche headless et la solution [commercetools](https://commercetools.com/).
-
+Refonte complète du tunnel d’achat via une approche headless et la solution [commercetools](https://commercetools.com/).  
 👉 Compréhension, analyse et traduction du besoin client (phase de discovering);  
 👉 Pilotage des ateliers techniques entre les équipes métiers et les développeurs;  
 👉 Conception de l’architecture technique en accord avec la DOSI;  
-👉 Conception du produit et participation au backlog en collaboration le business analyst, les PO et CPO, et les équipes QA.
-
+👉 Conception du produit et participation au backlog en collaboration le business analyst, les PO et CPO, et les équipes QA.  
 Outils : commercetools, Microsoft Azure, Node.js, NestJS, Terraform, Postman.
 
 ### Consultant technique senior - Web, mobile & e-commerce
 
 #### [Adfab](https://adfab.fr) – *2015-2020*
 
-Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad Planning, Le petit Souk, Le Havre, The Kooples, Dermocontrol, Accor, Libeo…
-
+Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad Planning, Le petit Souk, Le Havre, The Kooples, Dermocontrol, Accor, Libeo…  
 👉 Avant-vente : gestion des appels d’offres techniques, identification et recommandation des solutions techniques, chiffrages techniques, soutenances et relation clientèle;  
 👉 Production : optimisation des process et méthodologies, identification des outils et technologies, suivi qualité, suivi de projet.
 
@@ -82,8 +78,7 @@ Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad Planning, Le petit Souk, Le
 
 #### [Dooh It](https://doohit.fr) (ex Bubbles) – *2014-2015*
 
-Bubbles, solution de rechargement pour smartphone, permet de développer le drive-to-store en proposant des contenus via un écran LCD et une application mobile.
-
+Bubbles, solution de rechargement pour smartphone, permet de développer le drive-to-store en proposant des contenus via un écran LCD et une application mobile.  
 👉 Conception et prototypage du socle technique (hardware et software);  
 👉 Conception du protocole de communication des objets connectés;  
 👉 Recrutement et mise en place de l’équipe technique interne;  
@@ -123,19 +118,13 @@ Environnement technique : Magento (e-commerce), Cegid Business Retail (ERP), Tib
 
 #### Baobaz – *2009-2012*
 
-Clients : Zadig & Voltaire, The Kooples, Christian Louboutin, Jennyfer, Carré Blanc, Etam, 1-2-3, La Halle aux Chaussures, Burton of London…
-
-Référent fonctionnel et technique sur la plateforme e-commerce Magento (Enterprise et Community Edition) :
-
+Clients : Zadig & Voltaire, The Kooples, Christian Louboutin, Jennyfer, Carré Blanc, Etam, 1-2-3, La Halle aux Chaussures, Burton of London…  
+Référent fonctionnel et technique sur la plateforme e-commerce Magento (Enterprise et Community Edition) :  
 👉 Compréhension du besoin et conseil;  
 👉 Avant vente et estimation de charge;  
 👉 Conception catalogue (PIM, DAM) et interfaçage (ERP, CRM, entrepôts);  
 👉 Pilotage des développements, pont entre l’équipe marketing et les développeurs, sensibilisation à la performance et au SEO;  
-👉 maîtrise des problématiques de cross-canal (stock, système de caisse, retrait en magasin, etc.).
-
-***Fashiongento***
-
-Suite de modules Magento pour les retailers et la mode :
+👉 maîtrise des problématiques de cross-canal (stock, système de caisse, retrait en magasin…).
 
 👉 Identification des besoins, conception fonctionnelle et technique;  
 👉 Pilotage de l’équipe de développement;  
@@ -145,8 +134,7 @@ Suite de modules Magento pour les retailers et la mode :
 
 #### Baobaz – *2007-2010*
 
-Clients : Repetto, Du Pareil au Même, Natalys, Marèse, Zadig & Voltaire, Texto.
-
+Clients : Repetto, Du Pareil au Même, Natalys, Marèse, Zadig & Voltaire, Texto.  
 👉 Analyse, conception fonctionnelle et technique, pilotage équipe de développement, gestion de projet technique, avant vente;  
 👉 Spécialiste osCommerce et Magento.
 
@@ -154,12 +142,9 @@ Clients : Repetto, Du Pareil au Même, Natalys, Marèse, Zadig & Voltaire, Texto
 
 #### Stockho – *2005-2007*
 
-Clients : DHL, Bergerat Monnoyeur, CUC / Abix, NewWorks, Beryl, M6, France Télévisions, Pièces Jaunes, etc.
-
+Clients : DHL, Bergerat Monnoyeur, CUC / Abix, NewWorks, Beryl, M6, France Télévisions, Pièces Jaunes…  
 👉 Analyse fonctionnelle et technique, gestion de projet technique, avant vente, TMA, expert Drupal;  
 👉 Pilotage du pôle PHP, maintenance et évolution du CMS interne (EasyBao, un générateur de site statique performant et sécurisé).
-
-
 
 *[DAM]: Digital Asset Management
 *[DSI]: Direction des Services Informatiques
