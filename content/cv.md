@@ -143,7 +143,7 @@ Clients : Repetto, Du Pareil au Même, Natalys, Marèse, Zadig & Voltaire, Texto
 
 #### Stockho – *2005-2007*
 
-Clients : DHL, Bergerat Monnoyeur, CUC / Abix, NewWorks, Beryl, M6, France Télévisions, Pièces Jaunes…  
+Clients : DHL, M6, France Télévisions, Pièces Jaunes, Bergerat Monnoyeur, CUC / Abix, NewWorks, Beryl…  
 👉 Analyse fonctionnelle et technique, gestion de projet technique, avant vente, TMA, expert Drupal;  
 👉 Pilotage du pôle PHP, maintenance et évolution du CMS interne (EasyBao, un générateur de site statique performant et sécurisé).
 
