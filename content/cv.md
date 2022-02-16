@@ -86,7 +86,7 @@ Bubbles, solution de rechargement pour smartphone, permet de développer le driv
 
 Technologies et outils : RabbitMQ, STOMP, Symfony, Bluetooth, NFC, iBeacon, Wi-Fi, Web App, App mobile, géolocalisation…
 
-J’ai également travaillé avec les ingénieurs de [Canon Bretagne](https://www.canon-bretagne.fr) sur les aspects matériels et électroniques et avec [Ova Design](http://ovadesign.com) sur la conception ergonomique.
+J’ai également collaboré avec les ingénieurs de [Canon Bretagne](https://www.canon-bretagne.fr) sur les aspects matériels et électroniques, et avec les designers de [Ova Design](http://ovadesign.com) sur la conception ergonomique.
 
 ### Consultant e-commerce & Chef de projet technique
 
