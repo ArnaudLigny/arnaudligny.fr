@@ -7,7 +7,7 @@ intro: |
 
   Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web, mobile, e-commerce (et IoT).
 
-  En 15 ans j’ai apporté mon expertise à de nombreuses startups, marques et enseignes telles que _Promod_, _Yves Rocher_, _Libeo_, _Brigad_, _Leroy Merlin_, _Ducray_, _Saint-Maclou_, _Hermès_, _Christian Louboutin_, _Repetto_, _Zadig & Voltaire_, _Etam_, _The Kooples_, _Du Pareil au Même_.
+  Depuis 15 ans j’apporte mon expertise à des startups, des marques et enseignes telles que _Promod_, _Yves Rocher_, _Libeo_, _Brigad_, _Leroy Merlin_, _Ducray_, _Saint-Maclou_, _Hermès_, _Christian Louboutin_, _Repetto_, _Zadig & Voltaire_, _Etam_, _The Kooples_, _Du Pareil au Même_.
 
   *[IoT]: Internet of Things
 menu: main
@@ -48,28 +48,28 @@ Outils : commercetools, Microsoft Azure, Node.js, NestJS, Terraform, Postman.
 
 #### [Adfab](https://adfab.fr) – *2015-2020*
 
-Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad Planning, Le petit Souk, Le Havre, The Kooples, Dermocontrol, Accor, Libeo…  
+Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad, Le petit Souk, Le Havre, The Kooples, Dermocontrol, Accor, Libeo…  
 👉 Avant-vente : gestion des appels d’offres techniques, identification et recommandation des solutions techniques, chiffrages techniques, soutenances et relation clientèle;  
 👉 Production : optimisation des process et méthodologies, identification des outils et technologies, suivi qualité, suivi de projet.
 
 ##### 🔎 Focus sur quelques projets
 
-###### *Du Côté de Chez Vous (Leroy Merlin)*
+###### Du Côté de Chez Vous (Leroy Merlin)
 
 👉 Avant-vente, accompagnement, conseils techniques et pilotage de la réalisation de la refonte du site web.  
 👉 Points d’attention : site statique généré et déployé de manière atomique, CMS headless [Contentful](https://www.contentful.com).
 
-###### *Brigad Planning (web app et app mobile)*
+###### Brigad (web app et app mobile)
 
 👉 Pilotage complet du projet « spin-off » *Planning* de la startup [Brigad](https://brigad.co) avec une équipe de 4 développeurs, et en relation directe avec le fondateur.  
 👉 Points d’attention : délais court, méthodologie Agile, démo client chaque semaine en visio.
 
-###### *Saint Maclou (e-commerce)*
+###### Saint Maclou (e-commerce)
 
 👉 Pilotage complet du projet de refonte complet du site e-commerce Saint-Maclou.com, sur [Magento](/tags/magento), en partenariat avec l’agence [5ème Gauche](http://www.5emegauche.com).  
 👉 Points d’attention : budget développement serré, optimisation des performances, outil d’aide au choix, outil de calcul de surface, connecteur CRM, store locator, déploiement continu.
 
-###### *Tereos (app mobile)*
+###### Tereos (app mobile)
 
 👉 Avant-vente puis conception d’une application mobile ([React Native](/tags/react-native)) visant à fournir un ensemble d’outils aux planteurs (Betterave sucrière).  
 👉 Points d’attention : métier complexe, interfaces d’authentification et d’obtention des donnés, contrainte physiques fortes (connexion dégradée, mode hors-ligne), alertes push.
