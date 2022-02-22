@@ -14,6 +14,8 @@ Pendant le (1er) confinement j’avais entrepris la création d’[une solution 
 
 L’objectif était de permettre la création, de manière relativement simple, d’un site web de publication d’un podcast et de son flux RSS, via une version modifiée du thème [Garth](https://github.com/Cecilapp/theme-garth#readme) pour [Cecil](https://cecil.app).
 
+<!--break -->
+
 ![Capture d’écran de la première version de Staticast](/images/2022-02-21-garder-la-maitrise-de-son-podcast/staticast-preview-garth.png "Capture d’écran de la première version de Staticast")
 
 Nouvelle version :
