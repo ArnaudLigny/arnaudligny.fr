@@ -8,7 +8,7 @@
     "start-server-and-test": "^1.12.1"
   },
   "scripts": {
-    "build": "bash ./scripts/vercel-install.sh && bash ./scripts/vercel-build.sh",
+    "build": "bash ./scripts/cecil-build.sh",
     "serve": "cecil serve",
     "serve-silent": "nohup cecil serve > cecil.log 2>&1 &",
     "cy:open": "cypress open",

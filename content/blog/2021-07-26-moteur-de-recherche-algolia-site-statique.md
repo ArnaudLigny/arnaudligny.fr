@@ -1,7 +1,7 @@
 ---
 title: Un moteur de recherche sur un site statique grâce à Algolia
 date: 2021-07-26
-updated: 2021-12-05
+updated: 2022-01-04
 tags: [SSG, Recherche, Cecil]
 image: /images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png
 image_header: false
@@ -15,12 +15,12 @@ Il y a quelques mois, en travaillant sur la [documentation en ligne](https://cec
 
 La documentation de Cecil est composée de moins de 10 pages, une par thématique (configuration, gestion des contenus, création de template, etc.), et chacune d’elle contient de nombreuses sections.
 
-Aussi, il est important que les résultats retournés soient granulaires, par section et non globaux à la page.
+Aussi, il est important que les résultats retournés soient granulaires, c’est à dire par section et sur la totalité de chaque page.
 
 ![Exemple de page de documentation](/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates.png)
 
-Dans un premier temps j’ai expérimenté le [moteur de recherche personnalisé de Google](https://cse.google.com/) (CSE) qui permet de présenter les résultats indexés par Google pour un site donné (comme avec la commande `site:`).  
-Si les résultats sont pertinents pour un site contenant de nombreuses pages, il ne semble pas possible de personnaliser les résultats selon les sections d’une même page, ce qui n’est donc pas pertinent dans mon cas.
+Dans un premier temps j’ai expérimenté le [moteur de recherche personnalisé de Google](https://cse.google.com/) (CSE) qui permet de présenter les résultats indexés par Google pour un site donné (comme avec le préfixe `site:`).  
+Si les résultats sont pertinents pour un site contenant de nombreuses pages, il ne semble pas possible de personnaliser les résultats en fonction des sections d’une même page, ce qui n’est donc pas pertinent dans mon cas.
 
 *[CSE]: Custom Search Engine
 

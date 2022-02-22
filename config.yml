@@ -84,8 +84,12 @@ theme:
   - netlify
 logo: logo.png
 image: logo.png
+googleanalytics: UA-30599234-2
+cloudflareinsights: aa58d54d00e04d9e8f0fc44730cafff7
 manifest:
+  background_color: '#F3F7FC'
   theme_color: '#CADCF2'
+  theme_color_dark: '#000'
   icons:
     - src: logo-192.png
       sizes: 192x192
@@ -99,7 +103,7 @@ manifest:
       type: image/webp
   shortcuts: true
 serviceworker:
-  enabled: false
+  enabled: true
   debug: false
   #precache:
   #  - logo.png
@@ -111,21 +115,27 @@ serviceworker:
 metatags:
   jsonld:
     enabled: true
+netlify:
+  redirects:
+    - from: https://arnaudligny.netlify.com/*
+      to: https://arnaudligny.fr/:splat
+      status: 301
+      force: true
 body:
   images:
     caption:
-      enabled: false
+      enabled: true
     resize:
-      enabled: false
+      enabled: true
     responsive:
-      enabled: false
+      enabled: true
     webp:
-      enabled: false
+      enabled: true
 assets:
   images:
     optimize:
-      enabled: false
+      enabled: true
     responsive:
-      enabled: false
+      enabled: true
     webp:
-      enabled: false
+      enabled: true

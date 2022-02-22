@@ -1,0 +1,20 @@
+serviceworker:
+  enabled: false
+body:
+  images:
+    caption:
+      enabled: true
+    resize:
+      enabled: false
+    responsive:
+      enabled: false
+    webp:
+      enabled: false
+assets:
+  images:
+    optimize:
+      enabled: false
+    responsive:
+      enabled: false
+    webp:
+      enabled: false
