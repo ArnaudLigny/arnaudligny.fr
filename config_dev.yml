@@ -3,7 +3,7 @@ serviceworker:
 body:
   images:
     caption:
-      enabled: false
+      enabled: true
     resize:
       enabled: false
     responsive:
