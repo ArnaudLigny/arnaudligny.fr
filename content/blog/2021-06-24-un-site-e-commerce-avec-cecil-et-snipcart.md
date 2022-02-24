@@ -270,7 +270,7 @@ Par exemple, dans le cas du champ de saisi du message cadeau, le code ressemble 
       </p>
     </div>
   </fieldset>
-</address-fields>
+</shipping-address>
 ```
 
 > Si vous voulez en voir plus le [code source est disponible sur GitHub](https://github.com/cecillie/eshop/blob/main/static/snipcart/templates.tpl).
