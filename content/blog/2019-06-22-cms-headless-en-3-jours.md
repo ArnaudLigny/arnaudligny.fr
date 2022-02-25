@@ -6,7 +6,6 @@ tags:
   - JAMstack
   - CMS
 image: /images/cms-headless-en-3-jours/netlify-cms-blog-featured-image.png
-draft: false
 typora-root-url: ../../static
 ---
 
