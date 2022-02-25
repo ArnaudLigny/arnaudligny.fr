@@ -28,11 +28,11 @@ Copier le ficher ```/lib/Varien/Image/Adapter/Gd2.php``` vers ```/app/code/local
 
 Ouvrir le fichier Gd2.php (la copie, pas l'original) au environ de la ligne 80 et remplacer :
 
-```
+```php
 call_user_func($this->_getCallback('output'), $this->_imageHandler, $fileName);
 ```
 par :
-```
+```php
 if ($this->_fileType === IMAGETYPE_JPEG) {
     call_user_func($this->_getCallback('output'), $this->_imageHandler, $fileName, 90);
 } else {
