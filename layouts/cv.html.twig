@@ -7,7 +7,7 @@
     {{ page.intro|markdown_to_html }}
     {{ site.pages.all['index'].content|markdown_to_html }}
     {{- page.content ~}}
-    <div class="print" style="margin-top: 3rem; padding-top: 0.5rem; border-top: 1px solid #b6ceed;">
+    <div class="print print__footer">
       Consulter en ligne : <a href="{{ url(page) }}">{{ url(page, {canonical: true}) }}</a>
     </div>
 	</article>
