@@ -7,7 +7,6 @@ tags:
   - SSG
 image: /images/cecil-mobile-preview.png
 image_header: false
-draft: false
 typora-root-url: ../../static
 ---
 
@@ -16,8 +15,9 @@ Ci-dessous une [courte vidéo](/videos/cecil-apercu-sur-mobile.mp4) expliquant c
 1. connaître l’adresse IP du réseau : `ipconfig getifaddr er0`
 2. générer et servir le site via cette adresse : `cecil serve --host=192.168.X.Y`
 3. ouvrir l’adresse du serveur sur le téléphone mobile : `http://192.168.X.Y:8000`
+
 <!-- break -->
 
-<video controls>
+<video controls poster="/videos/cecil-apercu-sur-mobile-poster.png">
   <source src="/videos/cecil-apercu-sur-mobile.mp4" type="video/mp4">
 </video>
