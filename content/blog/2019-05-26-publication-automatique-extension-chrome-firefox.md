@@ -6,7 +6,6 @@ tags:
   - Développement
 image: /images/store_developer_dashboard.png
 image_header: false
-published: true
 typora-root-url: ../../static
 ---
 
