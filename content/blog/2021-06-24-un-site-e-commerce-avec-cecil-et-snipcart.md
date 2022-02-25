@@ -5,7 +5,7 @@ date: 2021-06-24
 tags: [Cecil, E-commerce, SSG]
 image: /images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr.jpg
 image_header: false
-typora-root-url: "../../static"
+typora-root-url: ../../static
 ---
 En début d’année ma chérie terminait la [campagne Ulule de son projet ***Paysages à vélo***](https://fr.ulule.com/paysages-a-velo/) et se posait la question de continuer la vente de ses créations via une boutique en ligne.
 
