@@ -19,6 +19,6 @@ Mes compétences :
 Passionné par la simplification, la scalabilité et la performance des sites web, j’aime travailler avec une approche [progressive et découplée](https://jamstatic.fr) et plus particulièrement la [Jamstack](https://jamstatic.fr/2019/02/07/c-est-quoi-la-jamstack/).  
 J’ai également conçu et développé un générateur de site statique orienté contenu : [Cecil](https://cecil.app).
 
-[CV](/cv/) — [LinkedIn](https://fr.linkedin.com/in/arnaudligny/fr/) — [Twitter](https://twitter.com/ArnaudLigny) — [GitHub](https://github.com/ArnaudLigny) — <a href="mailto:arnaud+contact@ligny.fr?subject=Prise de contact" title="Prise de contact par e-mail">Contact</a>
+[LinkedIn](https://fr.linkedin.com/in/arnaudligny/fr/) — [GitHub](https://github.com/ArnaudLigny) — [Twitter](https://twitter.com/ArnaudLigny) — <a href="mailto:arnaud+contact@ligny.fr?subject=Prise de contact" title="Prise de contact par e-mail">Contact</a>
 
 *[DSI]: Direction des Services Informatiques
