@@ -89,4 +89,7 @@
       };
       anchors.add(selector);
     {% endapply %}</script>
+    <div class="print print__footer">
+      &copy; {{ site.copyright|default(site.title) }} — <a href="{{ url(page) }}">{{ url(page, {canonical: true}) }}</a>
+    </div>
 {% endblock footer %}
