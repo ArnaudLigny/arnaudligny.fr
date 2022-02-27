@@ -10,8 +10,7 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Download Cecil
-      run: |
-        curl -sSOL https://cecil.app/cecil.phar
+      run: curl -sSOL https://cecil.app/cecil.phar
 
     - name: Install theme(s)
       run: |
@@ -30,16 +29,14 @@ jobs:
       with:
         path: ~/.npm
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
+        restore-keys: ${{ runner.os }}-node-
 
     - name: Cache Cypress binary
       uses: actions/cache@v1
       with:
         path: ~/.cache/Cypress
         key: cypress-${{ runner.os }}-cypress-${{ hashFiles('**/package.json') }}
-        restore-keys: |
-          cypress-${{ runner.os }}-cypress-
+        restore-keys: cypress-${{ runner.os }}-cypress-
 
     - name: Install Cypress and verify
       env:
