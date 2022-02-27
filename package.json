@@ -9,12 +9,12 @@
   },
   "scripts": {
     "build": "bash ./scripts/cecil-build.sh",
-    "serve": "cecil serve",
+    "serve": "cecil serve --config=config_dev.yml",
     "serve-silent": "nohup cecil serve > cecil.log 2>&1 &",
     "cy:open": "cypress open",
     "cy:run": "cypress run --record",
     "ci": "start-server-and-test serve-silent http://localhost:8000 cy:run",
-    "ci:serve": "php cecil.phar serve",
+    "ci:serve": "php cecil.phar serve --config=config_dev.yml",
     "ci:record": "run-p --race ci:serve cy:run"
   }
 }
