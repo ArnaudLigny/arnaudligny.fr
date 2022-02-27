@@ -3,9 +3,9 @@
     "netlify-plugin-cecil-cache": "^0.2"
   },
   "devDependencies": {
-    "cypress": "6.3.0",
-    "npm-run-all": "^4.1.2",
-    "start-server-and-test": "^1.12.1"
+    "cypress": "^9.5",
+    "npm-run-all": "^4.1",
+    "start-server-and-test": "^1.14"
   },
   "scripts": {
     "build": "bash ./scripts/cecil-build.sh",
