@@ -13,7 +13,7 @@ php cecil.phar serve
 
 ## Preview online
 
-https://preview--arnaudligny.netlify.app/
+<https://preview--arnaudligny.netlify.app>
 
 ## HTML code analysis
 
