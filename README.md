@@ -22,6 +22,13 @@ npm install htmlhint -g
 htmlhint _site
 ```
 
+## Navigation test (Cypress)
+
+```bash
+export CYPRESS_RECORD_KEY="<record_key>"
+npm run ci:record
+```
+
 ## Deploy with Netlify CLI
 
 ```bash
