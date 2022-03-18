@@ -19,3 +19,4 @@ L’objectif était de permettre la création, de manière relativement simple, 
 Nouvelle version :
 
 ![Capture d’écran de Staticast](/images/2022-02-21-garder-la-maitrise-de-son-podcast/staticast-preview.png "Capture d’écran de la nouvelle version de Staticast")
+
