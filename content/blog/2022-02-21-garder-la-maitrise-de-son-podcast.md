@@ -10,7 +10,7 @@ typora-copy-images-to: ../../assets/images/${filename}
 draft: true
 ---
 
-Depuis quelques années le [podcasting](/tags/podcast)[^podcasting] prend de plus en plus d’ampleur, certainement parce que le format séduit aussi bien les créateurs que les auditeurs : pour les uns il est très plaisant de s’exprimer de vive voix, d’échanger avec un ou plusieurs interlocuteurs, et pour les autres il s’écoute comme une émission de radio avec la liberté du « on demand »[^on-demand].
+Depuis quelques années le podcasting[^podcasting] prend de plus en plus d’ampleur, certainement parce que le format séduit aussi bien les créateurs que les auditeurs : pour les uns il est très plaisant de s’exprimer de vive voix, d’échanger avec un ou plusieurs interlocuteurs, et pour les autres il s’écoute comme une émission de radio avec la liberté du « on demand »[^on-demand].
 
 <!-- break -->
 
@@ -109,8 +109,6 @@ Par exemple :
 Pendant le (1er) confinement j’avais entrepris la création d’[une solution simple pour diffuser son podcast](2020-08-09-diffuser-son-podcast.md).
 
 L’objectif était de permettre la création, de manière relativement simple, d’un site web de publication d’un podcast et de son flux RSS, via une version modifiée du thème [Garth](https://github.com/Cecilapp/theme-garth#readme) pour [Cecil](https://cecil.app).
-
-<!--break -->
 
 ![Capture d’écran de la première version de Staticast](/images/2022-02-21-garder-la-maitrise-de-son-podcast/staticast-preview-garth.png "Capture d’écran de la première version de Staticast")
 
