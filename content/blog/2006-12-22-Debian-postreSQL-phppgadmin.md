@@ -10,14 +10,14 @@ Ainsi, la semaine dernière, j'ai installé [phppgadmin](http://www.phppgadmin.o
 
 Pour ma part, PostgreSQL était déjà en place : je ne sais plus si le SGBD est installé par défaut avec Debian ou si j'ai fais la manip' moi même. Dans le doute, voici la commande qui va bien :
 
-```
-# apt-get install postgresql
+```bash
+apt-get install postgresql
 ```
 
 De là, l'installation de phppgadmin est tout aussi simple :
 
-```
-# apt-get install phppgadmin
+```bash
+apt-get install phppgadmin
 ```
 
 Vous pourrez ainsi accédé à l'interface de phppgadmin via l'URL suivante :
@@ -45,13 +45,13 @@ Il vous faudra donc modifier la configuration de la manière suivante :
 
    remplacez :
 
-   ```
+   ```ini
    $conf['extra_login_security'] = false;
    ```
 
    par :
 
-   ```
+   ```ini
    $conf['extra_login_security'] = true;
    ```
 
@@ -59,7 +59,7 @@ Il vous faudra donc modifier la configuration de la manière suivante :
 
 4. Enfin, le mot de passe par défaut du root, à savoir l'utilisateur *postgres* est vide. Pour pouvoir se connecter, il est nécessair de tapper un mot de passe. Il vous faudra donc le changer, ne ligne de commande bien sûr ! Je vous invite à vous référer ua site officiel pour les différentes commandes existantes pour Postgres (voir le lien tout en haut de ce billet).
 
-   ```
+   ```sql
    ALTER USER postgres WITH PASSWORD 'votre_mot_de_passe'
    ```
 

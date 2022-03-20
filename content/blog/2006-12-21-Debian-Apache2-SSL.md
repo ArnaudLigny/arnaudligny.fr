@@ -14,28 +14,29 @@ En attendant, voici quelques commandes sous Debian :
 <!-- excerpt -->
 Installation du package OpenSSL (si ce n'est pas déjà le cas) :
 
-```
-# apt-get update# apt-get install openssl
+```bash
+apt-get update
+apt-get install openssl
 ```
 
 Création de la clef et demande OpenSSL :
 
-```
-# openssl req -new > new.cert.csr
+```bash
+openssl req -new > new.cert.csr
 ```
 
 (*new* est un nom choisi arbitrairement)
 
 Commande pour "enlever" la phrase de mot de passe, afin de ne pas devoir la renseigner au prochain redémarrage d'Apache (optionnel) :
 
-```
-# openssl rsa -in privkey.pem -out new.cert.key
+```bash
+openssl rsa -in privkey.pem -out new.cert.key
 ```
 
 Enfin, création à proprement dit du certificat (.crt) et de la clef (.key) :
 
-```
-# openssl x509 -in new.cert.csr -out new.cert.cert -req -signkey new.cert.key -days 365
+```bash
+openssl x509 -in new.cert.csr -out new.cert.cert -req -signkey new.cert.key -days 365
 ```
 
 (Attention, veillez à lancer cette commande dans le répertoire adéquate : je vous conseil "/etc/ssl/").
@@ -45,13 +46,14 @@ Voilà, il ne vous reste plus qu'à configurer le module et à paramétrer votre
 *Astuce rapide :*
 Pour activer le module SSL d'Apache2, plutôt que de créer des liens symboliques :
 
-```
-# ln -s /etc/apache2/mods-available/ssl.conf# ln -s /etc/apache2/mods-available/ssl.load
+```bash
+ln -s /etc/apache2/mods-available/ssl.conf
+ln -s /etc/apache2/mods-available/ssl.load
 ```
 
 je vous conseil la commande suivante :
 
-```
-# a2enmod ssl
+```bash
+a2enmod ssl
 ```
 

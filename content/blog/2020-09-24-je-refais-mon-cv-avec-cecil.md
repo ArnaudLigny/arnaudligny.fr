@@ -18,6 +18,7 @@ Aussi j'ai réalisé une vidéo rapide (< 10 min) cet après-midi, que je partag
 
 Bon visionnage ! 😊
 
-<video controls>
+<video controls poster="/videos/demo-cv-cecil-poster.png">
   <source src="/videos/demo-cv-cecil.mp4" type="video/mp4">
 </video>
+

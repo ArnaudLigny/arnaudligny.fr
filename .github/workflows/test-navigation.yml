@@ -5,13 +5,12 @@ on: push
 jobs:
   test-navigation:
     name: Navigation
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
 
     - name: Download Cecil
-      run: |
-        curl -sSOL https://cecil.app/cecil.phar
+      run: curl -sSOL https://cecil.app/cecil.phar
 
     - name: Install theme(s)
       run: |
@@ -30,16 +29,14 @@ jobs:
       with:
         path: ~/.npm
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
+        restore-keys: ${{ runner.os }}-node-
 
     - name: Cache Cypress binary
       uses: actions/cache@v1
       with:
         path: ~/.cache/Cypress
         key: cypress-${{ runner.os }}-cypress-${{ hashFiles('**/package.json') }}
-        restore-keys: |
-          cypress-${{ runner.os }}-cypress-
+        restore-keys: cypress-${{ runner.os }}-cypress-
 
     - name: Install Cypress and verify
       env:
@@ -49,10 +46,6 @@ jobs:
         npx cypress verify
         npx cypress info
         npx cypress version
-        npx cypress version --component package
-        npx cypress version --component binary
-        npx cypress version --component electron
-        npx cypress version --component node
 
     - name: Run Cypress tests
       run: npm run ci:record

@@ -5,7 +5,7 @@ updated: 2022-01-04
 tags: [SSG, Recherche, Cecil]
 image: /images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png
 image_header: false
-typora-root-url: "../../static"
+typora-root-url: ../../static
 draft: true
 ---
 Il y a quelques mois, en travaillant sur la [documentation en ligne](https://cecil.app/documentation/) de [Cecil](https://cecil.app), je me suis dit qu’il serait pertinent d’offrir un moteur de recherche *[full text](https://fr.m.wikipedia.org/wiki/Recherche_plein_texte)* aux utilisateurs.

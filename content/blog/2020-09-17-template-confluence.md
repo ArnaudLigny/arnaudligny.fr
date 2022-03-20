@@ -7,8 +7,8 @@ tags:
   - Méthodologie
 image: /images/confluence/confluence_rgb_blue_stacked.png
 image_header: false
-published: false
 typora-root-url: ../../static
+draft: true
 ---
 
 J’ai découvert [Confluence](https://www.atlassian.com/fr/software/confluence) (et plus globalement la suite [Atlassian](https://www.atlassian.com), dont [Jira](https://www.atlassian.com/fr/software/jira)) lorsque j’ai commencé à travailler chez [Adfab](https://adfab.fr).

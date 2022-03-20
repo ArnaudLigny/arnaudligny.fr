@@ -1,9 +1,9 @@
 ---
 title: Merci Frank !
+description: Hommage à mon ami Frank.
 image: images/frank.jpg
 image_header: false
 date: 2021/09/15
-draft: false
 ---
 J’avais juste envie de te dire merci. Merci de m’avoir permis de te connaitre et de partager avec toi.
 

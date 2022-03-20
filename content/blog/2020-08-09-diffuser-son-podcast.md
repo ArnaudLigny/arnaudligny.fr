@@ -30,9 +30,10 @@ Cette solution aurait pour objectifs :
 
 Étant moi-même intéressé par les solutions « [statiques](https://arnaudligny.fr/talks/le-statique-c-est-fantastique/) », en particulier via [Cecil](https://cecil.app) ([mon générateur de site statique](https://arnaudligny.fr/blog/cecil-mon-generateur-de-site-statique/)) j’ai entrepris de créer un template « clef en main » permettant de créer rapidement un site web de diffusion de podcast : [***Staticast***](https://github.com/Cecilapp/staticast#readme).
 
-<video autoplay loop muted>
+<video autoplay loop muted poster="/images/staticast/staticast-demo-poster.png">
   <source src="/images/staticast/staticast-demo.mp4" type="video/mp4">
 </video>
+
 
 → [Voir le site de démo](https://staticast.cecil.app)
 

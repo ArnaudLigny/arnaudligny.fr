@@ -19,6 +19,6 @@ Une version alpha devrait sortir courant août et s’annonce vraiment puissante
 
 J’ai hâte tester la bête !
 
-![](/images/magento-homepage.jpg)
+![Front-end Magento](/images/magento-homepage.jpg)
 
-![](/images/magento-admin-products.jpg)
+![Back-end Magento](/images/magento-admin-products.jpg)
