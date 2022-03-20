@@ -11,6 +11,12 @@ curl -SOL https://cecil.app/cecil.phar
 php cecil.phar serve
 ```
 
+Serve without serviceworker nor images optimizations:
+
+```bash
+php cecil.phar serve --config=config/dev.yml
+```
+
 ## Preview online
 
 <https://preview--arnaudligny.netlify.app>
