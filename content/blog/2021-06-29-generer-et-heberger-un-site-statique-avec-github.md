@@ -60,7 +60,7 @@ Comme je l’indiquais en introduction, je vais illustrer mon propos en expliqua
 
 Les fichiers de configuration de workflow de GitHub Actions doivent être déposés dans un dossier spécifique à la racine du dépôt qui contient les fichiers source du site à générer :
 
-```
+```plaintext
 .github/workflows/
 ```
 
