@@ -139,3 +139,5 @@ assets:
       enabled: true
     webp:
       enabled: true
+postprocess:
+  enabled: true
