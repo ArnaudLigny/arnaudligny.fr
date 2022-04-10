@@ -91,25 +91,17 @@ manifest:
   theme_color: '#CADCF2'
   theme_color_dark: '#000'
   icons:
-    - src: logo-192.png
-      sizes: 192x192
-      type: image/png
-    - src: logo-512.png
-      sizes: 512x512
-      type: image/png
-      #purpose: "any maskable"
-    - src: logo-512.webp
-      sizes: 512x512
-      type: image/webp
+    - logo-192.png
+    - logo-512.png
+    - logo-512.webp
   shortcuts: true
 serviceworker:
   enabled: true
   debug: false
-  #precache:
-  #  - logo.png
-  #  - logo-192.png
-  #  - logo-512.png
-  #  - logo-512.webp
+  precache:
+    - logo-192.png
+    - logo-512.png
+    - logo-512.webp
   notification:
     enabled: false
 metatags:
