@@ -1,5 +1,8 @@
 serviceworker:
   enabled: false
+metatags:
+  jsonld:
+    enabled: false
 body:
   images:
     caption:
