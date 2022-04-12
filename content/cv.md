@@ -1,5 +1,6 @@
 ---
 title: Consultant technique web, expert e-commerce
+description: "Curriculum vitae d’Arnaud Ligny."
 date: 2020-09-22
 updated: 2022-02-10
 intro: |

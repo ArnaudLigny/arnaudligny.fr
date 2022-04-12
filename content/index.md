@@ -1,5 +1,6 @@
 ---
 title: "Hello, je suis Arnaud."
+description: "Site web d’Arnaud Ligny: CV, blog, projets et talks."
 date: 2017-12-21
 updated: 2022-02-10
 layout: index
