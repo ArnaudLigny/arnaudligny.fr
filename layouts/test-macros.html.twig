@@ -1,0 +1,11 @@
+{% extends 'page.html.twig' %}
+{% import 'components/form.macro.twig' as form %}
+
+{% block content %}
+    <article class="page typeset">
+        <h1>Macros</h1>
+        <p>{{ page.content }}</p>
+        <p>{{ form.input('email', '', 'email') }}</p>
+        <p>{{ form.textarea('comment') }}</p>
+    </article>
+{% endblock %}
