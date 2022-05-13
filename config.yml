@@ -126,7 +126,7 @@ body:
 assets:
   images:
     optimize:
-      enabled: false
+      enabled: true
     responsive:
       enabled: true
     webp:
