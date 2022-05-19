@@ -20,9 +20,17 @@ typora-root-url: ../../static
 ---
 ## Expérience
 
+### Business Analyst
+
+#### [Antadis](https://www.antadis.com) – *depuis 2022*
+
+<img src="/logos/antadis.png" width="100" height="100" alt="Logo Antadis" style="float:right;margin:1rem;" />
+
+Consultant fonctionelle et technique, expert e-commerce.
+
 ### Freelance – Consultant technique web, expert e-commerce
 
-#### [studio cecillie](https://studio.cecillie.fr) – *depuis 2020*
+#### [studio cecillie](https://studio.cecillie.fr) – *2020-2022*
 
 Clients : Valtech, Yves Rocher, Promod…  
 👉 Missions de conseil et d’accompagnement technique à la mise en œuvre de solutions web, mobile et e-commerce.
@@ -31,12 +39,16 @@ Clients : Valtech, Yves Rocher, Promod…
 
 #### [Jamstatic](https://jamstatic.fr) – *depuis 2017*
 
+<img src="/logos/jamstatic.png" width="100" height="100" alt="Logo Jamstatic" style="float:right;margin:1rem;" />
+
 👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
 👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
 
 ### Consultant technique e-commerce
 
 #### [Promod](https://www.promod.fr) – *2020-2021*
+
+<img src="/logos/promod.png" width="100" height="100" alt="Logo Promod" style="float:right;margin:1rem;" />
 
 Refonte complète du tunnel d’achat via une approche headless avec la solution [commercetools](https://commercetools.com).  
 👉 Compréhension, analyse et traduction du besoin client (phase de discovering);  
@@ -48,6 +60,8 @@ Outils : commercetools, Microsoft Azure, Node.js, NestJS, Terraform, Postman.
 ### Consultant technique senior - Web, mobile & e-commerce
 
 #### [Adfab](https://adfab.fr) – *2015-2020*
+
+<img src="/logos/adfab.png" width="100" height="100" alt="Logo Adfab" style="float:right;margin:1rem;" />
 
 Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad, Le petit Souk, Le Havre, The Kooples, Dermocontrol, Accor, Libeo…  
 👉 Avant-vente : gestion des appels d’offres techniques, identification et recommandation des solutions techniques, chiffrages techniques, soutenances et relation clientèle;  
@@ -79,6 +93,8 @@ Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad, Le petit Souk, Le Havre, T
 
 #### [Dooh It](https://doohit.fr) (ex Bubbles) – *2014-2015*
 
+<img src="/logos/dooh-it.png" width="100" height="100" alt="Logo Dooh It" style="float:right;margin:1rem;" />
+
 Bubbles, solution de rechargement pour smartphone, permet de développer le drive-to-store en proposant des contenus via un écran LCD et une application mobile.  
 👉 Conception et prototypage du socle technique (hardware et software);  
 👉 Conception du protocole de communication des objets connectés;  
@@ -92,6 +108,8 @@ J’ai également collaboré avec les ingénieurs de [Canon Bretagne](https://ww
 ### Consultant e-commerce & Chef de projet technique
 
 #### [Hermès](https://www.hermes.com) – *2012-2014*
+
+<img src="/logos/hermes.png" width="100" height="100" alt="Logo Hermès" style="float:right;margin:1rem;" />
 
 Pilotage technique des projets e-commerce du groupe Hermès.
 
@@ -118,6 +136,8 @@ Environnement technique : Magento (e-commerce), Cegid Business Retail (ERP), Tib
 ### Consultant technique e-commerce - Spécialiste Magento
 
 #### Baobaz – *2009-2012*
+
+<img src="/logos/baobaz.png" width="100" height="100" alt="Logo Baobaz" style="float:right;margin:1rem;" />
 
 Clients : Zadig & Voltaire, The Kooples, Christian Louboutin, Jennyfer, Carré Blanc, Etam, 1-2-3, La Halle aux Chaussures, Burton of London…  
 Référent fonctionnel et technique sur la plateforme e-commerce Magento (Enterprise et Community Edition) :  
