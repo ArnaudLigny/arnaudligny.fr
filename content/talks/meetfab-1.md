@@ -1,6 +1,6 @@
 ---
 title: "MeetFab #1"
-description: "Le statique c'est fantastique"
+description: "Le statique c'est fantastique !"
 date: 2017-09-21
 image: /images/le-statique-c-est-fantastique.png
 draft: false
