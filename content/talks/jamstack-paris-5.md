@@ -1,6 +1,6 @@
 ---
 title: "JAMstack Paris #5"
-description: "Cecil, mon générateur de site statique"
+description: "Cecil, mon générateur de site statique."
 date: 2019-11-05
 image: /images/jamstack-paris-5.png
 alias: /talks/cecil-mon-generateur-de-site-statique
