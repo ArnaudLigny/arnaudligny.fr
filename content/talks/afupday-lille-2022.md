@@ -1,6 +1,6 @@
 ---
 title: "AFUP Day 2022"
-description: "Cecil, mon générateur de site statique"
+description: "Cecil, mon générateur de site statique."
 date: 2022-05-20
 image: /images/slides-cecil-mon-generateur-de-site-statique.png
 typora-root-url: ../../static
