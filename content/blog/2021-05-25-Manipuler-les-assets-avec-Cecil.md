@@ -93,7 +93,7 @@ Exemple :
 
 Le fichier, lors de la génération du site, sera enregistré de la manière suivante :
 
-```text
+```
 /assets/cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.1/anchor.min.js
 ```
 
