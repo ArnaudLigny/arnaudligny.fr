@@ -74,12 +74,14 @@
     {%- set highlight_version = '10.7.2' ~%}
     <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/github.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/github-dark.css') }}" media="(prefers-color-scheme: dark)">
+    {#-
     <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/highlight.min.js') }}"></script>
     <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/languages/twig.min.js') }}"></script>
     <script>
       hljs.configure({languages:[]});
       hljs.highlightAll();
     </script>
+    ~#}
     {#- anchor.js ~#}
     {%- set anchor_version = '4.3.1' ~%}
     <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ anchor_version ~ '/anchor.min.js') }}"></script>
