@@ -55,7 +55,7 @@ En pratique nous avons 6 modèles composés d’1 variant « format ».
 
 Les attributs et le texte de la fiche produit sont définis dans un fichier [Markdown](https://daringfireball.net/projects/markdown/) (avec un « [front matter](https://cecil.app/documentation/content/#front-matter) ») :
 
-```text
+```
 content/products
 |_ index.md
 |_ 1.pink-gravel.md

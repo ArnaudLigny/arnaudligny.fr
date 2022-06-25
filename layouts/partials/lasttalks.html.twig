@@ -1,0 +1,10 @@
+        <section class="lasttalks typeset">
+          <h2>Derniers talks</h2>
+          <ul class="list list--posts">
+            {%- for talk in site.pages|filter_by('section', 'talks')|sort_by_date|slice(0, 4) ~%}
+            <li class="item item--post">
+              <a href="{{ url(talk) }}">{{ talk.title }}</a>
+            </li>
+            {%- endfor ~%}
+          </ul>
+        </section>

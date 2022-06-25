@@ -1,17 +1,17 @@
 ---
-title: "Cecil, mon générateur de site statique"
-event: "JAMstack Paris #5"
+title: "JAMstack Paris #5"
+description: "Cecil, mon générateur de site statique."
 date: 2019-11-05
 image: /images/jamstack-paris-5.png
-alias: /talks/jamstack-paris-5
+alias: /talks/cecil-mon-generateur-de-site-statique
 typora-root-url: ../../static
 ---
 
-Lors du meetup [JAMstack Paris](https://jamstack.paris) #5 je suis intervenu pour partager mon retour d'expérience sur la création de [Cecil](https://cecil.app), mon générateur de site statique.
+Lors du meetup **[JAMstack Paris](https://jamstack.paris) #5** je suis intervenu pour partager mon retour d’expérience sur la création de **[Cecil](https://cecil.app), mon générateur de site statique**.
 
 <!--break-->
 
-> Un grand merci à [Matthieu Auger](https://twitter.com/matthieuauger) et [Nicolas Goutay](https://twitter.com/phacks) pour l'organisation parfaite, et à [Inato](https://twitter.com/inatohealth) pour l'accueil très agréable.
+> Un grand merci à [Matthieu Auger](https://twitter.com/matthieuauger) et [Nicolas Goutay](https://twitter.com/phacks) pour l’organisation parfaite, et à [Inato](https://twitter.com/inatohealth) pour l'accueil très agréable.
 
 ## Vidéo
 
