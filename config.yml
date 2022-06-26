@@ -62,11 +62,13 @@ defaultpages:
   404:
     published: true
 virtualpages:
+  # feed stylesheet
   - path: atom.xsl
     layout: atom
     output: xslt
     uglyurl: true
     exclude: true
+  # short URL / redirects
   - path: code
     redirect: https://github.com/ArnaudLigny
   - path: tw
