@@ -50,10 +50,6 @@ social:
     username: arnaudligny
     url: https://fr.linkedin.com/in/arnaudligny/fr/
 output:
-  formats:
-    name: xslt
-    mediatype: application/xml
-    extension: xsl
   pagetypeformats:
     section: ['html', 'atom', 'json']
 defaultpages:
@@ -62,12 +58,6 @@ defaultpages:
   404:
     published: true
 virtualpages:
-  # feed stylesheet
-  - path: atom.xsl
-    layout: atom
-    output: xslt
-    uglyurl: true
-    exclude: true
   # short URL / redirects
   - path: code
     redirect: https://github.com/ArnaudLigny
