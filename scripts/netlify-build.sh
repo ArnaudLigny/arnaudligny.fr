@@ -3,7 +3,7 @@ if [ -z $CECIL_VERSION ]; then
   curl -sSOL https://cecil.app/cecil.phar
 else
   if [ $(curl -LI https://cecil.app/download/$CECIL_VERSION/cecil.phar -o /dev/null -w '%{http_code}\n' -s) != '200' ]; then
-    echo "Can't download Cecil $CECIL_VERSION"; exit 1
+    echo "Can't download version $CECIL_VERSION"; exit 1
   fi
   curl -sSOL https://cecil.app/download/$CECIL_VERSION/cecil.phar
 fi
