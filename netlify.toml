@@ -4,7 +4,8 @@
   #command = "curl -sSOL https://cecil.app/build.sh && bash ./build.sh"
 
 [build.environment]
-  PHP_VERSION = "7.4"
+  #PHP_VERSION = "7.4"
+  PHP_VERSION = "8.1"
   #CECIL_CACHE_DIR = "/opt/build/cache/"
 
 [context.production.environment]
