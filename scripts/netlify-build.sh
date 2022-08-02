@@ -15,9 +15,9 @@ fi
 php cecil.phar --version
 
 if [[ $CECIL_ENV == "production" ]]; then
-  php cecil.phar build -v --baseurl=$URL --config=config_prod.yml --postprocess
+  php cecil.phar build -v --baseurl=$URL --postprocess
 else
-  php cecil.phar build -vv --baseurl=$DEPLOY_PRIME_URL --drafts || { sleep 30; false; }
+  php cecil.phar build -vv --baseurl=$DEPLOY_PRIME_URL --drafts --config=config/dev.yml || { sleep 30; false; }
 fi
 
 # build success? can deploy?
