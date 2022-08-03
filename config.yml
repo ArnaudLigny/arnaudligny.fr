@@ -81,7 +81,7 @@ static:
 editor: typora
 theme:
   - garth
-  - serviceworker
+  - pwa
   - netlify
 logo: logo.png
 image: logo.png
