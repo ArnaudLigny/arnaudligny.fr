@@ -2,7 +2,7 @@
 title: Consultant technique web, expert e-commerce
 description: "Curriculum vitae d’Arnaud Ligny."
 date: 2020-09-22
-updated: 2022-02-10
+updated: 2022-08-03
 intro: |
   Hello, je suis [Arnaud Ligny](https://arnaudligny.fr), consultant technique web, mobile & e-commerce.
 
@@ -13,10 +13,11 @@ intro: |
   *[IoT]: Internet of Things
 menu: main
 layout: cv
-image: /images/photo-cv.jpg
+image: photo-cv.jpg
 output: [html, json]
+typora-root-url: ../../assets
+typora-copy-images-to: ../../assets/images/${filename}
 published: true
-typora-root-url: ../../static
 ---
 ## Expérience
 
@@ -24,13 +25,15 @@ typora-root-url: ../../static
 
 #### [Antadis](https://www.antadis.com) – *depuis 2022*
 
-<img src="/logos/antadis.png" width="100" height="100" alt="Logo Antadis" style="float:right;margin:1rem;" />
+![Logo Antadis](/logos/antadis.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 Consultant fonctionelle et technique, expert e-commerce.
 
 ### Freelance – Consultant technique web, expert e-commerce
 
 #### [studio cecillie](https://studio.cecillie.fr) – *2020-2022*
+
+![Logo Cecillie](/logos/cecillie.svg){width=100 height=100 style="float:right;margin:1rem;"}
 
 Clients : Valtech, Yves Rocher, Promod…  
 👉 Missions de conseil et d’accompagnement technique à la mise en œuvre de solutions web, mobile et e-commerce.
@@ -39,7 +42,7 @@ Clients : Valtech, Yves Rocher, Promod…
 
 #### [Jamstatic](https://jamstatic.fr) – *depuis 2017*
 
-<img src="/logos/jamstatic.png" width="100" height="100" alt="Logo Jamstatic" style="float:right;margin:1rem;" />
+![Logo Jamstatic](/logos/jamstatic.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
 👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
@@ -48,7 +51,7 @@ Clients : Valtech, Yves Rocher, Promod…
 
 #### [Promod](https://www.promod.fr) – *2020-2021*
 
-<img src="/logos/promod.png" width="100" height="100" alt="Logo Promod" style="float:right;margin:1rem;" />
+![Logo Promod](/logos/promod.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 Refonte complète du tunnel d’achat via une approche headless avec la solution [commercetools](https://commercetools.com).  
 👉 Compréhension, analyse et traduction du besoin client (phase de discovering);  
@@ -61,7 +64,7 @@ Outils : commercetools, Microsoft Azure, Node.js, NestJS, Terraform, Postman.
 
 #### [Adfab](https://adfab.fr) – *2015-2020*
 
-<img src="/logos/adfab.png" width="100" height="100" alt="Logo Adfab" style="float:right;margin:1rem;" />
+![Logo Adfab](/logos/adfab.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad, Le petit Souk, Le Havre, The Kooples, Dermocontrol, Accor, Libeo…  
 👉 Avant-vente : gestion des appels d’offres techniques, identification et recommandation des solutions techniques, chiffrages techniques, soutenances et relation clientèle;  
@@ -93,7 +96,7 @@ Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad, Le petit Souk, Le Havre, T
 
 #### [Dooh It](https://doohit.fr) (ex Bubbles) – *2014-2015*
 
-<img src="/logos/dooh-it.png" width="100" height="100" alt="Logo Dooh It" style="float:right;margin:1rem;" />
+![Logo Dooh It](/logos/dooh-it.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 Bubbles, solution de rechargement pour smartphone, permet de développer le drive-to-store en proposant des contenus via un écran LCD et une application mobile.  
 👉 Conception et prototypage du socle technique (hardware et software);  
@@ -109,7 +112,7 @@ J’ai également collaboré avec les ingénieurs de [Canon Bretagne](https://ww
 
 #### [Hermès](https://www.hermes.com) – *2012-2014*
 
-<img src="/logos/hermes.png" width="100" height="100" alt="Logo Hermès" style="float:right;margin:1rem;" />
+![Logo Hermès](/logos/hermes.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 Pilotage technique des projets e-commerce du groupe Hermès.
 
@@ -137,7 +140,7 @@ Environnement technique : Magento (e-commerce), Cegid Business Retail (ERP), Tib
 
 #### Baobaz – *2009-2012*
 
-<img src="/logos/baobaz.png" width="100" height="100" alt="Logo Baobaz" style="float:right;margin:1rem;" />
+![Logo Baobaz](/logos/baobaz.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 Clients : Zadig & Voltaire, The Kooples, Christian Louboutin, Jennyfer, Carré Blanc, Etam, 1-2-3, La Halle aux Chaussures, Burton of London…  
 Référent fonctionnel et technique sur la plateforme e-commerce Magento (Enterprise et Community Edition) :  
