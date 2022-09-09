@@ -50,3 +50,5 @@ Mais aussi :
 ## En savoir plus
 
 Pour en savoir plus, et surtout pour savoir comment l’installer, je vous invite à vous rendre sur le site dédié : **[staticast.cecil.app](https://staticast.cecil.app)**.
+
+![Capture d’écran de Staticast sur mobile](/images/2022-09-09-staticast-v2/staticast-mobile-preview.png "Capture d’écran de Staticast sur mobile")
