@@ -11,7 +11,7 @@ typora-copy-images-to: ../../assets/images/${filename}
 draft: true
 ---
 
-Pendant le (1er) confinement j’avais entrepris la création d’[une solution simple pour diffuser son podcast](/blog/2020-08-09-diffuser-son-podcast.md).
+Pendant le confinement j’avais entrepris la création d’[une solution simple pour diffuser son podcast](/blog/2020-08-09-diffuser-son-podcast.md).
 
 L’objectif était de permettre la création, de manière relativement simple, d’un site web de publication d’un podcast et de son flux [RSS](https://fr.m.wikipedia.org/wiki/Podcasting#Formats), via une version modifiée du thème de blog [Garth](https://github.com/Cecilapp/theme-garth#readme) pour [Cecil](https://cecil.app).
 <!-- break -->
