@@ -20,11 +20,11 @@ J’ai donc créé un thème dédié, beaucoup plus orienté « Web app ».
 
 **Première version :**
 
-![Capture d’écran de la première version de Staticast](/images/2022-03-29-staticast-v2/staticast-preview-garth.png "Capture d’écran de la première version de Staticast")
+![Capture d’écran de la première version de Staticast](/images/2022-09-09-staticast-v2/staticast-preview-garth.png "Capture d’écran de la première version de Staticast")
 
 **Nouvelle version :**
 
-![Capture d’écran de Staticast](/images/2022-03-29-staticast-v2/staticast-preview.png "Capture d’écran de la nouvelle version de Staticast")
+![Capture d’écran de Staticast](/images/2022-09-09-staticast-v2/staticast-preview.png "Capture d’écran de la nouvelle version de Staticast")
 
 Cette nouvelle version m’a été inspirée par [Layout](https://layout.fm) (un podcast de créateurs Web) car j’aimais beaucoup l’aspect épuré et la navigation en 2 colonnes.
 
