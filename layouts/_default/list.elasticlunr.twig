@@ -1,7 +1,7 @@
 [
 {% for page in site.pages.showable|filter(p => p.type == 'page')|sort_by_date %}
   {
-    "id": {{ page.id|json_encode }},
+    "id": {{ page.id }},
     "title": {{ page.title|json_encode }}
     "body": {{ page.body|json_encode }}
     {%- if page.tags|default('') -%},
