@@ -50,7 +50,13 @@ social:
     username: arnaudligny
     url: https://fr.linkedin.com/in/arnaudligny/fr/
 output:
+  formats:
+    - name: elasticlunr
+      mediatype: 'application/json'
+      filename: 'elasticlunr'
+      extension: 'json'
   pagetypeformats:
+    homepage: ['html', 'atom', 'elasticlunr']
     section: ['html', 'atom', 'json']
 defaultpages:
   sitemap:

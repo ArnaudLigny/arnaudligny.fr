@@ -1,0 +1,13 @@
+[
+{% for page in site.pages.showable|filter(p => p.type == 'page')|sort_by_date %}
+  {
+    "id": {{ page.id|json_encode }},
+    "title": {{ page.title|json_encode }}
+    "body": {{ page.body|json_encode }}
+    {%- if page.tags|default('') -%},
+    "tags": {{ page.tags|json_encode }}
+    {%- endif ~%}
+  }
+  {%- if not loop.last %},{% endif ~%}
+{% endfor %}
+]
