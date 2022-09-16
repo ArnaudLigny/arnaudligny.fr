@@ -1,10 +1,13 @@
 ---
-title: Consultant technique web, expert e-commerce
-description: "Curriculum vitae d’Arnaud Ligny."
+title: Arnaud Ligny
+metatags:
+  title:
+    only: true
+description: Consultant fonctionnel et technique, expert e-commerce.
 date: 2020-09-22
-updated: 2022-08-03
+updated: 2022-09-16
 intro: |
-  Hello, je suis [Arnaud Ligny](https://arnaudligny.fr), consultant technique web, mobile & e-commerce.
+  ## Consultant fonctionnel et technique, expert e-commerce
 
   Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web, mobile, e-commerce (et IoT).
 
@@ -27,7 +30,9 @@ published: true
 
 ![Logo Antadis](/logos/antadis.png){width=100 height=100 style="float:right;margin:1rem;"}
 
-Consultant fonctionelle et technique, expert e-commerce.
+👉 Consultant fonctionnelle et technique, expert e-commerce.  
+Clients : Grapl, Caviar Petrossian, Pharmaciens Giphar, Groupe Chavigny…  
+Outils & solutions : Magento, Proximis, OroCommerce.
 
 ### Freelance – Consultant technique web, expert e-commerce
 
@@ -58,7 +63,7 @@ Refonte complète du tunnel d’achat via une approche headless avec la solution
 👉 Pilotage des ateliers techniques entre les équipes métiers et les développeurs;  
 👉 Conception de l’architecture technique en accord avec la DOSI;  
 👉 Conception du produit et participation au backlog en collaboration avec le business analyst, les PO et CPO, et les équipes QA.  
-Outils : commercetools, Microsoft Azure, Node.js, NestJS, Terraform, Postman.
+Outils & solutions : commercetools, Microsoft Azure, Node.js, NestJS, Terraform, Postman.
 
 ### Consultant technique senior - Web, mobile & e-commerce
 
