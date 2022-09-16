@@ -1,11 +1,22 @@
 {% extends 'page.html.twig' %}
 
+{% block head %}
+{{ parent() }}
+    <style>{% apply minify_css %}
+      @media print {
+        #expérience {
+          page-break-before: always;
+        }
+      }
+    {% endapply %}</style>
+{% endblock head %}
+
 {% block content %}
 	<article class="page typeset">
 		<img src="{{ asset(page.image)|resize(300)|dataurl }}" width="150" height="150" class="profile-picture" alt="Photo de profil d’{{ site.author.firstname ~ ' ' ~ site.author.lastname }}"/>
     <h1>{{ page.title }}</h1>
     {{ page.intro|markdown_to_html }}
     {{ site.pages.all['index'].content|markdown_to_html }}
-    {{- page.content ~}}
+    {{~ page.content ~}}
 	</article>
 {% endblock content %}
