@@ -33,23 +33,23 @@ Cette nouvelle version m’a été inspirée par [Layout](https://layout.fm) (un
 
 Concernant les fonctionnalités, on retrouve toujours :
 
-- un **lecteur audio HTML** natif (donc compatible avec ensemble des navigateurs Web)
+- un **lecteur audio HTML natif** (donc compatible avec ensemble des navigateurs Web)
 - un **flux RSS** respectant le standards du podcast
-- la **mémorisation de la position de lecture** pour chaque épisode
+- la **mémorisation de la position de lecture** de chaque épisode
 - la possibilité de **télécharger le fichier MP3** d’un épisode
 
 Mais aussi :
 
-- un lien **« resume »** sur la page liste afin de (re)lancer la lecture d’un épisode, là on l’avait stoppée, en 1 clique
+- un bouton **« resume »** sur la page liste afin de reprendre la lecture d’un épisode là on l’avait stoppée
+- un bouton permettant de marquer l’épisode comme **« lu » ou « non lu »**
+- un bouton de [**partage natif**](https://developer.mozilla.org/fr/docs/Web/API/Navigator/share) de l’épisode (très utile sur mobile)
 - une liste des **plateformes auxquelles s’abonner** (en plus du flux RSS)
 - une **PWA** afin de permettre l’installation (sur mobile) et d’accéder aux épisodes **hors ligne**
-- un **mode sombre**, s’affichant selon le paramétrage de l’appareil (Merci [Tailwind CSS](https://tailwindcss.com/))
-- un bouton afin de marquer l’épisode comme « lu » ou « non lu »
-- un bouton de [**partage natif**](https://developer.mozilla.org/fr/docs/Web/API/Navigator/share) de l’appareil (très utile sur mobile)
-- une **interface de gestion** des épisodes ([Netlify CMS](https://www.netlifycms.org/))
+- un **mode sombre** s’affichant selon le paramétrage de l’appareil (Merci [Tailwind CSS](https://tailwindcss.com))
+- une **interface de gestion** des épisodes (via [Netlify CMS](https://www.netlifycms.org))
 
 ## En savoir plus
 
-Pour en savoir plus, et surtout pour savoir comment l’installer, je vous invite à vous rendre sur [**le site dédié**](https://staticast.cecil.app) et à tester à [**démo**](https://staticast-demo.cecil.app).
+Pour en savoir plus, et surtout pour savoir comment l’installer, je vous invite à vous rendre sur [**le site dédié**](https://staticast.cecil.app), et à tester à [**démo**](https://staticast-demo.cecil.app).
 
 ![Capture d’écran de Staticast sur mobile](/images/2022-09-09-staticast-v2/staticast-mobile-preview.png "Capture d’écran de Staticast sur mobile")
