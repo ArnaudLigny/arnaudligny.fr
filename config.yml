@@ -50,7 +50,13 @@ social:
     username: arnaudligny
     url: https://fr.linkedin.com/in/arnaudligny/fr/
 output:
+  formats:
+    - name: elasticlunr
+      mediatype: 'application/json'
+      filename: 'elasticlunr'
+      extension: 'json'
   pagetypeformats:
+    homepage: ['html', 'atom', 'elasticlunr']
     section: ['html', 'atom', 'json']
 defaultpages:
   sitemap:
@@ -58,6 +64,7 @@ defaultpages:
   404:
     published: true
 virtualpages:
+  # short URL / redirects
   - path: code
     redirect: https://github.com/ArnaudLigny
   - path: tw
@@ -80,7 +87,7 @@ static:
 editor: typora
 theme:
   - garth
-  - serviceworker
+  - pwa
   - netlify
 logo: logo.png
 image: logo.png

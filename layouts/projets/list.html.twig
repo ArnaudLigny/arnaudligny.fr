@@ -11,8 +11,8 @@
             <li class="item item--page">
               <article class="page typeset">
                 <h2><a href="{{ url(p) }}">{{ p.title }}</a></h2>
-                {{ p.content|excerpt_html }}
-                <p><a href="{{ p.redirect }}" title="site web">{{ p.redirect }}</a></p>
+                {#{{ p.content|excerpt_html }}#}
+                {{ p.description|default('') }}
               </article>
             </li>
             {%- endfor ~%}

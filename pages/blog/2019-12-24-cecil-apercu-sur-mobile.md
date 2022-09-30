@@ -18,6 +18,4 @@ Ci-dessous une [courte vidéo](/videos/cecil-apercu-sur-mobile.mp4) expliquant c
 
 <!-- break -->
 
-<video controls poster="/videos/cecil-apercu-sur-mobile-poster.png">
-  <source src="/videos/cecil-apercu-sur-mobile.mp4" type="video/mp4">
-</video>
+![video](/videos/cecil-apercu-sur-mobile.mp4){controls preload=none poster=/videos/cecil-apercu-sur-mobile-poster.png}

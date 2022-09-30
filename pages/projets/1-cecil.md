@@ -1,11 +1,14 @@
 ---
 title: Cecil
+description: Application CLI qui fusionne des fichiers Markdown, des images et des templates Twig afin de générer un site web statique.
 date: 2019-01-13
+image: images/projets/cecil-demo.gif
 alias:
 - projets/phpoole
-redirect: https://cecil.app
+url: https://cecil.app
+typora-root-url: ../../assets
+typora-copy-images-to: ../../assets/images/${filename}
 published: true
-typora-root-url: "../../static"
 ---
 Cecil est une application en ligne de commande, motorisé par [PHP](http://www.php.net/), qui fusionne des fichiers texte (écrit en [Markdown](https://daringfireball.net/projects/markdown/)), des images et des templates [Twig](https://twig.symfony.com/) afin de générer un [site web statique](https://fr.m.wikipedia.org/wiki/Page_web_statique).
 
