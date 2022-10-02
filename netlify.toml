@@ -14,12 +14,12 @@
 [context.deploy-preview.environment]
   CECIL_ENV = "preview"
 
-#[[plugins]]
+[[plugins]]
 #  package = "/plugins/netlify-plugin-cecil-cache"
-#  package = "netlify-plugin-cecil-cache"
-#  [plugins.inputs]
+  package = "netlify-plugin-cecil-cache"
+  [plugins.inputs]
 #  cacheDir = ".cache"
-#  debug = true
+  debug = true
 
 [dev]
   command = "cecil serve --open"
