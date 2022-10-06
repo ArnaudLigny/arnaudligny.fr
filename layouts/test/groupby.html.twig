@@ -1,0 +1,16 @@
+{% extends 'page.html.twig' %}
+
+{% block content %}
+{% set handled = [] %}
+{% for page in site.pages|filter(p => p.date|date('Y') and p not in handled) %}
+<div>
+  <div>{{ page.date|date('Y') }}</div>
+  <ul>
+    {%- for p in site.pages|filter(p => p.date|date('Y') == page.date|date('Y') and p not in handled) ~%}
+      <li>{{ p.title }} ({{ p.date|date }})</li>
+      {%- set handled = handled|merge([p.id]) ~%}
+    {%- endfor ~%}
+  </ul>
+</div>
+{% endfor %}
+{% endblock %}
