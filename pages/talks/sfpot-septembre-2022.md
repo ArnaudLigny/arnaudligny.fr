@@ -11,6 +11,7 @@ Lors du **[SfPot de septembre 2022](https://www.meetup.com/fr-FR/afsy-sfpot/even
 
 <!--break-->
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSPcE_qGZD4tKL2ne0wHGCY1urT4Rus6b8o5jFCiDQ_ns0Rp4jyiPOBLRvWc3ho9CNCCGtBsgLrY90g/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSPcE_qGZD4tKL2ne0wHGCY1urT4Rus6b8o5jFCiDQ_ns0Rp4jyiPOBLRvWc3ho9CNCCGtBsgLrY90g/embed?start=false&loop=false&delayms=3000" frameborder="0" width="760" height="457" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="width:100%;"></iframe>
 
 [https://docs.google.com/presentation](https://docs.google.com/presentation/d/1HgZ5UNls_B1WaIMPYF-ycbiPAuZYrHFZWN0_GGnlSlw/pub)
+
