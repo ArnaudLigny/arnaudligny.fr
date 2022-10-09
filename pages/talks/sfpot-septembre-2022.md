@@ -7,6 +7,6 @@ typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 ---
 
-Lors du **[SfPot de septembre 2022](https://www.meetup.com/fr-FR/afsy-sfpot/)** je suis intervenu pour partager mon retour d’expérience sur la création de **[Cecil](https://cecil.app), un générateur de site statique propulsé par PHP**.
+Lors du **[SfPot de septembre 2022](https://www.meetup.com/fr-FR/afsy-sfpot/events/288473368/)** je suis intervenu pour partager mon retour d’expérience sur la création de **[Cecil](https://cecil.app), un générateur de site statique propulsé par PHP**.
 
 <!--break-->
