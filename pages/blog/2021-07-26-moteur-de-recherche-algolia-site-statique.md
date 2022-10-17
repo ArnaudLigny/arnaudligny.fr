@@ -35,7 +35,7 @@ Aussi, après plusieurs comparatifs, j’ai retenu la solution [Algolia](https:/
 
 ## Principe de fonctionnement
 
-Je souhaitais que le champ de recherche soit disponible sur chacune des pages et qu’il montre immédiatement un extrait des résultats lors de la saisie d’un ou plusieurs mots clefs, et laissant le choix à l’utilisateur de sélectionner la page / section à consulter : j’ai donc opté pour l’option [*Autocomplete*](https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/what-is-autocomplete/).
+Je souhaitais que le champ de recherche soit disponible sur chacune des pages et qu’il montre immédiatement un extrait des résultats lors de la saisie d’un ou plusieurs mots clefs, et laissant le choix à l’utilisateur de sélectionner la page / section à consulter : j’ai donc opté pour l’approche [*Autocomplete*](https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/what-is-autocomplete/).
 
 Pour intégrer cette bibliothèque il est nécessaire de comprendre le principe de fonctionnement d’Algolia.
 
