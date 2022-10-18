@@ -11,7 +11,7 @@ typora-copy-images-to: ../../assets/images/${filename}
 ---
 Quand je travaillais à enrichir la [documentation](https://cecil.app/documentation/) de [Cecil](https://cecil.app), je me suis dit qu’il serait pertinent d’offrir un moteur de recherche *[full text](https://fr.m.wikipedia.org/wiki/Recherche_plein_texte)* aux utilisateurs.
 
-![Exemple de résultat de recherche](/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png "Exemple de résultat de recherche")
+![Exemple de résultat de recherche](/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png "Exemple de résultat de recherche"){loading=eager}
 <!-- break -->
 
 [toc]
