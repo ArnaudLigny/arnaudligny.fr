@@ -78,7 +78,9 @@ Ainsi, l’objectif est de :
 
 1. collecter le contenu des pages de la documentation (dans `pages/documentation`), converti en HTML
 2. découper ce contenu de manière cohérente (l'objectif n’est pas de pointer sur la page, mais bien sur une section de la page), via un [template Twig](https://cecil.app/documentation/templates) spécifique
-3. générer un fichier `algolia.json` grâce aux [formats de sortie](https://cecil.app/documentation/configuration)
+3. générer un fichier `algolia.json` grâce aux [formats de sortie](https://cecil.app/documentation/configuration#formats)
+
+#### Résultat cible
 
 Le fichier d’index va ressembler à ça :
 
@@ -91,39 +93,80 @@ Le fichier d’index va ressembler à ça :
     "description": "Download cecil.phar from your terminal:",
     "content": "...",
     "date": "2020-12-19T00:00:00+00:00",
-    "href": "documentation/quick-start/#download-cecil",
-    "experimental": "0"
+    "href": "documentation/quick-start/#download-cecil"
   },
   ...
 ]
 ```
 
-Dans cet exemple nous avons :
+#### Création du template
 
-- `objectID` : Un ID unique
-- `page` : Le nom de la page de documentation
-- `title` : Le titre de section
-- `description` : Le premier paragraphe de la section (utilisé pour illustrer l’aperçu des résiltats)
-- `content` : Le contenu de la section, dans laquelle la recherche est effectuée
-- `date` : La date de la page, utilisée pour pondérer les résultats
-- `href` : Le lien vers la page de la documentation, combinée à une ancre afin d’emmener l’internaute à la bonne section
-- `experimental` : Attribut utilisé afin de pondérer les résultats sur les fonctionnalités expérimentale (moins de poids)
+Comme indiqué précédemment, dans le contexte de Cecil, pour créer ce fichier il est nécessaire de créer un template Twig qui va collecter les donner et les rendre au format JSON.
 
+S’agissant de rechercher dans la documentation, j’aurais pu créer ce template dans la section « documentation » (`layouts/documentation/list.algolia.twig`).  
+Mais comme je souhaitais potentiellement étendre la recherche à plusieurs types de contenus (tels que les « news ») j’ai préféré créer un template applicable à l’ensemble des contenus du site, donc via `layouts/_default/list.algolia.twig`.
 
+Ainsi, au sein du template, il suffit de boucler sur les contenus de la section « documentation », avec une boucle for :
 
+```twig
+{% for p in site.pages|filter(p => p.section == 'documentation')|sort_by_weight %}
+...
+{% endfor %}
+```
 
+Ensuite, toute l’astuce consiste à « jouer » sur les header HTML, en l’occurence le « H3 » afin de découper le contenu d’une page de documentation en sous sections :
 
+```twig
+{% set sections = p.content|preg_split('/<h3[^>]*>/') %}
+```
 
+> Le filtre Twig [`preg_split`](https://cecil.app/documentation/templates/#preg-split) à été créer pour l’occasion afin de permettre le découpage d’une chaine de caractère en un tableau, selon une expression régulière.
 
+De là, il suffit ensuite d’extraire les contenus cibles de chaque section, via de la manipulation de chaines de caractères, pour alimenter le « dataset » :
 
+```json
+{
+    "objectID": "Un ID unique",
+    "page": "Le nom de la page de documentation",
+    "title": "Le titre de section",
+    "description": "Le premier paragraphe de la section (utilisé pour illustrer l’aperçu des résiltats)",
+    "content": "Le contenu de la section, dans laquelle la recherche est effectuée",
+    "date": "La date de la page, utilisée pour pondérer les résultats",
+    "href": "Le lien vers la page de la documentation, combinée à une ancre afin d’emmener l’internaute à la bonne section",
+  }
+```
 
+> Voir le [template complet](https://github.com/Cecilapp/website/blob/master/layouts/_default/list.algolia.twig).
 
+#### Associer ce template à un format de sortie
 
+En l’état, Cecil ne sait pas qu’il faut utiliser ce template et surtout à quel type de contenu il doit être associer. C’est embêtant 😅
 
+Pour régler ce soucis il suffit de compléter la configuration de la manière suivante :
 
+```yaml
+output:
+  formats:
+    - name: algolia
+      mediatype: 'application/json'
+      filename: 'algolia'
+      extension: 'json'
+  pagetypeformats:
+    homepage: ['html', 'atom', 'algolia']
+```
 
+Maintenant Cecil sait que :
 
+1. Les pages dont la variable `format` a pour valeur « algolia » doivent utiliser un template de la forme `<layout>.algolia.twig`
+2. Enregistrer le fichier sous `algolia.json`
+3. La page de type `homepage` (listant toutes les pages du site) est maintenant au format « algolia » (en plus de « html » et « atom »)
 
+Et voilà, l’index est maintenant généré et disponible à la racine du site généré : <https://cecil.app/algolia.json>.
 
+#### Transmission de l’index
 
+to do
 
+#### Formulaire de recherche
+
+to do
