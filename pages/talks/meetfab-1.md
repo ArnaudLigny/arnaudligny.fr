@@ -3,14 +3,14 @@ title: "MeetFab #1"
 description: "Le statique c'est fantastique !"
 date: 2017-09-21
 image: /images/le-statique-c-est-fantastique.png
-draft: false
 alias: 
   - /blog/le-statique-c-est-fantastique
   - /talks/le-statique-c-est-fantastique
-typora-root-url: ../../static
+typora-root-url: ../../assets
+typora-copy-images-to: ../../assets/images/${filename}
 ---
 
-En 2017 j'ai réalisé une présentation interne à destination de mes collègues ([Adfab](https://adfab.fr)) à propos de la **JAMStack**.
+En 2017 j'ai réalisé une présentation lors du 1er meetup organisé par [Adfab](https://adfab.fr), sur le thème de la **JAMStack**.
 
 <!--break-->
 

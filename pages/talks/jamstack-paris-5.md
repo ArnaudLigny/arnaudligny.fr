@@ -4,7 +4,8 @@ description: "Cecil, mon générateur de site statique."
 date: 2019-11-05
 image: /images/jamstack-paris-5.png
 alias: /talks/cecil-mon-generateur-de-site-statique
-typora-root-url: ../../static
+typora-root-url: ../../assets
+typora-copy-images-to: ../../assets/images/${filename}
 ---
 
 Lors du meetup **[JAMstack Paris](https://jamstack.paris) #5** je suis intervenu pour partager mon retour d’expérience sur la création de **[Cecil](https://cecil.app), mon générateur de site statique**.
