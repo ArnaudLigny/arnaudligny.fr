@@ -1,7 +1,7 @@
 ---
 title: Un moteur de recherche sur un site statique grâce à Algolia
 date: 2021-07-26
-updated: 2022-10-17
+updated: 2022-10-18
 tags: [SSG, Recherche, Cecil]
 image: /images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png
 image_header: false
@@ -24,10 +24,14 @@ Aussi, il est important que les résultats retournés par un moteur de recherche
 
 ## Quelle solution technique ?
 
+### Google CSE
+
 Dans un premier temps j’ai expérimenté le [moteur de recherche personnalisé de Google](https://cse.google.com/) (CSE) qui permet de présenter les résultats indexés par Google pour un site donné (comme avec le préfixe `site:`).  
 Si les résultats sont pertinents pour un site contenant de nombreuses pages, il ne semble pas possible de personnaliser les résultats en fonction de sections au sein d’une même page, ce qui ne correspondant pas à mon besoin.
 
 *[CSE]: Custom Search Engine
+
+### Algolia
 
 Aussi, après plusieurs comparatifs, j’ai finalement retenu la solution [Algolia](https://www.algolia.com/) pour les raisons suivantes :
 
@@ -36,9 +40,9 @@ Aussi, après plusieurs comparatifs, j’ai finalement retenu la solution [Algol
 * [Documentation riche](https://www.algolia.com/doc/)
 * Nombreuses bibliothèques de code [open source](https://github.com/algolia)
 
-## Comment ?
+## Étapes clefs
 
-Je souhaitais que le champ de recherche soit disponible sur chacune des pages et qu’il montre immédiatement un extrait des résultats lors de la saisie d’un ou plusieurs mots clefs, et laissant le choix à l’utilisateur de sélectionner la section à consulter : j’ai donc opté pour l’approche [*Autocomplete*](https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/what-is-autocomplete/) (c.f. la capture d’écran en début de billet).
+Je souhaitais que le champ de recherche soit disponible sur chacune des pages et qu’il montre immédiatement un extrait des résultats lors de la saisie d’un ou plusieurs mots clefs, et laissant le choix à l’utilisateur de sélectionner la section à consulter : j’ai donc opté pour l’approche [*Autocomplete*](https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/what-is-autocomplete/) (cf. la capture d’écran en début de billet).
 
 ### Créer un index
 
@@ -62,7 +66,7 @@ Je dis *relativement* car il peut être nécessaire d’effectuer quelques tests
 
 ![Dashboard Algolia](/images/2021-07-26-moteur-de-recherche-algolia-site-statique/image-20221017142612522.png "Dashboard Algolia")
 
-## En pratique
+## Mise en oeuvre
 
 Dans le cas de la documentation de [Cecil](/tags/cecil), il faut donc :
 
@@ -176,11 +180,84 @@ J’ai ensuite cherché à automatisé cette procédure, et j’ai donc opté po
 [[context.production.plugins]]
   package = "netlify-plugin-refresh-algolia"
   [context.production.plugins.inputs]
-    appId = "XXXXXXXXXX"
-    indexName = "documentation"
+    appId = "APP_ID"
+    indexName = "INDEX"
     filePath = "_site/algolia.json"
 ```
 
 #### Formulaire de recherche
 
-to do 😊
+![Exemple de résultat de recherche](/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png "Exemple de résultat de recherche")
+
+La mise en œuvre est relativement simple :
+
+1. intégrer un champ de saisi (élément `input`)
+2. lui associer la bibliothèque _[Autocomplete.js](https://github.com/algolia/autocomplete/tree/v0)_
+
+**Champ de saisie :**
+
+```html
+<input type="text" id="search-input" placeholder="{% trans %}Search the Docs [Alt+S]{% endtrans %}" accesskey="s" />
+```
+
+**_Autocomplete.js_ :**
+
+```javascript
+// client Algolia
+var client = algoliasearch('APP_ID', 'API_KEY');
+// index dans lequel rechercher
+var index = client.initIndex('INDEX');
+// fonction de recherche
+function newHitsSource(index, params) {
+  return function doSearch(query, cb) {
+    index
+      .search(query, params)
+      .then(function(res) {
+        cb(res.hits, res);
+      })
+      .catch(function(err) {
+        console.error(err);
+        cb([]);
+      });
+  };
+}
+// association de la lib au champ "search-input"
+autocomplete('#search-input', { hint: false }, [
+  {
+    source: newHitsSource(index, {
+      // paramètres de mise en valeur des résultats suggérés
+      hitsPerPage: 4,
+      attributesToHighlight: ['description', 'page', 'title'],
+      highlightPreTag: '<strong>',
+      highlightPostTag: '</strong>',
+      attributesToSnippet: ['description:25'],
+      snippetEllipsisText: '…'
+    }),
+    // clef d'affichage principale (ici le titre de la section)
+    displayKey: 'title'
+  }
+]).on('autocomplete:selected', function(event, suggestion, dataset, context) {
+  // au clic sur une suggestion on envoie l'internaute vers la page#ancre correspondante
+  window.location.href = '{{ url() }}' + suggestion.href;
+});
+```
+
+> Voir le [template complet sur GitHub](https://github.com/Cecilapp/website/blob/master/layouts/partials/search-box.html.twig).
+
+
+
+Et voilà ! 🎉
+
+
+
+**Notes :**
+
+1. Il s’agit ici de la v0 de _Autocomplete.js_ qui reste fonctionnelle mais commence à vieillir
+2. La personnalisation de l’apparence des suggestions est un peu pénible car il faut arriver à « retrouver » les classes CSS générées à la volée via JavaScript, ce qui n’est pas toujours évident…
+
+## Conclusion
+
+Je me suis bien amusé à créer ce moteur de recherche, et je suis plutôt satisfait du résultat, qui est fonctionnel et utile.
+
+Pour tester, ça se passe par ici : <https://cecil.app/documentation/>
+
