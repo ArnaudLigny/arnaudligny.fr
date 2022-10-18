@@ -7,7 +7,6 @@ image: /images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_do
 image_header: false
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
-draft: true
 ---
 Quand je travaillais à enrichir la [documentation](https://cecil.app/documentation/) de [Cecil](https://cecil.app), je me suis dit qu’il serait pertinent d’offrir un moteur de recherche *[full text](https://fr.m.wikipedia.org/wiki/Recherche_plein_texte)* aux utilisateurs.
 
@@ -163,7 +162,7 @@ Maintenant Cecil sait que :
 
 1. Les pages dont la variable `format` a pour valeur le nom du format « algolia » peuvent utiliser un template de la forme `<layout>.algolia.twig`
 2. Enregistrer le fichier généré sous `filename.extension`, soit « algolia.json »
-3. La page de type `homepage` (listant toutes les pages du site) prend maintenant en charge le format « algolia » (en plus de « html » et « atom »)
+3. La page de type `homepage` (listant toutes les pages du site) doit être générée dans le format « algolia » (en plus de « html » et « atom »)
 
 Et voilà, l’index est maintenant généré et disponible à la racine du site généré : <https://cecil.app/algolia.json>.
 
@@ -252,12 +251,12 @@ Et voilà ! 🎉
 
 **Notes :**
 
-1. Il s’agit ici de la v0 de _Autocomplete.js_ qui reste fonctionnelle mais commence à vieillir
+1. Il s’agit ici de la version 0 de _Autocomplete.js_ qui reste fonctionnelle mais commence à vieillir
 2. La personnalisation de l’apparence des suggestions est un peu pénible car il faut arriver à « retrouver » les classes CSS générées à la volée via JavaScript, ce qui n’est pas toujours évident…
 
 ## Conclusion
 
-Je me suis bien amusé à créer ce moteur de recherche, et je suis plutôt satisfait du résultat, qui est fonctionnel et utile.
+Je me suis bien amusé à créer ce moteur de recherche, et je suis plutôt satisfait de la fonctionnalité, qui est fonctionnelle et surtout très utile.
 
 Pour tester, ça se passe par ici : <https://cecil.app/documentation/>
 
