@@ -1,5 +1,6 @@
 ---
 title: Un moteur de recherche sur un site statique grâce à Algolia
+description: "Comment j'ai ajouter une fonctionnalité de recherche à la documentation de Cecil.app."
 date: 2021-07-26
 updated: 2022-10-18
 tags: [SSG, Recherche, Cecil]
@@ -65,7 +66,7 @@ Je dis *relativement* car il peut être nécessaire d’effectuer quelques tests
 
 ![Dashboard Algolia](/images/2021-07-26-moteur-de-recherche-algolia-site-statique/image-20221017142612522.png "Dashboard Algolia")
 
-## Mise en oeuvre
+## Mise en œuvre
 
 Dans le cas de la documentation de [Cecil](/tags/cecil), il faut donc :
 
