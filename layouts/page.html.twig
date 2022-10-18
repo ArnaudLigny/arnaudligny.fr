@@ -52,6 +52,10 @@
         padding: 3px;
         text-align: center;
       }
+      /* fix pre with for responsive */
+      .typeset pre {
+        white-space: pre-wrap;
+      }
     {% endapply %}</style>
     <!-- dark mode -->
     <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss') }}" media="(prefers-color-scheme: dark)">
