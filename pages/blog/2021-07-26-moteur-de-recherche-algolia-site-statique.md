@@ -6,12 +6,12 @@ updated: 2022-10-18
 tags: [SSG, Recherche, Cecil]
 image: /images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png
 image_header: false
-typora-root-url: ../../assets
+#typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 ---
 Quand je travaillais à enrichir la [documentation](https://cecil.app/documentation/) de [Cecil](https://cecil.app), je me suis dit qu’il serait pertinent d’offrir un moteur de recherche *[full text](https://fr.m.wikipedia.org/wiki/Recherche_plein_texte)* aux utilisateurs.
 
-![Exemple de résultat de recherche](/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png "Exemple de résultat de recherche"){loading=eager}
+![Exemple de résultat de recherche](../../assets/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png "Exemple de résultat de recherche"){loading=eager}
 <!-- break -->
 
 [toc]
@@ -20,7 +20,7 @@ La documentation de Cecil est composée de moins de 10 pages : une par thématiq
 
 Aussi, il est important que les résultats retournés par un moteur de recherche soient granulaires, c’est à dire qu’ils ciblent ces sections au sein d’une page.
 
-![Exemple de page de documentation](/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates.png "Exemple de page de documentation")
+![Exemple de page de documentation](../../assets/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates.png "Exemple de page de documentation")
 
 ## Quelle solution technique ?
 
@@ -64,7 +64,7 @@ Le paramétrage de l’index, c’est à dire déterminer les attributs dans les
 
 Je dis *relativement* car il peut être nécessaire d’effectuer quelques tests avant de maitriser les règles de priorisation des résultats.
 
-![Dashboard Algolia](/images/2021-07-26-moteur-de-recherche-algolia-site-statique/image-20221017142612522.png "Dashboard Algolia")
+![Dashboard Algolia](../../assets/images/2021-07-26-moteur-de-recherche-algolia-site-statique/image-20221017142612522.png "Dashboard Algolia")
 
 ## Mise en œuvre
 
@@ -187,7 +187,7 @@ J’ai ensuite cherché à automatisé cette procédure, et j’ai donc opté po
 
 #### Formulaire de recherche
 
-![Exemple de résultat de recherche](/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png "Exemple de résultat de recherche")
+![Exemple de résultat de recherche](../../assets/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png "Exemple de résultat de recherche")
 
 La mise en œuvre est relativement simple :
 
