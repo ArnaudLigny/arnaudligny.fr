@@ -132,6 +132,9 @@ body:
       enabled: true
   highlight:
     enabled: true
+  links:
+    embed:
+      enabled: true
 assets:
   images:
     optimize:
