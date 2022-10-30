@@ -7,7 +7,7 @@ tags:
   - SSG
 image: /images/demo-cv-cecil.png
 image_header: false
-typora-root-url: ../../static
+typora-root-url: ../../assets
 alias: blog/demo-cv-cecil
 ---
 
