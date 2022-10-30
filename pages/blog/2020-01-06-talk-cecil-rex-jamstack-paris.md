@@ -9,11 +9,10 @@ tags:
   - Cecil
 image: /images/cecil-youtube-cover.jpg
 image_header: false
-typora-root-url: ../../static
+typora-root-url: ../../assets
 ---
 Lors du meetup [JAMstack Paris](https://jamstack.paris) #5 je suis intervenu pour partager mon retour d'expérience sur la création de [Cecil, mon générateur de site statique](https://arnaudligny.fr/talks/cecil-mon-generateur-de-site-statique).
 
 [![Cover de la vidéo](/images/cecil-youtube-cover.jpg)](/talks/cecil-mon-generateur-de-site-statique)
 
 Un grand merci à [Matthieu Auger](https://twitter.com/matthieuauger) et [Nicolas Goutay](https://twitter.com/phacks) pour l'organisation parfaite, et à [Inato](https://twitter.com/inatohealth) pour l'accueil très agréable 😊
-
