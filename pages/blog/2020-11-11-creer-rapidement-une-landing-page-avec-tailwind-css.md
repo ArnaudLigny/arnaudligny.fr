@@ -15,7 +15,7 @@ Néanmoins, je n'avais pas envie de (re)partir pour des dizaines heures d'intég
 
 Aussi je me suis dit que ce serait l’occasion idéale de tester [Tailwind CSS](https://tailwindcss.com/), un framework CSS « utility-first » conçu pour créer rapidement une page web sur mesure.
 
-![video](/videos/tailwind-css-demo.mp4){preload=none autoplay loop muted poster=/videos/tailwind-css-demo-poster.png}
+[Vidéo d’illustration](/videos/tailwind-css-demo.mp4){preload=none autoplay loop muted poster=/videos/tailwind-css-demo-poster.png}
 
 <!-- break -->
 
