@@ -141,5 +141,8 @@ assets:
       enabled: true
     responsive:
       enabled: true
+      sizes:
+        default: 100vw
+        test: "(max-width: 800px) 768px, 1024px"
     webp:
       enabled: true
