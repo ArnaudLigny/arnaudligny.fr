@@ -49,6 +49,7 @@ social:
   linkedin:
     username: arnaudligny
     url: https://fr.linkedin.com/in/arnaudligny/fr/
+#
 output:
   formats:
     - name: elasticlunr
