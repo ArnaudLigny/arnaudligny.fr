@@ -289,7 +289,7 @@ De plus Forestry offre un fonctionnalité de prévisualisation, en contexte, tr�
   <source src="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.mp4" type="video/mp4">
 </video>
 -->
-[Démo de l'aperçu de Forestry](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.webm){controls preload=none poster=/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.mp4_poster.webp}
+[Démo Forestry](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.webm "Démo Forestry"){controls preload=none poster=/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.mp4_poster.webp}
 
 ## Conclusion
 
