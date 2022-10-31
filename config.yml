@@ -135,6 +135,8 @@ body:
   links:
     embed:
       enabled: true
+      video:
+        ext: [mp4, webm]
 assets:
   images:
     optimize:
