@@ -18,5 +18,4 @@ Aussi j'ai réalisé une vidéo rapide (< 10 min) cet après-midi, que je partag
 
 Bon visionnage ! 😊
 
-[Cliquez pour voir la vidéo](/videos/demo-cv-cecil.mp4){controls preload=none poster=/videos/demo-cv-cecil-poster.png}
-
+[Cliquez pour voir la vidéo](/videos/demo-cv-cecil.mp4 "Je refais mon CV avec Cecil"){controls preload=none poster=/videos/demo-cv-cecil-poster.png}
