@@ -1,5 +1,5 @@
 ---
-title: "Cecil : aperçu sur mobile"
+title: "Prévisualiser un site genéré avec Cecil sur mobile"
 date: 2019-12-24
 tags:
   - Cecil
@@ -18,4 +18,4 @@ Ci-dessous une [courte vidéo](/videos/cecil-apercu-sur-mobile.mp4) expliquant c
 
 <!-- break -->
 
-[Cliquez pour voir la vidéo](/videos/cecil-apercu-sur-mobile.mp4){controls preload=none poster=/videos/cecil-apercu-sur-mobile-poster.png}
+[Cliquez pour voir la vidéo](/videos/cecil-apercu-sur-mobile.mp4 "Prévisualiser un site genéré avec Cecil sur mobile"){controls preload=none poster=/videos/cecil-apercu-sur-mobile-poster.png}
