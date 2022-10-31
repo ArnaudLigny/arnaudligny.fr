@@ -16,7 +16,7 @@ Lors du meetup **[JAMstack Paris](https://jamstack.paris) #5** je suis intervenu
 
 ## Vidéo
 
-[Arnaud Ligny — La génèse de Cecil, mon générateur de sites statiques en PHP](https://www.youtube.com/embed/FTpBS7g7YnI)
+[Arnaud Ligny — La génèse de Cecil, mon générateur de sites statiques en PHP](https://www.youtube.com/embed/FTpBS7g7YnI "La génèse de Cecil, mon générateur de sites statiques en PHP")
 
 ## Slides
 
