@@ -7,10 +7,10 @@ tags:
   - SSG
 image: /images/cecil-mobile-preview.png
 image_header: false
-typora-root-url: ../../static
+typora-root-url: ../../assets
 ---
 
-Ci-dessous une [courte vidéo](/videos/cecil-apercu-sur-mobile.mp4) {embed=false} 
+Ci-dessous une [courte vidéo](/videos/cecil-apercu-sur-mobile.mp4){embed=false} 
 expliquant comment tester un site généré par [Cecil](https://cecil.app) à partir d’un téléphone mobile, sur le même réseau Wi-Fi :
 
 1. connaître l’adresse IP du réseau : `ipconfig getifaddr er0`
@@ -19,4 +19,4 @@ expliquant comment tester un site généré par [Cecil](https://cecil.app) à pa
 
 <!-- break -->
 
-[Cliquez pour voir la vidéo](/videos/cecil-apercu-sur-mobile.mp4 "Prévisualiser un site genéré avec Cecil sur mobile"){controls preload=none poster=/videos/cecil-apercu-sur-mobile-poster.png}
+[Cliquez pour voir la vidéo](/videos/cecil-apercu-sur-mobile.mp4 "Prévisualiser un site genéré avec Cecil sur mobile"){embed controls preload=none poster=/videos/cecil-apercu-sur-mobile-poster.png}
