@@ -130,14 +130,14 @@ De là, il suffit ensuite d’extraire les contenus cibles de chaque section, vi
 
 ```json
 {
-    "objectID": "Un ID unique",
-    "page": "Le nom de la page de documentation",
-    "title": "Le titre de section",
-    "description": "Le premier paragraphe de la section (utilisé pour illustrer l’aperçu des résiltats)",
-    "content": "Le contenu de la section, dans laquelle la recherche est effectuée",
-    "date": "La date de la page, utilisée pour pondérer les résultats",
-    "href": "Le lien vers la page de la documentation, combinée à une ancre afin d’emmener l’internaute à la bonne section",
-  }
+  "objectID": "Un ID unique",
+  "page": "Le nom de la page de documentation",
+  "title": "Le titre de section",
+  "description": "Le premier paragraphe de la section (utilisé pour illustrer l’aperçu des résiltats)",
+  "content": "Le contenu de la section, dans laquelle la recherche est effectuée",
+  "date": "La date de la page, utilisée pour pondérer les résultats",
+  "href": "Le lien vers la page de la documentation, combinée à une ancre afin d’emmener l’internaute à la bonne section",
+}
 ```
 
 > Voir le [template complet sur GitHub](https://github.com/Cecilapp/website/blob/master/layouts/_default/list.algolia.twig).
@@ -244,11 +244,7 @@ autocomplete('#search-input', { hint: false }, [
 
 > Voir le [template complet sur GitHub](https://github.com/Cecilapp/website/blob/master/layouts/partials/search-box.html.twig).
 
-
-
 Et voilà ! 🎉
-
-
 
 **Notes :**
 
@@ -260,4 +256,3 @@ Et voilà ! 🎉
 Je me suis bien amusé à créer ce moteur de recherche, et je suis plutôt satisfait de la fonctionnalité, qui est fonctionnelle et surtout très utile.
 
 Pour tester, ça se passe par ici : <https://cecil.app/documentation/>
-
