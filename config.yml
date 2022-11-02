@@ -56,9 +56,15 @@ output:
       mediatype: 'application/json'
       filename: 'elasticlunr'
       extension: 'json'
+      exclude: ['redirect']
+    - name: jsonfeed
+      mediatype: 'application/json'
+      filename: 'feed'
+      extension: 'json'
+      exclude: ['redirect']
   pagetypeformats:
     homepage: ['html', 'atom', 'elasticlunr']
-    section: ['html', 'atom', 'json']
+    section: ['html', 'atom', 'json', 'jsonfeed']
 defaultpages:
   sitemap:
     published: true
