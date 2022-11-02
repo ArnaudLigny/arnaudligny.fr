@@ -21,7 +21,7 @@
         "name": {{ author|json_encode }}
         {%- if not icon.missing -%}
         ,
-        "avatar": "{{ icon|resize(150)|url({canonical: true}) }}"
+        "avatar": "{{ icon|resize(128)|url({canonical: true}) }}"
         {%- endif ~%}
       }
     ],
@@ -36,7 +36,7 @@
             "content_text": {{ item.content|striptags|json_encode(constant('JSON_UNESCAPED_UNICODE')) }},
             "content_html": {{ item.content|json_encode(constant('JSON_UNESCAPED_UNICODE') b-or constant('JSON_UNESCAPED_SLASHES')) }},
             {%- if item.image is defined ~%}
-            "image": "{{ url(item.image, {canonical: true}) }}",
+            "image": "{{ url(asset(item.image), {canonical: true}) }}",
             {%- endif ~%}
             "date_published": "{{ item.date|date('c') }}",
             {%- if item.updated is defined ~%}
