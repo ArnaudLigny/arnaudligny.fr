@@ -39,6 +39,9 @@
             "image": "{{ url(item.image, {canonical: true}) }}",
             {%- endif ~%}
             "date_published": "{{ item.date|date('c') }}",
+            {%- if item.updated is defined ~%}
+            "date_modified": "{{ item.updated|date('c') }}",
+            {%- endif ~%}
             {%- if item.tags is defined ~%}
             "tags": {{ item.tags|default([])|json_encode }},
             {%- endif ~%}
