@@ -9,7 +9,8 @@
     "home_page_url": "{{ url(page, {canonical: true}) }}",
     {%- set icon = asset(site.metatags.favicon.image|default('favicon.png'), {'ignore_missing': true}) -%}
     {%- if not icon.missing ~%}
-    "icon": "{{ icon|resize(256)|url({canonical: true}) }}",
+    "icon": "{{ icon|resize(512)|url({canonical: true}) }}",
+    "favicon ": "{{ icon|resize(64)|url({canonical: true}) }}",
     {%- endif ~%}
     {%- if site.author.firstname is defined and site.author.lastname is defined -%}
     {%- set author = site.author.firstname ~ ' ' ~ site.author.lastname -%}
