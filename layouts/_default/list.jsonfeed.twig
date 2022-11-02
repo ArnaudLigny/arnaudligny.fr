@@ -3,7 +3,7 @@
 {% block feed %}
 {
     "version": "https://jsonfeed.org/version/1.1",
-    "title": {{ page.title|json_encode(constant('JSON_UNESCAPED_UNICODE')) }},
+    "title": {{ title|json_encode(constant('JSON_UNESCAPED_UNICODE')) }},
     "description": {{ page.description|default(site.description)|json_encode(constant('JSON_UNESCAPED_UNICODE')) }},
     "feed_url": "{{ url(page, {canonical: true, format: 'jsonfeed'}) }}",
     "home_page_url": "{{ url(page, {canonical: true}) }}",
