@@ -24,14 +24,13 @@ published: true
 ---
 ## Expérience
 
-### Freelance – Consultant technique web, expert e-commerce
+### Consultant fonctionnel & technique senior
 
-#### [studio cecillie](https://studio.cecillie.fr) – *depuis 2020*
+#### [Clever Age](https://www.clever-age.com) – *depuis 2022*
 
-![Logo Cecillie](/logos/cecillie.svg){width=100 height=100 style="float:right;margin:1rem;"}
+![Logo Clever Age](/logos/clever-age.png){width=100 height=100 style="float:right;margin:1rem;"}
 
-Clients : Valtech, Yves Rocher, Promod…  
-👉 Missions de conseil et d’accompagnement technique à la mise en œuvre de solutions web, mobile et e-commerce.
+👉 Consultant fonctionnelle et technique, expert e-commerce.  
 
 ### Co-animateur
 
@@ -51,6 +50,15 @@ Clients : Valtech, Yves Rocher, Promod…
 👉 Consultant fonctionnelle et technique, expert e-commerce.  
 Clients : Grapl, Caviar Petrossian, Pharmaciens Giphar, Groupe Chavigny…  
 Outils & solutions : Magento, Proximis, OroCommerce.
+
+### Freelance – Consultant technique web, expert e-commerce
+
+#### [studio cecillie](https://studio.cecillie.fr) – *2020-2022*
+
+![Logo Cecillie](/logos/cecillie.svg){width=100 height=100 style="float:right;margin:1rem;"}
+
+Clients : Valtech, Yves Rocher, Promod…  
+👉 Missions de conseil et d’accompagnement technique à la mise en œuvre de solutions web, mobile et e-commerce.
 
 ### Consultant technique e-commerce
 
