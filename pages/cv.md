@@ -24,19 +24,9 @@ published: true
 ---
 ## Expérience
 
-### Business Analyst
-
-#### [Antadis](https://www.antadis.com) – *depuis 2022*
-
-![Logo Antadis](/logos/antadis.png){width=100 height=100 style="float:right;margin:1rem;"}
-
-👉 Consultant fonctionnelle et technique, expert e-commerce.  
-Clients : Grapl, Caviar Petrossian, Pharmaciens Giphar, Groupe Chavigny…  
-Outils & solutions : Magento, Proximis, OroCommerce.
-
 ### Freelance – Consultant technique web, expert e-commerce
 
-#### [studio cecillie](https://studio.cecillie.fr) – *2020-2022*
+#### [studio cecillie](https://studio.cecillie.fr) – *depuis 2020*
 
 ![Logo Cecillie](/logos/cecillie.svg){width=100 height=100 style="float:right;margin:1rem;"}
 
@@ -51,6 +41,16 @@ Clients : Valtech, Yves Rocher, Promod…
 
 👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
 👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
+
+### Business Analyst
+
+#### [Antadis](https://www.antadis.com) – *2022 - 6 mois*
+
+![Logo Antadis](/logos/antadis.png){width=100 height=100 style="float:right;margin:1rem;"}
+
+👉 Consultant fonctionnelle et technique, expert e-commerce.  
+Clients : Grapl, Caviar Petrossian, Pharmaciens Giphar, Groupe Chavigny…  
+Outils & solutions : Magento, Proximis, OroCommerce.
 
 ### Consultant technique e-commerce
 
