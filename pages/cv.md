@@ -67,7 +67,7 @@ Clients : Valtech, Yves Rocher, Promod…
 ![Logo Promod](/logos/promod.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 Refonte complète du tunnel d’achat via une approche headless avec la solution [commercetools](https://commercetools.com).  
-👉 Compréhension, analyse et traduction du besoin client (phase de discovering);  
+👉 Compréhension, analyse et traduction du besoin client (*discovery*);  
 👉 Pilotage des ateliers techniques entre les équipes métiers et les développeurs;  
 👉 Conception de l’architecture technique en accord avec la DOSI;  
 👉 Conception du produit et participation au backlog en collaboration avec le business analyst, les PO et CPO, et les équipes QA.  
