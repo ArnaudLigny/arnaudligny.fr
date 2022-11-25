@@ -283,10 +283,13 @@ Néanmoins il peut s’avérer plus commode et plus agréable de pouvoir s’app
 
 De plus Forestry offre un fonctionnalité de prévisualisation, en contexte, très efficace !
 
+<!--
 <video controls preload="none" poster="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.mp4_poster.webp">
   <source src="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.webm" type="video/webm">
   <source src="/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.mp4" type="video/mp4">
 </video>
+-->
+[Démo Forestry](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.webm "Démo Forestry"){controls preload=none poster=/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/forestry-preview-demo.mp4_poster.webp}
 
 ## Conclusion
 

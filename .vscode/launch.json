@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cecil server",
+            "command": "cecil serve -v --config=config/dev.yml --open",
+            "request": "launch",
+            "type": "node-terminal"
+        }
+    ]
+}

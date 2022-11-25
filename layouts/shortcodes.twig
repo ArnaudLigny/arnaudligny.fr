@@ -1,0 +1,11 @@
+{% extends 'extended/macros.twig' %}
+
+{% block macros %}
+
+    {% macro don(label = 'Faire un don en ligne') %}
+        <div class="text-center">
+            <a href="https://www.paypal.com/donate/?hosted_button_id=B93F9MKHFX7T6&locale.x=fr" class="btn" target="_blank">{{ label }}</a>
+        </div>
+    {% endmacro %}
+
+{% endblock %}

@@ -7,6 +7,8 @@ tags:
 image: /images/store_developer_dashboard.png
 image_header: false
 typora-root-url: ../../static
+_display:
+  reader: ['https://latribu.dev']
 ---
 
 **Mis à jour le 06/09/21**

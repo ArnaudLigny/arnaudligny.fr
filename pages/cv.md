@@ -24,9 +24,26 @@ published: true
 ---
 ## Expérience
 
+### Consultant fonctionnel & technique senior
+
+#### [Clever Age](https://www.clever-age.com) – *depuis 2022*
+
+![Logo Clever Age](/logos/clever-age.png){width=100 height=100 style="float:right;margin:1rem;"}
+
+👉 Consultant fonctionnelle et technique, expert e-commerce.  
+
+### Co-animateur
+
+#### [Jamstatic](https://jamstatic.fr) – *depuis 2017*
+
+![Logo Jamstatic](/logos/jamstatic.png){width=100 height=100 style="float:right;margin:1rem;"}
+
+👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
+👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
+
 ### Business Analyst
 
-#### [Antadis](https://www.antadis.com) – *depuis 2022*
+#### [Antadis](https://www.antadis.com) – *2022 - 6 mois*
 
 ![Logo Antadis](/logos/antadis.png){width=100 height=100 style="float:right;margin:1rem;"}
 
@@ -43,15 +60,6 @@ Outils & solutions : Magento, Proximis, OroCommerce.
 Clients : Valtech, Yves Rocher, Promod…  
 👉 Missions de conseil et d’accompagnement technique à la mise en œuvre de solutions web, mobile et e-commerce.
 
-### Co-animateur
-
-#### [Jamstatic](https://jamstatic.fr) – *depuis 2017*
-
-![Logo Jamstatic](/logos/jamstatic.png){width=100 height=100 style="float:right;margin:1rem;"}
-
-👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
-👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
-
 ### Consultant technique e-commerce
 
 #### [Promod](https://www.promod.fr) – *2020-2021*
@@ -59,7 +67,7 @@ Clients : Valtech, Yves Rocher, Promod…
 ![Logo Promod](/logos/promod.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 Refonte complète du tunnel d’achat via une approche headless avec la solution [commercetools](https://commercetools.com).  
-👉 Compréhension, analyse et traduction du besoin client (phase de discovering);  
+👉 Compréhension, analyse et traduction du besoin client (*discovery*);  
 👉 Pilotage des ateliers techniques entre les équipes métiers et les développeurs;  
 👉 Conception de l’architecture technique en accord avec la DOSI;  
 👉 Conception du produit et participation au backlog en collaboration avec le business analyst, les PO et CPO, et les équipes QA.  

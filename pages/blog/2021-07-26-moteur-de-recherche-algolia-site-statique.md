@@ -1,17 +1,17 @@
 ---
 title: Un moteur de recherche sur un site statique grâce à Algolia
+description: "Comment j'ai implémenté une fonctionnalité de recherche à la documentation de Cecil.app."
 date: 2021-07-26
 updated: 2022-10-18
 tags: [SSG, Recherche, Cecil]
 image: /images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png
 image_header: false
-typora-root-url: ../../assets
+#typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
-draft: true
 ---
 Quand je travaillais à enrichir la [documentation](https://cecil.app/documentation/) de [Cecil](https://cecil.app), je me suis dit qu’il serait pertinent d’offrir un moteur de recherche *[full text](https://fr.m.wikipedia.org/wiki/Recherche_plein_texte)* aux utilisateurs.
 
-![Exemple de résultat de recherche](/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png "Exemple de résultat de recherche")
+![Exemple de résultat de recherche](../../assets/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png "Exemple de résultat de recherche"){loading=eager}
 <!-- break -->
 
 [toc]
@@ -20,7 +20,7 @@ La documentation de Cecil est composée de moins de 10 pages : une par thématiq
 
 Aussi, il est important que les résultats retournés par un moteur de recherche soient granulaires, c’est à dire qu’ils ciblent ces sections au sein d’une page.
 
-![Exemple de page de documentation](/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates.png "Exemple de page de documentation")
+![Exemple de page de documentation](../../assets/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates.png "Exemple de page de documentation")
 
 ## Quelle solution technique ?
 
@@ -64,9 +64,9 @@ Le paramétrage de l’index, c’est à dire déterminer les attributs dans les
 
 Je dis *relativement* car il peut être nécessaire d’effectuer quelques tests avant de maitriser les règles de priorisation des résultats.
 
-![Dashboard Algolia](/images/2021-07-26-moteur-de-recherche-algolia-site-statique/image-20221017142612522.png "Dashboard Algolia")
+![Dashboard Algolia](../../assets/images/2021-07-26-moteur-de-recherche-algolia-site-statique/image-20221017142612522.png "Dashboard Algolia")
 
-## Mise en oeuvre
+## Mise en œuvre
 
 Dans le cas de la documentation de [Cecil](/tags/cecil), il faut donc :
 
@@ -130,14 +130,14 @@ De là, il suffit ensuite d’extraire les contenus cibles de chaque section, vi
 
 ```json
 {
-    "objectID": "Un ID unique",
-    "page": "Le nom de la page de documentation",
-    "title": "Le titre de section",
-    "description": "Le premier paragraphe de la section (utilisé pour illustrer l’aperçu des résiltats)",
-    "content": "Le contenu de la section, dans laquelle la recherche est effectuée",
-    "date": "La date de la page, utilisée pour pondérer les résultats",
-    "href": "Le lien vers la page de la documentation, combinée à une ancre afin d’emmener l’internaute à la bonne section",
-  }
+  "objectID": "Un ID unique",
+  "page": "Le nom de la page de documentation",
+  "title": "Le titre de section",
+  "description": "Le premier paragraphe de la section (utilisé pour illustrer l’aperçu des résiltats)",
+  "content": "Le contenu de la section, dans laquelle la recherche est effectuée",
+  "date": "La date de la page, utilisée pour pondérer les résultats",
+  "href": "Le lien vers la page de la documentation, combinée à une ancre afin d’emmener l’internaute à la bonne section",
+}
 ```
 
 > Voir le [template complet sur GitHub](https://github.com/Cecilapp/website/blob/master/layouts/_default/list.algolia.twig).
@@ -163,7 +163,7 @@ Maintenant Cecil sait que :
 
 1. Les pages dont la variable `format` a pour valeur le nom du format « algolia » peuvent utiliser un template de la forme `<layout>.algolia.twig`
 2. Enregistrer le fichier généré sous `filename.extension`, soit « algolia.json »
-3. La page de type `homepage` (listant toutes les pages du site) prend maintenant en charge le format « algolia » (en plus de « html » et « atom »)
+3. La page de type `homepage` (listant toutes les pages du site) doit être générée dans le format « algolia » (en plus de « html » et « atom »)
 
 Et voilà, l’index est maintenant généré et disponible à la racine du site généré : <https://cecil.app/algolia.json>.
 
@@ -187,7 +187,7 @@ J’ai ensuite cherché à automatisé cette procédure, et j’ai donc opté po
 
 #### Formulaire de recherche
 
-![Exemple de résultat de recherche](/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png "Exemple de résultat de recherche")
+![Exemple de résultat de recherche](../../assets/images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png "Exemple de résultat de recherche")
 
 La mise en œuvre est relativement simple :
 
@@ -244,20 +244,15 @@ autocomplete('#search-input', { hint: false }, [
 
 > Voir le [template complet sur GitHub](https://github.com/Cecilapp/website/blob/master/layouts/partials/search-box.html.twig).
 
-
-
 Et voilà ! 🎉
-
-
 
 **Notes :**
 
-1. Il s’agit ici de la v0 de _Autocomplete.js_ qui reste fonctionnelle mais commence à vieillir
+1. Il s’agit ici de la version 0 de _Autocomplete.js_ qui reste fonctionnelle mais commence à vieillir
 2. La personnalisation de l’apparence des suggestions est un peu pénible car il faut arriver à « retrouver » les classes CSS générées à la volée via JavaScript, ce qui n’est pas toujours évident…
 
 ## Conclusion
 
-Je me suis bien amusé à créer ce moteur de recherche, et je suis plutôt satisfait du résultat, qui est fonctionnel et utile.
+Je me suis bien amusé à créer ce moteur de recherche, et je suis plutôt satisfait de la fonctionnalité, qui est fonctionnelle et surtout très utile.
 
 Pour tester, ça se passe par ici : <https://cecil.app/documentation/>
-
