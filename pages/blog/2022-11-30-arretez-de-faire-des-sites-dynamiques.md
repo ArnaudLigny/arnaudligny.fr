@@ -4,35 +4,35 @@ date: 2022-11-30
 draft: true
 ---
 
-Aujourd'hui, la plupart des personnes souhaitant créer un site Web vont se tourner d’embler un CMS, « Content Management System » ou « Outil de gestion de contenu » en français (tel que WordPress, très populaire).
+La plupart des personnes souhaitant créer un site Web vont se tourner d’embler vers un CMS (« Content Management System » ou « Outil de gestion de contenu » en français).
 
-En effet, utiliser un CMS semble facile et rapide (pour peu qu’on passe la barrière initiale de l’installation logiciel, pas toujours à la portée du ou de la première venu(e)) : après avoir choisi un joli thème, trouvé un nom pour son site, quelques clics suffisent pour publier une première page de contenu.
+En effet, utiliser un CMS est facile et relativement rapide (pour peu qu’on passe la barrière initiale de l’installation, pas toujours à la portée du ou de la première venu(e)) : après avoir choisi un joli thème, trouvé un nom pour son site, quelques clics suffisent pour publier une première page.
 
-![Écran d’ordinateur affichant du code PHP](../../assets/images/2022-11-30-arretez-de-faire-des-sites-dynamiques/lavi-perchik-fSqYwKWzwhk-unsplash.jpg "Illustration de [Lavi Perchik](https://unsplash.com/photos/fSqYwKWzwhk)")
+![Écran d’ordinateur affichant du code PHP (WordPress)](../../assets/images/2022-11-30-arretez-de-faire-des-sites-dynamiques/lavi-perchik-fSqYwKWzwhk-unsplash.jpg "Illustration de [Lavi Perchik](https://unsplash.com/photos/fSqYwKWzwhk)")
 
-Néanmoins, une fois passé cette phase de découverte d’un outil qui semble magique on découvre les coûts cachés : la maintenance (montée de version), la complexité de personnalisation des templates, les
-montées de version, les failles de sécurités, pour finalement terminer avec la perte de la
-base de données et de tout leurs contenus rédigés avec amour...
+Néanmoins, une fois passé cette phase de découverte d’un outil qui semble magique on découvre les coûts cachés (maintenance, complexité de personnalisation des templates, failles de sécurités, etc. pour finalement terminer avec la perte de la base de données et de tout ses contenus rédigés avec amour…
 
 <!-- break -->
 
-Et toute cette énergie dépensée pour quoi ? Pour des contenus statiques, rédigés le plus souvent en une fois et rarement modifiés par la suite.
+## C’est quoi un site dynamique ?
 
-Si nos contenus sont statiques, alors pourquoi créer systématiquement un site statique ? Quelles sont les alternatives ?
+Depuis l’avènement des langages de programmation web côté serveur (je pense notamment à ASP 3 et PHP 4 au début des années 2000), la majorité des sites sont devenus « dynamiques » : les contenus sont stockés dans une base de données (BDD), un script charge ces données – à la demande – et les affiche dans la Web consultée par l’internaute.
 
-## Sites Web dynamiques
+![Schéma illustrant le principe d'une page web dynamique](../../assets/images/2022-11-30-arretez-de-faire-des-sites-dynamiques/what-is-a-dynamic-site.png "Schéma illustrant le principe d'une page web dynamique, par [teleport](https://teleporthq.io)")
 
-Depuis l’avènement des langages de programmation web côté serveur (je pense notamment à ASP 3 et PHP 4 au début des années 2000), la majorité des sites Web sont devenus « dynamiques » : les contenus sont stockés dans une BDD, un script charge ces données – à la demande – et les affiche dans la Web consultée par l’internaute.
+De fait, la consultation de chaque page d’un site nécessite l’exécution de tâches par le serveur afin d’afficher le résultat dans le navigateur. 
 
-De fait, chaque consultation de chaque page d’un site Web nécessite l’exécutio nde tâches par la se serveur afin d’afficher le résultat dans le navigateur. 
+Bien entendu il existe des mécanismes de mise en cache, c’est à dire la création d’une copie statique à un instant T, afin de ne pas avoir à re-réaliser les tâches permettant d’afficher la page si celle-ci est consultée dans un contexte équivalent par un autre visiteur.
 
-Bien entendu il existe des mécanismes de mise en cache, c’est à dire la création d’une copie statique à un instant T, afin de ne pas avoir à re-réalsier les tâches peemttant d’afficher la page si celle-ci est consulter dans un contexte équivalent.
+Si les sites dynamiques ont un intérêt certain dans un objectif d’interaction avec l’internaute (création de compte, formulaire de saisie de commentaire, ajout au panier d’un site e-commerce, etc.) on peut se poser la question de leur utilité, voir de leur impact, dans le cas d’un site dont les contenus sont uniquement disponible pour consultation, ce qui est le cas de la majorité des contenus sur le Web.
 
-Si les sites dynamiques ont un intérêt certain dans un contexte d’interaction avec l’internaute (création de compte, formulaire de commentaire, ajout au panier d’un site e-commerce, etc.) on peut se poser la question de leur utilité, voir de leur impact, dans le cas d’un site sont ls contenus sont uniquement consulté.
+Mais alors, quelle serait l’alternative ?
 
-## Retour aux site statiques
+## Un site statique en 2022 ?
 
 Depuis une dizaine d’année les outils de création de sites statiques, tels que [Jekyll](https://jekyllrb.com) ou [Hugo](https://gohugo.io), ne cessent de prendre de l'ampleur, et sont utilisés par de nombreux acteurs du Web : Google, Netflix, Mailchimp, Mapbox, etc.
+
+![Schéma illustrant le principe d'un site web statique](../../assets/images/2022-11-30-arretez-de-faire-des-sites-dynamiques/what-is-a-static-site.png "Schéma illustrant le principe d'un site web statique, par [teleport](https://teleporthq.io)")
 
 Cette manière de « générer » un site Web permet aux différents intervenants de se concentrer sur ce qui est réellement important, à savoir :
 
@@ -40,57 +40,51 @@ Cette manière de « générer » un site Web permet aux différents intervenant
 
 2. **une mise en forme efficace** : les graphistes et les développeurs front-end peuvent se concentrer sur le rendu HTML et CSS  sans être contraint par la technologie plus ou moins propriétaire d’un CMS
 
-### Arguments clefs
+### Avantages
 
 * **Performance** : pas de tâches applicatives côté serveur ;
 * **Sécurité** : pas de CMS exposée en frontal, donc un risque réduit d'intrusion ou de [défaçage](https://fr.m.wikipedia.org/wiki/D%C3%A9facement) ;
 * **Découplage** : distinction entre l’outil de gestion des contenus et l’outil de création du site ;
 * **Portabilité** : le contenu, rédigé en Markdown, peut-être importer et exporté à loisir
 
-## Pour en finir avec le dynamique systématique
+## En finir avec le dynamique systématique
 
-Aujourd'hui la plupart des sites Web sont motorisés par des CMS (ex : WordPress, Drupal) afin d'offrir à l'utilisateur une interface de gestion du contenu : écrire, mettre en forme, publier.
+Pourtant aujourd'hui la plupart des sites Web sont motorisés par des CMS (WordPress, Drupal, etc.) afin d'offrir à l'utilisateur une interface de gestion du contenu : écrire, mettre en forme, publier.
 
-Ces contenus sont stockées dans une BDD qui est sollicitée à chaque fois qu'une page est consultées par un internaute (au delta d'une éventuelle solution de cache comme indiqué plus haut).
+Néanmoins, l'avantage du dynamique, à savoir la possibilité d’éditer rapidement un contenu, est devenu contre performant en embarquant un système complexe et couteux alors que dans la pratique la plupart des contenus ne sont plus jamais modifiés après la publication initiale.
 
-L'avantage du dynamique, à savoir la possibilité d’éditer rapidement un contenu, est devenu contre performant en embarquant un système complexe et couteux alors que dans la pratique la plupart des contenus ne sont plus jamais modifiés après la publication intiale.
+De plus, la majorités des sites concernés ne sont pas ou plus maintenu et exposent des failles de sécurité potentiel : c'est très souvent le cas avec des sites WordPress qui sont transformés en espaces publicitaires par des hackeurs malveillants.
 
-De plus, la majorités des sites concernés ne sont pas/plus maintenu et exposent des failles de sécurité potentiel : c'est très souvent le cas avec des sites Wordpress qui sont transformés en espaces publicitaires par des hackeurs malveillants.
+Alors pourquoi ne pas revenir sur une approche statique, simple et adaptée au besoin de la plupart des gens ?
 
-Pourquoi donc ne pas revenir sur une approche statique, simple et adaptée au besoin de la plupart des gens ?
+## Créer un site statique n’est pas si difficile
 
-## Créer un site statique c'est facile
+Si créer un site statique peut paraitre technique et accessible uniquement aux "nerds", c’est en réalité plutôt simple pour peu qu’on n’est pas peur de lancer une ligne de commande.
 
-Créer un site statique peut paraitre technique et accessible uniquement aux "nerds", mais en réalité c’est plutôt facile.
+J’en veux pour preuve le nombre important de webdesigners qui migrent vers [Jekyll](https://jekyllrb.com/) ou [Eleventy](https://www.11ty.dev/) afin de publier leur blog ou leur portfolio.
 
-De nombreux webdesigners migrent de WordPress vers Jekyll ou équivalent pour publier leur blog ou leur portfolio… c'est bien une preuve que la courbe d'apprentissage n’est pas insurmontable :-)
+### En pratique
 
-### Le principe
+Créer un site statique « moderne » tiens en 4 étapes :
 
-Le principe est le suivant :
-
-1. rédaction des contenus (au format [Markdown](https://www.markdownguide.org)) ;
-2. création des templates ;
-3. génération des pages (c’est à dire la fusion entre les contenus et els templates) ;
-4. déploiement du site (soit simplement la copie des fichiers sur un serveur Web).
+1. rédiger le contenu dans éditeur de texte, idéalement au format [Markdown](https://www.markdownguide.org) pour plus de liberté ;
+2. créer un template, c’est à dire une page [HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Getting_started) contenant des balises dynamiques ;
+3. exécuter une commande qui va s’occuper de fusionner le contenu et le template ;
+4. déployer le site ainsi généré, c’est à dire copier les fichiers sur un serveur Web).
 
 ## Des contenus réutilisables
 
-L'un des éléments clef de l'approche "statique" c'est le découplage des contenus et de la plateforme.
+L'un des éléments clef de l'approche statique est certainement le découplage entre les contenus et la mise en forme : nous avons d’un côté des fichiers plats, éditables via n’importe quel éditeur de texte et de l’autre des templates.
 
-Aussi, les contenus sont gérés dans des fichiers plats, qui peuvent être ouvert dans n'importe quel éditeur de texte simple.
+D’autre part, les données structurées (ou "méta données") qui permettent de qualifier une page de contenu (titre, date, catégorie, auteur, etc.) sont dans un format répondant à un standard, le plus souvent [YAML](https://fr.m.wikipedia.org/wiki/YAML) ou [JSON](https://fr.m.wikipedia.org/wiki/Json), donc réutilisables.
 
-De plus les données structurées, les "meta données" qui vont qualifier un contenu (titre, date, catégorie, auteur, etc.) sont dans un format standard, le plus souvent [Yaml](https://fr.m.wikipedia.org/wiki/YAML) ou [Json](https://fr.m.wikipedia.org/wiki/Json).
+Il est donc possible d'exploiter ces données dans un autre contexte, ou via un autre support de diffusion : Un même contenu peut ainsi être diffusé via un site Web, une application mobile, un web service (statique) ou encore [un livre imprimé](https://jamstatic.fr/2017/01/23/produire-des-livres-avec-le-statique/) !
 
-Il est donc possible d'exploiter ces données dans un autre contexte, ou sur un autre media : Le même contenu pour un site Web, une version mobile, ou même un livre (https://jamstatic.fr/2017/01/23/produire-des-livres-avec-le-statique/) !
+## Sautez le pas !
 
-## Gérer son contenu via un CMS headless
+Depuis la sortie de la version 1 de [Jekyll](https://jekyllrb.com) et de [Hugo](https://gohugo.io) en 2013, de très nombreux générateurs de site statique ont vu le jour, chacun avec ses avantages et ses inconvénients, à choisir selon ses besoins et ses contraintes.
 
-Pour aller plus loin et simplifier la gestion du contenu
-
-
-
-
+Aussi je vous invite à sautez pas, en essayant par vous même via un vaste choix : https://jamstack.org/generators/.
 
 *[BDD]: Base De Données
 *[CMS]: Content Management System
