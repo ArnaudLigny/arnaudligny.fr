@@ -8,11 +8,13 @@ Aujourd'hui, la plupart des personnes souhaitant créer un site Web vont se tour
 
 En effet, utiliser un CMS semble facile et rapide (pour peu qu’on passe la barrière initiale de l’installation logiciel, pas toujours à la portée du ou de la première venu(e)) : après avoir choisi un joli thème, trouvé un nom pour son site, quelques clics suffisent pour publier une première page de contenu.
 
-![Code PHP](../../assets/images/2022-11-30-arretez-de-faire-des-sites-dynamiques/lavi-perchik-fSqYwKWzwhk-unsplash.jpg "Source : https://unsplash.com/photos/fSqYwKWzwhk par Lavi Perchik")
+![Écran d’ordinateur affichant du code PHP](../../assets/images/2022-11-30-arretez-de-faire-des-sites-dynamiques/lavi-perchik-fSqYwKWzwhk-unsplash.jpg "Illustration de [Lavi Perchik](https://unsplash.com/photos/fSqYwKWzwhk)")
 
 Néanmoins, une fois passé cette phase de découverte d’un outil qui semble magique on découvre les coûts cachés : la maintenance (montée de version), la complexité de personnalisation des templates, les
 montées de version, les failles de sécurités, pour finalement terminer avec la perte de la
 base de données et de tout leurs contenus rédigés avec amour...
+
+<!-- break -->
 
 Et toute cette énergie dépensée pour quoi ? Pour des contenus statiques, rédigés le plus souvent en une fois et rarement modifiés par la suite.
 
