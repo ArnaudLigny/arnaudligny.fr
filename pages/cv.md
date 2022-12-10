@@ -24,7 +24,7 @@ published: true
 ---
 ## Expérience
 
-### Consultant fonctionnel & technique senior
+### Consultant fonctionnel & technique senior, expert e-commerce
 
 #### [Clever Age](https://www.clever-age.com) – *depuis 2022*
 
@@ -41,7 +41,7 @@ published: true
 👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
 👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
 
-### Business Analyst
+### Business Analyst e-commerce
 
 #### [Antadis](https://www.antadis.com) – *2022 - 6 mois*
 
