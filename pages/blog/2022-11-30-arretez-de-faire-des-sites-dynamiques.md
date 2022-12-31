@@ -1,8 +1,12 @@
 ---
 title: Arrêtez de faire des sites dynamiques
-date: 2022-11-30
-draft: true
+#date: 2022-11-30
+date: 2022-12-23
+canonical:
+  url: https://www.24joursdeweb.fr/2022/arretez-de-faire-des-sites-dynamiques/
+  title: "24 jours de web"
 ---
+> Article rédigé à l'occasion des [24 jours de web](https://www.24joursdeweb.fr/2022/arretez-de-faire-des-sites-dynamiques/).
 
 La plupart des personnes souhaitant créer un site Web vont se tourner d’embler vers un CMS (« Content Management System » ou « Outil de gestion de contenu » en français).
 
