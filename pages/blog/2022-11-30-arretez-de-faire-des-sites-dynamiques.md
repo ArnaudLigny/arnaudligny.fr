@@ -3,7 +3,7 @@ title: Arrêtez de faire des sites dynamiques
 #date: 2022-11-30
 date: 2022-12-23
 tags: SSG
-image: ../../assets/images/2022-11-30-arretez-de-faire-des-sites-dynamiques/what-is-a-static-site.png
+image: /images/2022-11-30-arretez-de-faire-des-sites-dynamiques/what-is-a-static-site.png
 image_header: false
 canonical:
   url: https://www.24joursdeweb.fr/2022/arretez-de-faire-des-sites-dynamiques/
