@@ -9,7 +9,7 @@ Si vous l'aviez manqué, vous pouvez visionner ci-dessous une vidéo de [Thellie
 [Commerce composable et MACH, la transformation et l’accélération de PROMOD](https://youtu.be/X7hWDOiPXy4 "Commerce composable et MACH, la transformation et l’accélération de PROMOD")
 
 Si je fait référence à ce use case c'est parce que j'ai eu l'opportunité d'être partie prenante sur ce projet (au sein de l'équipe [Valtech](https://www.valtech.com)) en tant qu'expert e-commerce à la fois fonctionnel et technique, sur la partie portée par [commercetools](https://commercetools.com).
-
+<!-- break -->
 Mon rôle aura été multiple, à savoir :
 
 - La compréhension, l'analyse et la traduction du besoin client (discovery)
