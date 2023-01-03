@@ -1,5 +1,6 @@
 ---
 title: Arrêtez de faire des sites dynamiques
+description: "Plaidoyer pour inviter les créateurs de sites web à considérer la création d'un site statique plutôt que dynamique."
 #date: 2022-11-30
 date: 2022-12-23
 tags: SSG
