@@ -1,5 +1,6 @@
 ---
 title: "Commerce composable : la transformation de Promod"
+description: "Use case Promod, commerce composable avec commercetools, lors de l'événement Connect Lille 2022."
 date: 2022-12-29
 image: https://i3.ytimg.com/vi/X7hWDOiPXy4/maxresdefault.jpg
 image_header: false
