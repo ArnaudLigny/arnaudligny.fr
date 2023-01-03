@@ -2,6 +2,7 @@
 title: "Commerce composable : la transformation de Promod"
 date: 2022-12-29
 image: https://i3.ytimg.com/vi/X7hWDOiPXy4/maxresdefault.jpg
+tags: e-commerce
 ---
 
 Si vous l'aviez manqué, vous pouvez visionner ci-dessous une vidéo de [Thelliez Claire](https://fr.linkedin.com/in/thelliez-claire-0737828) partageant son expérience du parcours de [Promod](https://www.promod.fr) vers le commerce composable.
