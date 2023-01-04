@@ -10,6 +10,8 @@ canonical:
   url: https://www.24joursdeweb.fr/2022/arretez-de-faire-des-sites-dynamiques/
   title: "24 jours de web"
 typora-copy-images-to: ../../assets/images/${filename}
+_display:
+  reader: ['https://latribu.dev']
 ---
 > Article rédigé à l'occasion des [24 jours de web 2022](https://www.24joursdeweb.fr/2022/arretez-de-faire-des-sites-dynamiques/).
 
