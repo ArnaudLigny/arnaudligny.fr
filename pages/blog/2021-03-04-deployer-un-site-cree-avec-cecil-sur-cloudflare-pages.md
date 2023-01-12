@@ -1,6 +1,7 @@
 ---
 title: Déployer un site créé avec Cecil sur Cloudflare Pages
 date: 2021-03-04
+updated: 2023-01-12
 tags:
   - Cecil
   - Hébergement
@@ -70,7 +71,7 @@ Sélectionnez le nouveau dépôt GitHub que vous avez créé précédemment puis
 
 | Nom de la variable | Valeur |
 | ------------------ | ------ |
-| `PHP_VERSION`      | `7.2`  |
+| `PHP_VERSION`      | `7.4`  |
 
 ### Déploiement
 
