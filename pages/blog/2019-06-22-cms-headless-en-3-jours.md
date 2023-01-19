@@ -7,8 +7,8 @@ tags:
   - CMS
 image: /images/cms-headless-en-3-jours/netlify-cms-blog-featured-image.png
 typora-root-url: ../../static
+published: true
 ---
-
 > *Article original : [Implementing a CMS in 3 Days](https://www.dwolla.com/updates/implementing-netlify-cms/) de Shea Daniels*
 
 Imaginons que vous soyez en train de créer la prochaine grande startup ou d'organiser un super évènement — la première question que tout le monde va vous poser est : « C'est quoi le site web ? ».

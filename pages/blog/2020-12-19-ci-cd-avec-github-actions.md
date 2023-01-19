@@ -6,7 +6,6 @@ tags:
 #image: 
 image_header: false
 typora-root-url: ../../static
-draft: true
+published: false
 ---
-
 J'avais testé GitHub Actions en 2019, et à l'époque je n'avais pas été convaincu par l'approche retenu par GitHub : une interface graphique pour créer les jobs et l’utilisation du format HLV...

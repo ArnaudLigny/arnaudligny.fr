@@ -5,6 +5,7 @@ tags:
   - E-commerce
   - Magento
 path: blog/magento-ca-prend-forme
+published: true
 ---
 Oui [Magento](/tags/magento/) prend forme ! Pourquoi ? Parcequ'un (nouveau) guide complet orienté design à été publié par l'équipe de Varien. Ce guide est nettement plus complet et précis que ce qui avait été rendu disponible jusqu'à maintenant.
 

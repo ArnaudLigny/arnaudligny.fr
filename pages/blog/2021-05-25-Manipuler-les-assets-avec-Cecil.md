@@ -6,8 +6,8 @@ tags: [Cecil, Asset]
 image: /images/2021-05-25-manipuler-les-assets-avec-cecil/share.png
 image_header: false
 typora-root-url: ../../static
+published: true
 ---
-
 Dans cet article j’explique comment [Cecil](https://cecil.app), [mon générateur de site statique](/blog/cecil-mon-generateur-de-site-statique/), permet de manipuler des assets, sans dépendances à des outils tiers.
 
 ```twig

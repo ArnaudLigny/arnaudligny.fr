@@ -4,6 +4,7 @@ date: 04-09-2007
 tags:
   - Magento
 path: blog/magento-installation-de-la-beta-0-6
+published: true
 ---
 Après l'annonce de la [sortie de Magento béta 0.6](https://arnaudligny.fr/blog/magento-une-premiere-beta-telechargeable/), je me suis décidé à tenter l'installation de [Magento Commerce](http://www.magentocommerce.com/) : je ne vous cacherai pas que ma première tentative n'a pas été couronnée de succès.
 <!-- excerpt -->

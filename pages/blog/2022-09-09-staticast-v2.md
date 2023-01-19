@@ -8,6 +8,7 @@ image: /images/2022-09-09-staticast-v2/staticast-preview.png
 image_header: false
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
+published: true
 ---
 Pendant le confinement j’avais entrepris la création d’[une solution simple pour diffuser son podcast](/blog/2020-08-09-diffuser-son-podcast.md).
 

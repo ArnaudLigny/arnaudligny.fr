@@ -8,9 +8,8 @@ tags:
 image: /images/confluence/confluence_rgb_blue_stacked.png
 image_header: false
 typora-root-url: ../../static
-draft: true
+published: false
 ---
-
 J’ai découvert [Confluence](https://www.atlassian.com/fr/software/confluence) (et plus globalement la suite [Atlassian](https://www.atlassian.com), dont [Jira](https://www.atlassian.com/fr/software/jira)) lorsque j’ai commencé à travailler chez [Adfab](https://adfab.fr).
 
 À l’époque mon premier contact a été difficile : pas de réel onboarding organisationnel au sein de l’entreprise, pas de base de connaissances interne, et un template de projet peu engageant.  

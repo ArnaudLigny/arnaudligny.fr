@@ -7,12 +7,12 @@ tags:
   - SSG
   - Cecil
   - GitHub
-draft: false
 image_header: false
 updated: 2021-10-21
 typora-root-url: ../../static
 _display:
   reader: ['https://latribu.dev']
+published: true
 ---
 [GitHub](https://github.com) fourni l’outillage nécessaire pour générer un site statique et pour l’héberger – gratuitement – grâce à [GitHub Pages](https://pages.github.com/) et [GitHub Actions](https://github.com/features/actions).
 

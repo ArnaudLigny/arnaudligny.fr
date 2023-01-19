@@ -7,9 +7,8 @@ tags: [Podcast, SSG, Cecil]
 image_header: false
 typora-root-url: "../../assets"
 typora-copy-images-to: ../../assets/images/${filename}
-draft: true
+published: false
 ---
-
 Depuis quelques années le [podcasting](/tags/podcast)[^podcasting] prend de plus en plus d’ampleur, certainement parce que le format séduit aussi bien les créateurs que les auditeurs : pour les uns il est très plaisant de s’exprimer de vive voix, d’échanger avec un ou plusieurs interlocuteurs, et pour les autres il s’écoute comme une émission de radio avec la liberté du « on demand »[^on-demand].
 
 <!-- break -->

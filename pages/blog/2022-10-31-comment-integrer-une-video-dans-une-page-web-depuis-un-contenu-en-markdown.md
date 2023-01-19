@@ -5,8 +5,8 @@ tags: [Réflexion, Markdown, Cecil]
 #image: 
 image_header: false
 typora-copy-images-to: ../../assets/images/${filename}
+published: true
 ---
-
 Réflexion du week-end : comment intégrer *simplement* une vidéo dans une page Web (statique, générée) depuis un contenu rédigé en Markdown ?
 
 Après avoir tourné le truc dans tout "les sens", j'ai finalement opté pour le lien *embedded*.

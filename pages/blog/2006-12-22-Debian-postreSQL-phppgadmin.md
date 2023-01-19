@@ -3,8 +3,8 @@ title: "Debian + postreSQL + phppgadmin"
 date: 2006-12-22
 tags:
   - Développement
+published: true
 ---
-
 Depuis quelques temps, je fais pas mal "joujou" avec [ma Dedibox](https://web.archive.org/web/20070425184223/http://www.narno.com/blog?id=43) et je personnalise ma Debian selon mes besoin et mes envies.
 Ainsi, la semaine dernière, j'ai installé [phppgadmin](http://www.phppgadmin.org/) (équivalent de [phpMyAdmin](https://web.archive.org/web/20070425184223/http://www.phpmyadmin.net/), mais pour [PostgreSQL](http://www.postgresql.org/)) pour interagir plus facilement avec PostgreSQL.
 
