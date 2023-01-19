@@ -45,7 +45,7 @@ Mais alors, quelle serait l’alternative ?
 
 Depuis une dizaine d’année les outils de création de sites statiques, tels que [Jekyll](https://jekyllrb.com) ou [Hugo](https://gohugo.io), ne cessent de prendre de l'ampleur, et sont utilisés par de nombreux acteurs du Web : Google, Netflix, Mailchimp, Mapbox, etc.
 
-![Schéma illustrant le principe d'un site web statique](../../assets/images/2022-11-30-arretez-de-faire-des-sites-dynamiques/what-is-a-static-site.png "Schéma illustrant le principe d'un site web statique, par [teleport](https://teleporthq.io)")
+![Schéma illustrant le principe d'un site web statique](/images/what-is-a-static-site.png "Schéma illustrant le principe d'un site web statique, par [teleport](https://teleporthq.io)")
 
 Cette manière de « générer » un site Web permet aux différents intervenants de se concentrer sur ce qui est réellement important, à savoir :
 
