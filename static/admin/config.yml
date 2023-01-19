@@ -3,8 +3,8 @@ backend:
   repo: ArnaudLigny/arnaudligny.fr
   branch: master
   squash_merges: true
-publish_mode: editorial_workflow
-media_folder: "static/images"
+#publish_mode: editorial_workflow
+media_folder: "static/assets"
 public_folder: "/images"
 site_url: https://arnaudligny.fr
 display_url: https://arnaudligny.fr
@@ -19,7 +19,7 @@ collections:
     label: "Billets"
     label_singular: "Billet"
     description: >
-      Billets de la section Blog.
+      Billets de blog.
     folder: "pages/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -31,18 +31,21 @@ collections:
       - {label: "Texte", name: "body", widget: markdown}
       - {label: "Tags", name: "tags", widget: list, required: false}
       - {label: "Brouillon", name: "draft", widget: boolean, default: true, required: true}
-    summary: "{{title}} – {{date}}"
+    summary: "{{title}} {{date}}"
     sortable_fields: ['title', 'date']
     view_filters:
-      - label: Brouillons
-        field: draft
+      - label: Publié
+        field: published
         pattern: true
-      - label: '2020'
+      - label: Non publié
+        field: published
+        pattern: false
+    view_groups:
+      - label: Année
         field: date
-        pattern: '2020'
-      - label: '2021'
-        field: date
-        pattern: '2021'
+        pattern: \d{4}
+      - label: Statut
+        field: published
   - name: "projets"
     label: "Projets"
     label_singular: "Projet"
