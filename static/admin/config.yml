@@ -4,7 +4,7 @@ backend:
   branch: master
   squash_merges: true
 #publish_mode: editorial_workflow
-media_folder: "static/assets"
+media_folder: "assets/images"
 public_folder: "/images"
 site_url: https://arnaudligny.fr
 display_url: https://arnaudligny.fr
