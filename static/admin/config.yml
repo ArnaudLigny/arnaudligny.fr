@@ -45,7 +45,7 @@ collections:
       - label: Année
         field: date
         pattern: \d{4}
-      - label: Statut
+      - label: Publié
         field: published
   - name: "projets"
     label: "Projets"
@@ -61,7 +61,7 @@ collections:
       - {label: "Position", name: "weight", widget: number}
       - {label: "Redirectiion", name: "redirect", widget: string}
       - {label: "Texte", name: "body", widget: markdown}
-      - {label: "Publié", name: "published", widget: boolean, default: false, required: true}
+      - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
   - name: "talks"
     label: "Talks"
     label_singular: "Talk"
@@ -76,7 +76,7 @@ collections:
       - {label: "Événement", name: "event", widget: string}
       - {label: "Image", name: "image", widget: image, required: false}
       - {label: "Texte", name: "body", widget: markdown}
-      - {label: "Publié", name: "published", widget: boolean, default: false, required: true}
+      - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
   - name: "pages"
     label: "Pages"
     label_singular: "Page"
@@ -93,7 +93,7 @@ collections:
           - {label: "Layout", name: "layout", widget: "string", default: "index"}
           - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
           - {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
-          - {label: "Publié", name: "published", widget: boolean, default: false, required: true}
+          - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
       - name: "cv"
         label: "CV"
         file: "pages/cv.md"
@@ -106,7 +106,7 @@ collections:
           - {label: "Layout", name: "layout", widget: "string", default: "cv"}
           - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
           - {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
-          - {label: "Publié", name: "published", widget: boolean, default: false, required: true}
+          - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
       - name: "a-propos"
         label: "À propos"
         file: "pages/a-propos.md"
@@ -117,4 +117,4 @@ collections:
           - {label: "Texte", name: "body", widget: markdown}
           - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
           - {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
-          - {label: "Publié", name: "published", widget: boolean, default: false, required: true}
+          - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
