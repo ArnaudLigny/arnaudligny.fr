@@ -5,7 +5,7 @@ description: "Plaidoyer pour inviter les créateurs de sites web à considérer 
 date: 2022-12-23
 tags: SSG
 #image: /images/2022-11-30-arretez-de-faire-des-sites-dynamiques/what-is-a-static-site.png
-image: /images/blog/what-is-a-static-site.png
+image: /images/what-is-a-static-site.png
 image_header: false
 canonical:
   url: https://www.24joursdeweb.fr/2022/arretez-de-faire-des-sites-dynamiques/
@@ -22,7 +22,7 @@ La plupart des personnes souhaitant créer un site Web vont se tourner d’emble
 
 En effet, utiliser un CMS est facile et relativement rapide (pour peu qu’on passe la barrière initiale de l’installation, pas toujours à la portée du ou de la première venu(e)) : après avoir choisi un joli thème, trouvé un nom pour son site, quelques clics suffisent pour publier une première page.
 
-![Écran d’ordinateur affichant du code PHP (WordPress)](../../assets/images/blog/lavi-perchik-fSqYwKWzwhk-unsplash.jpg "Illustration de [Lavi Perchik](https://unsplash.com/photos/fSqYwKWzwhk)")
+![Écran d’ordinateur affichant du code PHP (WordPress)](../../assets/images/lavi-perchik-fSqYwKWzwhk-unsplash.jpg "Illustration de [Lavi Perchik](https://unsplash.com/photos/fSqYwKWzwhk)")
 
 Néanmoins, une fois passé cette phase de découverte d’un outil qui semble magique on découvre les coûts cachés (maintenance, complexité de personnalisation des templates, failles de sécurités, etc. pour finalement terminer avec la perte de la base de données et de tout ses contenus rédigés avec amour…
 
@@ -32,7 +32,7 @@ Néanmoins, une fois passé cette phase de découverte d’un outil qui semble m
 
 Depuis l’avènement des langages de programmation web côté serveur (je pense notamment à ASP 3 et PHP 4 au début des années 2000), la majorité des sites sont devenus « dynamiques » : les contenus sont stockés dans une base de données (BDD), un script charge ces données – à la demande – et les affiche dans la Web consultée par l’internaute.
 
-![Schéma illustrant le principe d'une page web dynamique](../../assets/images/blog/what-is-a-dynamic-site.png "Schéma illustrant le principe d'une page web dynamique, par [teleport](https://teleporthq.io)")
+![Schéma illustrant le principe d'une page web dynamique](../../assets/images/what-is-a-dynamic-site.png "Schéma illustrant le principe d'une page web dynamique, par [teleport](https://teleporthq.io)")
 
 De fait, la consultation de chaque page d’un site nécessite l’exécution de tâches par le serveur afin d’afficher le résultat dans le navigateur.
 
@@ -46,7 +46,7 @@ Mais alors, quelle serait l’alternative ?
 
 Depuis une dizaine d’année les outils de création de sites statiques, tels que [Jekyll](https://jekyllrb.com) ou [Hugo](https://gohugo.io), ne cessent de prendre de l'ampleur, et sont utilisés par de nombreux acteurs du Web : Google, Netflix, Mailchimp, Mapbox, etc.
 
-![Schéma illustrant le principe d'un site web statique](../../assets/images/blog/what-is-a-static-site.png "Schéma illustrant le principe d'un site web statique, par [teleport](https://teleporthq.io)")
+![Schéma illustrant le principe d'un site web statique](../../assets/images/what-is-a-static-site.png "Schéma illustrant le principe d'un site web statique, par [teleport](https://teleporthq.io)")
 
 Cette manière de « générer » un site Web permet aux différents intervenants de se concentrer sur ce qui est réellement important, à savoir :
 
