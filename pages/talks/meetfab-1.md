@@ -8,8 +8,8 @@ alias:
   - /talks/le-statique-c-est-fantastique
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
+published: true
 ---
-
 En 2017 j'ai réalisé une présentation lors du 1er meetup organisé par [Adfab](https://adfab.fr), sur le thème de la **JAMStack**.
 
 <!--break-->
