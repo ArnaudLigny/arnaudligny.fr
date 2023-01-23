@@ -27,13 +27,19 @@ collections:
     i18n: true
     fields:
       - {label: "Titre", name: "title", widget: string}
-      - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+      #- {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+      - {label: "Date", name: "date", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
       - {label: "Image", name: "image", widget: image, required: false}
       - {label: "Texte", name: "body", widget: markdown}
       - {label: "Tags", name: "tags", widget: list, required: false}
       - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
     summary: "{{title}} {{date}}"
-    sortable_fields: ['title', 'date']
+    #sortable_fields: ['title', 'date']
+    sortable_fields:
+      fields: ['title', 'date']
+      default:
+        field: date
+        direction: Descending
     view_filters:
       - label: Publié
         field: published
@@ -57,7 +63,8 @@ collections:
     preview_path: "projets/{{title}}"
     fields:
       - {label: "Titre", name: "title", widget: string}
-      - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+      #- {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+      - {label: "Date", name: "date", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
       - {label: "Texte", name: "body", widget: markdown}
       - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
   - name: "talks"
@@ -70,7 +77,8 @@ collections:
     preview_path: "talks/{{slug}}"
     fields:
       - {label: "Titre", name: "title", widget: string}
-      - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+      #- {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+      - {label: "Date", name: "date", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
       - {label: "Image", name: "image", widget: image, required: false}
       - {label: "Texte", name: "body", widget: markdown}
       - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
@@ -86,10 +94,12 @@ collections:
         preview_path: ""
         delete: false
         fields:
-          - {label: "Texte", name: "body", widget: markdown}
+          #- {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+          - {label: "Date", name: "date", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
+          #- {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
+          - {label: "Updated", name: "updated", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
           - {label: "Layout", name: "layout", widget: "string", default: "index"}
-          - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
-          - {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
+          - {label: "Texte", name: "body", widget: markdown}
           - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
       - name: "cv"
         label: "CV"
@@ -98,11 +108,13 @@ collections:
         delete: false
         fields:
           - {label: "Titre", name: "title", widget: "string", default: "Consultant technique senior"}
+          #- {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+          - {label: "Date", name: "date", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
+          #- {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
+          - {label: "Updated", name: "updated", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
+          - {label: "Layout", name: "layout", widget: "string", default: "cv"}
           - {label: "Intro", name: "intro", widget: markdown}
           - {label: "Texte", name: "body", widget: markdown}
-          - {label: "Layout", name: "layout", widget: "string", default: "cv"}
-          - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
-          - {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
           - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
       - name: "a-propos"
         label: "À propos"
@@ -111,7 +123,9 @@ collections:
         delete: false
         fields:
           - {label: "Titre", name: "title", widget: "string", default: "À propos"}
+          #- {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+          - {label: "Date", name: "date", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
+          #- {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
+          - {label: "Updated", name: "updated", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
           - {label: "Texte", name: "body", widget: markdown}
-          - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
-          - {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
           - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
