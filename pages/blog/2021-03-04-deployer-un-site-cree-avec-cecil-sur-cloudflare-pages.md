@@ -1,14 +1,15 @@
 ---
 title: Déployer un site créé avec Cecil sur Cloudflare Pages
 date: 2021-03-04
+updated: 2023-01-12
 tags:
   - Cecil
   - Hébergement
 image: /images/2021-03-04-deployer-un-site-cree-avec-cecil-sur-cloudflare-pages/twitter-shared-link-18.png
 image_header: false
 typora-root-url: ../../static
+published: true
 ---
-
 [Cecil](https://cecil.app/) est un outil en ligne de commande permettant de générer un site statique en combinant des templates [Twig](https://twig.symfony.com) et des contenus formatés en [Markdown](https://daringfireball.net/projects/markdown/).
 
 Dans ce guide vous allez créer un nouveau site avec Cecil et le déployer en utilisant [Cloudflare Pages](https://pages.cloudflare.com).
@@ -70,7 +71,7 @@ Sélectionnez le nouveau dépôt GitHub que vous avez créé précédemment puis
 
 | Nom de la variable | Valeur |
 | ------------------ | ------ |
-| `PHP_VERSION`      | `7.2`  |
+| `PHP_VERSION`      | `7.4`  |
 
 ### Déploiement
 

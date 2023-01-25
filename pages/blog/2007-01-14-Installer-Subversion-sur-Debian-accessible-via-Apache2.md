@@ -3,8 +3,8 @@ title: "Installer Subversion sur Debian, accessible via Apache2"
 date: 2007-01-14
 tags:
   - Développement
+published: true
 ---
-
 Je m'étais promis d'installer [SVN](http://subversion.tigris.org) sur mon serveur afin de me simplifier la vie de développeur et c'est enfin fait !
 
 Finalement l'opération à été nettement plus simple que ce que j'avais imaginé, même si c'est toujours les petites touches finales qui sont pénibles... bref, je vais vous expliquer ici comment installer un serveur subversion, créer un dépôt (également appelé référentiel ou *repository*), le rendre accessible par le Web (via [Apache2](http://httpd.apache.org/docs/2.0/)) et appliquer des règles d'accès.

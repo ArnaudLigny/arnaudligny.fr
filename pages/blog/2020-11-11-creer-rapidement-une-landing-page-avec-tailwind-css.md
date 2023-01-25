@@ -9,8 +9,8 @@ image_header: false
 typora-root-url: ../../static
 _display:
   reader: ['https://latribu.dev']
+published: true
 ---
-
 Ça faisait plusieurs semaines que j'avais envie de créer des mini-sites (*landing pages*) dédiés à quelques-unes de mes solutions open-source.
 
 Néanmoins, je n'avais pas envie de (re)partir pour des dizaines heures d'intégration HTML/CSS (c'est un métier exigeant qui demande une forte expérience) pour essayer d’obtenir un résultat pro et respectant un maximum de standards.

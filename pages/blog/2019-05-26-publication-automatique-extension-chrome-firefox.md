@@ -9,8 +9,8 @@ image_header: false
 typora-root-url: ../../static
 _display:
   reader: ['https://latribu.dev']
+published: true
 ---
-
 **Mis à jour le 06/09/21**
 
 Dans cet article je fais référence à **Travis CI** en tant qu’outil de CI/CD, mais depuis j’ai migré vers [**GitHub Actions**](https://arnaudligny.fr/blog/generer-et-heberger-un-site-statique-avec-github/#qu-est-ce-que-github-actions).  

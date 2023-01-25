@@ -1,6 +1,6 @@
 ---
 title: Projets
-description: "Quelques projets créés par Arnaud Ligny."
+description: Quelques projets réalisés par Arnaud Ligny.
 pagination:
   enabled: false
 ---

@@ -51,7 +51,7 @@ published: true
 Clients : Grapl, Caviar Petrossian, Pharmaciens Giphar, Groupe Chavigny…  
 Outils & solutions : Magento, Proximis, OroCommerce.
 
-### Freelance – Consultant technique web, expert e-commerce
+### Freelance – Consultant fonctionnelle & technique web, expert e-commerce
 
 #### [studio cecillie](https://studio.cecillie.fr) – *2020-2022*
 

@@ -3,8 +3,8 @@ title: "Modules payant pour Magento  attention aux arnaques !"
 date: 2009-06-23
 tags:
  - Magento
+published: true
 ---
-
 J'y vais peut être un peu fort avec le titre mais bon, mieux vaut prévenir que guérir !
 
 Dans le cadre de mon travail de création de boutiques e-commerce Magento, j'ai eu l'occasion d'acheter quelques modules Magento. L'idée est simple : pourquoi passer du temps à réaliser un module qui existe déjà alors qu'on peut l'acquérir à un coût raisonnable (entre 20 $ et 200 $ en moyenne) ? A priori c'est une économie de temps de réalisation et donc d'argent pour nos clients.

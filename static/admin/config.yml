@@ -3,8 +3,8 @@ backend:
   repo: ArnaudLigny/arnaudligny.fr
   branch: master
   squash_merges: true
-publish_mode: editorial_workflow
-media_folder: "static/images"
+#publish_mode: editorial_workflow
+media_folder: "assets/images"
 public_folder: "/images"
 site_url: https://arnaudligny.fr
 display_url: https://arnaudligny.fr
@@ -19,30 +19,39 @@ collections:
     label: "Billets"
     label_singular: "Billet"
     description: >
-      Billets de la section Blog.
+      Billets de blog.
     folder: "pages/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     preview_path: "blog/{{title}}"
     fields:
       - {label: "Titre", name: "title", widget: string}
-      - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+      #- {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+      - {label: "Date", name: "date", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
       - {label: "Image", name: "image", widget: image, required: false}
       - {label: "Texte", name: "body", widget: markdown}
       - {label: "Tags", name: "tags", widget: list, required: false}
-      - {label: "Brouillon", name: "draft", widget: boolean, default: true, required: true}
-    summary: "{{title}} – {{date}}"
-    sortable_fields: ['title', 'date']
+      - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
+    summary: "{{title}} {{date}}"
+    #sortable_fields: ['title', 'date']
+    sortable_fields:
+      fields: ['title', 'date']
+      default:
+        field: date
+        direction: Descending
     view_filters:
-      - label: Brouillons
-        field: draft
+      - label: Publié
+        field: published
         pattern: true
-      - label: '2020'
+      - label: Non publié
+        field: published
+        pattern: false
+    view_groups:
+      - label: Année
         field: date
-        pattern: '2020'
-      - label: '2021'
-        field: date
-        pattern: '2021'
+        pattern: \d{4}
+      - label: Publié
+        field: published
   - name: "projets"
     label: "Projets"
     label_singular: "Projet"
@@ -53,11 +62,10 @@ collections:
     preview_path: "projets/{{title}}"
     fields:
       - {label: "Titre", name: "title", widget: string}
-      - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
-      - {label: "Position", name: "weight", widget: number}
-      - {label: "Redirectiion", name: "redirect", widget: string}
+      #- {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+      - {label: "Date", name: "date", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
       - {label: "Texte", name: "body", widget: markdown}
-      - {label: "Brouillon", name: "draft", widget: boolean, default: true, required: true}
+      - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
   - name: "talks"
     label: "Talks"
     label_singular: "Talk"
@@ -68,11 +76,11 @@ collections:
     preview_path: "talks/{{slug}}"
     fields:
       - {label: "Titre", name: "title", widget: string}
-      - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
-      - {label: "Événement", name: "event", widget: string}
+      #- {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+      - {label: "Date", name: "date", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
       - {label: "Image", name: "image", widget: image, required: false}
       - {label: "Texte", name: "body", widget: markdown}
-      - {label: "Brouillon", name: "draft", widget: boolean, default: true, required: true}
+      - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
   - name: "pages"
     label: "Pages"
     label_singular: "Page"
@@ -85,11 +93,13 @@ collections:
         preview_path: ""
         delete: false
         fields:
-          - {label: "Texte", name: "body", widget: markdown}
+          #- {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+          - {label: "Date", name: "date", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
+          #- {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
+          - {label: "Updated", name: "updated", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
           - {label: "Layout", name: "layout", widget: "string", default: "index"}
-          - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
-          - {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
-          - {label: "Brouillon", name: "draft", widget: boolean, default: true, required: true}
+          - {label: "Texte", name: "body", widget: markdown}
+          - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
       - name: "cv"
         label: "CV"
         file: "pages/cv.md"
@@ -97,12 +107,14 @@ collections:
         delete: false
         fields:
           - {label: "Titre", name: "title", widget: "string", default: "Consultant technique senior"}
+          #- {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+          - {label: "Date", name: "date", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
+          #- {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
+          - {label: "Updated", name: "updated", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
+          - {label: "Layout", name: "layout", widget: "string", default: "cv"}
           - {label: "Intro", name: "intro", widget: markdown}
           - {label: "Texte", name: "body", widget: markdown}
-          - {label: "Layout", name: "layout", widget: "string", default: "cv"}
-          - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
-          - {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
-          - {label: "Brouillon", name: "draft", widget: boolean, default: true, required: true}
+          - {label: "Publié", name: "published", widget: boolean, default: true, required: true}
       - name: "a-propos"
         label: "À propos"
         file: "pages/a-propos.md"
@@ -110,7 +122,9 @@ collections:
         delete: false
         fields:
           - {label: "Titre", name: "title", widget: "string", default: "À propos"}
+          #- {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
+          - {label: "Date", name: "date", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
+          #- {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
+          - {label: "Updated", name: "updated", widget: datetime, date_format: "dd/MM/yyyy", time_format: false, format: "yyyy-MM-dd"}
           - {label: "Texte", name: "body", widget: markdown}
-          - {label: "Brouillon", name: "draft", widget: boolean, default: true, required: true}
-          - {label: "Date", name: "date", widget: date, format: "YYYY/MM/DD"}
-          - {label: "Updated", name: "updated", widget: date, format: "YYYY/MM/DD"}
+          - {label: "Publié", name: "published", widget: boolean, default: true, required: true}

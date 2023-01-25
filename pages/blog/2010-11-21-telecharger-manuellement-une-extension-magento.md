@@ -4,8 +4,8 @@ date: 2010-11-21
 tags:
   - Magento
 image: /images/download-magento-extension.png
+published: true
 ---
-
 > **Mise à jour du 05/01/2013 :** J'ai créé un outil pour ça (in english) : [~~mage.narno.com~~](http://mage.narno.com).
 
 Je partage ici une petite astuce pour télécharger simplement une extension Magento, sans utiliser le downloader.

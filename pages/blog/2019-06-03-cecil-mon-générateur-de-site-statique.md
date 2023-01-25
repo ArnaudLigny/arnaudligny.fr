@@ -8,8 +8,8 @@ tags:
 image: /images/cecil-card.png
 image_header: false
 typora-root-url: ../../static
+published: true
 ---
-
 [Cecil](https://cecil.app/) est un projet personnel, se présentant sous la forme d'une application en [ligne de commande](https://fr.m.wikipedia.org/wiki/Interface_en_ligne_de_commande) facilitant la création d’un site web, statique.
 
 Le concept (et la première version) a émergé en 2013 et depuis je n’ai cessé de faire évoluer l’application, de l'enrichir, tout en essayant de respecter le principe suivant :

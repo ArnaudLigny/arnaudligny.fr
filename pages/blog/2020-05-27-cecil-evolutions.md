@@ -6,6 +6,7 @@ tags:
   - SSG
 image: /images/cecil-card.png
 image_header: false
+published: true
 ---
 Depuis mon [billet de présentation de Cecil](/blog/cecil-mon-generateur-de-site-statique/), datant de juin 2019, j’ai apporté de nombreuses améliorations à [mon générateur de site statique](https://cecil.app/).
 

@@ -4,8 +4,8 @@ date: 2010-11-10
 tags:
   - Magento
 image: /images/xml.png
+published: true
 ---
-
 Pour rappel, Magento s'appuie sur des fichiers [XML pour configurer ses modules](http://www.magentocommerce.com/wiki/5_-_modules_and_development/reference/module_config.xml) (entre autre). Le soucis avec l’utilisation qu'en fait Magento, c'est qu'il ne vérifie pas l'intégrité des fichiers XML.
 
 En effet, si vous faite une faute de frappe, qu'une balise est mal fermé ou tout être erreur dans la structure XML de votre fichier de configuration, Magento levera une erreur (ou plutôt un warning) du type :

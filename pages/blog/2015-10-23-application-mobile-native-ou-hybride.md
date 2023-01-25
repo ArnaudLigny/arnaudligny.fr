@@ -5,8 +5,8 @@ tags:
   - Application mobile
   - React Native
 image: /images/native-VS-hybrid.gif
+published: true
 ---
-
 Aujourd'hui, il n'est plus question de faire l'impasse quant à sa présence sur mobile lorsque l'on propose un service en ligne, que ce soit à destination du grand public ou de ses collaborateurs.
 
 La "vraie" question qui se pose – encore – aujourd'hui est de savoir si cette application doit être développée dans le système natif de chacun des OS du marché à savoir iOS, Android ou encore Windows Mobile, ou si elle doit être hybride ?

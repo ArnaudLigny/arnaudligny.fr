@@ -6,6 +6,7 @@ tags:
   - Magento
 path: blog/magento-un-projet-e-commerce-a-suivre
 typora-root-url: ../../static
+published: true
 ---
 J'ai récemment fais quelques recherches sur les solutions e-commerce actuellement en cours de développement, dans le domaine de l'open-source.
 

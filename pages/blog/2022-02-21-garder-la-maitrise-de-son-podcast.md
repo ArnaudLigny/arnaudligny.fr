@@ -7,12 +7,10 @@ tags: [Podcast, SSG, Cecil]
 image_header: false
 typora-root-url: "../../assets"
 typora-copy-images-to: ../../assets/images/${filename}
-draft: true
+published: false
 ---
 
 Depuis quelques années le podcasting[^podcasting] prend de plus en plus d’ampleur, certainement parce que le format séduit aussi bien les créateurs que les auditeurs : pour les uns il est très plaisant de s’exprimer de vive voix, d’échanger avec un ou plusieurs interlocuteurs, et pour les autres il s’écoute comme une émission de radio avec la liberté du « on demand »[^on-demand].
-
-<!-- break -->
 
 [toc]
 
@@ -74,26 +72,15 @@ Par exemple :
 </rss>
 ```
 
-
-
 ### Construire le flux RSS
 
-- Apple : https://help.apple.com/itc/podcasts_connect/#/itcb54353390
-- Google : https://support.google.com/podcast-publishers/answer/9889544
-- Autre : https://www.feedforall.com/macdocs/html/podcastdocumentation.html
+- Apple : <https://help.apple.com/itc/podcasts_connect/#/itcb54353390>
+- Google : <https://support.google.com/podcast-publishers/answer/9889544>
+- Autre : <https://www.feedforall.com/macdocs/html/podcastdocumentation.html>
 
 ### Valider le flux RSS
 
-- Podbase : https://podba.se/validate/
-
-
-
-
-
-
-
-
-
+- Podbase : <https://podba.se/validate/>
 
 [^podcasting]: Système de diffusion d'émissions audio ou vidéo sur Internet, qui permet de les télécharger et de les transférer sur un appareil numérique (selon [Le Robert](https://www.lerobert.com/google-dictionnaire-fr?param=podcasting)).
 

@@ -9,8 +9,8 @@ image: /images/demo-cv-cecil.png
 image_header: false
 typora-root-url: ../../assets
 alias: blog/demo-cv-cecil
+published: true
 ---
-
 En ce moment je suis en train de refaire mon CV, qui sera bien entendu consultable sur [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6714975589477990401/), mais également sur [mon site web](https://arnaudligny.fr/cv/).
 
 Pour ce faire j'utilise mon générateur de site statique, [Cecil](https://cecil.app), et j'ai pensé que ce serait un cas pratique intéressant à partager.  

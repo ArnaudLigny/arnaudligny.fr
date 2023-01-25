@@ -4,8 +4,8 @@ date: 2010-11-03
 tags:
   - Magento
 image: /images/poedit.png
+published: true
 ---
-
 Nativement, Magento permet la gestion des traductions de l'application via des fichiers CSV. Il s'agit d'une solution simple, robuste et facile à utiliser pour le néophyte.
 
 En pratique, chaque ligne d'un fichier de langue Magento (par exemple `Mage_Core.csv`) forme une paire : contenu d'origine puis contenu traduit, séparés par une virgule.  

@@ -3,8 +3,8 @@ title: "Debian + Apache2 + SSL"
 date: 2006-12-21
 tags:
   - Développement
+published: true
 ---
-
 Hier soir j'ai installé et configuré (rapidement) [OpenSSL](http://www.openssl.org) sur mon [Apache2](http://httpd.apache.org). Aucun objectif clair pour le moment, je pense que c'était plutôt histoire de tester le bignou et de préparer l'arrivée de [TRAC](http://trac.edgewall.org).
 
 Bref, avec Apache2 la mise en place d'un accès sécurisé m'a semblé plutôt simple. Reste qu'en l'état, ça ne me sert pas à grand chose : il faudrait encore configurer un vhost associé afin de protéger tel ou tel contenu (comme un accès à des *repositories* SVN) et d'y associer les certificats qui vont bien.

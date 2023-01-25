@@ -1,9 +1,11 @@
 ---
 title: À propos
+description: À propos du site Web arnaudligny.fr.
 date: 2019-02-27
-updated: 2022-10-09
+updated: 2023-01-05
+published: true
 ---
-Ce site web a pour objectif de présenter mon [profil professionnel](/cv/) et de partager des [billets de blog](/blog/) en relation avec mes domaines de compétence ou d'intérêt.
+Ce site web a pour objectif de présenter mon [profil professionnel](/cv/) et de partager des [billets de blog](/blog/) en relation avec mes domaines de compétence ou d’intérêt.
 
 ## Licence
 
@@ -14,5 +16,4 @@ Les contenus du site sont mis à disposition sous licence [Creative Commons BY-S
 * les contenus et les templates sont versionnés sur [GitHub](https://github.com/ArnaudLigny/arnaudligny.fr/)
 * le site web est créé avec [Cecil](https://cecil.app) ([mon générateur de site statique](/blog/cecil-mon-generateur-de-site-statique/))
 * le thème est un portage de [Garth](https://github.com/daviddarnes/garth) (créé par [@daviddarnes](https://github.com/daviddarnes))
-* le déploiement continu et l'hébergement sont assurés par [Netlify](https://netlify.com)
-
+* le déploiement continu et l’hébergement sont assurés par [Netlify](https://netlify.com)

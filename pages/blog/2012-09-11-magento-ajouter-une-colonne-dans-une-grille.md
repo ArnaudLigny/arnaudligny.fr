@@ -4,8 +4,8 @@ date: 2012-09-11
 tags:
   - Magento
 image: /images/magento-admin-products.jpg
+published: true
 ---
-
 Il existe un certain nombre de méthodes pour ajouter une ou plusieurs colonnes dans une grille du back-office [Magento](/tags/magento), mais il y en a une qui est moins intrusive que les autres : C'est celle-ci que je souhaites partager.
 
 En effet, je vois régulièrement passer des billets, sur des blogs spécialisés en développement Magento, qui proposent des solutions souvent très "bourrines", tel qu'un bon gros overlap des familles : On copie le code d'origine et on ajoute sa ou ses colonnes !

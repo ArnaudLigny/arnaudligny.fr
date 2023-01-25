@@ -8,6 +8,7 @@ tags:
 image: /images/cecil-mobile-preview.png
 image_header: false
 typora-root-url: ../../assets
+published: true
 ---
 Ci-dessous une [courte vidéo](/videos/cecil-apercu-sur-mobile.mp4){embed=false}
  expliquant comment tester un site généré par [Cecil](https://cecil.app) à partir d’un téléphone mobile, sur le même réseau Wi-Fi :

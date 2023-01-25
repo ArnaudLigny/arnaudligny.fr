@@ -5,10 +5,9 @@ updated: 2022-02-21
 tags: [Podcast, SSG, Cecil]
 image: /images/staticast/staticast-preview.png
 image_header: false
-published: true
 typora-root-url: ../../static
+published: true
 ---
-
 Pendant le confinement j’ai écouté de nombreux podcasts divers et variés (depuis mon ordinateur ou mon smartphone) et j’ai constaté que la plupart des podcasteurs diffusaient leurs épisodes d’une des 2 manières suivantes :
 
 1. auto-hébergé via un site [WordPress](https://fr.wordpress.com) équipé d’un plugin dédié (tel que [PowerPress](https://wordpress.org/plugins/powerpress/) ou encore [Seriously Simple Podcast](https://wordpress.org/plugins/seriously-simple-podcasting/)) : type de contenu dédié + lecteur « amélioré »;
