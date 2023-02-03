@@ -3,9 +3,8 @@ title: "Diffuser son podcast simplement"
 date: 2020-08-10
 updated: 2022-02-21
 tags: [Podcast, SSG, Cecil]
-image: /images/staticast/staticast-preview.png
+image: /images/2020-08-09-diffuser-son-podcast/staticast-preview.png
 image_header: false
-typora-root-url: ../../static
 published: true
 ---
 Pendant le confinement j’ai écouté de nombreux podcasts divers et variés (depuis mon ordinateur ou mon smartphone) et j’ai constaté que la plupart des podcasteurs diffusaient leurs épisodes d’une des 2 manières suivantes :
@@ -29,8 +28,8 @@ Cette solution aurait pour objectifs :
 
 Étant moi-même intéressé par les solutions « [statiques](https://arnaudligny.fr/talks/le-statique-c-est-fantastique/) », en particulier via [Cecil](https://cecil.app) ([mon générateur de site statique](https://arnaudligny.fr/blog/cecil-mon-generateur-de-site-statique/)) j’ai entrepris de créer un template « clef en main » permettant de créer rapidement un site web de diffusion de podcast : [***Staticast***](https://github.com/Cecilapp/staticast#readme).
 
-<video autoplay loop muted poster="/images/staticast/staticast-demo-poster.png">
-  <source src="/images/staticast/staticast-demo.mp4" type="video/mp4">
+<video autoplay loop muted poster="/videos/2020-08-09-diffuser-son-podcast/staticast-demo-poster.png">
+  <source src="/videos/2020-08-09-diffuser-son-podcast/staticast-demo.mp4" type="video/mp4">
 </video>
 
 
