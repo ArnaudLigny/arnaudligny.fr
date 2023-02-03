@@ -4,7 +4,7 @@ date: 2019-05-26
 updated: 2021-09-06
 tags:
   - Développement
-image: /images/store_developer_dashboard.png
+image: /images/2019-05-26-publication-automatique-extension-chrome-firefox/store_developer_dashboard.png
 image_header: false
 typora-root-url: ../../static
 _display:
@@ -33,7 +33,7 @@ Aussi, j’ai cherché à automatiser ces étapes via l’[**intégration contin
 
 ## Intégration continue {#integration-continue}
 
-[Tableau de bord de Travis CI](/images/f-notifier-travis-ci.png)
+[Tableau de bord de Travis CI](/images/2019-05-26-publication-automatique-extension-chrome-firefox/f-notifier-travis-ci.png)
 
 Le principe de l’intégration continue vise à automatiser l‘exécution des [*tests*](#tests) et le [*build*](#build) du programme (ici l’extension programmée en JavaScript) à chaque livraison de code (sur le dépôt) afin de s’assurer de la qualité du code et de prévenir les risques de régression.
 
@@ -67,7 +67,7 @@ La publication est la dernière étape de l’intégration continue, exécutée 
 
 ### *Release* GitHub {#release-github}
 
-[![GitHub release](/images/f-notifier-github-release.png)](https://github.com/ArnaudLigny/F-Notifier/releases)
+[![GitHub release](/images/2019-05-26-publication-automatique-extension-chrome-firefox/f-notifier-github-release.png)](https://github.com/ArnaudLigny/F-Notifier/releases)
 
 Comme indiqué plus haut Travis CI offre une option simple, via la [configuration](https://docs.travis-ci.com/user/deployment/releases/), de déploiement du résultat du *build* en tant qu’*asset* attaché à une nouvelle release.
 
@@ -101,7 +101,7 @@ Cet outil est très efficace même si le paramétrage reste pénible la premièr
 
 **Exemple de configuration Travis CI :**
 
-![Travis CI Environment Variables](/images/f-notifier-env-variables.png)
+![Travis CI Environment Variables](/images/2019-05-26-publication-automatique-extension-chrome-firefox/f-notifier-env-variables.png)
 
 ### *Firefox Add-ons* {#firefox-add-ons}
 

@@ -5,7 +5,7 @@ tags:
   - E-commerce
   - Magento
 path: blog/magento-un-projet-e-commerce-a-suivre
-typora-root-url: ../../static
+image: /images/2007-08-25-magento-un-projet-e-commerce-a-suivre/magento-homepage.jpg
 published: true
 ---
 J'ai récemment fais quelques recherches sur les solutions e-commerce actuellement en cours de développement, dans le domaine de l'open-source.
@@ -20,6 +20,6 @@ Une version alpha devrait sortir courant août et s’annonce vraiment puissante
 
 J’ai hâte tester la bête !
 
-![Front-end Magento](/images/magento-homepage.jpg)
+![Front-end Magento](/images/2007-08-25-magento-un-projet-e-commerce-a-suivre/magento-homepage.jpg)
 
-![Back-end Magento](/images/magento-admin-products.jpg)
+![Back-end Magento](/images/2007-08-25-magento-un-projet-e-commerce-a-suivre/magento-admin-products.jpg)
