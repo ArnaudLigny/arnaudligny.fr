@@ -5,7 +5,7 @@ tags:
   - Cecil
   - Jamstack
   - SSG
-image: /images/demo-cv-cecil.png
+image: /images/2020-09-24-je-refais-mon-cv-avec-cecil/demo-cv-cecil.png
 image_header: false
 typora-root-url: ../../assets
 alias: blog/demo-cv-cecil
@@ -18,4 +18,4 @@ Aussi j'ai réalisé une vidéo rapide (< 10 min) cet après-midi, que je partag
 
 Bon visionnage ! 😊
 
-[Cliquez pour voir la vidéo](/videos/demo-cv-cecil.mp4 "Je refais mon CV avec Cecil"){controls preload=none poster=/videos/demo-cv-cecil-poster.png}
+[Cliquez pour voir la vidéo](/videos/2020-09-24-je-refais-mon-cv-avec-cecil/demo-cv-cecil.mp4 "Je refais mon CV avec Cecil"){controls preload=none poster=/videos/2020-09-24-je-refais-mon-cv-avec-cecil/demo-cv-cecil-poster.png}

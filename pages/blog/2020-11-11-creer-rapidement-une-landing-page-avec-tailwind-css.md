@@ -6,7 +6,6 @@ tags:
   - CSS
 image: /images/tailwind-css.png
 image_header: false
-typora-root-url: ../../static
 _display:
   reader: ['https://latribu.dev']
 published: true
@@ -17,7 +16,7 @@ Néanmoins, je n'avais pas envie de (re)partir pour des dizaines heures d'intég
 
 Aussi je me suis dit que ce serait l’occasion idéale de tester [Tailwind CSS](https://tailwindcss.com/), un framework CSS « utility-first » conçu pour créer rapidement une page web sur mesure.
 
-[Vidéo d’illustration](/videos/tailwind-css-demo.mp4){preload=none autoplay loop muted poster=/videos/tailwind-css-demo-poster.png}
+[Vidéo d’illustration](/videos/2020-11-11-creer-rapidement-une-landing-page-avec-tailwind-css/tailwind-css-demo.mp4){preload=none autoplay loop muted poster=/videos/2020-11-11-creer-rapidement-une-landing-page-avec-tailwind-css/tailwind-css-demo-poster.png}
 
 <!-- break -->
 

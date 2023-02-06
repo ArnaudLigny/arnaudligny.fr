@@ -5,7 +5,7 @@ tags:
   - Web
   - Qualité
   - Méthodologie
-image: /images/confluence/confluence_rgb_blue_stacked.png
+image: /images/2020-09-17-template-confluence/confluence_rgb_blue_stacked.png
 image_header: false
 typora-root-url: ../../static
 published: false
@@ -19,6 +19,6 @@ Aussi, j’ai d’abord pesté sur cette « usine à gaz », qui me semblait êt
 
 > Note : les captures d’illustration ont été effectuées en juin 2018. Elles sont un peu datées, mais reste valides.
 
-![Confluence](/images/confluence/capture-1.png)
+![Confluence](/images/2020-09-17-template-confluence/capture-1.png)
 
 _WIP_
