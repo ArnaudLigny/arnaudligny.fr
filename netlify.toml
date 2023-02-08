@@ -14,6 +14,13 @@
 [context.deploy-preview.environment]
   CECIL_ENV = "preview"
 
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+  [plugins.inputs]
+    output_path = "lighthouse.html"
+  [plugins.inputs.settings]
+    locale = "fr"
+
 #[[plugins]]
 #  package = "/plugins/netlify-plugin-cecil-cache"
 #  package = "netlify-plugin-cecil-cache"
@@ -25,10 +32,3 @@
   command = "cecil serve --open"
   targetPort = 8000
   framework = "#custom"
-
-[[plugins]]
-  package = "@netlify/plugin-lighthouse"
-  [plugins.inputs]
-    output_path = "lighthouse.html"
-  [plugins.inputs.settings]
-    locale = "fr"
