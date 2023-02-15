@@ -19,7 +19,7 @@ php cecil.phar serve --config=config/dev.yml
 
 ## Preview online
 
-<https://preview--arnaudligny.netlify.app>
+[preview.arnaudligny.fr](https://preview.arnaudligny.fr)
 
 ## HTML code analysis
 

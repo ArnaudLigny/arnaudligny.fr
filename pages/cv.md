@@ -5,7 +5,7 @@ metatags:
     only: true
 description: Consultant fonctionnel et technique, expert e-commerce.
 date: 2020-09-22
-updated: 2022-09-16
+updated: 2023-02-15
 intro: |
   ## Consultant fonctionnel et technique, expert e-commerce
 
@@ -16,7 +16,7 @@ intro: |
   *[IoT]: Internet of Things
 menu: main
 layout: cv
-image: photo-cv.jpg
+image: photo-cv-2.jpg
 output: [html, json]
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
@@ -31,6 +31,8 @@ published: true
 ![Logo Clever Age](/logos/clever-age.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 👉 Consultant fonctionnelle et technique, expert e-commerce.  
+Clients : Groupe Casino, Elis…
+Outils & solutions : VTEX, Akeneo, commercetools.
 
 ### Co-animateur
 
