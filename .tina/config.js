@@ -8,7 +8,7 @@ export default defineConfig({
   clientId: null, // Get this from tina.io
   token: null, // Get this from tina.io
   build: {
-    outputFolder: "admin",
+    outputFolder: "tina",
     publicFolder: "static",
   },
   media: {
