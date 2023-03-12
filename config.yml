@@ -130,13 +130,14 @@ netlify:
       force: true
 body:
   images:
-    caption:
-      enabled: true
+    class: markdown
     resize:
       enabled: true
     responsive:
       enabled: true
     webp:
+      enabled: true
+    caption:
       enabled: true
   highlight:
     enabled: true
@@ -151,8 +152,9 @@ assets:
       enabled: true
     responsive:
       enabled: true
+      widths: [768, 1024]
       sizes:
         default: 100vw
-        test: "(max-width: 800px) 768px, 1024px"
+        markdown: "(max-width: 800px) 768px, 1024px"
     webp:
       enabled: true
