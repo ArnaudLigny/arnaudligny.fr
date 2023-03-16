@@ -53,6 +53,15 @@ Exemple :
 [Aperçu sur mobile](apercu-sur-mobile.mp4){embed controls poster=apercu-sur-mobile.png}
 ```
 
+```html
+<video controls
+  src="/cecil-apercu-sur-mobile.mp4"
+  poster="/cecil-apercu-sur-mobile-poster.png"
+>
+  Aperçu sur mobile
+</video>
+```
+
 [Aperçu sur mobile](videos/2019-12-24-cecil-apercu-sur-mobile/cecil-apercu-sur-mobile.mp4){embed controls muted poster=videos/2019-12-24-cecil-apercu-sur-mobile/cecil-apercu-sur-mobile-poster.png}
 
 Voilà, j'avais simplement envie de partager cette réflexion 😊
