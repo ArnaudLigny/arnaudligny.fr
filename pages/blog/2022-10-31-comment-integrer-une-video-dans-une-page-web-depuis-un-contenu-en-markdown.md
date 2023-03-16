@@ -46,7 +46,7 @@ L’idée ici est simplement d’enrichir la syntaxe Markdown « link » avec un
 [Une vidéo intéressante](video-interessante.mp4){embed}
 ```
 
-De là mon convertisseur va chercher si le lien pointe vers un fichier et si ce fichier a une extension vidéo "embeddable" (`mp4` dans l’exemple).  
+De là mon convertisseur va chercher si le lien pointe vers un fichier et si ce fichier a une extension vidéo « embeddable » (`mp4` dans l’exemple).  
 Si oui, il va retourner un élément `<video>` plutôt que `<a>`.
 
 Exemple :
