@@ -15,9 +15,7 @@ Après avoir tourné le truc dans tout « les sens », j'ai finalement opté pou
 En effet, au début, pour intégrer un fichier vidéo j’ajoutais simplement la balise HTML `<video>` dans mon texte rédigé en Markdown : c’est relativement simple quand on sait comment doit être structuré l’élément HTML.  
 Néanmoins, ça n’est pas forcément évident pour un contributeur lambda.
 
-Aussi, j’avais d’abord imaginé « tricher » avec le format d’image Markdown en jouant sur l’attribut « alt » pour indiquer qu’il s’agissait d’une vidéo et non d’une image.
-
-Par exemple :
+Aussi, j’avais d’abord imaginé « tricher » avec le format d’image Markdown en jouant sur l’attribut « alt » pour indiquer qu’il s’agissait d’une vidéo et non d’une image :
 
 ```markdown
 ![video](video.mp4)
