@@ -20,7 +20,7 @@ La plupart des personnes souhaitant créer un site Web vont se tourner d’emble
 
 En effet, utiliser un CMS est facile et relativement rapide (pour peu qu’on passe la barrière initiale de l’installation, pas toujours à la portée du ou de la première venu(e)) : après avoir choisi un joli thème, trouvé un nom pour son site, quelques clics suffisent pour publier une première page.
 
-![Écran d’ordinateur affichant du code PHP (WordPress)](../../assets/images/2022-11-30-arretez-de-faire-des-sites-dynamiques/lavi-perchik-fSqYwKWzwhk-unsplash.jpg "Illustration de [Lavi Perchik](https://unsplash.com/photos/fSqYwKWzwhk)")
+![Écran d’ordinateur affichant du code PHP (WordPress)](../../assets/images/2022-11-30-arretez-de-faire-des-sites-dynamiques/lavi-perchik-fSqYwKWzwhk-unsplash.jpg "Illustration de [Lavi Perchik](https://unsplash.com/photos/fSqYwKWzwhk)"){loading=eager}
 
 Néanmoins, une fois passé cette phase de découverte d’un outil qui semble magique on découvre les coûts cachés (maintenance, complexité de personnalisation des templates, failles de sécurités, etc. pour finalement terminer avec la perte de la base de données et de tout ses contenus rédigés avec amour…
 
