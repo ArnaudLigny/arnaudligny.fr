@@ -85,8 +85,8 @@
     {%~ include 'partials/cloudflareinsights.js.twig' ~%}
     {#- syntax highlight ~#}
     {%- set highlight_version = '11.6.0' ~%}
-    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/a11y-light.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/a11y-dark.min.css') }}" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/a11y-light.min.css') }}" async>
+    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/a11y-dark.min.css') }}" media="(prefers-color-scheme: dark)" async>
     {#- anchor.js ~#}
     {%- set anchor_version = '4.3.1' ~%}
     <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ anchor_version ~ '/anchor.min.js') }}"></script>
