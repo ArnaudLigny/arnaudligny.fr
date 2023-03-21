@@ -158,5 +158,8 @@ assets:
         markdown: "(max-width: 800px) 768px, 1024px"
     webp:
       enabled: true
-postprocess:
-  enabled: true
+    cdn:
+      enabled: true
+      url: 'https://res.cloudinary.com/%account%/image/fetch/c_limit,w_%width%,q_%quality%,f_%format%,d_%default%/%image_url%'
+      account: 'aligny'
+      default: 'cecil-logo.png'
