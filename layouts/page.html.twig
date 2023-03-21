@@ -89,7 +89,7 @@
     <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/a11y-dark.min.css') }}" media="(prefers-color-scheme: dark)" async>
     {#- anchor.js ~#}
     {%- set anchor_version = '4.3.1' ~%}
-    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ anchor_version ~ '/anchor.min.js') }}"></script>
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ anchor_version ~ '/anchor.min.js') }}" async></script>
     <script>{% apply minify_js %}
       var selector = 'body > main > div > article > h2, body > main > div > article > h3';
       anchors.options = {
