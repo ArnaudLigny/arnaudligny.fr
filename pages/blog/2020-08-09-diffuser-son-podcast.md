@@ -1,7 +1,7 @@
 ---
 title: "Diffuser son podcast simplement"
 date: 2020-08-10
-updated: 2022-02-21
+updated: 2023-03-22
 tags: [Podcast, SSG, Cecil]
 image: /images/2020-08-09-diffuser-son-podcast/staticast-preview.png
 image_header: false
@@ -28,10 +28,7 @@ Cette solution aurait pour objectifs :
 
 Étant moi-même intéressé par les solutions « [statiques](https://arnaudligny.fr/talks/le-statique-c-est-fantastique/) », en particulier via [Cecil](https://cecil.app) ([mon générateur de site statique](https://arnaudligny.fr/blog/cecil-mon-generateur-de-site-statique/)) j’ai entrepris de créer un template « clef en main » permettant de créer rapidement un site web de diffusion de podcast : [***Staticast***](https://github.com/Cecilapp/staticast#readme).
 
-<video autoplay loop muted poster="/videos/2020-08-09-diffuser-son-podcast/staticast-demo-poster.png">
-  <source src="/videos/2020-08-09-diffuser-son-podcast/staticast-demo.mp4" type="video/mp4">
-</video>
-
+[Démo de Staticast](/videos/2020-08-09-diffuser-son-podcast/staticast-demo.mp4){embed controls poster=videos/2020-08-09-diffuser-son-podcast/staticast-demo-poster.png}
 
 → [Voir le site de démo](https://staticast.cecil.app)
 
