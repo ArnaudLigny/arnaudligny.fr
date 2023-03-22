@@ -89,24 +89,16 @@
     <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/a11y-dark.min.css') }}" media="(prefers-color-scheme: dark)" async>
     {#- anchor.js ~#}
     {%- set anchor_version = '4.3.1' ~%}
-    <script>{%- apply minify_js -%}
-      var script = document.createElement('script');
-      script.src = "{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ anchor_version ~ '/anchor.min.js') }}";
-      script.async = true;
-      document.getElementsByTagName('head')[0].appendChild(script);
-      script.onload = script.onreadystatechange = function() {
-        if (script.readyState || script.readyState === 'loaded' || script.readyState === 'complete') {
-          console.log('Anchor.js script loaded');
-          var selector = 'body > main > div > article > h2, body > main > div > article > h3';
-          anchors.options = {
-            placement: 'left',
-            visible: 'over',
-            icon: '#'
-          };
-          anchors.add(selector);
-        }
-      }
-    {%- endapply -%}</script>
+    <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ anchor_version ~ '/anchor.min.js') }}" async></script>
+    <script>{% apply minify_js %}
+      var selector = 'body > main > div > article > h2, body > main > div > article > h3';
+      anchors.options = {
+        placement: 'left',
+        visible: 'over',
+        icon: '#'
+      };
+      anchors.add(selector);
+    {% endapply %}</script>
     <div class="print print__footer">
       &copy; {{ site.copyright|default(site.title) }} — <a href="{{ url(page) }}">{{ url(page, {canonical: true}) }}</a>
     </div>
