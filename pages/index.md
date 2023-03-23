@@ -18,7 +18,7 @@ J’aime me définir comme un facilitateur : comprendre et aider mes clients à 
 ✓ Gestion de projet technique (méthodes agiles, QA, organisation)  
 ✓ Avant-vente : qualification, slides techniques / architecture et estimation de charge
 
-Passionné par la simplification, la scalabilité et la performance des sites web, j’aime travailler avec une approche [progressive et découplée](https://jamstatic.fr) et plus particulièrement la [Jamstack](https://jamstatic.fr/2019/02/07/c-est-quoi-la-jamstack/).  
+Passionné par la simplification, la scalabilité et la performance des sites web, j’aime travailler avec une approche [progressive et découplée](https://jamstatic.fr) et plus particulièrement la [Jamstack](https://jamstack.wtf/#what-is-jamstack).  
 J’ai également conçu et développé un générateur de site statique orienté contenu : [Cecil](https://cecil.app).
 
 [LinkedIn](https://fr.linkedin.com/in/arnaudligny/fr/) — <a href="https://github.com/ArnaudLigny" rel="me">GitHub</a> — [Twitter](https://twitter.com/ArnaudLigny) — <a href="mailto:arnaud@ligny.fr?subject=Prise de contact" title="Prise de contact par e-mail">Contact</a>

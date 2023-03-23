@@ -160,6 +160,8 @@ assets:
       enabled: true
     cdn:
       enabled: true
-      url: 'https://res.cloudinary.com/%account%/image/fetch/c_limit,w_%width%,q_%quality%,f_%format%,d_%default%/%image_url%'
+      #canonical: false
+      #remote: false
       account: 'aligny'
-      default: 'cecil-logo.png'
+      url: 'https://res.cloudinary.com/%account%/image/fetch/c_limit,w_%width%,q_%quality%,f_%format%,d_default/%image_url%'
+      #url: 'https://%account%.twic.pics/%image_url%?twic=v1/resize=%width%/quality=%quality%/output=%format%'
