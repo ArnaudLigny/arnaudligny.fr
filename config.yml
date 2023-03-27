@@ -152,10 +152,10 @@ assets:
       enabled: true
     responsive:
       enabled: true
-      widths: [768, 1024]
+      widths: [640, 768, 1024]
       sizes:
         default: 100vw
-        markdown: "(max-width: 800px) 768px, (max-width: 1600px) 1024px, 100vw"
+        markdown: "(max-width: 640px) 640px, (max-width: 800px) 768px, (max-width: 1600px) 1024px, 100vw"
     webp:
       enabled: true
     cdn:
