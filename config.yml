@@ -119,7 +119,7 @@ serviceworker:
     - logo-512.png
     - logo-512.webp
   notification:
-    enabled: false
+    enabled: true
 metatags:
   jsonld:
     enabled: true
