@@ -120,6 +120,7 @@ serviceworker:
     - logo-512.webp
   notification:
     enabled: true
+    message: "Site web mis à jour."
 metatags:
   jsonld:
     enabled: true
