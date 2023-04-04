@@ -21,3 +21,5 @@ assets:
       enabled: false
     webp:
       enabled: false
+    cdn:
+      enabled: false
