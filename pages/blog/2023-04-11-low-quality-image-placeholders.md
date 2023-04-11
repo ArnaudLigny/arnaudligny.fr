@@ -8,10 +8,18 @@ typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 published: false
 ---
-## Sans LQIP
+## Images chargées
 
-![LQIP-2-2](/images/2023-04-11-low-quality-image-placeholders/LQIP-2-2.png)
+![LQIP-images-loaded](/images/2023-04-11-low-quality-image-placeholders/LQIP-images-loaded.png)
 
-## Avec LQIP
+## Dimensions des images fixées
 
-![LQIP-1-2](/images/2023-04-11-low-quality-image-placeholders/LQIP-1-2.png)
+![LQIP-fixed-dimensions](/images/2023-04-11-low-quality-image-placeholders/LQIP-fixed-dimensions.png)
+
+## Couleur dominante en fond
+
+![LQIP-dominant-color](/images/2023-04-11-low-quality-image-placeholders/LQIP-dominant-color.png)
+
+## LQIP
+
+![LQIP-low-quality-images](/images/2023-04-11-low-quality-image-placeholders/LQIP-low-quality-images.png)
