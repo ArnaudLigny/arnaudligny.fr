@@ -166,3 +166,4 @@ assets:
       account: 'aligny'
       url: 'https://res.cloudinary.com/%account%/image/fetch/c_limit,w_%width%,q_%quality%,f_%format%,d_default/%image_url%'
       #url: 'https://%account%.twic.pics/%image_url%?twic=v1/resize=%width%/quality=%quality%/output=%format%'
+      #url: 'https://%account%.imgix.net/%image_url%?w=%width%&q=%quality%&fm=%format%'
