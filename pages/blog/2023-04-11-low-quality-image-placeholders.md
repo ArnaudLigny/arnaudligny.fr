@@ -3,6 +3,7 @@ title: "Low Quality Image Placeholders"
 description: "Comment améliorer l'expérience utilisateur lors du chargement des images ?"
 date: 2023-04-11
 tags: [SSG, performance]
+years: [2023]
 #image: /images/xxxx.png
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}

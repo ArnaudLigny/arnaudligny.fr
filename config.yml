@@ -9,6 +9,8 @@ keywords:
   - e-commerce
   - Magento
   - IoT
+taxonomies:
+  years: year
 language: fr
 languages:
   - code: fr
