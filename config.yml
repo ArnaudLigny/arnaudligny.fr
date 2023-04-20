@@ -65,6 +65,43 @@ source: https://github.com/ArnaudLigny/arnaudligny.fr/edit/master/content/
 comments: false
 editor: typora
 #
+pages:
+  default:
+    sitemap:
+      published: true
+    404:
+      published: true
+  virtual:
+    # short URL / redirects
+    - path: code
+      redirect: https://github.com/ArnaudLigny
+    - path: tw
+      redirect: https://twitter.com/ArnaudLigny
+    # old URL
+    - path: blog/work-in-progress
+      redirect: /
+    - path: blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento
+      redirect: blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/
+    - path: blog/t-l-charger-manuellement-une-extension-magento
+      redirect: blog/telecharger-manuellement-une-extension-magento/
+  body:
+    images:
+      class: markdown
+      resize:
+        enabled: true
+      responsive:
+        enabled: true
+      webp:
+        enabled: true
+      caption:
+        enabled: true
+    highlight:
+      enabled: true
+    links:
+      embed:
+        enabled: true
+        video:
+          ext: [mp4, webm]
 output:
   formats:
     - name: elasticlunr
@@ -80,24 +117,6 @@ output:
   pagetypeformats:
     homepage: ['html', 'atom', 'elasticlunr']
     section: ['html', 'atom', 'json', 'jsonfeed']
-defaultpages:
-  sitemap:
-    published: true
-  404:
-    published: true
-virtualpages:
-  # short URL / redirects
-  - path: code
-    redirect: https://github.com/ArnaudLigny
-  - path: tw
-    redirect: https://twitter.com/ArnaudLigny
-  # old URL
-  - path: blog/work-in-progress
-    redirect: /
-  - path: blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento
-    redirect: blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/
-  - path: blog/t-l-charger-manuellement-une-extension-magento
-    redirect: blog/telecharger-manuellement-une-extension-magento/
 static:
   exclude:
     - CV_ArnaudLigny-2014.pdf
@@ -152,21 +171,3 @@ netlify:
       to: https://arnaudligny.fr/:splat
       status: 301
       force: true
-body:
-  images:
-    class: markdown
-    resize:
-      enabled: true
-    responsive:
-      enabled: true
-    webp:
-      enabled: true
-    caption:
-      enabled: true
-  highlight:
-    enabled: true
-  links:
-    embed:
-      enabled: true
-      video:
-        ext: [mp4, webm]
