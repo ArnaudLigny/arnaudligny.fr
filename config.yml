@@ -10,6 +10,7 @@ keywords:
   - Magento
   - IoT
 taxonomies:
+  categories: disabled
   years: year
 language: fr
 languages:
