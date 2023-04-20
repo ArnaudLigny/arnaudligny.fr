@@ -98,8 +98,6 @@ virtualpages:
     redirect: blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/
   - path: blog/t-l-charger-manuellement-une-extension-magento
     redirect: blog/telecharger-manuellement-une-extension-magento/
-source: https://github.com/ArnaudLigny/arnaudligny.fr/edit/master/content/
-comments: false
 static:
   exclude:
     - CV_ArnaudLigny-2014.pdf
