@@ -2,6 +2,7 @@
 title: "De la refonte d'un site e-commerce monolithique"
 date: 2023-04-01
 tags: [Réflexion, E-commerce]
+years: [2023]
 published: true
 ---
 > Réflexion initialement publiée sur [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7047612632853340160/).

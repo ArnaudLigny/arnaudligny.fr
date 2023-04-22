@@ -9,6 +9,9 @@ keywords:
   - e-commerce
   - Magento
   - IoT
+taxonomies:
+  categories: disabled
+  years: year
 language: fr
 languages:
   - code: fr
@@ -49,22 +52,19 @@ social:
   linkedin:
     username: arnaudligny
     url: https://fr.linkedin.com/in/arnaudligny/fr/
+theme:
+  - garth
+  - pwa
+  - netlify
+  - netlify-cms
+logo: logo.png
+image: logo.png
+googleanalytics: UA-30599234-2
+cloudflareinsights: aa58d54d00e04d9e8f0fc44730cafff7
+source: https://github.com/ArnaudLigny/arnaudligny.fr/edit/master/content/
+comments: false
+editor: typora
 #
-output:
-  formats:
-    - name: elasticlunr
-      mediatype: 'application/json'
-      filename: 'elasticlunr'
-      extension: 'json'
-      exclude: ['redirect']
-    - name: jsonfeed
-      mediatype: 'application/json'
-      filename: 'feed'
-      extension: 'json'
-      exclude: ['redirect']
-  pagetypeformats:
-    homepage: ['html', 'atom', 'elasticlunr']
-    section: ['html', 'atom', 'json', 'jsonfeed']
 defaultpages:
   sitemap:
     published: true
@@ -83,24 +83,65 @@ virtualpages:
     redirect: blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/
   - path: blog/t-l-charger-manuellement-une-extension-magento
     redirect: blog/telecharger-manuellement-une-extension-magento/
-source: https://github.com/ArnaudLigny/arnaudligny.fr/edit/master/content/
-comments: false
+body:
+  images:
+    class: markdown
+    resize:
+      enabled: true
+    responsive:
+      enabled: true
+    webp:
+      enabled: true
+    caption:
+      enabled: true
+  highlight:
+    enabled: true
+  links:
+    embed:
+      enabled: true
+      video:
+        ext: [mp4, webm]
+output:
+  formats:
+    - name: elasticlunr
+      mediatype: 'application/json'
+      filename: 'elasticlunr'
+      extension: 'json'
+      exclude: ['redirect']
+    - name: jsonfeed
+      mediatype: 'application/json'
+      filename: 'feed'
+      extension: 'json'
+      exclude: ['redirect']
+  pagetypeformats:
+    homepage: ['html', 'atom', 'elasticlunr']
+    section: ['html', 'atom', 'json', 'jsonfeed']
 static:
   exclude:
     - CV_ArnaudLigny-2014.pdf
     - CV_ArnaudLigny-2015.pdf
     - _bck
     - gdpr-cookie-notice
-editor: typora
-theme:
-  - garth
-  - pwa
-  - netlify
-  - netlify-cms
-logo: logo.png
-image: logo.png
-googleanalytics: UA-30599234-2
-cloudflareinsights: aa58d54d00e04d9e8f0fc44730cafff7
+assets:
+  images:
+    optimize:
+      enabled: true
+    responsive:
+      enabled: true
+      widths: [640, 768, 1024]
+      sizes:
+        default: 100vw
+        markdown: "(max-width: 640px) 640px, (max-width: 800px) 768px, (max-width: 1600px) 1024px, 100vw"
+    webp:
+      enabled: true
+    cdn:
+      enabled: true
+      #canonical: false
+      #remote: false
+      account: 'aligny'
+      url: 'https://res.cloudinary.com/%account%/image/fetch/c_limit,w_%width%,q_%quality%,f_%format%,d_default/%image_url%'
+      #url: 'https://%account%.twic.pics/%image_url%?twic=v1/resize=%width%/quality=%quality%/output=%format%'
+      #url: 'https://%account%.imgix.net/%image_url%?w=%width%&q=%quality%&fm=%format%'
 manifest:
   background_color: '#F3F7FC'
   theme_color: '#CADCF2'
@@ -129,41 +170,3 @@ netlify:
       to: https://arnaudligny.fr/:splat
       status: 301
       force: true
-body:
-  images:
-    class: markdown
-    resize:
-      enabled: true
-    responsive:
-      enabled: true
-    webp:
-      enabled: true
-    caption:
-      enabled: true
-  highlight:
-    enabled: true
-  links:
-    embed:
-      enabled: true
-      video:
-        ext: [mp4, webm]
-assets:
-  images:
-    optimize:
-      enabled: true
-    responsive:
-      enabled: true
-      widths: [640, 768, 1024]
-      sizes:
-        default: 100vw
-        markdown: "(max-width: 640px) 640px, (max-width: 800px) 768px, (max-width: 1600px) 1024px, 100vw"
-    webp:
-      enabled: true
-    cdn:
-      enabled: true
-      #canonical: false
-      #remote: false
-      account: 'aligny'
-      url: 'https://res.cloudinary.com/%account%/image/fetch/c_limit,w_%width%,q_%quality%,f_%format%,d_default/%image_url%'
-      #url: 'https://%account%.twic.pics/%image_url%?twic=v1/resize=%width%/quality=%quality%/output=%format%'
-      #url: 'https://%account%.imgix.net/%image_url%?w=%width%&q=%quality%&fm=%format%'

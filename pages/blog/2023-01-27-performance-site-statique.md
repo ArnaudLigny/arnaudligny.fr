@@ -4,6 +4,7 @@ description: ""
 date: 2023-01-27
 updated: 2023-03-28
 tags: [SSG, performance]
+years: [2023]
 image: /images/core-web-vitals-beyonds.png
 image_header: false
 typora-root-url: ../../assets

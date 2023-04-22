@@ -5,6 +5,7 @@ date: 2022-12-29
 image: https://i3.ytimg.com/vi/X7hWDOiPXy4/maxresdefault.jpg
 image_header: false
 tags: E-commerce
+years: [2022]
 typora-copy-images-to: ../../assets/images/${filename}
 published: true
 ---
