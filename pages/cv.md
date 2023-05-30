@@ -31,8 +31,8 @@ published: true
 ![Logo Clever Age](/logos/clever-age.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 👉 Consultant fonctionnelle et technique, expert e-commerce.  
-Clients : Groupe Casino, Elis…  
-Outils & solutions : VTEX, Akeneo, commercetools.
+Clients : Elis, Groupe Casino, Edenred, Groupe Bic…  
+Outils & solutions : Akeneo, VTEX, commercetools.
 
 ### Co-animateur
 
