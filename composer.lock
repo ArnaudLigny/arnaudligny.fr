@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a01b90b19c99057bd9261e876c5d956",
+    "content-hash": "c5876b8fa98ed63e8b469189562a1e76",
     "packages": [
         {
             "name": "cecil/theme-garth",
-            "version": "1.8.1",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-garth.git",
-                "reference": "0e3ac8d84f2f19d7a975d7879f839050a7d16ac2"
+                "reference": "01b13d3a71769691d63114f84ad08ad2c48dd483"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-garth/zipball/0e3ac8d84f2f19d7a975d7879f839050a7d16ac2",
-                "reference": "0e3ac8d84f2f19d7a975d7879f839050a7d16ac2",
+                "url": "https://api.github.com/repos/Cecilapp/theme-garth/zipball/01b13d3a71769691d63114f84ad08ad2c48dd483",
+                "reference": "01b13d3a71769691d63114f84ad08ad2c48dd483",
                 "shasum": ""
             },
             "require": {
@@ -42,13 +42,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-garth/issues",
-                "source": "https://github.com/Cecilapp/theme-garth/tree/1.8.1"
+                "source": "https://github.com/Cecilapp/theme-garth/tree/1.9.0"
             },
             "funding": [
-                {
-                    "url": "https://www.paypal.me/narno",
-                    "type": "custom"
-                },
                 {
                     "url": "https://github.com/ArnaudLigny",
                     "type": "github"
@@ -58,7 +54,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-04-06T23:46:42+00:00"
+            "time": "2023-06-04T21:25:30+00:00"
         },
         {
             "name": "cecil/theme-installer",
