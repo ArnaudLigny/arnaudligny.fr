@@ -1,7 +1,7 @@
 ---
 title: "Optimisation des images avec Cecil"
 description: "Cecil : Optimisation automatique des images pour de meilleures performances."
-date: 2023-06-12
+date: 2023-06-11
 tags: [Cecil, performance]
 #image: /images/
 image_header: false
