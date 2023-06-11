@@ -1,13 +1,13 @@
 ---
 title: "Optimisation des images avec Cecil"
 description: "Cecil : Optimisation automatique des images pour de meilleures performances."
-date: 2023-06-08
+date: 2023-06-12
 tags: [Cecil, performance]
 #image: /images/
 image_header: false
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
-published: false
+published: true
 ---
 
 [Cecil](/tags/cecil), mon générateur de site statique, permet de manipuler des _assets_ tels que les images, les styles (au format CSS ou Sass), les scripts, etc.
