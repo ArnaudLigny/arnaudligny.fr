@@ -1,8 +1,8 @@
 ---
 title: "Optimisation des images avec Cecil"
-description: "Gestion et optimisation automatique des images avec Cecil."
+description: "Cecil : Optimisation automatique des images pour de meilleures performances."
 date: 2023-06-08
-tags: [Cecil]
+tags: [Cecil, performance]
 #image: /images/
 image_header: false
 typora-root-url: ../../assets
@@ -10,18 +10,18 @@ typora-copy-images-to: ../../assets/images/${filename}
 published: false
 ---
 
-[Cecil](/tags/cecil), mon générateur de site statique, permet de manipuler des assets dont les images habillant les templates et celles illustrant le contenu des pages.
+[Cecil](/tags/cecil), mon générateur de site statique, permet de manipuler des _assets_ tels que les images, les styles (au format CSS ou Sass), les scripts, etc.
 
-Ainsi, il existe deux approches pour gérer les fichiers image :
+Concernant les images il en existe de deux types :
 
-2. Soit en les déposant dans le dossier _assets_ : ils seront manipulables via la fonction [`asset()`](https://cecil.app/documentation/templates/#asset) au sein des templates
-2. Soit en les déposant dans le dossier _static_ : ils seront copiés tel quel dans le site généré, selon la même arborescence
+1. les images habillant les templates
+2. les images illustrant le contenu des pages
 
-Dans la suite de cet article je vais mettre l'accent sur les fonctionnalités permettant d'optimiser les images au sein d'une page de contenu.
+Dans la suite de cet article nous allons nous concentrer sur les images au sein des pages, et la manière sont elles sont automatiquement optimisées.
 
 <!-- break -->
 
-## Ajouter une image dans une page
+## Ajouter une image
 
 Le contenu des pages étant rédigé en [Markdown](https://cecil.app/documentation/content/#markdown), les [images](https://cecil.app/documentation/content/#images) sont contribuées via la syntaxe suivante :
 
@@ -81,8 +81,15 @@ Le résultat pourra être (selon les options de configuration de [`assets`](http
 - Une source alternative au format [WebP](https://developers.google.com/speed/webp) est générée (avec ses déclinaisons *responsives*)
 - Si un titre est ajouté, alors la balise `<image>` est entourée dans une balise `<figure>` afin d'y ajouter un `<figcaption>` contenant le texte correspondant (acceptant le format Markdown)
 
-## Gains
+## Performance
 
-- to do
-- L’ajout automatique des attributs `width` et `height` évite le [Cumulative Layout Shift (CLS)](https://web.dev/cls/)
+Grâce à ces optimisations, les gains de performance sont non négligeables :
+
+- Le temps de chargement des pages contenant des images est nettement plus rapide via :
+  1. la compression des fichiers
+  2. l’utilisation de la basile `loading="lazy"` permet de ne charger que les images « visibles » (au dessus de la ligne de flottaison)
+  3. l’utilisation de la basile `ecoding="async"` permet de continuer à charger le contenu d’une page sans attendre celui des images
+- Si le navigateur le supporte, une version au format [WebP](https://developers.google.com/speed/webp) est proposée
+- L’ajout automatique des attributs `width` et `height` évite le phénomène de [Cumulative Layout Shift (CLS)](https://web.dev/cls/)
+- L’image affichée est dans les dimensions les plus proches de celle du [viewport](https://developer.mozilla.org/docs/Glossary/Viewport) ([images adaptatives](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images))
 
