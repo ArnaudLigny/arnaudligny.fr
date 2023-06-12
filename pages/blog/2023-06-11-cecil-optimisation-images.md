@@ -9,7 +9,6 @@ typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 published: true
 ---
-
 [Cecil](/tags/cecil), mon [générateur de site statique](https://cecil.app/), permet de manipuler des ressources web (_assets_) tels que les images, les styles (CSS ou Sass), les scripts, etc.
 
 Si on se concentre sur les images, on peut considérer qu’il en existe de deux types selon l’usage :
@@ -19,7 +18,7 @@ Si on se concentre sur les images, on peut considérer qu’il en existe de deux
 
 Dans la suite de cet article je vais me concentrer sur les images contenues dans les pages, et comment elles sont optimisées par Cecil.
 
-![](/images/web-dev-fast-load-times.svg "Illustration de [Fast load times](https://web.dev/fast/)")
+![Illustration de Fast load times](/images/web-dev-fast-load-times.svg "Illustration de [Fast load times](https://web.dev/fast/)")
 
 <!-- break -->
 
@@ -32,9 +31,7 @@ Le contenu des pages étant rédigé en [Markdown](https://cecil.app/documentati
 ```
 
 :::note
-
 Remarque : Cecil va chercher l'image d'abord dans le dossier _assets_ puis, si elle ne s'y trouve pas, dans le dossier _static_.
-
 :::
 
 La balise HMTL générée sera de la forme :
@@ -42,6 +39,7 @@ La balise HMTL générée sera de la forme :
 ```html
 <img src="/image.jpg" alt="Description alternative">
 ```
+
 ## Optimisation automatique
 
 Cecil ne se contente pas de générer une balise image comme indiqué précédemment : celle-ci est enrichie et le fichier est optimisé.
@@ -85,8 +83,8 @@ Le résultat pourrait être (pour une image en 800x600 px et selon les options d
 - Les attributs `width` et `height` sont déterminés depuis les propriétés du fichier
 - L'attribut `loading="lazy"` est ajouté
 - L'attribut `decoding="async"` est ajouté
-- Les déclinaisons *responsives* sont générées (selon les [options de configuration](https://cecil.app/documentation/configuration/#assets))
-- Une source alternative au format [WebP](https://developers.google.com/speed/webp) est générée (avec ses déclinaisons *responsives*)
+- Les déclinaisons _responsives_ sont générées (selon les [options de configuration](https://cecil.app/documentation/configuration/#assets))
+- Une source alternative au format [WebP](https://developers.google.com/speed/webp) est générée (avec ses déclinaisons _responsives_)
 - Si un titre est ajouté, alors la balise `<image>` est encapsulée dans une balise `<figure>` afin d'y ajouter un `<figcaption>` contenant le texte correspondant (acceptant le format Markdown, pour y mettre un lien vers la source par exemple)
 
 ## Performance
@@ -97,7 +95,7 @@ Grâce à ces optimisations, les gains de performance sont non négligeables :
   1. la compression du fichier d’origine
   2. l’ajout d'une alternative dans un format « moderne » (WebP)
   3. l’utilisation de la basile `loading="lazy"` qui permet de ne charger que les images « visibles » (au dessus de la ligne de flottaison)
-  4. l’utilisation de la basile `ecoding="async"` qui permet de continuer à charger le contenu d’une page sans attendre celui des images
+  4. l’utilisation de la basile `decoding="async"` qui permet de continuer à charger le contenu d’une page sans attendre celui des images
 - L’ajout des dimensions évite le phénomène de [Cumulative Layout Shift (CLS)](https://web.dev/cls/)
 - L’image est proposée au navigateur dans les dimensions les plus proches de celle du [viewport](https://developer.mozilla.org/docs/Glossary/Viewport) ([images adaptatives](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images))
 
