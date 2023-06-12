@@ -19,7 +19,7 @@ Si on se concentre sur les images, on peut considérer qu’il en existe de deux
 
 Dans la suite de cet article je vais me concentrer sur les images contenues dans les pages, et comment elles sont optimisées par Cecil.
 
-![](images/web-dev-fast-load-times.svg "Illustration de [Fast load times](https://web.dev/fast/)")
+![](/images/web-dev-fast-load-times.svg "Illustration de [Fast load times](https://web.dev/fast/)")
 
 <!-- break -->
 
