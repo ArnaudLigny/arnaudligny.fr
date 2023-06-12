@@ -1,6 +1,6 @@
 ---
 title: "Optimisation des images avec Cecil"
-description: "Cecil : Optimisation automatique des images pour de meilleures performances."
+description: "Comment Cecil optimise automatiquement les images dans les contenus écrit en Markdown et pour quels gains de performance."
 date: 2023-06-11
 tags: [Cecil, performance]
 image: images/web-dev-fast-load-times.svg
@@ -19,7 +19,7 @@ Si on se concentre sur les images, on peut considérer qu’il en existe de deux
 
 Dans la suite de cet article je vais me concentrer sur les images contenues dans les pages, et comment elles sont optimisées par Cecil.
 
-![](images/web-dev-fast-load-times.svg "Illustration de [Fast load times](https://web.dev/fast/)")
+![](/images/web-dev-fast-load-times.svg "Illustration de [Fast load times](https://web.dev/fast/)")
 
 <!-- break -->
 
@@ -52,7 +52,7 @@ Par exemple, pour :
 ![Description alternative](/image.jpg "Titre de l'image")
 ```
 
-Le résultat pourra être (selon les options de configuration de [`assets`](https://cecil.app/documentation/configuration/#assets) et [`body`](https://cecil.app/documentation/configuration/#body)) :
+Le résultat pourrait être (pour une image en 800x600 px et selon les options de configuration de [`assets`](https://cecil.app/documentation/configuration/#assets) et [`body`](https://cecil.app/documentation/configuration/#body)) :
 
 ```html
 <figure>
@@ -60,10 +60,10 @@ Le résultat pourra être (selon les options de configuration de [`assets`](http
     <source type="image/webp"
       srcset="/assets/thumbnails/320/image.webp 320w,
               /assets/thumbnails/640/image.webp 640w,
-              /assets/thumbnails/800/image.webp 800w"
+              /image.webp 800w"
       sizes="100vw"
     >
-    <img src="/assets/thumbnails/800/image.jpg"
+    <img src="/image.jpg"
       alt="Description alternative"
       width="800"
       height="600"
@@ -71,7 +71,7 @@ Le résultat pourra être (selon les options de configuration de [`assets`](http
       decoding="async"
       srcset="/assets/thumbnails/320/image.jpg 320w,
               /assets/thumbnails/640/image.jpg 640w,
-              /assets/thumbnails/800/image.jpg 800w"
+              /image.jpg 800w"
       sizes="100vw"
     >
   </picture>
@@ -101,6 +101,6 @@ Grâce à ces optimisations, les gains de performance sont non négligeables :
 - L’ajout des dimensions évite le phénomène de [Cumulative Layout Shift (CLS)](https://web.dev/cls/)
 - L’image est proposée au navigateur dans les dimensions les plus proches de celle du [viewport](https://developer.mozilla.org/docs/Glossary/Viewport) ([images adaptatives](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images))
 
-Comme vous pouvez le constater, l’objectif est de simplifier le travail des personnes en charge de la rédaction des contenus, qui n’ont pas à se soucier d’optimiser manuellement (ou via des outils externes) leurs images d’illustration.
+Comme vous pouvez le constater, l’objectif est de simplifier le travail des personnes en charge de la rédaction des contenus, qui n’ont ainsi pas à se soucier d’optimiser manuellement (ou via des outils externes) leurs images d’illustration.
 
 Si vous souhaitez en savoir plus, je vous invite à consulter la [documentation des images de Cecil](https://cecil.app/documentation/content/#images).
