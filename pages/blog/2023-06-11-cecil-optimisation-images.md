@@ -79,7 +79,7 @@ Le résultat pourrait être (pour une image en 800x600 px et selon les options d
 
 ### Explications
 
-- Le fichier image original est compressé (avec une qualité cible de 70% par défaut, suffisante pour un affichage web)
+- Le fichier image original est compressé (avec une qualité cible de 75% par défaut, suffisante pour un affichage web)
 - Les attributs `width` et `height` sont déterminés depuis les propriétés du fichier
 - L'attribut `loading="lazy"` est ajouté
 - L'attribut `decoding="async"` est ajouté
