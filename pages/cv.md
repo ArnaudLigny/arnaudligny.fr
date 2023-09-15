@@ -5,7 +5,7 @@ metatags:
     only: true
 description: Consultant fonctionnel et technique, expert e-commerce.
 date: 2020-09-22
-updated: 2023-02-15
+updated: 2023-09-15
 intro: |
   ## Consultant fonctionnel et technique, expert e-commerce
 
@@ -18,8 +18,8 @@ menu: main
 layout: cv
 image: photo-cv-2.jpg
 output: [html, json]
-typora-root-url: ../../assets
-typora-copy-images-to: ../../assets/images/${filename}
+typora-root-url: ../assets
+typora-copy-images-to: ../assets/images/${filename}
 published: true
 ---
 ## Expérience
@@ -28,17 +28,17 @@ published: true
 
 #### [Clever Age](https://www.clever-age.com) – *depuis 2022*
 
-![Logo Clever Age](/logos/clever-age.png){width=100 height=100 style="float:right;margin:1rem;"}
+![Logo Clever Age](../assets/logos/clever-age.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 👉 Consultant fonctionnelle et technique, expert e-commerce.  
-Clients : Elis, Groupe Casino, Edenred, Groupe Bic…  
-Outils & solutions : Akeneo, VTEX, commercetools.
+Clients : Elis, Groupe Casino, Edenred, Groupe Bic, Business France, Gémo…  
+Outils & solutions : Akeneo, VTEX, commercetools, Mirakl.
 
 ### Co-animateur
 
 #### [Jamstatic](https://jamstatic.fr) – *depuis 2017*
 
-![Logo Jamstatic](/logos/jamstatic.png){width=100 height=100 style="float:right;margin:1rem;"}
+![Logo Jamstatic](../assets/logos/jamstatic.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
 👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
@@ -47,17 +47,17 @@ Outils & solutions : Akeneo, VTEX, commercetools.
 
 #### [Antadis](https://www.antadis.com) – *2022 - 6 mois*
 
-![Logo Antadis](/logos/antadis.png){width=100 height=100 style="float:right;margin:1rem;"}
+![Logo Antadis](../assets/logos/antadis.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 👉 Consultant fonctionnelle et technique, expert e-commerce.  
-Clients : Grapl, Caviar Petrossian, Pharmaciens Giphar, Groupe Chavigny…  
+Clients : Grapl, Caviar Petrossian, Pharmacien Giphar, Groupe Chavigny…  
 Outils & solutions : Magento, Proximis, OroCommerce.
 
 ### Freelance – Consultant fonctionnelle & technique web, expert e-commerce
 
 #### [studio cecillie](https://studio.cecillie.fr) – *2020-2022*
 
-![Logo Cecillie](/logos/cecillie.svg){width=100 height=100 style="float:right;margin:1rem;"}
+![Logo Cecillie](../assets/logos/cecillie.svg){width=100 height=100 style="float:right;margin:1rem;"}
 
 Clients : Valtech, Yves Rocher, Promod…  
 👉 Missions de conseil et d’accompagnement technique à la mise en œuvre de solutions web, mobile et e-commerce.
@@ -66,7 +66,7 @@ Clients : Valtech, Yves Rocher, Promod…
 
 #### [Promod](https://www.promod.fr) – *2020-2021*
 
-![Logo Promod](/logos/promod.png){width=100 height=100 style="float:right;margin:1rem;"}
+![Logo Promod](../assets/logos/promod.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 Refonte complète du tunnel d’achat via une approche headless avec la solution [commercetools](https://commercetools.com).  
 👉 Compréhension, analyse et traduction du besoin client (*discovery*);  
@@ -79,7 +79,7 @@ Outils & solutions : commercetools, Microsoft Azure, Node.js, NestJS, Terraform,
 
 #### [Adfab](https://adfab.fr) – *2015-2020*
 
-![Logo Adfab](/logos/adfab.png){width=100 height=100 style="float:right;margin:1rem;"}
+![Logo Adfab](../assets/logos/adfab.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad, Le petit Souk, Le Havre, The Kooples, Dermocontrol, Accor, Libeo…  
 👉 Avant-vente : gestion des appels d’offres techniques, identification et recommandation des solutions techniques, chiffrages techniques, soutenances et relation clientèle;  
@@ -111,7 +111,7 @@ Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad, Le petit Souk, Le Havre, T
 
 #### [Dooh It](https://doohit.fr) (ex Bubbles) – *2014-2015*
 
-![Logo Dooh It](/logos/dooh-it.png){width=100 height=100 style="float:right;margin:1rem;"}
+![Logo Dooh It](../assets/logos/dooh-it.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 Bubbles, solution de rechargement pour smartphone, permet de développer le drive-to-store en proposant des contenus via un écran LCD et une application mobile.  
 👉 Conception et prototypage du socle technique (hardware et software);  
@@ -127,7 +127,7 @@ J’ai également collaboré avec les ingénieurs de [Canon Bretagne](https://ww
 
 #### [Hermès](https://www.hermes.com) – *2012-2014*
 
-![Logo Hermès](/logos/hermes.png){width=100 height=100 style="float:right;margin:1rem;"}
+![Logo Hermès](../assets/logos/hermes.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 Pilotage technique des projets e-commerce du groupe Hermès.
 
@@ -155,7 +155,7 @@ Environnement technique : Magento (e-commerce), Cegid Business Retail (ERP), Tib
 
 #### Baobaz – *2009-2012*
 
-![Logo Baobaz](/logos/baobaz.png){width=100 height=100 style="float:right;margin:1rem;"}
+![Logo Baobaz](../assets/logos/baobaz.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 Clients : Zadig & Voltaire, The Kooples, Christian Louboutin, Jennyfer, Carré Blanc, Etam, 1-2-3, La Halle aux Chaussures, Burton of London…  
 Référent fonctionnel et technique sur la plateforme e-commerce Magento (Enterprise et Community Edition) :  
