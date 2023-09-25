@@ -27,10 +27,9 @@ published: true
 
 ### Opquast®
 
-Maîtrise de la Qualité en projet Web (français) [8OQHE5](https://directory.opquast.com/fr/certificat/8OQHE5/).
-
 ![Badge Opquast Avancé](../assets/images/opquast_badge_avance.png){width=100 height=100 style="float:right;margin:1rem;"}
 
+Maîtrise de la Qualité en projet Web ([8OQHE5](https://directory.opquast.com/fr/certificat/8OQHE5/)) .  
 Excellente connaissance des règles qualité Web et du vocabulaire associé. Compétences réelles et appréciables pour participer à des projets Web.
 
 ## Expérience
