@@ -43,14 +43,42 @@ La balise HMTL générée sera de la forme :
 
 ## Optimisation automatique
 
-En l’état l’image s’affichera correctement dans un navigateur web, mais nécessiterait d’être « traitée » au bénéfice de la performance.
+En l’état l’image s’affichera correctement dans un navigateur web, mais nécessiterait d’être « retraitée » pour de meilleures performances.
 
-Ainsi Cecil ne se contente pas de générer une balise image comme indiqué précédemment : celle-ci est enrichie et le fichier est optimisé.
+Ainsi, en activant les options adéquates, Cecil ne se contente pas de générer une balise image comme indiqué ci-dessus : la balise est enrichie et le fichier est optimisé.
 
-Par exemple, pour :
+Par exemple, considérons une image `image.jpg` au format JPEG, de dimensions 800 x 600 pixels :
 
 ```markdown
 ![Description alternative](/image.jpg "Titre de l'image")
+```
+
+Avec les options [`assets`](https://cecil.app/documentation/configuration/#assets) et [`body`](https://cecil.app/documentation/configuration/#body) suivantes (paramétrées via le fichier `config.yml`) :
+
+```yaml
+# Paramétrage global des assets de type image
+assets:
+  images:
+    optimize:
+      enabled: true
+    quality: 75
+    responsive:
+      widths: [480, 640, 768, 1024]
+      sizes:
+        default: '(max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 800px) 768px, (max-width: 1600px) 1024px'
+# Paramétrage des images au sein du contenu d'une page
+body:
+  images:
+    lazy:
+      enabled: true
+    decoding:
+      enabled: true
+    webp:
+      enabled: true
+    responsive:
+      enabled: true
+    caption:
+      enabled: true
 ```
 
 Le rendu sera :
@@ -82,9 +110,7 @@ Le rendu sera :
 </figure>
 ```
 
-:::info
-Résultat pour une image d’une dimensions de 800 x 600 pixels et selon la configuration des options [`assets`](https://cecil.app/documentation/configuration/#assets) et [`body`](https://cecil.app/documentation/configuration/#body).
-:::
+### Explications
 
 - Le fichier original est compressé (avec une qualité cible de 75%, par défaut, suffisante pour un affichage web) ;
 - Les attributs `width` et `height` sont déterminés depuis les propriétés du fichier ;
@@ -98,13 +124,13 @@ Résultat pour une image d’une dimensions de 800 x 600 pixels et selon la conf
 
 Grâce à ces optimisations, les gains de performance sont non négligeables :
 
-- Le temps de chargement des pages contenant des images est plus rapide via :
-  1. la compression du fichier d’origine
-  2. l’ajout d'une alternative dans un format « moderne » (WebP)
-  3. l’utilisation de la basile `loading="lazy"` qui permet de ne charger que les images « visibles » (au dessus de la ligne de flottaison)
-  4. l’utilisation de la basile `decoding="async"` qui permet de continuer à charger le contenu d’une page sans attendre celui des images
+- Le temps de chargement des pages contenant des images est accéléré via :
+  1. La compression du fichier d’origine
+  2. L’ajout d'une alternative dans un format « moderne » (WebP)
+  3. La proposition de différentes dimensions, utilisées par le navigateur selon son [viewport](https://developer.mozilla.org/docs/Glossary/Viewport) ([images adaptatives](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images))
+  4. L’utilisation de la basile `loading="lazy"` qui permet de ne charger que les images « visibles » (au dessus de la ligne de flottaison)
+  5. l’utilisation de la basile `decoding="async"` qui permet de continuer à charger le contenu d’une page sans attendre celui des images
 - L’ajout des dimensions évite le phénomène de [Cumulative Layout Shift (CLS)](https://web.dev/cls/)
-- L’image est proposée au navigateur dans les dimensions les plus proches de celle du [viewport](https://developer.mozilla.org/docs/Glossary/Viewport) ([images adaptatives](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images))
 
 ## Conclusion
 
