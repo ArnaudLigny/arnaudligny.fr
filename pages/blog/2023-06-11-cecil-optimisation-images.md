@@ -47,13 +47,13 @@ En l’état l’image s’affichera correctement dans un navigateur web, mais n
 
 Ainsi, en activant les options adéquates, Cecil ne se contente pas de générer une balise image comme indiqué ci-dessus : la balise est enrichie et le fichier est optimisé.
 
-Par exemple, considérons une image `image.jpg` au format JPEG, de dimensions 800 x 600 pixels :
+Par exemple, considérons une image _image.jpg_ au format JPEG, de dimensions 800 x 600 pixels :
 
 ```markdown
 ![Description alternative](/image.jpg "Titre de l'image")
 ```
 
-Avec les options [`assets`](https://cecil.app/documentation/configuration/#assets) et [`body`](https://cecil.app/documentation/configuration/#body) suivantes (paramétrées via le fichier `config.yml`) :
+Avec les options [_assets_](https://cecil.app/documentation/configuration/#assets) et [_body_](https://cecil.app/documentation/configuration/#body) suivantes (paramétrées via le fichier _config.yml_) :
 
 ```yaml
 # Paramétrage global des assets de type image
