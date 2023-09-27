@@ -19,9 +19,9 @@ Dans le cas des images, on peut considérer qu’il en existe de deux types selo
 
 Dans la suite de cet article je vais me concentrer sur les images contenues dans les pages, et comment elles sont optimisées par Cecil.
 
-![Illustration de Fast load times](/images/web-dev-fast-load-times.svg "Illustration de [Fast load times](https://web.dev/fast/)")
-
 <!-- break -->
+
+![Silhouette d'une femme devant une image d'illustration au sein de l'interface d'un navigateur web, accompagnée d'un "check".](/images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png "Illustration [unDraw](https://undraw.co).")
 
 ## Ajouter une image
 
