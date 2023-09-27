@@ -19,9 +19,9 @@ Dans le cas des images, on peut considérer qu’il en existe de deux types selo
 
 Dans la suite de cet article je vais me concentrer sur les images contenues dans les pages, et comment elles sont optimisées par Cecil.
 
-![Illustration de Fast load times](/images/web-dev-fast-load-times.svg "Illustration de [Fast load times](https://web.dev/fast/)")
-
 <!-- break -->
+
+![Image d'illustration](images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png "Illustration de [unDraw](https://undraw.co/)")
 
 ## Ajout d'une image
 
@@ -129,7 +129,7 @@ Grâce à ces optimisations automatique, les gains de performance sont non négl
   2. L’ajout d'une alternative dans un format « moderne » (WebP) plus léger et supporté par la majorité des navigateurs web ;
   3. La proposition de différentes dimensions ([images adaptatives](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)), permettant au navigateur web d'utiliser celle qui est la plus adaptée à la zone d'affichage ([viewport](https://developer.mozilla.org/docs/Glossary/Viewport)) ;
   4. L’ajout de la balise `loading="lazy"` permettant de ne charger que les images « visibles » (au dessus de la ligne de flottaison) ;
-  5. l’ajout de la balise `decoding="async"` permettant de continuer à charger le contenu d’une page sans attendre celui des images.
+  5. L’ajout de la balise `decoding="async"` permettant de continuer à charger le contenu d’une page sans attendre celui des images.
 - L’ajout des dimensions évite le phénomène de [Cumulative Layout Shift (CLS)](https://web.dev/cls/).
 
 ## Conclusion
