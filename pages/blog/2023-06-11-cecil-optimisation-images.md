@@ -4,7 +4,7 @@ description: "Comment Cecil optimise automatiquement les images dans les contenu
 date: 2023-06-11
 updated: 2023-09-27
 tags: [Cecil, Performance]
-image: /images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png
+image: images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png
 image_header: false
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
@@ -19,11 +19,11 @@ Dans le cas des images, on peut considérer qu’il en existe de deux types selo
 
 Dans la suite de cet article je vais me concentrer sur les images contenues dans les pages, et comment elles sont optimisées par Cecil.
 
+![Illustration de Fast load times](/images/web-dev-fast-load-times.svg "Illustration de [Fast load times](https://web.dev/fast/)")
+
 <!-- break -->
 
-![Silhouette d'une femme devant une image d'illustration au sein de l'interface d'un navigateur web, accompagnée d'un "check".](/images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png "Illustration [unDraw](https://undraw.co).")
-
-## Ajouter une image
+## Ajout d'une image
 
 Le contenu des pages étant rédigé en [Markdown](https://cecil.app/documentation/content/#markdown), les [images](https://cecil.app/documentation/content/#images) sont contribuées via la syntaxe suivante :
 
@@ -31,15 +31,15 @@ Le contenu des pages étant rédigé en [Markdown](https://cecil.app/documentati
 ![Description alternative](/image.jpg)
 ```
 
-:::info
-Remarque : Cecil va chercher l'image d'abord dans le dossier _assets_ puis, si elle ne s'y trouve pas, dans le dossier _static_ (cf. la [documentation officielle](https://cecil.app/documentation/content/#files-organization)).
-:::
-
 La balise HMTL générée sera de la forme :
 
 ```html
 <img src="/image.jpg" alt="Description alternative">
 ```
+
+:::info
+Remarque : Cecil va chercher l'image d'abord dans le dossier _assets_ puis, si elle ne s'y trouve pas, dans le dossier _static_ (cf. la [documentation officielle](https://cecil.app/documentation/content/#files-organization)).
+:::
 
 ## Optimisation automatique
 
@@ -110,27 +110,27 @@ Le rendu sera :
 </figure>
 ```
 
-### Explications
+Description :
 
-- Le fichier original est compressé (avec une qualité cible de 75%, par défaut, suffisante pour un affichage web) ;
-- Les attributs `width` et `height` sont déterminés depuis les propriétés du fichier ;
+- Le fichier original est copié et compressé ;
+- Les attributs `width` et `height` sont déterminés automatiquement depuis les propriétés du fichier ;
 - L'attribut `loading="lazy"` est ajouté ;
 - L'attribut `decoding="async"` est ajouté ;
 - Les déclinaisons _responsives_ sont générées (selon les [options de configuration](https://cecil.app/documentation/configuration/#assets)) ;
 - Une source alternative au format [WebP](https://developers.google.com/speed/webp) est générée (également avec ses déclinaisons _responsives_) ;
-- Si un titre est ajouté alors la balise `<image>` est encapsulée dans une balise `<figure>` afin d'y ajouter un `<figcaption>` contenant le texte correspondant (acceptant le format Markdown, afin d’y mettre un lien vers la source par exemple).
+- Si un titre est ajouté alors la balise `<image>` est encapsulée dans une balise `<figure>` afin d'y ajouter une balise `<figcaption>` contenant le texte correspondant (acceptant le format Markdown, afin d’y mettre un lien vers la source par exemple).
 
 ## Gains de performance
 
-Grâce à ces optimisations, les gains de performance sont non négligeables :
+Grâce à ces optimisations automatique, les gains de performance sont non négligeables :
 
 - Le temps de chargement des pages contenant des images est accéléré via :
-  1. La compression du fichier d’origine
-  2. L’ajout d'une alternative dans un format « moderne » (WebP)
-  3. La proposition de différentes dimensions, utilisées par le navigateur selon son [viewport](https://developer.mozilla.org/docs/Glossary/Viewport) ([images adaptatives](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images))
-  4. L’utilisation de la basile `loading="lazy"` qui permet de ne charger que les images « visibles » (au dessus de la ligne de flottaison)
-  5. l’utilisation de la basile `decoding="async"` qui permet de continuer à charger le contenu d’une page sans attendre celui des images
-- L’ajout des dimensions évite le phénomène de [Cumulative Layout Shift (CLS)](https://web.dev/cls/)
+  1. La compression du fichier d’origine (avec une qualité cible de 75%, suffisante pour un affichage web) ;
+  2. L’ajout d'une alternative dans un format « moderne » (WebP) plus léger et supporté par la majorité des navigateurs web ;
+  3. La proposition de différentes dimensions ([images adaptatives](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)), permettant au navigateur web d'utiliser celle qui est la plus adaptée à la zone d'affichage ([viewport](https://developer.mozilla.org/docs/Glossary/Viewport)) ;
+  4. L’ajout de la balise `loading="lazy"` permettant de ne charger que les images « visibles » (au dessus de la ligne de flottaison) ;
+  5. l’ajout de la balise `decoding="async"` permettant de continuer à charger le contenu d’une page sans attendre celui des images.
+- L’ajout des dimensions évite le phénomène de [Cumulative Layout Shift (CLS)](https://web.dev/cls/).
 
 ## Conclusion
 
