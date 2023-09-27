@@ -65,6 +65,11 @@
       .readmore {
         font-weight: 700;
       }
+      @media screen and (min-width: 40em) {
+        .main {
+          flex-direction: inherit;
+        }
+      }
     {% endapply %}</style>
     <!-- dark mode -->
     <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss') }}" media="(prefers-color-scheme: dark)" async>
