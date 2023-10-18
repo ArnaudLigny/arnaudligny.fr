@@ -2,10 +2,11 @@
 title: "Créer un site e-commerce avec Cecil et Snipcart"
 description: "Comment créer un site e-commerce statique performant et peu couteux grâce à Cecil et Snipcart."
 date: 2021-06-24
+updated: 2023-10-18
 tags: [Cecil, E-commerce, SSG]
 image: /images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr.jpg
 image_header: false
-typora-root-url: ../../static
+typora-root-url: ../../assets
 published: true
 ---
 En début d’année ma chérie terminait la [campagne Ulule de son projet ***Paysages à vélo***](https://fr.ulule.com/paysages-a-velo/) et se posait la question de continuer la vente de ses créations via une boutique en ligne.
@@ -20,7 +21,7 @@ Je lui ai alors proposé de créer un site web statique avec [**Cecil**](https:/
 
 ## Pourquoi un site statique ?
 
-![Logo de Cecil](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/cecil.png "Logo de Cecil")
+![Logo de Cecil](../../assets/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/cecil.png "Logo de Cecil")
 
 Je suis un fervent promoteur de l’approche statique pour la diffusion de sites web de contenu pour les raisons suivantes (entre autres) :
 
@@ -32,7 +33,7 @@ Dans le cas de ce projet j’ai donc utilisé [mon propre générateur de site s
 
 ## Pourquoi Snipcart ?
 
-![Logo Snipcart](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/snipcart.png "Logo de Snipcart")
+![Logo Snipcart](../../assets/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/snipcart.png "Logo de Snipcart")
 
 [Snipcart](https://snipcart.com) n’est pas une solution e-commerce clef en main mais plutôt un « checkout » (tunnel d’achat) à ajouter à n’importe quel site web.
 
@@ -57,7 +58,7 @@ En pratique nous avons 6 modèles composés d’1 variant « format ».
 Les attributs et le texte de la fiche produit sont définis dans un fichier [Markdown](https://daringfireball.net/projects/markdown/) (avec un « [front matter](https://cecil.app/documentation/content/#front-matter) ») :
 
 ```
-content/products
+pages/products
 |_ index.md
 |_ 1.pink-gravel.md
 |_ 2.purple-cargo.md
@@ -67,7 +68,7 @@ content/products
 |_ 6.lemon-lovers.md
 ```
 
-Les produits partagent les mêmes caractéristiques de base, qui peuvent donc être mutualisées à la racine de la section *products* via le fichier `content/products/index.md`.  
+Les produits partagent les mêmes caractéristiques de base, qui peuvent donc être mutualisées à la racine de la section *products* via le fichier `pages/products/index.md`.  
 Les attributs sont définis via des variables au format [YAML](https://fr.m.wikipedia.org/wiki/YAML) :
 
 ```yaml
@@ -95,7 +96,7 @@ J’ai utilisé la variable spéciale [`cascade`](https://cecil.app/documentatio
     - `html` : le texte affiché dans la liste déroulante
     - `price` : le prix modifié par rapport au prix de référence (qui peut être négatif)
 
-Ensuite chacun des produits est caractérisé via son propre fichier Markdown, par exemple `content/products/1.pink-gravel.md` :
+Ensuite chacun des produits est caractérisé via son propre fichier Markdown, par exemple `pages/products/1.pink-gravel.md` :
 
 ```yaml
 ---
@@ -147,7 +148,7 @@ La fiche produit (un [composant Twig](https://github.com/cecillie/eshop/blob/mai
 
 Concentrons nous sur le cœur de la fiche produit, à savoir l’ajout au panier :
 
-![Formulaire d’ajout au panier](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/add-to-cart.png "Formulaire d’ajout au panier")
+![Formulaire d’ajout au panier](../../assets/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/add-to-cart.png "Formulaire d’ajout au panier")
 
 ```twig
 <div class="product__details">
@@ -212,7 +213,7 @@ L’intégration de Snipcart est simple, et nécessite :
 
 J’ai également pris le temps de personnaliser le tunnel d’achat à la fois au niveau du rendu graphique et des étapes.
 
-![Exemple de panier](/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr-cart.png "Exemple de panier")
+![Exemple de panier](../../assets/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr-cart.png "Exemple de panier")
 
 #### Personnalisation du rendu
 
