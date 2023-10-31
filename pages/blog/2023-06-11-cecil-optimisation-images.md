@@ -4,6 +4,7 @@ description: "Comment Cecil optimise automatiquement les images dans les contenu
 date: 2023-06-11
 updated: 2023-10-05
 tags: [Cecil, Performance]
+years: [2023]
 image: /images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png
 image_header: false
 typora-root-url: ../../assets
