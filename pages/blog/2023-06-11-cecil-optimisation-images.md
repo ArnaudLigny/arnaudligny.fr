@@ -22,7 +22,7 @@ Dans la suite de cet article je vais me concentrer sur les images contenues dans
 
 <!-- break -->
 
-![Image d'illustration](/images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png "Illustration de [unDraw](https://undraw.co/)"){loading=eager}
+![Image d'illustration](/images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png "Illustration de [unDraw](https://undraw.co/)"){loading=eager fetchpriority=high}
 
 ## Ajout d'une image
 
