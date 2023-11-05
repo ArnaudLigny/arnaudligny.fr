@@ -92,8 +92,10 @@
     {%- include 'partials/cloudflareinsights.js.twig' ~%}
     {#- syntax highlight -#}
     {%- set highlight_version = '11.6.0' ~%}
-    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/a11y-light.min.css') }}" async>
-    <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/a11y-dark.min.css') }}" media="(prefers-color-scheme: dark)" async>
+    <link rel="preload" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/a11y-light.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'" media="(prefers-color-scheme: light)">
+    <noscript><link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/a11y-light.min.css') }}" media="(prefers-color-scheme: light)"></noscript>
+    <link rel="preload" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/a11y-dark.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'" media="(prefers-color-scheme: dark)">
+    <noscript><link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ highlight_version ~ '/styles/a11y-dark.min.css') }}" media="(prefers-color-scheme: dark)"></noscript>
     {#- anchor.js -#}
     {%- set anchor_version = '4.3.1' ~%}
     <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ anchor_version ~ '/anchor.min.js') }}"></script>
