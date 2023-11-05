@@ -1,6 +1,6 @@
 {% extends '_default/list.html.twig' %}
 
-{% block content %}
+        {%- block content ~%}
         <section>
           <header class="typeset">
             <h1>Billets publiés en {{ page.title }}</h1>
@@ -11,7 +11,7 @@
             <li class="item item--page">
               <article class="article typeset">
                 <h2><a href="{{ url(p) }}">{{ p.title }}</a></h2>
-                {%~ include 'partials/post-meta.html.twig' with {'post': p} only ~%}
+                {%- include 'partials/post-meta.html.twig' with {'post': p} only ~%}
                 {{ p.content|excerpt_html }}
               </article>
             </li>
@@ -19,4 +19,4 @@
           </ul>
           {%- include 'partials/pagination.html.twig' ~%}
         </section>
-{% endblock content %}
+        {%- endblock content ~%}
