@@ -176,3 +176,7 @@ netlify:
       to: https://arnaudligny.fr/:splat
       status: 301
       force: true
+highlight:
+  version: 11.6.0
+anchor:
+  version: 4.3.1
