@@ -2,7 +2,7 @@
 
     {%- block head -%}
     {{- parent() ~}}
-    {#- Style enhancements ~#}
+    {#- Styles enhancements ~#}
     <style>{% apply minify_css %}
       @media screen and (min-width: 40em) {
         .main {
@@ -88,7 +88,8 @@
     {%- endblock head ~%}
 
     {%- block footer -%}
-    {{- parent() ~}}
+    {{ parent() }}
+    <!-- Cloudflare Web Analytics -->
     {%- include 'partials/cloudflareinsights.js.twig' ~%}
     {#- syntax highlight -#}
     {%- set highlight_version = '11.6.0' ~%}
