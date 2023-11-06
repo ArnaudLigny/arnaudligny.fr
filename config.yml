@@ -159,7 +159,6 @@ manifest:
   shortcuts: true
 serviceworker:
   enabled: true
-  debug: false
   precache:
     - logo.png
     - logo-192.png
