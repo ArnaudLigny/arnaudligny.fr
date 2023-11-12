@@ -29,6 +29,8 @@ menus:
       weight: 2
     - id: projets
       weight: 3
+    - id: tags
+      enabled: false
   footer:
     - id: a-propos
       name: À propos
