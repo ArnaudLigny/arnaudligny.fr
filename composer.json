@@ -1,8 +1,8 @@
 {
   "require": {
-    "cecil/theme-garth": "^1.9",
-    "cecil/theme-pwa": "^1.15",
-    "cecil/theme-netlify": "^1.4",
+    "cecil/theme-garth": "^1.10",
+    "cecil/theme-pwa": "^1.18",
+    "cecil/theme-netlify": "^1.5",
     "cecil/theme-netlifycms": "^1.7"
   },
   "config": {
