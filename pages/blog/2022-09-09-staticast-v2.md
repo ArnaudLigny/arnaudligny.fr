@@ -23,7 +23,7 @@ Je l’ai donc reconçu et recodé en grande partie, de manière à en faire une
 
 **Première version :**
 
-![Capture d’écran de la première version de Staticast](/images/2022-09-09-staticast-v2/staticast-preview-garth.png "Capture d’écran de la première version de Staticast")
+![Capture d’écran de la première version de Staticast](/images/2022-09-09-staticast-v2/staticast-preview-garth.png "Capture d’écran de la première version de Staticast"){loading=eager}
 
 **Nouvelle version :**
 

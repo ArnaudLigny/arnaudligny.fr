@@ -13,3 +13,7 @@
 .typeset p a, .typeset li a {
   background-image:none;
 }
+
+img[src$=".svg"], img[src$=".png"] {
+  background-color: currentColor;
+}
