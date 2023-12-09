@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Default variables
-export PHP_REQUIRED_VERSION="7.1"
+export PHP_REQUIRED_VERSION="8.1"
 if [ -z "${PHP_VERSION}" ]; then
-  export PHP_VERSION="7.4"
+  export PHP_VERSION="8.1"
 fi
 if [ -z "${INSTALL_OPTIM}" ]; then
   export INSTALL_OPTIM="false"
@@ -38,8 +38,10 @@ case $RUNNING_ON in
     amazon-linux-extras install -y php$PHP_VERSION
     echo "Installing Gettext..."
     yum install -y gettext
+    echo "Installing Sodium..."
+    yum install -y libsodium
     echo "Installing PHP extensions..."
-    yum install -y php-{cli,mbstring,dom,xml,intl,gettext,gd,imagick}
+    yum install -y php-{cli,mbstring,dom,xml,intl,gettext,gd,imagick,sodium}
     if [ "$INSTALL_OPTIM" = "true" ]; then
       echo "Installing images optimization libraries..."
       yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
