@@ -2,13 +2,13 @@
   publish = "_site"
   command = "curl -sSOL https://cecil.app/build.sh && bash ./build.sh"
 [build.environment]
-  #PHP_VERSION = "8.1"
+  PHP_VERSION = "8.1"
   #CECIL_CACHE_DIR = "/opt/build/cache/"
 
 [context."8.x-dev"]
   command = "bash ./scripts/netlify-build.sh"
 [context."8.x-dev".environment]
-  CECIL_VERSION = "8.0.0-beta.1"
+  CECIL_VERSION = "8.0.0-beta.7"
 
 [context.production.environment]
   CECIL_ENV = "production"
