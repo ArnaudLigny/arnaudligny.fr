@@ -1,7 +1,8 @@
-{% set excerpt = post.content|excerpt_html %}
+              {#- post ~#}
+              {%- set excerpt = post.content|excerpt_html ~%}
               <article class="article article--post typeset">
                 <h2><a href="{{ url(post) }}">{{ post.title }}</a></h2>
-                {%~ include 'partials/post-meta.html.twig' with {'post': post} only %}
+                {%- include 'partials/post-meta.html.twig' with {'post': post} only ~%}
                 {{ excerpt }}
                 {%- if excerpt != post.content %}<a href="{{ url(post) }}#more" class="readmore">Lire la suite →</a>{% endif ~%}
               </article>

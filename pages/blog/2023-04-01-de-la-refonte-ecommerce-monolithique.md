@@ -13,7 +13,7 @@ Je crois que dans un projet de refonte d’un site e-commerce vers une approche 
 Alors oui ce type de refonte demande un effort non négligeable pour faire communiquer les briques techniques entre elles, mais c’est surtout la (re)compréhension de son écosystème qui pose des difficultés à l'équipe projet : où est cette donnée ? qui la pilote ? pour en faire quoi ?
 <!-- break -->
 
-![Un très grand bâtiment avec un ciel en arrière-plan](../../assets/images/2023-04-01-de-la-refonte-ecommerce-monolithique/jon-butterworth-WgMDQsn36w4-unsplash.jpg "Photo de [Jon Butterworth](https://unsplash.com/fr/@jonjons)")
+![Un très grand bâtiment avec un ciel en arrière-plan](../../assets/images/2023-04-01-de-la-refonte-ecommerce-monolithique/jon-butterworth-WgMDQsn36w4-unsplash.jpg "Photo de [Jon Butterworth](https://unsplash.com/fr/@jonjons)"){loading=eager fetchpriority=high}
 
 J’ai le sentiment d’une perte de connaissance parce que « c’est notre outil actuel qui gère ça » ou encore « notre presta à développé une feature dans l’outil pour faire ça mais on sait pas trop comment ça fonctionne ».
 Alors, quand il faut dessiner la carte de ces données afin de les manipuler de manière pertinentes et sécurisée, forcément ça coince...

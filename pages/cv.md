@@ -44,7 +44,7 @@ Excellente connaissance des règles qualité Web et du vocabulaire associé. Com
 Clients : Elis, Groupe Casino, Edenred, Groupe Bic, Business France, Gémo…  
 Outils & solutions : Akeneo, VTEX, commercetools, Mirakl.
 
-### Co-animateur
+### Co-fondateur
 
 #### [Jamstatic](https://jamstatic.fr) – *depuis 2017*
 

@@ -2,9 +2,10 @@
 title: "Optimisation des images avec Cecil"
 description: "Comment Cecil optimise automatiquement les images dans les contenus écrit en Markdown et pour quels gains de performance."
 date: 2023-06-11
-updated: 2023-09-27
+updated: 2023-10-05
 tags: [Cecil, Performance]
-image: images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png
+years: [2023]
+image: /images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png
 image_header: false
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
@@ -19,9 +20,9 @@ Dans le cas des images, on peut considérer qu’il en existe de deux types selo
 
 Dans la suite de cet article je vais me concentrer sur les images contenues dans les pages, et comment elles sont optimisées par Cecil.
 
-![Illustration de Fast load times](/images/web-dev-fast-load-times.svg "Illustration de [Fast load times](https://web.dev/fast/)")
-
 <!-- break -->
+
+![Image d'illustration](/images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png "Illustration de [unDraw](https://undraw.co/)"){loading=eager fetchpriority=high}
 
 ## Ajout d'une image
 
@@ -47,13 +48,13 @@ En l’état l’image s’affichera correctement dans un navigateur web, mais n
 
 Ainsi, en activant les options adéquates, Cecil ne se contente pas de générer une balise image comme indiqué ci-dessus : la balise est enrichie et le fichier est optimisé.
 
-Par exemple, considérons une image `image.jpg` au format JPEG, de dimensions 800 x 600 pixels :
+Par exemple, considérons une image _image.jpg_ au format JPEG, de dimensions 800 x 600 pixels :
 
 ```markdown
 ![Description alternative](/image.jpg "Titre de l'image")
 ```
 
-Avec les options [`assets`](https://cecil.app/documentation/configuration/#assets) et [`body`](https://cecil.app/documentation/configuration/#body) suivantes (paramétrées via le fichier `config.yml`) :
+Avec les options [_assets_](https://cecil.app/documentation/configuration/#assets) et [_body_](https://cecil.app/documentation/configuration/#body) suivantes (paramétrées via le fichier _config.yml_) :
 
 ```yaml
 # Paramétrage global des assets de type image
@@ -120,6 +121,24 @@ Description :
 - Une source alternative au format [WebP](https://developers.google.com/speed/webp) est générée (également avec ses déclinaisons _responsives_) ;
 - Si un titre est ajouté alors la balise `<image>` est encapsulée dans une balise `<figure>` afin d'y ajouter une balise `<figcaption>` contenant le texte correspondant (acceptant le format Markdown, afin d’y mettre un lien vers la source par exemple).
 
+### À propos des images _responsives_
+
+Afin d’automatiser le traitement, Cecil propose la configuration suivante par défaut :
+
+- redimensionnement automatique de l’image source selon les largeurs d’affichage les plus communes : 480, 640, 768, 1024, 1366, 1600, 1920 ;
+- application de la largeur maximum via l’attribut size : `100vw`.
+
+Mais bien entendu l’objectif est également de permettre la personnalisation de ces configurations afin d’adapter la génération au _design_ du site, par exemple :
+
+```yaml
+assets:
+  images:
+    responsive:
+      widths: [480, 640, 768, 1024]
+      sizes:
+        default: '(max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 800px) 768px, (max-width: 1600px) 1024px'
+```
+
 ## Gains de performance
 
 Grâce à ces optimisations automatique, les gains de performance sont non négligeables :
@@ -127,10 +146,14 @@ Grâce à ces optimisations automatique, les gains de performance sont non négl
 - Le temps de chargement des pages contenant des images est accéléré via :
   1. La compression du fichier d’origine (avec une qualité cible de 75%, suffisante pour un affichage web) ;
   2. L’ajout d'une alternative dans un format « moderne » (WebP) plus léger et supporté par la majorité des navigateurs web ;
-  3. La proposition de différentes dimensions ([images adaptatives](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)), permettant au navigateur web d'utiliser celle qui est la plus adaptée à la zone d'affichage ([viewport](https://developer.mozilla.org/docs/Glossary/Viewport)) ;
+  3. La proposition de différentes dimensions (images _responsives_ ou [images adaptatives](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) en français), permettant au navigateur web d'utiliser celle qui est la plus adaptée à la zone d'affichage (_[viewport](https://developer.mozilla.org/docs/Glossary/Viewport)_) ;
   4. L’ajout de la balise `loading="lazy"` permettant de ne charger que les images « visibles » (au dessus de la ligne de flottaison) ;
-  5. l’ajout de la balise `decoding="async"` permettant de continuer à charger le contenu d’une page sans attendre celui des images.
+  5. L’ajout de la balise `decoding="async"` permettant de continuer à charger le contenu d’une page sans attendre celui des images.
 - L’ajout des dimensions évite le phénomène de [Cumulative Layout Shift (CLS)](https://web.dev/cls/).
+
+Illustration avec l'outil de mesure [PageSpeed](https://pagespeed.web.dev/) sur la page que vous êtes en train de consulter :
+
+![Résultat des performances mesurées via l'outil PageSpeed : 98/100](/images/2023-06-11-cecil-optimisation-images/pagespeed-98.png "98/100 sur [PageSpeed](https://pagespeed.web.dev/analysis/https-arnaudligny-fr-blog-cecil-optimisation-images/ioo3ue9759?hl=fr&form_factor=desktop).")
 
 ## Conclusion
 
