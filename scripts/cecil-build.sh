@@ -121,7 +121,7 @@ if [ -z "${URL}" ]; then
   CMD_OPTIONS="${CMD_OPTIONS} --baseurl=${URL}"
 fi
 if [ "$CONTEXT" = "production" ]; then
-  CMD_OPTIONS=" -v ${CMD_OPTIONS} --postprocess"
+  CMD_OPTIONS=" -v ${CMD_OPTIONS} --optimize"
 else
   CMD_OPTIONS=" -vv ${CMD_OPTIONS} --drafts"
 fi
