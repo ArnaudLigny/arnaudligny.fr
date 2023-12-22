@@ -111,11 +111,10 @@ output:
       filename: 'elasticlunr'
       extension: 'json'
       exclude: ['redirect']
-    - name: jsonfeed
-      mediatype: 'application/json'
-      filename: 'feed'
-      extension: 'json'
-      exclude: ['redirect']
+    - name: json
+      mediatype: application/json
+      extension: json
+      exclude: ['redirect', 'paginated']
   pagetypeformats:
     homepage: ['html', 'atom', 'elasticlunr']
     section: ['html', 'atom', 'json', 'jsonfeed']
