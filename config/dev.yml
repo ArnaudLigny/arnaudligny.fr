@@ -14,6 +14,7 @@ pages:
         enabled: false
       caption:
         enabled: true
+      placeholder: 'lqip'
 assets:
   images:
     optimize:
