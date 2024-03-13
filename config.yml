@@ -97,6 +97,7 @@ pages:
         enabled: true
       caption:
         enabled: true
+      placeholder: lqip
     highlight:
       enabled: true
     links:
