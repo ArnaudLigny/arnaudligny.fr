@@ -137,7 +137,7 @@ J’ai également collaboré avec les ingénieurs de [Canon Bretagne](https://ww
 
 #### [Hermès](https://www.hermes.com) – *2012-2014*
 
-![Logo Hermès](../assets/logos/hermes.png){width=100 height=100 style="float:right;margin:1rem;"}
+![Logo Hermès](../assets/logos/hermes.svg){width=100 height=100 style="float:right;margin:1rem;"}
 
 Pilotage technique des projets e-commerce du groupe Hermès.
 
