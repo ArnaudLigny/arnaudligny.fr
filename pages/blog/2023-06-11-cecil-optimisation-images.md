@@ -22,7 +22,7 @@ Dans la suite de cet article je vais me concentrer sur les images contenues dans
 
 <!-- break -->
 
-![Image d'illustration](/images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png "Illustration de [unDraw](https://undraw.co/)"){loading=eager fetchpriority=high}
+![Photographie aérienne d’une chaîne de montagnes recouverte de neige sous un ciel blanc et bleu de jour](/images/2023-06-11-cecil-optimisation-images/rohit-tandon-9wg5jCEPBsw-unsplash.jpg "Photo d'illustration de [Rohit Tandon](https://unsplash.com/fr/@sepoys)"){loading=eager fetchpriority=high}
 
 ## Ajout d'une image
 
