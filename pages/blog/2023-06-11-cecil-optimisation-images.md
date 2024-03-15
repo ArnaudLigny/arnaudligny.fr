@@ -151,10 +151,6 @@ Grâce à ces optimisations automatique, les gains de performance sont non négl
   5. L’ajout de la balise `decoding="async"` permettant de continuer à charger le contenu d’une page sans attendre celui des images.
 - L’ajout des dimensions évite le phénomène de [Cumulative Layout Shift (CLS)](https://web.dev/cls/).
 
-Illustration avec l'outil de mesure [PageSpeed](https://pagespeed.web.dev/) sur la page que vous êtes en train de consulter :
-
-![Résultat des performances mesurées via l'outil PageSpeed : 98/100](/images/2023-06-11-cecil-optimisation-images/pagespeed-98.png "98/100 sur [PageSpeed](https://pagespeed.web.dev/analysis/https-arnaudligny-fr-blog-cecil-optimisation-images/ioo3ue9759?hl=fr&form_factor=desktop).")
-
 ## Conclusion
 
 Comme vous pouvez le constater, l’objectif est de simplifier le travail des personnes en charge de la rédaction des contenus, qui n’ont ainsi pas à se soucier d’optimiser manuellement (ou via des outils externes) leurs images d’illustration.
