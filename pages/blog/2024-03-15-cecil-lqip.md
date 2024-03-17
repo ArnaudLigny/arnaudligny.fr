@@ -4,7 +4,7 @@ description: "Comment Cecil optimise l'affichage des images pendant leur chargem
 date: 2024-03-15
 tags: [Cecil]
 years: [2024]
-#image: 
+image: images/2024-03-15-cecil-lqip/cecil-lqip-cover.png
 image_header: false
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
