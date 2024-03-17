@@ -3,6 +3,7 @@ title: "Installer Subversion sur Debian, accessible via Apache2"
 date: 2007-01-14
 tags:
   - Développement
+years: [2007]
 published: true
 ---
 Je m'étais promis d'installer [SVN](http://subversion.tigris.org) sur mon serveur afin de me simplifier la vie de développeur et c'est enfin fait !

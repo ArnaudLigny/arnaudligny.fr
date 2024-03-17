@@ -4,6 +4,7 @@ description: "Comment créer un site e-commerce statique performant et peu coute
 date: 2021-06-24
 updated: 2023-10-18
 tags: [Cecil, E-commerce, SSG]
+years: [2021]
 image: /images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr.jpg
 image_header: false
 typora-root-url: ../../assets

@@ -3,6 +3,7 @@ title: "Magento : installation de la béta 0.6"
 date: 04-09-2007
 tags:
   - Magento
+years: [2007]
 path: blog/magento-installation-de-la-beta-0-6
 published: true
 ---

@@ -5,6 +5,7 @@ tags:
   - E-commerce
   - Magento
   - SEO
+years: [2009]
 published: true
 ---
 [Magento Commerce](/tags/magento/), la solution e-commerce open-source du moment est-elle optimisée pour le référencement naturel ?

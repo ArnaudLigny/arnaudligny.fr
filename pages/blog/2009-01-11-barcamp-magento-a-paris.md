@@ -4,6 +4,7 @@ date: 11-01-2009
 tags: 
   - E-commerce
   - Magento
+years: [2009]
 path: blog/barcamp-magento-a-paris
 published: true
 ---

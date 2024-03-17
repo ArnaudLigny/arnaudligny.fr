@@ -5,6 +5,7 @@ tags:
   - Web
   - Qualité
   - Méthodologie
+years: [2020]
 image: /images/2020-09-17-template-confluence/confluence_rgb_blue_stacked.png
 image_header: false
 typora-root-url: ../../static

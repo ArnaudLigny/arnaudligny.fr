@@ -5,6 +5,7 @@ tags:
   - Traduction
   - JAMstack
   - CMS
+years: [2019]
 image: /images/cms-headless-en-3-jours/netlify-cms-blog-featured-image.png
 typora-root-url: ../../static
 published: true

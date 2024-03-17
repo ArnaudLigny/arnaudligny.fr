@@ -4,6 +4,7 @@ date: 2015-10-23
 tags:
   - Application mobile
   - React Native
+years: [2015]
 image: /images/2015-10-23-application-mobile-native-ou-hybride/native-VS-hybrid.gif
 published: true
 ---

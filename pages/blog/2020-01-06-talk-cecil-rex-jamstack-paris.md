@@ -7,6 +7,7 @@ tags:
   - SSG
   - Développement
   - Cecil
+years: [2020]
 image: /images/2020-01-06-talk-cecil-rex-jamstack-paris/cecil-youtube-cover.jpg
 image_header: false
 typora-root-url: ../../assets

@@ -3,6 +3,7 @@ title: "Magento : une première béta téléchargeable"
 date: 02-09-2007
 tags:
  - Magento
+years: [2007]
 path: blog/magento-une-premiere-beta-telechargeable
 published: true
 ---
