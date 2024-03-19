@@ -74,8 +74,6 @@ Son utilisation avec Cecil est très simple : il suffit d’ajouter l’attribut
 
 Et… c’est tout 😊
 
-:-)
-
 De plus, afin de gagner en temps de génération, il est possible d’afficher non pas une image en basse qualité mais simplement la couleur dominante de l’image via `placeholder=color`.
 
 Exemple :
