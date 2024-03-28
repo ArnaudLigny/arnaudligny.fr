@@ -156,9 +156,12 @@ manifest:
   theme_color: '#CADCF2'
   theme_color_dark: '#000'
   icons:
-    - logo-192.png
-    - logo-512.png
-    - logo-512.webp
+    - icon-192x192.png
+    - icon-512x512.png
+    - src: icon-192x192-maskable.png
+      purpose: maskable
+    - src: icon-512x512-maskable.png
+      purpose: maskable
   shortcuts: true
 serviceworker:
   enabled: true
@@ -169,11 +172,13 @@ serviceworker:
         limit: false
       assets:
         - logo.png
-        - logo-192.png
-        - logo-512.png
-        - logo-512.webp
+        - photo-cv.jpg
+        - icon-192x192.png
+        - icon-512x512.png
+        - icon-192x192-maskable.png
+        - icon-512x512-maskable.png
   notification:
-    enabled: false
+    enabled: true
 metatags:
   jsonld:
     enabled: true
