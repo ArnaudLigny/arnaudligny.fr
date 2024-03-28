@@ -163,7 +163,7 @@ manifest:
 serviceworker:
   enabled: true
   install:
-    prompt: false
+    prompt: true
     precache:
       pages:
         limit: false
