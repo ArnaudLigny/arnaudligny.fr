@@ -162,11 +162,16 @@ manifest:
   shortcuts: true
 serviceworker:
   enabled: true
-  precache:
-    - logo.png
-    - logo-192.png
-    - logo-512.png
-    - logo-512.webp
+  install:
+    prompt: false
+    precache:
+      pages:
+        limit: false
+      assets:
+        - logo.png
+        - logo-192.png
+        - logo-512.png
+        - logo-512.webp
   notification:
     enabled: false
 metatags:
