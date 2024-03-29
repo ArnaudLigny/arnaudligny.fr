@@ -166,10 +166,7 @@ manifest:
 serviceworker:
   enabled: true
   install:
-    prompt: true
     precache:
-      pages:
-        limit: false
       assets:
         - logo.png
         - photo-cv.jpg
@@ -178,7 +175,10 @@ serviceworker:
         - icon-192x192-maskable.png
         - icon-512x512-maskable.png
   update:
-    notification:
+    snackbar:
+      enabled: true
+  offline:
+    snackbar:
       enabled: true
 metatags:
   jsonld:
