@@ -177,8 +177,9 @@ serviceworker:
         - icon-512x512.png
         - icon-192x192-maskable.png
         - icon-512x512-maskable.png
-  notification:
-    enabled: true
+  update:
+    notification:
+      enabled: true
 metatags:
   jsonld:
     enabled: true
