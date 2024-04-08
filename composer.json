@@ -1,7 +1,7 @@
 {
   "require": {
     "cecil/theme-garth": "^1.10",
-    "cecil/theme-pwa": "^2.6",
+    "cecil/theme-pwa": "^2.7",
     "cecil/theme-netlify": "^2.0",
     "cecil/theme-netlifycms": "^2.0"
   },
