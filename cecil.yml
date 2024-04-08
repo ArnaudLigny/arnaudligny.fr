@@ -1,0 +1,195 @@
+title: Arnaud Ligny
+baseline: Consultant technique web, mobile & e-commerce
+baseurl: https://arnaudligny.fr/
+description: Arnaud Ligny, Consultant technique web, mobile & e-commerce.
+keywords:
+  - Consultant technique
+  - Web
+  - Application Mobile
+  - e-commerce
+  - Magento
+  - IoT
+taxonomies:
+  categories: disabled
+  years: year
+language: fr
+languages:
+  - code: fr
+    name: Français
+    locale: fr_FR
+menus:
+  main:
+    - id: index
+      name: Accueil
+      weight: 0
+    - id: cv
+      name: CV
+      weight: 1
+    - id: blog
+      weight: 2
+    - id: projets
+      weight: 3
+    - id: tags
+      enabled: false
+  footer:
+    - id: a-propos
+      name: À propos
+      url: a-propos
+author:
+  firstname: Arnaud
+  lastname: Ligny
+  url: https://arnaudligny.fr
+  email: arnaud[AROBASE]ligny[POINT]fr
+  job: Consultant technique
+  cv: CV_ArnaudLigny-2016.pdf
+  statut: En poste
+social:
+  twitter:
+    site: ArnaudLigny
+    creator: ArnaudLigny
+    url: https://twitter.com/ArnaudLigny
+  github:
+    username: ArnaudLigny
+    url: https://github.com/ArnaudLigny
+  linkedin:
+    username: arnaudligny
+    url: https://fr.linkedin.com/in/arnaudligny/fr/
+theme:
+  - garth
+  - pwa
+  - netlify
+  - netlify-cms
+logo: logo.png
+image: logo.png
+#googleanalytics: UA-30599234-2
+cloudflareinsights: aa58d54d00e04d9e8f0fc44730cafff7
+source: https://github.com/ArnaudLigny/arnaudligny.fr/edit/master/content/
+comments: false
+editor: typora
+#
+pages:
+  default:
+    sitemap:
+      published: true
+    404:
+      published: true
+  virtual:
+    # short URL / redirects
+    - path: code
+      redirect: https://github.com/ArnaudLigny
+    - path: tw
+      redirect: https://twitter.com/ArnaudLigny
+    # old URL
+    - path: blog/work-in-progress
+      redirect: /
+    - path: blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento
+      redirect: blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/
+    - path: blog/t-l-charger-manuellement-une-extension-magento
+      redirect: blog/telecharger-manuellement-une-extension-magento/
+  body:
+    images:
+      class: markdown
+      resize:
+        enabled: true
+      responsive:
+        enabled: true
+      webp:
+        enabled: true
+      caption:
+        enabled: true
+      placeholder: lqip
+    highlight:
+      enabled: true
+    links:
+      embed:
+        enabled: true
+        video:
+          ext: [mp4, webm]
+output:
+  formats:
+    - name: elasticlunr
+      mediatype: 'application/json'
+      filename: 'elasticlunr'
+      extension: 'json'
+      exclude: ['redirect']
+    - name: json
+      mediatype: application/json
+      extension: json
+      exclude: ['redirect', 'paginated']
+  pagetypeformats:
+    homepage: ['html', 'atom', 'elasticlunr']
+    section: ['html', 'atom', 'json', 'jsonfeed']
+static:
+  exclude:
+    - CV_ArnaudLigny-2014.pdf
+    - CV_ArnaudLigny-2015.pdf
+    - _bck
+    - gdpr-cookie-notice
+assets:
+  images:
+    optimize:
+      enabled: true
+    responsive:
+      enabled: true
+      widths: [480, 640, 768, 1024]
+      sizes:
+        default: 100vw
+        markdown: "(max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 800px) 768px, (max-width: 1600px) 1024px"
+    webp:
+      enabled: true
+    cdn:
+      enabled: false
+      #canonical: false
+      #remote: false
+      #account: 'aligny'
+      account: 'ayrcxgimor'
+      # Cloudinary
+      #url: 'https://res.cloudinary.com/%account%/image/fetch/c_limit,w_%width%,q_%quality%,f_%format%,d_default/%image_url%'
+      # Cloudimage
+      url: 'https://%account%.cloudimg.io/%image_url%?w=%width%&q=%quality%&force_format=%format%'
+      # TwicPics
+      #url: 'https://%account%.twic.pics/%image_url%?twic=v1/resize=%width%/quality=%quality%/output=%format%'
+      # imgix
+      #url: 'https://%account%.imgix.net/%image_url%?w=%width%&q=%quality%&fm=%format%'
+manifest:
+  background_color: '#F3F7FC'
+  theme_color: '#CADCF2'
+  theme_color_dark: '#000'
+  icons:
+    - icon-192x192.png
+    - icon-512x512.png
+    - src: icon-192x192-maskable.png
+      purpose: maskable
+    - src: icon-512x512-maskable.png
+      purpose: maskable
+  shortcuts: true
+serviceworker:
+  enabled: true
+  install:
+    precache:
+      assets:
+        - logo.png
+        - photo-cv.jpg
+        - icon-192x192.png
+        - icon-512x512.png
+        - icon-192x192-maskable.png
+        - icon-512x512-maskable.png
+  update:
+    snackbar:
+      enabled: true
+  offline:
+    snackbar:
+      enabled: true
+metatags:
+  jsonld:
+    enabled: true
+netlify:
+  redirects:
+    - from: https://arnaudligny.netlify.com/*
+      to: https://arnaudligny.fr/:splat
+      status: 301
+      force: true
+highlight:
+  version: 11.6.0
+anchor:
+  version: 4.3.1
