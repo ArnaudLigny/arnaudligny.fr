@@ -18,13 +18,13 @@ Même si les images ne bloquent pas le rendu d’une page web, il est important 
 
 En effet, si une image n’est pas encore chargée et que ses dimensions (largeur x hauteur) sont définies, une zone vide sera affichée.
 
+<!--break-->
+
 Exemple :
 
 [Exemple de chargement d’une image](/videos/2024-03-15-cecil-lqip/cecil-lqip-empty.mp4){embed}
 
 L'une des approches possibles est *Low-Quality Image Placeholders* (LQIP), qui pourrait être traduit par « Espaces réservés aux images de basse qualité ».
-
-<!--break-->
 
 ## LQIP c’est quoi ?
 
