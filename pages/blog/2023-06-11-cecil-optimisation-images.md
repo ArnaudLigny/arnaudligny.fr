@@ -1,8 +1,8 @@
 ---
 title: "Optimisation des images avec Cecil"
-description: "Comment Cecil optimise automatiquement les images dans les contenus écrit en Markdown et pour quels gains de performance."
+description: "Comment Cecil optimise automatiquement les images dans les contenus rédigés en Markdown et pour quels gains de performance."
 date: 2023-06-11
-updated: 2023-10-05
+updated: 2024-04-10
 tags: [Cecil, Performance]
 years: [2023]
 image: /images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png
@@ -11,7 +11,7 @@ typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 published: true
 ---
-[Cecil](/tags/cecil), mon [générateur de site statique](https://cecil.app/), permet de manipuler des ressources web (_assets_) tels que les images, les feuilles de styles (CSS ou Sass), les scripts, etc.
+[Cecil](/tags/cecil), mon [générateur de site statique](https://cecil.app), permet de manipuler des ressources web (_assets_) tels que des images, des feuilles de styles (CSS ou Sass), des scripts, etc.
 
 Dans le cas des images, on peut considérer qu’il en existe de deux types selon l’usage :
 
@@ -39,7 +39,7 @@ La balise HMTL générée sera de la forme :
 ```
 
 :::info
-Remarque : Cecil va chercher l'image d'abord dans le dossier _assets_ puis, si elle ne s'y trouve pas, dans le dossier _static_ (cf. la [documentation officielle](https://cecil.app/documentation/content/#files-organization)).
+Remarque : Cecil va d’abord chercher le fichier image dans le dossier _assets_ puis, si il ne s'y trouve pas, dans le dossier _static_ (cf. la [documentation officielle](https://cecil.app/documentation/content/#files-organization)).
 :::
 
 ## Optimisation automatique
@@ -54,7 +54,7 @@ Par exemple, considérons une image _image.jpg_ au format JPEG, de dimensions 80
 ![Description alternative](/image.jpg "Titre de l'image")
 ```
 
-Avec les options [_assets_](https://cecil.app/documentation/configuration/#assets) et [_body_](https://cecil.app/documentation/configuration/#body) suivantes (paramétrées via le fichier _config.yml_) :
+Avec les options [_assets_](https://cecil.app/documentation/configuration/#assets) et [_body_](https://cecil.app/documentation/configuration/#body) suivantes (paramétrées dans le fichier _config.yml_) :
 
 ```yaml
 # Paramétrage global des assets de type image
@@ -128,7 +128,7 @@ Afin d’automatiser le traitement, Cecil propose la configuration suivante par 
 - redimensionnement automatique de l’image source selon les largeurs d’affichage les plus communes : 480, 640, 768, 1024, 1366, 1600, 1920 ;
 - application de la largeur maximum via l’attribut size : `100vw`.
 
-Mais bien entendu l’objectif est également de permettre la personnalisation de ces configurations afin d’adapter la génération au _design_ du site, par exemple :
+Néanmoins l’objectif est également de permettre la personnalisation de ces configurations afin d’adapter la génération au _design_ du site, par exemple :
 
 ```yaml
 assets:
@@ -144,15 +144,15 @@ assets:
 Grâce à ces optimisations automatique, les gains de performance sont non négligeables :
 
 - Le temps de chargement des pages contenant des images est accéléré via :
-  1. La compression du fichier d’origine (avec une qualité cible de 75%, suffisante pour un affichage web) ;
-  2. L’ajout d'une alternative dans un format « moderne » (WebP) plus léger et supporté par la majorité des navigateurs web ;
-  3. La proposition de différentes dimensions (images _responsives_ ou [images adaptatives](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) en français), permettant au navigateur web d'utiliser celle qui est la plus adaptée à la zone d'affichage (_[viewport](https://developer.mozilla.org/docs/Glossary/Viewport)_) ;
-  4. L’ajout de la balise `loading="lazy"` permettant de ne charger que les images « visibles » (au dessus de la ligne de flottaison) ;
-  5. L’ajout de la balise `decoding="async"` permettant de continuer à charger le contenu d’une page sans attendre celui des images.
-- L’ajout des dimensions évite le phénomène de [Cumulative Layout Shift (CLS)](https://web.dev/cls/).
+  1. La **compression du fichier** d’origine (avec une qualité cible de 75%, suffisante pour un affichage web) ;
+  2. L’ajout d'une **alternative au format WebP**, plus léger et supporté par la majorité des navigateurs web ;
+  3. La proposition de différentes dimensions (**images _responsives_** ou [images adaptatives](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) en français), permettant au navigateur web d'utiliser celle qui est la plus adaptée à la zone d'affichage (_[viewport](https://developer.mozilla.org/docs/Glossary/Viewport)_) ;
+  4. L’ajout de la balise **`loading="lazy"`** permettant de ne charger que les images « visibles » (au dessus de la ligne de flottaison) ;
+  5. L’ajout de la balise **`decoding="async"`** permettant de continuer à charger le contenu d’une page sans attendre celui des images.
+- L’ajout des dimensions évite le phénomène de [**Cumulative Layout Shift** (CLS)](https://web.dev/cls/).
 
 ## Conclusion
 
 Comme vous pouvez le constater, l’objectif est de simplifier le travail des personnes en charge de la rédaction des contenus, qui n’ont ainsi pas à se soucier d’optimiser manuellement (ou via des outils externes) leurs images d’illustration.
 
-Si vous souhaitez en savoir plus, je vous invite à consulter la [documentation des images de Cecil](https://cecil.app/documentation/content/#images).
+Si vous souhaitez aller plus loin je vous invite à consulter la [documentation des images de Cecil](https://cecil.app/documentation/content/#images).
