@@ -1,0 +1,73 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "post",
+      "pageBundle": false,
+      "previewPath": "/blog/",
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Published",
+          "name": "published",
+          "type": "boolean"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "Updating date",
+          "name": "updated",
+          "type": "datetime"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Years",
+          "name": "years",
+          "type": "tags"
+        },
+        {
+          "title": "OG image",
+          "name": "image",
+          "type": "image",
+          "isPreviewImage": true
+        },
+        {
+          "title": "Show OG image in header?",
+          "name": "image_header",
+          "type": "boolean"
+        },
+        {
+          "title": "typora-root-url",
+          "name": "typora-root-url",
+          "type": "string",
+          "hidden": true
+        },
+        {
+          "title": "typora-copy-images-to",
+          "name": "typora-copy-images-to",
+          "type": "string",
+          "hidden": true
+        }
+      ]
+    }
+  ],
+  "frontMatter.preview.host": "http://localhost:8000/",
+  "frontMatter.website.host": "https://arnaudligny.fr/",
+  "frontMatter.framework.startCommand": "cecil serve -v --config=config/dev.yml"
+}

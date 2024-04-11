@@ -1,14 +1,19 @@
 ---
-title: "Optimisation des images avec Cecil"
-description: "Comment Cecil optimise automatiquement les images dans les contenus rédigés en Markdown et pour quels gains de performance."
+title: Optimisation des images avec Cecil
+description: Comment Cecil optimise automatiquement les images dans les contenus rédigés en Markdown et pour quels gains de performance.
 date: 2023-06-11
 updated: 2024-04-10
-tags: [Cecil, Performance]
-years: [2023]
+tags:
+  - Cecil
+  - Performance
+years:
+  - 2023
 image: /images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png
 image_header: false
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
+type: post
+slug: cecil-optimisation-images
 published: true
 ---
 [Cecil](/tags/cecil), mon [générateur de site statique](https://cecil.app), permet de manipuler des ressources web (_assets_) tels que des images, des feuilles de styles (CSS ou Sass), des scripts, etc.

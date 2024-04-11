@@ -1,0 +1,14 @@
+{
+  "frontMatter.framework.id": "other",
+  "frontMatter.content.publicFolder": "assets",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Blog posts",
+      "path": "[[workspace]]/pages/blog",
+      "contentTypes": ["post"]
+    }
+  ],
+  //"frontMatter.content.hideFm": true,
+  "[markdown]": {
+  }
+}
