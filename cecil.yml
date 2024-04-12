@@ -58,7 +58,7 @@ theme:
   - garth
   - pwa
   - netlify
-  - netlify-cms
+  #- netlify-cms
 logo: logo.png
 image: logo.png
 #googleanalytics: UA-30599234-2
