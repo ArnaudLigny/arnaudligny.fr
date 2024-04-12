@@ -28,6 +28,13 @@
   Content-Type: application/manifest+json
   Cache-Control: private, max-age=31536000
 
+/logo*
+  Cache-Control: public, max-age=31536000
+/icon*
+  Cache-Control: public, max-age=31536000
+/assets/*
+  Cache-Control: public, max-age=31536000
+
 /admin/*
   Cache-Control: no-cache, no-store, must-revalidate, max-age=0
   Content-Security-Policy: default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline' blob: *; connect-src * 'unsafe-inline'; frame-src *; font-src * data: 'unsafe-inline';
