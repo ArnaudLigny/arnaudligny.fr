@@ -107,5 +107,5 @@
     <div class="print print__footer">
       &copy; {{ site.copyright|default(site.title) }} — <a href="{{ url(page) }}">{{ url(page, {canonical: true}) }}</a>
     </div>
-    {%- include 'partials/identity.html.twig' with {'site': site} only -%}
+    {{- include('partials/identity.html.twig', {site: site}, with_context = false, ignore_missing = true) ~}}
     {%- endblock footer ~%}
