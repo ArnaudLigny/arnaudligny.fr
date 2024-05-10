@@ -3,7 +3,7 @@
     "netlify-plugin-cecil-cache": "^0.3"
   },
   "devDependencies": {
-    "cypress": "6.3.0",
+    "cypress": "13.3.0",
     "npm-run-all": "^4.1",
     "start-server-and-test": "^1.14"
   },
