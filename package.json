@@ -8,7 +8,7 @@
     "start-server-and-test": "^1.14"
   },
   "scripts": {
-    "build": "bash ./scripts/cecil-build.sh",
+    "build": "curl -sSOL https://cecil.app/build.sh && bash ./build.sh",
     "serve": "cecil serve --config=config/dev.yml",
     "serve-silent": "nohup cecil serve > cecil.log 2>&1 &",
     "cy:open": "cypress open",

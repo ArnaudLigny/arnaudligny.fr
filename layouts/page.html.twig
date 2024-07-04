@@ -2,6 +2,8 @@
 
     {%- block head -%}
     {{- parent() ~}}
+    <!-- dark mode -->
+    <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss') }}" media="(prefers-color-scheme: dark)" async>
     {#- Styles enhancements ~#}
     <style>{% apply minify_css %}
       @media screen and (min-width: 40em) {
@@ -71,14 +73,10 @@
         font-weight: 700;
       }
     {% endapply %}</style>
-    <!-- dark mode -->
-    <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss') }}" media="(prefers-color-scheme: dark)" async>
     <!-- PWA -->
     <meta name="theme-color" content="{{ site.manifest.theme_color }}" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="{{ site.manifest.theme_color_dark }}" media="(prefers-color-scheme: dark)">
-    <link rel="apple-touch-icon" href="{{ asset('logo-512.png') }}">
     <link rel="manifest" href="{{ url('manifest') }}">
-    {%~ include 'partials/regsw.js.twig' %}
     <!-- webmentions -->
     <link rel="webmention" href="https://webmention.io/arnaudligny.fr/webmention">
     <link rel="pingback" href="https://webmention.io/arnaudligny.fr/xmlrpc">
@@ -89,6 +87,7 @@
 
     {%- block footer -%}
     {{ parent() }}
+    {%- include 'partials/regsw.js.twig' ~%}
     <!-- Cloudflare Web Analytics -->
     {%- include 'partials/cloudflareinsights.js.twig' ~%}
     <!-- Syntax highlight -->
@@ -108,5 +107,5 @@
     <div class="print print__footer">
       &copy; {{ site.copyright|default(site.title) }} — <a href="{{ url(page) }}">{{ url(page, {canonical: true}) }}</a>
     </div>
-    {%- include 'partials/identity.html.twig' with {'site': site} only -%}
+    {{- include('partials/identity.html.twig', {site: site}, with_context = false, ignore_missing = true) ~}}
     {%- endblock footer ~%}

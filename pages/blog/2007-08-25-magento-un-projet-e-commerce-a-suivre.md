@@ -4,6 +4,7 @@ date: 2007-08-25
 tags:
   - E-commerce
   - Magento
+years: [2007]
 path: blog/magento-un-projet-e-commerce-a-suivre
 image: /images/2007-08-25-magento-un-projet-e-commerce-a-suivre/magento-homepage.jpg
 published: true

@@ -4,6 +4,7 @@ date: 2007-12-22
 tags:
   - E-commerce
   - Magento
+years: [2007]
 path: blog/magento-ca-prend-forme
 published: true
 ---

@@ -53,6 +53,15 @@ Outils & solutions : Akeneo, VTEX, commercetools, Mirakl.
 👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
 👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
 
+### Freelance – Consultant fonctionnelle & technique web, expert e-commerce
+
+#### [studio cecillie](https://studio.cecillie.fr) – *2020-2022*
+
+![Logo Cecillie](../assets/logos/cecillie.svg){width=100 height=100 style="float:right;margin:1rem;"}
+
+Clients : Valtech, Yves Rocher, Promod…  
+👉 Missions de conseil et d’accompagnement technique à la mise en œuvre de solutions web, mobile et e-commerce.
+
 ### Business Analyst
 
 #### [Antadis](https://www.antadis.com) – *2022 - 6 mois*
@@ -62,15 +71,6 @@ Outils & solutions : Akeneo, VTEX, commercetools, Mirakl.
 👉 Consultant fonctionnelle et technique, expert e-commerce.  
 Clients : Grapl, Caviar Petrossian, Pharmacien Giphar, Groupe Chavigny…  
 Outils & solutions : Magento, Proximis, OroCommerce.
-
-### Freelance – Consultant fonctionnelle & technique web, expert e-commerce
-
-#### [studio cecillie](https://studio.cecillie.fr) – *2020-2022*
-
-![Logo Cecillie](../assets/logos/cecillie.svg){width=100 height=100 style="float:right;margin:1rem;"}
-
-Clients : Valtech, Yves Rocher, Promod…  
-👉 Missions de conseil et d’accompagnement technique à la mise en œuvre de solutions web, mobile et e-commerce.
 
 ### Consultant technique e-commerce
 
@@ -137,7 +137,7 @@ J’ai également collaboré avec les ingénieurs de [Canon Bretagne](https://ww
 
 #### [Hermès](https://www.hermes.com) – *2012-2014*
 
-![Logo Hermès](../assets/logos/hermes.png){width=100 height=100 style="float:right;margin:1rem;"}
+![Logo Hermès](../assets/logos/hermes.svg){width=100 height=100 style="float:right;margin:1rem;"}
 
 Pilotage technique des projets e-commerce du groupe Hermès.
 

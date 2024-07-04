@@ -5,6 +5,7 @@ updated: 2023-01-12
 tags:
   - Cecil
   - Hébergement
+years: [2021]
 image: /images/2021-03-04-deployer-un-site-cree-avec-cecil-sur-cloudflare-pages/twitter-shared-link-18.png
 image_header: false
 typora-root-url: ../../static

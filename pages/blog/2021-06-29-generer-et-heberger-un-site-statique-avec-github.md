@@ -7,6 +7,7 @@ tags:
   - SSG
   - Cecil
   - GitHub
+years: [2021]
 image_header: false
 updated: 2021-10-21
 typora-root-url: ../../static

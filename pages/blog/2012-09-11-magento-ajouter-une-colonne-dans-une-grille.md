@@ -3,6 +3,7 @@ title: "Magento : Ajouter une colonne dans une grille"
 date: 2012-09-11
 tags:
   - Magento
+years: [2012]
 image: /images/2007-08-25-magento-un-projet-e-commerce-a-suivre/magento-admin-products.jpg
 published: true
 ---

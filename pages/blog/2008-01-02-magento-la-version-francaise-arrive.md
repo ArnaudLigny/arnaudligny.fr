@@ -3,6 +3,7 @@ title: "Magento : la version française arrive !"
 date: 02-01-2008
 tags:
   - Magento
+years: [2008]
 path: blog/magento-la-version-francaise-arrive
 published: true
 ---

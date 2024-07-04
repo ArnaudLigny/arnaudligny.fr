@@ -3,6 +3,7 @@ title: "Télécharger manuellement une extension Magento"
 date: 2010-11-21
 tags:
   - Magento
+years: [2010]
 image: /images/2010-11-21-telecharger-manuellement-une-extension-magento/download-magento-extension.png
 published: true
 ---

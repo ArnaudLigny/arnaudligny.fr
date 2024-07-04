@@ -58,7 +58,7 @@ theme:
   - garth
   - pwa
   - netlify
-  - netlify-cms
+  #- netlify-cms
 logo: logo.png
 image: logo.png
 #googleanalytics: UA-30599234-2
@@ -97,13 +97,14 @@ pages:
         enabled: true
       caption:
         enabled: true
+      placeholder: lqip
     highlight:
       enabled: true
     links:
       embed:
         enabled: true
         video:
-        ext: [mp4, webm]
+          ext: [mp4, webm]
 output:
   formats:
     - name: elasticlunr
@@ -111,11 +112,10 @@ output:
       filename: 'elasticlunr'
       extension: 'json'
       exclude: ['redirect']
-    - name: jsonfeed
-      mediatype: 'application/json'
-      filename: 'feed'
-      extension: 'json'
-      exclude: ['redirect']
+    - name: json
+      mediatype: application/json
+      extension: json
+      exclude: ['redirect', 'paginated']
   pagetypeformats:
     homepage: ['html', 'atom', 'elasticlunr']
     section: ['html', 'atom', 'json', 'jsonfeed']
@@ -138,7 +138,7 @@ assets:
     webp:
       enabled: true
     cdn:
-      enabled: true
+      enabled: false
       #canonical: false
       #remote: false
       #account: 'aligny'
@@ -156,19 +156,30 @@ manifest:
   theme_color: '#CADCF2'
   theme_color_dark: '#000'
   icons:
-    - logo-192.png
-    - logo-512.png
-    - logo-512.webp
+    - icon-192x192.png
+    - icon-512x512.png
+    - src: icon-192x192-maskable.png
+      purpose: maskable
+    - src: icon-512x512-maskable.png
+      purpose: maskable
   shortcuts: true
 serviceworker:
   enabled: true
-  precache:
-    - logo.png
-    - logo-192.png
-    - logo-512.png
-    - logo-512.webp
-  notification:
-    enabled: false
+  install:
+    precache:
+      assets:
+        - logo.png
+        - photo-cv.jpg
+        - icon-192x192.png
+        - icon-512x512.png
+        - icon-192x192-maskable.png
+        - icon-512x512-maskable.png
+  update:
+    snackbar:
+      enabled: true
+  offline:
+    snackbar:
+      enabled: true
 metatags:
   jsonld:
     enabled: true

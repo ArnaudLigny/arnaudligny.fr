@@ -3,16 +3,18 @@ serviceworker:
 metatags:
   jsonld:
     enabled: false
-body:
-  images:
-    resize:
-      enabled: false
-    responsive:
-      enabled: false
-    webp:
-      enabled: false
-    caption:
-      enabled: true
+pages:
+  body:
+    images:
+      resize:
+        enabled: false
+      responsive:
+        enabled: false
+      webp:
+        enabled: false
+      caption:
+        enabled: true
+      placeholder:
 assets:
   images:
     optimize:

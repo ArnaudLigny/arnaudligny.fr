@@ -5,6 +5,7 @@ tags:
   - Cecil
   - Jamstack
   - SSG
+years: [2020]
 image: /images/2020-09-24-je-refais-mon-cv-avec-cecil/demo-cv-cecil.png
 image_header: false
 typora-root-url: ../../assets

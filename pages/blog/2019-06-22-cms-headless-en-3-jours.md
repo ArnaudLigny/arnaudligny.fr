@@ -5,6 +5,7 @@ tags:
   - Traduction
   - JAMstack
   - CMS
+years: [2019]
 image: /images/cms-headless-en-3-jours/netlify-cms-blog-featured-image.png
 typora-root-url: ../../static
 published: true
@@ -182,7 +183,7 @@ collections:
 
 Cela définira une nouvelle collection qui apparaîtra à gauche de l’interface utilisateur de l’administration du CMS, et créera une page “Menu de navigation” au sein de cette collection. À l’intérieur se trouvent des champs qui définissent les entrées de navigation du site qui incluent chacune un nom, une URL, etc. Nous définissons le type de donnée et l’interface d’édition des champs à l'aide de [widgets](https://www.netlifycms.org/docs/widgets/). Lorsqu'une modification est apportée, elle sera enregistrée dans le fichier `_data/nav.yml` de votre projet.
 
-![Netlify CMS: édition de contenu](/images/cms-headless-en-3-jours/screen-shot-2019-05-29-at-4.14.23-pm.png){width=1000}
+![Netlify CMS: édition de contenu](../../assets/images/cms-headless-en-3-jours/screen-shot-2019-05-29-at-4.14.23-pm.png){width=1000}
 
 Voici un exemple de ce à quoi peut resembler un fichier de données :
 
@@ -258,7 +259,7 @@ collections:
 
 Ceci définit une nouvelle collection appelée “Pages” qui contiendra de nombreux fichiers stockés dans le dossier `/_pages/` de votre projet. Les fichiers seront nommés en fonction du modèle définit dans le champ *slug*, lequel est configuré pour prendre la valeur de la variable pas forcément très explicite `{{slug}}`. Ne vous inquiétez pas, dans ce cas, cela signifie simplement que nous utiliserons la valeur par défaut, à savoir le contenu du champ `Titre`. Vous pouvez configurer cela de différentes façons pour y inclure une date ou tout autre élément selon votre besoin, mais dans le cas de notre exemple c’est parfait.
 
-![Netlify CMS : liste des pages](/images/cms-headless-en-3-jours/screen-shot-2019-05-29-at-4.17.02-pm.png){width=1000}
+![Netlify CMS : liste des pages](../../assets/images/cms-headless-en-3-jours/screen-shot-2019-05-29-at-4.17.02-pm.png){width=1000}
 
 Veuillez noter les champs `permalink` et `preview_path`. Nous utiliserons le champ *permalink* pour définir le chemin d’accès à notre page dans Jekyll, et le champ de *preview* permet à Netlify CMS de savoir comment pointer vers la bonne URL de prévisualisation (déploiement de branches :+1:).
 
@@ -344,7 +345,7 @@ collections:
 
 Ici nous avons étendu notre collection de pages afin d’y inclure un widget de liste à type de variable qui contient différents types d’objets que l’éditeur de contenu pourra ajouter dynamiquement et réorganiser depuis l’administration du CMS.
 
-![Netlify CMS : edition des blocs](/images/cms-headless-en-3-jours/screen-shot-2019-05-29-at-4.19.06-pm.png){width=1000}
+![Netlify CMS : edition des blocs](../../assets/images/cms-headless-en-3-jours/screen-shot-2019-05-29-at-4.19.06-pm.png){width=1000}
 
 Créons maintenant un nouveau template pour le rendu de nos widgets :
 

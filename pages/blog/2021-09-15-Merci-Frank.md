@@ -4,6 +4,7 @@ description: Hommage à mon ami Frank.
 image: images/frank.jpg
 image_header: false
 date: 2021/09/15
+years: [2021]
 published: true
 ---
 J’avais juste envie de te dire merci. Merci de m’avoir permis de te connaitre et de partager avec toi.

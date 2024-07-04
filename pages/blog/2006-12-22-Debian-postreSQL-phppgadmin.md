@@ -3,6 +3,7 @@ title: "Debian + postreSQL + phppgadmin"
 date: 2006-12-22
 tags:
   - Développement
+years: [2006]
 published: true
 ---
 Depuis quelques temps, je fais pas mal "joujou" avec [ma Dedibox](https://web.archive.org/web/20070425184223/http://www.narno.com/blog?id=43) et je personnalise ma Debian selon mes besoin et mes envies.

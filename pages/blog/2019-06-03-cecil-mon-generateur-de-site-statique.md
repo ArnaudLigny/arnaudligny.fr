@@ -5,6 +5,7 @@ tags:
   - Développement
   - SSG
   - Cecil
+years: [2019]
 image: /images/cecil-card.png
 image_header: false
 typora-root-url: ../../static

@@ -3,6 +3,6 @@ services:
 - type: web
   name: arnaudligny.fr
   env: static
-  buildCommand: ./scripts/cecil-build.sh
+  buildCommand: curl -sSOL https://cecil.app/build.sh && bash ./build.sh
   staticPublishPath: _site
   pullRequestPreviewsEnabled: true
