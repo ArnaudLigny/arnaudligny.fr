@@ -93,8 +93,7 @@ pages:
         enabled: true
       responsive:
         enabled: true
-      webp:
-        enabled: true
+      formats: ['webp']
       caption:
         enabled: true
       placeholder: lqip
@@ -135,8 +134,7 @@ assets:
       sizes:
         default: 100vw
         markdown: "(max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 800px) 768px, (max-width: 1600px) 1024px"
-    webp:
-      enabled: true
+    formats: ['webp']
     cdn:
       enabled: false
       #canonical: false
