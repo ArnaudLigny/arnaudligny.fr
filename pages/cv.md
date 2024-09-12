@@ -99,7 +99,7 @@ Clients : Saint Maclou, Tereos, Leroy Merlin, Brigad, Le petit Souk, Le Havre, T
 
 ###### Du Côté de Chez Vous (Leroy Merlin)
 
-👉 Avant-vente, accompagnement, conseils techniques et pilotage de la réalisation de la refonte du site web.  
+👉 Avant-vente, accompagnement, conseils techniques et pilotage de la réalisation de la refonte du site web [Du Côté de Chez Vous](https://web.archive.org/web/20201221034701/https://www.ducotedechezvous.com).  
 👉 Points d’attention : site statique généré et déployé de manière atomique, CMS headless [Contentful](https://www.contentful.com).
 
 ###### Brigad (web app et app mobile)
