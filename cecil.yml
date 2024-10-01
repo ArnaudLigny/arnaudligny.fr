@@ -137,7 +137,7 @@ assets:
     formats: ['webp']
     cdn:
       enabled: true
-      #canonical: false
+      canonical: false
       #remote: false
       #account: 'aligny'
       # Cloudinary
