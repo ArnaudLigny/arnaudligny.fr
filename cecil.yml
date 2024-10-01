@@ -136,19 +136,22 @@ assets:
         markdown: "(max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 800px) 768px, (max-width: 1600px) 1024px"
     formats: ['webp']
     cdn:
-      enabled: false
+      enabled: true
       #canonical: false
       #remote: false
       #account: 'aligny'
-      account: 'ayrcxgimor'
       # Cloudinary
       #url: 'https://res.cloudinary.com/%account%/image/fetch/c_limit,w_%width%,q_%quality%,f_%format%,d_default/%image_url%'
       # Cloudimage
-      url: 'https://%account%.cloudimg.io/%image_url%?w=%width%&q=%quality%&force_format=%format%'
+      #account: 'ayrcxgimor'
+      #url: 'https://%account%.cloudimg.io/%image_url%?w=%width%&q=%quality%&force_format=%format%'
       # TwicPics
       #url: 'https://%account%.twic.pics/%image_url%?twic=v1/resize=%width%/quality=%quality%/output=%format%'
       # imgix
       #url: 'https://%account%.imgix.net/%image_url%?w=%width%&q=%quality%&fm=%format%'
+      # Netlify
+      account: 'arnaudligny.netlify.app'
+      url: 'https://%account%/.netlify/images?url=%image_url%&w=%width%&fm=%format%'
 manifest:
   background_color: '#F3F7FC'
   theme_color: '#CADCF2'
