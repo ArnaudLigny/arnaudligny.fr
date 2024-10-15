@@ -136,7 +136,7 @@ assets:
         markdown: "(max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 800px) 768px, (max-width: 1600px) 1024px"
     formats: ['webp']
     cdn:
-      enabled: true
+      enabled: false
       canonical: false
       #remote: false
       #account: 'aligny'
