@@ -2,11 +2,11 @@
 <html lang="{{ site.language }}">
 <head>
     <meta charset="utf-8" />
-    <title>{% spaceless %}
+    <title>{% apply spaceless %}
 {% block title %}
         {{ page.title}} &middot; {{ site.title }}
 {% endblock title %}
-{% endspaceless %}</title>
+{% endapply %}</title>
     <meta name="description" content="{{ site.description|escape }}" />
     <meta name="keywords" content="{{ site.keywords|join(', ') }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -81,11 +81,11 @@
 {% block subheader %}{% endblock %}
 {% block menu %}
         <nav>
-            <ul>{% spaceless %}
+            <ul>{% apply spaceless %}
 {% for entry in site.menus.main|sortByWeight %}
                 {% if page.id == 'index' and entry.id == 'index' %}{% else %}<li>{% if entry.id == 'index' %}<img src="{{ url('images/avatars/avatar-22.png') }}" alt="avatar" />&nbsp;{% endif %}<a id="{{ entry.id }}" weight="{{ entry.weight }}" href="{{ url(entry.url) }}">{{ entry.name }}</a></li>{% endif %}
 {% endfor %}
-            {% endspaceless %}</ul>
+            {% endapply %}</ul>
             <ul class="social">
                 <li><a href="https://twitter.com/{{ site.social.twitter }}" rel="me" class="social"><span class="hide-text">Twitter</span><svg class="icon twitter" width="1em" height="1em"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-twitter"></use></svg></a></li>
                 <li><a href="https://github.com/{{ site.social.github }}" rel="me" class="social"><span class="hide-text">GitHub</span><svg class="icon github" width="1em" height="1em"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#si-zocial-github"></use></svg></a></li>
