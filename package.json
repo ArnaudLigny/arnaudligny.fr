@@ -16,5 +16,8 @@
     "ci": "start-server-and-test serve-silent http://localhost:8000 cy:run",
     "ci:serve": "php cecil.phar serve --config=config/dev.yml",
     "ci:record": "run-p --race ci:serve cy:run"
+  },
+  "engines" : { 
+    "node" : ">=16.0.0 <20.0.0"
   }
 }
