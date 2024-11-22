@@ -83,7 +83,7 @@ Refonte complète du tunnel d’achat via une approche headless avec la solution
 👉 Pilotage des ateliers techniques entre les équipes métiers et les développeurs;  
 👉 Conception de l’architecture technique en accord avec la DOSI;  
 👉 Conception du produit et participation au backlog en collaboration avec le business analyst, les PO et CPO, et les équipes QA.  
-Outils & solutions : commercetools, Microsoft Azure, Node.js, NestJS, Terraform, Postman.
+Outils & solutions : commercetools, Microsoft Azure (DevOps), Node.js, NestJS, Terraform, Postman, Miro, yEd.
 
 ### Consultant technique senior - Web, mobile & e-commerce
 
