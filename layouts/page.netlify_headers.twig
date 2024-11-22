@@ -1,0 +1,9 @@
+{#- Netlify headers -#}
+{%- if site.headers -%}
+  {%- for header in site.headers ~%}
+{{ header['source'] ~}}
+    {%- for h in header['headers'] ~%}
+  {{ h.key }}: {{ h.value }}
+    {%- endfor ~%}
+  {%- endfor ~%}
+{%- endif ~%}

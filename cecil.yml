@@ -74,6 +74,10 @@ pages:
       published: true
     404:
       published: true
+    headers:
+      path: _headers
+      output: netlify_headers
+      multilingual: false
   virtual:
     # short URL / redirects
     - path: code
@@ -116,6 +120,9 @@ output:
       mediatype: application/json
       extension: json
       exclude: ['redirect', 'paginated']
+    - name: netlify_headers
+      mediatype: text/plain
+      extension: ""
   pagetypeformats:
     homepage: ['html', 'atom', 'elasticlunr']
     section: ['html', 'atom', 'json', 'jsonfeed']
@@ -195,3 +202,84 @@ highlight:
   version: 11.6.0
 anchor:
   version: 4.3.1
+# HTTP headers
+headers:
+  # Global, CSP
+  - source: /*
+    headers:
+      - key: X-Frame-Options
+        value: "SAMEORIGIN"
+      - key: X-XSS-Protection
+        value: "1; mode=block"
+      - key: X-Content-Type-Options
+        value: "nosniff"
+      - key: Content-Security-Policy
+        value: "default-src 'self'; object-src 'self'; img-src 'self' data: www.google-analytics.com *.twitter.com *.twimg.com *.netlify.com *.netlify.app res.cloudinary.com aligny.twic.pics aligny.imgix.net ayrcxgimor.cloudimg.io; script-src 'self' 'unsafe-inline' *.arnaudligny.fr *.netlify.com *.googleapis.com www.google-analytics.com www.googletagmanager.com *.twitter.com *.twimg.com *.noti.st *.notist.cloud static.cloudflareinsights.com gist.github.com giscus.app; style-src 'self' 'unsafe-inline' *.arnaudligny.fr *.netlify.com *.googleapis.com *.twitter.com github.githubassets.com giscus.app; font-src 'self' data: fonts.gstatic.com; frame-src 'self' *.twitter.com docs.google.com www.youtube.com noti.st *.notist.cloud giscus.app; connect-src 'self' www.google-analytics.com cloudflareinsights.com/cdn-cgi/rum res.cloudinary.com aligny.twic.pics aligny.imgix.net ayrcxgimor.cloudimg.io *.netlify.app fonts.googleapis.com fonts.gstatic.com static.cloudflareinsights.com identity.netlify.com;"
+      - key: Strict-Transport-Security
+        value: "max-age=31536000; includeSubDomains; preload"
+  # Assets
+  - source: /css/*
+    headers:
+      - key: Cache-Control
+        value: "public, max-age=31536000"
+  - source: /fonts/*
+    headers:
+      - key: Cache-Control
+        value: "public, max-age=31536000"
+  - source: /favicon.*
+    headers:
+      - key: Cache-Control
+        value: "public, max-age=31536000"
+  - source: /images/*
+    headers:
+      - key: Cache-Control
+        value: "public, max-age=31536000"
+  - source: /videos/*
+    headers:
+      - key: Cache-Control
+        value: "public, max-age=31536000"
+  - source: /logo*
+    headers:
+      - key: Cache-Control
+        value: "public, max-age=31536000"
+  - source: /icon*
+    headers:
+      - key: Cache-Control
+        value: "public, max-age=31536000"
+  - source: /assets/*
+    headers:
+      - key: Cache-Control
+        value: "public, max-age=31536000"
+  # Scripts
+  - source: /js/*
+    headers:
+      - key: Cache-Control
+        value: "private, max-age=31536000"
+  - source: /javascript/*
+    headers:
+      - key: Cache-Control
+        value: "private, max-age=31536000"
+  # Service Worker
+  - source: /serviceworker.js
+    headers:
+      - key: Cache-Control
+        value: "private, max-age=0"
+  - source: /manifest.webmanifest
+    headers:
+      - key: Content-Type
+        value: "application/manifest+json"
+      - key: Cache-Control
+        value: "private, max-age=31536000"
+  # Admin
+  - source: /admin/*
+    headers:
+      - key: Cache-Control
+        value: "no-cache, no-store, must-revalidate, max-age=0"
+      - key: Content-Security-Policy
+        value: "default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline' blob: *; connect-src * 'unsafe-inline'; frame-src *; font-src * data: 'unsafe-inline';"
+  - source: /.netlify/*
+    headers:
+      - key: Cache-Control
+        value: "no-cache, no-store, must-revalidate, max-age=0"
+      - key: Content-Security-Policy
+        value: "default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline' blob: *; connect-src * 'unsafe-inline'; frame-src *; font-src * data: 'unsafe-inline';"
