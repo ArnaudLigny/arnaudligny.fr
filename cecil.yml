@@ -74,10 +74,6 @@ pages:
       published: true
     404:
       published: true
-    headers:
-      path: _headers
-      output: netlify_headers
-      multilingual: false
   virtual:
     # short URL / redirects
     - path: code
@@ -120,9 +116,6 @@ output:
       mediatype: application/json
       extension: json
       exclude: ['redirect', 'paginated']
-    - name: netlify_headers
-      mediatype: text/plain
-      extension: ""
   pagetypeformats:
     homepage: ['html', 'atom', 'elasticlunr']
     section: ['html', 'atom', 'json', 'jsonfeed']
