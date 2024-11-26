@@ -197,8 +197,8 @@ anchor:
   version: 4.3.1
 # HTTP headers
 headers:
-  # Global, CSP
-  - source: /*
+  # Security
+  - path: /*
     headers:
       - key: X-Frame-Options
         value: "SAMEORIGIN"
@@ -211,66 +211,66 @@ headers:
       - key: Strict-Transport-Security
         value: "max-age=31536000; includeSubDomains; preload"
   # Assets
-  - source: /css/*
+  - path: /css/*
     headers:
       - key: Cache-Control
         value: "public, max-age=31536000"
-  - source: /fonts/*
+  - path: /fonts/*
     headers:
       - key: Cache-Control
         value: "public, max-age=31536000"
-  - source: /favicon.*
+  - path: /favicon.*
     headers:
       - key: Cache-Control
         value: "public, max-age=31536000"
-  - source: /images/*
+  - path: /images/*
     headers:
       - key: Cache-Control
         value: "public, max-age=31536000"
-  - source: /videos/*
+  - path: /videos/*
     headers:
       - key: Cache-Control
         value: "public, max-age=31536000"
-  - source: /logo*
+  - path: /logo*
     headers:
       - key: Cache-Control
         value: "public, max-age=31536000"
-  - source: /icon*
+  - path: /icon*
     headers:
       - key: Cache-Control
         value: "public, max-age=31536000"
-  - source: /assets/*
+  - path: /assets/*
     headers:
       - key: Cache-Control
         value: "public, max-age=31536000"
   # Scripts
-  - source: /js/*
+  - path: /js/*
     headers:
       - key: Cache-Control
         value: "private, max-age=31536000"
-  - source: /javascript/*
+  - path: /javascript/*
     headers:
       - key: Cache-Control
         value: "private, max-age=31536000"
   # Service Worker
-  - source: /serviceworker.js
+  - path: /serviceworker.js
     headers:
       - key: Cache-Control
         value: "private, max-age=0"
-  - source: /manifest.webmanifest
+  - path: /manifest.webmanifest
     headers:
       - key: Content-Type
         value: "application/manifest+json"
       - key: Cache-Control
         value: "private, max-age=31536000"
   # Admin
-  - source: /admin/*
+  - path: /admin/*
     headers:
       - key: Cache-Control
         value: "no-cache, no-store, must-revalidate, max-age=0"
       - key: Content-Security-Policy
         value: "default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline' blob: *; connect-src * 'unsafe-inline'; frame-src *; font-src * data: 'unsafe-inline';"
-  - source: /.netlify/*
+  - path: /.netlify/*
     headers:
       - key: Cache-Control
         value: "no-cache, no-store, must-revalidate, max-age=0"
