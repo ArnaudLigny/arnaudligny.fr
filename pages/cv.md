@@ -41,8 +41,8 @@ Excellente connaissance des règles qualité Web et du vocabulaire associé. Com
 ![Logo Clever Age](../assets/logos/clever-age.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 👉 Consultant fonctionnelle et technique, expert e-commerce.  
-Clients : Elis, Groupe Casino, Edenred, Groupe Bic, Business France, Gémo…  
-Outils & solutions : Akeneo, VTEX, commercetools, Mirakl.
+Clients : Elis, Groupe Casino, Edenred, Groupe Bic, Business France, Gémo, Salomon, Focus Entertainment…  
+Outils & solutions : Akeneo, VTEX, commercetools, Mirakl, Magento, Jira, Confluence, Miro.
 
 ### Co-fondateur
 
@@ -83,7 +83,7 @@ Refonte complète du tunnel d’achat via une approche headless avec la solution
 👉 Pilotage des ateliers techniques entre les équipes métiers et les développeurs;  
 👉 Conception de l’architecture technique en accord avec la DOSI;  
 👉 Conception du produit et participation au backlog en collaboration avec le business analyst, les PO et CPO, et les équipes QA.  
-Outils & solutions : commercetools, Microsoft Azure, Node.js, NestJS, Terraform, Postman.
+Outils & solutions : commercetools, Microsoft Azure (DevOps), Node.js, NestJS, Terraform, Postman, Miro, yEd.
 
 ### Consultant technique senior - Web, mobile & e-commerce
 
