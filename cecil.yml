@@ -74,6 +74,12 @@ pages:
       published: true
     404:
       published: true
+    vercel:
+      path: vercel
+      output: vercel
+      multilingual: false
+      serviceworker:
+        precache: false
   virtual:
     # short URL / redirects
     - path: code
@@ -116,6 +122,9 @@ output:
       mediatype: application/json
       extension: json
       exclude: ['redirect', 'paginated']
+    - name: vercel
+      mediatype: application/json
+      extension: json
   pagetypeformats:
     homepage: ['html', 'atom', 'elasticlunr']
     section: ['html', 'atom', 'json', 'jsonfeed']
