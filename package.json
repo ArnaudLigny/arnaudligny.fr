@@ -17,7 +17,7 @@
     "ci:serve": "php cecil.phar serve --config=config/dev.yml",
     "ci:record": "run-p --race ci:serve cy:run"
   },
-  "engines" : { 
-    "node" : ">=16.0.0 <20.0.0"
+  "engines": {
+    "node": ">=16.0.0 <20.0.0"
   }
 }

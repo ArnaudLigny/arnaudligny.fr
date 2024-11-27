@@ -74,6 +74,12 @@ pages:
       published: true
     404:
       published: true
+    vercel:
+      path: vercel
+      output: vercel
+      multilingual: false
+      serviceworker:
+        precache: false
   virtual:
     # short URL / redirects
     - path: code
@@ -116,6 +122,9 @@ output:
       mediatype: application/json
       extension: json
       exclude: ['redirect', 'paginated']
+    - name: vercel
+      mediatype: application/json
+      extension: json
   pagetypeformats:
     homepage: ['html', 'atom', 'elasticlunr']
     section: ['html', 'atom', 'json', 'jsonfeed']
@@ -210,3 +219,8 @@ headers:
         value: max-age=31536000; includeSubDomains; preload
       - key: Content-Security-Policy
         value: "default-src 'self'; object-src 'self'; img-src 'self' data: www.google-analytics.com *.twitter.com *.twimg.com *.netlify.com *.netlify.app res.cloudinary.com aligny.twic.pics aligny.imgix.net ayrcxgimor.cloudimg.io; script-src 'self' 'unsafe-inline' *.arnaudligny.fr *.netlify.com *.googleapis.com www.google-analytics.com www.googletagmanager.com *.twitter.com *.twimg.com *.noti.st *.notist.cloud static.cloudflareinsights.com gist.github.com giscus.app; style-src 'self' 'unsafe-inline' *.arnaudligny.fr *.netlify.com *.googleapis.com *.twitter.com github.githubassets.com giscus.app; font-src 'self' data: fonts.gstatic.com; frame-src 'self' *.twitter.com docs.google.com www.youtube.com noti.st *.notist.cloud giscus.app; connect-src 'self' www.google-analytics.com cloudflareinsights.com/cdn-cgi/rum res.cloudinary.com aligny.twic.pics aligny.imgix.net ayrcxgimor.cloudimg.io *.netlify.app fonts.googleapis.com fonts.gstatic.com static.cloudflareinsights.com identity.netlify.com;"
+  # Vercel images
+  - path: /:all*(svg|jpg|jpeg|gif|png|webp|css|mp4|webm|woff|woff2|ttf|eot|ico|js|json|xml)
+    headers:
+      - key: Cache-Control
+        value: public, max-age=31536000
