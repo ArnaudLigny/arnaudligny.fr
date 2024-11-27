@@ -41,8 +41,8 @@ Excellente connaissance des règles qualité Web et du vocabulaire associé. Com
 ![Logo Clever Age](../assets/logos/clever-age.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 👉 Consultant fonctionnelle et technique, expert e-commerce.  
-Clients : Elis, Groupe Casino, Edenred, Groupe Bic, Business France, Gémo…  
-Outils & solutions : Akeneo, VTEX, commercetools, Mirakl.
+Clients : Elis, Groupe Casino, Edenred, Groupe Bic, Business France, Gémo, Salomon, Focus Entertainment…  
+Outils & solutions : Akeneo, VTEX, commercetools, Mirakl, Magento, Jira, Confluence, Miro.
 
 ### Co-fondateur
 
