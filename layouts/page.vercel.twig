@@ -1,0 +1,46 @@
+{#- Vercel config -#}
+{
+  "buildCommand": "curl -sSOL https://cecil.app/build.sh && bash ./build.sh",
+  "outputDirectory": "_site"
+  {#- headers -#}
+  {%- if site.headers -%}
+  ,
+  "headers": [
+    {%- for entry in site.headers ~%}
+    {
+      "source": "{{ entry.path }}",
+      "headers": [
+        {%- for header in entry.headers ~%}
+        {
+          "key": "{{ header.key }}",
+          "value": "{{ header.value }}"
+        }{% if not loop.last %},{% endif %}
+        {%- endfor ~%}
+      ]
+    }{% if not loop.last %},{% endif %}
+    {%- endfor ~%}
+  ]
+  {%- endif -%}
+  {#- redirects -#}
+  ,
+  "redirects": [
+    {%- for page in site.pages|filter(p => p.redirect is defined) ~%}
+    {
+      "source": "{{ url(page, {'canonical': false}) }}",
+      "destination": "{{ url(page.redirect, {'canonical': false}) }}",
+      "statusCode": 301
+    }{% if loop.last is not defined and not loop.last ?? false %},{% endif %}
+    {%- endfor -%}
+    {%- if site.netlify.redirects is defined and site.netlify.redirects > 0 ~%}
+      {%- for redirect in site.netlify.redirects ~%}
+    {
+      "source": "{{ url(redirect.from, {'canonical': false}) }}",
+      "destination": "{{ url(redirect.to, {'canonical': false}) }}"
+      {%- if redirect.status is defined -%},
+      "statusCode": {{ redirect.status }}
+      {%- endif ~%}
+    }{% if loop.last is not defined and not loop.last ?? false %},{% endif %}
+      {%- endfor ~%}
+    {%- endif ~%}
+  ]
+}
