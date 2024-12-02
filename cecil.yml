@@ -46,19 +46,18 @@ author:
   statut: En poste
 social:
   twitter:
+    url: https://twitter.com/ArnaudLigny
     site: ArnaudLigny
     creator: ArnaudLigny
-    url: https://twitter.com/ArnaudLigny
   github:
-    username: ArnaudLigny
     url: https://github.com/ArnaudLigny
+    username: ArnaudLigny
   linkedin:
-    username: arnaudligny
     url: https://fr.linkedin.com/in/arnaudligny/fr/
+    username: arnaudligny
   mastodon:
-    #creator: "@arnaud@gazuji.com"
-    creator: "@Mastodon@mastodon.social"
     url: https://gazuji.com/@arnaud
+    creator: "@arnaud@gazuji.com"
 theme:
   - garth
   - pwa
