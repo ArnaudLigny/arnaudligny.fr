@@ -56,7 +56,8 @@ social:
     username: arnaudligny
     url: https://fr.linkedin.com/in/arnaudligny/fr/
   mastodon:
-    creator: "@arnaud@gazuji.com"
+    #creator: "@arnaud@gazuji.com"
+    creator: "@Mastodon@mastodon.social"
     url: https://gazuji.com/@arnaud
 theme:
   - garth
