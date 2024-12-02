@@ -55,6 +55,9 @@ social:
   linkedin:
     username: arnaudligny
     url: https://fr.linkedin.com/in/arnaudligny/fr/
+  mastodon:
+    username: @arnaud@gazuji.com
+    url: https://gazuji.com/@arnaud
 theme:
   - garth
   - pwa
