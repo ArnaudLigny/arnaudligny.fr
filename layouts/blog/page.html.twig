@@ -10,7 +10,7 @@
           {%- include 'partials/post-meta.html.twig' with {'post': page} only ~%}
           {{ page.content }}
         </article>
-        {%- if page.comments ?? true ~%}
+        {%- if page.comments|default(false) and site.comments|default(false) != false ~%}
         <aside id="comments">
           <script src="https://giscus.app/client.js"
             data-repo="ArnaudLigny/arnaudligny.fr"
