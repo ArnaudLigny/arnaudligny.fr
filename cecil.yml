@@ -191,6 +191,10 @@ serviceworker:
   update:
     snackbar:
       enabled: true
+    badge:
+      enabled: false
+    notification:
+      enabled: false
   offline:
     snackbar:
       enabled: true
