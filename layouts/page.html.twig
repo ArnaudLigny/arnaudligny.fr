@@ -3,7 +3,7 @@
     {%- block head -%}
     {{- parent() ~}}
     <!-- dark mode -->
-    <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss') }}" media="(prefers-color-scheme: dark)" async>
+    <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss') }}" media="(prefers-color-scheme: dark)" />
     {#- Styles enhancements ~#}
     <style>{% apply minify_css %}
       @media screen and (min-width: 40em) {
