@@ -20,6 +20,6 @@ J’aime me définir comme un facilitateur : comprendre et aider mes clients à 
 Passionné par la simplification, la scalabilité et la performance des sites web, j’aime travailler avec une approche [progressive et découplée](https://jamstatic.fr) et plus particulièrement la [Jamstack](https://jamstack.wtf/#what-is-jamstack).  
 J’ai également conçu et développé un générateur de site statique orienté contenu : [Cecil](https://cecil.app).
 
-[LinkedIn](https://fr.linkedin.com/in/arnaudligny/fr/) — <a href="https://github.com/ArnaudLigny" rel="me">GitHub</a> — [Twitter](https://twitter.com/ArnaudLigny) — <a href="mailto:arnaud@ligny.fr?subject=Prise de contact" title="Prise de contact par e-mail">Contact</a>
+[LinkedIn](https://fr.linkedin.com/in/arnaudligny/fr/) — <a href="https://github.com/ArnaudLigny" rel="me">GitHub</a> — [Twitter](https://twitter.com/ArnaudLigny) — <a href="mailto:arnaud@ligny.fr?subject=Prise%20de%20contact" title="Prise de contact par e-mail">Contact</a>
 
 *[DSI]: Direction des Services Informatiques
