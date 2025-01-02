@@ -184,10 +184,6 @@ serviceworker:
       assets:
         - logo.png
         - photo-cv.jpg
-        - icon-192x192.png
-        - icon-512x512.png
-        - icon-192x192-maskable.png
-        - icon-512x512-maskable.png
   update:
     snackbar:
       enabled: true
