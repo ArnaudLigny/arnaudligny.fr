@@ -5,7 +5,7 @@
     <!-- dark mode -->
     <link rel="stylesheet" href="{{ asset('sass/garth-dark.scss') }}" media="(prefers-color-scheme: dark)" />
     {#- Styles enhancements ~#}
-    <style>{% apply minify_css %}
+    <style>{% apply minify_css ~%}
       @media screen and (min-width: 40em) {
         .main {
           flex-direction: inherit;
@@ -92,7 +92,7 @@
     {{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ site.highlight.version ~ '/styles/a11y-dark.min.css')|html({title: 'Syntax highlight dark theme', media: '(prefers-color-scheme: dark)'}, {preload: true}) ~}}
     <!-- anchor.js -->
     <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ site.anchor.version ~ '/anchor.min.js') }}"></script>
-    <script>{%- apply minify_js -%}
+    <script>{% apply minify_js ~%}
       var selector = 'body > main > div > article > h2, body > main > div > article > h3';
       anchors.options = {
         placement: 'left',
@@ -100,7 +100,7 @@
         icon: '#'
       };
       anchors.add(selector);
-    {%- endapply -%}</script>
+    {% endapply %}</script>
     <div class="print print__footer">
       &copy; {{ site.copyright|default(site.title) }} — <a href="{{ url(page) }}">{{ url(page, {canonical: true}) }}</a>
     </div>
