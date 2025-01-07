@@ -43,6 +43,11 @@ export default defineConfig({
             required: true,
           },
           {
+            label: 'Date',
+            name: 'date',
+            type: 'datetime',
+          },
+          {
             type: "rich-text",
             name: "body",
             label: "Body",
