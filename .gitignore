@@ -10,3 +10,6 @@ cypress/screenshots
 cypress/videos
 .tina/__generated__
 .obsidian
+
+node_modules
+.env

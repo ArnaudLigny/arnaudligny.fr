@@ -1,8 +1,10 @@
 {
   "dependencies": {
-    "netlify-plugin-cecil-cache": "^0.3"
+    "netlify-plugin-cecil-cache": "^0.3",
+    "tinacms": "^2.6.0"
   },
   "devDependencies": {
+    "@tinacms/cli": "^1.8.0",
     "cypress": "6.3.0",
     "npm-run-all": "^4.1",
     "start-server-and-test": "^1.14"
