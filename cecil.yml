@@ -46,15 +46,18 @@ author:
   statut: En poste
 social:
   twitter:
+    url: https://twitter.com/ArnaudLigny
     site: ArnaudLigny
     creator: ArnaudLigny
-    url: https://twitter.com/ArnaudLigny
   github:
-    username: ArnaudLigny
     url: https://github.com/ArnaudLigny
+    username: ArnaudLigny
   linkedin:
-    username: arnaudligny
     url: https://fr.linkedin.com/in/arnaudligny/fr/
+    username: arnaudligny
+  mastodon:
+    url: https://gazuji.com/@arnaud
+    creator: "@arnaud@gazuji.com"
 theme:
   - garth
   - pwa
@@ -181,13 +184,13 @@ serviceworker:
       assets:
         - logo.png
         - photo-cv.jpg
-        - icon-192x192.png
-        - icon-512x512.png
-        - icon-192x192-maskable.png
-        - icon-512x512-maskable.png
   update:
     snackbar:
       enabled: true
+    badge:
+      enabled: false
+    notification:
+      enabled: false
   offline:
     snackbar:
       enabled: true

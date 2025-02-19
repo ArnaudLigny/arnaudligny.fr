@@ -14,6 +14,10 @@ En 2017 j'ai réalisé une présentation lors du 1er meetup organisé par [Adfab
 
 <!--break-->
 
+<!--
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSgfI-5wg8n1crZOXnyGBgVMtzfedqVy2jobj3Iz-t_8htuVCsAcpoUcG37ibM7qjUDdilKtCDoaF-Q/embed?start=false&loop=false&delayms=3000" frameborder="0" width="760" height="457" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="width:100%;"></iframe>
 
 [https://docs.google.com/presentation](https://docs.google.com/presentation/d/e/2PACX-1vSgfI-5wg8n1crZOXnyGBgVMtzfedqVy2jobj3Iz-t_8htuVCsAcpoUcG37ibM7qjUDdilKtCDoaF-Q/pub)
+-->
+
+<p data-notist="aligny/xh9dyf">Consulter <a href="https://noti.st/aligny/xh9dyf">Le statique c’est fantastique !</a> sur Notist.</p>

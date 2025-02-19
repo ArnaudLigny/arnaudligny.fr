@@ -8,5 +8,6 @@ opt/build/cache
 node_modules
 cypress/screenshots
 cypress/videos
-.tina/__generated__
 .obsidian
+.tina/__generated__
+.env

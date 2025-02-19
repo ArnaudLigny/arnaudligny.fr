@@ -16,7 +16,7 @@ intro: |
   *[IoT]: Internet of Things
 menu: main
 layout: cv
-image: photo-cv-2.jpg
+image: photo-cv.jpg
 output: [html, json]
 typora-root-url: ../assets
 typora-copy-images-to: ../assets/images/${filename}

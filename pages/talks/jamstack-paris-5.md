@@ -21,4 +21,3 @@ Lors du meetup **[JAMstack Paris](https://jamstack.paris) #5** je suis intervenu
 ## Slides
 
 <p data-notist="aligny/a0sRr4">Consulter <a href="https://noti.st/aligny/a0sRr4"><em>Cecil, mon générateur de site statique</em></a> sur Notist.</p>
-<script async src="https://on.notist.cloud/embed/002.js"></script>

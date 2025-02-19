@@ -7,3 +7,8 @@
           {{ page.content }}
         </article>
         {%- endblock content ~%}
+
+    {%- block footer -%}
+    {{ parent() }}
+    <script async src="https://on.notist.cloud/embed/002.js"></script>
+    {%- endblock footer ~%}

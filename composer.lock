@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4352e54112f457c99a4302100b52a6bc",
+    "content-hash": "f67dd532fcebc13f948e0fec84e4efa3",
     "packages": [
         {
             "name": "cecil/theme-garth",
@@ -229,20 +229,20 @@
         },
         {
             "name": "cecil/theme-pwa",
-            "version": "2.9.1",
+            "version": "2.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-pwa.git",
-                "reference": "f57966aba2a1053c924f4dfa20c9e4bc2ed14dcf"
+                "reference": "2a1c6bc484cec5031f4b0e7ef9b4c249e56671f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-pwa/zipball/f57966aba2a1053c924f4dfa20c9e4bc2ed14dcf",
-                "reference": "f57966aba2a1053c924f4dfa20c9e4bc2ed14dcf",
+                "url": "https://api.github.com/repos/Cecilapp/theme-pwa/zipball/2a1c6bc484cec5031f4b0e7ef9b4c249e56671f0",
+                "reference": "2a1c6bc484cec5031f4b0e7ef9b4c249e56671f0",
                 "shasum": ""
             },
             "require": {
-                "cecil/theme-installer": "^1.4"
+                "cecil/theme-installer": "^1.4||^2.0"
             },
             "type": "cecil-theme",
             "extra": {
@@ -263,7 +263,7 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/Cecilapp/theme-pwa/tree/2.9.1"
+                "source": "https://github.com/Cecilapp/theme-pwa/tree/2.14.1"
             },
             "funding": [
                 {
@@ -275,7 +275,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-11-27T13:52:38+00:00"
+            "time": "2025-01-04T01:31:53+00:00"
         }
     ],
     "packages-dev": [],

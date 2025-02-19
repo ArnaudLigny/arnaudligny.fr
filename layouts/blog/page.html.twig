@@ -1,6 +1,6 @@
 {% extends ['page.html.twig', '_default/page.html.twig'] %}
 
-{% if page.image is defined and page.image_header ?? true %}
+{% if page.image is defined and (page.image_header ?? true) %}
 {% set image = asset(page.image)|resize(1200) %}
 {% endif %}
 
@@ -10,7 +10,7 @@
           {%- include 'partials/post-meta.html.twig' with {'post': page} only ~%}
           {{ page.content }}
         </article>
-        {%- if page.comments ?? true ~%}
+        {%- if page.comments|default(false) and site.comments|default(false) != false ~%}
         <aside id="comments">
           <script src="https://giscus.app/client.js"
             data-repo="ArnaudLigny/arnaudligny.fr"
