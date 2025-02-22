@@ -35,3 +35,11 @@ sortby:
   reverse: false    # false|true
 ```
 
+Documentation : https://cecil.app/documentation/configuration/#pages
+
+
+
+
+
+
+
