@@ -2,6 +2,7 @@ vendor
 cecil.phar
 .cecil
 .cache
+.debug/
 _site
 .netlify
 opt/build/cache
