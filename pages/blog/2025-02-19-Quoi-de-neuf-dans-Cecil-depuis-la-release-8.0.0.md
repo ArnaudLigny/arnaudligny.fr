@@ -18,7 +18,7 @@ Un peu plus d’un an plus tard, qu’en est-il ?
 Et bien… on peut dire que je n’ai pas chaumé et apporté de nombreuses améliorations à Cecil, et comme prévu le passage à PHP 8 a bien aidé à rendre le développement agréable et plus confortable pour moi.
 
 Ce billet va prendre la forme d’un changelog, aussi détaillé que possible, toutes asseyant de ne pas être verbeux.
-
+<!-- break -->
 ## Nouvelles fonctionnalités
 
 ### Global Sort by
@@ -35,11 +35,4 @@ sortby:
   reverse: false    # false|true
 ```
 
-Documentation : https://cecil.app/documentation/configuration/#pages
-
-
-
-
-
-
-
+Documentation : <https://cecil.app/documentation/configuration/#pages>
