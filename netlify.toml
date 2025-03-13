@@ -16,6 +16,9 @@
 [context.deploy-preview.environment]
   CECIL_ENV = "preview"
 
+[context.preview.environment]
+  CECIL_BASEURL = "https://preview.arnaudligny.fr/"
+
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
   [plugins.inputs]
