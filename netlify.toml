@@ -34,6 +34,4 @@
   debug = true
 
 [dev]
-  command = "cecil serve"
   targetPort = 8000
-  framework = "#custom"
