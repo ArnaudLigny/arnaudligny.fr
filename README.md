@@ -29,8 +29,7 @@ netlify link
 ### Run local server
 
 ```bash
-php cecil.phar serve
-netlify dev
+php cecil.phar serve & netlify dev
 ```
 
 Open <http://localhost:8888>
