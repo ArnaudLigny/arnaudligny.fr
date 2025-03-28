@@ -204,6 +204,8 @@ highlight:
 anchor:
   version: 4.3.1
 # HTTP headers
+#server:
+#  headers:
 headers:
   # Security
   - path: /*
