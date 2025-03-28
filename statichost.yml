@@ -1,5 +1,5 @@
 # Docker image to use for building
-image: php:8.2.1
+image: php:8.1
 # Build command
 command: curl -sSOL https://cecil.app/build.sh && bash ./build.sh
 # Public directory
