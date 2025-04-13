@@ -72,6 +72,22 @@
       .readmore {
         font-weight: 700;
       }
+      /* breadcrumb */
+      nav.breadcrumb ol {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav.breadcrumb li {
+        font-size: 0.875rem;
+      }
+      nav.breadcrumb li:not(:last-child)::after {
+        margin: .25rem;
+        content: "›";
+        opacity: .5;
+      }
     {% endapply %}</style>
     <!-- PWA -->
     {{- include('partials/pwa.html.twig', {site}, with_context = false) ~}}
@@ -82,6 +98,11 @@
     <link rel="preconnect" href="https://ayrcxgimor.cloudimg.io">
     <link rel="dns-prefetch" href="https://ayrcxgimor.cloudimg.io">
     {%- endblock head ~%}
+
+    {%- block content ~%}
+      {%- include 'partials/breadcrumb.html.twig' with {page: page} only ~%}
+    {{ parent() }}
+    {%- endblock ~%}
 
     {%- block footer -%}
     {{ parent() }}
