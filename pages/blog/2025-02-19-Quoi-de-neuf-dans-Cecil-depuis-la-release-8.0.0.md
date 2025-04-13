@@ -27,7 +27,7 @@ Ajout d’une option de configuration afin de déterminer la méthode globale d�
 
 ```yaml
 pages:
-	sortby: date # default
+  sortby: date # default
 
 sortby:
   variable: date    # date|updated|title|weight
