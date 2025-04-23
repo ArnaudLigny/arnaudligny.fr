@@ -109,8 +109,9 @@ pages:
     links:
       embed:
         enabled: true
-        video:
-          ext: [mp4, webm]
+        #video:
+        #  ext: [mp4, webm]
+        video: [mp4, webm]
 output:
   formats:
     - name: elasticlunr
