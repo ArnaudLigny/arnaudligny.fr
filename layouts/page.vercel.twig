@@ -3,10 +3,10 @@
   "buildCommand": "curl -sSOL https://cecil.app/build.sh && bash ./build.sh",
   "outputDirectory": "_site"
   {#- headers -#}
-  {%- if site.headers -%}
+  {%- if site.server.headers -%}
   ,
   "headers": [
-    {%- for entry in site.headers ~%}
+    {%- for entry in site.server.headers ~%}
     {
       "source": "{{ entry.path }}",
       "headers": [
