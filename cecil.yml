@@ -96,22 +96,15 @@ pages:
   body:
     images:
       class: markdown
-      resize:
-        enabled: true
-      responsive:
-        enabled: true
+      resize: true
+      responsive: true
       formats: ['avif', 'webp']
-      caption:
-        enabled: true
+      caption: true
       placeholder: lqip
-    highlight:
-      enabled: true
+    highlight: true
     links:
-      embed:
-        enabled: true
-        #video:
-        #  ext: [mp4, webm]
-        video: [mp4, webm]
+      embed: true
+      video: [mp4, webm]
 output:
   formats:
     - name: elasticlunr
@@ -137,8 +130,7 @@ static:
     - gdpr-cookie-notice
 assets:
   images:
-    optimize:
-      enabled: true
+    optimize: true
     responsive:
       enabled: true
       widths: [480, 640, 768, 1024]
@@ -182,18 +174,13 @@ serviceworker:
         - logo.png
         - photo-cv.jpg
   update:
-    snackbar:
-      enabled: true
-    badge:
-      enabled: false
-    notification:
-      enabled: false
+    snackbar: true
+    badge: false
+    notification: false
   offline:
-    snackbar:
-      enabled: true
+    snackbar: true
 metatags:
-  jsonld:
-    enabled: true
+  jsonld: true
 netlify:
   redirects:
     - from: https://arnaudligny.netlify.com/*
