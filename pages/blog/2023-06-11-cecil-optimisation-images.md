@@ -2,7 +2,7 @@
 title: Optimisation des images avec Cecil
 description: Comment Cecil optimise automatiquement les images dans les contenus rédigés en Markdown et pour quels gains de performance.
 date: 2023-06-11
-updated: 2024-04-10
+updated: 2025-04-30
 tags:
   - Cecil
   - Performance
@@ -65,26 +65,21 @@ Avec les options [_assets_](https://cecil.app/documentation/configuration/#asset
 # Paramétrage global des assets de type image
 assets:
   images:
-    optimize:
-      enabled: true
+    optimize: true
     quality: 75
     responsive:
       widths: [480, 640, 768, 1024]
       sizes:
         default: '(max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 800px) 768px, (max-width: 1600px) 1024px'
 # Paramétrage des images au sein du contenu d'une page
-body:
-  images:
-    lazy:
-      enabled: true
-    decoding:
-      enabled: true
-    webp:
-      enabled: true
-    responsive:
-      enabled: true
-    caption:
-      enabled: true
+pages:
+  body:
+    images:
+      lazy: true
+      decoding: true
+      webp: true
+      responsive: true
+      caption: true
 ```
 
 Le rendu sera :
@@ -126,7 +121,7 @@ Description :
 - Une source alternative au format [WebP](https://developers.google.com/speed/webp) est générée (également avec ses déclinaisons _responsives_) ;
 - Si un titre est ajouté alors la balise `<image>` est encapsulée dans une balise `<figure>` afin d'y ajouter une balise `<figcaption>` contenant le texte correspondant (acceptant le format Markdown, afin d’y mettre un lien vers la source par exemple).
 
-### À propos des images _responsives_
+### À propos des images responsives
 
 Afin d’automatiser le traitement, Cecil propose la configuration suivante par défaut :
 
