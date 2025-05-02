@@ -2,7 +2,7 @@
 title: "Hello, je suis Arnaud."
 description: "Site web d’Arnaud Ligny: CV, blog, projets et talks."
 date: 2017-12-21
-updated: 2022-02-10
+updated: 2025-05-02
 pagination:
   enabled: false
 published: true
@@ -17,7 +17,7 @@ J’aime me définir comme un facilitateur : comprendre et aider mes clients à 
 ✓ Gestion de projet technique (méthodes agiles, QA, organisation)  
 ✓ Avant-vente : qualification, slides techniques / architecture et estimation de charge
 
-Passionné par la simplification, la scalabilité et la performance des sites web, j’aime travailler avec une approche [progressive et découplée](https://jamstatic.fr) et plus particulièrement la [Jamstack](https://jamstack.wtf/#what-is-jamstack).  
+Passionné par la simplification, la scalabilité et la performance des sites web, j’aime travailler avec une approche [progressive et découplée](https://jamstatic.fr) et plus particulièrement la [Jamstack](https://jamstack.org/what-is-jamstack/).  
 J’ai également conçu et développé un générateur de site statique orienté contenu : [Cecil](https://cecil.app).
 
 [LinkedIn](https://fr.linkedin.com/in/arnaudligny/fr/) — <a href="https://github.com/ArnaudLigny" rel="me">GitHub</a> — [Twitter](https://twitter.com/ArnaudLigny) — <a href="mailto:arnaud@ligny.fr?subject=Prise%20de%20contact" title="Prise de contact par e-mail">Contact</a>
