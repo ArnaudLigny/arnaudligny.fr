@@ -103,8 +103,11 @@ pages:
       placeholder: lqip
     highlight: true
     links:
-      embed: true
-      video: [mp4, webm]
+      embed:
+        enabled: true
+        video: [mp4, webm]
+      external:
+        blank: true
 output:
   formats:
     - name: elasticlunr
