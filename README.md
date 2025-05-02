@@ -17,6 +17,23 @@ Serve without serviceworker nor images optimizations:
 php cecil.phar serve --config=config/dev.yml
 ```
 
+## Serve locally with Netlify CLI
+
+### Setup Netlify CLI
+
+```bash
+npm install netlify-cli -g
+netlify link
+```
+
+### Run local server
+
+```bash
+php cecil.phar serve & netlify dev
+```
+
+Open <http://localhost:8888>
+
 ## Preview online
 
 [preview.arnaudligny.fr](https://preview.arnaudligny.fr)
