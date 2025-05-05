@@ -40,4 +40,3 @@ pages:
 ```
 
 Documentation : <https://cecil.app/documentation/configuration/#pages-sortby>
-
