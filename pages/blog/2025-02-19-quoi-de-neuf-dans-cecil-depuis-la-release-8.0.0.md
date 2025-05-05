@@ -25,9 +25,9 @@ Ce billet va prendre la forme d’un changelog, aussi détaillé que possible, t
 
 ## Nouvelles fonctionnalités
 
-### Sort by global (`8.1.0`)
+### Sort by (`8.1.0`)
 
-Ajout d’une option de configuration de la méthode d’ordonnancement des pages :
+Ajout d’une option de configuration de la méthode d’ordonnancement par défaut des pages :
 
 ```yaml
 pages:
@@ -40,3 +40,33 @@ pages:
 ```
 
 Documentation : <https://cecil.app/documentation/configuration/#pages-sortby>
+
+### Fichier de configuration `cecil.yml` (`8.4.0`)
+
+Cecil utilise désormais `cecil.yml` comme fichier de configuration par défaut, mais prend toujours en charge `config.yml`.
+
+## Améliorations
+
+### Extensions (`8.2.0`)
+
+Le code permettant d’étendre les capacités d’un projet est maintenant placé dans un dossier commun nommé « extensions » :
+
+- `/extensions/Cecil/Generator/…`
+- `/extensions/Cecil/Renderer/Extension/…`
+- `/extensions/Cecil/Renderer/PostProcessor/…`
+
+Documentation : <https://cecil.app/documentation/extend/>
+
+### Meilleurs retours de la commande _serve_ (`8.3.0`)
+
+- Les erreurs du serveur PHP sont désormais enregistrées dans le fichier `.cecil/errors.log`
+- Cecil vérifie la disponibilité de l'hôte lorsque le serveur est en cours d'exécution
+- Affichage d’un message d’erreur si le processus du serveur PHP se termine avec un code supérieur à 0
+- La ligne de commande du processus du serveur PHP est désormais affichée en mode débogage
+
+## Corrections
+
+### Espaces dans le chemin vers PHP (`8.3.1`)
+
+Dans le cas où le binaire PHP est dans un dossier contenant des espaces, la commande _serve_ échouait.
+
