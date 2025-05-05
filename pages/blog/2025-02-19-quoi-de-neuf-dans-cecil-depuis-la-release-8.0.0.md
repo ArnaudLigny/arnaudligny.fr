@@ -1,5 +1,5 @@
 ---
-title: "Cecil : quoi de nouveau depuis la sortie de la version 8 ?"
+title: Quoi de neuf dans Cecil depuis la release 8.0.0 ?
 description: "La version 8 de Cecil est sorti en décembre 2023 : que s'est-il passé depuis ?"
 date: 2025-02-19
 updated: 2025-05-02
@@ -14,7 +14,7 @@ published: false
 
 La version 8 de [Cecil](https://cecil.app) est sortie en décembre 2023, annonçant le passage à PHP 8, de nouvelles fonctionnalités et autres améliorations.
 
-Un peu plus d’un an après, est-ce que cette promesse a été tenue ? 😊
+Un peu plus d’un an plus tard, qu’en est-il ?
 
 Et bien je crois qu’on peut dire que je n’ai pas chaumé en apportant de nombreuses améliorations à Cecil et, comme prévu, le passage à PHP 8 a bien aidé à rendre le développement plus confortable pour moi.
 
@@ -25,11 +25,7 @@ Ce billet va prendre la forme d’un changelog, aussi détaillé que possible, t
 
 ## Nouvelles fonctionnalités
 
-<<<<<<< HEAD:pages/blog/2025-02-19-Quoi-de-neuf-dans-Cecil-depuis-la-release-8.0.0.md
-### Tri par défaut des pages
-=======
 ### Sort by global (`8.1.0`)
->>>>>>> master:pages/blog/2025-02-19-quoi-de-neuf-dans-cecil-depuis-la-release-8.0.0.md
 
 Ajout d’une option de configuration de la méthode d’ordonnancement des pages :
 
@@ -44,4 +40,3 @@ pages:
 ```
 
 Documentation : <https://cecil.app/documentation/configuration/#pages-sortby>
-
