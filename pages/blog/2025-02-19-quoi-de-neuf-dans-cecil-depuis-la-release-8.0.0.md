@@ -21,9 +21,11 @@ Et bien je crois qu’on peut dire que je n’ai pas chaumé en apportant de nom
 Ce billet va prendre la forme d’un changelog, aussi détaillé que possible, tout en asseyant de ne pas être trop verbeux.
 <!-- break -->
 
+[toc]
+
 ## Nouvelles fonctionnalités
 
-### Global Sort by
+### Sort by global (`8.1.0`)
 
 Ajout d’une option de configuration de la méthode d’ordonnancement des pages :
 
@@ -38,3 +40,4 @@ pages:
 ```
 
 Documentation : <https://cecil.app/documentation/configuration/#pages-sortby>
+
