@@ -64,6 +64,12 @@ Documentation : <https://cecil.app/documentation/extend/>
 - Affichage d’un message d’erreur si le processus du serveur PHP se termine avec un code supérieur à 0
 - La ligne de commande du processus du serveur PHP est désormais affichée en mode débogage
 
+### Commande _new_ (`8.6.0`)
+
+- Les commandes `new:*` posent désormais des questions (de configuration) lorsqu'elles sont exécutées sans options
+- La commande `new:site` ne copie plus le contenu de démonstration : vous devez utiliser l'option `--demo` si le contenu de démonstration est nécessaire
+- La commande `new:page` utilise désormais l’option `--name` pour définir le nom de la page
+
 ## Corrections
 
 ### Espaces dans le chemin vers PHP (`8.3.1`)
