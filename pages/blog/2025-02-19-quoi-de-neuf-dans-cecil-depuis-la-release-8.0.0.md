@@ -45,6 +45,30 @@ Documentation : <https://cecil.app/documentation/configuration/#pages-sortby>
 
 Cecil utilise désormais `cecil.yml` comme fichier de configuration par défaut, mais prend toujours en charge `config.yml`.
 
+### Ne pas ignorer les dossiers ignorés 😆 (`8.7.0`)
+
+La commande `serve` surveille les dossiers afin de détecter un éventuel changement et ainsi déclencher un nouveau build mais, afin d’éviter les rebuilds inceptifs, prend en compte les fichiers VCS `.gitignore`.
+
+Néanmoins, si vous avez besoin de rebuilder votre site dans tous les cas, il est possible d’utiliser l’option `--no-ignore-vcs` :
+
+```bash
+cecil serve --no-ignore-vcs
+```
+
+*[VCS]: Version Control System
+
+### Liste des pages créées (`8.7.9`)
+
+Vous avez la possibilité de lister les pages créées via l’option `--show-pages` 
+
+:
+
+```bash
+cecil build --show-pages
+```
+
+![image-20250513114555738](/../../../assets/images/2025-02-19-quoi-de-neuf-dans-cecil-depuis-la-release-8.0.0/image-20250513114555738.png)
+
 ## Améliorations
 
 ### Extensions (`8.2.0`)
@@ -70,9 +94,12 @@ Documentation : <https://cecil.app/documentation/extend/>
 - La commande `new:site` ne copie plus le contenu de démonstration : vous devez utiliser l'option `--demo` si le contenu de démonstration est nécessaire
 - La commande `new:page` utilise désormais l’option `--name` pour définir le nom de la page
 
+### Prise en charge des dates dans le fichier de configuration (`8.7.8`)
+
+Si une variable de configuration est une date valide, alors celle-ci sera traitée comme un objet date et non plus comme une simple chaine de caractères (merci au composant [Symfony YAML](https://symfony.com/doc/current/components/yaml.html#date-handling)).
+
 ## Corrections
 
 ### Espaces dans le chemin vers PHP (`8.3.1`)
 
 Dans le cas où le binaire PHP est dans un dossier contenant des espaces, la commande _serve_ échouait.
-
