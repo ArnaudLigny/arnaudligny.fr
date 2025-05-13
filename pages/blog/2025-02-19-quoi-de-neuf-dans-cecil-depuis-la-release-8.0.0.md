@@ -7,7 +7,7 @@ tags: [Cecil]
 years: [2025]
 #image: /images/
 #image_header: false
-typora-root-url: "../../assets"
+#typora-root-url: "../../assets"
 typora-copy-images-to: ../../assets/images/${filename}
 published: false
 ---
@@ -67,7 +67,7 @@ Vous avez la possibilité de lister les pages créées via l’option `--show-pa
 cecil build --show-pages
 ```
 
-![image-20250513114555738](/../../../assets/images/2025-02-19-quoi-de-neuf-dans-cecil-depuis-la-release-8.0.0/image-20250513114555738.png)
+![image-20250513114555738](../../assets/images/2025-02-19-quoi-de-neuf-dans-cecil-depuis-la-release-8.0.0/image-20250513114555738.png)
 
 ## Améliorations
 
