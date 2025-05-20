@@ -88,8 +88,8 @@
     <!-- Cloudflare Web Analytics -->
     {%- include 'partials/cloudflareinsights.js.twig' ~%}
     <!-- Syntax highlight -->
-    {{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ site.highlight.version ~ '/styles/a11y-light.min.css')|html({title: 'Syntax highlight light theme', media: '(prefers-color-scheme: light)'}, {preload: true}) ~}}
-    {{ asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ site.highlight.version ~ '/styles/a11y-dark.min.css')|html({title: 'Syntax highlight dark theme', media: '(prefers-color-scheme: dark)'}, {preload: true}) ~}}
+    {{ html(asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ site.highlight.version ~ '/styles/a11y-light.min.css'), {title: 'Syntax highlight light theme', media: '(prefers-color-scheme: light)'}, {preload: true}) ~}}
+    {{ html(asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ site.highlight.version ~ '/styles/a11y-dark.min.css'), {title: 'Syntax highlight dark theme', media: '(prefers-color-scheme: dark)'}, {preload: true}) ~}}
     <!-- anchor.js -->
     <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ site.anchor.version ~ '/anchor.min.js') }}"></script>
     <script>{% apply minify_js ~%}
