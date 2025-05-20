@@ -33,6 +33,8 @@ menus:
     - id: a-propos
       name: À propos
       url: a-propos
+metatags:
+  jsonld: true
 author:
   firstname: Arnaud
   lastname: Ligny
@@ -108,29 +110,6 @@ pages:
         video: [mp4, webm]
       external:
         blank: true
-output:
-  formats:
-    - name: elasticlunr
-      mediatype: 'application/json'
-      filename: 'elasticlunr'
-      extension: 'json'
-      exclude: ['redirect']
-    - name: json
-      mediatype: application/json
-      extension: json
-      exclude: ['redirect', 'paginated']
-    - name: vercel
-      mediatype: application/json
-      extension: json
-  pagetypeformats:
-    homepage: ['html', 'atom', 'elasticlunr']
-    section: ['html', 'atom', 'json', 'jsonfeed']
-static:
-  exclude:
-    - CV_ArnaudLigny-2014.pdf
-    - CV_ArnaudLigny-2015.pdf
-    - _bck
-    - gdpr-cookie-notice
 assets:
   images:
     optimize: true
@@ -157,6 +136,31 @@ assets:
       #url: 'https://%account%.imgix.net/%image_url%?w=%width%&q=%quality%&fm=%format%'
       # Netlify
       url: '/.netlify/images?url=%image_url%&w=%width%&fm=%format%'
+static:
+  exclude:
+    - CV_ArnaudLigny-2014.pdf
+    - CV_ArnaudLigny-2015.pdf
+    - _bck
+    - gdpr-cookie-notice
+output:
+  formats:
+    - name: elasticlunr
+      mediatype: 'application/json'
+      filename: 'elasticlunr'
+      extension: 'json'
+      exclude: ['redirect']
+    - name: json
+      mediatype: application/json
+      extension: json
+      exclude: ['redirect', 'paginated']
+    - name: vercel
+      mediatype: application/json
+      extension: json
+  pagetypeformats:
+    homepage: ['html', 'atom', 'elasticlunr']
+    section: ['html', 'atom', 'json', 'jsonfeed']
+optimize:
+  enabled: true
 manifest:
   background_color: '#F3F7FC'
   theme_color: '#CADCF2'
@@ -182,8 +186,6 @@ serviceworker:
     notification: false
   offline:
     snackbar: true
-metatags:
-  jsonld: true
 netlify:
   redirects:
     - from: https://arnaudligny.netlify.com/*
