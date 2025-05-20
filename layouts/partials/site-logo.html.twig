@@ -1,4 +1,4 @@
         {#- logo ~#}
         <a class="logo" href="{{ url(site.home) }}">
-          {{ asset(site.logo)|html({alt: site.title ~ ' logo'}, {responsive: false, formats: ['avif','webp']}) }}
+          {{ html(asset(site.logo), {alt: site.title ~ ' logo'}, {responsive: false, formats: ['avif','webp']}) }}
         </a>
