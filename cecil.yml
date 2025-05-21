@@ -97,12 +97,12 @@ pages:
       redirect: blog/telecharger-manuellement-une-extension-magento/
   body:
     images:
-      class: markdown
+      formats: [avif, webp]
       resize: true
       responsive: true
-      formats: ['avif', 'webp']
       caption: true
       placeholder: lqip
+      class: markdown
     highlight: true
     links:
       embed:
@@ -119,7 +119,6 @@ assets:
       sizes:
         default: 100vw
         markdown: "(max-width: 480px) 480px, (max-width: 640px) 640px, (max-width: 800px) 768px, (max-width: 1600px) 1024px"
-    formats: ['avif', 'webp']
     cdn:
       enabled: false
       canonical: false
@@ -142,6 +141,9 @@ static:
     - CV_ArnaudLigny-2015.pdf
     - _bck
     - gdpr-cookie-notice
+layouts:
+  images:
+    formats: [avif, webp]
 output:
   formats:
     - name: elasticlunr
@@ -160,7 +162,7 @@ output:
     homepage: ['html', 'atom', 'elasticlunr']
     section: ['html', 'atom', 'json', 'jsonfeed']
 optimize:
-  enabled: true
+  enabled: false
 manifest:
   background_color: '#F3F7FC'
   theme_color: '#CADCF2'
