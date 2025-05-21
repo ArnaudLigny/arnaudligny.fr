@@ -98,7 +98,6 @@ pages:
   body:
     images:
       formats: [avif, webp]
-      resize: true
       responsive: true
       caption: true
       placeholder: lqip
