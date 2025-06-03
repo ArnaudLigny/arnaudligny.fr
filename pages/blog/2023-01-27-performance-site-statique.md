@@ -12,7 +12,7 @@ typora-copy-images-to: ../../assets/images/${filename}
 published: false
 ---
 
-![Core Web Vitals](images/core-web-vitals-beyonds.png)
+![Core Web Vitals](../../assets/images/core-web-vitals-beyonds.png)
 
 
 
