@@ -23,11 +23,11 @@ Je l’ai donc reconçu et recodé en grande partie, de manière à en faire une
 
 **Première version :**
 
-![Capture d’écran de la première version de Staticast](/images/2022-09-09-staticast-v2/staticast-preview-garth.png "Capture d’écran de la première version de Staticast"){loading=eager}
+![Capture d’écran de la première version de Staticast](../../assets/images/2022-09-09-staticast-v2/staticast-preview-garth.png "Capture d’écran de la première version de Staticast"){loading=eager}
 
 **Nouvelle version :**
 
-![Capture d’écran de Staticast](/images/2022-09-09-staticast-v2/staticast-preview.png "Capture d’écran de la nouvelle version de Staticast")
+![Capture d’écran de Staticast](../../assets/images/2022-09-09-staticast-v2/staticast-preview.png "Capture d’écran de la nouvelle version de Staticast")
 
 Cette nouvelle version m’a été inspirée par [Layout](https://layout.fm) (un podcast de créateurs Web) car j’aimais beaucoup l’aspect épuré et la navigation en 2 colonnes.
 
@@ -54,4 +54,4 @@ Mais aussi :
 
 Pour en savoir plus, et surtout pour savoir comment l’installer, je vous invite à vous rendre sur [**le site dédié**](https://staticast.cecil.app), et à tester à [**démo**](https://staticast-demo.cecil.app).
 
-![Capture d’écran de Staticast sur mobile](/images/2022-09-09-staticast-v2/staticast-mobile-preview.png "Capture d’écran de Staticast sur mobile")
+![Capture d’écran de Staticast sur mobile](../../assets/images/2022-09-09-staticast-v2/staticast-mobile-preview.png "Capture d’écran de Staticast sur mobile")
