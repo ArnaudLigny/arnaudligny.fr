@@ -13,7 +13,7 @@
 
 [context.preview.environment]
   CECIL_BASEURL = "https://preview.arnaudligny.fr/"
-  CECIL_CANONICALURL = true
+  CECIL_CANONICALURL = "true"
 
 [context."8.x-dev"]
   command = "bash ./scripts/netlify-build.sh"
