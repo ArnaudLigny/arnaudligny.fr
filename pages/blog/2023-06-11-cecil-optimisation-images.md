@@ -2,7 +2,7 @@
 title: Optimisation des images avec Cecil
 description: Comment Cecil optimise automatiquement les images dans les contenus rédigés en Markdown et pour quels gains de performance.
 date: 2023-06-11
-updated: 2025-04-30
+updated: 2025-07-13
 tags:
   - Cecil
   - Performance
@@ -75,10 +75,10 @@ assets:
 pages:
   body:
     images:
+      formats: [webp]
+      responsive: true
       lazy: true
       decoding: true
-      webp: true
-      responsive: true
       caption: true
 ```
 
