@@ -166,13 +166,13 @@ manifest:
   background_color: '#F3F7FC'
   theme_color: '#CADCF2'
   theme_color_dark: '#000'
-  icons:
-    - icon-192x192.png
-    - icon-512x512.png
-    - src: icon-192x192-maskable.png
-      purpose: maskable
-    - src: icon-512x512-maskable.png
-      purpose: maskable
+  #icons:
+  #  - icon-192x192.png
+  #  - icon-512x512.png
+  #  - src: icon-192x192-maskable.png
+  #    purpose: maskable
+  #  - src: icon-512x512-maskable.png
+  #    purpose: maskable
   shortcuts: true
 serviceworker:
   enabled: true
