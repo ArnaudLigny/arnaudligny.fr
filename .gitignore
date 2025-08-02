@@ -4,6 +4,7 @@ cecil.phar
 .cache
 .debug/
 _site
+_preview/
 .netlify
 opt/build/cache
 node_modules
