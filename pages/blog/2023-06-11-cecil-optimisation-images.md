@@ -10,9 +10,6 @@ years:
   - 2023
 image: /images/2023-06-11-cecil-optimisation-images/undraw_Image_post_re_25wd.png
 image_header: false
-social:
-  twitter: ArnaudLigny
-  mastodon: arnaud@gazuji.com
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 type: post

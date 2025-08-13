@@ -6,9 +6,6 @@ image: https://i3.ytimg.com/vi/X7hWDOiPXy4/maxresdefault.jpg
 image_header: false
 tags: E-commerce
 years: [2022]
-social:
-  twitter: ArnaudLigny
-  mastodon: arnaud@gazuji.com
 typora-copy-images-to: ../../assets/images/${filename}
 published: true
 ---
