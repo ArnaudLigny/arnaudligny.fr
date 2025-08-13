@@ -47,7 +47,6 @@ social:
   twitter:
     url: https://twitter.com/ArnaudLigny
     site: ArnaudLigny
-    creator: ArnaudLigny
   github:
     url: https://github.com/ArnaudLigny
     username: ArnaudLigny
@@ -56,7 +55,6 @@ social:
     username: arnaudligny
   mastodon:
     url: https://gazuji.com/@arnaud
-    creator: "@arnaud@gazuji.com"
 theme:
   - garth
   - pwa

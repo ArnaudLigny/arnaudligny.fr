@@ -6,10 +6,12 @@ tags: [Cecil]
 years: [2024]
 image: images/2024-03-15-cecil-lqip/cecil-lqip-cover.png
 image_header: false
+social:
+  twitter: ArnaudLigny
+  mastodon: arnaud@gazuji.com
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 published: true
-#comments: false
 ---
 
 > Ce billet fait suite à un [précédent article](/blog/cecil-optimisation-images) traitant des capacités de [Cecil](/tags/cecil) à optimiser les images (au sein des pages).

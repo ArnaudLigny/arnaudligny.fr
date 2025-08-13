@@ -8,6 +8,9 @@ image_header: false
 canonical:
   url: https://double-slash.dev/podcasts/cecil-static-php/
   title: "Podcast sur Double slash"
+social:
+  twitter: ArnaudLigny
+  mastodon: arnaud@gazuji.com
 typora-copy-images-to: ../../assets/images/${filename}
 published: true
 ---
