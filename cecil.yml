@@ -35,13 +35,12 @@ menus:
       url: a-propos
 metatags:
   jsonld: true
-author:
+profile:
   firstname: Arnaud
   lastname: Ligny
-  url: https://arnaudligny.fr
-  email: arnaud[AROBASE]ligny[POINT]fr
+  username: aligny
   job: Consultant technique
-  cv: CV_ArnaudLigny-2016.pdf
+  cv: CV_ArnaudLigny-2022.pdf
   statut: En poste
 social:
   twitter:
