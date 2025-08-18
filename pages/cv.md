@@ -17,6 +17,10 @@ intro: |
 menu: main
 layout: cv
 image: photo-cv.jpg
+author: Arnaud Ligny
+social:
+  twitter: ArnaudLigny
+  mastodon: arnaud@gazuji.com
 output: [html, json]
 typora-root-url: ../assets
 typora-copy-images-to: ../assets/images/${filename}
