@@ -2,11 +2,13 @@ title: Arnaud Ligny
 baseline: Consultant fonctionnel & technique, expert Web & e-commerce
 baseurl: https://arnaudligny.fr/
 canonicalurl: false
-description: Arnaud Ligny, Consultant fonctionnel & technique web, expert e-commerce & Web perf.
+description: Arnaud Ligny, Consultant fonctionnel & technique web, expert e-commerce & Jamstack.
 keywords:
-  - Consultant technique
-  - e-commerce
-  - Web perf
+  - E-commerce
+  - Jamstack
+  - Headless
+  - MACH
+  - Web Performance
 taxonomies:
   tags: tag
   years: year
