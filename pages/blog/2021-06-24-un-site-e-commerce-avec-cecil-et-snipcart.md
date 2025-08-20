@@ -3,7 +3,7 @@ title: "Créer un site e-commerce avec Cecil et Snipcart"
 description: "Comment créer un site e-commerce statique performant et peu couteux grâce à Cecil et Snipcart."
 date: 2021-06-24
 updated: 2023-10-18
-tags: [Cecil, E-commerce, SSG]
+tags: [Cecil, e-commerce, SSG]
 years: [2021]
 image: /images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr.jpg
 image_header: false

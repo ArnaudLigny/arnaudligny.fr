@@ -2,8 +2,8 @@
 title: "Intégrer un CMS en 3 jours"
 date: 2019-06-22
 tags:
-  - Traduction
-  - JAMstack
+  - traduction
+  - Jamstack
   - CMS
 years: [2019]
 image: /images/cms-headless-en-3-jours/netlify-cms-blog-featured-image.png

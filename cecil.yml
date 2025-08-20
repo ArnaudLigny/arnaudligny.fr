@@ -4,11 +4,11 @@ baseurl: https://arnaudligny.fr/
 canonicalurl: false
 description: Arnaud Ligny, Consultant fonctionnel & technique web, expert e-commerce & Jamstack.
 keywords:
-  - E-commerce
+  - e-commerce
   - Jamstack
-  - Headless
+  - headless
   - MACH
-  - Web Performance
+  - web performance
 taxonomies:
   tags: tag
   years: year

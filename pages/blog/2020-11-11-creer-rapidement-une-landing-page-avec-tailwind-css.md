@@ -2,7 +2,7 @@
 title: Créer rapidement une landing page avec Tailwind CSS
 date: 2020-11-11
 tags:
-  - Développement
+  - développement
   - CSS
 years: [2020]
 image: /images/tailwind-css.png

@@ -3,7 +3,7 @@ title: "Une nouvelle version de Staticast"
 description: "Staticast est une Web App statique permettant de diffuser simplement son podcast."
 date: 2022-09-09
 updated: 2022-09-21
-tags: [Podcast, Cecil]
+tags: [podcast, Cecil]
 years: [2022]
 image: /images/2022-09-09-staticast-v2/staticast-preview.png
 image_header: false

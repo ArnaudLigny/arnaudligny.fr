@@ -2,7 +2,7 @@
 title: "Diffuser son podcast simplement"
 date: 2020-08-10
 updated: 2023-03-22
-tags: [Podcast, SSG, Cecil]
+tags: [podcast, SSG, Cecil]
 years: [2020]
 image: /images/2020-08-09-diffuser-son-podcast/staticast-preview.png
 image_header: false

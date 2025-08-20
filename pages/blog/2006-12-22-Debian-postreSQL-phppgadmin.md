@@ -2,7 +2,7 @@
 title: "Debian + postreSQL + phppgadmin"
 date: 2006-12-22
 tags:
-  - Développement
+  - développement
 years: [2006]
 published: true
 ---

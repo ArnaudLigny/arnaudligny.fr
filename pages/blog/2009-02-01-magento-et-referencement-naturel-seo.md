@@ -2,7 +2,7 @@
 title: "Magento et référencement naturel (SEO)"
 date: 2009/02/01
 tags:
-  - E-commerce
+  - e-commerce
   - Magento
   - SEO
 years: [2009]

@@ -2,7 +2,7 @@
 title: "Cecil : mon générateur de site statique"
 date: 2019-06-05
 tags:
-  - Développement
+  - développement
   - SSG
   - Cecil
 years: [2019]

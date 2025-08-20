@@ -2,7 +2,7 @@
 title: "De la refonte d'un site e-commerce monolithique"
 description: "Réflexion sur les difficultés rencontrées lors de la refonte d'un site e-commerce monolithique vers une approche découplée."
 date: 2023-04-01
-tags: [Réflexion, E-commerce]
+tags: [réflexion, e-commerce]
 years: [2023]
 image: images/2023-04-01-de-la-refonte-ecommerce-monolithique/jon-butterworth-WgMDQsn36w4-unsplash.jpg
 published: true
