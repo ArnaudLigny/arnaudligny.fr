@@ -36,7 +36,7 @@ menus:
       name: À propos
       url: a-propos
 metatags:
-  jsonld: true
+  data: true
 profile:
   firstname: Arnaud
   lastname: Ligny
