@@ -16,7 +16,7 @@ intro: |
   *[IoT]: Internet of Things
 menu: main
 layout: cv
-image: photo-cv.jpg
+image: photo-cv-2.jpg
 author: Arnaud Ligny
 social:
   twitter: ArnaudLigny
