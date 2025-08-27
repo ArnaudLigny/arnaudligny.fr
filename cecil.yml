@@ -179,7 +179,7 @@ serviceworker:
     precache:
       assets:
         - logo.png
-        - photo-cv.jpg
+        - photo-cv-2.jpg
   update:
     snackbar: true
     badge: false
