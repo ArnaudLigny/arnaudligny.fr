@@ -2,8 +2,8 @@
 title: "Créer un site e-commerce avec Cecil et Snipcart"
 description: "Comment créer un site e-commerce statique performant et peu couteux grâce à Cecil et Snipcart."
 date: 2021-06-24
-updated: 2023-10-18
-tags: [Cecil, e-commerce, SSG]
+updated: 2025-09-01
+tags: [Cecil, e-commerce, headless, SSG]
 years: [2021]
 image: /images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr.jpg
 image_header: false
@@ -22,8 +22,6 @@ Je lui ai alors proposé de créer un site web statique avec [**Cecil**](https:/
 
 ## Pourquoi un site statique ?
 
-![Logo de Cecil](../../assets/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/cecil.png "Logo de Cecil")
-
 Je suis un fervent promoteur de l’approche statique pour la diffusion de sites web de contenu pour les raisons suivantes (entre autres) :
 
 - **Performance** : une fois généré, le site n’a pas plus besoin d’être interprété par le serveur, juste d’être servi ;
@@ -33,8 +31,6 @@ Je suis un fervent promoteur de l’approche statique pour la diffusion de sites
 Dans le cas de ce projet j’ai donc utilisé [mon propre générateur de site statique](https://arnaudligny.fr/blog/cecil-mon-generateur-de-site-statique/) : [Cecil](https://cecil.app).
 
 ## Pourquoi Snipcart ?
-
-![Logo Snipcart](../../assets/images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/snipcart.png "Logo de Snipcart")
 
 [Snipcart](https://snipcart.com) n’est pas une solution e-commerce clef en main mais plutôt un « checkout » (tunnel d’achat) à ajouter à n’importe quel site web.
 
@@ -207,7 +203,7 @@ L’intégration de Snipcart est simple, et nécessite :
 <script src="https://cdn.snipcart.com/themes/v3.0.11/default/snipcart.js"></script>
 ```
 
-- Démo : https://codepen.io/thatfrankdev/pen/xxwRXQw?editors=1000
+- Démo : <https://codepen.io/thatfrankdev/pen/xxwRXQw?editors=1000>
 - Template de *Paysages à vélo* : [layouts/components/add-item.html.twig](https://github.com/cecillie/eshop/blob/main/layouts/components/add-item.html.twig)
 
 ### Personnalisation du tunnel d’achat
