@@ -1,7 +1,8 @@
 ---
-title: "Low-Quality Image Placeholders avec Cecil"
-description: "Comment Cecil optimise l'affichage des images pendant leur chargement."
+title: "Low-Quality Image Placeholders (LQIP) avec Cecil"
+description: "Comment Cecil optimise l’affichage des images pendant leur chargement."
 date: 2024-03-15
+updated: 2025-09-01
 tags: [Cecil]
 years: [2024]
 image: images/2024-03-15-cecil-lqip/cecil-lqip-cover.png
