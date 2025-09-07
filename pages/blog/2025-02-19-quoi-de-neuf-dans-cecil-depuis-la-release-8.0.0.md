@@ -6,7 +6,6 @@ updated: 2025-05-02
 tags: [Cecil]
 years: [2025]
 image: https://cecil.app/images/cecil-card.png
-image_header: false
 #typora-root-url: "../../assets"
 typora-copy-images-to: ../../assets/images/${filename}
 published: false

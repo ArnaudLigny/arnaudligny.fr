@@ -6,7 +6,6 @@ updated: 2022-09-21
 tags: [podcast, Cecil]
 years: [2022]
 image: /images/2022-09-09-staticast-v2/staticast-preview.png
-image_header: false
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 published: true

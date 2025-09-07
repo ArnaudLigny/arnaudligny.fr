@@ -5,7 +5,6 @@ date: 2021-05-25
 tags: [Cecil, asset]
 years: [2021]
 image: /images/2021-05-25-manipuler-les-assets-avec-cecil/share.png
-image_header: false
 typora-root-url: ../../static
 published: true
 ---

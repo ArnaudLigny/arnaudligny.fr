@@ -5,7 +5,6 @@ updated: 2023-03-22
 tags: [podcast, SSG, Cecil]
 years: [2020]
 image: /images/2020-08-09-diffuser-son-podcast/staticast-preview.png
-image_header: false
 published: true
 ---
 Pendant le confinement j’ai écouté de nombreux podcasts divers et variés (depuis mon ordinateur ou mon smartphone) et j’ai constaté que la plupart des podcasteurs diffusaient leurs épisodes d’une des 2 manières suivantes :

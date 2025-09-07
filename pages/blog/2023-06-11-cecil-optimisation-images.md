@@ -5,7 +5,6 @@ date: 2023-06-11
 updated: 2025-07-13
 tags: [Cecil, web performance]
 years: [2023]
-image_header: false
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 type: post

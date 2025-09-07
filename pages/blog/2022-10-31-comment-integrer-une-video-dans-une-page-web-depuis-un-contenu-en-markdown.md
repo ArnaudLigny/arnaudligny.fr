@@ -5,7 +5,6 @@ updated: 2023-03-16
 tags: [réflexion, Markdown, Cecil]
 years: [2022]
 image: images/markdown.jpg
-image_header: false
 typora-copy-images-to: ../../assets/images/${filename}
 published: true
 ---

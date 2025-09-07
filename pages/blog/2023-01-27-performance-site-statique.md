@@ -6,7 +6,6 @@ updated: 2023-03-28
 tags: [SSG, web performance]
 years: [2023]
 image: /images/core-web-vitals-beyonds.png
-image_header: false
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 published: false

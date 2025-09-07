@@ -6,7 +6,6 @@ tags:
   - CSS
 years: [2020]
 image: /images/tailwind-css.png
-image_header: false
 _display:
   reader: ['https://latribu.dev']
 published: true

@@ -4,7 +4,6 @@ date: 2022-12-07
 tags: [podcast, Cecil, PHP]
 years: [2022]
 image: https://i3.ytimg.com/vi/QdP5KWwyPo4/maxresdefault.jpg
-image_header: false
 canonical:
   url: https://double-slash.dev/podcasts/cecil-static-php/
   title: "Podcast sur Double slash"

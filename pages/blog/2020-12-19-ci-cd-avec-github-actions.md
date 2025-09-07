@@ -5,7 +5,6 @@ tags:
   - développement
 years: [2020]
 #image: 
-image_header: false
 typora-root-url: ../../static
 published: false
 ---

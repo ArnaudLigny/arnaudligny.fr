@@ -6,7 +6,6 @@ updated: 2025-09-01
 tags: [Cecil, e-commerce, headless, SSG]
 years: [2021]
 image: /images/2021-06-24-un-site-e-commerce-avec-cecil-et-snipcart/shop.cecillie.fr.jpg
-image_header: false
 typora-root-url: ../../assets
 published: true
 ---
