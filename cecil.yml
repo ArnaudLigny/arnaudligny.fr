@@ -69,6 +69,10 @@ source: https://github.com/ArnaudLigny/arnaudligny.fr/edit/master/content/
 comments: false
 editor: typora
 #
+cloudinary:
+  account: aligny
+  asset: arnaudligny/og/ali-card.png
+#
 pages:
   default:
     sitemap:
