@@ -2,7 +2,7 @@
 title: Cecil
 description: Application CLI qui fusionne des fichiers Markdown, des images et des templates Twig afin de générer un site web statique.
 date: 2019-01-13
-image: images/projets/cecil-demo.gif
+image: images/cecil-card.png
 alias:
 - projets/phpoole
 url: https://cecil.app
