@@ -43,9 +43,10 @@ Excellente connaissance des règles qualité Web et du vocabulaire associé. Com
 ![Logo Clever Age](../assets/logos/clever-age.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 👉 Consultant fonctionnelle et technique, expert e-commerce.  
-Clients : Elis, Groupe Casino, Edenred, Groupe Bic, Business France, Gémo, Salomon, Focus Entertainment…  
-Outils & solutions : Akeneo, VTEX, commercetools, Mirakl, Magento, Jira, Confluence, Miro.
+Clients : Groupe Casino, Edenred, Groupe Bic, Business France, Gémo, Salomon, Focus Entertainment, Jeff de Bruges…  
+Outils & solutions : VTEX, commercetools, Mirakl, Magento, Jira, Confluence, Miro, Mirakl, SAP CDC, Informatica.
 
+<!--
 ### Freelance – Consultant fonctionnelle & technique web, expert e-commerce
 
 #### [studio cecillie](https://studio.cecillie.fr) – *2020-2022*
@@ -54,25 +55,17 @@ Outils & solutions : Akeneo, VTEX, commercetools, Mirakl, Magento, Jira, Conflue
 
 Clients : Valtech, Yves Rocher, Promod…  
 👉 Missions de conseil et d’accompagnement technique à la mise en œuvre de solutions web, mobile et e-commerce.
+-->
 
 ### Business Analyst
 
-#### [Antadis](https://www.antadis.com) – *2022 - 6 mois*
+#### [Antadis](https://www.antadis.com) – *2022 (6 mois)*
 
 ![Logo Antadis](../assets/logos/antadis.png){width=100 height=100 style="float:right;margin:1rem;"}
 
 👉 Consultant fonctionnelle et technique, expert e-commerce.  
 Clients : Grapl, Caviar Petrossian, Pharmacien Giphar, Groupe Chavigny…  
 Outils & solutions : Magento, Proximis, OroCommerce.
-
-### Co-fondateur
-
-#### [Jamstatic](https://jamstatic.fr) – *depuis 2017*
-
-![Logo Jamstatic](../assets/logos/jamstatic.png){width=100 height=100 style="float:right;margin:1rem;"}
-
-👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
-👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
 
 ### Consultant technique e-commerce
 
@@ -86,6 +79,15 @@ Refonte complète du tunnel d’achat via une approche headless avec la solution
 👉 Conception de l’architecture technique en accord avec la DOSI;  
 👉 Conception du produit et participation au backlog en collaboration avec le business analyst, les PO et CPO, et les équipes QA.  
 Outils & solutions : commercetools, Microsoft Azure (DevOps), Node.js, NestJS, Terraform, Postman, Miro, yEd.
+
+### Co-fondateur
+
+#### [Jamstatic](https://jamstatic.fr) – *2017-2021*
+
+![Logo Jamstatic](../assets/logos/jamstatic.png){width=100 height=100 style="float:right;margin:1rem;"}
+
+👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
+👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
 
 ### Consultant technique senior - Web, mobile & e-commerce
 
