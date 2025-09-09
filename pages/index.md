@@ -15,7 +15,7 @@ J’aime me qualifier de « facilitateur » : comprendre et aider mes clients à
 ✓ Conception fonctionnelle et technique, prototypage  
 ✓ Accompagnement des équipes de production  
 ✓ Gestion de projet technique (méthodes agiles, QA, organisation)  
-✓ Avant-vente : qualification, slides techniques / architecture et estimation de charge
+✓ Avant-vente : qualification, slides techniques et estimation de charge
 
 Passionné par la simplification, la scalabilité et la performance des sites web, j’aime travailler avec une approche [progressive et découplée](https://jamstatic.fr/a-propos/), et plus particulièrement les architectures [Jamstack](https://jamstack.org/what-is-jamstack/) / [MACH](https://commercetools.com/blog/mach-r-technology-unveiled-powering-modern-digital-commerce-experiences).  
 J’ai également conçu et développé un [générateur de site statique](https://cecil.app) orienté contenu.
