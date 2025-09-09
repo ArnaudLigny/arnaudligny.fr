@@ -5,15 +5,13 @@ metatags:
     only: true
 description: Consultant fonctionnel et technique, expert e-commerce.
 date: 2020-09-22
-updated: 2023-09-15
+updated: 2025-09-09
 intro: |
   ## Consultant fonctionnel et technique, expert e-commerce
 
-  Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web, mobile, e-commerce (et IoT).
+  Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web et e-commerce.
 
-  Depuis 15 ans j’apporte mon expertise à des startups, des marques et enseignes telles que _Promod_, _Yves Rocher_, _Libeo_, _Brigad_, _Leroy Merlin_, _Ducray_, _Saint-Maclou_, _Hermès_, _Christian Louboutin_, _Repetto_, _Zadig & Voltaire_, _Etam_, _The Kooples_, _Du Pareil au Même_.
-
-  *[IoT]: Internet of Things
+  Depuis plus de 15 ans j’apporte mon expertise à des startups, des marques et enseignes telles que _Salomon_, _Bic_, _Focus Entertainment_, _Promod_, _Yves Rocher_, _Libeo_, _Brigad_, _Leroy Merlin_, _Ducray_, _Saint-Maclou_, _Hermès_, _Christian Louboutin_, _Repetto_, _Zadig & Voltaire_, _Etam_, _The Kooples_, _Du Pareil au Même_.
 menu: main
 layout: cv
 image: photo-cv-2.jpg
