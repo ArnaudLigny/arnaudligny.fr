@@ -35,19 +35,16 @@
           display: none;
         }
       }
-      /* print (grayscale) */
+      /* print */
       @media print {
-        html {
-          filter: grayscale(100%);
-        }
         header, footer, #comments {
           display: none;
         }
         abbr[title] {
           text-decoration: none;
         }
-        .profile-picture {
-          border-radius: 5%;
+        :hover > .anchorjs-link {
+          opacity: 0;
         }
         .print {
           display: block;
@@ -56,6 +53,10 @@
           margin-top: 3rem;
           padding-top: 0.5rem;
           border-top: 1px solid #b6ceed;
+        }
+        a[href*="://"]::after, a:not([href^="/"])::after {
+          content: " (" attr(href) ")";
+          font-size: 1.2rem;
         }
       }
       /* figure caption */
