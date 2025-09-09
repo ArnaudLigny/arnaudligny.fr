@@ -46,15 +46,6 @@ Excellente connaissance des règles qualité Web et du vocabulaire associé. Com
 Clients : Elis, Groupe Casino, Edenred, Groupe Bic, Business France, Gémo, Salomon, Focus Entertainment…  
 Outils & solutions : Akeneo, VTEX, commercetools, Mirakl, Magento, Jira, Confluence, Miro.
 
-### Co-fondateur
-
-#### [Jamstatic](https://jamstatic.fr) – *depuis 2017*
-
-![Logo Jamstatic](../assets/logos/jamstatic.png){width=100 height=100 style="float:right;margin:1rem;"}
-
-👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
-👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
-
 ### Freelance – Consultant fonctionnelle & technique web, expert e-commerce
 
 #### [studio cecillie](https://studio.cecillie.fr) – *2020-2022*
@@ -73,6 +64,15 @@ Clients : Valtech, Yves Rocher, Promod…
 👉 Consultant fonctionnelle et technique, expert e-commerce.  
 Clients : Grapl, Caviar Petrossian, Pharmacien Giphar, Groupe Chavigny…  
 Outils & solutions : Magento, Proximis, OroCommerce.
+
+### Co-fondateur
+
+#### [Jamstatic](https://jamstatic.fr) – *depuis 2017*
+
+![Logo Jamstatic](../assets/logos/jamstatic.png){width=100 height=100 style="float:right;margin:1rem;"}
+
+👉 Co-administrateur de la communauté [Jamstatic](https://jamstatic.fr/), dédiée aux sites statiques et aux architectures découplées;  
+👉 Co-animateur du podcast *[Génération statique](https://anchor.fm/jamstatic)* où l’on parle de sites statiques, d’architecture découplées, d’outils, de services et d’impacts, d’amour du métier, et des projets web simples et performants.
 
 ### Consultant technique e-commerce
 
