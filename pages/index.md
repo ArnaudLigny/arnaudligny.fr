@@ -7,7 +7,7 @@ pagination:
   enabled: false
 published: true
 ---
-J’aime me qualifier de « facilitateur » : comprendre et aider mes clients à qualifier leurs besoins; imaginer l’approche technique la plus adaptée; faire le lien entre les équipes métiers, la DSI et les développeurs; suivre la qualité et les méthodes de travail.
+J’aime me qualifier de « facilitateur » : comprendre et aider mes clients à définir leurs besoins; imaginer l’approche technique la plus adaptée; faire le lien entre les équipes métiers, la DSI et les développeurs; suivre la qualité et les méthodes de travail.
 
 ## Compétences
 
