@@ -35,8 +35,11 @@
           display: none;
         }
       }
-      /* print */
+      /* print (grayscale) */
       @media print {
+        html {
+          filter: grayscale(100%);
+        }
         header, footer, #comments {
           display: none;
         }
