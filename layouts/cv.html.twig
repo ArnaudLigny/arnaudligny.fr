@@ -7,6 +7,12 @@
     <meta property="profile:username" content="{{ site.profile.username }}">
     <style>{% apply minify_css %}
       @media print {
+        html {
+          filter: grayscale(100%);
+        }
+        .profile-picture {
+          border-radius: 5%;
+        }
         /* Break page, on print, before "Expérience" */
         #experience {
           page-break-before: always;
