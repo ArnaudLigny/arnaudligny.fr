@@ -20,7 +20,7 @@
 		<img src="{{ asset(page.image)|resize(300)|dataurl }}" width="150" height="150" class="profile-picture" alt="Photo de profil d’{{ site.profile.firstname ~ ' ' ~ site.profile.lastname }}">
     <h1>{{ page.title }}</h1>
     {{- page.intro|markdown_to_html -}}
-    {{- site.pages.all['index'].content|markdown_to_html -}}
+    {{- site.page('index').content|markdown_to_html -}}
     {{- page.content ~}}
 	</article>
   {%- endblock content ~%}
