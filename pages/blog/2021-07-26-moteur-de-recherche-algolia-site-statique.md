@@ -3,10 +3,9 @@ title: Un moteur de recherche sur un site statique grâce à Algolia
 description: "Comment j'ai implémenté une fonctionnalité de recherche à la documentation de Cecil.app."
 date: 2021-07-26
 updated: 2022-10-18
-tags: [SSG, Recherche, Cecil]
+tags: [SSG, recherche, Cecil]
 years: [2021]
-image: /images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png
-image_header: false
+#image: /images/2021-07-26-moteur-de-recherche-algolia-site-statique/cecil.app_documentation_templates_search.png
 #typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 published: true

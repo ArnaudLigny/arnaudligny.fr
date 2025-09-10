@@ -3,11 +3,10 @@ title: "Prévisualiser un site genéré avec Cecil sur mobile"
 date: 2019-12-24
 tags:
   - Cecil
-  - Développement
+  - développement
   - SSG
 years: [2019]
 image: /images/2019-12-24-cecil-apercu-sur-mobile/cecil-mobile-preview.png
-image_header: false
 typora-root-url: ../../assets
 published: true
 ---

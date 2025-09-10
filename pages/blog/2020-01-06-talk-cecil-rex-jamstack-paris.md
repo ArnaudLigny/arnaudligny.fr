@@ -2,14 +2,13 @@
 title: "Retour d’expérience sur la création de Cecil"
 date: 2020-01-06
 tags:
-  - JAMstack
-  - Talk
+  - Jamstack
+  - talk
   - SSG
-  - Développement
+  - développement
   - Cecil
 years: [2020]
 image: /images/2020-01-06-talk-cecil-rex-jamstack-paris/cecil-youtube-cover.jpg
-image_header: false
 typora-root-url: ../../assets
 published: true
 ---

@@ -2,12 +2,10 @@
 title: "De la bonne utilisation de Confluence"
 date: 2020-08-17
 tags:
-  - Web
-  - Qualité
-  - Méthodologie
+  - qualité
+  - méthodologie
 years: [2020]
 image: /images/2020-09-17-template-confluence/confluence_rgb_blue_stacked.png
-image_header: false
 typora-root-url: ../../static
 published: false
 ---

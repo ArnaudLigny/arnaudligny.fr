@@ -2,10 +2,9 @@
 title: "Comment intégrer une vidéo dans une page Web depuis un contenu en Markdown ?"
 date: 2022-10-31
 updated: 2023-03-16
-tags: [Réflexion, Markdown, Cecil]
+tags: [réflexion, Markdown, Cecil]
 years: [2022]
-image: images/markdown.jpg
-image_header: false
+#image: images/markdown.jpg
 typora-copy-images-to: ../../assets/images/${filename}
 published: true
 ---

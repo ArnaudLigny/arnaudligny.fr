@@ -2,7 +2,7 @@
 title: "SfPot septembre 2022"
 description: "Cecil, un générateur de site statique propulsé par PHP."
 date: 2022-09-22
-#image: /images/<image>.png
+image: /images/talks/slides-cecil-mon-generateur-de-site-statique.png
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 published: true

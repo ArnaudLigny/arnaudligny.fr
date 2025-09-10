@@ -2,11 +2,13 @@ title: Arnaud Ligny
 baseline: Consultant fonctionnel & technique, expert Web & e-commerce
 baseurl: https://arnaudligny.fr/
 canonicalurl: false
-description: Arnaud Ligny, Consultant fonctionnel & technique web, expert e-commerce & Web perf.
+description: Arnaud Ligny, Consultant fonctionnel & technique web, expert e-commerce & Jamstack.
 keywords:
-  - Consultant technique
   - e-commerce
-  - Web perf
+  - Jamstack
+  - headless
+  - MACH
+  - web performance
 taxonomies:
   tags: tag
   years: year
@@ -34,20 +36,18 @@ menus:
       name: À propos
       url: a-propos
 metatags:
-  jsonld: true
-author:
+  data: true
+profile:
   firstname: Arnaud
   lastname: Ligny
-  url: https://arnaudligny.fr
-  email: arnaud[AROBASE]ligny[POINT]fr
+  username: aligny
   job: Consultant technique
-  cv: CV_ArnaudLigny-2016.pdf
+  cv: CV_ArnaudLigny-2022.pdf
   statut: En poste
 social:
   twitter:
     url: https://twitter.com/ArnaudLigny
     site: ArnaudLigny
-    creator: ArnaudLigny
   github:
     url: https://github.com/ArnaudLigny
     username: ArnaudLigny
@@ -56,7 +56,6 @@ social:
     username: arnaudligny
   mastodon:
     url: https://gazuji.com/@arnaud
-    creator: "@arnaud@gazuji.com"
 theme:
   - garth
   - pwa
@@ -69,6 +68,10 @@ cloudflareinsights: aa58d54d00e04d9e8f0fc44730cafff7
 source: https://github.com/ArnaudLigny/arnaudligny.fr/edit/master/content/
 comments: false
 editor: typora
+#
+cloudinary:
+  account: aligny
+  asset: arnaudligny/og/ali-card.png
 #
 pages:
   default:
@@ -166,13 +169,13 @@ manifest:
   background_color: '#F3F7FC'
   theme_color: '#CADCF2'
   theme_color_dark: '#000'
-  icons:
-    - icon-192x192.png
-    - icon-512x512.png
-    - src: icon-192x192-maskable.png
-      purpose: maskable
-    - src: icon-512x512-maskable.png
-      purpose: maskable
+  #icons:
+  #  - icon-192x192.png
+  #  - icon-512x512.png
+  #  - src: icon-192x192-maskable.png
+  #    purpose: maskable
+  #  - src: icon-512x512-maskable.png
+  #    purpose: maskable
   shortcuts: true
 serviceworker:
   enabled: true
@@ -180,7 +183,7 @@ serviceworker:
     precache:
       assets:
         - logo.png
-        - photo-cv.jpg
+        - photo-cv-2.jpg
   update:
     snackbar: true
     badge: false

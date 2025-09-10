@@ -2,10 +2,9 @@
 title: Intégration et déploiement continu avec GitHub Actions
 date: 2020-12-19
 tags:
-  - Développement
+  - développement
 years: [2020]
 #image: 
-image_header: false
 typora-root-url: ../../static
 published: false
 ---

@@ -2,12 +2,11 @@
 title: "Cecil : mon générateur de site statique"
 date: 2019-06-05
 tags:
-  - Développement
+  - développement
   - SSG
   - Cecil
 years: [2019]
 image: /images/cecil-card.png
-image_header: false
 typora-root-url: ../../static
 published: true
 ---

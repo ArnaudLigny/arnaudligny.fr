@@ -21,7 +21,7 @@
       /* CV */
       .profile-picture {
         float: right;
-        border-radius: 5%;
+        border-radius: 15%;
         overflow: hidden;
         margin: 1rem !important;
       }
@@ -43,6 +43,9 @@
         abbr[title] {
           text-decoration: none;
         }
+        :hover > .anchorjs-link {
+          opacity: 0;
+        }
         .print {
           display: block;
         }
@@ -50,6 +53,10 @@
           margin-top: 3rem;
           padding-top: 0.5rem;
           border-top: 1px solid #b6ceed;
+        }
+        a[href*="://"]::after, a:not([href^="/"])::after {
+          content: " (" attr(href) ")";
+          font-size: 1.2rem;
         }
       }
       /* figure caption */

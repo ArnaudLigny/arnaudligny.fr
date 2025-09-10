@@ -2,10 +2,9 @@
 title: Garder la maîtrise de son podcast
 description: ""
 date: 2022-02-21
-tags: [Podcast, SSG, Cecil]
+tags: [podcast, SSG, Cecil]
 years: [2022]
 #image: /images/2022-02-21-garder-la-maitrise-de-son-podcast/staticast-preview.png
-image_header: false
 typora-root-url: "../../assets"
 typora-copy-images-to: ../../assets/images/${filename}
 published: false

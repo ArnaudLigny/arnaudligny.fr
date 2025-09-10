@@ -6,8 +6,7 @@ tags:
   - Jamstack
   - SSG
 years: [2020]
-image: /images/2020-09-24-je-refais-mon-cv-avec-cecil/demo-cv-cecil.png
-image_header: false
+#image: /images/2020-09-24-je-refais-mon-cv-avec-cecil/demo-cv-cecil.png
 typora-root-url: ../../assets
 alias: blog/demo-cv-cecil
 published: true

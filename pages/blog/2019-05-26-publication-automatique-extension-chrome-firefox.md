@@ -3,10 +3,9 @@ title: "Publication automatique d’une extension Chrome ou Firefox"
 date: 2019-05-26
 updated: 2021-09-06
 tags:
-  - Développement
+  - développement
 years: [2019]
 image: /images/2019-05-26-publication-automatique-extension-chrome-firefox/store_developer_dashboard.png
-image_header: false
 typora-root-url: ../../static
 _display:
   reader: ['https://latribu.dev']

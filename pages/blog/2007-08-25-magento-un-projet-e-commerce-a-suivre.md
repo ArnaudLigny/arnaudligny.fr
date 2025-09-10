@@ -2,7 +2,7 @@
 title: "Magento : un projet e-commerce à suivre !"
 date: 2007-08-25
 tags:
-  - E-commerce
+  - e-commerce
   - Magento
 years: [2007]
 path: blog/magento-un-projet-e-commerce-a-suivre
