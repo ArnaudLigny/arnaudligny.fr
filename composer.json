@@ -2,8 +2,8 @@
   "require": {
     "cecil/theme-garth": "^1.11",
     "cecil/theme-pwa": "^2.20",
-    "cecil/theme-netlify": "^2.2",
-    "cecil/theme-netlifycms": "^2.0"
+    "cecil/theme-headers": "^1.0",
+    "cecil/theme-redirects": "^1.0"
   },
   "config": {
     "allow-plugins": {
