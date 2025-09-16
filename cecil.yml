@@ -59,8 +59,8 @@ social:
 theme:
   - garth
   - pwa
-  - netlify
-  #- netlify-cms
+  - headers
+  - redirects
 logo: logo.png
 image: logo.png
 #googleanalytics: UA-30599234-2
@@ -190,18 +190,17 @@ serviceworker:
     notification: false
   offline:
     snackbar: true
-netlify:
+highlight:
+  version: 11.6.0
+anchor:
+  version: 4.3.1
+
+server:
   redirects:
     - from: https://arnaudligny.netlify.com/*
       to: https://arnaudligny.fr/:splat
       status: 301
       force: true
-highlight:
-  version: 11.6.0
-anchor:
-  version: 4.3.1
-# Server HTTP headers
-server:
   headers:
     # Security
     - path: /*

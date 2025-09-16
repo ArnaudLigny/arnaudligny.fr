@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c76a56d9fbf65609da3126720e95fd61",
+    "content-hash": "f00b933f12aee7b6a87c76771e891256",
     "packages": [
         {
             "name": "cecil/theme-garth",
@@ -55,6 +55,56 @@
                 }
             ],
             "time": "2025-06-11T22:45:21+00:00"
+        },
+        {
+            "name": "cecil/theme-headers",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cecilapp/theme-headers.git",
+                "reference": "9ae8f6701e3e732c629c2842b557f184a8f01288"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cecilapp/theme-headers/zipball/9ae8f6701e3e732c629c2842b557f184a8f01288",
+                "reference": "9ae8f6701e3e732c629c2842b557f184a8f01288",
+                "shasum": ""
+            },
+            "require": {
+                "cecil/theme-installer": "^1.4|^2.0"
+            },
+            "type": "cecil-theme",
+            "extra": {
+                "name": "headers",
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Cecil component theme Headers",
+            "keywords": [
+                "cecil",
+                "headers",
+                "theme"
+            ],
+            "support": {
+                "issues": "https://github.com/Cecilapp/theme-headers/issues",
+                "source": "https://github.com/Cecilapp/theme-headers/tree/1.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ArnaudLigny",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/cecil",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2025-09-16T13:33:31+00:00"
         },
         {
             "name": "cecil/theme-installer",
@@ -127,107 +177,6 @@
             "time": "2022-01-06T10:54:26+00:00"
         },
         {
-            "name": "cecil/theme-netlify",
-            "version": "2.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Cecilapp/theme-netlify.git",
-                "reference": "291491312e26724b76eac0d3f8f3e1a53f15fc3e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-netlify/zipball/291491312e26724b76eac0d3f8f3e1a53f15fc3e",
-                "reference": "291491312e26724b76eac0d3f8f3e1a53f15fc3e",
-                "shasum": ""
-            },
-            "require": {
-                "cecil/theme-installer": "^1.4|^2.0"
-            },
-            "type": "cecil-theme",
-            "extra": {
-                "name": "netlify",
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Cecil component theme Netlify",
-            "keywords": [
-                "cecil",
-                "netlify",
-                "theme"
-            ],
-            "support": {
-                "issues": "https://github.com/Cecilapp/theme-netlify/issues",
-                "source": "https://github.com/Cecilapp/theme-netlify/tree/2.2.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/ArnaudLigny",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/cecil",
-                    "type": "open_collective"
-                }
-            ],
-            "time": "2025-06-11T22:50:06+00:00"
-        },
-        {
-            "name": "cecil/theme-netlifycms",
-            "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Cecilapp/theme-netlifycms.git",
-                "reference": "422d822f8e97bd10b79bb335de53ab7ea3afd416"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-netlifycms/zipball/422d822f8e97bd10b79bb335de53ab7ea3afd416",
-                "reference": "422d822f8e97bd10b79bb335de53ab7ea3afd416",
-                "shasum": ""
-            },
-            "require": {
-                "cecil/theme-installer": "^1.4"
-            },
-            "type": "cecil-theme",
-            "extra": {
-                "name": "netlify-cms",
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Cecil component theme Netlify CMS",
-            "keywords": [
-                "cecil",
-                "cms",
-                "netlify",
-                "theme"
-            ],
-            "support": {
-                "issues": "https://github.com/Cecilapp/theme-netlifycms/issues",
-                "source": "https://github.com/Cecilapp/theme-netlifycms/tree/2.0.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/ArnaudLigny",
-                    "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/cecil",
-                    "type": "open_collective"
-                }
-            ],
-            "time": "2024-03-12T10:55:59+00:00"
-        },
-        {
             "name": "cecil/theme-pwa",
             "version": "2.20.0",
             "source": {
@@ -276,6 +225,56 @@
                 }
             ],
             "time": "2025-08-06T15:16:06+00:00"
+        },
+        {
+            "name": "cecil/theme-redirects",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cecilapp/theme-redirects.git",
+                "reference": "f7d7ca86d2bec5763fac68883d4fafb26677c479"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cecilapp/theme-redirects/zipball/f7d7ca86d2bec5763fac68883d4fafb26677c479",
+                "reference": "f7d7ca86d2bec5763fac68883d4fafb26677c479",
+                "shasum": ""
+            },
+            "require": {
+                "cecil/theme-installer": "^1.4|^2.0"
+            },
+            "type": "cecil-theme",
+            "extra": {
+                "name": "redirects",
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Cecil component theme Redirects",
+            "keywords": [
+                "cecil",
+                "redirects",
+                "theme"
+            ],
+            "support": {
+                "issues": "https://github.com/Cecilapp/theme-redirects/issues",
+                "source": "https://github.com/Cecilapp/theme-redirects/tree/1.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ArnaudLigny",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/cecil",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2025-09-16T13:34:33+00:00"
         }
     ],
     "packages-dev": [],
