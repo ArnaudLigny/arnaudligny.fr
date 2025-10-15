@@ -1,6 +1,7 @@
 ---
 layout: robots
 output: txt
+excluded: true
 ---
 User-agent: AddSearchBot
 User-agent: AI2Bot
