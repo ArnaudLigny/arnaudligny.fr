@@ -4,7 +4,7 @@ description: "Comprendre comment Mastodon génère les aperçus de liens partag�
 date: 2025-08-17
 tags: [Mastodon, Preview Card]
 years: [2025]
-image: assets/images/2025-08-17-demystifier-la-preview-card-de-mastodon/image-20250817211726181.png
+image: images/2025-08-17-demystifier-la-preview-card-de-mastodon/image-20250817211726181.png
 #typora-root-url: "../../assets"
 typora-copy-images-to: ../../assets/images/${filename}
 published: false
