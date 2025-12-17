@@ -2,7 +2,7 @@
 title: "Les aventures de Jean Claude : un site web et une app"
 description: "J’ai créé le site web et l’app du jeu Les aventures de Jean Claude avec Cecil."
 date: 2025-12-17
-#tags: [Cecil]
+tags: [Cecil]
 image: /images/2025-12-17-jean-claude-website-app/jeanclaude-aventures.com.png
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
