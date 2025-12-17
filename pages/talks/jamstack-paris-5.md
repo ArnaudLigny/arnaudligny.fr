@@ -8,9 +8,9 @@ typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 published: true
 # yt-dlp https://www.youtube.com/watch?v=FTpBS7g7YnI -S "ext" --write-thumbnail --convert-thumbnails jpg
-output: [html, embed]
-videos:
-  - videos/talks/jamstack-paris-5/jamstack-paris-5.mp4
+#output: [html, embed]
+#videos:
+#  - videos/talks/jamstack-paris-5/jamstack-paris-5.mp4
 ---
 Lors du meetup **[JAMstack Paris](https://jamstack.paris) #5** je suis intervenu pour partager mon retour d’expérience sur la création de **[Cecil](https://cecil.app), mon générateur de site statique**.
 
@@ -20,7 +20,7 @@ Lors du meetup **[JAMstack Paris](https://jamstack.paris) #5** je suis intervenu
 
 ## Vidéo
 
-[Arnaud Ligny — La génèse de Cecil, mon générateur de sites statiques en PHP](https://www.youtube.com/embed/FTpBS7g7YnI "La génèse de Cecil, mon générateur de sites statiques en PHP")
+[Arnaud Ligny — La génèse de Cecil, mon générateur de sites statiques en PHP](https://www.youtube.com/embed/FTpBS7g7YnI)
 
 ## Slides
 
