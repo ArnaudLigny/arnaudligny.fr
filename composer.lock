@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cecil/theme-garth",
-            "version": "1.11.1",
+            "version": "1.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-garth.git",
-                "reference": "a1ce648c4330410af033f94678fe89e70660338c"
+                "reference": "0b24c5492f895b42def7836a563e3fe4b9a77d5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-garth/zipball/a1ce648c4330410af033f94678fe89e70660338c",
-                "reference": "a1ce648c4330410af033f94678fe89e70660338c",
+                "url": "https://api.github.com/repos/Cecilapp/theme-garth/zipball/0b24c5492f895b42def7836a563e3fe4b9a77d5a",
+                "reference": "0b24c5492f895b42def7836a563e3fe4b9a77d5a",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-garth/issues",
-                "source": "https://github.com/Cecilapp/theme-garth/tree/1.11.1"
+                "source": "https://github.com/Cecilapp/theme-garth/tree/1.11.2"
             },
             "funding": [
                 {
@@ -54,7 +54,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2025-06-11T22:45:21+00:00"
+            "time": "2025-12-18T01:01:26+00:00"
         },
         {
             "name": "cecil/theme-headers",
