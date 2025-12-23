@@ -35,6 +35,18 @@ Parmi les fonctionnalités clefs de Cecil, le site exploite :
 
 ## L’application mobile
 
-Quelques mois plus tard…
+Puis, quelques mois plus tard, l'équipe a imaginé une application web afin d'enrichir l'epérience de jeu, via un "sac à dos infini" virtuel permettant d'y piocher des idées afin d'amorcer la créativiter des joueurs.
+
+L'idée était simple :
+
+- une page web unique
+- un affichage compatible avec un appareil mobile et une tablette
+- une liste d'idées gérées via un tableur (au format CSV)
+- un bouton affichant une idée priochée aléatoirement dans cette liste
+
+
 
 ![PWA Sac à dos infini de Jean Claude](/images/2025-12-17-jean-claude-website-app/jeanclaude-sac.netlify.app.png "Capture d'écran de l'application mobile (PWA).")
+
+---
+*[CSV]: "Comma-separated values"
