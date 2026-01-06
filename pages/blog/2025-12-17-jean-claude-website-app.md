@@ -24,7 +24,7 @@ Bref, j’ai alors entrepris de m’inspirer du rendu global de ce thème pour e
 
 Ça m’a ainsi permis de réaliser un template de référence, très épuré, performant et respectant un maximum de bonnes pratiques afin de booster le SEO : « [Jean Claude le jeu](https://www.google.com/search?q=jean+claude+le+jeu&oq=jean+claude+le+jeu) ».
 
-![Site web jeanclaude-aventures.com](/images/2025-12-17-jean-claude-website-app/jeanclaude-aventures.com.png "Capture d'écran du site web.")
+![Capture d’écran du site web jeanclaude-aventures.com](/images/2025-12-17-jean-claude-website-app/jeanclaude-aventures.com.png "Site web jeanclaude-aventures.com")
 
 <https://jeanclaude-aventures.com>
 
@@ -46,9 +46,9 @@ L'idée était simple :
 - une liste d'idées gérées via un tableur (au format CSV)
 - un bouton affichant une idée piochée aléatoirement dans cette liste
 
-De là, la DA de l’équipe, a imaginé une interface simple à la manière d’un deck de cartes, une « pioche » :
+De là, la DA de l’équipe a imaginé une interface simple à la manière d’un deck de cartes, une « pioche » :
 
-![PWA Sac à dos infini de Jean Claude](/images/2025-12-17-jean-claude-website-app/jeanclaude-sac.netlify.app.png "Capture d'écran de l'application mobile (PWA).")
+![Capture d’écran du Sac à dos infini de Jean Claude](/images/2025-12-17-jean-claude-website-app/jeanclaude-sac.netlify.app.png "Sac à dos infini de Jean Claude (une PWA)")
 
 <https://jeanclaude-aventures.com/sac/>
 
@@ -64,5 +64,4 @@ L’intérêt pour l’équipe c’est que la maintenance est quasiment inexista
 
 Si vous souhaitez en savoir plus sur Cecil et ses fonctionnalités, rendez-vous sur le site : https://cecil.app.
 
----
 *[CSV]: Comma-separated values
