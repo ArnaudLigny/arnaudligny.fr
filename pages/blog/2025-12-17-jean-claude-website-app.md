@@ -53,13 +53,13 @@ De là, la DA de l’équipe a imaginé une interface simple à la manière d’
 
 <https://jeanclaude-aventures.com/sac/>
 
-Je me suis donc appuyé sur le design graphique réalisé pour le site et, une nouvelle fois, sur les fonctionnalités offertes par Cecil et plus particulièrement le composant de thème [PWA](https://github.com/Cecilapp/theme-pwa) qui permet de « transformer » un site web en application web :
+Je me suis donc appuyé sur le design graphique réalisé pour le site et, une nouvelle fois, sur les fonctionnalités offertes par Cecil et plus particulièrement le [composant de thème PWA](https://github.com/Cecilapp/theme-pwa) qui permet de « transformer » un site web en application web :
 
 - génération automatique du fichier _Web manifest_ et d’un _service worker_
 - mise en cache des ressources afin de rendre la page disponible hors connexion
 - installation sur l’appareil si le navigateur est compatible
 
-L’intérêt pour l’équipe c’est que la maintenance est quasiment inexistante, il est facile de compléter la liste des idées en modifiant un fichier CSV, et le coût d’hébergement est quasi nul.
+Les intérêts pour l’équipe sont multiples : la maintenance est inexistante, il est facile de compléter la liste des idées en modifiant un fichier CSV, et enfin le coût d’hébergement est quasi nul.
 
 
 
