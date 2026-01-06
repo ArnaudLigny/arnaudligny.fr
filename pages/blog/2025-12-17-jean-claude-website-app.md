@@ -2,6 +2,7 @@
 title: "Les aventures de Jean Claude : un site web et une app mobile"
 description: "J’ai créé le site web et l’app mobile du jeu Les aventures de Jean Claude, avec Cecil."
 date: 2025-12-17
+updated: 2026-01-06
 tags: [Cecil, PWA]
 #image: /images/2025-12-17-jean-claude-website-app/jeanclaude-aventures.com.png
 typora-root-url: ../../assets
