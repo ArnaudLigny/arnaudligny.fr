@@ -79,6 +79,10 @@
       .readmore {
         font-weight: 700;
       }
+      /* external links in article */
+      article a[href^='http']:not(a[href*='localhost']):not(a[href*='arnaudligny.fr']):not(:has(img))::after {
+        content: ' ↗';
+      }
     {% endapply %}</style>
     <!-- PWA -->
     {{- include('partials/pwa.html.twig', {site}, with_context = false) ~}}
