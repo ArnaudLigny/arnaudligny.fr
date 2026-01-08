@@ -82,6 +82,7 @@
       /* external links in article */
       article a[href^='http']:not(a[href*='localhost']):not(a[href*='arnaudligny.fr']):not(:has(img))::after {
         content: ' ↗';
+        font-size: x-small;
       }
     {% endapply %}</style>
     <!-- PWA -->
