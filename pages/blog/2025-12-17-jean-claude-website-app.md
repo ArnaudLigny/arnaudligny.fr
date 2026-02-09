@@ -5,7 +5,7 @@ date: 2025-12-17
 updated: 2026-01-06
 tags: [Cecil, PWA]
 #image: /images/2025-12-17-jean-claude-website-app/jeanclaude-aventures.com.png
-typora-root-url: ../../assets
+#typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 ---
 En 2024 l’équipe des éditions [Univers Détendu](https://universdetendu.com) a financé son projet de jeu sur [Ulule](https://fr.ulule.com/les-aventures-de-jean-claude/) : [Les aventures de Jean Claude](https://jeanclaude-aventures.com) 💀.
@@ -25,7 +25,7 @@ Bref, j’ai alors entrepris de m’inspirer du rendu global de ce thème pour e
 
 Ça m’a ainsi permis de réaliser un template de référence, très épuré, performant et respectant un maximum de bonnes pratiques afin de booster le SEO : « [Jean Claude le jeu](https://www.google.com/search?q=jean+claude+le+jeu&oq=jean+claude+le+jeu) ».
 
-![Capture d’écran du site web jeanclaude-aventures.com](/images/2025-12-17-jean-claude-website-app/jeanclaude-aventures.com.png "Site web jeanclaude-aventures.com")
+![Capture d’écran du site web jeanclaude-aventures.com](../../assets/images/2025-12-17-jean-claude-website-app/jeanclaude-aventures.com.png "Site web jeanclaude-aventures.com")
 
 <https://jeanclaude-aventures.com>
 
@@ -49,7 +49,7 @@ L'idée était simple :
 
 De là, la DA de l’équipe a imaginé une interface simple à la manière d’un deck de cartes, une « pioche » :
 
-![Capture d’écran du Sac à dos infini de Jean Claude](/images/2025-12-17-jean-claude-website-app/jeanclaude-sac.netlify.app.png "Sac à dos infini de Jean Claude (une PWA)")
+![Capture d’écran du Sac à dos infini de Jean Claude](../../assets/images/2025-12-17-jean-claude-website-app/jeanclaude-sac.netlify.app.png "Sac à dos infini de Jean Claude (une PWA)")
 
 <https://jeanclaude-aventures.com/sac/>
 
