@@ -99,6 +99,8 @@
     {{ parent() }}
     <!-- Cloudflare Web Analytics -->
     {%- include 'partials/cloudflareinsights.js.twig' ~%}
+    <!-- Simple Analytics -->
+    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <!-- Syntax highlight -->
     {{ html(asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ site.highlight.version ~ '/styles/a11y-light.min.css'), {title: 'Syntax highlight light theme', media: '(prefers-color-scheme: light)'}, {preload: true}) ~}}
     {{ html(asset('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/' ~ site.highlight.version ~ '/styles/a11y-dark.min.css'), {title: 'Syntax highlight dark theme', media: '(prefers-color-scheme: dark)'}, {preload: true}) ~}}
