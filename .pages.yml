@@ -1,6 +1,6 @@
 media:
   input: assets
-  output: /
+  output: ../../assets
 content:
   - name: pages
     label: Pages
