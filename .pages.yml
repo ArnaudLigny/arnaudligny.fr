@@ -1,4 +1,6 @@
-media: assets
+media:
+  input: assets
+  output: /
 content:
   - name: pages
     label: Pages
