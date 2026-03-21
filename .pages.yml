@@ -1,6 +1,7 @@
 media:
-  input: assets
+  input: assets/images
   output: /
+  categories: [image]
 content:
   - name: pages
     label: Pages
