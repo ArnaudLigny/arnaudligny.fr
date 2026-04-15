@@ -4,7 +4,7 @@ description: "J’ai créé le site web et l’app mobile du jeu Les aventures d
 date: 2025-12-17
 updated: 2026-01-06
 tags: [Cecil, PWA]
-years: [2026]
+years: [2025]
 #image: /images/2025-12-17-jean-claude-website-app/jeanclaude-aventures.com.png
 #typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
