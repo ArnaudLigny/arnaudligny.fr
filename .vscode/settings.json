@@ -1,14 +1,15 @@
 {
-  "frontMatter.framework.id": "other",
-  "frontMatter.content.publicFolder": "assets",
-  "frontMatter.content.pageFolders": [
-    {
-      "title": "Blog posts",
-      "path": "[[workspace]]/pages/blog",
-      "contentTypes": ["post"]
-    }
-  ],
-  //"frontMatter.content.hideFm": true,
   "[markdown]": {
+    "editor.fontSize": 14,
+    "editor.lineHeight": 26,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 64,
+    "editor.lineNumbers": "off",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.minimap.enabled": false
   }
 }
