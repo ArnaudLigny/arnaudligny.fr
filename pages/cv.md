@@ -14,7 +14,7 @@ intro: |
   Depuis plus de 15 ans j’apporte mon expertise à des startups, des marques et enseignes telles que _Salomon_, _Bic_, _Focus Entertainment_, _Promod_, _Yves Rocher_, _Libeo_, _Brigad_, _Leroy Merlin_, _Ducray_, _Saint-Maclou_, _Hermès_, _Christian Louboutin_, _Repetto_, _Zadig & Voltaire_, _Etam_, _The Kooples_, _Du Pareil au Même_.
 menu: main
 layout: cv
-image: photo-cv-2.jpg
+image: photo-cv.png
 author: Arnaud Ligny
 social:
   twitter: ArnaudLigny
