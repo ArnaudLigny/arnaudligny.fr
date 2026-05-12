@@ -1,5 +1,5 @@
 ---
-title: Arnaud Ligny
+title: CV de Arnaud Ligny
 metatags:
   title:
     only: true
