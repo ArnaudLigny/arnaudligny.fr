@@ -62,8 +62,6 @@ Je me suis donc appuyé sur le design graphique réalisé pour le site et, une n
 
 Les intérêts pour l’équipe sont multiples : la maintenance est inexistante, il est facile de compléter la liste des idées en modifiant un fichier CSV, et enfin le coût d’hébergement est quasi nul.
 
-
-
-Si vous souhaitez en savoir plus sur Cecil et ses fonctionnalités, rendez-vous sur le site : https://cecil.app.
+Si vous souhaitez en savoir plus sur Cecil et ses fonctionnalités, rendez-vous sur le site : <https://cecil.app>.
 
 *[CSV]: Comma-separated values
