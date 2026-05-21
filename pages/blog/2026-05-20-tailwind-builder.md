@@ -1,13 +1,13 @@
 ---
-title: "Tailwind Builder : compiler Tailwind CSS avec Composer, sans Node.js"
+title: "Compiler une feuille de styles Tailwind CSS avec Composer, sans Node.js"
 description: "J’ai créé Tailwind Builder, un package Composer qui compile Tailwind CSS via le binaire standalone adapté à votre OS."
 date: 2026-05-20
+updated: 2026-05-21
 tags: [Tailwind CSS, PHP, Open source]
 years: [2026]
 typora-copy-images-to: ../../assets/images/${filename}
 published: true
 ---
-
 Quand on travaille sur un projet dans l'écosystème PHP (et dans mon cas souvent avec [Cecil](https://cecil.app)), on se retrouve vite avec un besoin simple : compiler une feuille de styles Tailwind CSS.
 
 Le problème, c’est que la solution “classique” repose sur Node.js (et tout son écosystème), alors que pour certains projets on préfère garder une stack centrée sur Composer.
@@ -73,5 +73,5 @@ Le projet est jeune, mais déjà pleinement utilisable.
 
 Si vous voulez tester, contribuer ou me faire un retour : <https://github.com/ArnaudLigny/tailwind-builder>
 
-Comme souvent avec mes projets open source, je cherche le meilleur équilibre entre simplicité d’usage et exigences de qualité.
+Comme souvent avec mes projets open source, je cherche le meilleur équilibre entre simplicité d’usage et exigences de qualité.  
 Si Tailwind Builder vous évite un setup trop lourd, alors l’objectif est atteint 😊
