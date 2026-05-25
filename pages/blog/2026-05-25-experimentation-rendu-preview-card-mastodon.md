@@ -12,15 +12,15 @@ En août 2025, j’expliquais dans un [pouet](https://gazuji.com/@arnaud/1150454
 Pour transformer cette intuition en analyse concrète, j’ai mis en place :
 
 - un site de test : <https://aligny.gitlab.io/mastodon-preview-card/>
-- le dépôt source : <https://gitlab.com/aligny/mastodon-preview-card>
+- et son dépôt GitLab : <https://gitlab.com/aligny/mastodon-preview-card>
 
 <!-- break -->
 
 L’objectif était simple : provoquer volontairement différents cas (métadonnées Open Graph, données structurées, `oEmbed`, vidéos, etc.) et observer le comportement de Mastodon.
 
-## Pourquoi cette expérimentation
+## Pourquoi cette expérimentation ?
 
-Quand on partage une URL sur Mastodon, la Preview Card parait simple. En réalité, son rendu depend de plusieurs sources de données, avec des priorités qui ne sont pas toujours évidentes.
+Quand on partage une URL sur Mastodon, la Preview Card parait simple. En réalité, son rendu dépend de plusieurs sources de données, avec des priorités qui ne sont pas toujours évidentes.
 
 Mon but était donc de :
 
@@ -28,7 +28,7 @@ Mon but était donc de :
 - identifier les cas limites
 - vérifier les différences entre ce qu’on "attend" et ce qui est effectivement affiche
 
-## Ce que j’ai observe
+## Ce que j’ai observé
 
 En synthèse, pour la page cible d’une URL :
 
@@ -39,7 +39,7 @@ En synthèse, pour la page cible d’une URL :
 
 Pour une vidéo, la présence de `twitter:player` influence directement la manière d’embarquer le contenu.
 
-## Un point d’attention important
+## Point d’attention
 
 J’ai aussi constaté une limite intéressante : le méta tag `fediverse:creator`, utile pour afficher un lien vers le compte Mastodon de l’auteur, ne se combine pas bien avec un Endpoint `oEmbed`.
 
@@ -50,7 +50,7 @@ Ce constat a mené a la création d’une pull request :
 
 ## Le site de test en pratique
 
-Le site [Mastodon Preview Card](https://aligny.gitlab.io/mastodon-preview-card/) me sert de laboratoire minimal pour :
+Le site [Mastodon Preview Card](https://aligny.gitlab.io/mastodon-preview-card/) me sert de laboratoire pour :
 
 - comparer rapidement plusieurs stratégies de métadonnées
 - valider un comportement sans dépendre d’un seul article "réel"
@@ -58,4 +58,11 @@ Le site [Mastodon Preview Card](https://aligny.gitlab.io/mastodon-preview-card/)
 
 ## Ce que j’en retiens
 
-Cette expérimentation m’a confirmé que pour maitriser le rendu d’une Preview Card Mastodon, il ne suffit pas de "poser quelques meta tags" sur sa page Web : il faut réfléchir en priorités de sources, en compatibilité entre standards, et en comportement réel du client Mastodon. C’est un peu pénible…
+Cette expérimentation m’a confirmé que pour maitriser le rendu d’une Preview Card Mastodon, il ne suffit pas de "poser quelques meta tags" sur sa page Web : il faut réfléchir en priorités de sources, en compatibilité entre standards, et en comportement réel du client Mastodon. Oui, c’est un peu pénible…
+
+---
+
+Ressources :
+
+- [Understanding Mastodon Preview Card Display Logic](https://box464.com/posts/mastodon-preview-cards/)
+- [PreviewCard - Mastodon documentation](https://docs.joinmastodon.org/entities/PreviewCard/)
