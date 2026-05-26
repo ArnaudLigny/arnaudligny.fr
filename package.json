@@ -3,18 +3,17 @@
     "netlify-plugin-cecil-cache": "^0.3"
   },
   "devDependencies": {
-    "cypress": "6.3.0",
+    "@playwright/test": "^1.60.0",
     "npm-run-all": "^4.1",
-    "start-server-and-test": "^1.14"
+    "start-server-and-test": "^3.0"
   },
   "scripts": {
     "build": "curl -sSOL https://cecil.app/build.sh && bash ./build.sh",
     "serve": "cecil serve --config=config/dev.yml",
     "serve-silent": "nohup cecil serve > cecil.log 2>&1 &",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run --record",
-    "ci": "start-server-and-test serve-silent http://localhost:8000 cy:run",
-    "ci:serve": "php cecil.phar serve --config=config/dev.yml",
-    "ci:record": "run-p --race ci:serve cy:run"
+    "test:run": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test": "start-server-and-test serve http://localhost:8000 test:run"
   }
 }

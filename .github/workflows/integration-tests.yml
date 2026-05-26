@@ -1,0 +1,48 @@
+name: Integration tests
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'layouts/**'
+      - 'assets/**'
+  workflow_dispatch:
+
+jobs:
+  test-navigation:
+    name: Navigation
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+
+    - name: Download Cecil
+      run: curl -sSOL https://cecil.app/cecil.phar
+
+    - name: Install theme(s)
+      run: |
+        if [[ -f "composer.json" ]]; then
+          curl -sS https://getcomposer.org/installer | php
+          php composer.phar install --prefer-dist --no-dev --no-progress --ansi
+        fi
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v6
+      with:
+        node-version: 20
+
+    - name: Cache node modules
+      uses: actions/cache@v5
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: ${{ runner.os }}-node-
+
+    - name: Install Playwright
+      env:
+        CI: 1
+      run: |
+        npm ci
+        npx playwright install
+
+    - name: Run Playwright tests
+      run: npm run test
