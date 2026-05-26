@@ -2,13 +2,6 @@ vendor
 cecil.phar
 .cecil
 .cache
-.debug/
 _site
 .netlify
-opt/build/cache
 node_modules
-cypress/screenshots
-cypress/videos
-.obsidian
-.tina/__generated__
-.env
