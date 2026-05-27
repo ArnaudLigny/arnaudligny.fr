@@ -30,13 +30,6 @@ jobs:
       with:
         node-version: 22
 
-    - name: Cache node modules
-      uses: actions/cache@v5
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: ${{ runner.os }}-node-
-
     - name: Install Playwright
       env:
         CI: 1
@@ -44,5 +37,12 @@ jobs:
         npm ci
         npx playwright install --with-deps
 
+    - name: Cache node modules
+      uses: actions/cache@v5
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: ${{ runner.os }}-node-
+
     - name: Run Playwright tests
-      run: npm run test:run
+      run: npm run test
