@@ -9,8 +9,8 @@
   },
   "scripts": {
     "build": "curl -sSOL https://cecil.app/build.sh && bash ./build.sh",
-    "serve": "cecil.phar serve --config=config/dev.yml",
-    "serve-silent": "nohup cecil.phar serve > cecil.log 2>&1 &",
+    "serve": "php cecil.phar serve --config=config/dev.yml",
+    "serve-silent": "nohup php cecil.phar serve > cecil.log 2>&1 &",
     "test:run": "playwright test",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
