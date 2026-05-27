@@ -9,40 +9,39 @@ on:
   workflow_dispatch:
 
 jobs:
-  test-navigation:
-    name: Navigation
+  test-site:
+    name: Site tests
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v6
-
-    - name: Download Cecil
-      run: curl -sSOL https://cecil.app/cecil.phar
-
-    - name: Install theme(s)
-      run: |
-        if [[ -f "composer.json" ]]; then
-          curl -sS https://getcomposer.org/installer | php
-          php composer.phar install --prefer-dist --no-dev --no-progress --ansi
-        fi
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v6
-      with:
-        node-version: 22
-
-    - name: Install Playwright
-      env:
-        CI: 1
-      run: |
-        npm ci
-        npx playwright install --with-deps
-
-    - name: Cache node modules
-      uses: actions/cache@v5
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: ${{ runner.os }}-node-
-
-    - name: Run Playwright tests
-      run: npm run test
+      - uses: actions/checkout@v6
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: pre-installed
+          extensions: mbstring, fileinfo, gd, imagick, intl, gettext, :redis
+      - name: Download Cecil
+        run: curl -sSOL https://cecil.app/cecil.phar
+      - name: Install theme(s)
+        run: |
+          if [[ -f "composer.json" ]]; then
+            curl -sS https://getcomposer.org/installer | php
+            php composer.phar install --prefer-dist --no-dev --no-progress --ansi
+          fi
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      - name: Install Playwright
+        env:
+          CI: 1
+        run: |
+          npm ci
+          npx playwright install --with-deps
+      - name: Cache node modules
+        uses: actions/cache@v5
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+      - name: Run Playwright tests
+        run: npm run test
