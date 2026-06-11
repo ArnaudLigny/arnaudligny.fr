@@ -163,8 +163,6 @@ output:
   pagetypeformats:
     homepage: ['html', 'atom', 'elasticlunr']
     section: ['html', 'atom', 'json', 'jsonfeed']
-optimize:
-  enabled: false
 manifest:
   background_color: '#F3F7FC'
   theme_color: '#CADCF2'
