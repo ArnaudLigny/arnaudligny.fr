@@ -1,6 +1,6 @@
 ---
 title: "Démystifier la Preview Card de Mastodon"
-description: "Comprendre comment Mastodon génère les aperçus de liens partagés."
+description: "Analyse de la Preview Card de Mastodon : comment la plateforme récupère les métadonnées d’une URL partagée pour produire le titre, l’image et le résumé."
 date: 2025-08-17
 tags: [Mastodon, Preview Card]
 years: [2025]

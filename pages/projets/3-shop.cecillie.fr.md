@@ -1,6 +1,6 @@
 ---
 title: "Paysages à vélo"
-description: Site e-commerce motorisé par Cecil et Snipcart.
+description: Boutique e-commerce statique réalisée avec Cecil et Snipcart pour vendre en ligne simplement, avec un site rapide, sobre, maintenable et économique.
 date: 2021-10-07
 image: images/projets/shop.cecillie.fr.png
 url: https://shop.cecillie.fr

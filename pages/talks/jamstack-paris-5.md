@@ -1,6 +1,6 @@
 ---
 title: "JAMstack Paris #5"
-description: "Cecil, mon générateur de site statique."
+description: "Intervention au meetup JAMstack Paris #5 autour de Cecil, mon générateur de site statique en PHP, avec vidéo, slides et retour d’expérience."
 date: 2019-11-05
 image: /images/talks/jamstack-paris-cecil-mon-generateur-de-site-statique.png
 alias: /talks/cecil-mon-generateur-de-site-statique

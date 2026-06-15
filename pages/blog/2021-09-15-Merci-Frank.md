@@ -1,6 +1,6 @@
 ---
 title: Merci Frank !
-description: Hommage à mon ami Frank.
+description: Hommage à mon ami Frank, passionné de web et de partage, avec qui j’ai mené des projets autour de Jamstatic et du podcast Génération statique.
 image: images/frank.jpg
 date: 2021/09/15
 years: [2021]

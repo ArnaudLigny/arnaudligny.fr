@@ -1,6 +1,6 @@
 ---
 title: Quoi de neuf dans Cecil depuis la release 8.0.0 ?
-description: "La version 8 de Cecil est sorti en décembre 2023 : que s'est-il passé depuis ?"
+description: "Bilan des évolutions de Cecil depuis la release 8.0.0 : nouvelles fonctionnalités, améliorations techniques, corrections et impacts concrets pour les utilisateurs."
 date: 2025-02-19
 updated: 2025-05-02
 tags: [Cecil]

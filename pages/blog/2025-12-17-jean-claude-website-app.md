@@ -1,6 +1,6 @@
 ---
 title: "Les aventures de Jean Claude : un site web et une app mobile"
-description: "J’ai créé le site web et l’app mobile du jeu Les aventures de Jean Claude, avec Cecil."
+description: "Retour d’expérience sur la création du site web et de l’app mobile du jeu Les aventures de Jean Claude, avec Cecil et une approche PWA orientée performance."
 date: 2025-12-17
 updated: 2026-01-06
 tags: [Cecil, PWA]

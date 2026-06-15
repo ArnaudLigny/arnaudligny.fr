@@ -1,6 +1,6 @@
 ---
 title: "Créer un site e-commerce avec Cecil et Snipcart"
-description: "Comment créer un site e-commerce statique performant et peu couteux grâce à Cecil et Snipcart."
+description: "Comment créer un site e-commerce statique performant et peu coûteux avec Cecil et Snipcart, de la conception aux choix techniques de mise en œuvre."
 date: 2021-06-24
 updated: 2025-09-01
 tags: [Cecil, e-commerce, headless, SSG]

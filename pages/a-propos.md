@@ -1,6 +1,6 @@
 ---
 title: À propos
-description: À propos du site Web arnaudligny.fr.
+description: "Présentation du site arnaudligny.fr : profil professionnel d’Arnaud Ligny, billets de blog sur le web et l’e-commerce, projets open source et ressources utiles."
 date: 2019-02-27
 updated: 2023-01-05
 published: true

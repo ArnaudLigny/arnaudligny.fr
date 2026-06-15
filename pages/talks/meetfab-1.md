@@ -1,6 +1,6 @@
 ---
 title: "MeetFab #1"
-description: "Le statique c'est fantastique !"
+description: "Présentation MeetFab #1 sur la JAMstack, les atouts des sites statiques et les bonnes pratiques pour produire des sites web performants et durables."
 date: 2017-09-21
 image: /images/talks/le-statique-c-est-fantastique.png
 alias: 

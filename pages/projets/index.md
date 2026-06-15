@@ -1,6 +1,6 @@
 ---
 title: Projets
-description: Quelques projets réalisés par Arnaud Ligny.
+description: "Sélection de projets conçus par Arnaud Ligny : outils open source, extensions navigateur, bots et sites web statiques orientés performance et simplicité."
 pagination:
   enabled: false
 cascade:

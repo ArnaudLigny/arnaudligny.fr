@@ -1,6 +1,6 @@
 ---
 title: Manipuler les assets avec Cecil
-description: "Dans cet article j’explique comment Cecil permet de manipuler des assets, sans dépendances à des outils tiers."
+description: "Dans cet article, j’explique comment Cecil manipule des assets (CSS, JS, images) sans outils tiers, pour simplifier le build d’un site statique."
 date: 2021-05-25
 tags: [Cecil, asset]
 years: [2021]
