@@ -199,6 +199,10 @@ server:
       to: https://arnaudligny.fr/:splat
       status: 301
       force: true
+    - from: https://arnaudligny-fr.statichost.page/*
+      to: https://arnaudligny.fr/:splat
+      status: 301
+      force: true
   headers:
     # Security
     - path: /*
