@@ -194,15 +194,15 @@ anchor:
   version: 4.3.1
 
 server:
-  redirects:
-    - from: https://arnaudligny.netlify.com/*
-      to: https://arnaudligny.fr/:splat
-      status: 301
-      force: true
-    - from: https://arnaudligny-fr.statichost.page/*
-      to: https://arnaudligny.fr/:splat
-      status: 301
-      force: true
+  #redirects:
+  #  - from: https://arnaudligny.netlify.com/*
+  #    to: https://arnaudligny.fr/:splat
+  #    status: 301
+  #    force: true
+  #  - from: https://arnaudligny-fr.statichost.page/*
+  #    to: https://arnaudligny.fr/:splat
+  #    status: 301
+  #    force: true
   headers:
     # Security
     - path: /*
