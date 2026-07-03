@@ -4,7 +4,7 @@ description: Boutique e-commerce statique réalisée avec Cecil et Snipcart pour
 date: 2021-10-07
 image: images/projets/shop.cecillie.fr.png
 url: https://shop.cecillie.fr
-published: true
+published: false
 ---
 Site e-commerce motorisé par [Cecil](https://cecil.app) et [Snipcart](https://snipcart.com/fr).
 
