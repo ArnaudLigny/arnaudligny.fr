@@ -4,7 +4,7 @@ description: Bot Slack qui envoie des rappels automatiques pour aller chercher s
 date: 2019-01-13
 #image: images/projets/leo-bot-slack-example.png
 url: https://dev.ligny.org/leo-bot/
-published: true
+published: false
 ---
 Bot [Slack](https://slack.com) qui vous rappelle quand il est temps d'aller chercher votre enfant à l'école.
 
