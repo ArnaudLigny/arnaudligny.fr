@@ -9,6 +9,4 @@ published: true
 ---
 Cecil est une application en ligne de commande développée en PHP, qui génère un site web statique à partir de fichiers textes au format Markdown, des images et des templates Twig.
 
-![Démonstration de Cecil](../../assets/images/projets/cecil-demo.gif)
-
-> La [première version](https://github.com/Cecilapp/Cecil/commit/58cd48bcc72baa7636ffdd0520d26c2847130537) a été publiée en septembre 2013.
+[Création d'un nouveau site avec Cecil](https://cecil.app/videos/cecil-demo.mp4)
