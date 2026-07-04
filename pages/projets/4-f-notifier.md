@@ -4,7 +4,7 @@ description: Extension navigateur pour Chrome, Firefox et Opera qui affiche le n
 date: 2019-01-13
 #image: images/projets/f-notifier-screenshot.png
 url: https://dev.ligny.org/F-Notifier/
-published: false
+published: true
 ---
 Extension pour navigateur (Chrome, Firefox et Opera) indiquant le nombre de notifications Facebook non lues.
 
