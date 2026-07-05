@@ -9,3 +9,5 @@ cascade:
     twitter: ArnaudLigny
     mastodon: arnaud@gazuji.com
 ---
+
+Le blog d’Arnaud Ligny sur le web, l’e-commerce, Cecil, la performance et les architectures statiques, avec retours d’expérience, guides et analyses.
