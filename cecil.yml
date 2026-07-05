@@ -161,8 +161,9 @@ output:
       mediatype: application/json
       extension: json
   pagetypeformats:
-    homepage: ['html', 'atom', 'elasticlunr']
-    section: ['html', 'atom', 'json', 'jsonfeed']
+    homepage: ['html', 'atom', 'elasticlunr', 'markdown', 'llms']
+    section: ['html', 'atom', 'json', 'jsonfeed', 'markdown']
+    page: ['html', 'markdown']
 manifest:
   background_color: '#F3F7FC'
   theme_color: '#CADCF2'
