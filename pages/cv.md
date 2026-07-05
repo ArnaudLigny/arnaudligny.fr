@@ -19,7 +19,7 @@ author: Arnaud Ligny
 social:
   twitter: ArnaudLigny
   mastodon: arnaud@gazuji.com
-output: [html, json]
+output: [html, json, markdown]
 typora-root-url: ../assets
 typora-copy-images-to: ../assets/images/${filename}
 published: true
