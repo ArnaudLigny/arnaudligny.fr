@@ -5,7 +5,7 @@ date: 2019-02-27
 updated: 2023-01-05
 published: true
 ---
-Ce site web a pour objectif de présenter mon [profil professionnel](/cv/) et de partager des [billets de blog](/blog/) en relation avec mes domaines de compétence ou d’intérêt.
+Ce site web a pour objectif de présenter mon [profil professionnel](/cv/) et de partager des [billets de blog](/blog/) en rapport avec mes domaines de compétence et mes centres d’intérêt.
 
 ## Licence
 
