@@ -45,17 +45,19 @@ profile:
   cv: CV_ArnaudLigny-2022.pdf
   statut: En poste
 social:
-  twitter:
-    url: https://twitter.com/ArnaudLigny
-    site: ArnaudLigny
-  github:
-    url: https://github.com/ArnaudLigny
-    username: ArnaudLigny
   linkedin:
     url: https://fr.linkedin.com/in/arnaudligny/fr/
     username: arnaudligny
+  github:
+    url: https://github.com/ArnaudLigny
+    username: ArnaudLigny
   mastodon:
     url: https://gazuji.com/@arnaud
+  bsky:
+    url: https://bsky.app/profile/arnaud.ligny.fr
+  twitter:
+    url: https://twitter.com/ArnaudLigny
+    site: ArnaudLigny
 theme:
   - garth
   - pwa
