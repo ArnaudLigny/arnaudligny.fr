@@ -3,7 +3,7 @@ title: CV de Arnaud Ligny
 metatags:
   title:
     only: true
-description: CV d’Arnaud Ligny, consultant fonctionnel et technique spécialisé web et e-commerce, avec parcours, expertises, certifications, missions et réalisations.
+description: Curriculum vitae d’Arnaud Ligny, consultant fonctionnel et technique spécialisé web et e-commerce, avec parcours, expertises, certifications, missions et réalisations.
 date: 2020-09-22
 updated: 2025-09-09
 intro: |
