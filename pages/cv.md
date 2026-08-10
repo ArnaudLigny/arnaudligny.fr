@@ -7,11 +7,11 @@ description: CV d’Arnaud Ligny, consultant fonctionnel et technique spécialis
 date: 2020-09-22
 updated: 2025-09-09
 intro: |
-  ## Consultant fonctionnel et technique, expert e-commerce
+  ## Consultant fonctionnel et technique, expert web & e-commerce
 
-  Analyste programmeur de formation, j’accompagne les marques et les agences dans les phases de définition, de conception et de production de leur activité web et e-commerce.
+  Je relie les besoins métier, l’architecture technique et la qualité de livraison. J’accompagne les équipes à transformer des idées complexes en produits web performants, scalables et maintenables.
 
-  Depuis plus de 15 ans j’apporte mon expertise à des startups, des marques et enseignes telles que _Salomon_, _Bic_, _Focus Entertainment_, _Promod_, _Yves Rocher_, _Libeo_, _Brigad_, _Leroy Merlin_, _Ducray_, _Saint-Maclou_, _Hermès_, _Christian Louboutin_, _Repetto_, _Zadig & Voltaire_, _Etam_, _The Kooples_, _Du Pareil au Même_.
+  Depuis plus de 15 ans, j’apporte mon expérience à des startups, des marques et des enseignes telles que _Groupe Eram_, _Jeff de Bruges_, _Salomon_, _Bic_, _Focus Entertainment_, _Promod_, _Yves Rocher_, _Libeo_, _Brigad_, _Leroy Merlin_, _Ducray_, _Saint-Maclou_, _Hermès_, _Christian Louboutin_, _Repetto_, _Zadig & Voltaire_, _Etam_, _The Kooples_, _Du Pareil au Même_.
 menu: main
 layout: cv
 image: photo-cv.png

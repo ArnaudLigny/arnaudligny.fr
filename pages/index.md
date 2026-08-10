@@ -7,18 +7,18 @@ pagination:
   enabled: false
 published: true
 ---
-J’aime me qualifier de « facilitateur » : comprendre et aider mes clients à définir leurs besoins; imaginer l’approche technique la plus adaptée; faire le lien entre les équipes métiers, la DSI et les développeurs; suivre la qualité et les méthodes de travail.
+Je me définis comme un facilitateur : je rends les choses plus simples, plus claires et plus solides. Entre besoin métier, architecture technique et qualité de livraison, j’aide les équipes à transformer des idées complexes en produits web performants, scalables et maintenables.
 
 ## Compétences
 
-✓ Expert web, e-commerce et architecture découplée  
-✓ Conception fonctionnelle et technique, prototypage  
-✓ Accompagnement des équipes de production  
-✓ Gestion de projet technique (méthodes agiles, QA, organisation)  
-✓ Avant-vente : qualification, slides techniques et estimation de charge
+✓ Web, e-commerce et architecture découplée  
+✓ Conception fonctionnelle et technique, prototypage rapide  
+✓ Accompagnement des équipes produit et de production  
+✓ Gestion de projet technique, méthodes agiles et qualité  
+✓ Avant-vente : cadrage, slides techniques et estimation de charge
 
-Passionné par la simplification, la scalabilité et la performance des sites web, j’aime travailler avec une approche [progressive et découplée](https://jamstatic.fr/a-propos/), et plus particulièrement les architectures [Jamstack](https://jamstack.org/what-is-jamstack/) / [MACH](https://commercetools.com/blog/mach-r-technology-unveiled-powering-modern-digital-commerce-experiences).  
-J’ai également conçu et développé un [générateur de site statique](https://cecil.app) orienté contenu.
+Je m’intéresse particulièrement à la simplicité, à la scalabilité et à la performance des expériences web. J’aime travailler avec des approches [progressives et découplées](https://jamstatic.fr/a-propos/), notamment autour des architectures [Jamstack](https://jamstack.org/what-is-jamstack/) et [MACH](https://commercetools.com/blog/mach-r-technology-unveiled-powering-modern-digital-commerce-experiences).  
+J’ai aussi conçu et développé un [générateur de site statique](https://cecil.app) orienté contenu.
 
 [LinkedIn](https://fr.linkedin.com/in/arnaudligny/fr/) — [GitHub](https://github.com/ArnaudLigny) — [Twitter](https://twitter.com/ArnaudLigny) — [Contact](mailto:arnaud@ligny.fr?subject=Prise%20de%20contact)
 
