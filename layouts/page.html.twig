@@ -1,5 +1,6 @@
 {% if page.image is not defined %}
-  {% set image_title = page.title|u.ascii|trim('.')|url_encode|replace({'%2C':'%252C'}) %}
+  {# set image_title = page.title|u.ascii|trim('.')|url_encode|replace({'%2C':'%252C'}) #}
+  {% set image_title = page.title|trim('.')|url_encode|replace({'%2C':'%252C'}) %}
   {% set image_y = 200 %}
   {% if image_title|length > 60 %}
     {% set image_y = 120 %}
