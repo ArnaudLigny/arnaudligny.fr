@@ -1,5 +1,6 @@
 ---
 title: "Augmenter la qualité des photos sur Magento"
+description: "Magento compresse les photos produits à 80 % via GD2, sans réglage dans le back-office : comment pousser cette qualité sans toucher au core."
 date: 2009-06-22
 tags:
   - Magento

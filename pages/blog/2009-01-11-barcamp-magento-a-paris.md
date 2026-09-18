@@ -1,5 +1,6 @@
 ---
 title: "Barcamp Magento à Paris"
+description: "Un barcamp dédié à Magento se tient à Paris le 2 février 2009, avec Roy Rubin (Varien) et plusieurs figures du e-commerce français."
 date: 11-01-2009
 tags: 
   - e-commerce

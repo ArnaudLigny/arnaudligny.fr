@@ -1,5 +1,6 @@
 ---
 title: Créer rapidement une landing page avec Tailwind CSS
+description: "Comment créer une landing page soignée en quelques heures avec Tailwind CSS, un framework CSS « utility-first », sans repartir de zéro en intégration."
 date: 2020-11-11
 tags:
   - développement

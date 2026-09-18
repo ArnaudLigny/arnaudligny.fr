@@ -1,5 +1,6 @@
 ---
 title: "Télécharger manuellement une extension Magento"
+description: "Astuce pour récupérer le code source d’une extension MagentoConnect sans passer par le downloader, en attaquant directement le serveur de packages."
 date: 2010-11-21
 tags:
   - Magento

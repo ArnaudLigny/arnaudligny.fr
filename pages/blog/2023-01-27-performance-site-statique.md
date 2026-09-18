@@ -1,6 +1,6 @@
 ---
 title: "De la performance d'un site statique"
-description: ""
+description: "Un site statique est réputé performant par nature : ce que recouvre vraiment cette promesse, et ce qu’il reste à faire pour tenir les Core Web Vitals."
 date: 2023-01-27
 updated: 2023-03-28
 tags: [SSG, web performance]

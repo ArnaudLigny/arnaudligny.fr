@@ -1,5 +1,6 @@
 ---
 title: Intégration et déploiement continu avec GitHub Actions
+description: "Mettre en place une chaîne d’intégration et de déploiement continu avec GitHub Actions, après un premier essai peu convaincant en 2019."
 date: 2020-12-19
 tags:
   - développement

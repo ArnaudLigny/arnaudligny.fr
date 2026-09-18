@@ -1,5 +1,6 @@
 ---
 title: "Comment intégrer une vidéo dans une page Web depuis un contenu en Markdown ?"
+description: "Balise HTML, détournement de la syntaxe d’image ou lien embedded : comment intégrer simplement une vidéo dans une page Web depuis un contenu en Markdown."
 date: 2022-10-31
 updated: 2023-03-16
 tags: [réflexion, Markdown, Cecil]

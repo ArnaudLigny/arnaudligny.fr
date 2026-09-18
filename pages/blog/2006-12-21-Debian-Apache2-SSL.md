@@ -1,5 +1,6 @@
 ---
 title: "Debian + Apache2 + SSL"
+description: "Mise en place pas à pas d’un accès sécurisé SSL sur Apache2 sous Debian : installation d’OpenSSL, création de la clef et génération du certificat."
 date: 2006-12-21
 tags:
   - développement

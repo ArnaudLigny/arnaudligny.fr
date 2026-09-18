@@ -1,5 +1,6 @@
 ---
 title: "Podcast : Générer un site statique avec PHP grâce à Cecil"
+description: "J’étais l’invité de l’épisode 54 du podcast Double Slash, pour parler de Cecil, de PHP et de génération de sites statiques."
 date: 2022-12-07
 tags: [podcast, Cecil, PHP]
 years: [2022]

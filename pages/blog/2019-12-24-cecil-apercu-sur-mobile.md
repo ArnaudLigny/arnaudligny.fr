@@ -1,5 +1,6 @@
 ---
 title: "Prévisualiser un site genéré avec Cecil sur mobile"
+description: "En trois commandes, servez un site généré avec Cecil sur votre réseau Wi-Fi pour le prévisualiser depuis un téléphone mobile. Démonstration en vidéo."
 date: 2019-12-24
 tags:
   - Cecil

@@ -1,5 +1,6 @@
 ---
 title: "Magento : la version française arrive !"
+description: "L’équipe de Fragento traduit Magento Commerce en français : comment installer le language pack fr_FR et basculer l’interface d’administration."
 date: 02-01-2008
 tags:
   - Magento

@@ -1,5 +1,6 @@
 ---
 title: "De la bonne utilisation de Confluence"
+description: "Pourquoi Confluence passe souvent pour une usine à gaz, et comment un bon template de projet en fait une véritable base de connaissances."
 date: 2020-08-17
 tags:
   - qualité

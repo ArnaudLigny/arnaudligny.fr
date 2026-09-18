@@ -1,5 +1,6 @@
 ---
 title: "Modules payant pour Magento  attention aux arnaques !"
+description: "Retour d’expérience sur l’achat de modules Magento payants : délais de livraison, qualité des packages et précautions à prendre avant de payer."
 date: 2009-06-23
 tags:
  - Magento

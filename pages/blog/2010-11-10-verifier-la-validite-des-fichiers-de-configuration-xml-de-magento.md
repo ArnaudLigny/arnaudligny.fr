@@ -1,5 +1,6 @@
 ---
 title: "Vérifier la validité des fichiers de configuration XML de Magento"
+description: "Magento ne vérifie pas l’intégrité de ses fichiers de configuration XML : comment détecter une erreur de structure avant qu’elle ne casse le site."
 date: 2010-11-10
 tags:
   - Magento

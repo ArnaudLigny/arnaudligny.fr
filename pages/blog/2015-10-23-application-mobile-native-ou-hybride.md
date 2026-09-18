@@ -1,5 +1,6 @@
 ---
 title: "Application mobile : Native ou hybride ?"
+description: "Natif ou hybride : comprendre ce qui distingue réellement les deux approches du développement mobile, et sur quels critères choisir pour son projet."
 date: 2015-10-23
 tags:
   - mobile

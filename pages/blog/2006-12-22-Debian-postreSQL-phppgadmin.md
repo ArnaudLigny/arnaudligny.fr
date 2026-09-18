@@ -1,5 +1,6 @@
 ---
 title: "Debian + postreSQL + phppgadmin"
+description: "Comment installer PostgreSQL et phppgadmin sur un serveur Debian, puis configurer l’interface d’administration pour ne pas l’exposer inutilement sur le Web."
 date: 2006-12-22
 tags:
   - développement

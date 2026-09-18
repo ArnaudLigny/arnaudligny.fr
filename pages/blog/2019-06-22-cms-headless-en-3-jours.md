@@ -1,5 +1,6 @@
 ---
 title: "Intégrer un CMS en 3 jours"
+description: "Traduction de l’article de Shea Daniels (Dwolla), qui raconte la mise en place d’un CMS headless sur un site Jamstack, en trois jours seulement."
 date: 2019-06-22
 tags:
   - traduction

@@ -1,5 +1,6 @@
 ---
 title: "Magento : ça prend forme !"
+description: "Varien publie un Designer’s Guide complet pour Magento et enchaîne les livraisons de bétas : le système de templates devient enfin abordable."
 date: 2007-12-22
 tags:
   - e-commerce

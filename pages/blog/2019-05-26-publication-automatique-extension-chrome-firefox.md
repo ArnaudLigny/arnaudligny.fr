@@ -1,5 +1,6 @@
 ---
 title: "Publication automatique d’une extension Chrome ou Firefox"
+description: "Comment automatiser la publication d’une extension Chrome et Firefox sur les stores, depuis une chaîne d’intégration continue."
 date: 2019-05-26
 updated: 2021-09-06
 tags:

@@ -1,5 +1,6 @@
 ---
 title: "Évolutions de Cecil (mai 2020)"
+description: "Journal des évolutions apportées à Cecil depuis sa présentation en 2019 : taxonomies, internationalisation, nouveau squelette de site, et bien d’autres."
 date: 2020-05-27
 tags:
   - Cecil

@@ -1,5 +1,6 @@
 ---
 title: "Cecil : mon générateur de site statique"
+description: "Présentation de Cecil, mon générateur de site statique en PHP : sa genèse, son principe de fonctionnement et le parti pris de mettre le contenu au centre."
 date: 2019-06-05
 tags:
   - développement

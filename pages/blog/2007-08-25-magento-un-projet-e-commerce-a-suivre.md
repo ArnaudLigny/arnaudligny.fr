@@ -1,5 +1,6 @@
 ---
 title: "Magento : un projet e-commerce à suivre !"
+description: "Varien annonce Magento, une solution e-commerce open-source basée sur PHP et le Zend Framework : un concurrent sérieux à osCommerce et VirtueMart."
 date: 2007-08-25
 tags:
   - e-commerce

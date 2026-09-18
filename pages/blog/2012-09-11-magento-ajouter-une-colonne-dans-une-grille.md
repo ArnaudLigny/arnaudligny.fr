@@ -1,5 +1,6 @@
 ---
 title: "Magento : Ajouter une colonne dans une grille"
+description: "Ajouter une colonne dans une grille du back-office Magento sans réécrire le core, en s’appuyant simplement sur le pattern event/observer."
 date: 2012-09-11
 tags:
   - Magento

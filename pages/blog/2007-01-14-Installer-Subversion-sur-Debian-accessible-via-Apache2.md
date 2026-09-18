@@ -1,5 +1,6 @@
 ---
 title: "Installer Subversion sur Debian, accessible via Apache2"
+description: "Installer un serveur Subversion sur Debian, créer un dépôt, le rendre accessible via Apache2 et WebDAV, puis y appliquer des règles d’accès."
 date: 2007-01-14
 tags:
   - développement

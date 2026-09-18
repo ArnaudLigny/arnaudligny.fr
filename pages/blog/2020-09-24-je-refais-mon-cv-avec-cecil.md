@@ -1,5 +1,6 @@
 ---
 title: "Je refais mon CV avec Cecil"
+description: "Démonstration vidéo : je refais mon CV en ligne avec Cecil, mon générateur de site statique, en moins de dix minutes."
 date: 2020-09-24
 tags:
   - Cecil

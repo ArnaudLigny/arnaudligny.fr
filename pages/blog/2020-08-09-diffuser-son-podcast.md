@@ -1,5 +1,6 @@
 ---
 title: "Diffuser son podcast simplement"
+description: "Entre WordPress et les plateformes captives, il existe une troisième voie : diffuser son podcast avec une solution libre, auto-hébergée et statique."
 date: 2020-08-10
 updated: 2023-03-22
 tags: [podcast, SSG, Cecil]

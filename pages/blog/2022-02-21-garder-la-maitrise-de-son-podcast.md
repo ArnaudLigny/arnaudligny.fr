@@ -1,6 +1,6 @@
 ---
 title: Garder la maîtrise de son podcast
-description: ""
+description: "Un podcast n’est au fond qu’un flux RSS : comment le générer soi-même pour rester maître de sa diffusion, sans dépendre d’une plateforme."
 date: 2022-02-21
 tags: [podcast, SSG, Cecil]
 years: [2022]

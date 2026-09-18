@@ -1,5 +1,6 @@
 ---
 title: "Utiliser Gettext pour traduire vos modules Magento"
+description: "Les fichiers CSV de Magento montrent vite leurs limites : comment utiliser Gettext et Poedit pour traduire et maintenir les libellés de vos modules."
 date: 2010-11-03
 tags:
   - Magento

@@ -1,5 +1,6 @@
 ---
 title: "Retour d’expérience sur la création de Cecil"
+description: "Retour sur mon intervention au meetup JAMstack Paris #5, où j’ai partagé mon retour d’expérience sur la création de Cecil."
 date: 2020-01-06
 updated: 2026-02-02
 tags:

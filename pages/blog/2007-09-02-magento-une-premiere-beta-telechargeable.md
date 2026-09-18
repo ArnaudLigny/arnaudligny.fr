@@ -1,5 +1,6 @@
 ---
 title: "Magento : une première béta téléchargeable"
+description: "La première béta de Magento Commerce est disponible au téléchargement : où la récupérer, comment la tester et quelles ressources francophones consulter."
 date: 02-09-2007
 tags:
  - Magento

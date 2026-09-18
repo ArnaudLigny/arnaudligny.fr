@@ -1,5 +1,6 @@
 ---
 title: "Magento : installation de la béta 0.6"
+description: "Récit d’une première installation de la béta 0.6 de Magento, des erreurs PDO rencontrées sous WampServer jusqu’à une procédure qui aboutit enfin."
 date: 04-09-2007
 tags:
   - Magento

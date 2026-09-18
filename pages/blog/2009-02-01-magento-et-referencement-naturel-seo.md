@@ -1,5 +1,6 @@
 ---
 title: "Magento et référencement naturel (SEO)"
+description: "Magento est-il vraiment optimisé pour le référencement naturel ? Revue de ses fonctionnalités SEO, de leurs limites et de leurs effets de bord."
 date: 2009/02/01
 tags:
   - e-commerce
