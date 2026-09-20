@@ -1,0 +1,17 @@
+{#- Site specific scripts, loaded at the end of the `body` of every page. -#}
+{#- Cloudflare Web Analytics -#}
+{%- include 'partials/cloudflareinsights.js.twig' ~%}
+{#- Simple Analytics -#}
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+{#- anchor.js: an anchor link on each title of the content -#}
+<script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/anchor-js/' ~ site.anchor.version ~ '/anchor.min.js') }}"></script>
+<script>{% apply minify_js ~%}
+  anchors.options = {
+    placement: 'right',
+    visible: 'hover',
+    icon: '#'
+  };
+  anchors.add('.content > h2, .content > h3');
+{% endapply %}</script>
+{#- Netlify Identity (if provided by the theme) -#}
+{{- include('partials/identity.html.twig', {site: site}, with_context = false, ignore_missing = true) ~}}

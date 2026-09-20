@@ -1,0 +1,6 @@
+{#- A taxonomy page (tags, years): the list of its terms. -#}
+{% extends '_default/vocabulary.html.twig' %}
+
+{%- block head -%}{{ parent() }}{% include 'partials/site-head.html.twig' %}{%- endblock head -%}
+{%- block footer -%}{{ parent() }}{% include 'partials/site-print-footer.html.twig' %}{%- endblock footer -%}
+{%- block js -%}{{ parent() }}{% include 'partials/site-scripts.html.twig' %}{%- endblock js -%}

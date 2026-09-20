@@ -1,0 +1,51 @@
+{#- Site specific additions to the `head` of every page. -#}
+{#- PWA (manifest, theme color, service worker registration) -#}
+{{- include('partials/pwa.html.twig', {site}, with_context = false) ~}}
+{#- Webmentions -#}
+<link rel="webmention" href="https://webmention.io/arnaudligny.fr/webmention">
+<link rel="pingback" href="https://webmention.io/arnaudligny.fr/xmlrpc">
+{#- Print styles: only the content of the page is printed -#}
+<style>{% apply minify_css ~%}
+  @media screen {
+    .print {
+      display: none;
+    }
+  }
+  @media print {
+    html {
+      filter: grayscale(100%);
+    }
+    /* side navigation, page header, footer and sidebar */
+    body > div > div > div:first-child,
+    main header,
+    main footer,
+    main aside,
+    #comments {
+      display: none !important;
+    }
+    main {
+      padding: 0 !important;
+    }
+    .content {
+      color: #000;
+    }
+    abbr[title] {
+      text-decoration: none;
+    }
+    :hover > .anchorjs-link {
+      opacity: 0;
+    }
+    .print {
+      display: block;
+    }
+    .print__footer {
+      margin-top: 3rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid #e2e8f0;
+    }
+    a[href*="://"]::after, a:not([href^="/"])::after {
+      content: " (" attr(href) ")";
+      font-size: 0.8em;
+    }
+  }
+{% endapply %}</style>

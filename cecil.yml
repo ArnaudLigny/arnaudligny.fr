@@ -59,10 +59,36 @@ social:
     url: https://twitter.com/ArnaudLigny
     site: ArnaudLigny
 theme:
-  - garth
+  - devspace
   - pwa
   - headers
   - redirects
+# DevSpace theme
+devspace:
+  avatar: photo-cv.png
+  copyright: Arnaud Ligny
+  filters: false
+  icons:
+    cv: resume
+    projets: projects
+    talks: subscribe     # no dedicated icon in the theme yet
+    a-propos: about
+  posts:
+    section: blog
+    title: Derniers billets
+    max: 6
+  share: [linkedin, x, email]
+  social:
+    linkedin: https://fr.linkedin.com/in/arnaudligny/fr/
+    github: https://github.com/ArnaudLigny
+    mastodon: https://gazuji.com/@arnaud
+    x: https://twitter.com/ArnaudLigny
+    rss: blog/atom.xml
+    email: mailto:arnaud@ligny.fr
+  widgets: []            # sidebar widgets, e.g. [popular] (needs `popular: true` in the front matter of some pages)
+  popular:
+    title: Billets populaires
+    max: 5
 logo: logo.png
 image: logo.png
 #googleanalytics: UA-30599234-2
@@ -191,8 +217,6 @@ serviceworker:
     notification: false
   offline:
     snackbar: true
-highlight:
-  version: 11.6.0
 anchor:
   version: 4.3.1
 

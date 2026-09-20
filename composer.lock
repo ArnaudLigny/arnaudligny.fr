@@ -4,57 +4,70 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "815ab1113c0b273d86bb245533ce480c",
+    "content-hash": "cc6697798570315a2e5092355bd0e7bb",
     "packages": [
         {
-            "name": "cecil/theme-garth",
-            "version": "1.11.3",
+            "name": "cecil/theme-devspace",
+            "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Cecilapp/theme-garth.git",
-                "reference": "528338bdf28b9696156d7a2d8e1302572529de3a"
+                "url": "https://github.com/Cecilapp/theme-devspace.git",
+                "reference": "ad27b9d52d48ed89c90b3eacd7b660cd9a5c161e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-garth/zipball/528338bdf28b9696156d7a2d8e1302572529de3a",
-                "reference": "528338bdf28b9696156d7a2d8e1302572529de3a",
+                "url": "https://api.github.com/repos/Cecilapp/theme-devspace/zipball/ad27b9d52d48ed89c90b3eacd7b660cd9a5c161e",
+                "reference": "ad27b9d52d48ed89c90b3eacd7b660cd9a5c161e",
                 "shasum": ""
             },
             "require": {
-                "cecil/theme-installer": "^1.4"
+                "cecil/theme-installer": "^1.4|^2.0"
             },
+            "require-dev": {
+                "aligny/tailwind-builder": "^1.2"
+            },
+            "default-branch": true,
             "type": "cecil-theme",
             "extra": {
-                "name": "garth",
+                "name": "devspace",
                 "branch-alias": {
                     "dev-master": "1.x-dev"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "css:build": [
+                    "tailwind-builder assets/tailwind.css --output=assets/styles.css --minify"
+                ],
+                "css:watch": [
+                    "tailwind-builder assets/tailwind.css --output=assets/styles.css --watch"
+                ]
+            },
             "license": [
-                "MIT"
+                "proprietary"
             ],
-            "description": "Cecil Garth theme",
+            "description": "Cecil theme: DevSpace",
             "keywords": [
-                "Garth",
-                "cecil",
+                "Cecil",
+                "DevSpace",
+                "blog",
+                "portfolio",
                 "theme"
             ],
             "support": {
-                "issues": "https://github.com/Cecilapp/theme-garth/issues",
-                "source": "https://github.com/Cecilapp/theme-garth/tree/1.11.3"
+                "source": "https://github.com/Cecilapp/theme-devspace/tree/main",
+                "issues": "https://github.com/Cecilapp/theme-devspace/issues"
             },
             "funding": [
                 {
-                    "url": "https://github.com/ArnaudLigny",
-                    "type": "github"
+                    "type": "github",
+                    "url": "https://github.com/ArnaudLigny"
                 },
                 {
-                    "url": "https://opencollective.com/cecil",
-                    "type": "open_collective"
+                    "type": "open_collective",
+                    "url": "https://opencollective.com/cecil"
                 }
             ],
-            "time": "2026-07-24T00:34:52+00:00"
+            "time": "2026-09-20T21:37:42+00:00"
         },
         {
             "name": "cecil/theme-headers",
@@ -280,7 +293,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "cecil/theme-devspace": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
