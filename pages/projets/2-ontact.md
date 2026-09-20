@@ -8,4 +8,4 @@ published: true
 ---
 Extension pour navigateur basé sur Chromium (Chrome, Edge) qui ouvre un nouvel onglet après l'onglet actif, au lieu de la dernière position.
 
-![Capture d'écran de Open-New-Tab-After-Current-Tab](../../assets/images/projets/Open-New-Tab-After-Current-Tab.gif)
+<!--![Capture d'écran de Open-New-Tab-After-Current-Tab](../../assets/images/projets/Open-New-Tab-After-Current-Tab.gif)-->

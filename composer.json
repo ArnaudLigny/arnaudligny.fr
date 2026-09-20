@@ -1,13 +1,18 @@
 {
   "require": {
-    "cecil/theme-garth": "^1.11",
     "cecil/theme-pwa": "^2.21",
     "cecil/theme-headers": "^1.0",
-    "cecil/theme-redirects": "^1.0"
+    "cecil/theme-redirects": "^1.0",
+    "cecil/theme-devspace": "dev-main"
   },
   "config": {
     "allow-plugins": {
       "cecil/theme-installer": true
     }
-  }
+  },
+  "repositories": [{
+    "name": "theme-devspace",
+    "type": "vcs",
+    "url": "https://github.com/Cecilapp/theme-devspace"
+  }]
 }

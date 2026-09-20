@@ -1,5 +1,7 @@
 ---
 title: "Hello, je suis Arnaud."
+layout: homepage
+highlight: Arnaud
 description: "Site personnel d’Arnaud Ligny : consultant web et e-commerce, avec CV détaillé, articles techniques, projets open source, conférences et actualités."
 date: 2017-12-21
 updated: 2025-09-09

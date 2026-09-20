@@ -1,0 +1,4 @@
+{#- Footer displayed on print only. -#}
+<div class="print print__footer">
+  &copy; {{ site.devspace.copyright|default(site.title) }} &mdash; <a href="{{ url(page) }}">{{ url(page, {canonical: true}) }}</a>
+</div>

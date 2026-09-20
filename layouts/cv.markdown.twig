@@ -1,0 +1,17 @@
+{#- Markdown version of the resume, rebuilt from the `sections` of the front matter. -#}
+{%- set md = page.intro|default('') -%}
+{%- for section in page.sections|default([]) -%}
+  {%- set md = md ~ "\n## " ~ section.title ~ "\n" -%}
+  {%- for item in section.items|default([]) -%}
+    {%- set md = md ~ "\n### " ~ item.title ~ "\n" -%}
+    {%- if item.subtitle|default(false) -%}
+      {%- set subtitle = item.url|default(false) ? '[' ~ item.subtitle ~ '](' ~ item.url ~ ')' : item.subtitle -%}
+      {%- set md = md ~ "\n#### " ~ subtitle ~ (item.date|default(false) ? ' – *' ~ item.date ~ '*' : '') ~ "\n" -%}
+    {%- endif -%}
+    {%- if item.text|default(false) -%}
+      {%- set md = md ~ "\n" ~ item.text -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- set md = md ~ "\n\n" ~ page.abbreviations|default('') -%}
+{{- md -}}
