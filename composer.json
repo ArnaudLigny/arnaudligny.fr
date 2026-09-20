@@ -5,10 +5,17 @@
     "cecil/theme-redirects": "^1.0",
     "cecil/theme-devspace": "dev-main"
   },
+  "require-dev": {
+    "aligny/tailwind-builder": "^1.2"
+  },
   "config": {
     "allow-plugins": {
       "cecil/theme-installer": true
     }
+  },
+  "scripts": {
+    "css:build": "tailwind-builder assets/tailwind.css --output=assets/styles.css --minify",
+    "css:watch": "tailwind-builder assets/tailwind.css --output=assets/styles.css --watch"
   },
   "repositories": [{
     "name": "theme-devspace",

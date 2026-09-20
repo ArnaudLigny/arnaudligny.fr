@@ -1,0 +1,35 @@
+/*
+ * Feuille de style du site : surcharge celle du thème DevSpace.
+ *
+ * Le thème est importé tel quel (variables, plugins, styles additionnels),
+ * puis personnalisé ci-dessous. Cecil donne la priorité aux assets du site
+ * sur ceux du thème : le `styles.css` compilé ici remplace donc celui du thème.
+ *
+ * Compilation : composer css:build (ou composer css:watch pendant le dev).
+ */
+
+@import '../themes/devspace/assets/tailwind.css';
+
+/* Templates propres au site, en plus de ceux déjà scannés par le thème */
+@source '../layouts/**/*.twig';
+@source '../pages/**/*.md';
+
+/* Variables du thème (couleurs, polices, échelle typographique, etc.) */
+@theme {
+  /* Exemple : changer la couleur d'accent du site
+  --color-sky-500: oklch(0.68 0.16 250);
+  */
+}
+
+/* Composants du site (classes réutilisables, style .btn ou .h1 du thème) */
+@layer components {
+  /* Exemple :
+  .btn-cv {
+    @apply btn bg-sky-500 text-white hover:bg-sky-600;
+  }
+  */
+}
+
+/* Ajustements ponctuels sur le balisage existant */
+@layer utilities {
+}
