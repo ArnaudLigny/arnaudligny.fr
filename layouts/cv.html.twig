@@ -19,7 +19,7 @@
 {%- block title ~%}
                     <div class="flex items-center gap-5 mb-5">
                       {%- if page.image ~%}
-                      <img class="rounded-full shrink-0" src="{{ url(asset(page.image)|resize(224)) }}" width="112" height="112" alt="Photo de profil d’{{ site.profile.firstname ~ ' ' ~ site.profile.lastname }}">
+                      <img class="rounded-full shrink-0 hidden md:block" src="{{ url(asset(page.image)|resize(224)) }}" width="112" height="112" alt="Photo de profil d’{{ site.profile.firstname ~ ' ' ~ site.profile.lastname }}">
                       {%- endif ~%}
                       <h1 class="h1 font-aspekta">{{ page.title }}</h1>
                     </div>
