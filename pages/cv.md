@@ -37,6 +37,24 @@ abbreviations: |
   *[AMOA]: Assistance à la maîtrise d’ouvrage
   *[IoT]: Internet of Things
   *[DOSI]: Direction Opérationnelle des Systèmes d'Information
+widgets: [skills, languages]
+skills:
+  title: Compétences techniques
+  items:
+    - name: Magento
+    - name: commercetools
+    - name: Suite Atlassian
+    - name: Miro
+    - name: GitLab
+    - name: GitHub Copilot
+    - name: Claude Code
+languages:
+  title: Langues
+  items:
+    - name: Français
+      level: 100
+    - name: Anglais
+      level: 50
 sections:
   - title: Certifications
     items:
