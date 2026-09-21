@@ -63,6 +63,7 @@ theme:
   - pwa
   - headers
   - redirects
+
 # DevSpace theme
 devspace:
   avatar: photo-cv.png
@@ -71,24 +72,25 @@ devspace:
   icons:
     cv: resume
     projets: projects
-    talks: subscribe     # no dedicated icon in the theme yet
+    #talks: subscribe     # no dedicated icon in the theme yet
     a-propos: about
   posts:
     section: blog
     title: Derniers billets
     max: 6
-  share: [linkedin, x, email]
+  share: [linkedin, email]
   social:
+    #x: https://twitter.com/ArnaudLigny
+    mastodon: https://gazuji.com/@arnaud
     linkedin: https://fr.linkedin.com/in/arnaudligny/fr/
     github: https://github.com/ArnaudLigny
-    mastodon: https://gazuji.com/@arnaud
-    x: https://twitter.com/ArnaudLigny
     rss: blog/atom.xml
     email: mailto:arnaud@ligny.fr
   widgets: []            # sidebar widgets, e.g. [popular] (needs `popular: true` in the front matter of some pages)
   popular:
     title: Billets populaires
     max: 5
+
 logo: logo.png
 image: logo.png
 #googleanalytics: UA-30599234-2
