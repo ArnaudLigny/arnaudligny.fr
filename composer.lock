@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-devspace.git",
-                "reference": "d43d39b98e17649d555d1dc0591e897306c14282"
+                "reference": "da887828d580e0e2d2e93f444fda6ddc2fc4aaff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-devspace/zipball/d43d39b98e17649d555d1dc0591e897306c14282",
-                "reference": "d43d39b98e17649d555d1dc0591e897306c14282",
+                "url": "https://api.github.com/repos/Cecilapp/theme-devspace/zipball/da887828d580e0e2d2e93f444fda6ddc2fc4aaff",
+                "reference": "da887828d580e0e2d2e93f444fda6ddc2fc4aaff",
                 "shasum": ""
             },
             "require": {
@@ -67,7 +67,7 @@
                     "url": "https://opencollective.com/cecil"
                 }
             ],
-            "time": "2026-09-21T23:06:16+00:00"
+            "time": "2026-09-21T23:46:13+00:00"
         },
         {
             "name": "cecil/theme-headers",
