@@ -77,7 +77,7 @@ devspace:
   posts:
     section: blog
     title: Derniers billets
-    max: 6
+    max: 4
   share: [linkedin, email]
   social:
     #x: https://twitter.com/ArnaudLigny
