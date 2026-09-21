@@ -9,10 +9,3 @@
 {%- block head -%}{{ parent() }}{% include 'partials/site-head.html.twig' %}{%- endblock head -%}
 {%- block footer -%}{{ parent() }}{% include 'partials/site-print-footer.html.twig' %}{%- endblock footer -%}
 {%- block js -%}{{ parent() }}{% include 'partials/site-scripts.html.twig' %}{%- endblock js -%}
-
-{#- the image of the page is optional (the theme does not test its existence) -#}
-{%- block image ~%}
-{%- if page.image|default(false) ~%}
-                    <img class="w-full mb-8" src="{{ url(asset(page.image)) }}" alt="{{ page.title|e }}">
-{%- endif ~%}
-{%- endblock image ~%}
