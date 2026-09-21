@@ -19,9 +19,8 @@ Je me définis comme un facilitateur : je rends les choses plus simples, plus cl
 ✓ Gestion de projet technique, méthodes agiles et qualité  
 ✓ Avant-vente : cadrage, slides techniques et estimation de charge
 
-Je m’intéresse particulièrement à la simplicité, à la scalabilité et à la performance des expériences web. J’aime travailler avec des approches [progressives et découplées](https://jamstatic.fr/a-propos/), notamment autour des architectures [Jamstack](https://jamstack.org/what-is-jamstack/) et [MACH](https://commercetools.com/blog/mach-r-technology-unveiled-powering-modern-digital-commerce-experiences).  
-J’ai aussi conçu et développé un [générateur de site statique](https://cecil.app) orienté contenu.
+Je m’intéresse particulièrement à la simplicité, à la scalabilité et à la performance des expériences web. J’aime travailler avec des approches [progressives et découplées](https://jamstatic.fr/a-propos/), notamment autour des architectures [Jamstack](https://jamstack.org/what-is-jamstack/) et [MACH](https://commercetools.com/blog/mach-r-technology-unveiled-powering-modern-digital-commerce-experiences).
 
-[LinkedIn](https://fr.linkedin.com/in/arnaudligny/fr/) — [GitHub](https://github.com/ArnaudLigny) — [Bluesky](https://bsky.app/profile/arnaud.ligny.fr) — [Contact](mailto:arnaud@ligny.fr?subject=Prise%20de%20contact)
+J’ai aussi conçu et développé un [générateur de site statique](https://cecil.app) orienté contenu.
 
 *[DSI]: Direction des Services Informatiques
