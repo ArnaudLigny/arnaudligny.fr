@@ -18,5 +18,5 @@ Les contenus du site sont mis à disposition sous licence [Creative Commons BY-S
 
 * les contenus et les templates sont versionnés sur [GitHub](https://github.com/ArnaudLigny/arnaudligny.fr/)
 * le site web est créé avec [Cecil](https://cecil.app) ([mon générateur de site statique](/blog/cecil-mon-generateur-de-site-statique/))
-* le thème est un portage de [DevSpace](https://cruip.com/) (créé par [Cruip](https://cruip.com))
+* le thème est un portage de [DevSpace](https://cruip.com/devspace/) (créé par [Cruip](https://cruip.com))
 * le déploiement continu et l’hébergement sont assurés par [statichost.eu](https://statichost.eu)
