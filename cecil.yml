@@ -16,7 +16,7 @@ language: fr
 languages:
   - code: fr
     name: Français
-    locale: fr_FR
+    locale: fr
 menus:
   main:
     - id: index
