@@ -5,7 +5,7 @@
 {{- parent() -}}
 {%- if page.url is defined ~%}
                     <div class="content mt-8">
-                      <p><a href="{{ url(page.url) }}" title="Site web du projet">{{ url(page.url) }}</a></p>
+                      <p><a href="{{ url(page.url) }}" title="Site web du projet" target="_blank">{{ url(page.url) }}</a></p>
                     </div>
 {%- endif ~%}
 {%- endblock after_content ~%}
