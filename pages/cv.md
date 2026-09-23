@@ -42,12 +42,19 @@ skills:
   title: Compétences techniques
   items:
     - name: Magento
+      level: 90
     - name: commercetools
+      level: 85
     - name: Suite Atlassian
+      level: 85
     - name: Miro
+      level: 70
     - name: GitLab
+      level: 80
     - name: GitHub Copilot
+      level: 80
     - name: Claude Code
+      level: 70
 languages:
   title: Langues
   items:
