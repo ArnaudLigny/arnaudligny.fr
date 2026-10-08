@@ -1,7 +1,7 @@
 ---
-name: Blog Writer
+name: blog-writer
 description: "Use when writing blog posts, drafting article outlines, or creating complete Markdown blog entries for this Cecil website (French tech blog, front matter, break marker, tags, title ideas)."
-tools: [read, search, edit]
+tools: Read, Grep, Glob, Edit, Write
 argument-hint: "Sujet du billet, angle, audience, contraintes"
 user-invocable: true
 ---
