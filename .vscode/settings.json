@@ -11,5 +11,8 @@
       "other": "off"
     },
     "editor.minimap.enabled": false
-  }
+  },
+  "cSpell.words": [
+    "typora"
+  ]
 }
