@@ -185,7 +185,7 @@ Voici le journal des modifications.
 
 [5.23.0](https://github.com/Cecilapp/Cecil/releases/tag/5.23.0)
 
-- Passage de la gestion des messages de log à [PSR/Log](PSR/Log)
+- Passage de la gestion des messages de log à PSR/Log
 
 [5.24.0](https://github.com/Cecilapp/Cecil/releases/tag/5.24.0)
 
