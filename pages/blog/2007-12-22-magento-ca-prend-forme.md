@@ -9,7 +9,7 @@ years: [2007]
 path: blog/magento-ca-prend-forme
 published: true
 ---
-Oui [Magento](/tags/magento/) prend forme ! Pourquoi ? Parcequ'un (nouveau) guide complet orienté design à été publié par l'équipe de Varien. Ce guide est nettement plus complet et précis que ce qui avait été rendu disponible jusqu'à maintenant.
+Oui [Magento](/tags/magento//) prend forme ! Pourquoi ? Parcequ'un (nouveau) guide complet orienté design à été publié par l'équipe de Varien. Ce guide est nettement plus complet et précis que ce qui avait été rendu disponible jusqu'à maintenant.
 
 Les développeurs d'interface vont pouvoir tester plus en détails le système de template de Magento (et moins tatonner) : attendons nous à voir fleurir quelques thèmes pour Magento dans les semaines à venir !
 

@@ -11,7 +11,7 @@ type: post
 slug: cecil-optimisation-images
 published: true
 ---
-[Cecil](/tags/cecil), mon [générateur de site statique](https://cecil.app), permet de manipuler des ressources web (_assets_) tels que des images, des feuilles de styles (CSS ou Sass), des scripts, etc.
+[Cecil](/tags/cecil/), mon [générateur de site statique](https://cecil.app), permet de manipuler des ressources web (_assets_) tels que des images, des feuilles de styles (CSS ou Sass), des scripts, etc.
 
 Dans le cas des images, on peut considérer qu’il en existe de deux types selon l’usage :
 

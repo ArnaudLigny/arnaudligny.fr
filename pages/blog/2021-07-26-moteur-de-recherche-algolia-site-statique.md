@@ -69,7 +69,7 @@ Je dis *relativement* car il peut être nécessaire d’effectuer quelques tests
 
 ## Mise en œuvre
 
-Dans le cas de la documentation de [Cecil](/tags/cecil), il faut donc :
+Dans le cas de la documentation de [Cecil](/tags/cecil/), il faut donc :
 
 1. créer un fichier d’index au format JSON
 2. le transmettre à application Algolia
@@ -77,7 +77,7 @@ Dans le cas de la documentation de [Cecil](/tags/cecil), il faut donc :
 
 ### Création de l’index
 
-Avec [Cecil](/tags/cecil) il est plutôt aisé de créer un fichier JSON puisque, par définition, c’est son job de générer des fichiers statiques 😊
+Avec [Cecil](/tags/cecil/) il est plutôt aisé de créer un fichier JSON puisque, par définition, c’est son job de générer des fichiers statiques 😊
 
 Ainsi, l’objectif est de :
 

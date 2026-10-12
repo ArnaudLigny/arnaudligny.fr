@@ -9,7 +9,7 @@ years: [2009]
 path: blog/barcamp-magento-a-paris
 published: true
 ---
-[**Magento Commerce**](/tags/magento/), la solution e-commerce incontournable, se fait inviter **à Paris le 2 février prochain** !
+[**Magento Commerce**](/tags/magento//), la solution e-commerce incontournable, se fait inviter **à Paris le 2 février prochain** !
 
 C'est l'occasion pour la communauté des professionnels du e-commerce en France de se rencontrer et d'échanger ses idées techniques, fonctionnelles et business à propos de Magento.
 

@@ -3,7 +3,7 @@ title: "JAMstack Paris #5"
 description: "Intervention au meetup JAMstack Paris #5 autour de Cecil, mon générateur de site statique en PHP, avec vidéo, slides et retour d’expérience."
 date: 2019-11-05
 image: /images/talks/jamstack-paris-cecil-mon-generateur-de-site-statique.png
-alias: /talks/cecil-mon-generateur-de-site-statique
+alias: /talks/cecil-mon-generateur-de-site-statique/
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
 published: true

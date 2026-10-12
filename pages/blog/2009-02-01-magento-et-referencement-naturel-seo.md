@@ -9,7 +9,7 @@ tags:
 years: [2009]
 published: true
 ---
-[Magento Commerce](/tags/magento/), la solution e-commerce open-source du moment est-elle optimisée pour le référencement naturel ?
+[Magento Commerce](/tags/magento//), la solution e-commerce open-source du moment est-elle optimisée pour le référencement naturel ?
 
 En l'état j'aurais tendance à dire que non.
 
@@ -43,4 +43,4 @@ Il n'en reste pas moins qu'il sera rapidement nécessaire que la société Varie
 * `http://fr.ma-boutique.com`
 * `http://www.ma-boutique.com/fr/`
 
-En synthèse je dirais que [Magento Commerce](/tags/magento/) est un fantastique outil de création de boutique en ligne, que les fondations techniques et fonctionnelles sont très bonnes, et qu'avec un peu de maturité certaines lacunes de SEO peuvent être comblées simplement.
+En synthèse je dirais que [Magento Commerce](/tags/magento//) est un fantastique outil de création de boutique en ligne, que les fondations techniques et fonctionnelles sont très bonnes, et qu'avec un peu de maturité certaines lacunes de SEO peuvent être comblées simplement.

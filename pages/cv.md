@@ -144,12 +144,12 @@ sections:
 
           ##### Saint Maclou (e-commerce)
 
-          👉 Pilotage complet du projet de refonte complet du site e-commerce Saint-Maclou.com, sur [Magento](/tags/magento), en partenariat avec l’agence [5ème Gauche](http://www.5emegauche.com).  
+          👉 Pilotage complet du projet de refonte complet du site e-commerce Saint-Maclou.com, sur [Magento](/tags/magento/), en partenariat avec l’agence [5ème Gauche](http://www.5emegauche.com).  
           👉 Points d’attention : budget développement serré, optimisation des performances, outil d’aide au choix, outil de calcul de surface, connecteur CRM, store locator, déploiement continu.
 
           ##### Tereos (app mobile)
 
-          👉 Avant-vente puis conception d’une application mobile ([React Native](/tags/react-native)) visant à fournir un ensemble d’outils aux planteurs (Betterave sucrière).  
+          👉 Avant-vente puis conception d’une application mobile ([React Native](/tags/react-native/)) visant à fournir un ensemble d’outils aux planteurs (Betterave sucrière).  
           👉 Points d’attention : métier complexe, interfaces d’authentification et d’obtention des donnés, contrainte physiques fortes (connexion dégradée, mode hors-ligne), alertes push.
       - date: '2014-2015'
         title: Architecte IoT

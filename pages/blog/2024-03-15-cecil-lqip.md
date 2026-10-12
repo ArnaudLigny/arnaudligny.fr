@@ -11,7 +11,7 @@ typora-copy-images-to: ../../assets/images/${filename}
 published: true
 ---
 
-> Ce billet fait suite à un [précédent article](/blog/cecil-optimisation-images) traitant des capacités de [Cecil](/tags/cecil) à optimiser les images (au sein des pages).
+> Ce billet fait suite à un [précédent article](/blog/cecil-optimisation-images/) traitant des capacités de [Cecil](/tags/cecil/) à optimiser les images (au sein des pages).
 
 Même si les images ne bloquent pas le rendu d’une page web, il est important de penser à l’expérience utilisateur pendant leur chargement.
 
