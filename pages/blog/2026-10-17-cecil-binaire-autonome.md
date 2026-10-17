@@ -2,7 +2,7 @@
 title: "Cecil disponible en binaire autonome, sans PHP"
 description: "Depuis la version 9.11.0, Cecil est aussi distribué sous forme d’un exécutable unique embarquant PHP, construit avec phpacker et StaticPHP : de quoi builder un site sur Cloudflare Pages ou Render."
 date: 2026-10-17
-tags: [Cecil, SSG, PHP, GitHub Actions]
+tags: [Cecil, SSG, PHP]
 years: [2026]
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
