@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "81eb4ed84e889ef35c5c21e6a724a3ec",
+    "content-hash": "853943af4f4dfef94fb0b4170cb5ff90",
     "packages": [
         {
             "name": "cecil/theme-devspace",
@@ -71,16 +71,16 @@
         },
         {
             "name": "cecil/theme-headers",
-            "version": "1.0.1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-headers.git",
-                "reference": "9ae8f6701e3e732c629c2842b557f184a8f01288"
+                "reference": "1195615ec9b3752b402190f107cebee7b1579cc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-headers/zipball/9ae8f6701e3e732c629c2842b557f184a8f01288",
-                "reference": "9ae8f6701e3e732c629c2842b557f184a8f01288",
+                "url": "https://api.github.com/repos/Cecilapp/theme-headers/zipball/1195615ec9b3752b402190f107cebee7b1579cc1",
+                "reference": "1195615ec9b3752b402190f107cebee7b1579cc1",
                 "shasum": ""
             },
             "require": {
@@ -90,7 +90,7 @@
             "extra": {
                 "name": "headers",
                 "branch-alias": {
-                    "dev-master": "2.x-dev"
+                    "dev-main": "2.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -105,7 +105,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-headers/issues",
-                "source": "https://github.com/Cecilapp/theme-headers/tree/1.0.1"
+                "source": "https://github.com/Cecilapp/theme-headers/tree/2.0.0"
             },
             "funding": [
                 {
@@ -117,7 +117,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2025-09-16T13:33:31+00:00"
+            "time": "2026-10-18T20:37:41+00:00"
         },
         {
             "name": "cecil/theme-installer",
@@ -237,16 +237,16 @@
         },
         {
             "name": "cecil/theme-redirects",
-            "version": "1.0.1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-redirects.git",
-                "reference": "f7d7ca86d2bec5763fac68883d4fafb26677c479"
+                "reference": "faaba63051ec3040e8975d3d90df731a11277847"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-redirects/zipball/f7d7ca86d2bec5763fac68883d4fafb26677c479",
-                "reference": "f7d7ca86d2bec5763fac68883d4fafb26677c479",
+                "url": "https://api.github.com/repos/Cecilapp/theme-redirects/zipball/faaba63051ec3040e8975d3d90df731a11277847",
+                "reference": "faaba63051ec3040e8975d3d90df731a11277847",
                 "shasum": ""
             },
             "require": {
@@ -256,7 +256,7 @@
             "extra": {
                 "name": "redirects",
                 "branch-alias": {
-                    "dev-master": "2.x-dev"
+                    "dev-main": "1.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -271,7 +271,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-redirects/issues",
-                "source": "https://github.com/Cecilapp/theme-redirects/tree/1.0.1"
+                "source": "https://github.com/Cecilapp/theme-redirects/tree/2.0.0"
             },
             "funding": [
                 {
@@ -283,7 +283,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2025-09-16T13:34:33+00:00"
+            "time": "2026-10-18T20:44:11+00:00"
         }
     ],
     "packages-dev": [
