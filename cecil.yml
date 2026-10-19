@@ -89,13 +89,15 @@ cloudinary:
   asset: arnaudligny/og/ali-card.png
 
 pages:
-  virtual:
-    # old URL
-    - path: blog/work-in-progress
+  default:
+    blog/work-in-progress:
+      path: blog/work-in-progress
       redirect: /
-    - path: blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento
+    blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento:
+      path: blog/v-rifier-la-validit-des-fichiers-de-configuration-xml-de-magento
       redirect: blog/verifier-la-validite-des-fichiers-de-configuration-xml-de-magento/
-    - path: blog/t-l-charger-manuellement-une-extension-magento
+    blog/t-l-charger-manuellement-une-extension-magento:
+      path: blog/t-l-charger-manuellement-une-extension-magento
       redirect: blog/telecharger-manuellement-une-extension-magento/
   body:
     images:
@@ -164,32 +166,32 @@ output:
     section: ['html', 'atom', 'json', 'jsonfeed', 'markdown']
     page: ['html', 'markdown']
 
-manifest:
-  background_color: '#FFFFFF'
-  theme_color: '#FFFFFF'
-  theme_color_dark: '#0F172B'
-  #icons:
-  #  - icon-192x192.png
-  #  - icon-512x512.png
-  #  - src: icon-192x192-maskable.png
-  #    purpose: maskable
-  #  - src: icon-512x512-maskable.png
-  #    purpose: maskable
-  shortcuts: true
-
-serviceworker:
-  enabled: true
-  install:
-    precache:
-      assets:
-        #- logo.png
-        - photo-cv.png
-  update:
-    snackbar: true
-    badge: false
-    notification: false
-  offline:
-    snackbar: true
+pwa:
+  manifest:
+    background_color: '#FFFFFF'
+    theme_color: '#FFFFFF'
+    theme_color_dark: '#0F172B'
+    #icons:
+    #  - icon-192x192.png
+    #  - icon-512x512.png
+    #  - src: icon-192x192-maskable.png
+    #    purpose: maskable
+    #  - src: icon-512x512-maskable.png
+    #    purpose: maskable
+    shortcuts: true
+  serviceworker:
+    enabled: true
+    install:
+      precache:
+        assets:
+          #- logo.png
+          - photo-cv.png
+    update:
+      snackbar: true
+      badge: false
+      notification: false
+    offline:
+      snackbar: true
 
 anchor:
   version: 5.0.0
