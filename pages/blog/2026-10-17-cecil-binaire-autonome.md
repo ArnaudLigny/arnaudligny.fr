@@ -1,18 +1,22 @@
 ---
-title: "Cecil disponible en binaire autonome, sans PHP"
-description: "Depuis la version 9.11.0, Cecil est aussi distribué sous forme d’un exécutable unique embarquant PHP, construit avec phpacker et StaticPHP : de quoi builder un site sur Cloudflare Pages ou Render."
+title: Cecil disponible en binaire autonome, sans PHP
+description: "Depuis la version 9.11.0, Cecil est aussi distribué sous forme
+  d’un exécutable unique embarquant PHP, construit avec phpacker et StaticPHP :
+  de quoi builder un site sur Cloudflare Pages ou Render."
 date: 2026-10-17
-tags: [Cecil, SSG, PHP]
-years: [2026]
+tags:
+  - Cecil
+  - SSG
+  - PHP
+years:
+  - 2026
+published: true
 typora-root-url: ../../assets
 typora-copy-images-to: ../../assets/images/${filename}
-published: true
 ---
 Depuis la version 9.11.0, [Cecil est également disponible en binaire autonome](https://cecil.app/fr/actualites/2026/10/14/cecil-disponible-en-binaire-autonome/) : un unique fichier exécutable qui embarque PHP et les extensions nécessaires. Plus besoin d’installer PHP pour générer un site.
 
 Ce chantier dormait à l’état de brouillon depuis un bon moment. Il est désormais stable, et les binaires sont construits, testés et publiés automatiquement à chaque release.
-
-<!-- break -->
 
 ## Pourquoi un binaire ?
 
@@ -29,13 +33,15 @@ Avec le binaire, ces plateformes redeviennent utilisables : il suffit de téléc
 
 Les binaires sont attachés à chaque [release GitHub](https://github.com/Cecilapp/Cecil/releases), pour cinq plateformes :
 
-| Plateforme            | Fichier                 |
-| --------------------- | ----------------------- |
-| Linux x64             | `cecil-linux-x64`       |
-| Linux ARM64           | `cecil-linux-arm64`     |
-| macOS Intel           | `cecil-macos-x64`       |
-| macOS Apple Silicon   | `cecil-macos-arm64`     |
-| Windows x64           | `cecil-windows-x64.exe` |
+
+| Plateforme          | Fichier                 |
+| ------------------- | ----------------------- |
+| Linux x64           | `cecil-linux-x64`       |
+| Linux ARM64         | `cecil-linux-arm64`     |
+| macOS Intel         | `cecil-macos-x64`       |
+| macOS Apple Silicon | `cecil-macos-arm64`     |
+| Windows x64         | `cecil-windows-x64.exe` |
+
 
 Par exemple, sous Linux :
 
@@ -75,7 +81,7 @@ La construction des binaires est intégrée au [workflow de release](https://git
 
 1. le job `build` génère le fichier `cecil.phar` ;
 2. le job `package` installe phpacker, construit les binaires des cinq plateformes, calcule leurs empreintes SHA-256 (`cecil-binaries.sha256`) et génère une attestation de provenance ;
-3. le job `package_test` exécute chaque binaire sur un _runner_ de la plateforme correspondante (Ubuntu x64 et ARM, macOS Intel et Apple Silicon, Windows) : il crée un site de démonstration, le génère, et vérifie au passage que le traitement d’images via GD est bien opérationnel ;
+3. le job `package_test` exécute chaque binaire sur un *runner* de la plateforme correspondante (Ubuntu x64 et ARM, macOS Intel et Apple Silicon, Windows) : il crée un site de démonstration, le génère, et vérifie au passage que le traitement d’images via GD est bien opérationnel ;
 4. les binaires sont enfin attachés à la release.
 
 L’attestation permet de vérifier qu’un binaire a bien été produit par ce workflow :
@@ -90,11 +96,11 @@ Le [script de build](https://cecil.app/build.sh), utilisé pour [déployer sur l
 
 Sur Cloudflare Pages, la configuration se résume donc à :
 
-- _Framework preset_ : `None`
-- _Build command_ : `curl -sSOL https://cecil.app/build.sh && bash ./build.sh`
-- _Build output directory_ : `_site`
+- *Framework preset* : `None`
+- *Build command* : `curl -sSOL https://cecil.app/build.sh && bash ./build.sh`
+- *Build output directory* : `_site`
 
-D’ailleurs, une copie du site de Cecil est générée et hébergée sur Cloudflare Pages : <https://cloudflare.cecil.app>.
+D’ailleurs, une copie du site de Cecil est générée et hébergée sur Cloudflare Pages : [https://cloudflare.cecil.app](https://cloudflare.cecil.app).
 
 ## Quelques limitations
 
@@ -108,7 +114,8 @@ Le fichier `cecil.phar`, Composer et les gestionnaires de paquets restent évide
 
 ## Pour aller plus loin
 
-- Annonce : <https://cecil.app/fr/actualites/2026/10/14/cecil-disponible-en-binaire-autonome/>
-- Déployer sur les plateformes Jamstack : <https://cecil.app/fr/documentation/deployer/plateformes-jamstack/>
-- phpacker : <https://phpacker.dev>
-- StaticPHP : <https://static-php.dev>
+- Annonce : [https://cecil.app/fr/actualites/2026/10/14/cecil-disponible-en-binaire-autonome/](https://cecil.app/fr/actualites/2026/10/14/cecil-disponible-en-binaire-autonome/)
+- Déployer sur les plateformes Jamstack : [https://cecil.app/fr/documentation/deployer/plateformes-jamstack/](https://cecil.app/fr/documentation/deployer/plateformes-jamstack/)
+- phpacker : [https://phpacker.dev](https://phpacker.dev)
+- StaticPHP : [https://static-php.dev](https://static-php.dev)
+
