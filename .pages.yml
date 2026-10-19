@@ -1,22 +1,260 @@
+# Pages CMS configuration
+# https://pagescms.org/docs/configuration/
+
 media:
-  input: assets
-  output: ../../assets
+  - name: images
+    label: Images
+    input: assets/images
+    output: /images
+    categories: [image]
+    rename: safe
+  - name: files
+    label: Fichiers
+    input: static
+    output: /
+    categories: [document]
+
 content:
+  - name: blog
+    label: Blog
+    type: collection
+    path: pages/blog
+    exclude: [index.md]
+    subfolders: false
+    filename:
+      template: "{year}-{month}-{day}-{primary}.md"
+      field: create
+    view:
+      fields: [title, date, tags, published]
+      primary: title
+      sort: [date, title]
+      search: [title, description, tags]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Titre
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+        description: Résumé utilisé pour le SEO et les cartes de partage (≈ 160 caractères).
+      - name: date
+        label: Date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: updated
+        label: Mise à jour
+        type: date
+        default: ""
+        options:
+          format: yyyy-MM-dd
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: years
+        label: Années
+        type: number
+        list: true
+        description: Année de publication (taxonomie « years »).
+      - name: image
+        label: Image
+        type: image
+        options:
+          media: images
+      - name: published
+        label: Publié
+        type: boolean
+        default: false
+      - name: typora-root-url
+        type: string
+        hidden: true
+        default: ../../assets
+      - name: typora-copy-images-to
+        type: string
+        hidden: true
+        default: ../../assets/images/${filename}
+      - name: body
+        label: Contenu
+        type: rich-text
+        description: "Insérer <!-- break --> pour délimiter l’extrait."
+        options:
+          format: markdown
+          switcher: true
+          media: images
+
+  - name: projets
+    label: Projets
+    type: collection
+    path: pages/projets
+    exclude: [index.md]
+    subfolders: false
+    filename:
+      template: "{primary}.md"
+      field: create
+    view:
+      fields: [title, date, url, published]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Titre
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: date
+        label: Date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: url
+        label: URL du projet
+        type: string
+        pattern:
+          regex: "^https?://"
+          message: L’URL doit commencer par http:// ou https://
+      - name: image
+        label: Image
+        type: image
+        options:
+          media: images
+          path: assets/images/projets
+      - name: published
+        label: Publié
+        type: boolean
+        default: false
+      - name: body
+        label: Contenu
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true
+          media: images
+
+  - name: talks
+    label: Conférences
+    type: collection
+    path: pages/talks
+    exclude: [index.md]
+    subfolders: false
+    filename:
+      template: "{primary}.md"
+      field: create
+    view:
+      fields: [title, date, published]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Titre
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: date
+        label: Date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: image
+        label: Image
+        type: image
+        options:
+          media: images
+          path: assets/images/talks
+      - name: published
+        label: Publié
+        type: boolean
+        default: false
+      - name: typora-root-url
+        type: string
+        hidden: true
+        default: ../../assets
+      - name: typora-copy-images-to
+        type: string
+        hidden: true
+        default: ../../assets/images/${filename}
+      - name: body
+        label: Contenu
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true
+          media: images
+
   - name: pages
     label: Pages
     type: collection
     path: pages
+    subfolders: false
+    filename:
+      template: "{primary}.md"
+      field: create
+    view:
+      fields: [title, updated]
+      primary: title
     fields:
       - name: title
+        label: Titre
         type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: date
+        label: Date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: updated
+        label: Mise à jour
+        type: date
+        default: ""
+        options:
+          format: yyyy-MM-dd
+      - name: published
+        label: Publié
+        type: boolean
+        default: true
       - name: body
+        label: Contenu
         type: rich-text
+        options:
+          format: markdown
+          switcher: true
+          media: images
+
   - name: site
-    label: Site settings
+    label: Paramètres du site
     type: file
     path: cecil.yml
     fields:
       - name: title
+        label: Titre
+        type: string
+        required: true
+      - name: baseline
+        label: Baseline
         type: string
       - name: description
+        label: Description
         type: text
+      - name: keywords
+        label: Mots-clés
+        type: string
+        list: true
