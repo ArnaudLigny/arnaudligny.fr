@@ -27,7 +27,10 @@ menus:
       enabled: false
 image: photo-cv.png
 metatags:
-  data: true
+  data:
+    enabled: true
+    publisher:
+      type: Person
 profile:
   firstname: Arnaud
   lastname: Ligny
