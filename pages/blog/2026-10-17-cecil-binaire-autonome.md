@@ -4,6 +4,7 @@ description: "Depuis la version 9.11.0, Cecil est aussi distribué sous forme
   d’un exécutable unique embarquant PHP, construit avec phpacker et StaticPHP :
   de quoi builder un site sur Cloudflare Pages ou Render."
 date: 2026-10-17
+updated: 2026-10-23
 tags:
   - Cecil
   - SSG
@@ -109,8 +110,6 @@ Le binaire couvre l’essentiel des usages, avec toutefois quelques limites :
 - les images sont traitées uniquement avec GD (ni Imagick, ni libvips) ;
 - la commande `self-update` n’est pas disponible : pour mettre à jour, il faut télécharger le nouveau binaire ;
 - la commande `serve` s’appuie sur le serveur web intégré de PHP et nécessite donc une installation locale de PHP. Sans PHP, il suffit de lancer `build` puis de servir le dossier `_site` avec un autre serveur web.
-
-Le fichier `cecil.phar`, Composer et les gestionnaires de paquets restent évidemment proposés.
 
 ## Pour aller plus loin
 
