@@ -1,8 +1,8 @@
 {
   "require": {
     "cecil/theme-pwa": "^3.0",
-    "cecil/theme-headers": "^2.0",
-    "cecil/theme-redirects": "^2.0",
+    "cecil/theme-headers": "^2.1",
+    "cecil/theme-redirects": "^2.1",
     "cecil/theme-devspace": "dev-main"
   },
   "require-dev": {
