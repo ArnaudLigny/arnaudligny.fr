@@ -5,7 +5,7 @@ media:
   - name: images
     label: Images
     input: assets/images
-    output: /images
+    output: /assets/images
     categories: [image]
     rename: safe
   - name: files
