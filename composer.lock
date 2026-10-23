@@ -71,24 +71,23 @@
         },
         {
             "name": "cecil/theme-headers",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-headers.git",
-                "reference": "924779ada44e69596eef955099b919933f037b9b"
+                "reference": "550c1648208adc651cfcecde290282ed8957038b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-headers/zipball/924779ada44e69596eef955099b919933f037b9b",
-                "reference": "924779ada44e69596eef955099b919933f037b9b",
+                "url": "https://api.github.com/repos/Cecilapp/theme-headers/zipball/550c1648208adc651cfcecde290282ed8957038b",
+                "reference": "550c1648208adc651cfcecde290282ed8957038b",
                 "shasum": ""
             },
             "require": {
-                "cecil/theme-installer": "^1.4|^2.0"
+                "cecil/theme-installer": "^2.1"
             },
             "type": "cecil-theme",
             "extra": {
-                "name": "headers",
                 "branch-alias": {
                     "dev-main": "2.x-dev"
                 }
@@ -105,7 +104,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-headers/issues",
-                "source": "https://github.com/Cecilapp/theme-headers/tree/2.0.1"
+                "source": "https://github.com/Cecilapp/theme-headers/tree/2.1.0"
             },
             "funding": [
                 {
@@ -117,27 +116,29 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-10-19T11:20:06+00:00"
+            "time": "2026-10-22T23:37:25+00:00"
         },
         {
             "name": "cecil/theme-installer",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-installer.git",
-                "reference": "588ec8523a978229d23e10a0b8e0b6420192c154"
+                "reference": "37c6f58e09cf36e94b10b078a9c5e1f3985d5a38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-installer/zipball/588ec8523a978229d23e10a0b8e0b6420192c154",
-                "reference": "588ec8523a978229d23e10a0b8e0b6420192c154",
+                "url": "https://api.github.com/repos/Cecilapp/theme-installer/zipball/37c6f58e09cf36e94b10b078a9c5e1f3985d5a38",
+                "reference": "37c6f58e09cf36e94b10b078a9c5e1f3985d5a38",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": ">=2.0"
+                "composer-plugin-api": "^2.0",
+                "php": "^8.1"
             },
             "require-dev": {
-                "composer/composer": ">=2.0"
+                "composer/composer": "^2.0",
+                "phpunit/phpunit": "^10.5"
             },
             "type": "composer-plugin",
             "extra": {
@@ -147,8 +148,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Cecil\\Installer\\Composer": "src/"
+                "psr-4": {
+                    "Cecil\\Installer\\Composer\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -163,15 +164,17 @@
                     "role": "Developer"
                 }
             ],
-            "description": "Installer for Cecil's themes",
+            "description": "Composer installer for Cecil's themes",
+            "homepage": "https://cecil.app",
             "keywords": [
                 "cecil",
+                "composer-plugin",
                 "installer",
                 "themes"
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-installer/issues",
-                "source": "https://github.com/Cecilapp/theme-installer/tree/2.0.0"
+                "source": "https://github.com/Cecilapp/theme-installer/tree/2.1.0"
             },
             "funding": [
                 {
@@ -183,7 +186,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-01-09T14:53:24+00:00"
+            "time": "2026-10-22T20:56:35+00:00"
         },
         {
             "name": "cecil/theme-pwa",
@@ -237,26 +240,25 @@
         },
         {
             "name": "cecil/theme-redirects",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-redirects.git",
-                "reference": "915466e9d13f1c613e71799a20a1e47874f315fb"
+                "reference": "fdd69065c55a27c8c3d3e816fd994c14d8692541"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-redirects/zipball/915466e9d13f1c613e71799a20a1e47874f315fb",
-                "reference": "915466e9d13f1c613e71799a20a1e47874f315fb",
+                "url": "https://api.github.com/repos/Cecilapp/theme-redirects/zipball/fdd69065c55a27c8c3d3e816fd994c14d8692541",
+                "reference": "fdd69065c55a27c8c3d3e816fd994c14d8692541",
                 "shasum": ""
             },
             "require": {
-                "cecil/theme-installer": "^1.4|^2.0"
+                "cecil/theme-installer": "^2.1"
             },
             "type": "cecil-theme",
             "extra": {
-                "name": "redirects",
                 "branch-alias": {
-                    "dev-main": "1.x-dev"
+                    "dev-main": "2.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -271,7 +273,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-redirects/issues",
-                "source": "https://github.com/Cecilapp/theme-redirects/tree/2.0.1"
+                "source": "https://github.com/Cecilapp/theme-redirects/tree/2.1.0"
             },
             "funding": [
                 {
@@ -283,7 +285,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-10-19T11:20:14+00:00"
+            "time": "2026-10-22T23:49:22+00:00"
         }
     ],
     "packages-dev": [
