@@ -102,6 +102,59 @@ pages:
     blog/t-l-charger-manuellement-une-extension-magento:
       path: blog/t-l-charger-manuellement-une-extension-magento
       redirect: blog/telecharger-manuellement-une-extension-magento/
+  # Front matter validation
+  # https://cecil.app/documentation/configuration/pages/#pages-schema
+  schema:
+    '*':
+      title: string
+      description: string
+      updated: date
+      image: string
+      published: bool
+    blog:
+      title:
+        type: string
+        required: true
+      description:
+        type: string
+        required: true
+      date:
+        type: date
+        required: true
+      tags:
+        type: list
+        items: string
+      years:
+        type: list
+        items: int
+      canonical:
+        type: map
+        fields:
+          url:
+            type: string
+            required: true
+            pattern: 'https?://.+'
+          title: string
+    projets:
+      title:
+        type: string
+        required: true
+      description:
+        type: string
+        required: true
+      url:
+        type: string
+        pattern: 'https?://.+'
+    talks:
+      title:
+        type: string
+        required: true
+      description:
+        type: string
+        required: true
+      date:
+        type: date
+        required: true
   body:
     images:
       formats: [avif, webp]
