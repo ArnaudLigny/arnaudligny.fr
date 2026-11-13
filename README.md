@@ -18,7 +18,7 @@ Source of [arnaudligny.fr](https://arnaudligny.fr), a personal website (CV, blog
 | `config/`       | Configuration overrides (e.g. `dev.yml`)                                  |
 | `pages/`        | Markdown content: `index.md`, `cv.md`, `a-propos.md`, `blog/`, `projets/`, `talks/` |
 | `layouts/`      | Twig templates overriding the theme                                       |
-| `themes/`       | Themes: `devspace`, `pwa`, `headers`, `redirects` (installed by Composer), and the legacy `ali1` |
+| `themes/`       | Themes: `devspace`, `pwa`, `headers`, `redirects`, `ogimage` (installed by Composer), and the legacy `ali1` |
 | `assets/`       | Images, videos and CSS sources (`tailwind.css` → `styles.css`)            |
 | `static/`       | Files copied as-is to the root of the site (PDF résumés, `favicon.ico`…)  |
 | `models/`       | Front matter templates used by `cecil new:page`, one per section (`blog.md`)|

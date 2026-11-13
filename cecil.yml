@@ -56,6 +56,7 @@ theme:
   - pwa
   - headers
   - redirects
+  - ogimage
 
 # DevSpace theme
 devspace:
@@ -87,9 +88,14 @@ devspace:
 #googleanalytics: UA-30599234-2
 cloudflareinsights: aa58d54d00e04d9e8f0fc44730cafff7
 
-cloudinary:
-  account: aligny
-  asset: arnaudligny/og/ali-card.png
+# Open Graph image theme
+# https://github.com/Cecilapp/theme-ogimage
+ogimage:
+  background: og-background.png
+  by: par
+  padding:
+    left: 80
+    right: 230 # keeps the footer away from the avatar of the background
 
 pages:
   default:

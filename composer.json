@@ -3,7 +3,8 @@
     "cecil/theme-pwa": "^3.0",
     "cecil/theme-headers": "^2.1",
     "cecil/theme-redirects": "^2.1",
-    "cecil/theme-devspace": "dev-main"
+    "cecil/theme-devspace": "dev-main",
+    "cecil/theme-ogimage": "^1.0"
   },
   "require-dev": {
     "aligny/tailwind-builder": "^1.2"
