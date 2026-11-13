@@ -1,0 +1,18 @@
+mode: writing
+contact: Arnaud
+writing:
+  sections:
+    - blog
+    - /
+  pages:
+    delete: true
+#foo: bar
+targets:
+  - name: 'Production'
+    provider: netlify
+    site: arnaudligny
+    baseurl: 'https://arnaudligny.fr/'
+  #- name: 'Recette'
+  #  provider: github
+  #  repository: ArnaudLigny/arnaudligny.fr
+  #  branch: gh-pages
