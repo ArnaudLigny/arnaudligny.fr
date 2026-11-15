@@ -1,0 +1,7 @@
+# Front matter schema of all pages (key "*")
+# https://cecil.app/documentation/configuration/pages/#pages-schema
+title: string
+description: string
+updated: date
+image: string
+published: bool

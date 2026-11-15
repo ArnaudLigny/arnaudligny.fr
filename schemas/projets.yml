@@ -1,0 +1,10 @@
+# Front matter schema of the "projets" section
+title:
+  type: string
+  required: true
+description:
+  type: string
+  required: true
+url:
+  type: string
+  pattern: 'https?://.+'

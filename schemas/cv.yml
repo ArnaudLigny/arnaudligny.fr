@@ -1,0 +1,119 @@
+# Front matter schema of the "cv" page (labels and formats: Cecil 9.30+)
+intro:
+  type: string
+  format: markdown
+  label: Introduction
+  description: Affichée en tête du CV, sous la photo.
+author:
+  type: string
+  label: Auteur
+social:
+  type: map
+  label: Réseaux sociaux
+  fields:
+    twitter: string
+    mastodon: string
+abbreviations:
+  type: string
+  format: text
+  label: Abréviations
+  description: 'Une par ligne (« *[DAM]: Digital Asset Management »), ajoutées au Markdown de chaque entrée avant son rendu.'
+widgets:
+  type: list
+  items: string
+  enum: [skills, languages]
+  label: Widgets
+  description: Blocs affichés dans la colonne latérale, dans cet ordre.
+skills:
+  type: map
+  label: Compétences
+  fields:
+    title:
+      type: string
+      label: Titre
+    items:
+      type: list
+      label: Compétences
+      items:
+        type: map
+        fields:
+          name:
+            type: string
+            required: true
+            label: Nom
+          level:
+            type: int
+            min: 0
+            max: 100
+            label: Niveau
+            description: De 0 à 100.
+languages:
+  type: map
+  label: Langues
+  fields:
+    title:
+      type: string
+      label: Titre
+    items:
+      type: list
+      label: Langues
+      items:
+        type: map
+        fields:
+          name:
+            type: string
+            required: true
+            label: Nom
+          level:
+            type: int
+            min: 0
+            max: 100
+            label: Niveau
+            description: De 0 à 100.
+sections:
+  type: list
+  label: Sections
+  items:
+    type: map
+    fields:
+      title:
+        type: string
+        required: true
+        label: Titre
+      items:
+        type: list
+        label: Entrées
+        items:
+          type: map
+          fields:
+            date:
+              type: string
+              label: Période
+              description: 'Texte libre : « depuis 2022 », « 2015-2020 ».'
+            title:
+              type: string
+              required: true
+              label: Intitulé
+            subtitle:
+              type: string
+              label: Société ou précision
+            url:
+              type: string
+              format: url
+              label: Site
+            image:
+              type: string
+              format: path
+              label: Logo
+              description: 'Chemin dans assets/ : « logos/clever-age.png ».'
+            text:
+              type: string
+              format: markdown
+              label: Description
+metatags:
+  type: map
+  fields:
+    title:
+      type: map
+      fields:
+        only: bool

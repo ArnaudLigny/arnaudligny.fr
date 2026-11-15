@@ -1,0 +1,24 @@
+# Front matter schema of the "blog" section
+title:
+  type: string
+  required: true
+description:
+  type: string
+  required: true
+date:
+  type: date
+  required: true
+tags:
+  type: list
+  items: string
+years:
+  type: list
+  items: int
+canonical:
+  type: map
+  fields:
+    url:
+      type: string
+      required: true
+      pattern: 'https?://.+'
+    title: string
