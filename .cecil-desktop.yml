@@ -6,13 +6,10 @@ writing:
     - /
   pages:
     delete: true
+  images: assets
 #foo: bar
 targets:
-  - name: 'Production'
+  - name: Production
     provider: netlify
     site: arnaudligny
     baseurl: 'https://arnaudligny.fr/'
-  #- name: 'Recette'
-  #  provider: github
-  #  repository: ArnaudLigny/arnaudligny.fr
-  #  branch: gh-pages
