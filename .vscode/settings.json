@@ -14,5 +14,6 @@
   },
   "cSpell.words": [
     "typora"
-  ]
+  ],
+  "window.title": "${dirty}${activeEditorShort}${separator}arnaudligny.fr${separator}${profileName}${separator}${appName}"
 }
