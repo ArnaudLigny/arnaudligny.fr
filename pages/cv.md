@@ -3,13 +3,15 @@ title: CV de Arnaud Ligny
 metatags:
   title:
     only: true
-description: Curriculum vitae d’Arnaud Ligny, consultant fonctionnel et technique spécialisé web et e-commerce, avec parcours, expertises, certifications, missions et réalisations.
+description: Curriculum vitae d’Arnaud Ligny, consultant fonctionnel et technique spécialisé web et e-commerce et ingénieur en test automatisé (QA Automation Engineer), avec parcours, expertises, certifications, missions et réalisations.
 date: 2020-09-22
-updated: 2025-09-09
+updated: 2026-11-16
 intro: |
-  ## Consultant fonctionnel et technique, expert web & e-commerce
+  ## Consultant e-commerce & QA Automation Engineer
 
   Je relie les besoins métier, l’architecture technique et la qualité de livraison. J’accompagne les équipes à transformer des idées complexes en produits web performants, scalables et maintenables.
+
+  Côté qualité, je conçois des stratégies de tests et j’automatise les parcours critiques avec [Playwright](https://playwright.dev) (tests de bout en bout, d’API, visuels et d’accessibilité), intégrés à la CI/CD pour livrer plus souvent et sans régression.
 
   Depuis plus de 15 ans, j’apporte mon expérience à des startups, des marques et des enseignes telles que _Groupe Eram_, _Jeff de Bruges_, _Salomon_, _Bic_, _Focus Entertainment_, _Promod_, _Yves Rocher_, _Libeo_, _Brigad_, _Leroy Merlin_, _Ducray_, _Saint-Maclou_, _Hermès_, _Christian Louboutin_, _Repetto_, _Zadig & Voltaire_, _Etam_, _The Kooples_, _Du Pareil au Même_.
 menu: main
@@ -37,6 +39,9 @@ abbreviations: |
   *[AMOA]: Assistance à la maîtrise d’ouvrage
   *[IoT]: Internet of Things
   *[DOSI]: Direction Opérationnelle des Systèmes d'Information
+  *[QA]: Quality Assurance
+  *[CI]: Intégration continue
+  *[CI/CD]: Intégration et déploiement continus
 widgets: [skills, languages]
 skills:
   title: Compétences techniques
@@ -44,6 +49,8 @@ skills:
     - name: Magento
       level: 90
     - name: commercetools
+      level: 85
+    - name: Playwright
       level: 85
     - name: Suite Atlassian
       level: 85
@@ -75,14 +82,28 @@ sections:
   - title: Expérience
     items:
       - date: 'depuis 2022'
-        title: Consultant fonctionnel & technique senior
+        title: Consultant fonctionnel & technique senior, QA Automation Engineer
         subtitle: Clever Age
         url: https://www.clever-age.com
         image: logos/clever-age.png
         text: |
-          👉 Consultant fonctionnelle et technique, expert e-commerce.  
-          Clients : Groupe Casino, Edenred, Groupe Bic, Business France, Gémo, Salomon, Focus Entertainment, Jeff de Bruges…  
-          Outils & solutions : VTEX, commercetools, Mirakl, Magento, Jira, Confluence, Miro, Mirakl, SAP CDC, Informatica.
+          👉 Consultant fonctionnel et technique, expert e-commerce;  
+          👉 Ingénieur en test automatisé (QA Automation Engineer) : stratégie de tests, automatisation des parcours critiques, assistance à la recette.  
+          Clients : Groupe Eram, Groupe Casino, Edenred, Groupe Bic, Business France, Gémo, Salomon, Focus Entertainment, Jeff de Bruges…  
+          Outils & solutions : VTEX, commercetools, Mirakl, Magento (Adobe Commerce), Playwright, Jira, Confluence, Miro, SAP CDC, Informatica.
+
+          #### 🔎 Focus sur l’automatisation des tests
+
+          👉 Définition de la stratégie de tests dès le cadrage, en lien avec les équipes métier, les PO et les développeurs, et priorisation des parcours critiques selon les risques;  
+          👉 Automatisation des tests de bout en bout avec [Playwright](https://playwright.dev) : parcours d’achat, tests d’API, tests de régression visuelle et contrôles d’accessibilité;  
+          👉 Intégration des tests à la CI/CD pour sécuriser chaque mise en production, et suivi d’indicateurs qualité;  
+          👉 Reprise de l’existant : audit et migration progressive de suites Cypress ou Selenium vers Playwright;  
+          👉 Référentiel de tests documenté et maintenable, conventions partagées et transfert de compétences aux équipes.
+
+          ##### Groupe Eram (Adobe Commerce)
+
+          👉 Automatisation de 26 parcours critiques avec Playwright, intégrés à la CI.  
+          👉 Résultat : les régressions en production ont baissé de 50 %.
       #- date: '2020-2022'
       #  title: Freelance – Consultant fonctionnelle & technique web, expert e-commerce
       #  subtitle: studio cecillie
