@@ -1,6 +1,6 @@
 title: Arnaud Ligny
 baseurl: https://arnaudligny.fr/
-baseline: Consultant fonctionnel & technique, expert Web & e-commerce
+baseline: Expert Web & e-commerce
 description: Arnaud Ligny, consultant fonctionnel et technique web, expert e-commerce, Jamstack et performance, partage son CV, ses projets, ses talks et son blog.
 keywords: [e-commerce, Jamstack, headless, MACH, web performance]
 taxonomies:
@@ -25,7 +25,7 @@ menus:
       weight: 3
     - id: tags
       enabled: false
-image: photo-cv.png
+#image: photo-cv.png
 metatags:
   data:
     enabled: true
@@ -96,7 +96,7 @@ ogimage:
   site_title: false # the site title is the name of the author
   padding:
     left: 80
-    right: 230 # keeps the footer away from the avatar of the background
+    right: 230
 
 pages:
   default:

@@ -192,16 +192,16 @@
         },
         {
             "name": "cecil/theme-ogimage",
-            "version": "1.1.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cecilapp/theme-ogimage.git",
-                "reference": "d903cebe426db1f7d0b0c17c7db24a2a76e0dc12"
+                "reference": "3d2b5482f84e8f9f19e3b4b370208a0c47623e91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cecilapp/theme-ogimage/zipball/d903cebe426db1f7d0b0c17c7db24a2a76e0dc12",
-                "reference": "d903cebe426db1f7d0b0c17c7db24a2a76e0dc12",
+                "url": "https://api.github.com/repos/Cecilapp/theme-ogimage/zipball/3d2b5482f84e8f9f19e3b4b370208a0c47623e91",
+                "reference": "3d2b5482f84e8f9f19e3b4b370208a0c47623e91",
                 "shasum": ""
             },
             "require": {
@@ -230,7 +230,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Cecilapp/theme-ogimage/issues",
-                "source": "https://github.com/Cecilapp/theme-ogimage/tree/1.1.0"
+                "source": "https://github.com/Cecilapp/theme-ogimage/tree/1.3.0"
             },
             "funding": [
                 {
@@ -242,8 +242,8 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2026-11-13T10:43:30+00:00",
-            "published-time": "2026-11-13T10:45:00+00:00"
+            "time": "2026-11-16T10:32:09+00:00",
+            "published-time": "2026-11-16T10:33:40+00:00"
         },
         {
             "name": "cecil/theme-pwa",
